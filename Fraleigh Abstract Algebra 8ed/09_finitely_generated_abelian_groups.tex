@@ -1,0 +1,500 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 9 Finitely Generated Abelian Groups}
+\pdfbookmark[0]{Section 9 Finitely Generated Abelian Groups}{09_finitely_generated_abelian_groups}
+\ifdefined\BookMaster\else\setcounter{page}{88}\fi
+% Source PDF page 105; original printed page 88
+\BookSource{105}{88}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{9}{Finitely Generated Abelian Groups}
+
+\BookTextHeading{\textbf{Direct Products}  }
+
+\noindent Let us take a moment to review our present stockpile of groups. Starting with finite groups, we have the cyclic group \BookInline{\mathbb{Z}_{n},\allowbreak } the symmetric group \BookInline{S_{n},\allowbreak } and the alternating group \BookInline{A_{n}} for each positive integer \BookInline{n.} We also have the dihedral groups \BookInline{D_{n}} and the Klein 4-group \BookInline{V.} Of course we know that subgroups of these groups exist. Turning to infinite groups, we have groups consisting of sets of numbers under the usual addition or multiplication, as, for example\BookInline{,\allowbreak \mathbb{Z},\allowbreak \mathbb{R},\allowbreak } and \BookInline{\mathbb{C}} under addition, and their nonzero elements under multiplication. We have the group \BookInline{U} of complex numbers of magnitude 1 under multiplication, which is isomorphic to each of the groups \BookInline{\mathbb{R}_{c}} under addition modulo \BookInline{c,\allowbreak } where \BookInline{c\in \mathbb{R}^{+ }.} We also have the group \BookInline{S_{A}} of all permutations of an infinite set \BookInline{A,\allowbreak } as well as various groups formed from matrices such as GL(n\BookInline{,\allowbreak \mathbb{R}).}
+
+One purpose of this section is to show a way to use known groups as building blocks to form more groups. The Klein 4-group will be recovered in this way from the cyclic groups. Employing this procedure with the cyclic groups gives us a large class of abelian groups that can be shown to include all possible structure types for a finite abelian group. We start by generalizing Definition 0.4.
+
+\BookLabel{9.1 Definition} The\textbf{ Cartesian product of sets} \BookInline{B_{1},\allowbreak B_{2},\allowbreak \cdots,\allowbreak B_{n}} is the set of all ordered \BookInline{n-}tuples \BookInline{(b_{1},\allowbreak b_{2},\allowbreak \cdots,\allowbreak b_{n}),\allowbreak } where \BookInline{b_{i}\in B_{i}} for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak n.} The Cartesian product is denoted by either
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle B_{1}\times B_{2}\times \cdots \times B_{n}}\end{adjustbox}\end{center}
+
+\noindent or by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \prod _{i= 1}^{n}B_{i}.}\end{adjustbox}\end{center} \BookEnd{\blacksquare}
+
+We could also define the Cartesian product of an infinite number of sets, but the definition is considerably more sophisticated and we shall not need it.
+
+Now let \BookInline{G_{1},\allowbreak G_{2},\allowbreak \cdots,\allowbreak G_{n}} be groups, and let us use multiplicative notation for all the group operations. Regarding the \BookInline{G_{i}} as sets, we can form \BookInline{\prod _{i= 1}^{n}G_{i}}. Let us show that we can make \BookInline{\prod _{i= 1}^{n}G_{i}} into a group by means of a binary operation of\textit{ multiplication by} \textit{components}. Note again that we are being sloppy when we use the same notation for a group as for the set of elements of the group.
+
+\end{BookBody}
+
+% Source PDF page 106; original printed page 89
+\BookSource{106}{89}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{9.2 Theorem} Let \BookInline{G_{1},\allowbreak G_{2},\allowbreak \cdots,\allowbreak G_{n}} be groups. For \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})} and \BookInline{(b_{1},\allowbreak b_{2},\allowbreak \cdots,\allowbreak b_{n})} in \BookInline{\prod _{i= 1}^{n}G_{i},\allowbreak } define \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})(b_{1},\allowbreak b_{2},\allowbreak \cdots,\allowbreak b_{n})} to be the element \BookInline{(a_{1}b_{1},\allowbreak a_{2}b_{2},\allowbreak \cdots,\allowbreak a_{n}b_{n}).} Then \BookInline{\prod _{i= 1}^{n}G_{i}} is a group, the\textbf{ direct product of the groups} \BookInline{G_{i},\allowbreak } under this binary operation.
+
+\BookLabel{\textit{Proof}} Note that since \BookInline{a_{i}\in G_{i},\allowbreak b_{i}\in G_{i},\allowbreak } and \BookInline{G_{i}} is a group, we have \BookInline{a_{i}b_{i}\in G_{i}.} Thus the definition of the binary operation on \BookInline{\prod _{i= 1}^{n}G_{i}} given in the statement of the theorem makes sense; that is, \BookInline{\prod _{i= 1}^{n}G_{i}} is closed under the binary operation.
+
+The associative law in \BookInline{\prod _{i= 1}^{n}G_{i}} is thrown back onto the associative law in each component as follows:
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&(a_{1},\allowbreak a_{2},\allowbreak \cdots ,\allowbreak a_{n})[(b_{1},\allowbreak b_{2},\allowbreak \cdots ,\allowbreak b_{n})(c_{1},\allowbreak c_{2},\allowbreak \cdots ,\allowbreak c_{n})] \\ &= (a_{1},\allowbreak a_{2},\allowbreak \cdots ,\allowbreak a_{n})(b_{1}c_{1},\allowbreak b_{2}c_{2},\allowbreak \cdots ,\allowbreak b_{n}c_{n}) \\ &= (a_{1}(b_{1}c_{1}),\allowbreak a_{2}(b_{2}c_{2}),\allowbreak \cdots ,\allowbreak a_{n}(b_{n}c_{n})) \\ &= ((a_{1}b_{1})c_{1},\allowbreak (a_{2}b_{2})c_{2},\allowbreak \cdots ,\allowbreak (a_{n}b_{n})c_{n}) \\ &= (a_{1}b_{1},\allowbreak a_{2}b_{2},\allowbreak \cdots ,\allowbreak a_{n}b_{n})(c_{1},\allowbreak c_{2},\allowbreak \cdots ,\allowbreak c_{n}) \\ &= [(a_{1},\allowbreak a_{2},\allowbreak \cdots ,\allowbreak a_{n})(b_{1},\allowbreak b_{2},\allowbreak \cdots ,\allowbreak b_{n})](c_{1},\allowbreak c_{2},\allowbreak \cdots ,\allowbreak c_{n}).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent If \BookInline{e_{i}} is the identity element in \BookInline{G_{i},\allowbreak } then clearly, with multiplication by components, \BookInline{(e_{1},\allowbreak e_{2},\allowbreak \cdots,\allowbreak e_{n})} is an identity in \BookInline{\prod _{i= 1}^{n}G_{i}}. Finally, an inverse of \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})} is \BookInline{(a_{1}^{- 1},\allowbreak a_{2}^{- 1},\allowbreak \cdots,\allowbreak a_{n}^{- 1});} compute the product by components. Hence \BookInline{\prod _{i= 1}^{n}G_{i}} is a group. \BookEnd{\blacklozenge}
+
+In the event that the operation of each \BookInline{G_{i}} is commutative, we sometimes use additive notation in \BookInline{\prod _{i= 1}^{n}G_{i}} and refer to \BookInline{\prod _{i= 1}^{n}G_{i}} as the\textbf{ direct sum of the groups} \BookInline{G_{i}.} The notation \BookInline{\oplus _{i= 1}^{n}G_{i}} is sometimes used in this case in place of \BookInline{\prod _{i= 1}^{n}G_{i},\allowbreak } especially with abelian groups with operation \BookInline{+.} The direct sum of abelian groups \BookInline{G_{1},\allowbreak G_{2},\allowbreak \cdots,\allowbreak G_{n}} may be written \BookInline{G_{1}\oplus G_{2}\oplus \cdots \oplus G_{n}.} We leave to Exercise 46 the proof that a direct product of abelian groups is again abelian.
+
+It is quickly seen that if \BookInline{B_{i}} has \BookInline{r_{i}} elements for \BookInline{i= 1,\allowbreak \cdots,\allowbreak n,\allowbreak } then \BookInline{\prod _{i= 1}^{n}B_{i}} has \BookInline{r_{1}r_{2}\cdots r_{n}} elements, for in an \BookInline{n-}tuple, there are \BookInline{r_{1}} choices for the first component from \BookInline{B_{1},\allowbreak } and for each of these there are \BookInline{r_{2}} choices for the next component from \BookInline{B_{2},\allowbreak } and so on.
+
+\BookLabel{9.3 Example} Consider the group \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{3},\allowbreak } which has \BookInline{2\cdot 3= 6} elements, namely (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), and (1, 2). We claim that \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{3}} is cyclic. It is only necessary to find a generator. Let us try (1, 1). Here the operations in \BookInline{\mathbb{Z}_{2}} and \BookInline{\mathbb{Z}_{3}} are written additively, so we do the same in the direct product \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{3}.}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}(1,\allowbreak 1)&= (1,\allowbreak 1) \\ 2(1,\allowbreak 1)&= (1,\allowbreak 1)+ (1,\allowbreak 1)= (0,\allowbreak 2) \\ 3(1,\allowbreak 1)&= (1,\allowbreak 1)+ (1,\allowbreak 1)+ (1,\allowbreak 1)= (1,\allowbreak 0) \\ 4(1,\allowbreak 1)&= 3(1,\allowbreak 1)+ (1,\allowbreak 1)= (1,\allowbreak 0)+ (1,\allowbreak 1)= (0,\allowbreak 1) \\ 5(1,\allowbreak 1)&= 4(1,\allowbreak 1)+ (1,\allowbreak 1)= (0,\allowbreak 1)+ (1,\allowbreak 1)= (1,\allowbreak 2) \\ 6(1,\allowbreak 1)&= 5(1,\allowbreak 1)+ (1,\allowbreak 1)= (1,\allowbreak 2)+ (1,\allowbreak 1)= (0,\allowbreak 0)\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus (1, 1) generates all of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{3}.} Since there is, up to isomorphism, only one cyclic group structure of a given order, we see that \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{3}} is isomorphic to \BookInline{\mathbb{Z}_{6}.}\BookEnd{\blacktriangle}
+
+\BookLabel{9.4 Example} Consider \BookInline{\mathbb{Z}_{3}\times \mathbb{Z}_{3}.} This is a group of nine elements. We claim that \BookInline{\mathbb{Z}_{3}\times \mathbb{Z}_{3}} is\textit{ not} cyclic. Since the addition is by components, and since in \BookInline{\mathbb{Z}_{3}} every element added to itself three times gives the identity, the same is true in \BookInline{\mathbb{Z}_{3}\times \mathbb{Z}_{3}.} Thus no element can generate the group, for a generator added to itself successively could only give the identity after nine 
+% Source PDF page 107; original printed page 90
+\BookSource{107}{90}
+summands. We have found another group structure of order 9. A similar argument shows that \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}} is not cyclic. Thus \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}} must be isomorphic to the Klein 4-group\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+The preceding examples illustrate the following theorem:
+
+\BookLabel{9.5 Theorem} The group \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n}} is cyclic and is isomorphic to \BookInline{\mathbb{Z}_{mn}} if and only if \BookInline{m} and \BookInline{n} are relatively prime, that is, the gcd of \BookInline{m} and \BookInline{n} is 1.
+
+\BookLabel{\textit{Proof}} Consider the cyclic subgroup of \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n}} generated by (1, 1) as described by Theorem 5.19. As our previous work has shown, the order of this cyclic subgroup is the smallest power of (1, 1) that gives the identity (0, 0). Here taking a power of (1, 1) in our additive notation will involve adding (1, 1) to itself repeatedly. Under addition by components, the first component \BookInline{1\in \mathbb{Z}_{m}} yields 0 only after \BookInline{m} summands\BookInline{,\allowbreak 2m} summands, and so on, and the second component \BookInline{1\in \mathbb{Z}_{n}} yields 0 only after \BookInline{n} summands\BookInline{,\allowbreak 2n} summands, and so on. For them to yield 0 simultaneously, the number of summands must be a multiple of both \BookInline{m} and \BookInline{n.} The smallest number that is a multiple of both \BookInline{m} and \BookInline{n} will be \BookInline{mn} if and only if the gcd of \BookInline{m} and \BookInline{n} is 1; in this case, (1, 1) generates a cyclic subgroup of order \BookInline{mn,\allowbreak } which is the order of the whole group. This shows that \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n}} is cyclic of order \BookInline{mn,\allowbreak } and hence isomorphic to \BookInline{\mathbb{Z}_{mn}} if \BookInline{m} and \BookInline{n} are relatively prime.
+
+For the converse, suppose that the gcd of \BookInline{m} and \BookInline{n} is \BookInline{d>1.} Then \BookInline{mn/d} is divisible by both \BookInline{m} and \BookInline{n.} Consequently, for any \BookInline{(r,\allowbreak s)} in \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n},\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \underline { { ( r ,\allowbreak  s ) + ( r ,\allowbreak  s ) } } + \dots + \underline { { ( r ,\allowbreak  s ) } } = ( 0 ,\allowbreak  0 ) .}\end{adjustbox}\end{center}
+
+\BookInline{mn/d} summands
+
+Hence no element \BookInline{(r,\allowbreak s)} in \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n}} can generate the entire group, so \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n}} is not cyclic and therefore not isomorphic to \BookInline{\mathbb{Z}_{mn}.}\BookEnd{\blacklozenge}
+
+This theorem can be extended to a product of more than two factors by similar arguments. We state this as a corollary without going through the details of the proof.
+
+\BookLabel{9.6 Corollary} The group \BookInline{\prod _{i= 1}^{n}\mathbb{Z}_{m_{i}}} is cyclic and isomorphic to \BookInline{\mathbb{Z}_{m_{1}m_{2}\cdots m_{n}}} if and only if the numbers \BookInline{m_{i}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak n} are such that the gcd of any two of them is 1.
+
+\BookLabel{9.7 Example} The preceding corollary shows that if \BookInline{n} is written as a product of powers of distinct prime numbers, as in
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n= (p_{1})^{n_{1}}(p_{2})^{n_{2}}\cdots (p_{r})^{n_{r}},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent then \BookInline{\mathbb{Z}_{n}} is isomorphic to
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}_{(p_{1})^{1}}^{n}\times \mathbb{Z}_{(p_{2})^{2}}^{n}\times \cdots \times \mathbb{Z}_{(p_{r})}nr.}\end{adjustbox}\end{center}
+
+In particular\BookInline{,\allowbreak \mathbb{Z}_{72}} is isomorphic to \BookInline{\mathbb{Z}_{8}\times \mathbb{Z}_{9}.} \BookEnd{\blacktriangle}
+
+We remark that changing the order of the factors in a direct product yields a group isomorphic to the original one. The names of elements have simply been changed via a permutation of the components in the \BookInline{n-}tuples.
+
+Exercise 57 of Section 6 asked you to define the least common multiple of two positive integers \BookInline{r} and \BookInline{s} as a generator of a certain cyclic group. It is straightforward to prove that the subset of \BookInline{\mathbb{Z}} consisting of all integers that are multiples of both \BookInline{r} and \BookInline{s} is a subgroup of \BookInline{\mathbb{Z},\allowbreak } and hence is a cyclic group. Likewise, the set of all common multiples of \BookInline{n} positive integers \BookInline{r_{1},\allowbreak r_{2},\allowbreak \cdots,\allowbreak r_{n}} is a subgroup of \BookInline{\mathbb{Z},\allowbreak } and hence is cyclic.
+
+\BookLabel{9.8 Definition} Let \BookInline{r_{1},\allowbreak r_{2},\allowbreak \cdots,\allowbreak r_{n}} be positive integers. Their\textbf{ least common multiple} (abbreviated lcm) is the positive generator of the cyclic group of all common multiples of the \BookInline{r_{i},\allowbreak } that is, the cyclic group of all integers divisible by each \BookInline{r_{i}} for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak n.}\BookEnd{\blacksquare}
+
+\end{BookBody}
+
+% Source PDF page 108; original printed page 91
+\BookSource{108}{91}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+From Definition 9.8 and our work on cyclic groups, we see that the lcm of \BookInline{r_{1},\allowbreak r_{2},\allowbreak \cdots,\allowbreak r_{n}} is the smallest positive integer that is a multiple of each \BookInline{r_{i}} for \BookInline{i= } \BookInline{1,\allowbreak 2,\allowbreak \cdots,\allowbreak n,\allowbreak } hence the name\textit{ least common multiple}.
+
+\BookLabel{9.9 Theorem} Let \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})\in \prod _{i= 1}^{n}G_{i}.} If \BookInline{a_{i}} is of finite order \BookInline{r_{i}} in \BookInline{G_{i},\allowbreak } then the order of \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})} in \BookInline{\prod _{i= 1}^{n}G_{i}} is equal to the least common multiple of all the \BookInline{r_{i}.}
+
+\BookLabel{\textit{Proof}} This follows by a repetition of the argument used in the proof of Theorem 9.5. For a power of \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})} to give \BookInline{(e_{1},\allowbreak e_{2},\allowbreak \cdots,\allowbreak e_{n}),\allowbreak } the power must simultaneously be a multiple of \BookInline{r_{1}} so that this power of the first component \BookInline{a_{1}} will yield \BookInline{e_{1},\allowbreak } a multiple of \BookInline{r_{2},\allowbreak } so that this power of the second component \BookInline{a_{2}} will yield \BookInline{e_{2},\allowbreak } and so on\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{9.10 Example} Find the order of (8, 4, 10) in the group \BookInline{\mathbb{Z}_{12}\times \mathbb{Z}_{60}\times \mathbb{Z}_{24}.}
+
+\BookLabel{\textit{Solution}} Since the gcd of 8 and 12 is 4, we see that 8 is of order \BookInline{{ \textstyle { \frac { 1 2 } { 4 } } = 3 }} in \BookInline{\mathbb{Z}_{12}.(}See Theorem 6.15.) Similarly, we find that 4 is of order 15 in \BookInline{\mathbb{Z}_{60}} and 10 is of order 12 in \BookInline{\mathbb{Z}_{24}.} The lcm of 3, 15, and 12 is \BookInline{3\cdot 5\cdot 4= 60,\allowbreak } so (8, 4, 10) is of order 60 in the group \BookInline{\mathbb{Z}_{12}\times \mathbb{Z}_{60}\times \mathbb{Z}_{24}.}\BookEnd{\blacktriangle}
+
+\BookLabel{9.11 Example} The group \BookInline{\mathbb{Z}\times \mathbb{Z}_{2}} is generated by the elements (1, 0) and (0, 1). More generally, the direct product of \BookInline{n} cyclic groups, each of which is either \BookInline{\mathbb{Z}} or \BookInline{\mathbb{Z}_{m}} for some positive integer \BookInline{m,\allowbreak } is generated by the \BookInline{nn-}tuples
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (1,\allowbreak 0,\allowbreak 0,\allowbreak \cdots ,\allowbreak 0),\allowbreak (0,\allowbreak 1,\allowbreak 0,\allowbreak \cdots ,\allowbreak 0),\allowbreak (0,\allowbreak 0,\allowbreak 1,\allowbreak \cdots ,\allowbreak 0),\allowbreak \cdots ,\allowbreak (0,\allowbreak 0,\allowbreak 0,\allowbreak \cdots ,\allowbreak 1).}\end{adjustbox}\end{center}
+
+\noindent Such a direct product might also be generated by fewer elements. For example\BookInline{,\allowbreak \mathbb{Z}_{3}\times } \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{35}} is generated by the single element \BookInline{(1,\allowbreak 1,\allowbreak 1).}\BookEnd{\blacktriangle}
+
+Note that if \BookInline{\prod _{i= 1}^{n}G_{i}} is the direct product of groups \BookInline{G_{i},\allowbreak } then the subset
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle G_{i}= \{(e_{1},\allowbreak e_{2},\allowbreak \cdots ,\allowbreak e_{i- 1},\allowbreak a_{i},\allowbreak e_{i+ 1},\allowbreak \cdots ,\allowbreak e_{n})\mid a_{i}\in G_{i}\},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent that is, the set of all \BookInline{n-}tuples with the identity elements in all places but the \BookInline{i}th, is a subgroup of \BookInline{\prod _{i= 1}^{n}G_{i}.} It is also clear that this subgroup \BookInline{G_{i}} is naturally isomorphic to \BookInline{G_{i};} just rename
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (e_{1},\allowbreak e_{2},\allowbreak \cdots ,\allowbreak e_{i- 1},\allowbreak a_{i},\allowbreak e_{i+ 1},\allowbreak \cdots ,\allowbreak e_{n})\;\text{by}\;a_{i}.}\end{adjustbox}\end{center}
+
+\noindent The group \BookInline{G_{i}} is mirrored in the \BookInline{i}th component of the elements of \BookInline{G_{i},\allowbreak } and the \BookInline{e_{j}} in the other components just ride along. We consider \BookInline{\prod _{i= 1}^{n}G_{i}} to be the\textit{ internal direct} \textit{product} of these subgroups \BookInline{G_{i}.} The direct product given by Theorem 9.2 is called the \textit{external direct product} of the groups \BookInline{G_{i}.} The terms\textit{ internal} and\textit{ external,} as applied to a direct product of groups, just reflect whether or not (respectively) we are regarding the component groups as subgroups of the product group. We shall usually omit the words \textit{external} and\textit{ internal} and just say\textit{ direct product}. Which term we mean will be clear from the context.
+
+\BookTextHeading{\textbf{The Structure of Finitely Generated Abelian Groups}  }
+
+\noindent Some theorems of abstract algebra are easy to understand and use, although their proofs may be quite technical and time-consuming to present. This is one section in the text where we explain the meaning and significance of a theorem but omit its proof. The
+
+\end{BookBody}
+
+% Source PDF page 109; original printed page 92
+\BookSource{109}{92}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent In his\textit{ Disquisitiones Arithmeticae,} Carl Gauss demonstrated various results in what is today the theory of abelian groups in the context of number theory. Not only did he deal extensively with equivalence classes of quadratic forms, but he also considered residue classes modulo a given integer. Although he noted that results in these two areas were similar, he did not attempt to develop an abstract theory of abelian groups.
+
+\noindent In the 1840s, Ernst Kummer in dealing with ideal complex numbers noted that his results were in many respects analogous to those of Gauss. (See the Historical Note in Section 30.) But it was Kummer’s student Leopold Kronecker (see the Historical Note in Section 39) who finally realized that an abstract theory could be developed out of the analogies. As he wrote in 1870, “these principles [from the work of Gauss and Kummer] belong to a more general, abstract realm of ideas. It is therefore appropriate to free their development from all unimportant restrictions, so that one can spare oneself from the necessity of repeating the same argument in different cases. This advantage already appears in the development itself, and the presentation gains in simplicity, if it is given in the most general admissible manner, since the most important features stand out with clarity.” Kronecker then proceeded to develop the basic principles of the theory of finite abelian groups and was able to state and prove a version of Theorem 9.12 restricted to finite groups.
+
+\noindent meaning of any theorem whose proof we omit is well within our understanding, and we feel we should be acquainted with it. It would be impossible for us to meet some of these fascinating facts in a one-semester course if we were to insist on wading through complete proofs of all theorems. The theorem that we now state gives us complete structural information about many abelian groups, in particular, about all finite abelian groups.
+
+\BookLabel{9.12 Theorem} \textbf{(Primary Factor Version of the Fundamental Theorem of Finitely Generated} \textbf{Abelian Groups)} Every finitely generated abelian group \BookInline{G} is isomorphic to a direct product of cyclic groups in the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}_{(p_{1})^{1}}^{r}\times \mathbb{Z}_{(p_{2})^{2}}^{r}\times \cdots \times \mathbb{Z}_{(p_{n})}rn\times \mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where the \BookInline{p_{i}} are primes, not necessarily distinct, and the \BookInline{r_{i}} are positive integers. The direct product is unique except for possible rearrangement of the factors; that is, the number (\textbf{Betti number} of \BookInline{G)} of factors \BookInline{\mathbb{Z}} is unique and the prime powers \BookInline{(p_{i})^{r_{i}}} are unique.
+
+\BookLabel{\textit{Proof}} The proof is omitted here. \BookEnd{\blacklozenge}
+
+\BookLabel{9.13 Example} Find all abelian groups, up to isomorphism, of order 360. The phrase\textit{ up to isomorphism} signifies that any abelian group of order 360 should be structurally identical (isomorphic) to one of the groups of order 360 exhibited.
+
+\BookLabel{\textit{Solution}} We make use of Theorem 9.12. Since our groups are to be of the finite order 360, no factors \BookInline{\mathbb{Z}} will appear in the direct product shown in the statement of the theorem.
+
+First we express 360 as a product of prime powers 23325. Then using Theorem 9.12, we get as possibilities
+
+\BookExercise{1.}{\BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{3}\times \mathbb{Z}_{3}\times \mathbb{Z}_{5}}}
+
+\BookExercise{2.}{\BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{9}\times \mathbb{Z}_{5}}}
+
+\BookExercise{3.}{\BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{4}\times \mathbb{Z}_{3}\times \mathbb{Z}_{3}\times \mathbb{Z}_{5}}}
+
+\end{BookBody}
+
+% Source PDF page 110; original printed page 93
+\BookSource{110}{93}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookExercise{4.}{\BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{4}\times \mathbb{Z}_{9}\times \mathbb{Z}_{5}}}
+
+\BookExercise{5.}{\BookInline{\mathbb{Z}_{8}\times \mathbb{Z}_{3}\times \mathbb{Z}_{3}\times \mathbb{Z}_{5}}}
+
+\BookExercise{6.}{\BookInline{\mathbb{Z}_{8}\times \mathbb{Z}_{9}\times \mathbb{Z}_{5}}}
+
+Thus there are six different abelian groups (up to isomorphism) of order \BookInline{360.\blacktriangle } There is another version of the Fundamental Theorem of Finitely Generated Abelian Groups. Each version can be proven from the other, so technically, if one version is used to prove something, the other version could also be used. However, it is sometimes more convenient to use one version rather than the other for a particular problem.
+
+\BookLabel{9.14 Theorem} \textbf{(Invariant Factor Version of the Fundamental Theorem of Finitely Generated} \textbf{Abelian Groups)} Every finitely generated abelian group is isomorphic to a direct product of cyclic groups of the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}_{d_{1}}\times \mathbb{Z}_{d_{2}}\times \mathbb{Z}_{d_{3}}\times \cdots \times \mathbb{Z}_{d_{k}}\times \mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where each of the \BookInline{d_{i}\geq 2} is an integer and \BookInline{d_{i}} divides \BookInline{d_{i+ 1}} for \BookInline{1\leq i\leq k- 1.} Furthermore, the representation is unique\BookInline{.}\BookEnd{\blacklozenge}
+
+The Betti number of a group is the number of factors of \BookInline{\mathbb{Z}} in both Theorem 9.12 and 9.14. The numbers \BookInline{d_{i}} are called the\textbf{ invariant factors} or the\textbf{ torsion coefficients}. Theorem 9.12 implies Theorem 9.14 and the other way around. Here we show with an example how to start with a finite group that is in the form specified in Theorem 9.12 and find its representation in the form of Theorem 9.14.
+
+\BookLabel{9.15 Example} Let us find the invariant factor form of the abelian group \BookInline{G= \mathbb{Z}_{2}\times \mathbb{Z}_{2}\times Z_{4}\times \mathbb{Z}_{8}\times } \BookInline{\mathbb{Z}_{3}\times \mathbb{Z}_{9}\times \mathbb{Z}_{7},\allowbreak } which is in primary factor form. We make a table, one row for each prime number involved in \BookInline{G:2,\allowbreak 3,\allowbreak } and 7. We list the powers of each prime in the primary factor form starting with the highest power to the lowest power, filling the ends of the short rows with \BookInline{1= p^{0}.} Table 9.16 is the table for \BookInline{G.} The group \BookInline{G} is the direct product of cyclic groups of the orders listed in the table. The products of the entries in the columns give the invariant factors. For \BookInline{G,\allowbreak } the invariant factors are \BookInline{d_{4}= 8\cdot 9\cdot 7= 504,\allowbreak } \BookInline{d_{3}= 4\cdot 3\cdot 1= 12,\allowbreak d_{2}= 2\cdot 1\cdot 1= 2,\allowbreak } and \BookInline{d_{1}= 2\cdot 1\cdot 1= 2.} The construction of the table insures that \BookInline{d_{1}} divides \BookInline{d_{2},\allowbreak d_{2}} divides \BookInline{d_{3},\allowbreak d_{3}} divides \BookInline{d_{4},\allowbreak } and \BookInline{G} is isomorphic with \BookInline{\mathbb{Z}_{d_{1}}\times \mathbb{Z}_{d_{2}}\times \mathbb{Z}_{d_{3}}\times \mathbb{Z}_{d_{4}}= \mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{12}\times \mathbb{Z}_{504}.} \BookEnd{\blacktriangle}
+
+\noindent Example 9.15 shows how to create a table from a finitely generated abelian group that is in primary factor form. From the table we can find the invariant form of the group. This process can easily be reversed by factoring the invariants to find the primary factors.
+
+\begin{BookFloat}{09_finitely_generated_abelian_groups-p110-10}
+\begin{center}\small\textbf{9.16 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{|c|c|c|c|}
+\hline
+8 & 4 & 2 & 2\\\hline
+9 & 3 & 1 & 1\\\hline
+7 & 1 & 1 & 1\\\hline
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+\BookTextHeading{\textbf{Applications}}
+
+\noindent Because of Theorems 9.12 and 9.14, there is a plethora of theorems regarding finitely generated abelian groups that are fairly easily proven. We present a few examples.
+
+\BookLabel{9.17 Definition} A group \BookInline{G} is\textbf{ decomposable} if it is isomorphic to a direct product of two proper nontrivial subgroups. Otherwise \BookInline{G} is\textbf{ indecomposable}\BookInline{.}\BookEnd{\blacksquare}
+
+\BookLabel{9.18 Theorem} The finite indecomposable abelian groups are exactly the cyclic groups with order a power of a prime.
+
+\BookLabel{\textit{Proof}} Let \BookInline{G} be a finite indecomposable abelian group. Then by Theorem \BookInline{9.12,\allowbreak G} is isomorphic to a direct product of cyclic groups of prime power order. Since \BookInline{G} is indecomposable, this direct product must consist of just one cyclic group whose order is a power of a prime number.
+
+\end{BookBody}
+
+% Source PDF page 111; original printed page 94
+\BookSource{111}{94}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Conversely, let \BookInline{p} be a prime. Then \BookInline{\mathbb{Z}_{p}r} is indecomposable, for if \BookInline{\mathbb{Z}_{p}r} were isomorphic to \BookInline{\mathbb{Z}_{p}i\times \mathbb{Z}_{p}j}, where \BookInline{i+ j= r,\allowbreak } then every element would have an order at most \BookInline{p}max\BookInline{(i,\allowbreak j)<pr.}\BookEnd{\blacklozenge}
+
+\BookLabel{9.19 Theorem} If \BookInline{m} divides the order of a finite abelian group \BookInline{G,\allowbreak } then \BookInline{G} has a subgroup of order \BookInline{m.}
+
+\BookLabel{\textit{Proof}} By Theorem 9.12, we can think of \BookInline{G} as being
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}_{(p_{1})^{1}}^{r}\times \mathbb{Z}_{(p_{2})^{2}}^{r}\times \cdots \times \mathbb{Z}_{(p_{n})}rn,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where not all primes \BookInline{p_{i}} need be distinct. Since \BookInline{(p_{1})^{r_{1}}(p_{2})^{r_{2}}\cdots (p_{n})^{r_{n}}} is the order of \BookInline{G,\allowbreak } then \BookInline{m} must be of the form \BookInline{(p_{1})^{s_{1}}(p_{2})^{s_{2}}\cdots (p_{n})^{s_{n}}}, where \BookInline{0\leq s_{i}\leq r_{i}.} By Theorem 6.15, \BookInline{(p_{i})^{r_{i}- s_{i}}} generates a cyclic subgroup of \BookInline{\mathbb{Z}_{(p_{i})^{i}}^{r}} of order equal to the quotient of \BookInline{(p_{i})^{r_{i}}} by the gcd of \BookInline{(p_{i})^{r_{i}}} and \BookInline{(p_{i})^{r_{i}- s_{i}}}. But the gcd of \BookInline{(p_{i})^{r_{i}}} and \BookInline{(p_{i})^{r_{i}- s_{i}}} is \BookInline{(p_{i})^{r_{i}- s_{i}}}. Thus \BookInline{(p_{i})^{r_{i}- s_{i}}} generates a cyclic subgroup of \BookInline{\mathbb{Z}_{(p_{i})^{i}}^{r}} of order
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [(p_{i})^{r_{i}}]/[(p_{i})^{r_{i}- s_{i}}]= (p_{i})^{s_{i}}.}\end{adjustbox}\end{center}
+
+\noindent Recalling that \BookInline{\langle a\rangle } denotes the cyclic subgroup generated by \BookInline{a,\allowbreak } we see that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \langle (p_{1})^{r_{1}- s_{1}}\rangle \times \langle (p_{2})^{r_{2}- s_{2}}\rangle \times \cdots \times \langle (p_{n})^{r_{n}- s_{n}}\rangle}\end{adjustbox}\end{center}
+
+\noindent is the required subgroup of order \BookInline{m.} \BookEnd{\blacklozenge}
+
+\BookLabel{9.20 Theorem} If \BookInline{m} is a square-free integer, that is\BookInline{,\allowbreak m} is not divisible by the square of any integer \BookInline{n\geq 2} then every abelian group of order \BookInline{m} is cyclic.
+
+\BookLabel{\textit{Proof}} Let \BookInline{G} be a finite abelian group of square-free order \BookInline{m.} Then by Theorem \BookInline{9.14,\allowbreak G} is isomorphic to
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}_{d_{1}}\times \mathbb{Z}_{d_{2}}\times \cdots \times \mathbb{Z}_{d_{k}},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where each \BookInline{d_{i}\geq 2} divides \BookInline{d_{i+ 1}} for \BookInline{1\leq i\leq k- 1.} The order of \BookInline{G} is \BookInline{m= d_{1}\cdot d_{2}\cdots d_{k}.} If \BookInline{k\geq 2,\allowbreak } then \BookInline{d_{1}^{2}} divides \BookInline{m,\allowbreak } which is a contradiction. Thus \BookInline{k= 1} and \BookInline{G} is cyclic\BookInline{.}\BookEnd{\blacklozenge} \BookEnd{\blacksquare}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{9}
+
+\BookTextHeading{\textbf{Computations}}
+
+\BookExercise{1.}{List the elements of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{4}.} Find the order of each of the elements. Is this group cyclic?}
+
+\BookExercise{2.}{Repeat Exercise 1 for the group \BookInline{\mathbb{Z}_{3}\times \mathbb{Z}_{4}.}}
+
+\noindent In Exercises 3 through 7, find the order of the given element of the direct product.
+
+\BookExercise{4.}{(3, 4) in \BookInline{\mathbb{Z}_{21}\times \mathbb{Z}_{12}}}
+
+\BookExercise{5.}{(40, 12) in \BookInline{\mathbb{Z}_{45}\times \mathbb{Z}_{18}}}
+
+\BookExercise{3.}{(2, 6) in \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{12}}}
+
+\BookExercise{6.}{(3, 10, 9) in \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{12}\times \mathbb{Z}_{15}}}
+
+\BookExercise{7.}{(3, 6, 12, 16) in \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{12}\times \mathbb{Z}_{20}\times \mathbb{Z}_{24}}}
+
+\BookExercise{8.}{What is the largest order among the orders of all the cyclic subgroups of \BookInline{\mathbb{Z}_{6}\times \mathbb{Z}_{8}}? of \BookInline{\mathbb{Z}_{12}\times \mathbb{Z}_{15}}?}
+
+\BookExercise{9.}{Find all proper nontrivial subgroups of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}.}}
+
+\BookExercise{10.}{Find all proper nontrivial subgroups of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{2}.}}
+
+\BookExercise{11.}{Find all subgroups of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{4}} of order 4.}
+
+\BookExercise{12.}{Find all subgroups of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \mathbb{Z}_{4}} that are isomorphic to the Klein 4-group.}
+
+\BookExercise{13.}{Disregarding the order of the factors, write direct products of two or more groups of the form \BookInline{\mathbb{Z}_{n}} so that the resulting product is isomorphic to \BookInline{\mathbb{Z}_{60}} in as many ways as possible.}
+
+\BookExercise{14.}{Fill in the blanks.}
+
+\BookExercise{a.}{The cyclic subgroup of \BookInline{\mathbb{Z}_{24}} generated by 18 has order\BookInline{- - -.}}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.\mathbb{Z}_{3}\times \mathbb{Z}_{4}} is of order\BookInline{- - -.}}
+
+\end{BookBody}
+
+% Source PDF page 112; original printed page 95
+\BookSource{112}{95}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{c.}{The element (4, 2) of \BookInline{\mathbb{Z}_{12}\times \mathbb{Z}_{8}} has order\BookInline{- - -.} \textbf{d.} The Klein 4-group is isomorphic to \BookInline{\mathbb{Z}_{- - - }\times \mathbb{Z}_{- - - }.} \textbf{e}\BookInline{.\mathbb{Z}_{2}\times \mathbb{Z}\times \mathbb{Z}_{4}} has\BookInline{- - - }elements of finite order.}
+
+\BookExercise{15.}{Find the maximum possible order for some element of \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{6}.}}
+
+\BookExercise{16.}{Are the groups \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{12}} and \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{6}} isomorphic? Why or why not?}
+
+\BookExercise{17.}{Find the maximum possible order for some element of \BookInline{\mathbb{Z}_{8}\times \mathbb{Z}_{28}\times \mathbb{Z}_{24}.}}
+
+\BookExercise{18.}{Are the groups \BookInline{\mathbb{Z}_{8}\times \mathbb{Z}_{10}\times \mathbb{Z}_{24}} and \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{12}\times \mathbb{Z}_{40}} isomorphic? Why or why not?}
+
+\BookExercise{19.}{Find the maximum possible order for some element of \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{18}\times \mathbb{Z}_{15}.}}
+
+\BookExercise{20.}{Are the groups \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{18}\times \mathbb{Z}_{15}} and \BookInline{\mathbb{Z}_{3}\times \mathbb{Z}_{36}\times \mathbb{Z}_{10}} isomorphic? Why or why not?}
+
+\noindent In Exercises 21 through 25, proceed as in Example 9.13 to find all abelian groups, up to isomorphism, of the given order. For each group, find the invariant factors and find an isomorphic group of the form indicated in Theorem 9.14.
+
+\BookExercise{21.}{Order 8}
+
+\BookExercise{22.}{Order 16}
+
+\BookExercise{23.}{Order 32}
+
+\BookExercise{24.}{Order 720}
+
+\BookExercise{25.}{Order 1089}
+
+\BookExercise{26.}{How many abelian groups (up to isomorphism) are there of order 24? of order 25? of order (24)(25)?}
+
+\BookExercise{27.}{Following the idea suggested in Exercise 26, let \BookInline{m} and \BookInline{n} be relatively prime positive integers. Show that if there are (up to isomorphism\BookInline{)\; r} abelian groups of order \BookInline{m} and \BookInline{s} of order \BookInline{n,\allowbreak } then there are (up to isomorphism) \BookInline{rs} abelian groups of order \BookInline{mn.}}
+
+\BookExercise{28.}{Use Exercise 27 to determine the number of abelian groups (up to isomorphism) of order (10)5.}
+
+\BookExercise{29.}{\textbf{ a.} Let \BookInline{p} be a prime number. Fill in the second row of the table to give the number of abelian groups of order \BookInline{p^{n},\allowbreak } up to isomorphism.}
+
+\begin{BookFloat}{09_finitely_generated_abelian_groups-p112-17}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\BookInline{n} & 2 & 3 & 4 & 5 & 6 & 7 & 8\\\hline
+number of groups &  &  &  &  &  &  & \\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+\BookExercise{b.}{Let \BookInline{p,\allowbreak q,\allowbreak } and \BookInline{r} be distinct prime numbers. Use the table you created to find the number of abelian groups, up to isomorphism, of the given order. \textbf{i}\BookInline{.p^{3}q^{4}r^{7}} \textbf{ii}\BookInline{.(qr)^{7}} \textbf{iii}\BookInline{.q^{5}r^{4}q^{3}}}
+
+\BookExercise{30.}{Indicate schematically a Cayley digraph for \BookInline{\mathbb{Z}_{m}\times \mathbb{Z}_{n}} for the generating set \BookInline{S= \{(1,\allowbreak 0),\allowbreak (0,\allowbreak 1)\}.}}
+
+\BookExercise{31.}{Consider Cayley digraphs with two arc types, a solid one with an arrow and a dashed one with no arrow, and consisting of two regular \BookInline{n-}gons, for \BookInline{n\geq 3,\allowbreak } with solid arc sides, one inside the other, with dashed arcs joining the vertices of the outer \BookInline{n-}gon to the inner one. Figure 7.11(b) shows such a Cayley digraph with \BookInline{n= 3,\allowbreak } and Figure 7.13(b) shows one with \BookInline{n= 4.} The arrows on the outer \BookInline{n-}gon may have the same (clockwise or counterclockwise) direction as those on the inner \BookInline{n-}gon, or they may have the opposite direction. Let \BookInline{G} be a group with such a Cayley digraph. \textbf{a.} Under what circumstances will \BookInline{G} be abelian? \textbf{b.} If \BookInline{G} is abelian, to what familiar group is it isomorphic? \textbf{c.} If \BookInline{G} is abelian, under what circumstances is it cyclic? \textbf{d.} If \BookInline{G} is not abelian, to what group we have discussed is it isomorphic?}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{32.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{If \BookInline{G_{1}} and \BookInline{G_{2}} are any groups, then \BookInline{G_{1}\times G_{2}} is always isomorphic to \BookInline{G_{2}\times G_{1}.}}
+
+\BookExercise{b.}{Computation in an external direct product of groups is easy if you know how to compute in each component group.}
+
+\BookExercise{c.}{Groups of finite order must be used to form an external direct product.}
+
+\BookExercise{d.}{A group of prime order could not be the internal direct product of two proper nontrivial subgroups.}
+
+\end{BookBody}
+
+% Source PDF page 113; original printed page 96
+\BookSource{113}{96}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{e.}{\textbf{e}\BookInline{.\mathbb{Z}_{2}\times \mathbb{Z}_{4}} is isomorphic to \BookInline{\mathbb{Z}_{8}.}}
+
+\BookExercise{f.}{\textbf{f}\BookInline{.\mathbb{Z}_{2}\times \mathbb{Z}_{4}} is isomorphic to \BookInline{S_{8}.}}
+
+\BookExercise{g.}{\textbf{g}\BookInline{.\mathbb{Z}_{3}\times \mathbb{Z}_{8}} is isomorphic to \BookInline{S_{4}.}}
+
+\BookExercise{h.}{Every element in \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{8}} has order 8.}
+
+\BookExercise{i.}{The order of \BookInline{\mathbb{Z}_{12}\times \mathbb{Z}_{15}} is 60.}
+
+\BookExercise{j.}{\textbf{j}\BookInline{.\mathbb{Z}_{m}\times \mathbb{Z}_{n}} has \BookInline{mn} elements whether \BookInline{m} and \BookInline{n} are relatively prime or not.}
+
+\BookExercise{33.}{Give an example illustrating that not every nontrivial abelian group is the internal direct product of two proper nontrivial subgroups.}
+
+\BookExercise{34.}{\textbf{. a} How many subgroups of \BookInline{\mathbb{Z}_{5}\times \mathbb{Z}_{6}} are isomorphic to \BookInline{\mathbb{Z}_{5}\times \mathbb{Z}_{6}}? \textbf{b.} How many subgroups of \BookInline{\mathbb{Z}\times \mathbb{Z}} are isomorphic to \BookInline{\mathbb{Z}\times \mathbb{Z}}?}
+
+\BookExercise{35.}{Give an example of a nontrivial group that is not of prime order and is not the internal direct product of two nontrivial subgroups.}
+
+\BookExercise{36.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every abelian group of prime order is cyclic.}
+
+\BookExercise{b.}{Every abelian group of prime power order is cyclic.}
+
+\BookExercise{c.}{\textbf{c}\BookInline{.\mathbb{Z}_{8}} is generated by \BookInline{\{4,\allowbreak 6\}.}}
+
+\BookExercise{d.}{\textbf{d}\BookInline{.\mathbb{Z}_{8}} is generated by \BookInline{\{4,\allowbreak 5,\allowbreak 6\}.}}
+
+\BookExercise{e.}{All finite abelian groups are classified up to isomorphism by Theorem 9.12.}
+
+\BookExercise{f.}{Any two finitely generated abelian groups with the same Betti number are isomorphic.}
+
+\BookExercise{g.}{Every abelian group of order divisible by 5 contains a cyclic subgroup of order 5.}
+
+\BookExercise{h.}{Every abelian group of order divisible by 4 contains a cyclic subgroup of order 4.}
+
+\BookExercise{i.}{Every abelian group of order divisible by 6 contains a cyclic subgroup of order 6.}
+
+\BookExercise{j.}{Every finite abelian group has a Betti number of 0.}
+
+\BookExercise{37.}{Let \BookInline{p} and \BookInline{q} be distinct prime numbers. How does the number (up to isomorphism) of abelian groups of order \BookInline{p^{r}} compare with the number (up to isomorphism) of abelian groups of order \BookInline{q^{r}}?}
+
+\BookExercise{38.}{Let \BookInline{G} be an abelian group of order 72.}
+
+\BookExercise{a.}{Can you say how many subgroups of order \BookInline{8G} has? Why, or why not?}
+
+\BookExercise{b.}{Can you say how many subgroups of order \BookInline{4G} has? Why, or why not?}
+
+\BookExercise{39.}{Let \BookInline{G} be an abelian group. Show that the elements of finite order in \BookInline{G} form a subgroup. This subgroup is called the\textbf{ torsion subgroup} of \BookInline{G.}}
+
+\noindent Exercises 40 through 43 deal with the concept of the torsion subgroup just defined.
+
+\BookExercise{40.}{Find the order of the torsion subgroup of \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}\times \mathbb{Z}_{3};} of \BookInline{\mathbb{Z}_{12}\times \mathbb{Z}\times \mathbb{Z}_{12}.}}
+
+\BookExercise{41.}{Find the torsion subgroup of the multiplicative group \BookInline{\mathbb{R}^{\ast }} of nonzero real numbers.}
+
+\BookExercise{42.}{Find the torsion subgroup \BookInline{T} of the multiplicative group \BookInline{\mathbb{C}^{\ast }} of nonzero complex numbers.}
+
+\BookExercise{43.}{An abelian group is\textbf{ torsion free} if \BookInline{e} is the only element of finite order. Use Theorem 9.12 to show that every finitely generated abelian group is the internal direct product of its torsion subgroup and of a torsion-free subgroup. (Note that \BookInline{\{e\}} may be the torsion subgroup, and is also torsion free.)}
+
+\BookExercise{44.}{Find the torsion coefficients for each of the following groups.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.\mathbb{Z}_{2}\times \mathbb{Z}_{3}\times \mathbb{Z}_{4}}}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathrm{c}.\mathbb{Z}_{8}\times \mathbb{Z}_{2}\times \mathbb{Z}_{49}\times \mathbb{Z}_{7}}\end{adjustbox}\end{center}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.\mathbb{Z}_{2}\times \mathbb{Z}_{4}\times \mathbb{Z}_{8}\times \mathbb{Z}_{3}\times \mathbb{Z}_{27}}}
+
+\BookExercise{d.}{\BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{4}\times \mathbb{Z}_{2}\times \mathbb{Z}_{3}\times \mathbb{Z}_{3}\times \mathbb{Z}_{9}\times \mathbb{Z}_{5}}}
+
+\BookLabel{\textit{Proof}} \textbf{ Synopsis}
+
+\BookExercise{45.}{Give a two-sentence synopsis of the proof of Theorem 9.5.}
+
+\end{BookBody}
+
+% Continuation on source PDF page 114, preceding Section 10
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{46.}{Prove that a direct product of abelian groups is abelian.}
+
+\BookExercise{47.}{Let \BookInline{G} be an abelian group. Let \BookInline{H} be the subset of \BookInline{G} consisting of the identity \BookInline{e} together with all elements of \BookInline{G} of order 2. Show that \BookInline{H} is a subgroup of \BookInline{G.}}
+
+\BookExercise{48.}{Following up the idea of Exercise 47 determine whether \BookInline{H} will always be a subgroup for every abelian group \BookInline{G} if \BookInline{H} consists of the identity \BookInline{e} together with all elements of \BookInline{G} of order 3; of order 4. For what positive integers \BookInline{n} will \BookInline{H} always be a subgroup for every abelian group \BookInline{G,\allowbreak } if \BookInline{H} consists of the identity \BookInline{e} together with all elements of \BookInline{G} of order \BookInline{n}? Compare with Exercise 54 of Section 5.}
+
+\BookExercise{49.}{Find a counterexample of Exercise 47 with the hypothesis that \BookInline{G} is abelian omitted.}
+
+\noindent Let \BookInline{H} and \BookInline{K} be subgroups of a group \BookInline{G.} Exercises 50 and 51 ask you to establish necessary and sufficient criteria for \BookInline{G} to appear as the internal direct product of \BookInline{H} and \BookInline{K.}
+
+\BookExercise{50.}{Let \BookInline{H} and \BookInline{K} be groups and let \BookInline{G= H\times K.} Recall that both \BookInline{H} and \BookInline{K} appear as subgroups of \BookInline{G} in a natural way. Show that these subgroups \BookInline{H(}actually \BookInline{H\times \{e\})} and \BookInline{K(}actually \BookInline{\{e\}\times K)} have the following properties. \textbf{a.} Every element of \BookInline{G} is of the form \BookInline{hk} for some \BookInline{h\in H} and \BookInline{k\in K.}}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathrm{b}.hk= kh\;\text{for all}\;h\in H\;\text{and}\;k\in K.}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathrm{c}.H\cap K= \{e\}.}\end{adjustbox}\end{center}
+
+\BookExercise{51.}{Let \BookInline{H} and \BookInline{K} be subgroups of a group \BookInline{G} satisfying the three properties listed in the preceding exercise. Show that for each \BookInline{g\in G,\allowbreak } the expression \BookInline{g= hk} for \BookInline{h\in H} and \BookInline{k\in K} is unique. Then let each \BookInline{g} be renamed \BookInline{(h,\allowbreak k).} Show that, under this renaming\BookInline{,\allowbreak G} becomes structurally identical (isomorphic) to \BookInline{H\times K.}}
+
+\BookExercise{52.}{Show that a finite abelian group is not cyclic if and only if it contains a subgroup isomorphic to \BookInline{\mathbb{Z}_{p}\times \mathbb{Z}_{p}} for some prime \BookInline{p.}}
+
+\BookExercise{53.}{Prove that if a finite abelian group has order a power of a prime \BookInline{p,\allowbreak } then the order of every element in the group is a power of \BookInline{p.}}
+
+\BookExercise{54.}{Let \BookInline{G,\allowbreak H,\allowbreak } and \BookInline{K} be finitely generated abelian groups. Show that if \BookInline{G\times K} is isomorphic to \BookInline{H\times K,\allowbreak } then \BookInline{G\simeq H.}}
+
+\BookExercise{55.}{Using the notation of Theorem 9.14, prove that for any finite abelian group \BookInline{G,\allowbreak } every cyclic subgroup of \BookInline{G} has order no more than \BookInline{d_{k},\allowbreak } the largest invariant factor for \BookInline{G.}}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

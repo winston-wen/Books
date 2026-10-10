@@ -1,0 +1,516 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 28 Factorization of Polynomials over a Field}
+\pdfbookmark[0]{Section 28 Factorization of Polynomials over a Field}{28_factorization_of_polynomials_over_a_field}
+\ifdefined\BookMaster\else\setcounter{page}{228}\fi
+% Source PDF page 245; original printed page 228
+\BookSource{245}{228}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{28}{Factorization of Polynomials over a Field}
+
+\noindent Recall that we are concerned with finding zeros of polynomials. Let \BookInline{E} and \BookInline{F} be fields, with \BookInline{F\leq E.} Suppose that \BookInline{f(x)\in F[x]} factors in \BookInline{F[x],\allowbreak } so that \BookInline{f(x)= g(x)h(x)} for \BookInline{g(x),\allowbreak h(x)\in F[x]} and let \BookInline{\alpha \in E.} Now for the evaluation homomorphism \BookInline{\phi _{\alpha },\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(\alpha )= \phi _{\alpha }(f(x))= \phi _{\alpha }(g(x)h(x))= \phi _{\alpha }(g(x))\phi _{\alpha }(h(x))= g(\alpha )h(\alpha ).}\end{adjustbox}\end{center}
+
+\noindent Thus if \BookInline{\alpha \in E,\allowbreak } then \BookInline{f(\alpha )= 0} if and only if either \BookInline{g(\alpha )= 0} or \BookInline{h(\alpha )= 0.} The attempt to find a zero of \BookInline{f(x)} is reduced to the problem of finding a zero of a factor of \BookInline{f(x).} This is one reason why it is useful to study factorization of polynomials.
+
+\BookTextHeading{\textbf{The Division Algorithm in} \textit{\textbf{F}}\textbf{[}\textit{\textbf{x}}\textbf{]}   }
+
+\noindent The following theorem is the basic tool for our work in this section. Note the similarity with the division algorithm for \BookInline{\mathbb{Z}} given in Theorem 6.2, the importance of which has been amply demonstrated.
+
+We prove the following lemma, which is used in our proof of the division algorithm.
+
+\BookLabel{28.1 Lemma} Let \BookInline{F} be a field and \BookInline{f(x),\allowbreak g(x),\allowbreak s(x)\in F[x]} with \BookInline{g(x)\neq 0.} If
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(f(x)- g(x)s(x))\geq \;\text{deg}\;(g(x)),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent then there is a polynomial \BookInline{s_{1}(x)\in F[x]} such that either
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(f(x)- g(x)s_{1}(x))<\;\text{deg}\;(f(x)- g(x)s(x))}\end{adjustbox}\end{center}
+
+\noindent or
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)- g(x)s_{1}(x)= 0.}\end{adjustbox}\end{center}
+
+\BookLabel{\textit{Proof}} Let \BookInline{n= } deg\BookInline{(f(x)- g(x)s(x)).} We can write \BookInline{(f(x)- g(x)s(x))= a_{n}x^{n}+ r(x)} where \BookInline{a_{n}\neq } 0 and either \BookInline{r(x)= 0} or deg\BookInline{(r(x))<n.} Similarly, since \BookInline{g(x)\neq 0,\allowbreak } we can write \BookInline{g(x)= } \BookInline{b_{k}x^{k}+ g_{1}(x)} where \BookInline{b_{k}\neq 0} and either \BookInline{g_{1}(x)= 0} or deg\BookInline{(g_{1}(x))<k.}
+
+We let \BookInline{s_{1}(x)= s(x)+ \frac{a_{n}}{b_{k}}x^{n- k}}. Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}f(x) - g(x)s_1(x) &= f(x) - g(x)s(x) - g(x)\frac{a_n}{b_k}x^{n-k}\\&= a_nx^n + r(x) - b_kx^k\frac{a_n}{b_k}x^{n-k} - g_1(x)\frac{a_n}{b_k}x^{n-k}\\&= r(x) - g_1(x)\frac{a_n}{b_k}x^{n-k}.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Each polynomial \BookInline{r(x)} and \BookInline{g_{1}(x)_{b_{k}}^{a_{n}}x^{n- k}} is either 0 or has degree less than \BookInline{n.} Thus \BookInline{r(x)- g_{1}(x)_{b_{k}}^{a_{n}}x^{n- k}= 0} or deg \BookInline{(r(x)- g_{1}(x)_{b_{k}}^{a_{n}}x^{n- k})<n= \;\text{deg}\;(f(x)- g(x)s(x))}, which completes the proof\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{28.2 Theorem} 
+
+\BookTextHeading{\textbf{(Division Algorithm for} \textit{\textbf{F}}\textbf{[}\textit{\textbf{x}}\textbf{])} Let   }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= a_{n}x^{n}+ a_{n- 1}x^{n- 1}+ \cdots + a_{0}}\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle g(x)= b_{m}x^{m}+ b_{m- 1}x^{m- 1}+ \cdots + b_{0}}\end{adjustbox}\end{center}
+
+\noindent be two elements of \BookInline{F[x],\allowbreak } with \BookInline{a_{n}} and \BookInline{b_{m}} both nonzero elements of \BookInline{F} and \BookInline{m>0.} Then there are unique polynomials \BookInline{q(x)} and \BookInline{r(x)} in \BookInline{F[x]} such that \BookInline{f(x)= g(x)q(x)+ r(x),\allowbreak } where either \BookInline{r(x)= 0} or the degree of \BookInline{r(x)} is less than the degree \BookInline{m} of \BookInline{g(x).}
+
+\end{BookBody}
+
+% Source PDF page 246; original printed page 229
+\BookSource{246}{229}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} Consider the set \BookInline{S= \{f(x)- g(x)s(x)\mid s(x)\in F[x]\}.} If \BookInline{0\in S} then there exists an \BookInline{s(x)} such that \BookInline{f(x)- g(x)s(x)= 0,\allowbreak } so \BookInline{f(x)= g(x)s(x).} Taking \BookInline{q(x)= s(x)} and \BookInline{r(x)= 0,\allowbreak } we are done. Otherwise, let \BookInline{r(x)} be an element of minimal degree in \BookInline{S.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= g(x)q(x)+ r(x)}\end{adjustbox}\end{center}
+
+\noindent for some \BookInline{q(x)\in F[x].} By Lemma 28.1, the degree of \BookInline{r(x)} is less than the degree of \BookInline{g(x)} since if the degree of \BookInline{r(x)} were at least as large as the degree of \BookInline{g(x),\allowbreak } then \BookInline{r(x)} would not have minimal degree in \BookInline{S.}
+
+For uniqueness, if
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= g(x)q_{1}(x)+ r_{1}(x)}\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= g(x)q_{2}(x)+ r_{2}(x),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent then subtracting we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle g(x)[q_{1}(x)- q_{2}(x)]= r_{2}(x)- r_{1}(x).}\end{adjustbox}\end{center}
+
+\noindent Because either \BookInline{r_{2}(x)- r_{1}(x)= 0} or the degree of \BookInline{r_{2}(x)- r_{1}(x)} is less than the degree of \BookInline{g(x),\allowbreak } this can hold only if \BookInline{q_{1}(x)- q_{2}(x)= 0} so \BookInline{q_{1}(x)= q_{2}(x).} Then we must also have \BookInline{r_{2}(x)- r_{1}(x)= 0} so \BookInline{r_{1}(x)= r_{2}(x).}\BookEnd{\blacklozenge}
+
+We can compute the polynomials \BookInline{q(x)} and \BookInline{r(x)} of Theorem 28.2 by long division just as we divided polynomials in \BookInline{\mathbb{R}[x]} in high school.
+
+\BookLabel{28.3 Example} Let us work with polynomials in \BookInline{\mathbb{Z}_{5}[x]} and divide
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= x^{4}- 3x^{3}+ 2x^{2}+ 4x- 1}\end{adjustbox}\end{center}
+
+\noindent by \BookInline{g(x)= x^{2}- 2x+ 3} to find \BookInline{q(x)} and \BookInline{r(x)} of Theorem 28.2. The long division should be easy to follow, but remember that we are in \BookInline{\mathbb{Z}_{5}[x],\allowbreak } so, for example\BookInline{,\allowbreak 4x- (- 3x)= 2x.}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&x^{2}- x- 3 \\ &x^{2}- 2x+ 3x^{4}- 3x^{3}+ 2x^{2}+ 4x- 1 \\ &x^{4}- 2x^{3}+ 3x^{2} \\ &- x^{3}- x^{2}+ 4x \\ &- x^{3}+ 2x^{2}- 3x \\ &- 3x^{2}+ 2x- 1 \\ &- 3x^{2}+ x- 4 \\ &x+ 3\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle q(x)= x^{2}- x- 3,\allowbreak \;\text{and}\;r(x)= x+ 3.}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+We give three important corollaries of Theorem 28.2. The first one appears in high school algebra for the special case \BookInline{F[x]= \mathbb{R}[x].} We phrase our proof in terms of the mapping (homomorphism) approach described in Section 27.
+
+\BookLabel{28.4 Corollary} \textbf{(Factor Theorem)} An element \BookInline{a\in F} is a zero of \BookInline{f(x)\in F[x]} if and only if \BookInline{x- a} is a factor of \BookInline{f(x)} in \BookInline{F[x].}
+
+\BookLabel{\textit{Proof}} Suppose that for \BookInline{a\in F} we have \BookInline{f(a)= 0.} By Theorem 28.2, there exist \BookInline{q(x),\allowbreak } \BookInline{r(x)\in F[x]} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- a)q(x)+ r(x),\allowbreak }\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 247; original printed page 230
+\BookSource{247}{230}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent where either \BookInline{r(x)= 0} or the degree of \BookInline{r(x)} is less than 1. Thus we must have \BookInline{r(x)= c} for \BookInline{c\in F,\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- a)q(x)+ c.}\end{adjustbox}\end{center}
+
+\noindent Applying our evaluation homomorphism\BookInline{,\allowbreak \phi _{a}:F[x]\to F} of Theorem 27.4, we find
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0= f(a)= 0q(a)+ c,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so it must be that \BookInline{c= 0.} Then \BookInline{f(x)= (x- a)q(x),\allowbreak } so \BookInline{x- a} is a factor of \BookInline{f(x).}
+
+Conversely, if \BookInline{x- a} is a factor of \BookInline{f(x)} in \BookInline{F[x],\allowbreak } where \BookInline{a\in F,\allowbreak } then applying our evaluation homomorphism \BookInline{\phi _{a}} to \BookInline{f(x)= (x- a)q(x),\allowbreak } we have \BookInline{f(a)= 0q(a)= 0.\blacklozenge } Working again in \BookInline{\mathbb{Z}_{5}[x],\allowbreak } note that 1 is a zero of
+
+\BookLabel{28.5 Example} 
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (x^{4}+ 3x^{3}+ 2x+ 4)\in \mathbb{Z}_{5}[x].}\end{adjustbox}\end{center}
+
+\noindent Thus by Corollary 28.4, we should be able to factor \BookInline{x^{4}+ 3x^{3}+ 2x+ 4} into \BookInline{(x- 1)q(x)} in \BookInline{\mathbb{Z}_{5}[x].} Let us find the factorization by long division.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&x^{3}+ 4x^{2}+ 4x+ 1 \\ &x- 1x^{4}+ 3x^{3}+ 2x+ 4 \\ &x^{4}- x^{3} \\ &4x^{3} \\ &4x^{3}- 4x^{2} \\ &4x^{2}+ 2x \\ &4x^{2}- 4x \\ &x+ 4 \\ &x- 1 \\ &0\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{x^{4}+ 3x^{3}+ 2x+ 4= (x- 1)(x^{3}+ 4x^{2}+ 4x+ 1)} in \BookInline{\mathbb{Z}_{5}[x].} Since 1 is seen to be a zero of \BookInline{x^{3}+ 4x^{2}+ 4x+ 1} also, we can divide this polynomial by \BookInline{x- 1} and get
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&x^{2}+ 4 \\ &x- 1x^{3}+ 4x^{2}+ 4x+ 1 \\ &x^{3}- x^{2} \\ &0+ 4x+ 1 \\ &4x- 4 \\ &0\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{x^{2}+ 4} still has 1 as a zero, we can divide again by \BookInline{x- 1} and get
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&x+ 1 \\ &x- 1x^{2}+ 4 \\ &x^{2}- x \\ &x+ 4 \\ &x- 1 \\ &0\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{x^{4}+ 3x^{3}+ 2x+ 4= (x- 1)^{3}(x+ 1)} in \BookInline{\mathbb{Z}_{5}[x].} \BookEnd{\blacktriangle}
+
+\noindent The next corollary should also look familiar.
+
+\end{BookBody}
+
+% Source PDF page 248; original printed page 231
+\BookSource{248}{231}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{28.6 Corollary} A nonzero polynomial \BookInline{f(x)\in F[x]} of degree \BookInline{n} can have at most \BookInline{n} zeros in a field \BookInline{F.}
+
+\BookLabel{\textit{Proof}} The preceding corollary shows that if \BookInline{a_{1}\in F} is a zero of \BookInline{f(x),\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- a_{1})q_{1}(x),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where, of course, the degree of \BookInline{q_{1}(x)} is \BookInline{n- 1.} A zero \BookInline{a_{2}\in F} of \BookInline{q_{1}(x)} then results in a factorization
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- a_{1})(x- a_{2})q_{2}(x).}\end{adjustbox}\end{center}
+
+\noindent Continuing this process, we arrive at
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- a_{1})\cdots (x- a_{r})q_{r}(x),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{q_{r}(x)} has no further zeros in \BookInline{F.} Since the degree of \BookInline{f(x)} is \BookInline{n,\allowbreak } at most \BookInline{n} factors \BookInline{(x- a_{i})} can appear on the right-hand side of the preceding equation, so \BookInline{r\leq n.} Also, if \BookInline{b\neq a_{i}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak r} and \BookInline{b\in F,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(b)= (b- a_{1})\cdots (b- a_{r})q_{r}(b)\neq  0,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent since \BookInline{F} has no divisors of 0 and none of \BookInline{b- a_{i}} or \BookInline{q_{r}(b)} are 0 by construction. Hence the \BookInline{a_{i}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak r\leq n} are all the zeros in \BookInline{F} of \BookInline{f(x).}\BookEnd{\blacklozenge}
+
+Our final corollary is concerned with the structure of the multiplicative group \BookInline{F^{\ast }} of nonzero elements of a field \BookInline{F,\allowbreak } rather than with factorization in \BookInline{F[x].} It may at first seem surprising that such a result follows from the division algorithm in \BookInline{F[x],\allowbreak } but recall that the result that a subgroup of a cyclic group is cyclic follows from the division algorithm in \BookInline{\mathbb{Z}.}
+
+\BookLabel{28.7 Corollary} If \BookInline{G} is a finite subgroup of the multiplicative group \BookInline{\langle F^{\ast },\allowbreak \cdot \rangle } of a field \BookInline{F,\allowbreak } then \BookInline{G} is cyclic. In particular, the multiplicative group of all nonzero elements of a finite field is cyclic.
+
+\BookLabel{\textit{Proof}} By Theorem 9.12 as a finite abelian group\BookInline{,\allowbreak G} is isomorphic to a direct product \BookInline{\mathbb{Z}_{d_{1}}\times } \BookInline{\mathbb{Z}_{d_{2}}\times \cdots \times \mathbb{Z}_{d_{r}}}, where each \BookInline{d_{i}} is a power of a prime. Let us think of each of the \BookInline{\mathbb{Z}_{d_{i}}} as a cyclic group of order \BookInline{d_{i}} in\textit{ multiplicative} notation. Let \BookInline{m} be the least common multiple of all the \BookInline{d_{i}} for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak r;} note that \BookInline{m\leq d_{1}d_{2}\cdots d_{r}.} If \BookInline{a_{i}\in \mathbb{Z}_{d_{t}}}, then \BookInline{a_{i}^{d_{i}}= 1}, so \BookInline{a_{i}^{m}= 1} since \BookInline{d_{i}} divides \BookInline{m.} Thus for all \BookInline{\alpha \in G,\allowbreak } we have \BookInline{\alpha ^{m}= 1,\allowbreak } so every element of \BookInline{G} is zero of \BookInline{x^{m}- 1.} But \BookInline{G} has \BookInline{d_{1}d_{2}\cdots d_{r}} elements, while \BookInline{x^{m}- 1} can have at most \BookInline{m} zeros in the field \BookInline{F} by Corollary 28.6, so \BookInline{m\geq d_{1}d_{2}\cdots d_{r}.} Hence \BookInline{m= d_{1}d_{2}\cdots d_{r},\allowbreak } so the primes involved in the prime powers \BookInline{d_{1},\allowbreak d_{2},\allowbreak \cdots,\allowbreak d_{r}} are distinct, and the group \BookInline{G} is isomorphic to the cyclic group \BookInline{\mathbb{Z}_{m}.}\BookEnd{\blacklozenge}
+
+Exercises 5 through 8 ask us to find all generators of the cyclic groups of units for some finite fields. The fact that the multiplicative group of units of a finite field is cyclic has been applied in algebraic coding and combinatorial designs.
+
+\BookTextHeading{\textbf{Irreducible Polynomials}  }
+
+\noindent Our next definition singles out a type of polynomial in \BookInline{F[x]} that will be of utmost importance to us. The concept is probably already familiar. We really\textit{ are} doing high school algebra in a more general setting.
+
+\BookLabel{28.8 Definition} A nonconstant polynomial \BookInline{f(x)\in F[x]} is\textbf{ irreducible over} \BookInline{F} or is an\textbf{ irreducible} \textbf{polynomial in} \BookInline{F[x]} if \BookInline{f(x)} cannot be expressed as a product \BookInline{g(x)h(x)} of two polynomials \BookInline{g(x)} and \BookInline{h(x)} in \BookInline{F[x]} both of lower degree than the degree of \BookInline{f(x).} If \BookInline{f(x)\in F[x]} is a nonconstant polynomial that is not irreducible over \BookInline{F,\allowbreak } then \BookInline{f(x)} is\textbf{ reducible} \textbf{over} \BookInline{F.}\BookEnd{\blacksquare}
+
+\end{BookBody}
+
+% Source PDF page 249; original printed page 232
+\BookSource{249}{232}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Note that the preceding definition concerns the concept\textit{ irreducible over} \BookInline{F} and not just the concept\textit{ irreducible}. A polynomial \BookInline{f(x)} may be irreducible over \BookInline{F,\allowbreak } but may not be irreducible if viewed over a larger field \BookInline{E} containing \BookInline{F.} We illustrate this.
+
+\BookLabel{28.9 Example} Theorem 27.11 shows that \BookInline{x^{2}- 2} viewed in \BookInline{\mathbb{Q}[x]} has no zeros in \BookInline{\mathbb{Q}.} This shows that \BookInline{x^{2}- 2} is irreducible over \BookInline{\mathbb{Q},\allowbreak } for a factorization \BookInline{x^{2}- 2= (}\textit{ax} \BookInline{+ b)(cx+ d)} for \BookInline{a,\allowbreak b,\allowbreak c,\allowbreak } \BookInline{d\in \mathbb{Q}} would give rise to zeros of \BookInline{x^{2}- 2} in \BookInline{\mathbb{Q}.} However, \BookInline{x^{2}- 2} viewed in \BookInline{\mathbb{R}[x]} is not irreducible over \BookInline{\mathbb{R},\allowbreak } because \BookInline{x^{2}- 2} factors in \BookInline{\mathbb{R}[x]} into \BookInline{(x- \sqrt{2})(x+ \sqrt{2}).}\BookEnd{\blacktriangle}
+
+It is worthwhile to remember that\textit{ the units in} \BookInline{F[x]} \textit{are precisely the nonzero ele}\textit{ments of} \BookInline{F.} Thus we could have defined an irreducible polynomial \BookInline{f(x)} as a nonconstant polynomial such that in any factorization \BookInline{f(x)= g(x)h(x)} in \BookInline{F[x],\allowbreak } either \BookInline{g(x)} or \BookInline{h(x)} is a unit.
+
+\BookLabel{28.10 Example} Let us show that \BookInline{f(x)= x^{3}+ 3x+ 2} viewed in \BookInline{\mathbb{Z}_{5}[x]} is irreducible over \BookInline{\mathbb{Z}_{5}.} If \BookInline{x^{3}+ 3x+ } 2 factored in \BookInline{\mathbb{Z}_{5}[x]} into polynomials of lower degree then there would exist at least one linear factor of \BookInline{f(x)} of the form \BookInline{x- a} for some \BookInline{a\in \mathbb{Z}_{5}.} But then \BookInline{f(a)} would be 0, by Corollary 28.4. However\BookInline{,\allowbreak f(0)= 2,\allowbreak f(1)= 1,\allowbreak f(- 1)= - 2,\allowbreak f(2)= 1,\allowbreak } and \BookInline{f(- 2)= - 2,\allowbreak } showing that \BookInline{f(x)} has no zeros in \BookInline{\mathbb{Z}_{5}.} Thus \BookInline{f(x)} is irreducible over \BookInline{\mathbb{Z}_{5}.} This test for irreducibility by finding zeros works nicely for quadratic and cubic polynomials over a finite field with a small number of elements\BookInline{.}\BookEnd{\blacktriangle}
+
+Irreducible polynomials will play a very important role in our work from now on. The problem of determining whether a given \BookInline{f(x)\in F[x]} is irreducible over \BookInline{F} may be difficult. We now give some criteria for irreducibility that are useful in certain cases. One technique for determining irreducibility of quadratic and cubic polynomials was illustrated in Examples 28.9 and 28.10. We formalize it in a theorem.
+
+\BookLabel{28.11 Theorem} Let \BookInline{f(x)\in F[x],\allowbreak } and let \BookInline{f(x)} be of degree 2 or 3. Then \BookInline{f(x)} is reducible over \BookInline{F} if and only if it has a zero in \BookInline{F.}
+
+\BookLabel{\textit{Proof}} If \BookInline{f(x)} is reducible so that \BookInline{f(x)= g(x)h(x),\allowbreak } where the degree of \BookInline{g(x)} and the degree of \BookInline{h(x)} are both less than the degree of \BookInline{f(x),\allowbreak } then since \BookInline{f(x)} is either quadratic or cubic, either \BookInline{g(x)} or \BookInline{h(x)} is of degree 1. If, say\BookInline{,\allowbreak g(x)} is of degree 1, then except for a possible factor in \BookInline{F,\allowbreak g(x)} is of the form \BookInline{x- a.} Then \BookInline{g(a)= 0,\allowbreak } which implies that \BookInline{f(a)= 0,\allowbreak } so \BookInline{f(x)} has a zero in \BookInline{F.}
+
+Conversely, Corollary 28.4 shows that if \BookInline{f(a)= 0} for \BookInline{a\in F,\allowbreak } then \BookInline{x- a} is a factor of \BookInline{f(x),\allowbreak } so \BookInline{f(x)} is reducible\BookInline{.}\BookEnd{\blacklozenge}
+
+We turn to some conditions for irreducibility over \BookInline{\mathbb{Q}} of polynomials in \BookInline{\mathbb{Q}[x].} The most important condition that we shall give is contained in the next theorem. The proof is to be worked out in Exercises 38–40.
+
+\BookLabel{28.12 Theorem} If \BookInline{f(x)\in \mathbb{Z}[x],\allowbreak } then \BookInline{f(x)} factors into a product of two polynomials of lower degrees \BookInline{r} and \BookInline{s} in \BookInline{\mathbb{Q}[x]} if and only if it has such a factorization with polynomials of the same degrees \BookInline{r} and \BookInline{s} in \BookInline{\mathbb{Z}[x].}\BookEnd{\blacklozenge}
+
+\BookLabel{28.13 Corollary} If \BookInline{f(x)= x^{n}+ a_{n- 1}x^{n- 1}+ \cdots + a_{0}} is in \BookInline{\mathbb{Z}[x]} with \BookInline{a_{0}\neq 0,\allowbreak } and if \BookInline{f(x)} has a zero in \BookInline{\mathbb{Q},\allowbreak } then it has a zero \BookInline{m} in \BookInline{\mathbb{Z},\allowbreak } and \BookInline{m} must divide \BookInline{a_{0}.}
+
+\BookLabel{\textit{Proof}} If \BookInline{f(x)} has a zero \BookInline{a} in \BookInline{\mathbb{Q},\allowbreak } then \BookInline{f(x)} has a linear factor \BookInline{x- a} in \BookInline{\mathbb{Q}[x]} by Corollary 28.4. But then by Theorem \BookInline{28.12,\allowbreak f(x)} has a factorization with a linear factor in \BookInline{\mathbb{Z}[x],\allowbreak } so for some \BookInline{m\in \mathbb{Z}} we must have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- m)\Big(x^{n- 1}+ \cdots - a_{0}/m\Big).}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{a_{0}/m} is in \BookInline{\mathbb{Z},\allowbreak } so \BookInline{m} divides \BookInline{a_{0}.} \BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 250; original printed page 233
+\BookSource{250}{233}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{28.14 Example} Corollary 28.13 gives us another proof of the irreducibility of \BookInline{x^{2}- 2} over \BookInline{\mathbb{Q},\allowbreak } for \BookInline{x^{2}- 2} factors nontrivially in \BookInline{\mathbb{Q}[x]} if and only if it has a zero in \BookInline{\mathbb{Q}} by Theorem 28.11. By Corollary 28.13, it has a zero in \BookInline{\mathbb{Q}} if and only if it has a zero in \BookInline{\mathbb{Z},\allowbreak } and moreover the only possibilities are the divisors \BookInline{\pm 1} and \BookInline{\pm 2} of 2. A quick check shows that none of these numbers is a zero of \BookInline{x^{2}- 2.}\BookEnd{\blacktriangle}
+
+\BookLabel{28.15 Example} Let us use Theorem 28.12 to show that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= x^{4}- 2x^{2}+ 8x+ 1}\end{adjustbox}\end{center}
+
+\noindent viewed in \BookInline{\mathbb{Q}[x]} is irreducible over \BookInline{\mathbb{Q}.} If \BookInline{f(x)} has a linear factor in \BookInline{\mathbb{Q}[x],\allowbreak } then it has a zero in \BookInline{\mathbb{Z},\allowbreak } and by Corollary 28.13, this zero would have to be a divisor in \BookInline{\mathbb{Z}} of 1, that is, either \BookInline{\pm 1.} But \BookInline{f(1)= 8,\allowbreak } and \BookInline{f(- 1)= - 8,\allowbreak } so such a factorization is impossible.
+
+If \BookInline{f(x)} factors into two quadratic factors in \BookInline{\mathbb{Q}[x],\allowbreak } then by Theorem 28.12, it has a factorization.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (x^{2}+ ax+ b)(x^{2}+ cx+ d)}\end{adjustbox}\end{center}
+
+\noindent in \BookInline{\mathbb{Z}[x].} Equating coefficients of powers of \BookInline{x,\allowbreak } we find that we must have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle bd= 1,\allowbreak ad+ bc= 8,\allowbreak ac+ b+ d= - 2,\allowbreak \;\text{and}\;a+ c= 0}\end{adjustbox}\end{center}
+
+\noindent for integers \BookInline{a,\allowbreak b,\allowbreak c,\allowbreak d\in \mathbb{Z}.} From \BookInline{bd= 1,\allowbreak } we see that either \BookInline{b= d= 1} or \BookInline{b= d= - 1.} In any case\BookInline{,\allowbreak b= d} and from \BookInline{ad+ bc= 8,\allowbreak } we deduce that \BookInline{d(a+ c)= 8.} But this is impossible since \BookInline{a+ c= 0.} Thus a factorization into two quadratic polynomials is also impossible and \BookInline{f(x)} is irreducible over \BookInline{\mathbb{Q}.}\BookEnd{\blacktriangle}
+
+We conclude our irreducibility criteria with the famous Eisenstein criterion for irreducibility. An additional very useful criterion is given in Exercise 37.
+
+\BookLabel{28.16 Theorem} \textbf{(Eisenstein Criterion)} Let \BookInline{p\in \mathbb{Z}} be a prime. Suppose that \BookInline{f(x)= a_{n}x^{n}+ \cdots + a_{0}} is in \BookInline{\mathbb{Z}[x],\allowbreak } and \BookInline{a_{n}\not \equiv 0(}mod \BookInline{p),\allowbreak } but \BookInline{a_{i}\equiv 0(}mod \BookInline{p)} for all \BookInline{i<n,\allowbreak } with \BookInline{a_{0}\not \equiv 0(}mod \BookInline{p^{2}).} Then \BookInline{f(x)} is irreducible over \BookInline{\mathbb{Q}.}
+
+\BookLabel{\textit{Proof}} By Theorem 28.12 we need only show that \BookInline{f(x)} does not factor into polynomials of lower degree in \BookInline{\mathbb{Z}[x].} If
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= \Big(b_{r}x^{r}+ \cdots + b_{0}\Big)\Big(c_{s}x^{s}+ \cdots + c_{0}\Big)}\end{adjustbox}\end{center}
+
+\noindent is a factorization in \BookInline{\mathbb{Z}[x],\allowbreak } with \BookInline{b_{r}\neq 0,\allowbreak c_{s}\neq 0} and \BookInline{r,\allowbreak s<n,\allowbreak } then \BookInline{a_{0}\not \equiv 0(}mod \BookInline{p^{2})} implies that \BookInline{b_{0}} and \BookInline{c_{0}} are not both congruent to 0 modulo \BookInline{p.} Suppose that \BookInline{b_{0}\not \equiv 0(}mod \BookInline{p)} and \BookInline{c_{0}\equiv 0(}mod \BookInline{p).} Now \BookInline{a_{n}\not \equiv 0(}mod \BookInline{p)} implies that \BookInline{b_{r},\allowbreak c_{s}\not \equiv 0(}mod \BookInline{p),\allowbreak } since \BookInline{a_{n}= b_{r}c_{s}.} Let \BookInline{m} be the smallest value of \BookInline{k} such that \BookInline{c_{k}\not \equiv 0(}mod \BookInline{p).} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a _ { m } = b _ { 0 } c _ { m } + b _ { 1 } c _ { m - 1 } + \cdots + \left\{ \begin{aligned} { } & { { } b _ { m } c _ { 0 } \; \mathrm { i f } \; r \geq m ,\allowbreak  } \\ { } & { { } b _ { r } c _ { m - r } \; \mathrm { i f } \; r < m . } \end{aligned} \right.}\end{adjustbox}\end{center}
+
+\noindent The fact that neither \BookInline{b_{0}} nor \BookInline{c_{m}} are congruent to 0 modulo \BookInline{p} while \BookInline{c_{m- 1},\allowbreak \cdots,\allowbreak c_{0}} are all congruent to 0 modulo \BookInline{p} implies that \BookInline{a_{m}\not \equiv 0} modulo \BookInline{p,\allowbreak } so \BookInline{m= n.} Consequently\BookInline{,\allowbreak s= n,\allowbreak } contradicting our assumption that \BookInline{s<n;} that is, that our factorization was nontrivial. \BookEnd{\blacklozenge}
+
+Note that if we take \BookInline{p= 2,\allowbreak } the Eisenstein criterion gives us still another proof of the irreducibility of \BookInline{x^{2}- 2} over \BookInline{\mathbb{Q}.}
+
+\BookLabel{28.17 Example} Taking \BookInline{p= 3,\allowbreak } we see by Theorem 28.16 that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 25x^{5}- 9x^{4}- 3x^{2}- 12}\end{adjustbox}\end{center}
+
+\noindent is irreducible over \BookInline{\mathbb{Q}.} \BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 251; original printed page 234
+\BookSource{251}{234}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{28.18 Corollary} The polynomial
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Phi _ { p } ( x ) = { \frac { x ^ { p } - 1 } { x - 1 } } = x ^ { p - 1 } + x ^ { p - 2 } + \cdots + x + 1}\end{adjustbox}\end{center}
+
+\noindent is irreducible over \BookInline{\mathbb{Q}} for any prime \BookInline{p.}
+
+\BookLabel{\textit{Proof}} Again by Theorem 28.12, we need only consider factorizations in \BookInline{\mathbb{Z}[x].} We remarked following Theorem 27.4 that its proof actually shows that evaluation homomorphisms can be used for commutative rings. Here we want to use the evaluation homomorphism \BookInline{\phi _{x+ 1}:\mathbb{Q}[x]\to \mathbb{Q}[x].} It is natural for us to denote \BookInline{\phi _{x+ 1}(f(x))} by \BookInline{f(x+ 1)} for \BookInline{f(x)\in \mathbb{Q}[x].} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle g ( x ) = \Phi _ { p } ( x + 1 ) = { \frac { ( x + 1 ) ^ { p } - 1 } { ( x + 1 ) - 1 } } = { \frac { x ^ { p } + \left( \begin{matrix} { p } \\ { 1 } \end{matrix} \right) x ^ { p - 1 } + \cdots + p x } { x } } .}\end{adjustbox}\end{center}
+
+\noindent The coefficient of \BookInline{x^{p- r}} for \BookInline{0<r<p} is the binomial coefficient \BookInline{p!/[r!(p- r)!],\allowbreak } which is divisible by \BookInline{p} because \BookInline{p} divides \BookInline{p}! but does not divide either \BookInline{r}! or \BookInline{(p- r)}! when \BookInline{0<r<p.} Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle g(x) = x^{p - 1} + \binom{p}{1} x^{p - 2} + \cdots + p}\end{adjustbox}\end{center}
+
+\noindent satisfies the Eisenstein criterion for the prime \BookInline{p} and is thus irreducible over \BookInline{\mathbb{Q}.} But if \BookInline{\Phi _{p}(x)= h(x)r(x)} were a nontrivial factorization of \BookInline{\Phi _{p}(x)} in \BookInline{\mathbb{Z}[x],\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Phi _{p}(x+ 1)= g(x)= h(x+ 1)r(x+ 1)}\end{adjustbox}\end{center}
+
+\noindent would give a nontrivial factorization of \BookInline{g(x)} in \BookInline{\mathbb{Z}[x].} Thus \BookInline{\Phi _{p}(x)} must also be irreducible over \BookInline{\mathbb{Q}.}\BookEnd{\blacklozenge}
+
+The polynomial \BookInline{\Phi _{p}(x)} in Corollary 28.18 is the \BookInline{p}\textbf{th cyclotomic polynomial.}
+
+\BookTextHeading{\textbf{Uniqueness of Factorization in} \textit{\textbf{F}}\textbf{[}\textit{\textbf{x}}\textbf{]}   }
+
+\noindent Polynomials in \BookInline{F[x]} can be factored into a product of irreducible polynomials in \BookInline{F[x]} in an essentially unique way. For \BookInline{f(x),\allowbreak g(x)\in F[x]} we say that \BookInline{g(x)} \textbf{divides} \BookInline{f(x)} \textbf{in} \BookInline{F[x]} if there exists \BookInline{q(x)\in F[x]} such that \BookInline{f(x)= g(x)q(x).} Note the similarity of the theorem that follows with Property (1) for \BookInline{\mathbb{Z}} following Example 6.9.
+
+\BookLabel{28.19 Theorem} Let \BookInline{p(x)} be an irreducible polynomial in \BookInline{F[x].} If \BookInline{p(x)} divides \BookInline{r(x)s(x)} for \BookInline{r(x),\allowbreak s(x)\in } \BookInline{F[x],\allowbreak } then either \BookInline{p(x)} divides \BookInline{r(x)} or \BookInline{p(x)} divides \BookInline{s(x).}
+
+\BookLabel{\textit{Proof}} We delay the proof of this theorem to Section 31. (See Theorem 31.27.) \BookEnd{\blacklozenge}
+
+\BookLabel{28.20 Corollary} If \BookInline{p(x)} is irreducible in \BookInline{F[x]} and \BookInline{p(x)} divides the product \BookInline{r_{1}(x)\cdots r_{n}(x)} for \BookInline{r_{i}(x)\in F[x],\allowbreak } then \BookInline{p(x)} divides \BookInline{r_{i}(x)} for at least one \BookInline{i.}
+
+\BookLabel{\textit{Proof}} Using mathematical induction, we find that this is immediate from Theorem \BookInline{28.19.}\BookEnd{\blacklozenge}
+
+\BookLabel{28.21 Theorem} If \BookInline{F} is a field, then every nonconstant polynomial \BookInline{f(x)\in F[x]} can be factored in \BookInline{F[x]} into a product of irreducible polynomials, the irreducible polynomials being unique except for order and for unit (that is, nonzero constant) factors in \BookInline{F.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{f(x)\in F[x]} be a nonconstant polynomial. If \BookInline{f(x)} is not irreducible, then \BookInline{f(x)= } \BookInline{g(x)h(x),\allowbreak } with the degree of \BookInline{g(x)} and the degree of \BookInline{h(x)} both less than the degree of \BookInline{f(x).}
+
+\end{BookBody}
+
+% Source PDF page 252; original printed page 235
+\BookSource{252}{235}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent If \BookInline{g(x)} and \BookInline{h(x)} are both irreducible, we stop here. If not, at least one of them factors into polynomials of lower degree. Continuing this process, we arrive at a factorization
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= p_{1}(x)p_{2}(x)\cdots p_{r}(x),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{p_{i}(x)} is irreducible for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak r.}
+
+It remains for us to show uniqueness. Suppose that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= p_{1}(x)p_{2}(x)\cdots p_{r}(x)= q_{1}(x)q_{2}(x)\cdots q_{s}(x)}\end{adjustbox}\end{center}
+
+\noindent are two factorizations of \BookInline{f(x)} into irreducible polynomials. Then by Corollary 28.20, \BookInline{p_{1}(x)} divides some \BookInline{q_{j}(x),\allowbreak } let us assume \BookInline{q_{1}(x).} Since \BookInline{q_{1}(x)} is irreducible,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle q_{1}(x)= u_{1}p_{1}(x),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{u_{1}\neq 0,\allowbreak } but \BookInline{u_{1}} is in \BookInline{F} and thus is a unit. Then substituting \BookInline{u_{1}p_{1}(x)} for \BookInline{q_{1}(x)} and canceling, we get
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle p_{2}(x)\cdots p_{r}(x)= u_{1}q_{2}(x)\cdots q_{s}(x).}\end{adjustbox}\end{center}
+
+\noindent By a similar argument, say \BookInline{q_{2}(x)= u_{2}p_{2}(x),\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle p_{3}(x)\cdots p_{r}(x)= u_{1}u_{2}q_{3}(x)\cdots q_{s}(x).}\end{adjustbox}\end{center}
+
+\noindent Continuing in this manner, we eventually arrive at
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 1= u_{1}u_{2}\cdots u_{r}q_{r+ 1}(x)\cdots q_{s}(x).}\end{adjustbox}\end{center}
+
+\noindent This is only possible if \BookInline{s= r,\allowbreak } so that this equation is actually \BookInline{1= u_{1}u_{2}\cdots u_{r}.} Thus the irreducible factors \BookInline{p_{i}(x)} and \BookInline{q_{j}(x)} were the same except possibly for order and unit factors\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{28.22 Example} Example 28.5 shows a factorization of \BookInline{x^{4}+ 3x^{3}+ 2x+ 4} in \BookInline{\mathbb{Z}_{5}[x]} is \BookInline{(x- 1)^{3}(x+ 1).} These irreducible factors in \BookInline{\mathbb{Z}_{5}[x]} are only unique up to units in \BookInline{\mathbb{Z}_{5}[x],\allowbreak } that is, nonzero constants in \BookInline{\mathbb{Z}_{5}.} For example\BookInline{,\allowbreak (x- 1)^{3}(x+ 1)= (x- 1)^{2}(2x- 2)(3x+ 3).}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{28} \BookEnd{\blacksquare}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 4, find \BookInline{q(x)} and \BookInline{r(x)} as described by the division algorithm so that \BookInline{f(x)= g(x)q(x)+ r(x)} with \BookInline{r(x)= 0} or of degree less than the degree of \BookInline{g(x).}
+
+\BookExercise{1.}{\BookInline{f(x)= x^{6}+ 3x^{5}+ 4x^{2}- 3x+ 2} and \BookInline{g(x)= x^{2}+ 2x- 3} in \BookInline{\mathbb{Z}_{7}[x].}}
+
+\BookExercise{2.}{\BookInline{f(x)= x^{6}+ 3x^{5}+ 4x^{2}- 3x+ 2} and \BookInline{g(x)= 3x^{2}+ 2x- 3} in \BookInline{\mathbb{Z}_{7}[x].}}
+
+\BookExercise{3.}{\BookInline{f(x)= x^{5}- 2x^{4}+ 3x- 5} and \BookInline{g(x)= 2x+ 1} in \BookInline{\mathbb{Z}_{11}[x].}}
+
+\BookExercise{4.}{\BookInline{f(x)= x^{4}+ 5x^{3}- 3x^{2}} and \BookInline{g(x)= 5x^{2}- x+ 2} in \BookInline{\mathbb{Z}_{11}[x].}}
+
+\noindent In Exercises 5 through 8, find all generators of the cyclic multiplicative group of units of the given finite field. (Review Corollary 6.17.)
+
+\BookExercise{5.}{\BookInline{\mathbb{Z}_{5}}}
+
+\BookExercise{6.}{\BookInline{\mathbb{Z}_{7}}}
+
+\BookExercise{7.}{\BookInline{\mathbb{Z}_{17}}}
+
+\BookExercise{8.}{\BookInline{\mathbb{Z}_{23}}}
+
+\BookExercise{9.}{The polynomial \BookInline{x^{4}+ 4} can be factored into linear factors in \BookInline{\mathbb{Z}_{5}[x].} Find this factorization.}
+
+\BookExercise{10.}{The polynomial \BookInline{x^{3}+ 2x^{2}+ 2x+ 1} can be factored into linear factors in \BookInline{\mathbb{Z}_{7}[x].} Find this factorization.}
+
+\BookExercise{11.}{The polynomial \BookInline{2x^{3}+ 3x^{2}- 7x- 5} can be factored into linear factors in \BookInline{\mathbb{Z}_{11}[x].} Find this factorization.}
+
+\BookExercise{12.}{Is \BookInline{x^{3}+ 2x+ 3} an irreducible polynomial of \BookInline{\mathbb{Z}_{5}[x]}? Why? Express it as a product of irreducible polynomials of \BookInline{\mathbb{Z}_{5}[x].}}
+
+\end{BookBody}
+
+% Source PDF page 253; original printed page 236
+\BookSource{253}{236}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{13.}{Is \BookInline{2x^{3}+ x^{2}+ 2x+ 2} an irreducible polynomial in \BookInline{\mathbb{Z}_{5}[x]}? Why? Express it as a product of irreducible polynomials in \BookInline{\mathbb{Z}_{5}[x].}}
+
+\BookExercise{14.}{Show that \BookInline{f(x)= x^{2}+ 8x- 2} is irreducible over \BookInline{\mathbb{Q}.} Is \BookInline{f(x)} irreducible over \BookInline{\mathbb{R}}? Over \BookInline{\mathbb{C}}?}
+
+\BookExercise{15.}{Repeat Exercise 14 with \BookInline{g(x)= x^{2}+ 6x+ 12} in place of \BookInline{f(x).}}
+
+\BookExercise{16.}{Demonstrate that \BookInline{x^{3}+ 3x^{2}- 8} is irreducible over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{17.}{Demonstrate that \BookInline{x^{4}- 22x^{2}+ 1} is irreducible over \BookInline{\mathbb{Q}.}}
+
+\noindent In Exercises 18 through 21, determine whether the polynomial in \BookInline{\mathbb{Z}[x]} satisfies an Eisenstein criterion for irreducibility over \BookInline{\mathbb{Q}.}
+
+\BookExercise{18.}{\BookInline{x^{2}- 12}}
+
+\BookExercise{19.}{\BookInline{8x^{3}+ 6x^{2}- 9x+ 24}}
+
+\BookExercise{20.}{\BookInline{4x^{10}- 9x^{3}+ 24x- 18}}
+
+\BookExercise{21.}{\BookInline{2x^{10}- 25x^{3}+ 10x^{2}- 30}}
+
+\BookExercise{22.}{Find all zeros of \BookInline{6x^{4}+ 17x^{3}+ 7x^{2}+ x- 10} in \BookInline{\mathbb{Q}.(}This is a tedious high school algebra problem.\textit{ You} might use a bit of analytic geometry and calculus and make a graph, or use Newton’s method to see which are the best candidates for zeros.)}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 23 and 24, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{23.}{A polynomial \BookInline{f(x)\in F[x]} is\textit{ irreducible over the} \BookInline{\text{fi}eldF} if and only if \BookInline{f(x)\neq g(x)h(x)} for any polynomials \BookInline{g(x),\allowbreak h(x)\in F[x].}}
+
+\BookExercise{24.}{A nonconstant polynomial \BookInline{f(x)\in F[x]} is\textit{ irreducible over the} \BookInline{\text{fi}eldF} if and only if in any factorization of it in \BookInline{F[x],\allowbreak } one of the factors is in \BookInline{F.}}
+
+\BookExercise{25.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.x- 2} is irreducible over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.3x- 6} is irreducible over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{c.}{\textbf{c}\BookInline{.x^{2}- 3} is irreducible over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{d.}{\textbf{d}\BookInline{.x^{2}+ 3} is irreducible over \BookInline{\mathbb{Z}_{7}.}}
+
+\BookExercise{e.}{If \BookInline{F} is a field, the units of \BookInline{F[x]} are precisely the nonzero elements of \BookInline{F.}}
+
+\BookExercise{f.}{If \BookInline{F} is a field, the units of \BookInline{F(x)} are precisely the nonzero elements of \BookInline{F.}}
+
+\BookExercise{g.}{A polynomial \BookInline{f(x)} of degree \BookInline{n} with coefficients in a field \BookInline{F} can have at most \BookInline{n} zeros in \BookInline{F.}}
+
+\BookExercise{h.}{A polynomial \BookInline{f(x)} of degree \BookInline{n} with coefficients in a field \BookInline{F} can have at most \BookInline{n} zeros in any given field \BookInline{E} such that \BookInline{F\leq E.}}
+
+\BookExercise{i.}{Every polynomial of degree 1 in \BookInline{F[x]} has at least one zero in the field \BookInline{F.}}
+
+\BookExercise{j.}{Each polynomial in \BookInline{F[x]} can have at most a finite number of zeros in the field \BookInline{F.}}
+
+\BookExercise{26.}{Find all prime numbers \BookInline{p} such that \BookInline{x+ 2} is a factor of \BookInline{x^{4}+ x^{3}+ x^{2}- x+ 1} in \BookInline{\mathbb{Z}_{p}[x].}}
+
+\noindent In Exercises 27 through 30, find all irreducible polynomials of the indicated degree in the given ring.
+
+\BookExercise{27.}{Degree 2 in \BookInline{\mathbb{Z}_{2}[x]}}
+
+\BookExercise{28.}{Degree 3 in \BookInline{\mathbb{Z}_{2}[x]}}
+
+\BookExercise{29.}{Degree 2 in \BookInline{\mathbb{Z}_{3}[x]}}
+
+\BookExercise{30.}{Degree 3 in \BookInline{\mathbb{Z}_{3}[x]}}
+
+\BookExercise{31.}{Find the number of irreducible quadratic polynomials in \BookInline{\mathbb{Z}_{p}[x],\allowbreak } where \BookInline{p} is a prime. [\textit{Hint:} Find the number of reducible polynomials of the form \BookInline{x^{2}+ } \textit{ax} \BookInline{+ b,\allowbreak } then the number of reducible quadratics, and subtract this from the total number of quadratics.]}
+
+\BookLabel{\textit{Proof}} \textbf{ Synopsis}
+
+\BookExercise{32.}{Give a synopsis of the proof of Corollary 28.6.}
+
+\BookExercise{33.}{Give a synopsis of the proof of Corollary 28.7.}
+
+\end{BookBody}
+
+% Continuation on source PDF page 254, preceding Section 29
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{34.}{Show that for \BookInline{p} a prime, the polynomial \BookInline{x^{p}+ a} in \BookInline{\mathbb{Z}_{p}[x]} is not irreducible for any \BookInline{a\in \mathbb{Z}_{p}.}}
+
+\BookExercise{35.}{If \BookInline{F} is a field and \BookInline{a\neq 0} is a zero of \BookInline{f(x)= a_{0}+ a_{1}x+ \cdots + a_{n}x^{n}} in \BookInline{F[x],\allowbreak } show that \BookInline{1/a} is a zero of \BookInline{a_{n}+ } \BookInline{a_{n- 1}x+ \cdots + a_{0}x^{n}.}}
+
+\BookExercise{36.}{(Remainder Theorem) Let \BookInline{f(x)\in F[x]} where \BookInline{F} is a field, and let \BookInline{\alpha \in F.} Show that the remainder \BookInline{r(x)} when \BookInline{f(x)} is divided by \BookInline{x- \alpha,\allowbreak } in accordance with the division algorithm, is \BookInline{f(\alpha ).}}
+
+\BookExercise{37.}{Let \BookInline{\sigma _{m}:\mathbb{Z}\to \mathbb{Z}_{m}} be the natural homomorphism given by \BookInline{\sigma _{m}(a)= (}the remainder of \BookInline{a} when divided by \BookInline{m)} for \BookInline{a\in \mathbb{Z}.}}
+
+\BookExercise{a.}{Show that \BookInline{\overline{\sigma _{m}}:\mathbb{Z}[x]\to \mathbb{Z}_{m}[x]} given by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \overline{\sigma _{m}}\Big(a_{0}+ a_{1}x+ \cdots + a_{n}x^{n}\Big)= \sigma _{m}(a_{0})+ \sigma _{m}(a_{1})x+ \cdots + \sigma _{m}(a_{n})x^{n}}\end{adjustbox}\end{center}
+
+is a homomorphism of \BookInline{\mathbb{Z}[x]} onto \BookInline{\mathbb{Z}_{m}[x].}
+
+\BookExercise{b.}{Show that if \BookInline{f(x)\in \mathbb{Z}[x]} and \BookInline{\overline{\sigma _{m}}(f(x))} both have degree \BookInline{n} and \BookInline{\overline{\sigma _{m}}(f(x))} does not factor in \BookInline{\mathbb{Z}_{m}[x]} into two polynomials of degree less than \BookInline{n,\allowbreak } then \BookInline{f(x)} is irreducible in \BookInline{\mathbb{Q}[x].}}
+
+\BookExercise{c.}{Use part (b) to show that \BookInline{x^{3}+ 17x+ 36} is irreducible in \BookInline{\mathbb{Q}[x].[}\textit{Hint:} Try a prime value of \BookInline{m} that simplifies the coefficients.]}
+
+\noindent The goal of Exercises 38 through 40 is to prove Theorem 28.12.
+
+\BookExercise{38.}{Let \BookInline{f(x)\in \mathbb{Z}[x].} We say that \BookInline{f(x)= a_{n}x^{n}+ a_{n- 1}x^{n- 1}+ \cdots + a_{0}} is\textbf{ primitive} if the greatest common divisor of the coefficients \BookInline{a_{0},\allowbreak a_{1},\allowbreak...,\allowbreak a_{n}} is 1. Prove the product of two primitive polynomials is primitive.}
+
+\BookExercise{39.}{Let \BookInline{f(x)\in \mathbb{Z}[x].} The\textbf{ content} of \BookInline{f(x)= a_{n}x^{n}+ a_{n- 1}x^{n- 1}+ \cdots + a_{0}} is defined to be the greatest common divisor of \BookInline{a_{0},\allowbreak a_{1},\allowbreak...,\allowbreak a_{n}} and it is denoted cont\BookInline{(f(x)).} Prove that cont\BookInline{(f(x)g(x))= } cont\BookInline{(f(x))\cdot } cont\BookInline{(g(x))} for any \BookInline{f(x),\allowbreak g(x)\in \mathbb{Z}[x].(}Hint: Use Exercise 38.)}
+
+\BookExercise{40.}{Prove Theorem 28.12. (Hint: Use Exercise 39.)}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

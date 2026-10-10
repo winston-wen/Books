@@ -1,0 +1,405 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 32 Noncommutative Examples}
+\pdfbookmark[0]{Section 32 Noncommutative Examples}{32_noncommutative_examples}
+\ifdefined\BookMaster\else\setcounter{page}{258}\fi
+% Source PDF page 275; original printed page 258
+\BookSource{275}{258}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{32}{Noncommutative Examples\label{bookfootnote:275:2:ref}\BookFootnote{2}{\label{bookfootnote:275:2:text}This section is not used in the remainder of the text.}}
+
+\noindent Thus far, the only example we have presented of a ring that is not commutative is the ring \BookInline{M_{n}(F)} of all \BookInline{n\times n} matrices with entries in a field \BookInline{F.} We shall do almost nothing with noncommutative rings and strictly skew fields. To show that there are other important noncommutative rings occurring very naturally in algebra, we give several examples of such rings.
+
+\BookTextHeading{\textbf{Rings of Endomorphisms}  }
+
+\noindent Let \BookInline{A} be any abelian group. A homomorphism of \BookInline{A} into itself is an\textbf{ endomorphism of} \BookInline{A.} Let the set of all endomorphisms of \BookInline{A} be End\BookInline{(A).} Since the composition of two homomorphisms of \BookInline{A} into itself is again such a homomorphism, we define multiplication on End\BookInline{(A)} by function composition, and thus multiplication is associative.
+
+To define addition, for \BookInline{\phi,\allowbreak \psi \in } End\BookInline{(A),\allowbreak } we have to describe the value of \BookInline{(\phi + \psi )} on each \BookInline{a\in A.} Define
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\phi + \psi )(a)= \phi (a)+ \psi (a).}\end{adjustbox}\end{center}
+
+\noindent Since
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}(\phi + \psi )(a+ b)&= \phi (a+ b)+ \psi (a+ b) \\ &= [\phi (a)+ \phi (b)]+ [\psi (a)+ \psi (b)] \\ &= [\phi (a)+ \psi (a)]+ [\phi (b)+ \psi (b)] \\ &= (\phi + \psi )(a)+ (\phi + \psi )(b)\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent we see that \BookInline{\phi + \psi } is again in End\BookInline{(A).}
+
+Since \BookInline{A} is commutative, we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\phi + \psi )(a)= \phi (a)+ \psi (a)= \psi (a)+ \phi (a)= (\psi + \phi )(a)}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 276; original printed page 259
+\BookSource{276}{259}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent for all \BookInline{a\in A,\allowbreak } so \BookInline{\phi + \psi = \psi + \phi } and addition in End\BookInline{(A)} is commutative. The associativity of addition follows from
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}[\phi + (\psi + \theta )](a)&= \phi (a)+ [(\psi + \theta )(a)] \\ &= \phi (a)+ [\psi (a)+ \theta (a)] \\ &= [\phi (a)+ \psi (a)]+ \theta (a) \\ &= (\phi + \psi )(a)+ \theta (a) \\ &= [(\phi + \psi )+ \theta ](a).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent If \BookInline{e} is the additive identity of \BookInline{A,\allowbreak } then the homomorphism 0 defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0(a)= e}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{a\in A} is an additive identity in End\BookInline{(A).} Finally, for
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi \in \;\text{End}\;(A),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent \BookInline{- \phi } defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (- \phi )(a)= - \phi (a)}\end{adjustbox}\end{center}
+
+\noindent is in End\BookInline{(A),\allowbreak } since
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}(- \phi )(a+ b)&= - \phi (a+ b)= - [\phi (a)+ \phi (b)] \\ &= - \phi (a)- \phi (b)= (- \phi )(a)+ (- \phi )(b),\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent and \BookInline{\phi + (- \phi )= 0.} Thus \BookInline{\langle }End\BookInline{(A),\allowbreak + \rangle } is an abelian group.
+
+Note that we have not yet used the fact that our functions are\textit{ homomorphisms} except to show that \BookInline{\phi + \psi } and \BookInline{- \phi } are again\textit{ homomorphisms}. Thus the set \BookInline{A^{A}} of\textit{ all} \textit{functions} from \BookInline{A} into \BookInline{A} is an abelian group under exactly the same definition of addition, and, of course, function composition again gives a nice associative multiplication in \BookInline{A^{A}.} However, we do need the fact that these functions in End\BookInline{(A)} are homomorphisms now to prove the left distributive law in End\BookInline{(A).} Except for this left distributive law\BookInline{,\allowbreak \langle A^{A},\allowbreak +,\allowbreak \cdot \rangle } satisfies all the axioms for a ring. Let \BookInline{\phi,\allowbreak \psi,\allowbreak } and \BookInline{\theta } be in End\BookInline{(A),\allowbreak } and let \BookInline{a\in A.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\theta (\phi + \psi ))(a)= \theta ((\phi + \psi )(a))= \theta (\phi (a)+ \psi (a)).}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{\theta } is a\textit{ homomorphism,}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\theta (\phi (a)+ \psi (a))&= \theta (\phi (a))+ \theta (\psi (a)) \\ &= (\theta \phi )(a)+ (\theta \psi )(a) \\ &= (\theta \phi + \theta \psi )(a).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{\theta (\phi + \psi )= \theta \phi + \theta \psi.} The right distributive law causes no trouble, even in \BookInline{A^{A},\allowbreak } and follows from
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}((\psi + \theta )\phi )(a)&= (\psi + \theta )(\phi (a))= \psi (\phi (a))+ \theta (\phi (a)) \\ &= (\psi \phi )(a)+ (\theta \phi )(a)= (\psi \phi + \theta \phi )(a).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus we have proved the following theorem.
+
+\BookLabel{32.1 Theorem} The set End\BookInline{(A)} of all endomorphisms of an abelian group \BookInline{A} forms a ring under homomorphism addition and homomorphism multiplication (function composition).
+
+Again, to show relevance to this section, we should give an example showing that End\BookInline{(A)} need not be commutative. Since function composition is in general not commutative, this seems reasonable to expect. However, End\BookInline{(A)} may be commutative in some cases. Indeed, Exercise 15 asks us to show that End\BookInline{(\langle \mathbb{Z},\allowbreak + \rangle )} is commutative.
+
+\end{BookBody}
+
+% Source PDF page 277; original printed page 260
+\BookSource{277}{260}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{32.2 Example} Consider the abelian group \BookInline{\langle \mathbb{Z}\times \mathbb{Z},\allowbreak + \rangle } discussed in Section 9. It is straightforward to verify that two elements of End\BookInline{(\langle \mathbb{Z}\times \mathbb{Z},\allowbreak + \rangle )} are \BookInline{\phi } and \BookInline{\psi } defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi ((m,\allowbreak n))= (m+ n,\allowbreak 0)\;\text{and}\;\psi ((m,\allowbreak n))= (0,\allowbreak n).}\end{adjustbox}\end{center}
+
+\noindent Note that \BookInline{\phi } maps everything onto the first factor of \BookInline{\mathbb{Z}\times \mathbb{Z},\allowbreak } and \BookInline{\psi } collapses the first factor. Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\psi \phi )(m,\allowbreak n)= \psi (m+ n,\allowbreak 0)= (0,\allowbreak 0)}\end{adjustbox}\end{center}
+
+\noindent while
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\phi \psi )(m,\allowbreak n)= \phi (0,\allowbreak n)= (n,\allowbreak 0).}\end{adjustbox}\end{center}
+
+\noindent Hence \BookInline{\phi \psi \neq \psi \phi.} \BookEnd{\blacktriangle}
+
+\BookLabel{32.3 Example} Let \BookInline{F} be a field of characteristic zero, and let \BookInline{\langle F[x],\allowbreak + \rangle } be the additive group of the ring \BookInline{F[x]} of polynomials with coefficients in \BookInline{F.} For this example, let us denote this additive group by \BookInline{F[x],\allowbreak } to simplify this notation. We can consider End\BookInline{(F[x]).} One element of End\BookInline{(F[x])} acts on each polynomial in \BookInline{F[x]} by multiplying it by \BookInline{x.} Let this endomorphism be \BookInline{X,\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle X\Big(a_{0}+ a_{1}x+ a_{2}x^{2}+ \cdots + a_{n}x^{n}\Big)= a_{0}x+ a_{1}x^{2}+ a_{2}x^{3}+ \cdots + a_{n}x^{n+ 1}.}\end{adjustbox}\end{center}
+
+\noindent Another element of End\BookInline{(F[x])} is formal differentiation with respect to \BookInline{x.(}The familiar formula “the derivation of a sum is the sum of the derivatives” guarantees that differentiation is an endomorphism of \BookInline{F[x].)} Let \BookInline{Y} be this endomorphism, so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle Y\Big(a_{0}+ a_{1}x+ a_{2}x^{2}+ \cdots + a_{n}x^{n}\Big)= a_{1}+ 2a_{2}x+ \cdots + na_{n}x^{n- 1}.}\end{adjustbox}\end{center}
+
+\noindent Exercise 17 asks us to show that \BookInline{YX- XY= 1,\allowbreak } where 1 is unity (the identity map) in End\BookInline{(F[x]).} Thus \BookInline{XY\neq YX.} Multiplication of polynomials in \BookInline{F[x]} by any element of \BookInline{F} also gives an element of End \BookInline{(F[x]).} The subring of End\BookInline{(F[x])} generated by \BookInline{X} and \BookInline{Y} and multiplications by elements of \BookInline{F} is the\textbf{ Weyl algebra} and is important in quantum mechanics\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Group Rings and Group Algebras}  }
+
+\noindent Let \BookInline{G= \{g_{i}\mid i\in I\}} be any group written multiplicatively and let \BookInline{R} be any commutative ring with nonzero unity. Let \BookInline{RG} be the set of all\textit{ formal sums}.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sum _{i\in I}a_{i}g_{i}}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{a_{i}\in R} and \BookInline{g_{i}\in G,\allowbreak } \textit{where all but} \BookInline{a} \textit{finite number of the} \BookInline{a_{i}} \textit{are 0}. Define the sum of two elements of \BookInline{RG} by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Big(\sum _{i\in I}a_{i}g_{i}\Big)+ \Big(\sum _{i\in I}b_{i}g_{i}\Big)= \sum _{i\in I}(a_{i}+ b_{i})g_{i}.}\end{adjustbox}\end{center}
+
+\noindent Observe that \BookInline{(a_{i}+ b_{i})= 0} except for a finite number of indices \BookInline{i,\allowbreak } so \BookInline{\Sigma _{i\in I}(a_{i}+ b_{i})g_{i}} is again in \BookInline{RG.} It is immediate that \BookInline{\langle RG,\allowbreak + \rangle } is an abelian group with additive identity \BookInline{\Sigma _{i\in I}0g_{i}.}
+
+Multiplication of two elements of \BookInline{RG} is defined by the use of the multiplications in \BookInline{G} and \BookInline{R} as follows:
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Big(\sum _{i\in I}a_{i}g_{i}\Big)\Big(\sum _{i\in I}b_{i}g_{i}\Big)= \sum _{i\in I}\Big(_{g_{j}}\sum _{g_{k}= g_{i}}a_{j}b_{k}\Big)g_{i}.}\end{adjustbox}\end{center}
+
+\noindent Naively, we formally distribute the sum \BookInline{\Sigma _{i\in I}a_{i}g_{i}} over the sum \BookInline{\Sigma _{i\in I}b_{i}g_{i}} and rename a term \BookInline{a_{j}g_{j}b_{k}g_{k}} by \BookInline{a_{j}b_{k}g_{i}} where \BookInline{g_{j}g_{k}= g_{i}} in \BookInline{G.} Since \BookInline{a_{i}} and \BookInline{b_{i}} are 0 for all but a finite 
+% Source PDF page 278; original printed page 261
+\BookSource{278}{261}
+number of \BookInline{i,\allowbreak } the sum \BookInline{\Sigma _{g_{j}g_{k}= g_{i}}a_{j}b_{k}} contains only a finite number of nonzero summands \BookInline{a_{j}b_{k}\in R} and may thus be viewed as an element of \BookInline{R.} Again, at most a finite number of such sums \BookInline{\Sigma _{g_{j}g_{k}= g_{i}}a_{j}b_{k}} are nonzero. Thus multiplication is closed on \BookInline{RG.}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+The distributive laws follow at once from the definition of addition and the formal way we used distributivity to define multiplication. For the associativity of multiplication
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\Bigg( \sum_{i \in I} a_i g_i \Bigg) \Bigg[ \Bigg( \sum_{i \in I} b_i g_i \Bigg) \Bigg( \sum_{i \in I} c_i g_i \Bigg) \Bigg] &= \Bigg( \sum_{i \in I} a_i g_i \Bigg) \Bigg[ \sum_{i \in I} \Bigg( \sum_{g_j g_k = g_i} b_j c_k \Bigg) g_i \Bigg] \\&= \sum_{i \in I} \Bigg( \sum_{g_k g_j g_k = g_i} a_h b_j c_k \Bigg) g_i \\&= \Bigg[ \sum_{i \in I} \Bigg( \sum_{g_h g_j = g_i} a_h b_j \Bigg) g_i \Bigg] \Bigg( \sum_{i \in I} c_i g_i \Bigg) \\&= \Bigg[ \Bigg( \sum_{i \in I} a_i g_i \Bigg) \Bigg( \sum_{i \in I} b_i g_i \Bigg) \Bigg] \Bigg( \sum_{i \in I} c_i g_i \Bigg).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus we have proved the following theorem.
+
+\BookLabel{32.4 Theorem} If \BookInline{G} is any group written multiplicatively and \BookInline{R} is a commutative ring with nonzero unity, then \BookInline{\langle RG,\allowbreak +,\allowbreak \cdot \rangle } is a ring.
+
+Corresponding to each \BookInline{g\in G,\allowbreak } we have an element \BookInline{1g} in \BookInline{RG.} If we identify (rename) \BookInline{1g} with \BookInline{g,\allowbreak } we see that \BookInline{\langle RG,\allowbreak \cdot \rangle } can be considered to contain \BookInline{G} naturally as a multiplicative subsystem. Thus, if \BookInline{G} is not abelian\BookInline{,\allowbreak RG} is not a commutative ring.
+
+\BookLabel{32.5 Definition} The ring \BookInline{RG} defined above is the\textbf{ group ring of} \BookInline{G} \textbf{over} \BookInline{R.} If \BookInline{F} is a field, then \BookInline{FG} is the \textbf{group algebra of} \BookInline{G} \textbf{over} \BookInline{F.}\BookEnd{\blacksquare}
+
+\BookLabel{32.6 Example} Let us give the addition and multiplication tables for the group algebra \BookInline{\mathbb{Z}_{2}G,\allowbreak } where \BookInline{G= \{e,\allowbreak a\}} is cyclic of order 2. The elements of \BookInline{Z_{2}G} are
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0e+ 0a,\allowbreak 0e+ 1a,\allowbreak 1e+ 0a,\allowbreak \;\text{and}\;1e+ 1a.}\end{adjustbox}\end{center}
+
+\noindent If we denote these elements in the obvious, natural way by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0,\allowbreak a,\allowbreak e,\allowbreak \;\text{and}\;e+ a,\allowbreak }\end{adjustbox}\end{center}
+
+\begin{BookFloat}{32_noncommutative_examples-p278-11}
+\begin{center}
+\begin{minipage}[t]{.48\linewidth}\centering\textbf{32.7 Table}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c|cccc}
+$+$&$0$&$a$&$e$&$e+a$\\\hline
+$0$&$0$&$a$&$e$&$e+a$\\\hline
+$a$&$a$&$0$&$e+a$&$e$\\\hline
+$e$&$e$&$e+a$&$0$&$a$\\\hline
+$e+a$&$e+a$&$e$&$a$&$0$
+\end{tabular}\end{adjustbox}\end{minipage}\hfill
+\begin{minipage}[t]{.48\linewidth}\centering\textbf{32.8 Table}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c|cccc}
+&$0$&$a$&$e$&$e+a$\\\hline
+$0$&$0$&$0$&$0$&$0$\\\hline
+$a$&$0$&$e$&$a$&$e+a$\\\hline
+$e$&$0$&$a$&$e$&$e+a$\\\hline
+$e+a$&$0$&$e+a$&$e+a$&$0$
+\end{tabular}\end{adjustbox}\end{minipage}
+\end{center}
+\end{BookFloat}
+
+\noindent respectively, we get Tables 32.7 and 32.8. For example, to see that \BookInline{(e+ a)(e+ a)= 0,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (1e+ 1a)(1e+ 1a)= (1+ 1)e+ (1+ 1)a= 0e+ 0a.}\end{adjustbox}\end{center}
+
+\noindent This example shows that a group algebra may have 0 divisors. Indeed, this is usually the case. \BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 279; original printed page 262
+\BookSource{279}{262}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{The Quaternions}  }
+
+\noindent We have not yet given an example of a noncommutative division ring. The\textit{ quaternions} of Hamilton are the standard example of a strictly skew field; let us describe them.
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent Sir William Rowan Hamilton (1805–1865) discovered quaternions in 1843 while he was searching for a way to multiply number triplets (vectors in \BookInline{\mathbb{R}^{3}).} Six years earlier he had developed the complex numbers abstractly as pairs \BookInline{(a,\allowbreak b)} of real numbers with addition \BookInline{(a,\allowbreak b)+ (a^{\prime }+ b^{\prime })= } \BookInline{(a+ a^{\prime },\allowbreak b+ b^{\prime })} and multiplication \BookInline{(a,\allowbreak b)(a^{\prime }b^{\prime })= } \BookInline{(aa^{\prime }- bb^{\prime },\allowbreak ab^{\prime }+ a^{\prime }b);} he was then looking for an analogous multiplication for 3-vectors that was distributive and such that the length of the product vector was the product of the lengths of the factors. After many unsuccessful attempts to multiply vectors of the form \BookInline{a+ } \textit{bi} \BookInline{+ cj(}where \BookInline{1,\allowbreak i,\allowbreak j} are mutually perpendicular), he realized while walking along the Royal Canal in Dublin on October 16, 1843, that he needed a new “imaginary symbol” \BookInline{k} to be perpendicular to the other three elements. He could not “resist the impulse... to cut with a knife on a stone of Brougham Bridge” the fundamental defining formulas for multiplying these quaternions.
+
+The quaternions were the first known example of a strictly skew field. Though many others were subsequently discovered, it was eventually noted that none were finite. In 1909 Joseph Henry Maclagan Wedderburn (1882–1948), then a preceptor at Princeton University, gave the first proof of Theorem 32.10.
+
+Let the set \BookInline{\mathbb{H},\allowbreak } for Hamilton, be \BookInline{\mathbb{R}\times \mathbb{R}\times \mathbb{R}\times \mathbb{R}.} Now \BookInline{\langle \mathbb{R}\times \mathbb{R}\times \mathbb{R}\times \mathbb{R},\allowbreak + \rangle } is a group under addition by components, the direct product of \BookInline{\mathbb{R}} under addition with itself four times. This gives the operation of addition on \BookInline{\mathbb{H}.} Let us rename certain elements of \BookInline{\mathbb{H}.} We shall let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}1&= (1,\allowbreak 0,\allowbreak 0,\allowbreak 0),\allowbreak i= (0,\allowbreak 1,\allowbreak 0,\allowbreak 0),\allowbreak  \\ j&= (0,\allowbreak 0,\allowbreak 1,\allowbreak 0),\allowbreak \;\text{and}\;k= (0,\allowbreak 0,\allowbreak 0,\allowbreak 1).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent We furthermore agree to let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}a_{1}&= (a_{1},\allowbreak 0,\allowbreak 0,\allowbreak 0),\allowbreak a_{2}i= (0,\allowbreak a_{2},\allowbreak 0,\allowbreak 0),\allowbreak  \\ a_{3}j&= (0,\allowbreak 0,\allowbreak a_{3},\allowbreak 0)\;\text{and}\;a_{4}k= (0,\allowbreak 0,\allowbreak 0,\allowbreak a_{4}).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent In view of our definition of addition, we then have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a_{1},\allowbreak a_{2},\allowbreak a_{3},\allowbreak a_{4})= a_{1}+ a_{2}i+ a_{3}j+ a_{4}k.}\end{adjustbox}\end{center}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&(a_{1}+ a_{2}i+ a_{3}j+ a_{4}k)+ (b_{1}+ b_{2}i+ b_{3}j+ b_{4}k) \\ &= (a_{1}+ b_{1})+ (a_{2}+ b_{2})i+ (a_{3}+ b_{3})j+ (a_{4}+ b_{4})k.\end{aligned}}\end{adjustbox}\end{center}
+
+We now give Hamilton’s fundamental formulas for multiplication in \BookInline{\mathbb{H},\allowbreak } We start by defining
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}1a&= a1= a\;\text{for}\;a\in \mathbb{H},\allowbreak  \\ i^{2}&= j^{2}= k^{2}= - 1,\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle ij= k,\allowbreak jk= i,\allowbreak ki= j,\allowbreak ji= - k,\allowbreak kj= - i,\allowbreak \;\text{and}\;ik= - j.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 280; original printed page 263
+\BookSource{280}{263}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent Note the similarity with the so-called cross product of vectors. These formulas are easy to remember if we think of the sequence
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle i,\allowbreak j,\allowbreak k,\allowbreak i,\allowbreak j,\allowbreak k.}\end{adjustbox}\end{center}
+
+\noindent The product from left to right of two adjacent elements is the next one to the right. The product from right to left of two adjacent elements is the negative of the next one to the left. We then define a product to be what it must be to make the distributive laws hold, namely,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&(a_{1}+ a_{2}i+ a_{3}j+ a_{4}k)(b_{1}+ b_{2}i+ b_{3}j+ b_{4}k) \\ &= (a_{1}b_{1}- a_{2}b_{2}- a_{3}b_{3}- a_{4}b_{4})+ (a_{1}b_{2}+ a_{2}b_{1}+ a_{3}b_{4}- a_{4}b_{3})i \\ &+ (a_{1}b_{3}- a_{2}b_{4}+ a_{3}b_{1}+ a_{4}b_{2})j \\ &+ (a_{1}b_{4}+ a_{2}b_{3}- a_{3}b_{2}+ a_{4}b_{1})k.\end{aligned}}\end{adjustbox}\end{center}
+
+Exercise 19 shows that the quaternions are isomorphic to a subring of \BookInline{M_{2}(\mathbb{C}),\allowbreak } so multiplication is associative. Since \BookInline{ij= k} and \BookInline{ji= - k,\allowbreak } we see that multiplication is not commutative, so \BookInline{\mathbb{H}} is definitely not a field. Turning to the existence of multiplicative inverses, let \BookInline{a= a_{1}+ a_{2}i+ a_{3}j+ a_{4}k,\allowbreak } with not all \BookInline{a_{i}= 0.} Computation shows that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a_{1}+ a_{2}i+ a_{3}j+ a_{4}k)(a_{1}- a_{2}i- a_{3}j- a_{4}k)= a_{1}^{2}+ a_{2}^{2}+ a_{3}^{2}+ a_{4}^{2}.}\end{adjustbox}\end{center}
+
+\noindent If we let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle |a|^{2}= a_{1}^{2}+ a_{2}^{2}+ a_{3}^{2}+ a_{4}^{2}\;\text{and}\;\overline{a}= a_{1}- a_{2}i- a_{3}j- a_{4}k,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent we see that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \frac{\bar{a}}{|a|^{2}} = \frac{a_{1}}{|a|^{2}} - \bigg(\frac{a_{2}}{|a|^{2}}\bigg)i - \bigg(\frac{a_{3}}{|a|^{2}}\bigg)j - \bigg(\frac{a_{4}}{|a|^{2}}\bigg)k}\end{adjustbox}\end{center}
+
+\noindent is a multiplicative inverse for \BookInline{a.} We have demonstrated the following theorem.
+
+\BookLabel{32.9 Theorem} The quaternions \BookInline{\mathbb{H}} form a strictly skew field under addition and multiplication\BookInline{.}\BookEnd{\blacklozenge}
+
+Note that \BookInline{G= \{\pm 1,\allowbreak \pm i,\allowbreak \pm j,\allowbreak \pm k\}} is a group of order 8 under quaternion multiplication. This group is generated by \BookInline{i} and \BookInline{j,\allowbreak } where
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle i^{4}= 1,\allowbreak j^{2}= i^{2}\;\text{and}\;ji= i^{3}j.}\end{adjustbox}\end{center}
+
+\noindent The group \BookInline{G} is not cyclic. Recall that Corollary 28.7 states that if \BookInline{F} is a field and \BookInline{H} is a finite subgroup of the multiplicative group \BookInline{F^{\ast },\allowbreak } then \BookInline{H} is cyclic. This example shows that Corollary 28.7 cannot be generalized to skew fields.
+
+There are no finite strictly skew fields. This is the content of a famous theorem of Wedderburn, which we state without proof.
+
+\BookLabel{32.10 Theorem} \textbf{(Wedderburn’s Theorem)} Every finite division ring is a field.
+
+\BookLabel{\textit{Proof}} See Artin, Nesbitt, and Thrall [24] for a proof of Wedderburn’s theorem. \BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{32}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 3, let \BookInline{G= \{e,\allowbreak a,\allowbreak b\}} be a cyclic group of order 3 with identity element \BookInline{e.} Write the element in the group algebra \BookInline{\mathbb{Z}_{5}G} in the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle re+ sa+ tb\;\text{for}\;r,\allowbreak s,\allowbreak t\in \mathbb{Z}_{5}.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 281; original printed page 264
+\BookSource{281}{264}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{1.}{\BookInline{(2e+ 3a+ 0b)+ (4e+ 2a+ 3b)}}
+
+\BookExercise{2.}{\BookInline{(2e+ 3a+ 0b)(4e+ 2a+ 3b)}}
+
+\BookExercise{3.}{\BookInline{(3e+ 3a+ 3b)^{4}}}
+
+\noindent In Exercises 4 through 7, write the element of \BookInline{\mathbb{H}} in the form \BookInline{a_{1}+ a_{2}i+ a_{3}j+ a_{4}k} for \BookInline{a_{i}\in \mathbb{R}.}
+
+\BookExercise{4.}{\BookInline{(i+ 3j)(4+ 2j- k)}}
+
+\BookExercise{5.}{\BookInline{i^{2}j^{3}kji^{5}}}
+
+\BookExercise{6.}{\BookInline{(i+ j)^{- 1}}}
+
+\BookExercise{7.}{\BookInline{[(1+ 3i)(4j+ 3k)]^{- 1}}}
+
+\BookExercise{8.}{Referring to the dihedral group \BookInline{D_{3}= \{\iota,\allowbreak \rho,\allowbreak \rho ^{2},\allowbreak \mu,\allowbreak \mu \rho,\allowbreak \mu \rho ^{2}\}} as defined in Section 4, compute the product}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (0\iota + 1\rho + 0(\rho ^{2})+ 0\mu + 1(\mu \rho )+ 1(\mu \rho ^{2}))(1\iota + 1\rho + 0(\rho ^{2})+ 1\mu + 0(\mu \rho )+ 1(\mu \rho ^{2}))}\end{adjustbox}\end{center}
+
+in the group ring \BookInline{\mathbb{Z}_{2}D_{3}.}
+
+\BookExercise{9.}{Find the center of the group \BookInline{\langle \mathbb{H}^{\ast },\allowbreak \cdot \rangle,\allowbreak } where \BookInline{\mathbb{H}^{\ast }} is the set of nonzero quaternions.}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{10.}{Find two subsets of \BookInline{\mathbb{H}} different from \BookInline{\mathbb{C}} and from each other, each of which is a field isomorphic to \BookInline{\mathbb{C}} under the induced addition and multiplication from \BookInline{\mathbb{H}.}}
+
+\BookExercise{11.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.M_{n}(F)} has no divisors of 0 for any \BookInline{n} and any field \BookInline{F.}}
+
+\BookExercise{b.}{Every nonzero element of \BookInline{M_{2}(\mathbb{Z}_{2})} is a unit.}
+
+\BookExercise{c.}{End\BookInline{(A)} is always a ring with unity\BookInline{\neq 0} for every abelian group \BookInline{A.}}
+
+\BookExercise{d.}{End\BookInline{(A)} is never a ring with unity\BookInline{\neq 0} for any abelian group \BookInline{A.}}
+
+\BookExercise{e.}{The subset Iso\BookInline{(A)} of End\BookInline{(A),\allowbreak } consisting of the isomorphisms of \BookInline{A} onto \BookInline{A,\allowbreak } forms a subring of End\BookInline{(A)} for every abelian group \BookInline{A.}}
+
+\BookExercise{f.}{\textbf{f}\BookInline{.R\langle \mathbb{Z},\allowbreak + \rangle } is isomorphic to \BookInline{\langle Z,\allowbreak +,\allowbreak \cdot \rangle } for every commutative ring \BookInline{R} with unity.}
+
+\BookExercise{g.}{The group ring \BookInline{RG} of an abelian group \BookInline{G} is a commutative ring for any commutative ring \BookInline{R} with unity.}
+
+\BookExercise{h.}{The quaternions are a field.}
+
+\BookExercise{i.}{\textbf{i}\BookInline{.\langle \mathbb{H}^{\ast },\allowbreak \cdot \rangle } is a group where \BookInline{\mathbb{H}^{\ast }} is the set of nonzero quaternions.}
+
+\BookExercise{j.}{No subring of \BookInline{\mathbb{H}} is a field.}
+
+\BookExercise{12.}{Show each of the following by giving an example.}
+
+\BookExercise{a.}{A polynomial of degree \BookInline{n} with coefficients in a strictly skew field may have more than \BookInline{n} zeros in the skew field.}
+
+\BookExercise{b.}{A finite multiplicative subgroup of a strictly skew field need not be cyclic.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{13.}{Let \BookInline{\phi } be the element of End\BookInline{(\langle \mathbb{Z}\times \mathbb{Z},\allowbreak + \rangle )} given in Example 32.2. That example showed that \BookInline{\phi } is a right divisor of 0. Show that \BookInline{\phi } is also a left divisor of 0.}
+
+\BookExercise{14.}{Show that \BookInline{M_{2}(F)} has at least six units for every field \BookInline{F.} Exhibit these units. [Hint\BookInline{:F} has at least two elements, 0 and 1.]}
+
+\BookExercise{15.}{Show that End \BookInline{(\langle \mathbb{Z},\allowbreak + \rangle )} is naturally isomorphic to \BookInline{\langle \mathbb{Z},\allowbreak +,\allowbreak \cdot \rangle } and that End\BookInline{(\langle \mathbb{Z}_{n},\allowbreak + \rangle )} is naturally isomorphic to \BookInline{\langle \mathbb{Z}_{n},\allowbreak +,\allowbreak \cdot \rangle.}}
+
+\BookExercise{16.}{Show that End\BookInline{(\langle \mathbb{Z}_{2}\times \mathbb{Z}_{2},\allowbreak + \rangle )} is not isomorphic to \BookInline{\langle \mathbb{Z}_{2}\times \mathbb{Z}_{2},\allowbreak +,\allowbreak \cdot \rangle.}}
+
+\BookExercise{17.}{Referring to Example 32.3, show that \BookInline{YX- XY= 1.}}
+
+\BookExercise{18.}{If \BookInline{G= \{e\},\allowbreak } the group of one element, show that \BookInline{RG} is isomorphic to \BookInline{R} for any ring \BookInline{R.}}
+
+\BookExercise{19.}{There exists a matrix \BookInline{K\in M_{2}(\mathbb{C})} such that \BookInline{\phi:\mathbb{H}\to M_{2}(\mathbb{C})} defined by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi ( a + b i + c j + d k ) = a \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} + b \begin{bmatrix} 0 & 1 \\ - 1 & 0 \end{bmatrix} + c \begin{bmatrix} 0 & i \\ i & 0 \end{bmatrix} + d K ,\allowbreak }\end{adjustbox}\end{center}
+
+for all \BookInline{a,\allowbreak b,\allowbreak c,\allowbreak d\in \mathbb{R},\allowbreak } gives an isomorphism of \BookInline{\mathbb{H}} with \BookInline{\phi [\mathbb{H}].}
+
+\end{BookBody}
+
+% Source PDF page 282; original printed page 265
+\BookSource{282}{265}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{a.}{Find the matrix \BookInline{K.}}
+
+\BookExercise{b.}{What 8 equations should you check to see that \BookInline{\phi } really is a homomorphism?}
+
+\BookExercise{c.}{What other thing should you check to show that \BookInline{\phi } gives an isomorphism of \BookInline{\mathbb{H}} with \BookInline{\phi [\mathbb{H}]}?}
+
+\BookExercise{20.}{Let \BookInline{R} be a ring with unity, let \BookInline{a\in R,\allowbreak } and let \BookInline{\lambda _{a}:R\to R} be given by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \lambda _{a}(x)= ax}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{x\in R.}
+
+\BookExercise{a.}{Show that \BookInline{\lambda _{a}} is an endomorphism of \BookInline{\langle R,\allowbreak + \rangle.}}
+
+\BookExercise{b.}{Show that \BookInline{R^{\prime }= \{\lambda _{a}\mid a\in R\}} is a subring of End\BookInline{(\langle R,\allowbreak + \rangle ).}}
+
+\BookExercise{c.}{Prove the analogue of Cayley’s theorem for \BookInline{R} by showing that \BookInline{R^{\prime }} of (b) is isomorphic to \BookInline{R.}}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

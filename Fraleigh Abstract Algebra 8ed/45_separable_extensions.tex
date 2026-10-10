@@ -1,0 +1,385 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 45 Separable Extensions}
+\pdfbookmark[0]{Section 45 Separable Extensions}{45_separable_extensions}
+\ifdefined\BookMaster\else\setcounter{page}{357}\fi
+% Source PDF page 374; original printed page 357
+\BookSource{374}{357}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{45}{Separable Extensions}
+
+\BookTextHeading{\textbf{Counting Zeros of Irreducible Polynomials}  }
+
+\noindent There is a technical issue in Galois theory that we have not yet discussed. Is it possible for an irreducible polynomial \BookInline{f(x)} over a field \BookInline{F} to have fewer than deg\BookInline{(f(x))} zeros in a splitting field over \BookInline{F}? We will see, for essentially all the fields we will consider, that the answer is no. We start with a calculus-based proof of this fact for subfields of the complex numbers.
+
+\BookLabel{45.1 Theorem} Let \BookInline{f(x)} be an irreducible polynomial of degree \BookInline{n} with coefficients in the field \BookInline{F\leq \mathbb{C}.} Then the splitting field for \BookInline{f(x)} over \BookInline{F} contains \BookInline{n} distinct zeros of \BookInline{f(x).}
+
+\BookLabel{\textit{Proof}} We can assume that the coefficient of \BookInline{x^{n}} is 1. We can also assume that \BookInline{n\geq 2} since otherwise the theorem is trivially true. Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= x^{n}+ a_{n- 1}x^{n- 1}+ \cdots + a_{1}x+ a_{0}.}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{\mathbb{C}} is algebraically closed, we can write \BookInline{f(x)= (x- \alpha _{1})(x- \alpha _{2})...(x- \alpha _{n})} where \BookInline{\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}} are the zeros of \BookInline{f(x)} in \BookInline{\mathbb{C}.} Since \BookInline{f(x)} is monic and irreducible\BookInline{,\allowbreak f(x)} is the minimal polynomial over \BookInline{F} for \BookInline{\alpha _{k}.} We show that no two of the \BookInline{\alpha _{k}} are equal. We use proof by contradiction and assume that two of the \BookInline{\alpha _{k}} are equal. Then in \BookInline{\mathbb{C}[x],\allowbreak f(x)= } \BookInline{(x- \alpha _{k})^{2}q(x)} for some polynomial \BookInline{q(x).} Since we are considering polynomials over \BookInline{\mathbb{C},\allowbreak } we can use the derivative of a polynomial, which we denote in the standard way as \BookInline{f^{\prime }(x).} The product rule gives
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f^{\prime }(x)= 2(x- \alpha _{k})q(x)+ (x- \alpha _{k})^{2}q^{\prime }(x)= (x- \alpha _{k})(2q(x)+ (x- \alpha _{k})q^{\prime }(x)).}\end{adjustbox}\end{center}
+
+Therefore \BookInline{\alpha _{k}} is a zero of \BookInline{f^{\prime }(x).} By the usual formula for the derivative of a polynomial
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f^{\prime }(x)= nx^{n- 1}+ (n- 1)a_{n- 1}x^{n- 2}+ \cdots + a_{1}}\end{adjustbox}\end{center}
+
+\noindent and \BookInline{f^{\prime }(x)\in F[x].} Since \BookInline{f^{\prime }(x)} has degree \BookInline{n- 1\geq 1} and \BookInline{\alpha _{k}} is a zero of \BookInline{f^{\prime }(x),\allowbreak f(x)} is not the minimal polynomial for \BookInline{\alpha _{k}} over \BookInline{F.} This gives a contradiction and proves that the \BookInline{\alpha _{k}} are distinct.
+
+We can construct a splitting field of \BookInline{f(x)} over \BookInline{F} as a subfield of \BookInline{\mathbb{C}.} So a splitting field for \BookInline{f(x)} over \BookInline{F} contains \BookInline{n} distinct zeros for \BookInline{f(x).} Since splitting fields are unique up to isomorphism, in any splitting field for \BookInline{f(x)} over \BookInline{F,\allowbreak f(x)} has \BookInline{n} distinct zeros\BookInline{.}\BookEnd{\blacklozenge}
+
+Although the above proof applies to a special (but very important) case, essentially the same proof can be used for any field of characteristic zero. We can simply define the derivative of any polynomial \BookInline{f(x)= a_{0}+ a_{1}x+ a_{2}x^{2}+ \cdots + a_{n}x^{n}\in F[x]} to be
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle D(f)(x)= f^{\prime }(x)= a_{1}+ (2\cdot a_{2})x+ (3\cdot a_{3})x^{2}+ \cdots + (n\cdot a_{n})x^{n- 1},\allowbreak }\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 375; original printed page 358
+\BookSource{375}{358}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent where an integer times an element in a field has the usual meaning. In calculus this formula is derived using the limit definition of derivatives. For our purposes, we simply use this formula as the definition of the derivative\BookInline{,\allowbreak D(f)(x)= f^{\prime }(x).} Exercise 15 in Section 42 uses this definition to prove the product rule and other essential rules that are required for the proof of Theorem 45.1. Exercise 13 in this Section asks for the details of the proof of Theorem 45.2.
+
+\BookLabel{45.2 Theorem} Let \BookInline{f(x)} be an irreducible polynomial of degree \BookInline{n} with coefficients in a field \BookInline{F} of characteristic zero. Then \BookInline{f(x)} contains \BookInline{n} distinct zeros in the splitting field for \BookInline{f(x)} over \BookInline{F.}
+
+\BookLabel{\textit{Proof}} See Exercise 13. \BookEnd{\blacklozenge}
+
+\BookLabel{45.3 Definition} Let \BookInline{f(x)\in F[x],\allowbreak } and let \BookInline{\alpha } be a zero of \BookInline{f(x)} in a splitting field \BookInline{E} over \BookInline{F.} If \BookInline{\nu } is the largest positive integer such that \BookInline{(x- \alpha )^{\nu }} is a factor of \BookInline{f(x)} in \BookInline{E[x],\allowbreak } then \BookInline{\alpha } \textbf{is a zero of} \BookInline{f(x)} \textbf{with multiplicity} \BookInline{\nu.}\BookEnd{\blacksquare}
+
+Definition 45.3 does not specify which splitting field over \BookInline{F} is to be used. It can be any splitting field that contains \BookInline{\alpha.} In Exercise 19, you are asked to show that the definition is independent of which splitting field is used. An equivalent statement of Theorem 45.2 is that if \BookInline{f(x)} is an irreducible polynomial with coefficients in a field \BookInline{F} of characteristic 0, then every zero of \BookInline{f(x)} in any splitting field over \BookInline{F} has multiplicity one.
+
+\BookTextHeading{\textbf{Characteristic} \textit{\textbf{p}}  }
+
+\noindent We have seen that for irreducible polynomials over a field \BookInline{F} of characteristic zero, zeros of multiplicity two or greater cannot occur. We now turn our attention to the case where the characteristic is not zero.
+
+\BookLabel{45.4 Theorem} Let \BookInline{F} be a finite field of characteristic \BookInline{p.} Any irreducible polynomial \BookInline{f(x)\in F[x]} has \BookInline{k= } deg\BookInline{(f(x))} distinct zeros in its splitting field.
+
+\BookLabel{\textit{Proof}} Let \BookInline{E\leq \overline{F}} be the splitting field of \BookInline{f(x)} over \BookInline{F} and \BookInline{\alpha } a zero \BookInline{f(x)} in \BookInline{E.} Then \BookInline{|E|= p^{n},\allowbreak } for some \BookInline{n.} We can assume that the leading coefficient of \BookInline{f(x)} is 1. Therefore \BookInline{f(x)} is the minimal polynomial for \BookInline{\alpha } over \BookInline{F.} By Theorem \BookInline{42.3,\allowbreak \alpha } is a zero of the polynomial \BookInline{x^{p^{n}}- x,\allowbreak } which implies that \BookInline{f(x)} divides \BookInline{x^{p^{n}}- x.} The \BookInline{p^{n}} zeros of \BookInline{x^{p^{n}}- x} are distinct in the algebraic closure \BookInline{\overline{E}} by Lemma 42.8, so the linear factors of
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= (x- \alpha _{1})(x- \alpha _{2})\cdots (x- \alpha _{k})}\end{adjustbox}\end{center}
+
+\noindent must also be distinct in \BookInline{E,\allowbreak } and therefore\BookInline{,\allowbreak f(x)} has \BookInline{k} distinct zeros in its splitting field. \BookEnd{\blacklozenge}
+
+Theorems 45.2 and 45.4 say that any irreducible polynomial \BookInline{f(x)\in F[x],\allowbreak } where the field \BookInline{F} is either finite or it has characteristic zero, has deg\BookInline{(f(x))} distinct zeros of multiplicity one in its splitting field over \BookInline{F.} The next example shows that this is not the case for all infinite fields of characteristic \BookInline{p.}
+
+\BookLabel{45.5 Example} Let \BookInline{p} be a prime and \BookInline{E= \mathbb{Z}_{p}(y),\allowbreak } where \BookInline{y} is an indeterminate. We let \BookInline{F= \mathbb{Z}_{p}(y^{p})\leq E.} For convenience, we let \BookInline{t= y^{p},\allowbreak } so \BookInline{F= \mathbb{Z}_{p}(t).} The extension \BookInline{E} over \BookInline{F} is algebraic since \BookInline{y} is a zero of the polynomial \BookInline{x^{p}- t.} By Corollary 39.14, irr\BookInline{(y,\allowbreak F)} divides \BookInline{x^{p}- t.} We can factor \BookInline{x^{p}- t} in E as
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{p}- t= x^{p}- y^{p}= (x- y)^{p},\allowbreak }\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 376; original printed page 359
+\BookSource{376}{359}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent since we are in characteristic \BookInline{p.} Furthermore\BookInline{,\allowbreak y\notin F,\allowbreak } so the degree of irr\BookInline{(y,\allowbreak F)} is at least two. Therefore the number of distinct zeros of irr\BookInline{(y,\allowbreak F)} is one, but its degree is greater than one, showing that the finite assumption in Theorem 45.4 is necessary\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Counting Automorphisms}  }
+
+\noindent Our goal is to associate intermediate fields in a field extension \BookInline{F\leq K} with subgroups of the group of automorphisms of \BookInline{K} that fix \BookInline{F.} In order to apply this correspondence, it is very helpful to know the number of automorphisms under consideration. Knowing that all irreducible polynomials in \BookInline{F} have zeros of multiplicity one in a splitting field \BookInline{K} gives us the information we need to count the automorphisms in \BookInline{G(K/F).}
+
+\BookLabel{45.6 Definition} An irreducible polynomial \BookInline{f(x)\in F[x]} of degree \BookInline{n} is\textbf{ separable} if in the splitting field \BookInline{K} of \BookInline{f(x)} over \BookInline{F,\allowbreak f(x)} has \BookInline{n} distinct zeros. An element \BookInline{\alpha } in an extension field of \BookInline{F} is \textbf{separable} if irr\BookInline{(\alpha,\allowbreak F)} is a separable polynomial. A field extension \BookInline{F\leq E} is\textbf{ separable} if every \BookInline{\alpha \in E} is separable over \BookInline{F.} If every finite extension of a field \BookInline{F} is separable, then \BookInline{F} is\textbf{ perfect}\BookInline{.}\BookEnd{\blacksquare}
+
+It is clear that an irreducible polynomial \BookInline{f(x)\in F[x]} is separable if and only if every zero of \BookInline{f(x)} in its splitting field over \BookInline{F} has multiplicity one.
+
+\BookLabel{45.7 Theorem} Every field of characteristic 0 is perfect and every finite field is perfect.
+
+\BookLabel{\textit{Proof}} Let \BookInline{F\leq E} be a finite field extension, where either \BookInline{F} has characteristic 0 or \BookInline{F} is finite. Let \BookInline{g(x)} be the minimal polynomial for \BookInline{\alpha \in E} over \BookInline{F.} By Theorems 45.2 and \BookInline{45.4,\allowbreak g(x)} has deg\BookInline{(g(x))} distinct zeros in the splitting field of \BookInline{g(x)} over \BookInline{F.}\BookEnd{\blacklozenge}
+
+\BookLabel{45.8 Theorem} Let \BookInline{K} be a separable extension of the field \BookInline{F} and \BookInline{E} an intermediate field. Then both the extensions \BookInline{K} over \BookInline{E} and \BookInline{E} over \BookInline{F} are separable.
+
+\BookLabel{\textit{Proof}} Let \BookInline{\alpha \in K.} Then irr\BookInline{(\alpha,\allowbreak F)} has deg\BookInline{(\alpha,\allowbreak F)} zeros, each with multiplicity one, in the splitting field of irr\BookInline{(\alpha,\allowbreak F)} over \BookInline{F,\allowbreak } as \BookInline{K} is separable over \BookInline{F.} Since irr\BookInline{(\alpha,\allowbreak E)} divides irr\BookInline{(\alpha,\allowbreak F),\allowbreak } irr\BookInline{(\alpha,\allowbreak E)} has deg\BookInline{(\alpha,\allowbreak E)} zeros, each with multiplicity one. Thus \BookInline{\alpha } is separable over \BookInline{E} and \BookInline{K} is a separable extension of \BookInline{E.}
+
+We now let \BookInline{\beta \in E.} Therefore\BookInline{,\allowbreak \beta \in K,\allowbreak } which implies that irr\BookInline{(\beta,\allowbreak F)} has deg\BookInline{(\beta,\allowbreak F)} zeros in the splitting field of irr\BookInline{(\beta,\allowbreak F)} over \BookInline{F.} Thus \BookInline{E} is a separable extension of \BookInline{F.}\BookEnd{\blacklozenge}
+
+The following theorem is very useful for our purposes. It counts the number of isomorphisms mapping an intermediate field \BookInline{E,\allowbreak } of a separable splitting field \BookInline{F\leq K,\allowbreak } onto a subfield of \BookInline{K.} In particular, using \BookInline{E= K,\allowbreak } the theorem tells us the number of automorphisms in G\BookInline{(K/F).}
+
+\BookLabel{45.9 Theorem} Let \BookInline{K} be a splitting field over \BookInline{F} and \BookInline{F\leq E\leq K.} If \BookInline{K} is a separable extension over \BookInline{F,\allowbreak } then the number of isomorphisms that map \BookInline{E} onto a subfield of \BookInline{K} that fix all the elements of \BookInline{F} is \BookInline{[E:F].}
+
+\BookLabel{\textit{Proof}} Let \BookInline{E= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}).} We use induction on \BookInline{n} to show that for each \BookInline{1\leq k\leq n} the number of isomorphisms that fix elements of \BookInline{F} and map \BookInline{F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{k})} onto a subfield of \BookInline{K} is \BookInline{[F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{k}):F].} To save writing, we let \BookInline{E_{k}= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{k}).} For \BookInline{n= 1,\allowbreak E_{1}= F(\alpha _{1})} and \BookInline{[E_{1}:F]= } deg\BookInline{(\alpha _{1},\allowbreak F).} Furthermore, Corollary 43.19 says there is exactly one isomorphism that fixes elements of \BookInline{F} and maps \BookInline{E_{1}} onto a subfield of \BookInline{K} for each zero of irr\BookInline{(\alpha _{1},\allowbreak F)} in \BookInline{K.} Since \BookInline{K} is a splitting field and \BookInline{\alpha _{1}} is a zero of irr\BookInline{(\alpha _{1},\allowbreak F),\allowbreak } Corollary 44.12 says that irr\BookInline{(\alpha _{1},\allowbreak F)} splits into linear factors. But the extension \BookInline{E} over \BookInline{F} 
+% Source PDF page 377; original printed page 360
+\BookSource{377}{360}
+is separable, so irr\BookInline{(\alpha _{1},\allowbreak F)} has exactly deg\BookInline{(\alpha _{1},\allowbreak F)} zeros in \BookInline{K.} Thus the number of isomorphisms mapping \BookInline{E_{1}} onto a subfield of \BookInline{K} is
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(\alpha ,\allowbreak F)= [E_{1}:F].}\end{adjustbox}\end{center}
+
+We proceed with the induction step. We assume there are \BookInline{[E_{k}:F]} isomorphisms that fix \BookInline{F} and map \BookInline{E_{k}} onto a subfield of \BookInline{K.} Let \BookInline{\sigma } be one of these isomorphisms. We let \BookInline{g(x)= } irr\BookInline{(\alpha _{k+ 1},\allowbreak E_{k}).} Since \BookInline{\sigma _{x}(g(x))} is a factor of \BookInline{\sigma _{x}(}irr\BookInline{(\alpha _{k+ 1},\allowbreak F))= } irr\BookInline{(\alpha _{k+ 1},\allowbreak F),\allowbreak } it follows that \BookInline{\sigma _{x}(g(x))} factors into deg\BookInline{(g(x))} linear factors in \BookInline{K[x].} By Theorem \BookInline{45.8,\allowbreak K} is separable over \BookInline{E_{k}.} Thus \BookInline{\sigma _{x}(g(x))} has exactly deg\BookInline{(g(x))} distinct zeros in \BookInline{K.} The map \BookInline{\sigma } can be extended to exactly
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(\;\text{irr}\;(\alpha _{k+ 1},\allowbreak E_{k}))= [E_{k+ 1}:E_{k}]}\end{adjustbox}\end{center}
+
+\noindent isomorphisms from \BookInline{E_{k+ 1}= E_{k}(\alpha _{k+ 1})} onto a subfield of \BookInline{K} by Lemma 44.5. By the induction hypothesis there are exactly \BookInline{[E_{k}:F]} isomorphisms \BookInline{\sigma } that fix elements of \BookInline{F} and map \BookInline{E_{k}} onto a subfield of \BookInline{K,\allowbreak } giving us a total of
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [E_{k+ 1}:E_{k}]\cdot [E_{k}:F]= [E_{k+ 1}:F]}\end{adjustbox}\end{center}
+
+\noindent isomorphisms that fix elements of \BookInline{F} and map \BookInline{E_{k+ 1}} onto a subfield of \BookInline{K.} This completes the induction step, and we conclude that there are exactly \BookInline{[E_{n}:F]= [E:F]} isomorphisms mapping \BookInline{E} onto a subfield of \BookInline{K} that fix elements of \BookInline{F.}\BookEnd{\blacklozenge}
+
+In the case where \BookInline{E} is a separable splitting field over \BookInline{F,\allowbreak } Theorems 44.11 and 45.9 imply that \BookInline{G(E/F)= [E:F].} However, if \BookInline{E} is not a splitting field of \BookInline{F,\allowbreak } then some of the isomorphisms fixing \BookInline{F} and mapping \BookInline{E} onto a subfield of \BookInline{K} will map onto a subfield of \BookInline{K} other than \BookInline{E.}
+
+\BookLabel{45.10 Corollary} Let \BookInline{E} be a separable splitting field over \BookInline{F.} Then \BookInline{|G(E/F)|= [E:F].}
+
+\BookLabel{\textit{Proof}} The Corollary follows immediately from Theorem 45.9. \BookEnd{\blacklozenge}
+
+\BookLabel{45.11 Corollary} Let \BookInline{E} be a splitting field over \BookInline{F} where \BookInline{F} is either a field of characteristic 0 or a finite field. Then \BookInline{|G(E/F)|= [E:F].}
+
+\BookLabel{\textit{Proof}} Since \BookInline{F} is perfect by Theorem 45.7, the result follows from Corollary 45.10. \BookEnd{\blacklozenge}
+
+\BookLabel{45.12 Example} In Example 43.4, we explicitly determined four automorphisms of \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} that fix elements of \BookInline{\mathbb{Q}.} Corollary 45.11 shows that there are exactly
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3}):\mathbb{Q}]= [\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3}):\mathbb{Q}(\sqrt{3})]\cdot [\mathbb{Q}(\sqrt{3}):\mathbb{Q}]= 2\cdot 2= 4}\end{adjustbox}\end{center}
+
+\noindent automorphisms without explicitly writing out the formulas.
+
+On the other hand, in Example 43.14, even though
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [ \mathbb { Q } ( { \sqrt [ 3 ] { 2 } } ) : \mathbb { Q } ] = 3 ,\allowbreak }\end{adjustbox}\end{center}
+
+there is only one automorphism of \BookInline{\mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )}. This is due to the fact that that \BookInline{\mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )} is not a splitting field over \BookInline{\mathbb{Q}} and Theorem 45.9 does not apply\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{The Primitive Element Theorem}  }
+
+\noindent The primitive element theorem is a classic of field theory. It says that any finite separable extension of a field is a simple extension. We will find it useful in Section 46 where we prove the Galois correspondence.
+
+\BookLabel{45.13 Theorem} \textbf{Primitive Element Theorem} Let \BookInline{E} be a finite separable extension of a field \BookInline{F.} Then there is an \BookInline{\alpha \in E} such that \BookInline{E= F(\alpha ).} Any such element \BookInline{\alpha } is called a\textbf{ primitive element}.
+
+\end{BookBody}
+
+% Source PDF page 378; original printed page 361
+\BookSource{378}{361}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} We first consider the case where \BookInline{F} is a finite field. In this case \BookInline{E^{\ast },\allowbreak } the units in \BookInline{E,\allowbreak } is a cyclic group under multiplication by Theorem 28.7. Clearly \BookInline{E= F(\alpha )} where \BookInline{\alpha } is a generator of the cyclic group \BookInline{E^{\ast }.}
+
+We next assume that \BookInline{F} is infinite and show that if \BookInline{E= F(\beta,\allowbreak \gamma ),\allowbreak } then \BookInline{E} has a primitive element. If \BookInline{\gamma \in F,\allowbreak } then \BookInline{\beta } is a primitive element. We therefore assume that \BookInline{\gamma } is not in \BookInline{F.} We seek a primitive element of the form \BookInline{\alpha = \beta + a\gamma } where \BookInline{a\in F.} Let \BookInline{f(x)= } irr\BookInline{(\beta,\allowbreak F)} and \BookInline{g(x)= } irr\BookInline{(\gamma,\allowbreak F).} In the splitting field of \BookInline{\{f(x),\allowbreak g(x)\}} over \BookInline{E,\allowbreak } let \BookInline{\beta = \beta _{1},\allowbreak \beta _{2},\allowbreak...,\allowbreak \beta _{n}} be the zeros of \BookInline{f(x)} and \BookInline{\gamma = \gamma _{1},\allowbreak \gamma _{2},\allowbreak...,\allowbreak \gamma _{m}} the zeros of \BookInline{g(x).} Since \BookInline{\gamma } is not in \BookInline{F,\allowbreak m\geq 2.} The only conditions we need on the element \BookInline{a} are that \BookInline{a\in F} and that for each \BookInline{1\leq i\leq n} and \BookInline{2\leq j\leq m,\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a \neq \frac { \beta _ { i } - \beta } { \gamma - \gamma _ { j } } .}\end{adjustbox}\end{center}
+
+\noindent There is certainly such an element \BookInline{a\in F} due to the fact that \BookInline{F} is infinite and we only eliminate a finite number of possible values for \BookInline{a.} Since \BookInline{\beta _{1}= \beta } and \BookInline{m\geq 2,\allowbreak a\neq 0.} We let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha = \beta + a\gamma .}\end{adjustbox}\end{center}
+
+\noindent If \BookInline{\alpha = \beta _{i}+ a\gamma _{j}} for some \BookInline{i} and \BookInline{j\neq 1,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\beta_{i} + a \gamma_{j} &= \beta + a \gamma \quad  and  \\a &= \frac{\beta_{i} - \beta}{\gamma - \gamma_{j}},\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent which is a contradiction. Thus for any \BookInline{i} and \BookInline{j\neq 1,\allowbreak \alpha \neq \beta _{i}+ a\gamma _{j}} or equivalently,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha - a\gamma _{j}\neq  \beta _{i}.}\end{adjustbox}\end{center}
+
+\noindent We now let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle h(x)= f(\alpha - ax)\in F(\alpha )[x].}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{h(x)} is in \BookInline{F(\alpha )[x]} and \BookInline{f(x)= } irr\BookInline{(\beta,\allowbreak F)\in F[x]\leq F(\alpha )[x],\allowbreak } the greatest common divisor of \BookInline{h(x)} and \BookInline{f(x)} is a polynomial in \BookInline{F(\alpha )[x].} For \BookInline{j\neq 1,\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}h(\gamma )&= f(\alpha - a\gamma )= f(\beta )= 0\;\text{and}\; \\ h(\gamma _{j})&= f(\alpha - a\gamma _{j})\neq  0,\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent since the only zeros of \BookInline{f(x)} are the \BookInline{\beta _{i}} and \BookInline{\alpha - a\gamma _{j}\neq \beta _{i}} for any \BookInline{i.} Therefore the only common factor of \BookInline{h(x)} and \BookInline{f(x)} is \BookInline{x- \beta,\allowbreak } so the greatest common divisor of \BookInline{h(x)} and \BookInline{f(x)} is \BookInline{x- \beta.} Thus \BookInline{x- \beta \in F(\alpha )[x]} and \BookInline{\beta \in F(\alpha ).} Since \BookInline{\alpha,\allowbreak \beta \in F(\alpha ),\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \gamma = { \frac { \alpha - \beta } { a } } \in F ( \alpha ) .}\end{adjustbox}\end{center}
+
+\noindent We conclude that \BookInline{F(\beta,\allowbreak \gamma )\leq F(\alpha ).} Clearly \BookInline{F(\alpha )\leq F(\beta,\allowbreak \gamma ),\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle F(\alpha )= F(\beta ,\allowbreak \gamma ).}\end{adjustbox}\end{center}
+
+\noindent By a straightforward induction argument, any finite separable extension of \BookInline{F} has a primitive element\BookInline{.}\BookEnd{\blacklozenge}
+
+To illustrate the construction of a primitive element for a given extension we provide the following example.
+
+\BookLabel{45.14 Example} In Example 44.13, we saw that \BookInline{\sqrt{2}+ \sqrt{3}} is a primative element for the extension \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})}. Let us follow the proof of Theorem 45.13 to find other primitive elements \BookInline{\alpha \in \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3}).} Let \BookInline{f(x)= } irr\BookInline{(\sqrt{2},\allowbreak \mathbb{Q})= x^{2}- 2} and \BookInline{g(x)= } irr\BookInline{(\sqrt{3},\allowbreak \mathbb{Q})= x^{2}- 3.} So
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \beta = \beta _{1}= \sqrt{2},\allowbreak \beta _{2}= - \sqrt{2},\allowbreak \gamma = \gamma _{1}= \sqrt{3},\allowbreak \;\text{and}\;\gamma _{2}= - \sqrt{3}.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 379; original printed page 362
+\BookSource{379}{362}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent Thus \BookInline{a} can be any rational number other than
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle { \frac { { \sqrt { 2 } } - { \sqrt { 2 } } } { \sqrt { 3 } - ( - { \sqrt { 3 } } ) } } = 0 \quad { \mathrm { a n d } } \quad { \frac { - { \sqrt { 2 } } - { \sqrt { 2 } } } { { \sqrt { 3 } } - ( - { \sqrt { 3 } } ) } } = - { \frac { { \sqrt { 2 } } } { \sqrt { 3 } } } .}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{-\frac{\sqrt{2}}{\sqrt{3}}} is not a rational number, we can take \BookInline{a= 1,\allowbreak 2,\allowbreak 1/2,\allowbreak - 17/42,\allowbreak } or any rational number other than 0. Using \BookInline{a= 2,\allowbreak } we have that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha = \beta + a\gamma = \sqrt{2}+ 2\sqrt{3}.}\end{adjustbox}\end{center}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})=\mathbb{Q}(\sqrt{2}+2\sqrt{3})}\end{adjustbox}\end{center}
+
+\noindent and in general,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})= \mathbb{Q}(\sqrt{2}+ a\sqrt{3})}\end{adjustbox}\end{center}
+
+\noindent for any rational number \BookInline{a} other than 0. \BookEnd{\blacktriangle}
+
+\BookLabel{45.15 Corollary} If \BookInline{F} is either a finite field or a field of characteristic 0, then every finite extension of \BookInline{F} is a simple extension.
+
+\BookLabel{\textit{Proof}} This is an immediate consequence of Theorems 45.7 and 45.13. \BookEnd{\blacklozenge}
+
+\BookTextHeading{\textbf{Normal Extensions}  }
+
+\noindent We have now investigated the essential conditions on a field extension \BookInline{F\leq E} that are required in order to apply Galois theory. The requirements are that \BookInline{E} is a separable splitting field over \BookInline{F.}
+
+\BookLabel{45.16 Definition} A finite extension \BookInline{E} of \BookInline{F} is a\textbf{ normal extension of} \BookInline{F} if \BookInline{E} is a separable splitting field over \BookInline{F.} If \BookInline{E} is a normal extension of \BookInline{F,\allowbreak } then \BookInline{G(E/F)} is the\textbf{ Galois group of} \BookInline{E} \textbf{over} \BookInline{F.} The Galois group is sometimes denoted by Gal\BookInline{(E/F).}\BookEnd{\blacksquare}
+
+Although one can define an infinite normal extension, for our purposes we will restrict our attention to finite extensions. In what follows, when we refer to a normal extension, it will be assumed that the extension is finite.
+
+\BookLabel{45.17 Theorem} Let \BookInline{K} be a normal extension of \BookInline{F} and let \BookInline{E} be an intermediate field of the extension, \BookInline{F\leq E\leq K.} Then \BookInline{K} is a normal extension of \BookInline{E} and \BookInline{|G(K/E)|= [K:E].}
+
+\BookLabel{\textit{Proof}} Since \BookInline{K} is a splitting field over \BookInline{F,\allowbreak } there are polynomials \BookInline{f_{1}(x),\allowbreak f_{2}(x),\allowbreak...,\allowbreak f_{r}(x)\in F[x]} with zeros \BookInline{\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{k}} such that \BookInline{K= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{k})} and each \BookInline{f_{i}} factors into linear factors in \BookInline{K.} Then \BookInline{K= E(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{k}),\allowbreak } also. Thus \BookInline{K} is the splitting field of \BookInline{\{f_{1}(x),\allowbreak f_{2}(x),\allowbreak...,\allowbreak f_{r}(x)\}} over \BookInline{E.} Furthermore, Theorem 45.8 states that \BookInline{K} is a separable extension of \BookInline{E,\allowbreak } which implies that \BookInline{K} is a normal extension of \BookInline{E.}
+
+Since \BookInline{K} is a separable splitting field over \BookInline{E,\allowbreak } Corollary 45.10 says that \BookInline{|G(K/E)|= } \BookInline{[K:E].}\BookEnd{\blacklozenge}
+
+\BookLabel{45.18 Corollary} If \BookInline{F\leq E\leq K} where \BookInline{K} is a normal extension of \BookInline{F,\allowbreak } then \BookInline{G(K/E)} is a subgroup of \BookInline{G(K/F)} with index \BookInline{(G(K/F):G(K/E))= [E:F].}
+
+\BookLabel{\textit{Proof}} Theorem 45.17 says that \BookInline{K} is a normal extension of \BookInline{E.} Each isomorphism \BookInline{\sigma \in G(K/E)} fixes all the elements of \BookInline{E} and, therefore\BookInline{,\allowbreak \sigma } fixes all the elements of \BookInline{F.} Thus \BookInline{\sigma \in } \BookInline{G(K/F)} and \BookInline{G(K/E)\leq G(K/F).}
+
+\end{BookBody}
+
+% Source PDF page 380; original printed page 363
+\BookSource{380}{363}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+We have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}G(G(K / F) : G(K / E)) &= \frac{|G(K / F)|}{|G(K / E)|} \\&= \frac{[K : F]}{[K : E]} \\&= [E : F].\end{aligned}}\end{adjustbox}\end{center} \BookEnd{\blacklozenge}
+
+\BookLabel{45.19 Example} In Example 44.2 we saw that the splitting field of \BookInline{x^{3}- 2} over \BookInline{\mathbb{Q}} is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle K = \mathbb{Q} \left( \sqrt[3]{2},\allowbreak  \sqrt[3]{2} \frac{-1 + \sqrt{3}i}{2} \right) = \mathbb{Q}(\sqrt[3]{2},\allowbreak  \sqrt{3}i).}\end{adjustbox}\end{center}
+
+The degree of the extension of \BookInline{K} over \BookInline{\mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )} is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [ K : \mathbb { Q } ( { \sqrt [ 3 ] { 2 } } ) ] = \deg ( { \sqrt { 3 } } i ,\allowbreak  \mathbb { Q } ( { \sqrt [ 3 ] { 2 } } ) ) = 2 .}\end{adjustbox}\end{center}
+
+Also, the degree of the extension \BookInline{\mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )} over \BookInline{\mathbb{Q}} is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [ \mathbb { Q } ( { \sqrt [ 3 ] { 2 } } ) ,\allowbreak  \mathbb { Q } ] = \deg ( { \sqrt [ 3 ] { 2 } } ,\allowbreak  \mathbb { Q } ) = 3 ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle [ K : \mathbb { Q } ] = [ K : \mathbb { Q } ( { \sqrt [ 3 ] { 2 } } ) ] \cdot [ \mathbb { Q } { \sqrt [ 3 ] { 2 } } : \mathbb { Q } ] = 6 .}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{\mathbb{Q}} is a perfect field\BookInline{,\allowbreak K} is a separable and, therefore, a normal extension of \BookInline{\mathbb{Q}.} Thus Corollary 45.18 applies and we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle | G ( K / \mathbb { Q } ) | = 6 ,\allowbreak  \quad | G ( K / \mathbb { Q } ( \sqrt { 2 } ) | = 2 ,\allowbreak  \quad \mathrm { a n d } \quad ( G ( K / \mathbb { Q } ) : G ( K / \mathbb { Q } ( \sqrt { 2 } ) ) ) = 3 .}\end{adjustbox}\end{center}
+
+\noindent Up to isomorphism, there are two groups of order \BookInline{6,\allowbreak \mathbb{Z}_{6}} and \BookInline{S_{3}.} We will see in Section 46 that \BookInline{G(K/\mathbb{Q})} is isomorphic with \BookInline{S_{3}.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{45}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 4, find an \BookInline{\alpha } such that the given field is \BookInline{\mathbb{Q}(\alpha ).} Show that your \BookInline{\alpha } is indeed in the given field. Verify by direct computation that the given generators for the extension of \BookInline{\mathbb{Q}} can indeed be expressed as formal polynomials in your \BookInline{\alpha } with coefficients in \BookInline{\mathbb{Q}.}
+
+\BookExercise{1.}{\BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt[3]{2})}}
+
+\BookExercise{2.}{\BookInline{\mathbb{Q}(\sqrt[4]{2},\allowbreak \sqrt[6]{2})}}
+
+\BookExercise{3.}{\BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{5})}}
+
+\BookExercise{4.}{\BookInline{\mathbb{Q}(i,\allowbreak \sqrt[3]{2})}}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 5 and 6, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{5.}{Let \BookInline{E} be a splitting field over \BookInline{F.} The\textit{ multiplicity of} \BookInline{a} \textit{zero} \BookInline{\alpha \in E} of a polynomial \BookInline{f(x)\in F[x]} is \BookInline{\nu \in \mathbb{Z}^{+ }} if and only if \BookInline{(x- \alpha )^{\nu }} is a factor of \BookInline{f(x)} in \BookInline{F[x].}}
+
+\BookExercise{6.}{Let \BookInline{E} be an extension of a field \BookInline{F.} An element \BookInline{\alpha } in \BookInline{E} is\textit{ separable over} \BookInline{F} if and only if \BookInline{\alpha } is a zero of multiplicity 1 of irr\BookInline{(\alpha,\allowbreak F).}}
+
+\BookExercise{7.}{Give an example of an \BookInline{f(x)\in \mathbb{Q}[x]} that has no zeros in \BookInline{\mathbb{Q}} but whose zeros in \BookInline{\mathbb{C}} are all of multiplicity 2. Explain how this is consistent with Theorem 45.7, which shows that \BookInline{\mathbb{Q}} is perfect.}
+
+\BookExercise{8.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every finite extension of every field \BookInline{F} is separable over \BookInline{F.}}
+
+\BookExercise{b.}{Every finite extension of every finite field \BookInline{F} is separable over \BookInline{F.}}
+
+\end{BookBody}
+
+% Continuation on source PDF page 381, preceding Section 46
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{c.}{Every field of characteristic 0 is perfect.}
+
+\BookExercise{d.}{Every polynomial of degree \BookInline{n} over every field \BookInline{F} always has \BookInline{n} distinct zeros in \BookInline{F.}}
+
+\BookExercise{e.}{Every polynomial of degree \BookInline{n} over every perfect field \BookInline{F} always has \BookInline{n} distinct zeros in \BookInline{F.}}
+
+\BookExercise{f.}{Every irreducible polynomial of degree \BookInline{n} over every perfect field \BookInline{F} always has \BookInline{n} distinct zeros in \BookInline{F.}}
+
+\BookExercise{g.}{Every algebraically closed field is perfect.}
+
+\BookExercise{h.}{Every field \BookInline{F} has an algebraic extension \BookInline{E} that is perfect.}
+
+\BookExercise{i.}{If \BookInline{E} is a finite separable splitting field extension of \BookInline{F,\allowbreak } then \BookInline{|G(E/F)|= [E:F].}}
+
+\BookExercise{j.}{If a field \BookInline{F} is neither finite nor of characteristic 0, then \BookInline{F} is not a perfect field.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{9.}{Show that \BookInline{\{1,\allowbreak y,\allowbreak \cdots,\allowbreak y^{p- 1}\}} is a basis for \BookInline{\mathbb{Z}_{p}(y)} over \BookInline{\mathbb{Z}_{p}(y^{p}),\allowbreak } where \BookInline{y} is an indeterminate. Referring to Example 45.5, conclude by a degree argument that \BookInline{x^{p}- t} is irreducible over \BookInline{\mathbb{Z}_{p}(t),\allowbreak } where \BookInline{t= y^{p}.}}
+
+\BookExercise{10.}{Prove that if \BookInline{E} is an algebraic extension of a perfect field \BookInline{F,\allowbreak } then \BookInline{E} is perfect.}
+
+\BookExercise{11.}{Let \BookInline{E} be a finite field of order \BookInline{p^{n}.}}
+
+\BookExercise{a.}{Show that the Frobenius automorphism \BookInline{\sigma _{p},\allowbreak } defined in Exercise 35 of Section 43, has order \BookInline{n.} \textbf{b.} Deduce from part (a) that \BookInline{G(E/\mathbb{Z}_{p})} is cyclic of order \BookInline{n} with generator \BookInline{\sigma _{p}.[}\textit{Hint:} Remember that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle |G(E/F)|= [E:F]}\end{adjustbox}\end{center}
+
+for a normal field extension \BookInline{E} over \BookInline{F.]}
+
+\BookExercise{12.}{Let \BookInline{f(x)\in F[x],\allowbreak } and let \BookInline{\alpha \in F} be a zero of \BookInline{f(x)} of multiplicity \BookInline{\nu.} Show that \BookInline{\nu >1} if and only if \BookInline{\alpha } is also a zero of \BookInline{f^{\prime }(x),\allowbreak } the derivative of \BookInline{F(x).[}\textit{Hint:} Apply Exercise 15 is Section 42 to the factorization \BookInline{f(x)= (x- \alpha )^{\nu }g(x)} of \BookInline{f(x)} in the ring \BookInline{F[x].]}}
+
+\BookExercise{13.}{Show from Exercise 12 that every irreducible polynomial over a field \BookInline{F} of characteristic 0 is separable.}
+
+\BookExercise{14.}{Show from Exercise 12 that an irreducible polynomial \BookInline{q(x)} over a field \BookInline{F} of characteristic \BookInline{p\neq 0} is not separable if and only if each exponent of each term of \BookInline{q(x)} is divisible by \BookInline{p.}}
+
+\BookExercise{15.}{Generalize Exercise 12, showing that \BookInline{f(x)\in F[x]} has no zero of multiplicity \BookInline{>1} if and only if \BookInline{f(x)} and \BookInline{f^{\prime }(x)} have no common factor in \BookInline{F[x]} of degree \BookInline{>0.}}
+
+\BookExercise{16.}{Working a bit harder than in Exercise 15, show that \BookInline{f(x)\in F[x]} has no zero of multiplicity \BookInline{>1} if and only if \BookInline{f(x)} and \BookInline{f^{\prime }(x)} have no common nonconstant factor in \BookInline{F[x].[}\textit{Hint:} Use Theorem 35.9 to show that if 1 is a gcd of \BookInline{f(x)} and \BookInline{f^{\prime }(x)} in \BookInline{F[x],\allowbreak } it is a gcd of these polynomials in \BookInline{E[x]} for \BookInline{E} any splitting field of \BookInline{F,\allowbreak } also.]}
+
+\BookExercise{17.}{Describe a feasible computational procedure for determining whether \BookInline{f(x)\in F[x]} has a zero of multiplicity \BookInline{>1,\allowbreak } without actually finding the zeros of \BookInline{f(x).[}\textit{Hint:} Use Exercise 16.]}
+
+\BookExercise{18.}{Let \BookInline{F\leq E\leq K} be field extensions with \BookInline{K} a normal extension of \BookInline{F.} By Corollary \BookInline{45.18,\allowbreak G(K/E)} is a subgroup of \BookInline{G(K/F).} For two automorphisms \BookInline{\sigma,\allowbreak \tau \in G(K/F),\allowbreak } show that they are in the same left cosets of \BookInline{G(K/E)\leq } \BookInline{G(K/F)} if and only if \BookInline{\sigma (\alpha )= \tau (\alpha )} for all \BookInline{\alpha \in E.}}
+
+\BookExercise{19.}{Prove that Definition 45.3 does not depend on which splitting field over \BookInline{F} is used.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

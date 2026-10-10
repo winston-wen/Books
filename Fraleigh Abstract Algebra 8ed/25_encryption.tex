@@ -1,0 +1,194 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 25 Encryption}
+\pdfbookmark[0]{Section 25 Encryption}{25_encryption}
+\ifdefined\BookMaster\else\setcounter{page}{205}\fi
+% Source PDF page 222; original printed page 205
+\BookSource{222}{205}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{25}{Encryption}
+
+\noindent An encryption scheme is a method to disguise a message so that it is extremely difficult for anyone other than the intended receiver to read. The sender\textbf{ encrypts} the message and the receiver\textbf{ decrypts} the message. One method, called cypher encryption, requires the sender to use a permutation of the letters in the alphabet to replace each letter with a different letter. The receiver then uses the inverse of the permutation to recover the original message. This method has two major weaknesses. First, both the sender and the receiver need to know the permutation, but no one else should know the permutation or else the message is not secure. It would be difficult to implement a cypher for a transaction when a company wishes to receive many orders each day, each using a different permutation that only the customer and the company know. Furthermore, cyphers are generally not difficult to crack. In fact, some newspapers carry a daily puzzle, which is essentially decrypting an encrypted message.
+
+Researchers in the second half of the twentieth century sought a method that allows the receiver to publish public information that any sender could use to encrypt a message, yet only the receiver could decrypt it. This means that knowing how a message was encrypted is little help in decryption. This method relies on a function that is easy for computers to compute, but whose inverse is virtually impossible to compute without 
+% Source PDF page 223; original printed page 206
+\BookSource{223}{206}
+more information. Functions of this type are called\textbf{ trap door functions}. Most commercial online transactions are communicated with trap door functions. This allows anyone to make a secure credit card purchase with little risk of a third party gaining private information.
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{RSA Public and Private Keys}  }
+
+\noindent Euler’s generalization of Fermat’s Theorem is the basis of a very common trap door encryption scheme referred to as\textbf{ RSA encryption}. RSA comes from the names of the three inventors of the system, Ron Rivest, Adi Shamir, and Leonard Adleman. The trap door function relies on the fact that it is easy to multiply two large prime numbers, but if you are only given their product, it is very difficult to factor the number to recover the two prime numbers. The following theorem is the key to this encryption scheme.
+
+\BookLabel{25.1 Theorem} Let \BookInline{n= pq} where \BookInline{p} and \BookInline{q} are distinct prime numbers. If \BookInline{a\in \mathbb{Z}} with gcd\BookInline{(a,\allowbreak pq)= 1} and \BookInline{w\equiv 1(}mod \BookInline{(p- 1)(q- 1)),\allowbreak } then \BookInline{a^{w}\equiv a(}mod \BookInline{n).}
+
+\BookLabel{\textit{Proof}} Since \BookInline{w\equiv 1(}mod \BookInline{(p- 1)(q- 1)),\allowbreak } we can write
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle w= k(p- 1)(q- 1)+ 1}\end{adjustbox}\end{center}
+
+\noindent for some integer \BookInline{k.} Recall that the Euler phi-function \BookInline{\phi (n)} counts the number of positive integers less than or equal to \BookInline{n} that are relatively prime to \BookInline{n.} Since \BookInline{n= pq,\allowbreak } we can compute \BookInline{\phi (pq)} by subtracting the number of integers less than \BookInline{n} that are divisible by either \BookInline{p} or \BookInline{q} from \BookInline{n- 1.} There are \BookInline{p- 1} multiples of \BookInline{q} and \BookInline{q- 1} multiples of \BookInline{p} that are less than \BookInline{pq.} Furthermore, the least common multiple of \BookInline{p} and \BookInline{q} is \BookInline{pq} since \BookInline{p} and \BookInline{q} are distinct primes. Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\phi (pq)&= (pq- 1)- (p- 1)- (q- 1) \\ &= pq- p- q+ 1 \\ &= (p- 1)(q- 1).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent By Euler’s Theorem (Theorem 24.7),
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned} a^{w} &= a^{k(p-1)(q-1)+1} \\&= a\left(a^{(p-1)(q-1)}\right)^{k} \\&= a\left(a^{\phi(n)}\right)^{k} \\&\equiv a(1^{k}) \\&\equiv a\left(\bmod n\right).\\ \end{aligned}}\end{adjustbox}\end{center} \BookEnd{\blacklozenge}
+
+\noindent The RSA encryption scheme requires two sets of positive integers called the\textbf{ private} \textbf{key} and the\textbf{ public key}. The private key is known only by the person who will receive the message, and the public key is available to anyone who wishes to send a message to the receiver.
+
+\noindent \textbf{The private key} consists of
+
+\BookBullet{Two prime numbers \BookInline{p} and \BookInline{q} with \BookInline{p\neq q.}}
+
+\BookBullet{The product \BookInline{n= pq.}}
+
+\BookBullet{An integer \BookInline{1<r<(p- 1)(q- 1)- 1} that is relatively prime to \BookInline{(p- 1)(q- 1).}}
+
+We know that \BookInline{r} has an inverse in \BookInline{\mathbb{Z}_{(p- 1)(q- 1)}} since \BookInline{r} is relatively prime to \BookInline{(p- 1)(q- 1).}
+
+\end{BookBody}
+
+% Source PDF page 224; original printed page 207
+\BookSource{224}{207}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent \textbf{The public key} consists of
+
+\BookBullet{The integer \BookInline{s} where \BookInline{1<s<(p- 1)(q- 1)} and \BookInline{s} is the inverse of \BookInline{r} in \BookInline{\mathbb{Z}_{(p- 1)(q- 1)}.}}
+
+\BookBullet{The product \BookInline{n= pq.}}
+
+The public key does not include \BookInline{p,\allowbreak q,\allowbreak r,\allowbreak } or \BookInline{(p- 1)(q- 1).} Knowing any of these numbers and the numbers in the public key would make it relatively easy to decrypt any encrypted message.
+
+We can now give the encryption and decryption algorithms. The sender wishes to send a message to the receiver. We will assume the message is simply a number between 2 and \BookInline{n- 1.} To send a text message, the sender would use a standard way of representing the text as a number, such as the ASCII code. A long text would be broken up into smaller texts so that each would be coded as a number in the allowable range 2 to \BookInline{n- 1} and each would be sent separately. Let \BookInline{2\leq m\leq n- 1} be the message to be sent.
+
+\textbf{Encryption}
+
+\noindent Using the public key, the sender encrypts the message as a number \BookInline{0\leq y\leq n- 1} to be sent to the receiver where \BookInline{s} \BookInline{y\equiv m(}mod \BookInline{n).}
+
+\noindent That is, the sender computes \BookInline{y} to be the remainder when \BookInline{m^{s}} is divided by \BookInline{n} and sends \BookInline{y} to the receiver.
+
+\textbf{Decryption}
+
+\noindent Using the private key, the receiver decrypts \BookInline{y,\allowbreak } the message received from the sender, by computing
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle y^{r}(\;\text{mod}\;n),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent the remainder when \BookInline{y^{r}} is divided by \BookInline{n.} Since \BookInline{rs\equiv 1(}mod\BookInline{(p- 1)(q- 1)),\allowbreak } Theorem 25.1 says,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle y^{r}= (m^{s})^{r}= m^{rs}\equiv m(\;\text{mod}\;n).}\end{adjustbox}\end{center}
+
+\noindent Thus the receiver reconstructs the original message \BookInline{m.}
+
+Of course, in practice the prime numbers \BookInline{p} and \BookInline{q} are very large. As of the writing of this book it is thought that prime numbers requiring 4096 bits or approximately 1200 digits are sufficient to make the RSA scheme secure. To illustrate how the process works, we will use small primes.
+
+\BookLabel{25.2 Example} Let \BookInline{p= 17} and \BookInline{q= 11.} The private key consists of
+
+\BookBullet{\BookInline{p= 17,\allowbreak q= 11,\allowbreak }}
+
+\BookBullet{\BookInline{n= pq= 187} and}
+
+\BookBullet{a number \BookInline{r} relatively prime to \BookInline{(p- 1)(q- 1)= 160.} For this example we take \BookInline{r= 23.}}
+
+\noindent The public key consists of
+
+\BookBullet{\BookInline{n= 187} and}
+
+\BookBullet{\BookInline{s= 7.} A little calculation shows that \BookInline{23\cdot 7= 161= 160+ 1\equiv 1(}mod 160),}
+
+which implies that \BookInline{s= 7.} Since the public key consists of only \BookInline{n} and \BookInline{s,\allowbreak }
+
+\BookInline{(p- 1)(q- 1)} is unknown to all but the receiver. Without knowing \BookInline{(p- 1)(q- 1),\allowbreak } the value of \BookInline{r} cannot be determined from the value of \BookInline{s.}
+
+Suppose the sender wishes to send the message \BookInline{m= 2} to the the receiver. The message is encrypted by computing
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle y= 2^{7}\equiv 128(\;\text{mod}\;187).}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 225; original printed page 208
+\BookSource{225}{208}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent The receiver recovers the original message by computing
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 128^{23}\equiv 2(\;\text{mod}\;187).}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+\noindent In Example 25.2 some of the computations would be long and tedious without the use of a computer. For large primes \BookInline{p} and \BookInline{q,\allowbreak } it is essential to have an efficient algorithm to compute \BookInline{m^{s}(}mod \BookInline{n)} and \BookInline{y^{r}(}mod \BookInline{n).} This can be accomplished by using base 2. We illustrate with the following example.
+
+\BookLabel{25.3 Example} In Example 25.2 we needed to compute 12823 (mod 187). We can compute this value by expressing 23 in base \BookInline{2,\allowbreak 23= 16+ 4+ 2+ 1,\allowbreak } and then computing the following:
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}128^{1}&= 128 \\ 128^{2}&= 1638\equiv 115(\;\text{mod}\;187) \\ 128^{4}&= (128^{2})^{2}\equiv 115^{2}\equiv 135(\;\text{mod}\;187) \\ 128^{8}&= (128^{4})^{2}\equiv 135^{2}\equiv 86(\;\text{mod}\;187) \\ 128^{16}&= (128^{8})^{2}\equiv 86^{2}\equiv 103(\;\text{mod}\;187),\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&128^{23}\equiv 128^{16+ 4+ 2+ 1} \\ &\equiv (128^{16}128^{4})(128^{2}128^{1}) \\ &\equiv (103\cdot 135)(115\cdot 128) \\ &\equiv 67\cdot 134 \\ &\equiv 2(\;\text{mod}\;187).\end{aligned}}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+As illustrated in the above example, this method gives a more efficient computation of \BookInline{a^{k}(}mod \BookInline{n).}
+
+The Euclidean algorithm is a simple and efficient way to compute the inverse of a unit in \BookInline{\mathbb{Z}_{(p- 1)(q- 1)}.} It involves the repeated use of the division algorithm. However, we will not discuss the Euclidean algorithm here.
+
+The reader may have noticed a potential flaw in the RSA encryption scheme. It is possible that \BookInline{m} is a multiple of either \BookInline{p} or \BookInline{q.} In that case, \BookInline{m ^ { ( p - 1 ) ( q - 1 ) } \stackrel { \sim } { \not \equiv } 1} (mod \BookInline{n),\allowbreak } which means that \BookInline{m^{rs}} may not be equivalent to \BookInline{m} modulo \BookInline{n.} In this case RSA encryption fails. However, when using large prime numbers the probability that the message is a multiple of \BookInline{p} or \BookInline{q} is extremely low. If one is concerned about this issue, the algorithm could be modified slightly to be sure that the message is smaller than both \BookInline{p} and \BookInline{q.}
+
+How are the large prime numbers \BookInline{p} and \BookInline{q} in RSA encryption found? Basically, the process is to guess a value and check that it is prime. Unfortunately, there is no known fast method to test for primality, but it is possible to do a fast probabilistic test. One simple probabilistic test uses Fermat’s Theorem (Theorem 24.1). The idea is to generate a random positive integer less than \BookInline{p} and check if \BookInline{a^{p- 1}\equiv 1(}mod \BookInline{p).} If \BookInline{p} is prime, then \BookInline{a^{p- 1}\equiv 1(}mod \BookInline{p),\allowbreak } so if \BookInline{a ^ { p - 1 } \not \equiv 1} (mod \BookInline{p),\allowbreak } then \BookInline{p} is not a prime number and the number \BookInline{p} is rejected. On the other hand, if \BookInline{a^{p- 1}\equiv 1(}mod \BookInline{p),\allowbreak } then \BookInline{p} passes the test and \BookInline{p} could be a prime. If \BookInline{p} passes the test, we repeat the process for a different random value of \BookInline{a.} The probability that a composite number \BookInline{p} is picked given that \BookInline{p} passes the test several times is low enough to safely assume that \BookInline{p} is prime.
+
+\end{BookBody}
+
+% Source PDF page 226; original printed page 209
+\BookSource{226}{209}
+\BookNarrativefalse
+
+\begin{BookBody} \BookEnd{\blacksquare}
+
+\BookExerciseTitle{25}
+
+\noindent In Exercises 1 through 8, the notation is consistent with the notation used in the text for RSA encryption. It may be helpful to use a calculator or computer.
+
+\BookExercise{1.}{Let \BookInline{p= 3} and \BookInline{q= 5.} Find \BookInline{n,\allowbreak } and all possible pairs \BookInline{(r,\allowbreak s).}}
+
+\BookExercise{2.}{Let \BookInline{p= 3} and \BookInline{q= 7.} Find \BookInline{n} and all possible pairs \BookInline{(r,\allowbreak s).}}
+
+\BookExercise{3.}{Let \BookInline{p= 3} and \BookInline{q= 11.} Find \BookInline{n} and all possible pairs \BookInline{(r,\allowbreak s).}}
+
+\BookExercise{4.}{Let \BookInline{p= 5} and \BookInline{q= 7.} Find \BookInline{n} and all possible pairs \BookInline{(r,\allowbreak s).}}
+
+\BookExercise{5.}{Let \BookInline{p= 13,\allowbreak q= 17,\allowbreak } and \BookInline{r= 5.} Find the value of \BookInline{s.}}
+
+\BookExercise{6.}{For RSA encryption it is assumed that the message \BookInline{m} is at least 2. Why should \BookInline{m} not be 1?}
+
+\BookExercise{7.}{The public key is \BookInline{n= 143} and \BookInline{s= 37.}}
+
+\BookExercise{a.}{Compute the value of \BookInline{y} if the message is \BookInline{m= 25.}}
+
+\BookExercise{b.}{Find \BookInline{r.(}Computer Algebra Systems have built-in functions to compute in \BookInline{\mathbb{Z}_{m}.)}}
+
+\BookExercise{c.}{Use your answers to parts a) and b) to decrypt \BookInline{y.}}
+
+\BookExercise{8.}{The public key is \BookInline{n= 1457} and \BookInline{s= 239.}}
+
+\BookExercise{a.}{Compute the value of \BookInline{y} if the message is \BookInline{m= 999.}}
+
+\BookExercise{b.}{Find \BookInline{r.(}Computer Algebra Systems have built-in functions to compute in \BookInline{\mathbb{Z}_{m}.)}}
+
+\BookExercise{c.}{Use your answers to parts a) and b) to decrypt \BookInline{y.}}
+
+\BookExercise{9.}{For \BookInline{p= 257,\allowbreak q= 359,\allowbreak } and \BookInline{r= 1493} identify the private and public keys.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

@@ -1,0 +1,177 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Appendix: Matrix Algebra}
+\pdfbookmark[0]{Appendix: Matrix Algebra}{appendix_matrix_algebra}
+\ifdefined\BookMaster\else\setcounter{page}{391}\fi
+% Source PDF page 408; original printed page 391
+\BookSource{408}{391}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Appendix: Matrix Algebra}  }
+
+\noindent We give a brief summary of matrix algebra here. Matrices appear in examples in some chapters of the text and also are involved in several exercises.
+
+A\textbf{ matrix} is a rectangular array of numbers. For example, the array
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 2 & -1 & 4 \\ 3 & 1 & 2 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\noindent is a matrix having two rows and three columns. A matrix having \BookInline{m} rows and \BookInline{n} columns is an \BookInline{m\times n} matrix, so Matrix (1) is a \BookInline{2\times 3} matrix. If \BookInline{m= n,\allowbreak } the matrix is\textbf{ square}. Entries in a matrix may be any type of number—integer, rational, real, or complex. We let \BookInline{M_{m\times n}(\mathbb{R})} be the set of all \BookInline{m\times n} matrices with real number entries. If \BookInline{m= n,\allowbreak } the notation is abbreviated to \BookInline{M_{n}(\mathbb{R}).} We can similarly consider \BookInline{M_{n}(\mathbb{Z}),\allowbreak M_{2\times 3}(\mathbb{C}),\allowbreak } etc.
+
+Two matrices having the same number \BookInline{m} of rows and the same number \BookInline{n} of columns can be added in the obvious way: we add entries in corresponding positions.
+
+\textbf{A1 Example}
+
+\noindent In \BookInline{M_{2\times 3}(\mathbb{Z}),\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 2 & - 1 & 4 \\ 3 & 1 & 2 \end{bmatrix} + \begin{bmatrix} 1 & 0 & - 3 \\ 2 & - 7 & 1 \end{bmatrix} = \begin{bmatrix} 3 & - 1 & 1 \\ 5 & - 6 & 3 \end{bmatrix}.}\end{adjustbox}\end{center}
+
+We will use uppercase letters to denote matrices. If \BookInline{A,\allowbreak B,\allowbreak } and \BookInline{C} are \BookInline{m\times n} matrices, it is easily seen that \BookInline{A+ B= B+ A} and that \BookInline{A+ (B+ C)= (A+ B)+ C.}
+
+Matrix multiplication\BookInline{,\allowbreak AB,\allowbreak } is defined only if the number of columns of \BookInline{A} is equal to the number of rows of \BookInline{B.} That is, if \BookInline{A} is an \BookInline{m\times n} matrix, then \BookInline{B} must be an \BookInline{n\times s} matrix for some integer \BookInline{s.} We start by defining as follows the product \BookInline{AB} where \BookInline{A} is a \BookInline{1\times n} matrix and \BookInline{B} is an \BookInline{n\times 1} matrix:
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle AB = \begin{bmatrix} a_{1} & a_{2} & \cdots & a_{n} \end{bmatrix} \begin{bmatrix} b_{1} \\ b_{2} \\ \vdots \\ b_{n} \end{bmatrix} = a_{1}b_{1} + a_{2}b_{2} + \cdots + a_{n}b_{n}.}\end{adjustbox}\end{center}
+
+\noindent Note that the result is a number. (We shall not distinguish between a number and the \BookInline{1\times 1} matrix having that number as its sole entry.) You may recognize this product as the\textit{ dot product} of vectors. Matrices having only one\textit{ row} or only one\textit{ column} are\textbf{ row} \textbf{vectors} or\textbf{ column vectors}, respectively.
+
+\end{BookBody}
+
+% Source PDF page 409; original printed page 392
+\BookSource{409}{392}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent \textbf{A2 Example} We find that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 3 & - 7 & 2 \end{bmatrix} \begin{bmatrix} 1 \\ 4 \\ 5 \end{bmatrix} = (3)(1) + ( - 7)(4) + (2)(5) = - 15.}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+Let \BookInline{A} be an \BookInline{m\times n} matrix and let \BookInline{B} be an \BookInline{n\times s} matrix. Note that the number \BookInline{n} of entries in each row of \BookInline{A} is the same as the number \BookInline{n} of entries in each column of \BookInline{B.} The product \BookInline{C= AB} is an \BookInline{m\times s} matrix. The entry in the \BookInline{i}th row and \BookInline{j}th column of \BookInline{AB} is the product of the \BookInline{i}th row of \BookInline{A} times the \BookInline{j}th column of \BookInline{B} as defined by Eq. (2) and illustrated in Example A2.
+
+\noindent \textbf{A3 Example} Compute
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \boldsymbol { A } \boldsymbol { B } = \begin{bmatrix} 2 & - 1 & 3 \\ 1 & 4 & 6 \end{bmatrix} \begin{bmatrix} 3 & 1 & 2 & 1 \\ 1 & 4 & 1 & - 1 \\ - 1 & 0 & 2 & \quad 1 \end{bmatrix}.}\end{adjustbox}\end{center}
+
+\BookLabel{\textit{Solution}} Note that \BookInline{A} is \BookInline{2\times 3} and \BookInline{B} is \BookInline{3\times 4.} Thus \BookInline{AB} will be \BookInline{2\times 4.} The entry in its second row and third column is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (2\mathrm{nd}\;\mathrm{row}\;A)(3\mathrm{rd}\;\mathrm{column}\;B)=[1\quad4\quad6]\begin{bmatrix}2\\1\\2\end{bmatrix}=2+4+12=18.}\end{adjustbox}\end{center}
+
+\noindent Computing all eight entries of \BookInline{AB} in this fashion, we obtain
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle AB = \begin{bmatrix} 2 & -2 & 9 & 6 \\ 1 & 17 & 18 & 3 \end{bmatrix}.}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+\noindent \textbf{A4 Example} The product
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 2 & -1 & 3 \\ 1 & 4 & 6 \end{bmatrix} \begin{bmatrix} 2 & 1 \\ 5 & 4 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\noindent is not defined, since the number of entries in a row of the first matrix is not equal to the number of entries in a column of the second matrix\BookInline{.}\BookEnd{\blacktriangle}
+
+For square matrices of the same size, both addition and multiplication are always defined. Exercise 10 asks us to illustrate the fact that matrix multiplication is not commutative.
+
+That is\BookInline{,\allowbreak AB} need not equal \BookInline{BA} even when both products are defined, as for \BookInline{A,\allowbreak B\in } \BookInline{M_{2}(\mathbb{Z}).} It can be shown that \BookInline{A(BC)= (AB)C} and \BookInline{A(B+ C)= AB+ } \textit{AC} whenever all these expressions are defined.
+
+We let \BookInline{I_{n}} be the \BookInline{n\times n} matrix with entries 1 along the diagonal from the upper-left corner to the lower-right corner, and entries 0 elsewhere. For example,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle I_{3} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}.}\end{adjustbox}\end{center}
+
+\noindent It is easy to see that if \BookInline{A} is any \BookInline{n\times s} matrix and \BookInline{B} is any \BookInline{r\times n} matrix, then \BookInline{I_{n}A= A} and \textit{BI}\BookInline{n= B.} That is, the matrix \BookInline{I_{n}} acts much as the number 1 does for multiplication when multiplication by \BookInline{I_{n}} is defined.
+
+\end{BookBody}
+
+% Source PDF page 410; original printed page 393
+\BookSource{410}{393}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Let \BookInline{A} be an \BookInline{n\times n} matrix and consider a matrix equation of the form\textit{ AX} \BookInline{= B,\allowbreak } where \BookInline{A} and \BookInline{B} are known but \BookInline{X} is unknown. If we can find an \BookInline{n\times n} matrix \BookInline{A^{- 1}} such that \BookInline{A^{- 1}A= AA^{- 1}= I_{n},\allowbreak } then we can conclude that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A^{- 1}(AX)= A^{- 1}B,\allowbreak (A^{- 1}A)X= A^{- 1}B,\allowbreak I_{n}X= A^{- 1}B,\allowbreak X= A^{- 1}B,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and we have found the desired matrix \BookInline{X.} Such a matrix \BookInline{A^{- 1}} acts like the reciprocal of a number\BookInline{:A^{- 1}A= I_{n}} and \BookInline{(1/r)r= 1.} This is the reason for the notation \BookInline{A^{- 1}.}
+
+If \BookInline{A^{- 1}} exists, the square matrix \BookInline{A} is\textbf{ invertible} and \BookInline{A^{- 1}} is the\textbf{ inverse} of \BookInline{A.} If \BookInline{A^{- 1}} does not exist, then \BookInline{A} is said to be\textbf{ singular}. It can be shown that if there exists an \BookInline{n\times n} matrix \BookInline{A^{- 1}} such that \BookInline{A^{- 1}A= I_{n},\allowbreak } then \BookInline{AA^{- 1}= I_{n}} also, and furthermore, there is only one matrix \BookInline{A^{- 1}} having this property.
+
+\noindent \textbf{A5 Example} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A = \begin{bmatrix} 2 & 9 \\ 1 & 4 \end{bmatrix}.}\end{adjustbox}\end{center}
+
+\noindent We can check that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} - 4 & 9 \\ 1 & - 2 \end{bmatrix} \begin{bmatrix} 2 & 9 \\ 1 & 4 \end{bmatrix} = \begin{bmatrix} 2 & 9 \\ 1 & 4 \end{bmatrix} \begin{bmatrix} - 4 & 9 \\ 1 & - 2 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}.}\end{adjustbox}\end{center}
+
+\noindent Thus,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A^{-1} = \begin{bmatrix} -4 & 9 \\ 1 & -2 \end{bmatrix}.}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+We leave the problems of determining the existence of \BookInline{A^{- 1}} and its computation to a course in linear algebra.
+
+Associated with each square \BookInline{n\times n} matrix \BookInline{A} is a number called the\textit{ determinant} of \BookInline{A} and denoted by det\BookInline{(A).} This number can be computed as sums and differences of certain products of the numbers that appear in the matrix \BookInline{A.} For example, the determinant of the \BookInline{2\times 2} matrix \BookInline{\left[ \begin{matrix} { a \quad b } \\ { c \quad d } \end{matrix} \right]} is \BookInline{ad- bc.} Note that an \BookInline{n\times 1} matrix with real number entries can be viewed as giving coordinates of a point in \BookInline{n-}dimensional Euclidean space \BookInline{\mathbb{R}^{n}.} Multiplication of such a single column matrix on the left by a real \BookInline{n\times n} matrix \BookInline{A} produces another such single column matrix corresponding to another point in \BookInline{\mathbb{R}^{n}.} This multiplication on the left by \BookInline{A} thus gives a map of \BookInline{\mathbb{R}^{n}} into itself. It can be shown that a piece of \BookInline{\mathbb{R}^{n}} of volume \BookInline{V} is mapped by this multiplication by \BookInline{A} into a piece of volume \BookInline{|}det\BookInline{(A)|\cdot V.} This is one of the reasons that determinants are important.
+
+The following properties of determinants for \BookInline{n\times n} matrices \BookInline{A} and \BookInline{B} are of interest in this text:
+
+\BookExercise{1.}{det\BookInline{(I_{n})= 1}}
+
+\BookExercise{2.}{det\BookInline{(AB)= } det\BookInline{(A)} det\BookInline{(B)}}
+
+\BookExercise{3.}{det\BookInline{(A)\neq 0} if and only if \BookInline{A} is an invertible matrix}
+
+\BookExercise{4.}{If \BookInline{B} is obtained from \BookInline{A} by interchanging two rows (or two columns) of \BookInline{A,\allowbreak } then det\BookInline{(B)= - } det\BookInline{(A)}}
+
+\BookExercise{5.}{If every entry of \BookInline{A} is zero above the\textit{ main diagonal} from the upper left corner to the lower right corner, then det \BookInline{(A)} is the product of the entries on this diagonal. The same is true if all entries below the main diagonal are zero.}
+
+\end{BookBody}
+
+% Source PDF page 411; original printed page 394
+\BookSource{411}{394}
+\BookNarrativefalse
+
+\begin{BookBody} \BookEnd{\blacksquare}
+
+\BookTextHeading{EXERCISES A  }
+
+\noindent In Exercises 1 through 9, compute the given arithmetic matrix expression, if it is defined.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} - 2 & 4 \\ 1 & 5 \end{bmatrix} + \begin{bmatrix} 4 & - 3 \\ 1 & 2 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle i.\ \begin{bmatrix} 1 + i & - 2 & 3 - i \\ 4 & i & 2 - i \end{bmatrix} + \begin{bmatrix} 3 & i - 1 & - 2 + i \\ 3 - i & 1 + i & 0 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\noindent \textbf{2}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} i & - 1 \\ 4 & 1 \\ 3 & - 2i \end{bmatrix} - \begin{bmatrix} 3 - i & 4i \\ 2 & 1 + i \\ 3 & - i \end{bmatrix}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 4.\ \begin{bmatrix} 1 & -1 \\ 3 & \quad 1 \end{bmatrix} \begin{bmatrix} \quad 2 & 4 \\ -1 & 3 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 5.\ \begin{bmatrix} 3 & 1 \\ -4 & 2 \end{bmatrix} \begin{bmatrix} 1 & 5 & -3 \\ 2 & 1 & 6 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 4 & - 1 \\ 3 & 2 \end{bmatrix} \begin{bmatrix} 1 & 0 \\ - 1 & 7 \\ 3 & 1 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 7.\ \begin{bmatrix} \boldsymbol{i} & 1 \\ -2 & 1 \end{bmatrix} \begin{bmatrix} 3\boldsymbol{i} & 1 \\ 4 & -2\boldsymbol{i} \end{bmatrix}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 8.\ \begin{bmatrix} 1 & -1 \\ 1 & 0 \end{bmatrix}^{4}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 1 & - i \\ i & 1 \end{bmatrix}^{4}}\end{adjustbox}\end{center}
+
+\BookExercise{10.}{Give an example in \BookInline{M_{2}(\mathbb{Z})} showing that matrix multiplication is not commutative.}
+
+\BookInline{\Big[\Big]^{- 1}}
+
+\BookExercise{11.}{Find \BookInline{\begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}^{-1}}, by experimentation if necessary.}
+
+\BookInline{\begin{bmatrix} 2 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & - 1 \end{bmatrix}^{- 1}}
+
+\BookExercise{12.}{Find \BookInline{\begin{bmatrix} 2 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & - 1 \end{bmatrix}^{- 1}}, by experimentation if necessary.}
+
+\BookInline{\mathrm{A} = \begin{bmatrix} 3 & 0 & 0 \\ 10 & -2 & 0 \\ 4 & 17 & 8 \end{bmatrix}}
+
+\BookExercise{13.}{If \BookInline{\mathrm{A} = \begin{bmatrix} 3 & 0 & 0 \\ 10 & -2 & 0 \\ 4 & 17 & 8 \end{bmatrix}}, find det (A).}
+
+\BookExercise{14.}{Prove that if \BookInline{A,\allowbreak B\in M_{n}(\mathbb{C})} are invertible, then \BookInline{AB} and \BookInline{BA} are invertible also.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

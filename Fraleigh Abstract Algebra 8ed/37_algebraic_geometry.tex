@@ -1,0 +1,303 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 37 Algebraic Geometry}
+\pdfbookmark[0]{Section 37 Algebraic Geometry}{37_algebraic_geometry}
+\ifdefined\BookMaster\else\setcounter{page}{297}\fi
+% Source PDF page 314; original printed page 297
+\BookSource{314}{297}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{37}{Algebraic Geometry\label{bookfootnote:314:2:ref}\BookFootnote{2}{\label{bookfootnote:314:2:text}This section is used only in Section 38.}}
+
+\noindent This section gives a brief introduction to algebraic geometry. Algebraic geometry is the study of the common zeros of a finite collection of polynomials. For example, the zeros of the set of polynomials \BookInline{\{x^{2}+ y^{2}- 25,\allowbreak (x- 6)^{2}+ y^{2}- 25\}} consist of just two points in \BookInline{\mathbb{R}^{2},\allowbreak (3,\allowbreak 4)} and \BookInline{(3,\allowbreak - 4).} In Section 38 we will develop a very useful algorithm that reduces a finite set of polynomials to a simpler set of polynomials whose zeros are identical to the zeros of the original set. In the example \BookInline{\{x^{2}+ y^{2}- 25,\allowbreak (x- 6)^{2}+ y^{2}- 25\},\allowbreak } the algorithm yields \BookInline{\{x- 3,\allowbreak y^{2}- 16\}} making it much easier to see the two zeros.
+
+\BookTextHeading{\textbf{Algebraic Varieties and Ideals}  }
+
+\noindent Let \BookInline{F} be a field. Recall that \BookInline{F[x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{n}]} is the ring of polynomials in \BookInline{n} indeterminants \BookInline{x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{n}} with coefficients in \BookInline{F.} We let \BookInline{F^{n}} be the Cartesian product \BookInline{F\times F\times } \BookInline{\cdots \times F} for \BookInline{n} factors. For ease in writing, we denote an element \BookInline{(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n})} of \BookInline{F^{n}} by \textbf{a,} in bold type. Using similar economy, we let \BookInline{F[}\textbf{x}\BookInline{]\; = F[x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{n}].} For each\textbf{ a} \BookInline{\in } \BookInline{F^{n},\allowbreak } we have an evaluation homomorphism \BookInline{\phi }\enspace\textbf{a}\BookInline{:F[}\textbf{x}\BookInline{]\; \to F} just as in Theorem 27.4. That is, for \BookInline{f(}\textbf{x}\BookInline{)\; = f(x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{n})\in F[}\textbf{x}], we define \BookInline{\phi }\enspace\textbf{a}\BookInline{(f(}\textbf{x}\BookInline{))= f(}\enspace\textbf{a}\BookInline{)\; = f(a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n}).}
+
+\end{BookBody}
+
+% Source PDF page 315; original printed page 298
+\BookSource{315}{298}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent The proof that \BookInline{\phi }\enspace\textbf{a} is indeed a homomorphism follows from the associative, commutative, and distributive properties of the operations in \BookInline{F[}\textbf{x}] and \BookInline{F.} Just as for the one-indeterminate case, an element\textbf{ a} of \BookInline{F^{n}} is a\textbf{ zero of} \BookInline{f(}\textbf{x}\BookInline{)\; \in F[}\textbf{x}] if \BookInline{f(}\enspace\textbf{a}\BookInline{)\; = 0.} In what follows, we further abbreviate a polynomial \BookInline{f(}\textbf{x}) by “\BookInline{f.}”
+
+In this section and the following we discuss the problem of finding common zeros in \BookInline{F^{n}} of a finite number of polynomials \BookInline{f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r}} in \BookInline{F[}\textbf{x}]. Finding and studying geometric properties of the set of all these common zeros is the subject of algebraic geometry.
+
+\BookLabel{37.1 Definition} Let \BookInline{S} be a finite subset of \BookInline{F[}\textbf{x}]. The\textbf{ algebraic variety} \BookInline{V(S)} in \BookInline{F^{n}} is the set of all common zeros in \BookInline{F^{n}} of the polynomials in \BookInline{S.}\BookEnd{\blacksquare}
+
+In our illustrative examples, which usually involve at most three indeterminates, we use \BookInline{x,\allowbreak y,\allowbreak z} in place of \BookInline{x_{1},\allowbreak x_{2},\allowbreak } and \BookInline{x_{3}.}
+
+\BookLabel{37.2 Example} Let \BookInline{S= \{2x+ y- 2\}\subset \mathbb{R}[x,\allowbreak y].} The algebraic variety \BookInline{V(S)} in \BookInline{\mathbb{R}^{2}} is the line with \BookInline{x-}intercept 1 and \BookInline{y-}intercept \BookInline{2.}\BookEnd{\blacktriangle}
+
+We leave to Exercise 14 the straightforward proof that for \BookInline{r} elements \BookInline{f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r}} in a commutative ring \BookInline{R} with unity, the set
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle I= \{c_{1}f_{1}+ c_{2}f_{2}+ \cdots + c_{r}f_{r}\mid c_{i}\in R\;\text{for}\;i= 1,\allowbreak \cdots ,\allowbreak r\}}\end{adjustbox}\end{center}
+
+\noindent is an ideal of \BookInline{R.} We denote this ideal by \BookInline{\langle f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r}\rangle.} We are interested in the case \BookInline{R= F[}\textbf{x}] where all the \BookInline{c_{i}} and all the \BookInline{f_{i}} are polynomials in \BookInline{F[}\textbf{x}]. We regard the \BookInline{c_{i}} as “coefficient polynomials.” By its construction, this ideal \BookInline{I} is the smallest ideal containing the polynomials \BookInline{f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r};} it can also be described as the intersection of all ideals containing these \BookInline{r} polynomials.
+
+\BookLabel{37.3 Definition} Let \BookInline{I} be an ideal in a commutative ring \BookInline{R} with unity. A subset \BookInline{\{b_{1},\allowbreak b_{2},\allowbreak \cdots,\allowbreak b_{r}\}} of \BookInline{I} is a \textbf{basis} for \BookInline{I} if \BookInline{I= \langle b_{1},\allowbreak b_{2},\allowbreak \cdots,\allowbreak b_{r}\rangle.}\BookEnd{\blacksquare}
+
+Unlike the situation in linear algebra, there is no requirement of independence for elements of a basis, or of unique representation of an ideal member in terms of a basis.
+
+\BookLabel{37.4 Theorem} Let \BookInline{f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r}\in F[}\textbf{x}]. The set of common zeros in \BookInline{F^{n}} of the polynomials \BookInline{f_{i}} for \BookInline{i= } \BookInline{1,\allowbreak 2,\allowbreak \cdots,\allowbreak r} is the same as the set of common zeros in \BookInline{F^{n}} of all the polynomials in the entire ideal \BookInline{I= \langle f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r}\rangle.}
+
+\BookLabel{\textit{Proof}} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f= c_{1}f_{1}+ c_{2}f_{2}+ \cdots + c_{r}f_{r}(1)}\end{adjustbox}\end{center}
+
+\noindent be any element of \BookInline{I,\allowbreak } and let\textbf{ a} \BookInline{\in F^{n}} be a common zero of \BookInline{f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak } and \BookInline{f_{r}.} Applying the evaluation homomorphism \BookInline{\phi }\enspace\textbf{a} to Eq. (1), we obtain
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}f(\mathrm{a})&= c_{1}(\mathrm{a})f_{1}(\mathrm{a})+ c_{2}(\mathrm{a})f_{2}(\mathrm{a})+ \cdots + c_{r}(\mathrm{a})f_{r}(\mathrm{a}) \\ &= c_{1}(\mathrm{a})0+ c_{2}(\mathrm{a})0+ \cdots + c_{r}(\mathrm{a})0= 0,\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent showing that\textbf{ a} is also a zero of every polynomial \BookInline{f} in \BookInline{I.} Of course, a zero of every polynomial in \BookInline{I} will be a zero of each \BookInline{f_{i}} because each \BookInline{f_{i}\in I.}\BookEnd{\blacklozenge}
+
+For an ideal \BookInline{I} in \BookInline{F[}\textbf{x}], we let \BookInline{V(I)} be the set of all common zeros of all elements of \BookInline{I.} We can summarize Theorem 37.4 as
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle V(\{f_{1},\allowbreak f_{2},\allowbreak \cdots ,\allowbreak f_{r}\})= V(\langle f_{1},\allowbreak f_{2},\allowbreak \cdots ,\allowbreak f_{r}\rangle ).}\end{adjustbox}\end{center}
+
+\noindent Recall that a commutative ring with unity is Noetherian if for every chain \BookInline{N_{1}\subseteq N_{2}\subseteq } \BookInline{N_{3}\subseteq...} of ideals in \BookInline{R,\allowbreak } there is an integer \BookInline{r} such that for \BookInline{s\geq r,\allowbreak N_{r}= N_{s}.} Lemma 34.10 
+% Source PDF page 316; original printed page 299
+\BookSource{316}{299}
+states that if \BookInline{R} is a PID, then \BookInline{R} is a Noetherian ring. Theorem 37.5 states that if \BookInline{R} is a Noetherian ring, then polynomials with coefficients in \BookInline{R} also form a Noetherian ring.
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{37.5 Example} If \BookInline{R} is a Noetherian ring, then \BookInline{R[x]} is also a Noetherian ring.
+
+\BookLabel{\textit{Proof}} Let \BookInline{I_{1}\subseteq I_{2}\subseteq I_{3}\subseteq...} be a chain of ideal in \BookInline{R[x].} As we saw in Lemma \BookInline{3 4. 9,\allowbreak I = \bigcup _ { n = 1 } ^ { \infty } I _ { n }}
+
+\noindent is an ideal in \BookInline{R.}
+
+We will show by contradiction that \BookInline{I} has a finite basis. So we suppose that no finite set of polynomials is a basis for \BookInline{I.} We let \BookInline{f_{1}} be a polynomial in \BookInline{I} of minimal degree. We then let \BookInline{f_{2}} be a polynomial of minimum degree that is in \BookInline{I,\allowbreak } but not in \BookInline{\langle f_{1}\rangle.} Continuing in this manner, we let \BookInline{f_{n}} be a polynomial of minimal degree in \BookInline{I,\allowbreak } but not in \BookInline{\langle f_{1},\allowbreak f_{2},\allowbreak...,\allowbreak f_{n- 1}\rangle.} This defines an infinite sequence of polynomials since by our assumption no finite set of polynomials is a basis for \BookInline{I.} It is clear that deg\BookInline{(f_{1})\leq } deg\BookInline{(f_{2})} since otherwise we should have picked \BookInline{f_{2}} instead of \BookInline{f_{1}} as the first polynomial in the sequence. In general, deg\BookInline{(f_{1})\leq } deg\BookInline{(f_{2})\leq } deg\BookInline{(f_{3})\leq...}
+
+We let \BookInline{a_{j}} be the leading coefficient of \BookInline{f_{j}.} Then in \BookInline{R,\allowbreak } we have a chain of ideals
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \langle a_{1}\rangle \subseteq \langle a_{1},\allowbreak a_{2}\rangle \subseteq \langle a_{1},\allowbreak a_{2},\allowbreak a_{3}\rangle \subseteq ...}\end{adjustbox}\end{center}
+
+\noindent By the ascending chain condition in \BookInline{R,\allowbreak } there is some integer \BookInline{N} so that for any \BookInline{s\geq N,\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \langle a_{1},\allowbreak a_{2},\allowbreak ...,\allowbreak a_{N}\rangle = \langle a_{1},\allowbreak a_{2},\allowbreak ...,\allowbreak a_{s}\rangle .}\end{adjustbox}\end{center}
+
+\noindent In particular,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a_{N+ 1}= \sum _{j= 1}^{N}c_{j}a_{j}}\end{adjustbox}\end{center}
+
+\noindent for some elements \BookInline{c_{j}} in \BookInline{R.} The polynomial
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle g(x)= \sum _{j= 1}^{N}c_{j}x^{\;\text{deg}\;(f_{N+ 1})- \;\text{deg}\;(f_{j})}f_{j}}\end{adjustbox}\end{center}
+
+\noindent is in the ideal \BookInline{\langle f_{1},\allowbreak f_{2},\allowbreak f_{3},\allowbreak...,\allowbreak f_{N}\rangle.} Thus \BookInline{f_{N+ 1}- g\notin \langle f_{1},\allowbreak f_{2},\allowbreak...,\allowbreak f_{N}= J\rangle.} The degrees of \BookInline{g} and \BookInline{f_{N+ 1}} are equal and they have the same leading coefficient \BookInline{a_{N+ 1}.} Thus the degree of \BookInline{f_{N+ 1}- g} is less than the degree of \BookInline{f_{N+ 1}.} But this contradicts the choice of \BookInline{f_{N+ 1}} since \BookInline{f_{N+ 1}- g\notin J,\allowbreak f_{N}- g} has lower degree than \BookInline{f_{N+ 1},\allowbreak } and \BookInline{f_{N+ 1}} has lowest degree among all the polynomials in \BookInline{I} that are not in \BookInline{\langle f_{1}(x),\allowbreak f_{2}(x),\allowbreak...f_{N}(x)\rangle.} We conclude that there is a finite set of polynomials with \BookInline{I= \langle f_{1},\allowbreak f_{2},\allowbreak...,\allowbreak f_{n}\rangle.}
+
+Since every polynomial \BookInline{f_{j}} is in some \BookInline{I_{k_{j}}} and \BookInline{I_{1}\subseteq I_{2}\subseteq I_{3}\subseteq...,\allowbreak } it follows that there is an integer \BookInline{r} such that \BookInline{f_{j}} is in \BookInline{I_{r}} for each \BookInline{j.} Therefore\BookInline{,\allowbreak I= \langle f_{1},\allowbreak f_{2},\allowbreak f_{3},\allowbreak...,\allowbreak f_{n}\rangle = I_{r}.}\BookEnd{\blacklozenge}
+
+By repeated application of Theorem 37.5, it is immediate that \BookInline{F[x_{1},\allowbreak x_{2},\allowbreak...,\allowbreak x_{n}]} is a Noetherian ring for any field \BookInline{F.} Exercise 21 shows that if \BookInline{R} is a commutative ring with unity, then \BookInline{R} is a Noetherian ring if and only if every ideal \BookInline{I} in \BookInline{R} has a finite basis. These observations prove the following significant theorem.
+
+\BookLabel{37.6 Theorem} \textbf{(Hilbert Basis Theorem)} Every ideal \BookInline{I} in \BookInline{F[x_{1},\allowbreak x_{2},\allowbreak...,\allowbreak x_{n}]} has a finite basis\BookInline{.}\BookEnd{\blacklozenge}
+
+\noindent \textbf{Our objective}: Given a basis for an ideal \BookInline{I} in \BookInline{F[}\textbf{x}], modify it if possible to become a basis that better exhibits the structure of \BookInline{I} and the geometry of the associated algebraic variety \BookInline{V(I).}
+
+\end{BookBody}
+
+% Source PDF page 317; original printed page 300
+\BookSource{317}{300}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+The theorem that follows provides a tool for this task. You should notice that the theorem gives information about the division algorithm that we did not mention in Theorem 28.2. We use the same notation here as in Theorem 28.2, but with\textbf{ x} rather than \BookInline{x.} If \BookInline{f(}\textbf{x}\BookInline{)\; = g(}\textbf{x}\BookInline{)h(}\textbf{x}) in \BookInline{F(}\textbf{x}), then \BookInline{g(}\textbf{x}) and \BookInline{h[}\textbf{x}] are called\textbf{ “divisors”} or\textbf{ “factors”} of \BookInline{f(}\textbf{x}).
+
+\BookLabel{37.7 Theorem} \textbf{(Property of the Division Algorithm)} Let \BookInline{f(}\textbf{x}\BookInline{),\allowbreak g(}\textbf{x}\BookInline{),\allowbreak q(}\textbf{x}), and \BookInline{r(}\textbf{x}) be polynomials in \BookInline{F[}\textbf{x}] such that \BookInline{f(}\textbf{x}\BookInline{)\; = g(}\textbf{x}\BookInline{)q(}\textbf{x}\BookInline{)\; + r(}\textbf{x}). The common zeros in \BookInline{F^{n}} of \BookInline{f(}\textbf{x}) and \BookInline{g(}\textbf{x}) are the same as the common zeros of \BookInline{g(}\textbf{x}) and \BookInline{r(}\textbf{x}). Also the common divisors in \BookInline{F[}\textbf{x}] of \BookInline{f(}\textbf{x}) and \BookInline{g(}\textbf{x}) are the same as the common divisors of \BookInline{g(}\textbf{x}) and \BookInline{r(}\textbf{x}).
+
+If \BookInline{f(}\textbf{x}) and \BookInline{g(}\textbf{x}) are two members of a basis for an ideal \BookInline{I} of \BookInline{F[}\textbf{x}], then replacement of \BookInline{f(}\textbf{x}) by \BookInline{r(}\textbf{x}) in the basis still yields a basis for \BookInline{I.}
+
+\BookLabel{\textit{Proof}} If\textbf{ a} \BookInline{\in F^{n}} is a common zero of \BookInline{g(}\textbf{x}) and \BookInline{r(}\textbf{x}), then applying \BookInline{\phi }\enspace\textbf{a} to both sides of the equation \BookInline{f(}\textbf{x}\BookInline{)\; = g(}\textbf{x}\BookInline{)q(}\textbf{x}\BookInline{)\; + r(}\textbf{x}), we obtain \BookInline{f(}\enspace\textbf{a}\BookInline{)\; = g(}\enspace\textbf{a}\BookInline{)q(}\enspace\textbf{a}\BookInline{)\; + r(}\enspace\textbf{a}\BookInline{)\; = 0q(}\enspace\textbf{a}\BookInline{)\; + 0= 0,\allowbreak } so \textbf{a} is a zero of both \BookInline{f(}\textbf{x}) and \BookInline{g(}\textbf{x}). If\textbf{ b} \BookInline{\in F[}\textbf{x}] is a common zero of \BookInline{f(}\textbf{x}) and \BookInline{g(}\textbf{x}), then applying \BookInline{\phi } \BookInline{\operatorname { \operatorname { _ { b } } y i e l d s } f ( \mathbf { b } ) = g ( \mathbf { b } ) q ( \mathbf { b } ) + r ( \mathbf { b } ) \operatorname { s o } 0 = 0 q ( \mathbf { b } ) + r ( \mathbf { b } )} and we see that \BookInline{r(}\enspace\textbf{b}\BookInline{)\; = 0} and \BookInline{g(}\enspace\textbf{b}\BookInline{)\; = 0.}
+
+The proof concerning common divisors is essentially the same, and is left as Exercise 15.
+
+Finally, let \BookInline{B} be a basis for an ideal \BookInline{I,\allowbreak } let \BookInline{f(}\textbf{x}\BookInline{),\allowbreak g(}\textbf{x}\BookInline{),\allowbreak \in B,\allowbreak } and let \BookInline{f(}\textbf{x}\BookInline{)\; = g(}\textbf{x}\BookInline{)q(}\textbf{x}\BookInline{)\; + } \BookInline{r(}\textbf{x}). Let \BookInline{B^{\prime }} be the set obtained by replacing \BookInline{f(}\textbf{x}) by \BookInline{r(}\textbf{x}) in \BookInline{B,\allowbreak } and let \BookInline{I^{\prime }} be the ideal having \BookInline{B^{\prime }} as a basis. Let \BookInline{S} be the set obtained from \BookInline{B} by adjoining \BookInline{r(}\textbf{x}) to \BookInline{B.} Note that \BookInline{S} can also be obtained by adjoining \BookInline{f(}\textbf{x}) to \BookInline{B^{\prime }.} The equation \BookInline{f(}\textbf{x}\BookInline{)\; = g(}\textbf{x}\BookInline{)q(}\textbf{x}\BookInline{)\; + r(}\textbf{x}) shows that \BookInline{f(}\textbf{x}\BookInline{)\; \in I^{\prime },\allowbreak } so we have \BookInline{B^{\prime }\subseteq S\subseteq I^{\prime }.} Thus \BookInline{S} is a basis for \BookInline{I^{\prime }.} The equation \BookInline{r(}\textbf{x}\BookInline{)\; = f(}\textbf{x}\BookInline{)\; - q(}\textbf{x}\BookInline{)g(}\textbf{x}) shows that \BookInline{r(}\textbf{x}\BookInline{)\; \in I,\allowbreak } so we have \BookInline{B\subseteq S\subseteq I.} Thus \BookInline{S} is basis for \BookInline{I.} Therefore \BookInline{I= I^{\prime }} and \BookInline{B^{\prime }} is a basis for \BookInline{I.}\BookEnd{\blacklozenge}
+
+\BookTextHeading{\textbf{A Familiar Linear Illustration}  }
+
+\noindent A basic technique for problem solving in linear algebra is finding all common solutions of a finite number of linear equations. For the moment we abandon our practice of never writing “\BookInline{f(}\textbf{x}\BookInline{)\; = 0}” for a nonzero polynomial, and work a typical problem as we do in a linear algebra course.
+
+\BookLabel{37.8 Example} \textbf{(Solution as in a Linear Algebra Course)} Find all solutions in \BookInline{\mathbb{R}^{3}} of the linear system
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}x+ y- 3z&= 8 \\ 2x+ y+ z&= - 5.\end{aligned}}\end{adjustbox}\end{center}
+
+\BookLabel{\textit{Solution}} We multiply the first equation by \BookInline{- 2} and add it to the second, obtaining the new system
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x+ y- 3z= 8}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle - y+ 7z= - 21}\end{adjustbox}\end{center}
+
+\noindent which has the same solution set in \BookInline{\mathbb{R}^{3}} as the preceding one. For any value \BookInline{z,\allowbreak } we can find the corresponding \BookInline{y-}value from the second equation and then determine \BookInline{x} from the first equation. Keeping \BookInline{z} as parameter, we obtain \BookInline{\{(- 4z- 13,\allowbreak 7z+ 21,\allowbreak z)\mid z\in \mathbb{R}\}} as solution set, which is a line in Euclidean 3-space through the point \BookInline{(- 13,\allowbreak 21,\allowbreak 0).}\BookEnd{\blacktriangle}
+
+In the notation of this section, the problem in the preceding example can be phrased as follows:
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{Describe}\;V(\langle x+ y- 3z- 8,\allowbreak 2x+ y+ z+ 5\rangle )\;\text{in}\;\mathbb{R}^{3}.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 318; original printed page 301
+\BookSource{318}{301}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent We solved it by finding a more useful basis, namely
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{x+ y- 3z- 8,\allowbreak - y+ 7z+ 21\}.}\end{adjustbox}\end{center}
+
+\noindent Notice that the second member\BookInline{,\allowbreak - y+ 7z+ 21,\allowbreak } of this new basis can be obtained from the original two basis polynomials as a remainder \BookInline{r(x,\allowbreak y,\allowbreak z)} in a division process, namely
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&2 \\ &x+ y- 3z- 82x+ y+ z+ 5 \\ &2x+ 2y- 6z- 16 \\ &- y+ 7z+ 21\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{2x+ y+ z+ 5= (x+ y- 3z- 8)(2)+ (- y+ 7z+ 21),\allowbreak } an expression of the form \BookInline{f(x,\allowbreak y,\allowbreak z)= g(x,\allowbreak y,\allowbreak z)q(x,\allowbreak y,\allowbreak z)+ r(x,\allowbreak y,\allowbreak z).} We replaced the polynomial \BookInline{f} by the polynomial \BookInline{r,\allowbreak } as in Theorem 37.7, which assures us that \BookInline{V(\langle f,\allowbreak g\rangle )= V(\langle g,\allowbreak r\rangle )} and that \BookInline{\langle f,\allowbreak g\rangle = \langle g,\allowbreak r\rangle.} We chose a very simple, 1-step problem in Example 37.8. However, it is clear that the method introduced in a linear algebra course for solving a linear system can be phrased in terms of applying a division algorithm process repeatedly to change a given ideal basis into one that better illuminates the geometry of the associated algebraic variety.
+
+\BookTextHeading{\textbf{A Single Indeterminate Illustration}  }
+
+\noindent Suppose now that we want to find the variety \BookInline{V(I)} in \BookInline{\mathbb{R}} associated with an ideal \BookInline{I} in \BookInline{F[x],\allowbreak } the ring of polynomials in the single indeterminate \BookInline{x.} By Theorem 31.24, every ideal in \BookInline{F[x]} is principal, so there exists \BookInline{f(x)\in F[x]} such that \BookInline{I= \langle f(x)\rangle.} Thus \BookInline{V(I)} consists of the zeros of a single polynomial, and \BookInline{\{f(x)\}} is probably as simple a basis for \BookInline{I} as we could desire. We give an example illustrating computation of such a single generator \BookInline{f(x)} for \BookInline{I} in a case where the given basis for \BookInline{I} contains more than one polynomial. Because a polynomial in \BookInline{\mathbb{R}[x]} has only a finite number of zeros in \BookInline{\mathbb{R},\allowbreak } we expect two or more randomly selected polynomials in \BookInline{\mathbb{R}[x]} to have no common zeros, but we constructed the basis in our example carefully!
+
+\BookLabel{37.9 Example} Let us describe the algebraic variety \BookInline{V} in \BookInline{\mathbb{R}} consisting of common zeros of
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)= x^{4}+ x^{3}- 3x^{2}- 5x- 2\;\text{and}\;g(x)= x^{3}+ 3x^{2}- 6x- 8.}\end{adjustbox}\end{center}
+
+\noindent We want to find a new basis for \BookInline{\langle f,\allowbreak g\rangle } having polynomials of as small degree as possible, so we use the division algorithm \BookInline{f(x)= g(x)q(x)+ r(x)} in Theorem 28.2, where \BookInline{r(x)} will have degree at most 2. We then replace the basis \BookInline{\{f,\allowbreak g\}} by the basis \BookInline{\{g,\allowbreak r\}.}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&x- 2 \\ &x^{3}+ 3x^{2}- 6x- 8x^{4}+ x^{3}- 3x^{2}- 5x- 2 \\ &x^{4}+ 3x^{3}- 6x^{2}- 8x \\ &- 2x^{3}+ 3x^{2}+ 3x- 2 \\ &- 2x^{3}- 6x^{2}+ 12x+ 16 \\ &9x^{2}- 9x- 18\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Because zeros of \BookInline{9x^{2}- 9x- 18} are the same as zeros of \BookInline{x^{2}- x- 2,\allowbreak } we let \BookInline{r(x)= x^{2}- } \BookInline{x- 2,\allowbreak } and take as new basis
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{g,\allowbreak r\}= (x^{3}+ 3x^{2}- 6x- 8,\allowbreak x^{2}- x- 2).}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 319; original printed page 302
+\BookSource{319}{302}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+By dividing \BookInline{g(x)} by \BookInline{r(x)} to obtain a remainder \BookInline{r_{1}(x),\allowbreak } we will now be able to find a basis \BookInline{\{r(x),\allowbreak r_{1}(x)\}} consisting of polynomials of degree at most 2.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x+ 4}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{2}- x- 2x^{3}+ 3x^{2}- 6x- 8}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{3}- x^{2}- 2x}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 4x^{2}- 4x- 8}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 4x^{2}- 4x- 8}\end{adjustbox}\end{center}
+
+0
+
+\noindent Our new basis \BookInline{\{r(x),\allowbreak r_{1}(x)\}} now becomes \BookInline{\{x^{2}- x- 2\}.} Thus \BookInline{I= \langle f(x),\allowbreak g(x)\rangle = } \BookInline{\langle x^{2}- x- 2\rangle = \langle (x- 2)(x+ 1)\rangle,\allowbreak } and we see that \BookInline{V= \{- 1,\allowbreak 2\}.}\BookEnd{\blacktriangle}
+
+Theorem 37.7 tells us that the common divisors of \BookInline{f(x)} and \BookInline{g(x)} in the preceding example are the same as the common divisors of \BookInline{r(x)} and \BookInline{r_{1}(x).} Because \BookInline{0= (0)r(x),\allowbreak } we see that \BookInline{r(x)} itself divides 0, so the common divisors of \BookInline{f(x)} and \BookInline{g(x)} are just those of \BookInline{r(x),\allowbreak } which, of course, include \BookInline{r(x)} itself. Thus \BookInline{r(x)} is called a “\textit{greatest common} \textit{divisor}” (abbreviated gcd) of \BookInline{f(x)} and \BookInline{g(x).}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{37}
+
+\noindent In Exercises 1–4 find a basis for the given ideals in \BookInline{\mathbb{R}[x,\allowbreak y].}
+
+\BookExercise{1.}{The set of polynomials with constant 0.}
+
+\BookExercise{2.}{The kernel of the evaluation homomorphism \BookInline{\phi _{(2,\allowbreak 3)}:\mathbb{R}[x,\allowbreak y]\to \mathbb{R}.}}
+
+\BookExercise{3.}{The kernel of the evaluation homomorphism \BookInline{\phi _{(- 4,\allowbreak 5)}:\mathbb{R}[x,\allowbreak y]\to \mathbb{R}.}}
+
+\BookExercise{4.}{The set of all polynomials with zeros on the circle centered at the origin with radius 1.}
+
+\noindent In Exercises 5–8, use the techniques from Examples 37.8 and 37.9 to find a simpler basis for the ideal where the field is \BookInline{\mathbb{R}.} Describe the algebraic variety associated with the ideal.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 5.I= \langle x+ y+ z,\allowbreak 2x+ y+ 3z- 4\rangle}\end{adjustbox}\end{center}
+
+\BookExercise{6.}{\BookInline{I= \langle 3x+ 4y+ 7z- 10,\allowbreak 2x+ 3y- 2z+ 1\rangle }}
+
+\BookExercise{7.}{\BookInline{I= \langle x^{4}+ 5x^{3}+ 3x^{2}- 7x- 2,\allowbreak x^{3}+ 6x^{2}+ 3x- 10\rangle }}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 8.I= \langle x^{6}- x^{5}- 6x^{4}+ 3x^{3}- 8x^{2}- 4x+ 3,\allowbreak x^{3}- 2x^{2}- 9\rangle}\end{adjustbox}\end{center}
+
+\BookExercise{9.}{Describe the algebraic variety for the ideal \BookInline{\{0\}} in \BookInline{F[x,\allowbreak y].}}
+
+\BookExercise{10.}{Describe the algebraic variety for the ideal \BookInline{\{1\}} in \BookInline{F[x,\allowbreak y].}}
+
+\BookExercise{11.}{Describe the algebraic variety in \BookInline{F} for the ideal \BookInline{\langle x^{2}+ 1\rangle } a) for \BookInline{F= \mathbb{R}} and b) for \BookInline{F= \mathbb{C}.}}
+
+\BookExercise{12.}{Compare the algebraic varieties for the ideals \BookInline{I= \langle x^{2}+ 4xy+ 4y^{2}\rangle } and \BookInline{J= \langle x+ 2y\rangle.}}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{13.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every ideal in \BookInline{F[}\textbf{x}] has a finite basis.}
+
+\BookExercise{b.}{Every subset of \BookInline{\mathbb{R}^{2}} is an algebraic variety.}
+
+\BookExercise{c.}{The empty subset of \BookInline{\mathbb{R}^{2}} is an algebraic variety.}
+
+\BookExercise{d.}{Every finite subset of \BookInline{\mathbb{R}^{2}} is an algebraic variety.}
+
+\BookExercise{e.}{Every line in \BookInline{\mathbb{R}^{2}} is an algebraic variety.}
+
+\BookExercise{f.}{Every finite collection of lines in \BookInline{\mathbb{R}^{2}} is an algebraic variety.}
+
+\BookExercise{g.}{A greatest common divisor of a finite number of polynomials in \BookInline{\mathbb{R}[x](}one indeterminate) can be computed using the division algorithm repeatedly.}
+
+\end{BookBody}
+
+% Continuation on source PDF page 320, preceding Section 38
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{h.}{In the context of ideals in a commutative ring with unity, elements in a basis are independent.}
+
+\BookExercise{i.}{If \BookInline{R} is a Noetherian ring, then so is \BookInline{R[x].}}
+
+\BookExercise{j.}{The ideals \BookInline{\langle x,\allowbreak y\rangle } and \BookInline{\langle x^{2},\allowbreak y^{2}\rangle } are equal because they both yield the same algebraic variety, namely \BookInline{\{(0,\allowbreak 0)\},\allowbreak } in \BookInline{\mathbb{R}^{2}.}}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{14.}{Show that if \BookInline{f_{1},\allowbreak f_{2},\allowbreak \cdots,\allowbreak f_{r}} are elements of a commutative ring \BookInline{R} with unity, then \BookInline{I= \{c_{1}f_{1}+ c_{2}f_{2}+ \cdots + } \BookInline{c_{r}f_{r}|c_{i}\in R} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak r\}} is an ideal of \BookInline{R.}}
+
+\BookExercise{15.}{Show that if \BookInline{f(}\textbf{x}\BookInline{)\; = g(}\textbf{x}\BookInline{)q(}\textbf{x}\BookInline{)\; + r(}\textbf{x}) in \BookInline{F[}\textbf{x}], then the common divisors in \BookInline{F[}\textbf{x}] of \BookInline{f(}\textbf{x}) and \BookInline{g(}\textbf{x}) are the same as the common divisors in \BookInline{F[}\textbf{x}] of \BookInline{g(}\textbf{x}) and \BookInline{r(}\textbf{x}).}
+
+\BookExercise{16.}{Let \BookInline{F} be a field. Show that if \BookInline{S} is a nonempty subset of \BookInline{F^{n},\allowbreak } then}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle I(S)= \{f(\mathrm{x})\in F[\mathrm{x}]\mid f(\mathrm{s})= 0\;\text{for all s}\;\in S\}}\end{adjustbox}\end{center}
+
+is an ideal of \BookInline{F[}\textbf{x}].
+
+\BookExercise{17.}{Referring to Exercise 16, show that \BookInline{S\subseteq V(I(S)).}}
+
+\BookExercise{18.}{Referring to Exercise 16, give an example of a subset \BookInline{S} of \BookInline{\mathbb{R}^{2}} such that \BookInline{V(I(S))\neq S.}}
+
+\BookExercise{19.}{Referring to Exercise 16, show that if \BookInline{N} is an ideal of \BookInline{F[}\textbf{x}], then \BookInline{N\subseteq I(V(N)).}}
+
+\BookExercise{20.}{Referring to Exercise 16, give an example of an ideal \BookInline{N} in \BookInline{\mathbb{R}[x,\allowbreak y]} such that \BookInline{I(V(N))\neq N.}}
+
+\BookExercise{21.}{Prove for \BookInline{R} a commutative ring with unity\BookInline{,\allowbreak R} is a Noetherian ring if and only if every ideal in \BookInline{R} has a finite basis.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

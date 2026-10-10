@@ -1,0 +1,24 @@
+.venv/
+# Local runtime, editor state and build products
+/.venv/
+/.texeed/
+/build/
+__pycache__/
+*.py[cod]
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.pdf
+
+# OCR, proofreading evidence and one-off conversion/checking scripts
+/ocr/
+/processed/
+/qa/
+/tools/
+/sources/blocks.json
+/sources/*.html
+/sources/*.txt
+
+# Keep chapters, tables, assets, final PDF and source/provenance metadata tracked.

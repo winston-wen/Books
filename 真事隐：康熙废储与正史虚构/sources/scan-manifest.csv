@@ -1,0 +1,500 @@
+﻿扫描号,原文件,处理方式,工程位置,OCR旋转角度,原件字节数
+1,真事隐康熙废储-1.jpg,原样整页,assets/scan-001.jpg,0,1490294
+2,真事隐康熙废储-2.jpg,原样整页,assets/scan-002.jpg,0,314932
+3,真事隐康熙废储-3.jpg,版权页转录,chapters/copyright.tex,0,473440
+4,真事隐康熙废储-4.jpg,前言转录,chapters/preface.tex,0,604164
+5,真事隐康熙废储-5.jpg,前言转录,chapters/preface.tex,0,931960
+6,真事隐康熙废储-6.jpg,前言转录,chapters/preface.tex,0,890856
+7,真事隐康熙废储-7.jpg,前言转录,chapters/preface.tex,0,845447
+8,真事隐康熙废储-8.jpg,前言转录,chapters/preface.tex,0,827951
+9,真事隐康熙废储-9.jpg,前言转录,chapters/preface.tex,0,879305
+10,真事隐康熙废储-10.jpg,前言转录,chapters/preface.tex,0,840154
+11,真事隐康熙废储-11.jpg,前言转录,chapters/preface.tex,0,841227
+12,真事隐康熙废储-12.jpg,前言转录,chapters/preface.tex,0,365084
+13,真事隐康熙废储-13.jpg,图片裁取,chapters/plates.tex,0,1140539
+14,真事隐康熙废储-14.jpg,原样整页,assets/scan-014.jpg,0,988950
+15,真事隐康熙废储-15.jpg,目录重新生成，保留章节与节标题,main.tex / 自动目录,0,368003
+16,真事隐康熙废储-16.jpg,目录重新生成，保留章节与节标题,main.tex / 自动目录,0,402740
+17,真事隐康熙废储-17.jpg,目录重新生成，保留章节与节标题,main.tex / 自动目录,0,375945
+18,真事隐康熙废储-18.jpg,目录重新生成，保留章节与节标题,main.tex / 自动目录,0,297975
+19,真事隐康熙废储-19.jpg,致读者转录,chapters/reader.tex,0,403346
+20,真事隐康熙废储-20.jpg,正文转录,chapters/01.tex,0,508533
+21,真事隐康熙废储-21.jpg,正文转录,chapters/01.tex,0,778251
+22,真事隐康熙废储-22.jpg,正文转录,chapters/01.tex,180,678726
+23,真事隐康熙废储-23.jpg,正文转录,chapters/01.tex,0,855857
+24,真事隐康熙废储-24.jpg,正文转录,chapters/01.tex,0,741858
+25,真事隐康熙废储-25.jpg,正文转录,chapters/01.tex,0,814667
+26,真事隐康熙废储-26.jpg,正文转录,chapters/01.tex,0,924024
+27,真事隐康熙废储-27.jpg,正文转录,chapters/01.tex,0,915477
+28,真事隐康熙废储-28.jpg,正文转录,chapters/01.tex,0,969550
+29,真事隐康熙废储-29.jpg,正文转录,chapters/01.tex,0,930084
+30,真事隐康熙废储-30.jpg,正文转录,chapters/01.tex,0,1293771
+31,真事隐康熙废储-31.jpg,正文转录,chapters/01.tex,0,944291
+32,真事隐康熙废储-32.jpg,正文转录,chapters/01.tex,0,1052557
+33,真事隐康熙废储-33.jpg,正文转录,chapters/01.tex,0,774455
+34,真事隐康熙废储-34.jpg,正文转录,chapters/01.tex,0,961352
+35,真事隐康熙废储-35.jpg,正文转录,chapters/01.tex,0,877520
+36,真事隐康熙废储-36.jpg,正文转录；插图单独排版,chapters/01.tex,0,576571
+37,真事隐康熙废储-37.jpg,正文转录,chapters/01.tex,0,591299
+38,真事隐康熙废储-38.jpg,正文转录,chapters/01.tex,0,739528
+39,真事隐康熙废储-39.jpg,正文转录,chapters/01.tex,0,715544
+40,真事隐康熙废储-40.jpg,正文转录,chapters/01.tex,0,792218
+41,真事隐康熙废储-41.jpg,正文转录,chapters/01.tex,0,636449
+42,真事隐康熙废储-42.jpg,正文转录,chapters/01.tex,180,883227
+43,真事隐康熙废储-43.jpg,正文转录,chapters/01.tex,0,727038
+44,真事隐康熙废储-44.jpg,正文转录,chapters/01.tex,0,807788
+45,真事隐康熙废储-45.jpg,正文转录,chapters/01.tex,0,732270
+46,真事隐康熙废储-46.jpg,正文转录,chapters/01.tex,0,612994
+47,真事隐康熙废储-47.jpg,正文转录,chapters/01.tex,0,627083
+48,真事隐康熙废储-48.jpg,正文转录,chapters/01.tex,0,722788
+49,真事隐康熙废储-49.jpg,正文转录,chapters/01.tex,0,749947
+50,真事隐康熙废储-50.jpg,正文转录,chapters/02.tex,0,579032
+51,真事隐康熙废储-51.jpg,正文转录,chapters/02.tex,0,760026
+52,真事隐康熙废储-52.jpg,正文转录,chapters/02.tex,0,579160
+53,真事隐康熙废储-53.jpg,正文转录,chapters/02.tex,0,722265
+54,真事隐康熙废储-54.jpg,正文转录,chapters/02.tex,0,665324
+55,真事隐康熙废储-55.jpg,正文转录,chapters/02.tex,0,723003
+56,真事隐康熙废储-56.jpg,正文转录,chapters/02.tex,0,767122
+57,真事隐康熙废储-57.jpg,正文转录,chapters/02.tex,0,854918
+58,真事隐康熙废储-58.jpg,正文转录,chapters/02.tex,0,767621
+59,真事隐康熙废储-59.jpg,正文转录,chapters/02.tex,0,829405
+60,真事隐康熙废储-60.jpg,正文转录,chapters/02.tex,0,740090
+61,真事隐康熙废储-61.jpg,正文转录,chapters/02.tex,0,850319
+62,真事隐康熙废储-62.jpg,正文转录,chapters/02.tex,0,1057495
+63,真事隐康熙废储-63.jpg,正文转录,chapters/02.tex,0,953115
+64,真事隐康熙废储-64.jpg,正文转录,chapters/02.tex,0,966577
+65,真事隐康熙废储-65.jpg,正文转录,chapters/02.tex,0,840906
+66,真事隐康熙废储-66.jpg,正文转录,chapters/02.tex,0,1043025
+67,真事隐康熙废储-67.jpg,正文转录,chapters/02.tex,0,875355
+68,真事隐康熙废储-68.jpg,正文转录,chapters/02.tex,0,989757
+69,真事隐康熙废储-69.jpg,正文转录,chapters/02.tex,0,831961
+70,真事隐康熙废储-70.jpg,正文转录,chapters/02.tex,0,1061408
+71,真事隐康熙废储-71.jpg,正文转录,chapters/02.tex,0,857302
+72,真事隐康熙废储-72.jpg,正文转录,chapters/02.tex,0,956741
+73,真事隐康熙废储-73.jpg,正文转录,chapters/02.tex,0,744066
+74,真事隐康熙废储-74.jpg,正文转录,chapters/02.tex,0,970615
+75,真事隐康熙废储-75.jpg,正文转录,chapters/02.tex,0,1624429
+76,真事隐康熙废储-76.jpg,正文转录,chapters/02.tex,0,848285
+77,真事隐康熙废储-77.jpg,正文转录,chapters/02.tex,0,723007
+78,真事隐康熙废储-78.jpg,正文转录,chapters/02.tex,0,1045154
+79,真事隐康熙废储-79.jpg,正文转录,chapters/02.tex,0,899087
+80,真事隐康熙废储-80.jpg,正文转录,chapters/02.tex,0,635592
+81,真事隐康熙废储-81.jpg,正文转录,chapters/03.tex,0,724105
+82,真事隐康熙废储-82.jpg,正文转录,chapters/03.tex,0,847223
+83,真事隐康熙废储-83.jpg,正文转录,chapters/03.tex,0,869801
+84,真事隐康熙废储-84.jpg,正文转录,chapters/03.tex,0,859441
+85,真事隐康熙废储-85.jpg,正文转录,chapters/03.tex,0,827803
+86,真事隐康熙废储-86.jpg,正文转录,chapters/03.tex,0,688438
+87,真事隐康熙废储-87.jpg,正文转录,chapters/03.tex,0,1020995
+88,真事隐康熙废储-88.jpg,2×2原书书签,chapters/plates.tex,0,638783
+89,真事隐康熙废储-89.jpg,2×2原书书签,chapters/plates.tex,0,693331
+90,真事隐康熙废储-90.jpg,2×2原书书签,chapters/plates.tex,0,681667
+91,真事隐康熙废储-91.jpg,2×2原书书签,chapters/plates.tex,0,686923
+92,真事隐康熙废储-92.jpg,正文转录,chapters/03.tex,0,1047673
+93,真事隐康熙废储-93.jpg,正文转录,chapters/03.tex,0,919493
+94,真事隐康熙废储-94.jpg,正文转录,chapters/03.tex,0,814503
+95,真事隐康熙废储-95.jpg,正文转录,chapters/03.tex,0,1008269
+96,真事隐康熙废储-96.jpg,正文转录；插图单独排版,chapters/03.tex,0,837160
+97,真事隐康熙废储-97.jpg,正文与无编号八字表重排,chapters/03.tex,0,938499
+98,真事隐康熙废储-98.jpg,正文转录；插图单独排版,chapters/03.tex,0,282876
+99,真事隐康熙废储-99.jpg,正文转录；插图单独排版,chapters/03.tex,0,269646
+100,真事隐康熙废储-100.jpg,正文转录；插图单独排版,chapters/03.tex,0,602822
+101,真事隐康熙废储-101.jpg,正文转录,chapters/03.tex,0,859942
+102,真事隐康熙废储-102.jpg,正文转录,chapters/03.tex,0,860658
+103,真事隐康熙废储-103.jpg,正文转录,chapters/03.tex,0,980842
+104,真事隐康熙废储-104.jpg,正文转录,chapters/03.tex,0,815719
+105,真事隐康熙废储-105.jpg,正文转录,chapters/03.tex,0,831972
+106,真事隐康熙废储-106.jpg,正文转录,chapters/03.tex,0,809066
+107,真事隐康熙废储-107.jpg,正文转录,chapters/03.tex,0,650156
+108,真事隐康熙废储-108.jpg,正文转录,chapters/03.tex,0,706718
+109,真事隐康熙废储-109.jpg,正文转录,chapters/03.tex,0,972706
+110,真事隐康熙废储-110.jpg,正文转录,chapters/03.tex,0,1010564
+111,真事隐康熙废储-111.jpg,正文转录,chapters/03.tex,0,1013854
+112,真事隐康熙废储-112.jpg,正文转录,chapters/03.tex,0,1009098
+113,真事隐康熙废储-113.jpg,正文转录,chapters/03.tex,0,1063184
+114,真事隐康熙废储-114.jpg,正文转录,chapters/03.tex,0,941385
+115,真事隐康熙废储-115.jpg,正文转录,chapters/03.tex,0,1045406
+116,真事隐康熙废储-116.jpg,正文转录,chapters/03.tex,0,859182
+117,真事隐康熙废储-117.jpg,正文转录,chapters/03.tex,0,1016792
+118,真事隐康熙废储-118.jpg,正文转录,chapters/03.tex,0,1007032
+119,真事隐康熙废储-119.jpg,正文转录,chapters/03.tex,0,935109
+120,真事隐康熙废储-120.jpg,正文转录,chapters/03.tex,0,991048
+121,真事隐康熙废储-121.jpg,正文转录,chapters/03.tex,0,955616
+122,真事隐康熙废储-122.jpg,正文转录,chapters/03.tex,0,963994
+123,真事隐康熙废储-123.jpg,正文转录,chapters/03.tex,0,978587
+124,真事隐康熙废储-124.jpg,正文转录,chapters/03.tex,0,863014
+125,真事隐康熙废储-125.jpg,正文转录,chapters/03.tex,0,983550
+126,真事隐康熙废储-126.jpg,正文转录,chapters/03.tex,0,1016858
+127,真事隐康熙废储-127.jpg,正文转录,chapters/03.tex,0,1007838
+128,真事隐康熙废储-128.jpg,正文转录,chapters/03.tex,0,884514
+129,真事隐康熙废储-129.jpg,正文转录,chapters/03.tex,0,749935
+130,真事隐康熙废储-130.jpg,正文转录,chapters/04.tex,0,735770
+131,真事隐康熙废储-131.jpg,正文转录,chapters/04.tex,0,620642
+132,真事隐康熙废储-132.jpg,正文转录,chapters/04.tex,0,1047886
+133,真事隐康熙废储-133.jpg,正文转录,chapters/04.tex,0,598378
+134,真事隐康熙废储-134.jpg,正文转录,chapters/04.tex,0,951896
+135,真事隐康熙废储-135.jpg,正文转录,chapters/04.tex,0,768817
+136,真事隐康熙废储-136.jpg,正文转录,chapters/04.tex,0,1128550
+137,真事隐康熙废储-137.jpg,正文转录,chapters/04.tex,0,653747
+138,真事隐康熙废储-138.jpg,表格重排,tables/comparison.tex,0,1265187
+139,真事隐康熙废储-139.jpg,正文转录,chapters/04.tex,0,736233
+140,真事隐康熙废储-140.jpg,正文转录,chapters/04.tex,0,1073730
+141,真事隐康熙废储-141.jpg,正文转录,chapters/04.tex,0,793074
+142,真事隐康熙废储-142.jpg,正文转录,chapters/04.tex,0,954842
+143,真事隐康熙废储-143.jpg,正文转录,chapters/04.tex,0,781642
+144,真事隐康熙废储-144.jpg,正文转录,chapters/04.tex,180,1243907
+145,真事隐康熙废储-145.jpg,正文转录,chapters/04.tex,0,703131
+146,真事隐康熙废储-146.jpg,正文转录,chapters/04.tex,0,955229
+147,真事隐康熙废储-147.jpg,正文转录,chapters/04.tex,0,595720
+148,真事隐康熙废储-148.jpg,正文转录,chapters/04.tex,0,917612
+149,真事隐康熙废储-149.jpg,正文转录,chapters/04.tex,0,738271
+150,真事隐康熙废储-150.jpg,正文转录,chapters/04.tex,0,1066400
+151,真事隐康熙废储-151.jpg,正文转录,chapters/04.tex,0,690607
+152,真事隐康熙废储-152.jpg,正文转录,chapters/04.tex,0,1132063
+153,真事隐康熙废储-153.jpg,正文转录,chapters/04.tex,0,834866
+154,真事隐康熙废储-154.jpg,正文转录,chapters/04.tex,0,1116209
+155,真事隐康熙废储-155.jpg,正文转录,chapters/04.tex,0,685524
+156,真事隐康熙废储-156.jpg,正文转录,chapters/04.tex,0,922913
+157,真事隐康熙废储-157.jpg,正文转录,chapters/04.tex,0,778473
+158,真事隐康熙废储-158.jpg,正文转录,chapters/04.tex,0,1106454
+159,真事隐康熙废储-159.jpg,正文转录；插图单独排版,chapters/04.tex,0,612566
+160,真事隐康熙废储-160.jpg,正文转录,chapters/04.tex,0,954776
+161,真事隐康熙废储-161.jpg,正文转录,chapters/04.tex,0,720770
+162,真事隐康熙废储-162.jpg,正文转录,chapters/04.tex,0,1135537
+163,真事隐康熙废储-163.jpg,正文转录,chapters/04.tex,0,805477
+164,真事隐康熙废储-164.jpg,正文转录,chapters/04.tex,0,752112
+165,真事隐康熙废储-165.jpg,正文转录,chapters/04.tex,0,786031
+166,真事隐康熙废储-166.jpg,正文转录,chapters/04.tex,0,896174
+167,真事隐康熙废储-167.jpg,正文转录,chapters/04.tex,0,640293
+168,真事隐康熙废储-168.jpg,正文转录,chapters/04.tex,0,773648
+169,真事隐康熙废储-169.jpg,正文转录,chapters/05.tex,0,512090
+170,真事隐康熙废储-170.jpg,正文转录,chapters/05.tex,0,859085
+171,真事隐康熙废储-171.jpg,正文转录,chapters/05.tex,0,791186
+172,真事隐康熙废储-172.jpg,正文转录；插图单独排版,chapters/05.tex,0,442752
+173,真事隐康熙废储-173.jpg,正文转录,chapters/05.tex,0,746561
+174,真事隐康熙废储-174.jpg,正文转录,chapters/05.tex,0,834566
+175,真事隐康熙废储-175.jpg,正文转录,chapters/05.tex,180,628603
+176,真事隐康熙废储-176.jpg,正文转录,chapters/05.tex,0,791445
+177,真事隐康熙废储-177.jpg,正文转录,chapters/05.tex,0,1001450
+178,真事隐康熙废储-178.jpg,正文转录,chapters/05.tex,0,609988
+179,真事隐康熙废储-179.jpg,正文转录,chapters/05.tex,0,873361
+180,真事隐康熙废储-180.jpg,正文转录,chapters/05.tex,0,823921
+181,真事隐康熙废储-181.jpg,正文转录,chapters/05.tex,0,1213459
+182,真事隐康熙废储-182.jpg,正文转录,chapters/05.tex,0,662575
+183,真事隐康熙废储-183.jpg,正文转录,chapters/05.tex,0,1067639
+184,真事隐康熙废储-184.jpg,正文转录,chapters/05.tex,0,837160
+185,真事隐康熙废储-185.jpg,正文转录,chapters/05.tex,0,996607
+186,真事隐康熙废储-186.jpg,正文转录,chapters/05.tex,0,779855
+187,真事隐康熙废储-187.jpg,正文转录,chapters/05.tex,0,1023485
+188,真事隐康熙废储-188.jpg,正文转录,chapters/05.tex,0,745038
+189,真事隐康熙废储-189.jpg,正文转录,chapters/05.tex,0,1097512
+190,真事隐康熙废储-190.jpg,正文转录,chapters/05.tex,0,698036
+191,真事隐康熙废储-191.jpg,正文转录,chapters/05.tex,0,1006390
+192,真事隐康熙废储-192.jpg,正文转录,chapters/05.tex,0,528074
+193,真事隐康熙废储-193.jpg,正文转录,chapters/05.tex,0,1020674
+194,真事隐康熙废储-194.jpg,正文转录,chapters/05.tex,0,862787
+195,真事隐康熙废储-195.jpg,正文转录,chapters/05.tex,0,775268
+196,真事隐康熙废储-196.jpg,正文转录,chapters/05.tex,0,815974
+197,真事隐康熙废储-197.jpg,正文转录,chapters/05.tex,0,677134
+198,真事隐康熙废储-198.jpg,正文转录,chapters/05.tex,0,806228
+199,真事隐康熙废储-199.jpg,正文转录,chapters/05.tex,0,793305
+200,真事隐康熙废储-200.jpg,正文转录,chapters/05.tex,0,678838
+201,真事隐康熙废储-201.jpg,正文转录,chapters/05.tex,180,797928
+202,真事隐康熙废储-202.jpg,正文转录,chapters/05.tex,0,668342
+203,真事隐康熙废储-203.jpg,正文转录,chapters/05.tex,0,930497
+204,真事隐康熙废储-204.jpg,正文转录,chapters/05.tex,0,685710
+205,真事隐康熙废储-205.jpg,正文转录,chapters/05.tex,0,856697
+206,真事隐康熙废储-206.jpg,正文转录,chapters/05.tex,0,723509
+207,真事隐康熙废储-207.jpg,正文转录,chapters/05.tex,0,949395
+208,真事隐康熙废储-208.jpg,正文转录,chapters/06.tex,0,758946
+209,真事隐康熙废储-209.jpg,正文转录,chapters/06.tex,0,856515
+210,真事隐康熙废储-210.jpg,正文转录,chapters/06.tex,0,948100
+211,真事隐康熙废储-211.jpg,正文转录,chapters/06.tex,0,772974
+212,真事隐康熙废储-212.jpg,正文转录,chapters/06.tex,0,1050653
+213,真事隐康熙废储-213.jpg,正文转录,chapters/06.tex,0,707013
+214,真事隐康熙废储-214.jpg,正文转录,chapters/06.tex,0,1056863
+215,真事隐康熙废储-215.jpg,正文转录,chapters/06.tex,0,654125
+216,真事隐康熙废储-216.jpg,正文转录,chapters/06.tex,0,769603
+217,真事隐康熙废储-217.jpg,正文转录,chapters/06.tex,0,818397
+218,真事隐康熙废储-218.jpg,正文转录,chapters/06.tex,0,895643
+219,真事隐康熙废储-219.jpg,正文转录,chapters/06.tex,0,788121
+220,真事隐康熙废储-220.jpg,正文转录,chapters/06.tex,0,892187
+221,真事隐康熙废储-221.jpg,正文转录,chapters/06.tex,0,781054
+222,真事隐康熙废储-222.jpg,正文转录,chapters/06.tex,0,537708
+223,真事隐康熙废储-223.jpg,正文转录,chapters/06.tex,0,822250
+224,真事隐康熙废储-224.jpg,正文转录,chapters/06.tex,0,640925
+225,真事隐康熙废储-225.jpg,正文转录,chapters/06.tex,0,728584
+226,真事隐康熙废储-226.jpg,正文转录；插图单独排版,chapters/06.tex,0,356399
+227,真事隐康熙废储-227.jpg,正文转录；插图单独排版,chapters/06.tex,0,374809
+228,真事隐康熙废储-228.jpg,正文转录,chapters/06.tex,0,962039
+229,真事隐康熙废储-229.jpg,正文转录,chapters/06.tex,0,822477
+230,真事隐康熙废储-230.jpg,正文转录,chapters/06.tex,0,1023880
+231,真事隐康熙废储-231.jpg,正文转录,chapters/06.tex,0,831780
+232,真事隐康熙废储-232.jpg,正文转录,chapters/06.tex,0,594776
+233,真事隐康熙废储-233.jpg,正文转录,chapters/06.tex,0,689977
+234,真事隐康熙废储-234.jpg,正文转录,chapters/06.tex,0,767096
+235,真事隐康熙废储-235.jpg,正文转录,chapters/06.tex,0,789487
+236,真事隐康熙废储-236.jpg,正文转录,chapters/06.tex,0,794709
+237,真事隐康熙废储-237.jpg,正文转录,chapters/06.tex,0,693983
+238,真事隐康熙废储-238.jpg,正文转录,chapters/06.tex,0,905192
+239,真事隐康熙废储-239.jpg,正文转录,chapters/06.tex,0,655283
+240,真事隐康熙废储-240.jpg,正文转录,chapters/06.tex,0,521888
+241,真事隐康熙废储-241.jpg,正文转录；插图单独排版,chapters/06.tex,0,477268
+242,真事隐康熙废储-242.jpg,正文转录,chapters/06.tex,0,943048
+243,真事隐康熙废储-243.jpg,正文转录,chapters/06.tex,0,574721
+244,真事隐康熙废储-244.jpg,正文转录；插图单独排版,chapters/06.tex,0,729284
+245,真事隐康熙废储-245.jpg,正文转录,chapters/06.tex,0,815169
+246,真事隐康熙废储-246.jpg,正文转录,chapters/06.tex,0,841150
+247,真事隐康熙废储-247.jpg,正文转录,chapters/06.tex,0,596674
+248,真事隐康熙废储-248.jpg,正文转录,chapters/06.tex,0,957645
+249,真事隐康熙废储-249.jpg,正文转录,chapters/06.tex,0,850858
+250,真事隐康熙废储-250.jpg,正文转录,chapters/06.tex,0,838061
+251,真事隐康熙废储-251.jpg,正文转录,chapters/06.tex,0,707123
+252,真事隐康熙废储-252.jpg,正文转录,chapters/06.tex,0,910284
+253,真事隐康熙废储-253.jpg,正文转录,chapters/06.tex,0,719777
+254,真事隐康熙废储-254.jpg,正文转录,chapters/06.tex,0,634109
+255,真事隐康熙废储-255.jpg,正文转录,chapters/06.tex,0,740928
+256,真事隐康熙废储-256.jpg,正文转录,chapters/06.tex,0,976544
+257,真事隐康熙废储-257.jpg,正文转录,chapters/06.tex,0,756551
+258,真事隐康熙废储-258.jpg,正文转录,chapters/06.tex,0,701082
+259,真事隐康熙废储-259.jpg,正文转录,chapters/06.tex,0,536556
+260,真事隐康熙废储-260.jpg,与扫描259同为原书第238页，正文仅收录一次,chapters/06.tex,0,561450
+261,真事隐康熙废储-261.jpg,正文转录,chapters/06.tex,180,863502
+262,真事隐康熙废储-262.jpg,正文转录,chapters/06.tex,0,751141
+263,真事隐康熙废储-263.jpg,正文转录,chapters/06.tex,0,769226
+264,真事隐康熙废储-264.jpg,正文转录,chapters/06.tex,0,586947
+265,真事隐康熙废储-265.jpg,正文转录,chapters/06.tex,0,893404
+266,真事隐康熙废储-266.jpg,正文转录,chapters/06.tex,0,658764
+267,真事隐康熙废储-267.jpg,正文转录,chapters/06.tex,0,589191
+268,真事隐康熙废储-268.jpg,正文转录,chapters/06.tex,0,631979
+269,真事隐康熙废储-269.jpg,正文转录,chapters/06.tex,0,754007
+270,真事隐康熙废储-270.jpg,正文转录,chapters/06.tex,0,630234
+271,真事隐康熙废储-271.jpg,正文转录,chapters/06.tex,0,624931
+272,真事隐康熙废储-272.jpg,正文转录,chapters/06.tex,0,647284
+273,真事隐康熙废储-273.jpg,正文转录,chapters/06.tex,0,912099
+274,真事隐康熙废储-274.jpg,正文转录,chapters/06.tex,0,764389
+275,真事隐康熙废储-275.jpg,正文转录,chapters/06.tex,0,938050
+276,真事隐康熙废储-276.jpg,正文转录,chapters/06.tex,0,819141
+277,真事隐康熙废储-277.jpg,正文转录,chapters/06.tex,0,1021108
+278,真事隐康熙废储-278.jpg,正文转录,chapters/06.tex,0,652379
+279,真事隐康熙废储-279.jpg,正文转录,chapters/06.tex,0,979612
+280,真事隐康熙废储-280.jpg,正文转录,chapters/06.tex,0,755057
+281,真事隐康熙废储-281.jpg,正文转录,chapters/06.tex,0,883176
+282,真事隐康熙废储-282.jpg,正文转录,chapters/06.tex,0,839514
+283,真事隐康熙废储-283.jpg,正文转录,chapters/06.tex,0,844224
+284,真事隐康熙废储-284.jpg,正文转录,chapters/06.tex,0,692805
+285,真事隐康熙废储-285.jpg,正文转录,chapters/06.tex,0,741070
+286,真事隐康熙废储-286.jpg,正文转录,chapters/06.tex,0,623383
+287,真事隐康熙废储-287.jpg,正文转录,chapters/06.tex,0,562096
+288,真事隐康熙废储-288.jpg,正文转录,chapters/06.tex,0,794297
+289,真事隐康熙废储-289.jpg,正文转录,chapters/06.tex,0,639942
+290,真事隐康熙废储-290.jpg,正文转录,chapters/07.tex,0,598749
+291,真事隐康熙废储-291.jpg,正文转录,chapters/07.tex,0,758442
+292,真事隐康熙废储-292.jpg,正文转录,chapters/07.tex,0,711319
+293,真事隐康熙废储-293.jpg,正文转录,chapters/07.tex,0,866817
+294,真事隐康熙废储-294.jpg,正文转录,chapters/07.tex,0,841217
+295,真事隐康熙废储-295.jpg,正文转录,chapters/07.tex,0,911181
+296,真事隐康熙废储-296.jpg,正文转录,chapters/07.tex,0,733604
+297,真事隐康熙废储-297.jpg,正文转录,chapters/07.tex,0,904848
+298,真事隐康熙废储-298.jpg,正文转录；插图单独排版,chapters/07.tex,0,866238
+299,真事隐康熙废储-299.jpg,正文转录,chapters/07.tex,0,848607
+300,真事隐康熙废储-300.jpg,正文转录,chapters/07.tex,0,845879
+301,真事隐康熙废储-301.jpg,正文转录,chapters/07.tex,0,578997
+302,真事隐康熙废储-302.jpg,正文转录,chapters/07.tex,0,784862
+303,真事隐康熙废储-303.jpg,正文转录,chapters/07.tex,0,695086
+304,真事隐康熙废储-304.jpg,正文转录,chapters/07.tex,0,746772
+305,真事隐康熙废储-305.jpg,正文转录,chapters/07.tex,0,612902
+306,真事隐康熙废储-306.jpg,正文转录,chapters/07.tex,0,667069
+307,真事隐康熙废储-307.jpg,正文转录,chapters/07.tex,0,748334
+308,真事隐康熙废储-308.jpg,正文转录,chapters/07.tex,0,626122
+309,真事隐康熙废储-309.jpg,正文转录,chapters/07.tex,0,728996
+310,真事隐康熙废储-310.jpg,正文转录,chapters/07.tex,0,762214
+311,真事隐康熙废储-311.jpg,正文转录,chapters/07.tex,0,758668
+312,真事隐康熙废储-312.jpg,正文转录,chapters/07.tex,0,583184
+313,真事隐康熙废储-313.jpg,正文转录,chapters/07.tex,0,622625
+314,真事隐康熙废储-314.jpg,正文转录,chapters/07.tex,0,882097
+315,真事隐康熙废储-315.jpg,正文转录,chapters/07.tex,0,738335
+316,真事隐康熙废储-316.jpg,正文转录,chapters/07.tex,0,782584
+317,真事隐康熙废储-317.jpg,正文转录,chapters/07.tex,0,614199
+318,真事隐康熙废储-318.jpg,正文转录,chapters/07.tex,0,694929
+319,真事隐康熙废储-319.jpg,正文转录,chapters/07.tex,0,724866
+320,真事隐康熙废储-320.jpg,正文转录,chapters/07.tex,0,636046
+321,真事隐康熙废储-321.jpg,正文转录,chapters/07.tex,0,800760
+322,真事隐康熙废储-322.jpg,正文转录,chapters/07.tex,0,804998
+323,真事隐康熙废储-323.jpg,正文转录,chapters/07.tex,0,677109
+324,真事隐康熙废储-324.jpg,正文转录,chapters/07.tex,0,626697
+325,真事隐康熙废储-325.jpg,正文转录,chapters/07.tex,0,649102
+326,真事隐康熙废储-326.jpg,正文转录,chapters/07.tex,0,577615
+327,真事隐康熙废储-327.jpg,正文转录,chapters/07.tex,0,510411
+328,真事隐康熙废储-328.jpg,正文转录,chapters/07.tex,0,592005
+329,真事隐康熙废储-329.jpg,正文转录,chapters/07.tex,0,493637
+330,真事隐康熙废储-330.jpg,正文转录,chapters/07.tex,0,822066
+331,真事隐康熙废储-331.jpg,正文转录,chapters/07.tex,0,823015
+332,真事隐康熙废储-332.jpg,正文转录,chapters/07.tex,0,1100613
+333,真事隐康熙废储-333.jpg,正文转录,chapters/07.tex,0,873754
+334,真事隐康熙废储-334.jpg,正文转录,chapters/07.tex,0,797216
+335,真事隐康熙废储-335.jpg,原图7.2文字文告，仿宋引文重排并统一图片编号,chapters/07.tex / fig:335,0,687456
+336,真事隐康熙废储-336.jpg,正文转录,chapters/07.tex,0,734343
+337,真事隐康熙废储-337.jpg,正文转录,chapters/07.tex,0,575243
+338,真事隐康熙废储-338.jpg,正文转录,chapters/07.tex,0,667077
+339,真事隐康熙废储-339.jpg,正文转录,chapters/07.tex,0,625040
+340,真事隐康熙废储-340.jpg,正文转录,chapters/07.tex,0,812594
+341,真事隐康熙废储-341.jpg,正文与表2重排,chapters/07.tex / tables/tibet-inscriptions.tex,0,716353
+342,真事隐康熙废储-342.jpg,正文转录,chapters/07.tex,0,725794
+343,真事隐康熙废储-343.jpg,正文转录,chapters/07.tex,0,696869
+344,真事隐康熙废储-344.jpg,正文转录,chapters/07.tex,0,626391
+345,真事隐康熙废储-345.jpg,正文转录,chapters/07.tex,0,753749
+346,真事隐康熙废储-346.jpg,正文转录,chapters/07.tex,0,586807
+347,真事隐康熙废储-347.jpg,正文转录,chapters/07.tex,0,680492
+348,真事隐康熙废储-348.jpg,正文转录,chapters/07.tex,0,555736
+349,真事隐康熙废储-349.jpg,正文转录,chapters/07.tex,0,510279
+350,真事隐康熙废储-350.jpg,正文转录,chapters/07.tex,0,481650
+351,真事隐康熙废储-351.jpg,正文转录,chapters/07.tex,0,549434
+352,真事隐康熙废储-352.jpg,正文转录,chapters/07.tex,0,661757
+353,真事隐康熙废储-353.jpg,正文转录,chapters/07.tex,0,752609
+354,真事隐康熙废储-354.jpg,正文转录,chapters/07.tex,0,747389
+355,真事隐康熙废储-355.jpg,正文转录,chapters/07.tex,0,636558
+356,真事隐康熙废储-356.jpg,正文转录,chapters/07.tex,0,770565
+357,真事隐康熙废储-357.jpg,正文转录,chapters/07.tex,0,758433
+358,真事隐康熙废储-358.jpg,正文转录,chapters/07.tex,0,733295
+359,真事隐康熙废储-359.jpg,正文转录,chapters/07.tex,0,664108
+360,真事隐康熙废储-360.jpg,正文转录,chapters/07.tex,0,848940
+361,真事隐康熙废储-361.jpg,正文转录,chapters/07.tex,0,847427
+362,真事隐康熙废储-362.jpg,正文转录,chapters/07.tex,0,793105
+363,真事隐康熙废储-363.jpg,正文转录,chapters/07.tex,0,697849
+364,真事隐康熙废储-364.jpg,正文转录,chapters/07.tex,0,642760
+365,真事隐康熙废储-365.jpg,正文转录,chapters/07.tex,0,381311
+366,真事隐康熙废储-366.jpg,正文转录,chapters/08.tex,0,568043
+367,真事隐康熙废储-367.jpg,正文转录,chapters/08.tex,0,803943
+368,真事隐康熙废储-368.jpg,正文转录,chapters/08.tex,0,787898
+369,真事隐康熙废储-369.jpg,正文转录,chapters/08.tex,0,775079
+370,真事隐康熙废储-370.jpg,正文转录,chapters/08.tex,0,515744
+371,真事隐康熙废储-371.jpg,正文转录,chapters/08.tex,0,823180
+372,真事隐康熙废储-372.jpg,正文转录,chapters/08.tex,0,743515
+373,真事隐康熙废储-373.jpg,正文转录,chapters/08.tex,0,659263
+374,真事隐康熙废储-374.jpg,正文转录,chapters/08.tex,0,754288
+375,真事隐康熙废储-375.jpg,正文转录,chapters/08.tex,0,868212
+376,真事隐康熙废储-376.jpg,正文转录,chapters/08.tex,0,751862
+377,真事隐康熙废储-377.jpg,正文转录,chapters/08.tex,0,856930
+378,真事隐康熙废储-378.jpg,正文转录,chapters/08.tex,0,741482
+379,真事隐康熙废储-379.jpg,正文转录,chapters/08.tex,0,693547
+380,真事隐康熙废储-380.jpg,正文转录,chapters/08.tex,0,743532
+381,真事隐康熙废储-381.jpg,正文转录,chapters/08.tex,0,611630
+382,真事隐康熙废储-382.jpg,正文转录,chapters/08.tex,0,710884
+383,真事隐康熙废储-383.jpg,正文转录,chapters/08.tex,0,702916
+384,真事隐康熙废储-384.jpg,正文转录,chapters/08.tex,0,616604
+385,真事隐康熙废储-385.jpg,与扫描384同为原书第363页，正文仅收录一次,chapters/08.tex,0,601676
+386,真事隐康熙废储-386.jpg,正文转录,chapters/08.tex,0,692346
+387,真事隐康熙废储-387.jpg,正文转录,chapters/08.tex,0,733821
+388,真事隐康熙废储-388.jpg,正文转录,chapters/08.tex,0,648169
+389,真事隐康熙废储-389.jpg,正文转录,chapters/08.tex,0,881538
+390,真事隐康熙废储-390.jpg,正文转录,chapters/08.tex,0,822286
+391,真事隐康熙废储-391.jpg,正文转录,chapters/08.tex,0,621627
+392,真事隐康熙废储-392.jpg,正文转录,chapters/08.tex,0,719377
+393,真事隐康熙废储-393.jpg,正文转录,chapters/08.tex,0,832540
+394,真事隐康熙废储-394.jpg,正文转录,chapters/08.tex,0,820229
+395,真事隐康熙废储-395.jpg,正文转录,chapters/08.tex,0,699177
+396,真事隐康熙废储-396.jpg,跋末正文,chapters/08.tex,0,779214
+397,真事隐康熙废储-397.jpg,跋末及附录一开头，按实际标题分界,chapters/08.tex / chapters/09.tex,0,812040
+398,真事隐康熙废储-398.jpg,正文转录,chapters/09.tex,0,755347
+399,真事隐康熙废储-399.jpg,正文转录,chapters/09.tex,0,436725
+400,真事隐康熙废储-400.jpg,正文转录,chapters/10.tex,0,470203
+401,真事隐康熙废储-401.jpg,正文转录,chapters/10.tex,0,760791
+402,真事隐康熙废储-402.jpg,正文转录,chapters/10.tex,0,226862
+403,真事隐康熙废储-403.jpg,正文转录,chapters/11.tex,0,440042
+404,真事隐康熙废储-404.jpg,正文转录,chapters/11.tex,0,709176
+405,真事隐康熙废储-405.jpg,正文转录,chapters/11.tex,0,240085
+406,真事隐康熙废储-406.jpg,正文转录,chapters/12.tex,0,587841
+407,真事隐康熙废储-407.jpg,正文转录,chapters/12.tex,0,712255
+408,真事隐康熙废储-408.jpg,正文转录,chapters/12.tex,0,511173
+409,真事隐康熙废储-409.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,493368
+410,真事隐康熙废储-410.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,635563
+411,真事隐康熙废储-411.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,593249
+412,真事隐康熙废储-412.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,659836
+413,真事隐康熙废储-413.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,1088227
+414,真事隐康熙废储-414.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,590236
+415,真事隐康熙废储-415.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,419881
+416,真事隐康熙废储-416.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,580947
+417,真事隐康熙废储-417.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,520207
+418,真事隐康熙废储-418.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,450974
+419,真事隐康熙废储-419.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,521288
+420,真事隐康熙废储-420.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,438446
+421,真事隐康熙废储-421.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,685074
+422,真事隐康熙废储-422.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,634031
+423,真事隐康熙废储-423.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,457825
+424,真事隐康熙废储-424.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,570567
+425,真事隐康熙废储-425.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,615810
+426,真事隐康熙废储-426.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,645528
+427,真事隐康熙废储-427.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,526399
+428,真事隐康熙废储-428.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,591539
+429,真事隐康熙废储-429.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,567721
+430,真事隐康熙废储-430.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,663025
+431,真事隐康熙废储-431.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,567973
+432,真事隐康熙废储-432.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,739626
+433,真事隐康熙废储-433.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,504554
+434,真事隐康熙废储-434.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,516409
+435,真事隐康熙废储-435.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,480920
+436,真事隐康熙废储-436.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,604208
+437,真事隐康熙废储-437.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,711953
+438,真事隐康熙废储-438.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,610373
+439,真事隐康熙废储-439.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,758140
+440,真事隐康熙废储-440.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,679109
+441,真事隐康熙废储-441.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,681240
+442,真事隐康熙废储-442.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,663078
+443,真事隐康熙废储-443.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,549013
+444,真事隐康熙废储-444.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,609321
+445,真事隐康熙废储-445.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,595387
+446,真事隐康熙废储-446.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,645316
+447,真事隐康熙废储-447.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,655786
+448,真事隐康熙废储-448.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,627041
+449,真事隐康熙废储-449.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,705058
+450,真事隐康熙废储-450.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,615695
+451,真事隐康熙废储-451.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,598180
+452,真事隐康熙废储-452.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,565976
+453,真事隐康熙废储-453.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,545966
+454,真事隐康熙废储-454.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,742928
+455,真事隐康熙废储-455.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,607086
+456,真事隐康熙废储-456.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,650562
+457,真事隐康熙废储-457.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,628114
+458,真事隐康熙废储-458.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,688623
+459,真事隐康熙废储-459.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,943462
+460,真事隐康熙废储-460.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,788852
+461,真事隐康熙废储-461.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,553246
+462,真事隐康熙废储-462.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,1023628
+463,真事隐康熙废储-463.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,625806
+464,真事隐康熙废储-464.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,556481
+465,真事隐康熙废储-465.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,653379
+466,真事隐康熙废储-466.jpg,注释，迁至各节末,sources/notes.json / chapters/*.tex,0,229414
+467,真事隐康熙废储-467.jpg,书末参考文献,chapters/references.tex,0,317214
+468,真事隐康熙废储-468.jpg,书末参考文献,chapters/references.tex,0,704679
+469,真事隐康熙废储-469.jpg,书末参考文献,chapters/references.tex,0,626394
+470,真事隐康熙废储-470.jpg,书末参考文献,chapters/references.tex,0,542245
+471,真事隐康熙废储-471.jpg,书末参考文献,chapters/references.tex,0,578684
+472,真事隐康熙废储-472.jpg,书末参考文献,chapters/references.tex,0,567034
+473,真事隐康熙废储-473.jpg,书末参考文献,chapters/references.tex,0,678771
+474,真事隐康熙废储-474.jpg,书末参考文献,chapters/references.tex,0,610037
+475,真事隐康熙废储-475.jpg,书末参考文献,chapters/references.tex,0,600801
+476,真事隐康熙废储-476.jpg,书末参考文献,chapters/references.tex,0,627408
+477,真事隐康熙废储-477.jpg,书末参考文献,chapters/references.tex,0,681869
+478,真事隐康熙废储-478.jpg,书末参考文献,chapters/references.tex,0,692859
+479,真事隐康熙废储-479.jpg,书末参考文献,chapters/references.tex,0,822694
+480,真事隐康熙废储-480.jpg,书末参考文献,chapters/references.tex,0,577759
+481,真事隐康熙废储-481.jpg,书末参考文献,chapters/references.tex,0,761344
+482,真事隐康熙废储-482.jpg,书末参考文献,chapters/references.tex,0,660912
+483,真事隐康熙废储-483.jpg,书末参考文献,chapters/references.tex,0,924192
+484,真事隐康熙废储-484.jpg,书末参考文献,chapters/references.tex,0,756463
+485,真事隐康熙废储-485.jpg,书末参考文献,chapters/references.tex,0,827967
+486,真事隐康熙废储-486.jpg,书末参考文献,chapters/references.tex,0,773563
+487,真事隐康熙废储-487.jpg,书末参考文献,chapters/references.tex,0,568156
+488,真事隐康熙废储-488.jpg,书末参考文献,chapters/references.tex,0,476125
+489,真事隐康熙废储-489.jpg,正文转录,chapters/13.tex,0,490565
+490,真事隐康熙废储-490.jpg,正文转录,chapters/13.tex,0,753093
+491,真事隐康熙废储-491.jpg,正文转录,chapters/13.tex,0,958078
+492,真事隐康熙废储-492.jpg,正文转录,chapters/13.tex,0,1041316
+493,真事隐康熙废储-493.jpg,正文转录,chapters/13.tex,0,932767
+494,真事隐康熙废储-494.jpg,正文转录,chapters/13.tex,0,1058083
+495,真事隐康熙废储-495.jpg,正文转录,chapters/13.tex,0,954388
+496,真事隐康熙废储-496.jpg,正文转录,chapters/13.tex,0,999908
+497,真事隐康熙废储-497.jpg,正文转录,chapters/13.tex,0,812720
+498,真事隐康熙废储-498.jpg,正文转录,chapters/13.tex,0,689672
+499,真事隐康熙废储-499.jpg,原样整页,assets/scan-499.jpg,0,1480542

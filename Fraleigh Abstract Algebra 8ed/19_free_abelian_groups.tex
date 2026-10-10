@@ -1,0 +1,322 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 19 Free Abelian Groups}
+\pdfbookmark[0]{Section 19 Free Abelian Groups}{19_free_abelian_groups}
+\ifdefined\BookMaster\else\setcounter{page}{166}\fi
+% Source PDF page 183; original printed page 166
+\BookSource{183}{166}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{19}{Free Abelian Groups}
+
+\noindent In this section we introduce the concept of free abelian groups and prove some results concerning them. The section concludes with a demonstration of the Fundamental Theorem of Finitely Generated Abelian Groups (Theorem 9.12).
+
+\BookTextHeading{\textbf{Free Abelian Groups}  }
+
+\noindent We should review the notions of a generating set for a group \BookInline{G} and a finitely generated group, as given in Section 7. In this section we shall deal exclusively with abelian groups and use the standard additive notations as follows:
+
+0 for the identity\BookInline{,\allowbreak + } for the operation,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \left. { \begin{array} { l } { n a = { \underbrace { a + a + \cdots + a } _ { n { \mathrm { ~ s u m m a n a d s } } } } } \\ { - n a = { \underbrace { ( - a ) + ( - a ) + \cdots + ( - a ) } _ { n { \mathrm { ~ s u m m a n a d s } } } } } \end{array} } \right\} { \mathrm { ~ f o r } } \; n \in \mathbb { Z } ^ { + } \; { \mathrm { a n d } } \; a \in G . }\end{adjustbox}\end{center}
+
+\BookInline{0a= 0} for the first 0 in \BookInline{\mathbb{Z}} and the second in \BookInline{G.}
+
+\noindent We shall continue to use the symbol \BookInline{\times } for direct product of groups rather than change to direct sum notation.
+
+Notice that \BookInline{\{(1,\allowbreak 0),\allowbreak (0,\allowbreak 1)\}} is a generating set for the group \BookInline{\mathbb{Z}\times \mathbb{Z}} since \BookInline{(n,\allowbreak m)= n(1,\allowbreak 0)+ m(0,\allowbreak 1)} for any \BookInline{(n,\allowbreak m)} in \BookInline{\mathbb{Z}\times \mathbb{Z}.} This generating set has the property that each element of \BookInline{\mathbb{Z}\times \mathbb{Z}} can be\textit{ uniquely} expressed in the form \BookInline{n(1,\allowbreak 0)+ m(0,\allowbreak 1).} That is, the coefficients \BookInline{n} and \BookInline{m} in \BookInline{\mathbb{Z}} are unique.
+
+\BookLabel{19.1 Theorem} Let \BookInline{X} be a subset of a nonzero abelian group \BookInline{G.} The following conditions on \BookInline{X} are equivalent.
+
+\BookExercise{1.}{Each nonzero element \BookInline{a} in \BookInline{G} can be expressed\textit{ uniquely} (up to order of summands) in the form \BookInline{a= n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r}} for \BookInline{n_{i}\neq 0} in \BookInline{\mathbb{Z}} and distinct \BookInline{x_{i}} in \BookInline{X.}}
+
+\BookExercise{2.}{\BookInline{X} generates \BookInline{G,\allowbreak } and \BookInline{n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r}= 0} for \BookInline{n_{i}\in \mathbb{Z}} and distinct \BookInline{x_{i}\in X} if and only if \BookInline{n_{1}= n_{2}= \cdots = n_{r}= 0.}}
+
+\BookLabel{\textit{Proof}} Suppose Condition 1 is true. Since \BookInline{G\neq \{0\},\allowbreak } we have \BookInline{X\neq \{0\}.} It follows from 1 that \BookInline{0\not \in X,\allowbreak } for if \BookInline{x_{i}= 0} and \BookInline{x_{j}\neq 0,\allowbreak } then \BookInline{x_{j}= x_{i}+ x_{j},\allowbreak } which would contradict the uniqueness of the expression for \BookInline{x_{j}.} From Condition \BookInline{1,\allowbreak X} generates \BookInline{G,\allowbreak } and \BookInline{n_{1}x_{1}+ n_{2}x_{2}+ \cdots + } \BookInline{n_{r}x_{r}= 0} if \BookInline{n_{1}= n_{2}= \cdots = n_{r}= 0.} Suppose that \BookInline{n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r}= 0} with some \BookInline{n_{i}\neq 0;} by dropping terms with zero coefficients and renumbering, we can assume all \BookInline{n_{i}\neq 0.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}x_{1}&= x_{1}+ (n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r}) \\ &= (n_{1}+ 1)x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r},\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent which gives two ways of writing \BookInline{x_{1}\neq 0,\allowbreak } contradicting the uniqueness assumption in Condition 1. Thus Condition 1 implies Condition 2.
+
+We now show that Condition 2 implies Condition 1. Let \BookInline{a\in G.} Since \BookInline{X} generates \BookInline{G,\allowbreak } we see \BookInline{a} can be written in the form \BookInline{a= n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r}.} Suppose \BookInline{a} has another such expression in terms of elements of \BookInline{X.} By using some zero coefficients in the two expressions, we can assume they involve the same elements in \BookInline{X} and are of the form
+
+\end{BookBody}
+
+% Source PDF page 184; original printed page 167
+\BookSource{184}{167}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a= n_{1}x_{1}+ n_{2}x_{2}+ \cdots n_{r}x_{r}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a= m_{1}x_{1}+ m_{2}x_{2}+ \cdots m_{r}x_{r}.}\end{adjustbox}\end{center}
+
+\noindent Subtracting, we obtain
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0= (n_{1}- m_{1})x_{1}+ (n_{2}- m_{2})x_{2}+ \cdots + (n_{r}- m_{r})x_{r},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so \BookInline{n_{i}- m_{i}= 0} by Condition 2, and \BookInline{n_{i}= m_{i}} for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak r.} Thus the coefficients are unique\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{19.2 Definition} An abelian group having a generating set \BookInline{X} satisfying the conditions described in Theorem 19.1 is a\textbf{ free abelian group}, and \BookInline{X} is a\textbf{ basis} for the group\BookInline{.}\BookEnd{\blacksquare}
+
+\BookLabel{19.3 Example} The group \BookInline{\mathbb{Z}\times \mathbb{Z}} is free abelian and \BookInline{\{(1,\allowbreak 0),\allowbreak (0,\allowbreak 1)\}} is a basis. Similarly, a basis for the free abelian group \BookInline{\mathbb{Z}\times \mathbb{Z}\times \mathbb{Z}} is \BookInline{\{(1,\allowbreak 0,\allowbreak 0),\allowbreak (0,\allowbreak 1,\allowbreak 0),\allowbreak (0,\allowbreak 0,\allowbreak 1)\},\allowbreak } and so on. Thus finite direct products of the group \BookInline{\mathbb{Z}} with itself are free abelian groups\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{19.4 Example} The group \BookInline{\mathbb{Z}_{n}} is not free abelian, for \BookInline{nx= 0} for every \BookInline{x\in \mathbb{Z}_{n},\allowbreak } and \BookInline{n\neq 0,\allowbreak } which would contradict Condition \BookInline{2.}\BookEnd{\blacktriangle}
+
+From Example 19.4 it seems reasonable that if \BookInline{G} is an abelian group with a nonzero element of finite order, then \BookInline{G} is not a free abelian group. Exercise 10 asks you to provide a proof of this fact. However, there are other obstacles that prevent an abelian group from being free. For example, no rational number other than 0 has finite order, but Exercise 13 asks for a proof that \BookInline{\mathbb{Q}} is not a free abelian group.
+
+Suppose a free abelian group \BookInline{G} has a finite basis \BookInline{X= \{x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{r}\}.} If \BookInline{a\in G} and \BookInline{a\neq 0,\allowbreak } then \BookInline{a} has a\textit{ unique} expression of the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a= n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{r}x_{r}\;\text{for}\;n_{i}\in \mathbb{Z}.}\end{adjustbox}\end{center}
+
+\noindent (Note that in the preceding expression for \BookInline{a,\allowbreak } we included all elements \BookInline{x_{i}} of our finite basis \BookInline{X,\allowbreak } as opposed to the expression for \BookInline{a} in Condition 1 of Theorem 19.1 where the basis may be infinite. Thus in the preceding expression for \BookInline{a} we must allow the possibility that some of the coefficients \BookInline{n_{i}} are zero, whereas in Condition 1 of Theorem 19.1, we specified that each \BookInline{n_{i}\neq 0.)}
+
+\noindent We define
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi : G \to \underbrace { \mathbb { Z } \times \mathbb { Z } \times \dots \times \mathbb { Z } } _ { r   \mathrm { f a c t o r s } }}\end{adjustbox}\end{center}
+
+\noindent by \BookInline{\phi (a)= (n_{1},\allowbreak n_{2},\allowbreak \cdots,\allowbreak n_{r})} and \BookInline{\phi (0)= (0,\allowbreak 0,\allowbreak \cdots,\allowbreak 0).} It is straightforward to check that \BookInline{\phi } is an isomorphism. We leave the details to the exercises (see Exercise 9) and state the result as a theorem.
+
+\BookLabel{19.5 Theorem} If \BookInline{G} is a nonzero free abelian group with a basis of \BookInline{r} elements, then \BookInline{G} is isomorphic to \BookInline{\mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z}} for \BookInline{r} factors.
+
+It is a fact that any two bases of a free abelian group \BookInline{G} contain the same number of elements. We shall prove this only if \BookInline{G} has a finite basis, although it is also true if every basis of \BookInline{G} is infinite. The proof is really lovely; it gives an easy characterization of the number of elements in a basis in terms of the size of a factor group.
+
+\BookLabel{19.6 Theorem} Let \BookInline{G\neq \{0\}} be a free abelian group with a finite basis. Then every basis of \BookInline{G} is finite, and all bases of \BookInline{G} have the same number of elements.
+
+\end{BookBody}
+
+% Source PDF page 185; original printed page 168
+\BookSource{185}{168}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} Let \BookInline{G} have a basis \BookInline{\{x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{r}\}.} Then \BookInline{G} is isomorphic to \BookInline{\mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z}} for \BookInline{r} factors. Let \BookInline{2G= \{2g\mid g\in G\}.} It is readily checked that \BookInline{2G} is a subgroup of \BookInline{G.} Since \BookInline{G\simeq \mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z}} for \BookInline{r} factors, we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&G/2G\simeq (\mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z})/(2\mathbb{Z}\times 2\mathbb{Z}\times \cdots \times 2\mathbb{Z}) \\ &\simeq \mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \cdots \times \mathbb{Z}_{2}\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{r} factors. Thus \BookInline{|G/2G|= 2^{r},\allowbreak } so the number of elements in any finite basis \BookInline{X} is log\BookInline{2|G/2G|.} Thus any two finite bases have the same number of elements.
+
+It remains to show that \BookInline{G} cannot also have an infinite basis. Let \BookInline{Y} be any basis for \BookInline{G,\allowbreak } and let \BookInline{\{y_{1},\allowbreak y_{2},\allowbreak \cdots,\allowbreak y_{s}\}} be distinct elements in \BookInline{Y.} Let \BookInline{H} be the subgroup of \BookInline{G} generated by \BookInline{\{y_{1},\allowbreak y_{2},\allowbreak \cdots,\allowbreak y_{s}\},\allowbreak } and let \BookInline{K} be the subgroup of \BookInline{G} generated by the remaining elements of \BookInline{Y.} It is readily checked that \BookInline{G\simeq H\times K,\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle G/2G\simeq (H\times K)/(2H\times 2K)\simeq (H/2H)\times (K/2K).}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{|H/2H|= 2^{s},\allowbreak } we see \BookInline{|G/2G|\geq 2^{s}.} Since we have \BookInline{|G/2G|= 2^{r},\allowbreak } we see that \BookInline{s\leq r.} Then \BookInline{Y} cannot be an infinite set, for we could take \BookInline{s>r.}\BookEnd{\blacklozenge}
+
+\BookLabel{19.7 Definition} If \BookInline{G} is a free abelian group, the\textbf{ rank} of \BookInline{G} is the number of elements in a basis for \BookInline{G.} (All bases have the same number of elements\BookInline{.)}\BookEnd{\blacksquare}
+
+\BookLabel{\textit{Proof}} \textbf{ of the Fundamental Theorem}
+
+\noindent We shall prove the Invariant Factor version of the Fundamental Theorem (Theorem 9.14) by showing that any finitely generated abelian group is isomorphic to a factor group of the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z})/(d_{1}\mathbb{Z}\times d_{2}\mathbb{Z}\times \cdots \times d_{s}\mathbb{Z}\times \{0\}\times \cdots \times \{0\}),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where both “numerator” and “denominator” have \BookInline{n} factors, and \BookInline{d_{1}} divides \BookInline{d_{2},\allowbreak } which divides \BookInline{d_{3}\cdots,\allowbreak } which divides \BookInline{d_{s}.} The Prime Factor version, Theorem 9.12, will then follow.
+
+To show that \BookInline{G} is isomorphic to such a factor group, we will show that there is a homomorphism of \BookInline{\mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z}} onto \BookInline{G} with kernel of the form \BookInline{d_{1}\mathbb{Z}\times d_{2}\mathbb{Z}\times \cdots \times } \BookInline{d_{s}\mathbb{Z}\times \{0\}\times \cdots \times \{0\}.} The result will then follow by Theorem 12.14. The theorems that follow give the details of the argument. Our purpose in these introductory paragraphs is to let us see where we are going as we read what follows.
+
+\BookLabel{19.8 Theorem} Let \BookInline{G} be a finitely generated abelian group with generating set \BookInline{\{a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n}\}.} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi : \underbrace { \mathbb { Z } \times \mathbb { Z } \times \dots \times \mathbb { Z } } _ { n \; \mathrm { f a c t o r s } } \to G}\end{adjustbox}\end{center}
+
+\noindent be defined by \BookInline{\phi (h_{1},\allowbreak h_{2},\allowbreak \cdots,\allowbreak h_{n})= h_{1}a_{1}+ h_{2}a_{2}+ \cdots + h_{n}a_{n}.} Then \BookInline{\phi } is a homomorphism onto \BookInline{G.}
+
+\BookLabel{\textit{Proof}} From the meaning of \BookInline{h_{i}a_{i}} for \BookInline{h_{i}\in \mathbb{Z}} and \BookInline{a_{i}\in G,\allowbreak } we see at once that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\phi [(h_{1},\allowbreak \cdots ,\allowbreak h_{n})+ (k_{1},\allowbreak \cdots ,\allowbreak k_{n})]&= \phi (h_{1}+ k_{1},\allowbreak \cdots ,\allowbreak h_{n}+ k_{n}) \\ &= (h_{1}+ k_{1})a_{1}+ \cdots + (h_{n}+ k_{n})a_{n} \\ &= (h_{1}a_{1}+ k_{1}a_{1})+ \cdots + (h_{n}a_{n}+ k_{n}a_{n}) \\ &= (h_{1}a_{1}+ \cdots + h_{n}a_{n})+ (k_{1}a_{1}+ \cdots + k_{n}a_{n}) \\ &= \phi (k_{1},\allowbreak \cdots ,\allowbreak k_{n})+ \phi (h_{1},\allowbreak \cdots ,\allowbreak h_{n}).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{\{a_{1},\allowbreak \cdots,\allowbreak a_{n}\}} generates \BookInline{G,\allowbreak } clearly the homomorphism \BookInline{\phi } is onto \BookInline{G.} \BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 186; original printed page 169
+\BookSource{186}{169}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+We now prove a “replacement property” that makes it possible for us to adjust a basis.
+
+\BookLabel{19.9 Theorem} If \BookInline{X= \{x_{1},\allowbreak \cdots,\allowbreak x_{r}\}} is a basis for a free abelian group \BookInline{G} and \BookInline{t\in \mathbb{Z},\allowbreak } then for \BookInline{i\neq j,\allowbreak } the set
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle Y= \{x_{1},\allowbreak \cdots ,\allowbreak x_{j- 1},\allowbreak x_{j}+ tx_{i},\allowbreak x_{j+ 1},\allowbreak \cdots ,\allowbreak x_{r}\}}\end{adjustbox}\end{center}
+
+\noindent is also a basis for \BookInline{G.}
+
+\BookLabel{\textit{Proof}} Since \BookInline{x_{j}= (- t)x_{i}+ (1)(x_{j}+ tx_{i}),\allowbreak } we see that \BookInline{x_{j}} can be recovered from \BookInline{Y,\allowbreak } which thus also generates \BookInline{G.} Suppose
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n_{1}x_{1}+ \cdots + n_{j- 1}x_{j- 1}+ n_{j}(x_{j}+ tx_{i})+ n_{j+ 1}x_{j+ 1}+ \cdots + n_{r}x_{r}= 0.}\end{adjustbox}\end{center}
+
+\noindent Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n_{1}x_{1}+ \cdots + (n_{i}+ n_{j}t)x_{i}+ \cdots + n_{j}x_{j}+ \cdots + n_{r}x_{r}= 0.}\end{adjustbox}\end{center}
+
+\noindent and since \BookInline{X} is a basis\BookInline{,\allowbreak n_{1}= \cdots = n_{i}+ n_{j}t= \cdots = n_{j}= \cdots = n_{r}= 0.} From \BookInline{n_{j}= 0} and \BookInline{n_{i}+ n_{j}t= 0,\allowbreak } it follows that \BookInline{n_{i}= 0} also, so \BookInline{n_{1}= \cdots = n_{i}= \cdots = n_{j}= \cdots = n_{r}= 0,\allowbreak } and Condition 2 of Theorem 19.1 is satisfied. Thus \BookInline{Y} is a basis\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{19.10 Example} A basis for \BookInline{\mathbb{Z}\times \mathbb{Z}} is \BookInline{\{(1,\allowbreak 0),\allowbreak (0,\allowbreak 1)\}.} Another basis is \BookInline{\{(1,\allowbreak 0),\allowbreak (4,\allowbreak 1)\}} for \BookInline{(4,\allowbreak 1)= 4(1,\allowbreak 0)+ } (0, 1). However\BookInline{,\allowbreak \{(3,\allowbreak 0),\allowbreak (0,\allowbreak 1)\}} is not a basis. For example, we cannot express (2, 0) in the form \BookInline{n_{1}(3,\allowbreak 0)+ n_{2}(0,\allowbreak 1),\allowbreak } for \BookInline{n,\allowbreak n_{2}\in \mathbb{Z}.} Here \BookInline{(3,\allowbreak 0)= (1,\allowbreak 0)+ 2(1,\allowbreak 0),\allowbreak } and a multiple of a basis element was added to\textit{ itself}, rather than to a\textit{ different} basis element\BookInline{.}\BookEnd{\blacktriangle}
+
+A free abelian group \BookInline{G} of finite rank may have many bases. We show that if \BookInline{K\leq G,\allowbreak } then \BookInline{K} is also free abelian with rank not exceeding that of \BookInline{G.} Equally important, there exist bases of \BookInline{G} and \BookInline{K} nicely related to each other.
+
+\BookLabel{19.11 Theorem} Let \BookInline{G} be a nonzero free abelian group of finite rank \BookInline{n,\allowbreak } and let \BookInline{K} be a nonzero subgroup of \BookInline{G.} Then \BookInline{K} is free abelian of rank \BookInline{s\leq n.} Furthermore, there exists a basis \BookInline{\{x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{n}\}} for \BookInline{G} and positive integers\BookInline{,\allowbreak d_{1},\allowbreak d_{2},\allowbreak \cdots,\allowbreak d_{s}} where \BookInline{d_{i}} divides \BookInline{d_{i+ 1}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak s- 1,\allowbreak } such that \BookInline{\{d_{1}x_{1},\allowbreak d_{2}x_{2},\allowbreak \cdots,\allowbreak d_{s}x_{s}\}} is a basis for \BookInline{K.}
+
+\BookLabel{\textit{Proof}} We show that \BookInline{K} has a basis of the described form, which will show that \BookInline{K} is free abelian of rank at most \BookInline{n.} Suppose \BookInline{Y= \{y_{1},\allowbreak \cdots,\allowbreak y_{n}\}} is a basis for \BookInline{G.} All nonzero elements in \BookInline{K} can be expressed in the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle k_{1}y_{1}+ \cdots + k_{n}y_{n},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where some \BookInline{|k_{i}|} is nonzero. Among\textit{ all} bases \BookInline{Y} for \BookInline{G,\allowbreak } select one \BookInline{Y_{1}} that yields the minimal such nonzero value \BookInline{|k_{i}|} as all nonzero elements of \BookInline{K} are written in terms of the basis elements in \BookInline{Y_{1}.} By renumbering the elements of \BookInline{Y_{1}} if necessary, we can assume there is \BookInline{w_{1}\in K} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle w_{1}= d_{1}y_{1}+ k_{2}y_{2}+ \cdots + k_{n}y_{n}}\end{adjustbox}\end{center}
+
+\noindent where \BookInline{d_{1}>0} and \BookInline{d_{1}} is the minimal attainable coefficient as just described. Using the division algorithm, we write \BookInline{k_{j}= d_{1}q_{j}+ r_{j}} where \BookInline{0\leq r_{j}<d_{1}} for \BookInline{j= 2,\allowbreak \cdots,\allowbreak n.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle w_{1}= d_{1}(y_{1}+ q_{2}y_{2}+ \cdots + q_{n}y_{n})+ r_{2}y_{2}+ \cdots + r_{n}y_{n}.(1)}\end{adjustbox}\end{center}
+
+\noindent Now let \BookInline{x_{1}= y_{1}+ q_{2}y_{2}+ \cdots + q_{n}y_{n}.} By Theorem \BookInline{19.9\{x_{1},\allowbreak y_{2},\allowbreak \cdots,\allowbreak y_{n}\}} is also a basis for \BookInline{G.} From Eq. (1) and our choice of \BookInline{Y_{1}} for minimal coefficient \BookInline{d_{1},\allowbreak } we see that \BookInline{r_{2}= \cdots = r_{n}= 0.} Thus \BookInline{d_{1}x_{1}\in K.}
+
+We now consider bases for \BookInline{G} of the form \BookInline{\{x_{1},\allowbreak y_{2},\allowbreak \cdots,\allowbreak y_{n}\}.} Each element of \BookInline{K} can be expressed in the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle h_{1}x_{1}+ k_{2}y_{2}+ \cdots + k_{n}y_{n}.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 187; original printed page 170
+\BookSource{187}{170}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent Since \BookInline{d_{1}x_{1}\in K,\allowbreak } we can subtract a suitable multiple of \BookInline{d_{1}x_{1}} and then using the minimality of \BookInline{d_{1}} to see that \BookInline{h_{1}} is a multiple of \BookInline{d_{1},\allowbreak } we see we actually have \BookInline{k_{2}y_{2}+ \cdots + k_{n}y_{n}} in \BookInline{K.} Among all such bases \BookInline{\{x_{1},\allowbreak y_{2},\allowbreak \cdots,\allowbreak y_{n}\},\allowbreak } we choose one \BookInline{Y_{2}} that leads to some \BookInline{k_{i}\neq 0} of minimal magnitude. (It is possible all \BookInline{k_{i}} are always zero. In this case\BookInline{,\allowbreak K} is generated by \BookInline{d_{1}x_{1}} and we are done.) By renumbering the elements of \BookInline{Y_{2}} we can assume that there is \BookInline{w_{2}\in K} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle w_{2}= d_{2}y_{2}+ \cdots + k_{n}y_{n}}\end{adjustbox}\end{center}
+
+\noindent where \BookInline{d_{2}>0} and \BookInline{d_{2}} is minimal as just described. Exactly as in the preceding paragraph, we can modify our basis from \BookInline{Y_{2}= \{x_{1},\allowbreak y_{2},\allowbreak \cdots,\allowbreak y_{n}\}} to a basis \BookInline{\{x_{1},\allowbreak x_{2},\allowbreak y_{3},\allowbreak \cdots,\allowbreak y_{n}\}} for \BookInline{G} where \BookInline{d_{1}x_{1}\in K} and \BookInline{d_{2}x_{2}\in K.} Writing \BookInline{d_{2}= d_{1}q+ r} for \BookInline{0\leq r<d_{1},\allowbreak } we see that \BookInline{\{x_{1}+ } \BookInline{qx_{2},\allowbreak x_{2},\allowbreak y_{3},\allowbreak \cdots,\allowbreak y_{n}\}} is a basis for \BookInline{G,\allowbreak } and \BookInline{d_{1}x_{1}+ d_{2}x_{2}= d_{1}(x_{1}+ qx_{2})+ rx_{2}} is in \BookInline{K.} By our minimal choice of \BookInline{d_{1},\allowbreak } we see \BookInline{r= 0,\allowbreak } so \BookInline{d_{1}} divides \BookInline{d_{2}.}
+
+We now consider all bases of the form \BookInline{\{x_{1},\allowbreak x_{2},\allowbreak y_{3},\allowbreak \cdots,\allowbreak y_{n}\}} for \BookInline{G} and examine elements of \BookInline{K} of the form \BookInline{k_{3}y_{3}+ \cdots + k_{n}y_{n}.} The pattern is clear. The process continues until we obtain a basis \BookInline{\{x_{1},\allowbreak x_{2},\allowbreak \cdots,\allowbreak x_{s},\allowbreak y_{s+ 1},\allowbreak \cdots,\allowbreak y_{n}\}} where the only element of \BookInline{K} of the form \BookInline{k_{s+ 1}y_{s+ 1}+ \cdots + k_{n}y_{n}} is zero, that is, all \BookInline{k_{i}} are zero. We then let \BookInline{x_{s+ 1}= } \BookInline{y_{s+ 1},\allowbreak \cdots,\allowbreak x_{n}= y_{n}} and obtain a basis for \BookInline{G} of the form described in the statement of Theorem \BookInline{19.11.}\BookEnd{\blacklozenge}
+
+We now prove the Invariant Factor version of the Fundamental Theorem, Theorem 9.11. We restate it here for easy reference.
+
+\BookLabel{19.12 Theorem} Every finitely generated abelian group is isomorphic to a group of the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}_{m_{1}}\times \mathbb{Z}_{m_{2}}\times \cdots \times \mathbb{Z}_{m_{r}}\times \mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{m_{i}} divides \BookInline{m_{i+ 1}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak r- 1.}
+
+\noindent Furthermore, this representation is unique up to order of the factors.
+
+\BookLabel{\textit{Proof}} For the purposes of this proof, it will be convenient to use as notations \BookInline{\mathbb{Z}/1\mathbb{Z}= \mathbb{Z}/\mathbb{Z}\simeq } \BookInline{\mathbb{Z}_{1}= \{0\}.} Let \BookInline{G} be finitely generated by \BookInline{n} elements. Let \BookInline{F= \mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z}} for \BookInline{n} factors. Consider the homomorphism \BookInline{\phi:F\to G} of Theorem 19.8, and let \BookInline{K} be the kernel of this homomorphism. Then there is a basis for \BookInline{F} of the form \BookInline{\{x_{1},\allowbreak \cdots,\allowbreak x_{n}\},\allowbreak } where \BookInline{\{d_{1}x_{1},\allowbreak \cdots,\allowbreak d_{s}x_{s}\}} is a basis for \BookInline{K} and \BookInline{d_{i}} divides \BookInline{d_{i+ 1}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak s- 1.} By Theorem \BookInline{12.14,\allowbreak G} is isomorphic to \BookInline{F/K.} But
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&F/K\simeq (\mathbb{Z}\times \mathbb{Z}\times \cdots \times \mathbb{Z})/(d_{1}\mathbb{Z}\times d_{2}\mathbb{Z}\times \cdots \times d_{s}\mathbb{Z}\times \{0\}\times \cdots \times \{0\}) \\ &\simeq \mathbb{Z}_{d_{1}}\times \mathbb{Z}_{d_{2}}\times \cdots \times \mathbb{Z}_{d_{s}}\times \mathbb{Z}\times \cdots \times \mathbb{Z}.\end{aligned}}\end{adjustbox}\end{center}
+
+It is possible that \BookInline{d_{1}= 1,\allowbreak } in which case \BookInline{\mathbb{Z}_{d_{1}}= \{0\}} and can be dropped (up to isomorphism) from this product. Similarly\BookInline{,\allowbreak d_{2}} may be 1, and so on. We let \BookInline{m_{1}} be the first \BookInline{d_{i}>1,\allowbreak m_{2}} be the next \BookInline{d_{i},\allowbreak } and so on, and our theorem follows at once.
+
+We have demonstrated the toughest part of the Fundamental Theorem. Of course, a prime-power decomposition exists since we can break the groups \BookInline{\mathbb{Z}_{m_{i}}} into primepower factors. The only remaining part of Theorem 9.12 concerns the uniqueness of the Betti number, of the torsion coefficients, and of the prime powers. The Betti number appears as the rank of the free abelian group \BookInline{G/T,\allowbreak } where \BookInline{T} is the torsion subgroup of \BookInline{G.} This rank is invariant by Theorem 19.6, which shows the uniqueness of the Betti number. The uniqueness of the torsion coefficients and of prime powers is a bit more difficult to show. We give some exercises that indicate their uniqueness (see Exercises 14 through \BookInline{22).}\BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 188; original printed page 171
+\BookSource{188}{171}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{19}
+
+\BookTextHeading{\textbf{Computations}}
+
+\BookExercise{1.}{Find a basis \BookInline{\{(a_{1},\allowbreak a_{2},\allowbreak a_{3}),\allowbreak (b_{1},\allowbreak b_{2},\allowbreak b_{3}),\allowbreak (c_{1},\allowbreak c_{2},\allowbreak c_{3})\}} for \BookInline{\mathbb{Z}\times \mathbb{Z}\times \mathbb{Z}} with all \BookInline{a_{i}\neq 0,\allowbreak } all \BookInline{b_{i}\neq 0,\allowbreak } and all \BookInline{c_{i}\neq 0.} (Many answers are possible.)}
+
+\BookExercise{2.}{Is \BookInline{\{(2,\allowbreak 1),\allowbreak (3,\allowbreak 1)\}} a basis for \BookInline{\mathbb{Z}\times \mathbb{Z}}? Prove your assertion.}
+
+\BookExercise{3.}{Is \BookInline{\{(2,\allowbreak 1),\allowbreak (4,\allowbreak 1)\}} a basis for \BookInline{\mathbb{Z}\times \mathbb{Z}}? Prove your assertion.}
+
+\BookExercise{4.}{Find conditions on \BookInline{a,\allowbreak b,\allowbreak c,\allowbreak d\in \mathbb{Z}} for \BookInline{\{(a,\allowbreak b),\allowbreak (c,\allowbreak d)\}} to be a basis for \BookInline{\mathbb{Z}\times \mathbb{Z}.[}\textit{Hint:} Solve \BookInline{x(a,\allowbreak b)+ y(c,\allowbreak d)= (e,\allowbreak f)} in \BookInline{\mathbb{R},\allowbreak } and see when the \BookInline{x} and \BookInline{y} lie in \BookInline{\mathbb{Z}.]}}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 5 and 6, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{5.}{The\textit{ rank} of a free abelian group \BookInline{G} is the number of elements in a generating set for \BookInline{G.}}
+
+\BookExercise{6.}{A\textit{ basis} for a nonzero abelian group \BookInline{G} is a generating set \BookInline{X\subseteq G} such that \BookInline{n_{1}x_{1}+ n_{2}x_{2}+ \cdots + n_{m}x_{m}= 0} for distinct \BookInline{x_{i}\in X} and \BookInline{n_{i}\in \mathbb{Z}} only if \BookInline{n_{1}= n_{2}= \cdots = n_{m}= 0.}}
+
+\BookExercise{7.}{Show by example that it is possible for a proper subgroup of a free abelian group of finite rank \BookInline{r} also to have rank \BookInline{r.}}
+
+\BookExercise{8.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every free abelian group is torsion free.}
+
+\BookExercise{b.}{Every finitely generated torsion-free abelian group is a free abelian group.}
+
+\BookExercise{c.}{There exists a free abelian group of every positive integer rank.}
+
+\BookExercise{d.}{A finitely generated abelian group is free abelian if its Betti number equals the number of elements in some generating set.}
+
+\BookExercise{e.}{If \BookInline{X} generates a free abelian group \BookInline{G} and \BookInline{X\subseteq Y\subseteq G,\allowbreak } then \BookInline{Y} generates \BookInline{G.}}
+
+\BookExercise{f.}{If \BookInline{X} is a basis for a free abelian group \BookInline{G} and \BookInline{X\subseteq Y\subseteq G,\allowbreak } then \BookInline{Y} is a basis for \BookInline{G.}}
+
+\BookExercise{g.}{Every nonzero free abelian group has an infinite number of bases.}
+
+\BookExercise{h.}{Every free abelian group of rank at least 2 has an infinite number of bases.}
+
+\BookExercise{i.}{If \BookInline{K} is a nonzero subgroup of a finitely generated free abelian group, then \BookInline{K} is free abelian.}
+
+\BookExercise{j.}{If \BookInline{K} is a nonzero subgroup of a finitely generated free abelian group, then \BookInline{G/K} is free abelian.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{9.}{Complete the proof of Theorem 19.5 (See the two sentences preceding the theorem).}
+
+\BookExercise{10.}{Show that a free abelian group contains no nonzero elements of finite order.}
+
+\BookExercise{11.}{Show that if \BookInline{G} and \BookInline{G^{\prime }} are free abelian groups, then \BookInline{G\times G^{\prime }} is free abelian.}
+
+\BookExercise{12.}{Show that free abelian groups of finite rank are precisely the finitely generated abelian groups containing no nonzero elements of finite order.}
+
+\BookExercise{13.}{Show that \BookInline{\mathbb{Q}} under addition is not a free abelian group.}
+
+\noindent Exercises 14 through 19 deal with showing the uniqueness of the prime powers appearing in the prime-power decomposition of the torsion subgroup \BookInline{T} of a finitely generated abelian group.
+
+\BookExercise{14.}{Let \BookInline{p} be a fixed prime. Show that the elements of \BookInline{T} having as order some power of \BookInline{p,\allowbreak } together with zero, form a subgroup \BookInline{T_{p}} of \BookInline{T.}}
+
+\BookExercise{15.}{Show that in any prime-power decomposition of \BookInline{T,\allowbreak } the subgroup \BookInline{T_{p}} in the preceding exercise is isomorphic to the direct product of those cyclic factors of order some power of the prime \BookInline{p.[}This reduces our problem to showing that the group \BookInline{T_{p}} cannot have essentially different decompositions into products of cyclic groups.]}
+
+\BookExercise{16.}{Let \BookInline{G} be any abelian group and let \BookInline{n} be any positive integer. Show that \BookInline{G[n]= \{x\in G\mid nx= 0\}} is a subgroup of \BookInline{G.(}In multiplicative notation\BookInline{,\allowbreak G[n]= \{x\in G\mid x^{n}= e\}.)}}
+
+\end{BookBody}
+
+% Continuation on source PDF page 189, preceding Section 20
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{17.}{Referring to Exercise 16, show that \BookInline{\mathbb{Z}_{p}^{r}[p]\simeq \mathbb{Z}_{p}} for any \BookInline{r\geq 1} and prime \BookInline{p.}}
+
+\BookExercise{18.}{Using Exercise 17, show that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle ( \mathbb { Z } _ { p ^ { r _ { 1 } } } \times \mathbb { Z } _ { p ^ { r _ { 2 } } } \times \cdots \times \mathbb { Z } _ { p ^ { r _ { m } } } ) [ p ] \simeq \underbrace { \mathbb { Z } _ { p } \times \mathbb { Z } _ { p } \times \cdots \times \mathbb { Z } _ { p } } _ { m \; \mathrm { f a c t o r s } } ,\allowbreak }\end{adjustbox}\end{center}
+
+provided each \BookInline{r_{i}\geq 1.}
+
+\BookExercise{19.}{Let \BookInline{G} be a finitely generated abelian group and \BookInline{T_{p}} the subgroup defined in Exercise 14. Suppose \BookInline{T_{p}\simeq \mathbb{Z}_{p^{1}}^{r}\times } \BookInline{\mathbb{Z}_{p^{2}}^{r}\times \cdots \times \mathbb{Z}_{p}^{r}m\simeq \mathbb{Z}_{p^{1}}^{s}\times \mathbb{Z}_{p^{2}}^{s}\times \cdots \times \mathbb{Z}_{p}^{s}n,\allowbreak } where \BookInline{1\leq r_{1}\leq r_{2}\leq \cdots \leq r_{m}} and \BookInline{1\leq s_{1}\leq s_{2}\leq \cdots \leq s_{n}.} We need to show that \BookInline{m= n} and \BookInline{r_{i}= s_{i}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak n} to complete the demonstration of uniqueness of the prime-power decomposition.}
+
+\BookExercise{a.}{Use Exercise 18 to show that \BookInline{n= m.}}
+
+\BookExercise{b.}{Show \BookInline{r_{1}= s_{1}.} Suppose \BookInline{r_{i}= s_{i}} for all \BookInline{i<j.} Show \BookInline{r_{j}= s_{j},\allowbreak } which will complete the proof. [\textit{Hint:} Suppose \BookInline{r_{j}<s_{j}.} Consider the subgroup \BookInline{p^{r_{j}}T_{p}= \{p^{r_{j}}x\mid x\in T_{p}\},\allowbreak } and show that this subgroup would then have two prime-power decompositions involving different numbers of nonzero factors. Then argue that this is impossible by part (a) of this exercise.]}
+
+\noindent Let \BookInline{T} be the torsion subgroup of a finitely generated abelian group. Suppose \BookInline{T\simeq \mathbb{Z}_{m_{1}}\times \mathbb{Z}_{m_{2}}\times \cdots \times \mathbb{Z}_{m_{r}}\simeq \mathbb{Z}_{n_{1}}\times } \BookInline{\mathbb{Z}_{n_{2}}\times \cdots \times \mathbb{Z}_{n_{s}},\allowbreak } where \BookInline{m_{i}} divides \BookInline{m_{i+ 1}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak r- 1,\allowbreak } and \BookInline{n_{j}} divides \BookInline{n_{j+ 1}} for \BookInline{n= 1,\allowbreak \cdots,\allowbreak s- 1,\allowbreak } and \BookInline{m_{1}>1} and \BookInline{n_{1}>1.} We wish to show that \BookInline{r= s} and \BookInline{m_{k}= n_{k}} for \BookInline{k= 1,\allowbreak \cdots,\allowbreak r,\allowbreak } demonstrating the uniqueness of the torsion coefficients. This is done in Exercises 20 through 22.
+
+\BookExercise{20.}{Indicate how a prime-power decomposition can be obtained from a torsion-coefficient decomposition. (Observe that the preceding exercises show the prime powers obtained are unique.)}
+
+\BookExercise{21.}{Argue from Exercise 20 that \BookInline{m_{r}} and \BookInline{n_{s}} can both be characterized as follows. Let \BookInline{p_{1},\allowbreak \cdots,\allowbreak p_{t}} be the distinct primes dividing \BookInline{|T|,\allowbreak } and let \BookInline{p_{1}^{h_{1}},\allowbreak \cdots,\allowbreak p} \textit{th}\BookInline{t} be the highest powers of these primes appearing in the (unique) prime-power decomposition. Then \BookInline{m_{r}= n_{s}= p_{1}^{h_{1}}p_{2}^{h_{2}}\cdots p_{t}^{h_{t}}.}}
+
+\BookExercise{22.}{Characterize \BookInline{m_{r- 1}} and \BookInline{n_{s- 1},\allowbreak } showing that they are equal, and continue to show \BookInline{m_{r- i}= n_{s- 1}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak } \BookInline{r- 1,\allowbreak } and then \BookInline{r= s.}}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

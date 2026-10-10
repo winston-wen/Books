@@ -1,0 +1,736 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 2 Groups}
+\pdfbookmark[0]{Section 2 Groups}{02_groups}
+\ifdefined\BookMaster\else\setcounter{page}{19}\fi
+% Source PDF page 36; original printed page 19
+\BookSource{36}{19}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{2}{Groups}
+
+\noindent In high school algebra, one of the key objectives is to learn how to solve equations. Even before learning algebra, students in elementary school are given problems like \BookInline{5+ \square = 2} or \BookInline{2\times \square = 3,\allowbreak } which become \BookInline{5+ x= 2} and \BookInline{2x= 3} in high school algebra. Let us closely examine the steps we use to solve these equations:
+
+\[
+\begin{aligned}
+5+x &= 2, &&\text{given,}\\
+-5+(5+x) &= -5+2, &&\text{adding }-5,\\
+(-5+5)+x &= -5+2, &&\text{associative law,}\\
+0+x &= -5+2, &&\text{computing }-5+5,\\
+x &= -5+2, &&\text{property of }0,\\
+x &= -3, &&\text{computing }-5+2.
+\end{aligned}
+\]
+
+\noindent Strictly speaking, we have not shown here that \BookInline{- 3} is a solution, but rather that it is the only possibility for a solution. To show that \BookInline{- 3} is a solution, one merely computes \BookInline{5+ (- 3).} A similar analysis could be made for the equation \BookInline{2x= 3} in the rational numbers with the operation of multiplication:
+
+\[
+\begin{aligned}
+2x &= 3, &&\text{given,}\\
+\frac{1}{2}(2x) &= \frac{1}{2}(3), &&\text{multiplying by }\frac{1}{2},\\
+\left(\frac{1}{2}\cdot2\right)x &= \frac{1}{2}3, &&\text{associative law,}\\
+1\cdot x &= \frac{1}{2}3, &&\text{computing }\frac{1}{2}2,\\
+x &= \frac{1}{2}3, &&\text{property of }1,\\
+x &= \frac{3}{2}, &&\text{computing }\frac{1}{2}3.
+\end{aligned}
+\]
+
+Now suppose that we have a set with a binary operation \BookInline{\ast.} What properties does the operation need to have in order to solve an equation of the form \BookInline{a\ast x= b} where \BookInline{a} and \BookInline{b} are fixed elements of \BookInline{S}? Both equations \BookInline{5+ x= 2} and \BookInline{2x= 3} have this form; the 
+% Source PDF page 37; original printed page 20
+\BookSource{37}{20}
+first uses the operation \BookInline{+,\allowbreak } and the second uses the operation \BookInline{\times.} By examining the steps used we can see what properties of the operation \BookInline{\ast } are required as summarized in the table below.
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{BookFloat}{02_groups-p37-1}
+\begin{center}
+\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.35}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{r|c|c}
+Property & $+$ & $\times$\\\hline
+Associative Property & $-5+(5+x)=(-5+5)+x$ & $\frac12(2x)=\left(\frac12\cdot2\right)x$\\
+Identity Element & $0:0+x=x$ & $1:1\cdot x=x$\\
+Inverse Element & $-5:-5+5=0$ & $\frac12:\frac12\cdot2=1$
+\end{tabular}\end{adjustbox}\end{center}
+\end{BookFloat}
+
+If \BookInline{S} is a set with an operation \BookInline{\ast } satisfying these three properties, then an equation of the form \BookInline{a\ast x= b} could be solved for \BookInline{x} using exactly the same steps used to solve \BookInline{5+ x= 2} or \BookInline{2x= 3.} These three essential properties are all that is required in order to have a group. We are now ready to present the precise definition.
+
+\BookTextHeading{\textbf{Definition and Examples}  }
+
+\BookLabel{2.1 Definition} A\textbf{ group} \BookInline{\langle G,\allowbreak \ast \rangle } is a set \BookInline{G,\allowbreak } closed under a binary operation \BookInline{\ast,\allowbreak } such that the following axioms are satisfied:
+
+\BookInline{\mathcal{G}_{1}:} For all \BookInline{a,\allowbreak b,\allowbreak c\in G,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a\ast b)\ast c= a\ast (b\ast c).\;\text{associativity of}\;\ast}\end{adjustbox}\end{center}
+
+\BookInline{\mathcal{G}_{2}:} There is an element \BookInline{e} in \BookInline{G} such that for all \BookInline{x\in G,\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle e\ast x= x\ast e= x.\;\text{identity element}\;e\;\text{for}\;\ast}\end{adjustbox}\end{center}
+
+\BookInline{\mathcal{G}_{3}:} Corresponding to each \BookInline{a\in G,\allowbreak } there is an element \BookInline{a^{\prime }} in \BookInline{G} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\ast a^{\prime }= a^{\prime }\ast a= e.\;\text{inverse}\;a^{\prime }\;\text{of}\;a}\end{adjustbox}\end{center} \BookEnd{\blacksquare}
+
+\BookLabel{2.2 Example} \BookInline{\langle \mathbb{R},\allowbreak + \rangle } is a group with identity element 0 and the inverse of any real number \BookInline{a} is \BookInline{- a.} However\BookInline{,\allowbreak \langle \mathbb{R},\allowbreak \cdot \rangle } is not a group since 0 has no multiplicative inverse. We were still able to solve \BookInline{2x= 3} in the example above because \BookInline{\langle \mathbb{R}^{\ast },\allowbreak \cdot \rangle } is a group since multiplication of real numbers is associative, 1 is an identity, and every real number except 0 has an inverse\BookInline{.}\BookEnd{\blacktriangle}
+
+It is often convenient to say that \BookInline{G} is a group under the operation \BookInline{\ast } rather than write \BookInline{\langle G,\allowbreak \ast \rangle } is a group. At times, there is only one obvious operation that makes \BookInline{\langle G,\allowbreak \ast \rangle } a group. In this case, we may abuse notation and say that \BookInline{G} is a group. For example, if we say that \BookInline{\mathbb{R}} is a group, we mean that \BookInline{\mathbb{R}} is a group under addition.
+
+\BookLabel{2.3 Definition} A group \BookInline{G} is\textbf{ abelian} if its binary operation is commutative. \BookEnd{\blacksquare}
+
+Let us give some examples of some sets with binary operations that give groups and also of some that do not give groups.
+
+\BookLabel{2.4 Example} The set \BookInline{\mathbb{Z}^{+ }} under addition is\textit{ not} a group. There is no identity element for \BookInline{+ } in \BookInline{\mathbb{Z}^{+ }.}\BookEnd{\blacktriangle}
+
+\BookLabel{2.5 Example} The set of all nonnegative integers (including 0) under addition is still\textit{ not} a group. There is an identity element 0, but no inverse for \BookInline{2.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 38; original printed page 21
+\BookSource{38}{21}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent There are three historical roots of the development of abstract group theory evident in the mathematical literature of the nineteenth century: the theory of algebraic equations, number theory, and geometry. All three of these areas used group-theoretic methods of reasoning, although the methods were considerably more explicit in the first area than in the other two.
+
+\noindent One of the central themes of geometry in the nineteenth century was the search for invariants under various types of geometric transformations. Gradually attention became focused on the transformations themselves, which in many cases can be thought of as elements of groups.
+
+\noindent In number theory, already in the eighteenth century Leonhard Euler had considered the remainders on division of powers \BookInline{a^{n}} by a fixed prime \BookInline{p.} These remainders have “group” properties.
+
+Similarly, Carl F. Gauss, in his\textit{ Disquisitiones} \textit{Arithmeticae} (1800), dealt extensively with quadratic forms \BookInline{ax^{2}+ 2bxy+ cy^{2},\allowbreak } and in particular showed that equivalence classes of these forms under composition possessed what amounted to group properties.
+
+Finally, the theory of algebraic equations provided the most explicit prefiguring of the group concept. Joseph-Louis Lagrange (1736–1813) in fact initiated the study of permutations of the roots of an equation as a tool for solving it. These permutations, of course, were ultimately considered as elements of a group.
+
+It was Walther von Dyck (1856–1934) and Heinrich Weber (1842–1913) who in 1882 were able independently to combine the three historical roots and give clear definitions of the notion of an abstract group.
+
+\BookLabel{2.6 Example} The familiar additive properties of integers and of rational, real, and complex numbers show that \BookInline{\mathbb{Z},\allowbreak \mathbb{Q},\allowbreak \mathbb{R},\allowbreak } and \BookInline{\mathbb{C}} under addition are abelian groups\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{2.7 Example} The set \BookInline{\mathbb{Z}^{+ }} under multiplication is\textit{ not} a group. There is an identity 1, but no inverse of \BookInline{3.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent Commutative groups are called\textit{ abelian} in honor of the Norwegian mathematician Niels Henrik Abel (1802–1829). Abel was interested in the question of solvability of polynomial equations. In a paper written in 1828, he proved that if all the roots of such an equation can be expressed as rational functions \BookInline{f,\allowbreak g,\allowbreak...,\allowbreak h} of one of them, say \BookInline{x,\allowbreak } and if for any two of these roots\BookInline{,\allowbreak f(x)} and \BookInline{g(x),\allowbreak } the relation \BookInline{f(g(x))= g(f(x))} always holds, then the equation is solvable by radicals. Abel showed that each of these functions in fact permutes the roots of the equation; hence, these functions are elements of the group of permutations of the roots. It was this property of commutativity in these permutation groups associated with solvable equations that led Camille Jordan in his 1870 treatise on algebra to name such groups\textit{ abelian;} the name since then has been applied to commutative groups in general.
+
+Abel was attracted to mathematics as a teenager and soon surpassed all his teachers in Norway. He finally received a government travel grant to study elsewhere in 1825 and proceeded to Berlin, where he befriended August Crelle, the founder of the most influential German mathematical journal. Abel contributed numerous papers to Crelle’s \BookInline{Jour}\BookInline{nal} during the next several years, including many in the field of elliptic functions, whose theory he created virtually single-handedly. Abel returned to Norway in 1827 with no position and an abundance of debts. He nevertheless continued to write brilliant papers, but died of tuberculosis at the age of 26, two days before Crelle succeeded in finding a university position for him in Berlin.
+
+\end{BookBody}
+
+% Source PDF page 39; original printed page 22
+\BookSource{39}{22}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{2.8 Example} The familiar multiplicative properties of rational, real, and complex numbers show that the sets \BookInline{\mathbb{Q}^{+ }} and \BookInline{\mathbb{R}^{+ }} of positive numbers and the sets \BookInline{\mathbb{Q}^{\ast },\allowbreak \mathbb{R}^{\ast },\allowbreak } and \BookInline{\mathbb{C}^{\ast }} of nonzero numbers under multiplication are abelian groups\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{2.9 Example} The set of all real-valued functions with domain \BookInline{\mathbb{R}} under function addition is a group. This group is abelian\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{2.10 Example} \textbf{(Linear Algebra)} Those who have studied vector spaces should note that the axioms for a vector space \BookInline{V} pertaining just to vector addition can be summarized by asserting that \BookInline{V} under vector addition is an abelian group\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{2.11 Example} The set \BookInline{M_{m\times n}(\mathbb{R})} of all \BookInline{m\times n} matrices under matrix addition is a group. The \BookInline{m\times n} matrix with all entries 0 is the identity matrix. This group is abelian\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{2.12 Example} The set \BookInline{M_{n}(\mathbb{R})} of all \BookInline{n\times n} matrices under matrix multiplication is\textit{ not} a group. The \BookInline{n\times n} matrix with all entries 0 has no inverse\BookInline{.}\BookEnd{\blacktriangle}
+
+Each of the groups we have seen in the above examples is an abelian group. There are many examples of groups which are not abelian, two of which we now present.
+
+\BookLabel{2.13 Example} Here we give an example of a group that is not abelian. We let \BookInline{T} be the set of all isometries of the plane. An\textbf{ isometry of the plane} is a function mapping the plane to the plane which preserves distance. So if \BookInline{\phi } is an isometry of the plane and \BookInline{P,\allowbreak Q} are points in the plane, then the distance between \BookInline{P} and \BookInline{Q} is the same as the distance between \BookInline{\phi (P)} and \BookInline{\phi (Q).} Isometries of the plane map the plane one-to-one and onto itself. Examples of isometries include translations and rotations of the plane. The set \BookInline{T} under the operation of composition forms a group. To verify this we first must check that function composition is an operation. Certainly, the composition of two isometries is an isometry since each preserves distance. So function composition gives an operation on \BookInline{T.} Theorem 1.13 states that function composition is associative, so \BookInline{\mathcal{G}_{1}} is satisfied. The identity function \BookInline{\iota } that maps each point \BookInline{P} in the plane to itself gives an identity element in \BookInline{T,\allowbreak } which means that \BookInline{\mathcal{G}_{2}} is satisfied. Finally, for any isometry \BookInline{\phi,\allowbreak } the inverse function \BookInline{\phi ^{- 1}} is also an isometry and it serves as an inverse as defined in \BookInline{\mathcal{G}_{3}.} Therefore \BookInline{T} is a group under function composition.
+
+To show that \BookInline{T} is not abelian, we only need to find two isometries \BookInline{\phi } and \BookInline{\theta } such that \BookInline{\phi \circ \theta \neq \theta \circ \phi.} The functions \BookInline{\phi (x,\allowbreak y)= (- x,\allowbreak y)(}reflection across the \BookInline{y-}axis) and \BookInline{\theta (x,\allowbreak y)= (- y,\allowbreak x)(}rotation by \BookInline{\pi /2} about the origin) foot the bill. Note that \BookInline{\phi \circ \theta (1,\allowbreak 0)= } \BookInline{\phi (\theta (1,\allowbreak 0))= \phi (0,\allowbreak 1)= (0,\allowbreak 1)} and \BookInline{\theta \circ \phi (1,\allowbreak 0)= \theta (\phi (1,\allowbreak 0))= \theta (- 1,\allowbreak 0)= (0,\allowbreak - 1),\allowbreak } which implies that \BookInline{\phi \circ \theta \neq \theta \circ \phi } and \BookInline{T} is not an abelian group under function composition. \BookEnd{\blacktriangle}
+
+\BookLabel{2.14 Example} Show that the subset \BookInline{S} of \BookInline{M_{n}(\mathbb{R})} consisting of all\textit{ invertible} \BookInline{n\times n} matrices under matrix multiplication is a group.
+
+\BookLabel{\textit{Solution}} We start by showing that \BookInline{S} is closed under matrix multiplication. Let \BookInline{A} and \BookInline{B} be in \BookInline{S,\allowbreak } so that both \BookInline{A^{- 1}} and \BookInline{B^{- 1}} exist and \BookInline{AA^{- 1}= BB^{- 1}= I_{n}.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (AB)(B^{- 1}A^{- 1})= A(BB^{- 1})A^{- 1}= AI_{n}A^{- 1}= I_{n},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so that \BookInline{AB} is invertible and consequently is also in \BookInline{S.}
+
+Since matrix multiplication is associative and \BookInline{I_{n}} acts as the identity element, and since each element of \BookInline{S} has an inverse by definition of \BookInline{S,\allowbreak } we see that \BookInline{S} is indeed a group. This group is\textit{ not} commutative. \BookEnd{\blacktriangle}
+
+The group of invertible \BookInline{n\times n} matrices described in the preceding example is of fundamental importance in linear algebra. It is the\textbf{ general linear group of degree} \BookInline{n,\allowbreak } 
+% Source PDF page 40; original printed page 23
+\BookSource{40}{23}
+and is usually denoted by\textit{ GL}\BookInline{(n,\allowbreak \mathbb{R}).} Those of you who have studied linear algebra know that a matrix \BookInline{A} in\textit{ GL}\BookInline{(n,\allowbreak \mathbb{R})} gives rise to an invertible linear transformation \BookInline{T:\mathbb{R}^{n}\to } \BookInline{\mathbb{R}^{n},\allowbreak } defined by \BookInline{T(}\textbf{x}\BookInline{)\; = A}\textbf{x}, and that conversely, every invertible linear transformation of \BookInline{\mathbb{R}^{n}} into itself is defined in this fashion by some matrix in\textit{ GL}\BookInline{(n,\allowbreak \mathbb{R}).} Also, matrix multiplication corresponds to composition of linear transformations. Thus all invertible linear transformations of \BookInline{\mathbb{R}^{n}} into itself form a group under function composition; this group is usually denoted by\textit{ GL}\BookInline{(\mathbb{R}^{n}).} Since the sets GL\BookInline{(\mathbb{R}^{n})} and GL\BookInline{(n,\allowbreak \mathbb{R})} and their operations are essentially the same, we say that the two groups are\textit{ isomorphic}. We give a formal definition later in this section.
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+We conclude our list of examples of groups with one that may seem a bit contrived. We include it to show that there are many ways to define groups and to illustrate the steps needed to verify that a given set with an operation is a group.
+
+\BookLabel{2.15 Example} Let \BookInline{\ast } be defined on \BookInline{\mathbb{Q}^{+ }} by \BookInline{a\ast b= ab/2.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a * b) * c = \frac{ab}{2} * c = \frac{abc}{4},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and likewise
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a * ( b * c ) = a * { \frac { b c } { 2 } } = { \frac { a b c } { 4 } } .}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{\ast } is associative. Computation shows that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2\ast a= a\ast 2= a}\end{adjustbox}\end{center}
+
+\noindent for all \BookInline{a\in \mathbb{Q}^{+ },\allowbreak } so 2 is an identity element for \BookInline{\ast.} Finally,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a * { \frac { 4 } { a } } = { \frac { 4 } { a } } * a = 2 ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so \BookInline{a^{\prime }= 4/a} is an inverse for \BookInline{a.} Hence \BookInline{\mathbb{Q}^{+ }} with the operation \BookInline{\ast } is a group. \BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Elementary Properties of Groups}  }
+
+\noindent As we proceed to prove our first theorem about groups, we must use Definition 2.1, which is the only thing we know about groups at the moment. The proof of a second theorem can employ both Definition 2.1 and the first theorem; the proof of a third theorem can use the definition and the first two theorems, and so on.
+
+Our first theorem will establish cancellation laws. In real number arithmetic, we know that \BookInline{2a= 2b} implies that \BookInline{a= b.} We need only divide both sides of the equation \BookInline{2a= 2b} by 2, or equivalently, multiply both sides by \BookInline{\frac { 1 } { 2 }} which is the multiplicative inverse of 2. We parrot this proof to establish cancellation laws for any group. Note that we will also use the associative law.
+
+\BookLabel{2.16 Theorem} If \BookInline{G} is a group with binary operation \BookInline{\ast,\allowbreak } then the\textbf{ left and right cancellation laws} hold in \BookInline{G,\allowbreak } that is\BookInline{,\allowbreak a\ast b= a\ast c} implies \BookInline{b= c,\allowbreak } and \BookInline{b\ast a= c\ast a} implies \BookInline{b= c} for all \BookInline{a,\allowbreak b,\allowbreak c\in G.}
+
+\BookLabel{\textit{Proof}} Suppose \BookInline{a\ast b= a\ast c.} Then by \BookInline{\mathcal{G}_{3},\allowbreak } there exists \BookInline{a^{\prime },\allowbreak } and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a^{\prime }\ast (a\ast b)= a^{\prime }\ast (a\ast c).}\end{adjustbox}\end{center}
+
+\noindent By the associative law,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a^{\prime }\ast a)\ast b= (a^{\prime }\ast a)\ast c.}\end{adjustbox}\end{center}
+
+\noindent By the definition of \BookInline{a^{\prime }} in \BookInline{\mathcal{G}_{3},\allowbreak a^{\prime }\ast a= e,\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle e\ast b= e\ast c.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 41; original printed page 24
+\BookSource{41}{24}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent By the definition of \BookInline{e} in \BookInline{\mathcal{G}_{2},\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle b= c.}\end{adjustbox}\end{center}
+
+\noindent Similarly, from \BookInline{b\ast a= c\ast a} one can deduce that \BookInline{b= c} upon multiplication on the right by \BookInline{a^{\prime }} and use of the axioms for a group\BookInline{.}\BookEnd{\blacklozenge}
+
+Our next proof can make use of Theorem 2.16. We show that a “linear equation” in a group has a\textit{ unique} solution. Recall that we chose our group properties to allow us to find solutions of such equations.
+
+\BookLabel{2.17 Theorem} If \BookInline{G} is a group with binary operation \BookInline{\ast,\allowbreak } and if \BookInline{a} and \BookInline{b} are any elements of \BookInline{G,\allowbreak } then the linear equations \BookInline{a\ast x= b} and \BookInline{y\ast a= b} have unique solutions \BookInline{x} and \BookInline{y} in \BookInline{G.}
+
+\BookLabel{\textit{Proof}} First we show the existence of\textit{ at least} one solution by just computing that \BookInline{a^{\prime }\ast b} is a solution of \BookInline{a\ast x= b.} Note that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}a\ast (a^{\prime }\ast b)&= (a\ast a^{\prime })\ast b,\allowbreak \;\text{associative law}\;,\allowbreak  \\ &= e\ast b,\allowbreak \;\text{de}\;\text{fi}\;\text{nition of}\;a^{\prime },\allowbreak  \\ &= b,\allowbreak \;\text{property of}\;e.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{x= a^{\prime }\ast b} is a solution of \BookInline{a\ast x= b.} In a similar fashion\BookInline{,\allowbreak y= b\ast a^{\prime }} is a solution of \BookInline{y\ast a= b.}
+
+To show uniqueness of \BookInline{y,\allowbreak } we use the standard method of assuming that we have two solutions\BookInline{,\allowbreak y_{1}} and \BookInline{y_{2},\allowbreak } so that \BookInline{y_{1}\ast a= b} and \BookInline{y_{2}\ast a= b.} Then \BookInline{y_{1}\ast a= y_{2}\ast a,\allowbreak } and by Theorem \BookInline{2.16,\allowbreak y_{1}= y_{2}.} The uniqueness of \BookInline{x} follows similarly\BookInline{.}\BookEnd{\blacklozenge}
+
+Of course, to prove the uniqueness in the last theorem, we could have followed the procedure we used in motivating the definition of a group, showing that if \BookInline{a\ast x= b,\allowbreak } then \BookInline{x= a^{\prime }\ast b.} However, we chose to illustrate the standard way to prove an object is unique; namely, suppose you have two such objects, and then prove they must be the same. Note that the solutions \BookInline{x= a^{\prime }\ast b} and \BookInline{y= b\ast a^{\prime }} need not be the same unless \BookInline{\ast } is commutative.
+
+Because a group has a binary operation, we know from Theorem 1.15 that the identity \BookInline{e} in a group is unique. We state this again as part of the next theorem for easy reference.
+
+\BookLabel{2.18 Theorem} In a group \BookInline{G} with binary operation \BookInline{\ast,\allowbreak } there is only one element \BookInline{e} in \BookInline{G} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle e\ast x= x\ast e= x}\end{adjustbox}\end{center}
+
+\noindent for all \BookInline{x\in G.} Likewise for each \BookInline{a\in G,\allowbreak } there is only one element \BookInline{a^{\prime }} in \BookInline{G} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a^{\prime }\ast a= a\ast a^{\prime }= e.}\end{adjustbox}\end{center}
+
+\noindent In summary, the identity element and inverse of each element are unique in a group.
+
+\BookLabel{\textit{Proof}} Theorem 1.15 shows that an identity element for any binary operation is unique. No use of the other group axioms was required to show this.
+
+Turning to the uniqueness of an inverse, suppose that \BookInline{a\in G} has inverses \BookInline{a^{\prime }} and \BookInline{a^{\prime \prime }} so that \BookInline{a^{\prime }\ast a= a\ast a^{\prime }= e} and \BookInline{a^{\prime \prime }\ast a= a\ast a^{\prime \prime }= e.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\ast a^{\prime \prime }= a\ast a^{\prime }= e}\end{adjustbox}\end{center}
+
+\noindent and, by Theorem 2.16,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a^{\prime \prime }= a^{\prime },\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so the inverse of \BookInline{a} in a group is unique. \BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 42; original printed page 25
+\BookSource{42}{25}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Note that in a group \BookInline{G,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a\ast b)\ast (b^{\prime }\ast a^{\prime })= a\ast (b\ast b^{\prime })\ast a^{\prime }= (a\ast e)\ast a^{\prime }= a\ast a^{\prime }= e.}\end{adjustbox}\end{center}
+
+This equation and Theorem 2.18 show that \BookInline{b^{\prime }\ast a^{\prime }} is the unique inverse of \BookInline{a\ast b.} That is\BookInline{,\allowbreak (a\ast b)^{\prime }= b^{\prime }\ast a^{\prime }.} We state this as a corollary.
+
+\BookLabel{2.19 Corollary} Let \BookInline{G} be a group. For all \BookInline{a,\allowbreak b\in G,\allowbreak } we have \BookInline{(a\ast b)^{\prime }= b^{\prime }\ast a^{\prime }.} \BookEnd{\blacklozenge}
+
+For your information, we remark that binary algebraic structures with weaker axioms than those for a group have also been studied quite extensively. Of these weaker structures, the\textbf{ semigroup,} a set with an associative binary operation, has perhaps had the most attention. A\textbf{ monoid} is a semigroup that has an identity element for the binary operation. Note that every group is both a semigroup and a monoid.
+
+Finally, it is possible to give axioms for a group \BookInline{\langle G,\allowbreak \ast \rangle } that seem at first glance to be weaker, namely:
+
+\BookExercise{1.}{The binary operation \BookInline{\ast } on \BookInline{G} is associative.}
+
+\BookExercise{2.}{There exists a\textbf{ left identity element} \BookInline{e} in \BookInline{G} such that \BookInline{e\ast x= x} for all \BookInline{x\in G.}}
+
+\BookExercise{3.}{For each \BookInline{a\in G,\allowbreak } there exists\textbf{ a left inverse} \BookInline{a^{\prime }} in \BookInline{G} such that \BookInline{a^{\prime }\ast a= e.}}
+
+\noindent From this\textit{ one-sided definition}, one can prove that the left identity element is also a right identity element, and a left inverse is also a right inverse for the same element. Thus these axioms should not be called\textit{ weaker}, since they result in exactly the same structures being called groups. It is conceivable that it might be easier in some cases to check these\textit{ left axioms} than to check our\textit{ two-sided axioms}. Of course, by symmetry it is clear that there are also\textit{ right axioms} for a group.
+
+\BookTextHeading{\textbf{Group Isomorphisms}  }
+
+\noindent All our examples have been of infinite groups, that is, groups where the set \BookInline{G} has an infinite number of elements. We turn to finite groups, starting with the smallest finite sets.
+
+Since a group has to have at least one element, namely, the identity, a minimal set that might give rise to a group is a one-element set \BookInline{\{e\}.} The only possible binary operation \BookInline{\ast } on \BookInline{\{e\}} is defined by \BookInline{e\ast e= e.} The three group axioms hold. The identity element is always its own inverse in every group.
+
+There is a group with only two elements, namely \BookInline{G= \{1,\allowbreak - 1\}} with operation the usual multiplication. It is clear that \BookInline{G} is closed under multiplication and we know that multiplication is associative. Furthermore, 1 is the identity, the inverse of 1 is 1, and the inverse of \BookInline{- 1} is \BookInline{- 1.} Table 2.20 is the group table for \BookInline{G.}
+
+\begin{BookFloat}{02_groups-p42-15}
+\begin{center}\small\textbf{2.20 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c}
+\BookInline{\times } & 1 & \BookInline{- 1}\\\hline
+1 & 1 & \BookInline{- 1}\\
+\BookInline{- 1} & \BookInline{- 1} & 1\\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+Is this the only group with exactly two elements? To see, let us try to put a group structure on a set with two elements. Since one of the elements must be the identity, we will label the identity element \BookInline{e} and we will label the other element \BookInline{a.} Following tradition, we place the identity first both on the top and to the left as in the following table.
+
+\begin{BookFloat}{02_groups-p42-17}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a}\\\hline
+\BookInline{e} &  & \\\hline
+\BookInline{a} &  & \\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+Since \BookInline{e} is to be the identity,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle e\ast x= x\ast e= x}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 43; original printed page 26
+\BookSource{43}{26}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+for all \BookInline{x\in \{e,\allowbreak a\}.} We are forced to fill in the table as follows, if \BookInline{\ast } is to give a group:
+
+\begin{BookFloat}{02_groups-p43-1}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a}\\\hline
+\BookInline{e} & \BookInline{e} & \BookInline{a}\\\hline
+\BookInline{a} & \BookInline{a} & \\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+Also\BookInline{,\allowbreak a} must have an inverse \BookInline{a^{\prime }} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\ast a^{\prime }= a^{\prime }\ast a= e.}\end{adjustbox}\end{center}
+
+In our case\BookInline{,\allowbreak a^{\prime }} must be either \BookInline{e} or \BookInline{a.} Since \BookInline{a^{\prime }= e} obviously does not work, we must have \BookInline{a^{\prime }= a,\allowbreak } so we have to complete the table as shown in Table 2.21.
+
+\begin{BookFloat}{02_groups-p43-5}
+\begin{center}\small\textbf{2.21 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a}\\\hline
+\BookInline{e} & \BookInline{e} & \BookInline{a}\\\hline
+\BookInline{a} & \BookInline{a} & \BookInline{e}\\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+All the group axioms are now satisfied, except possibly associativity. But if we relabel 1 as \BookInline{e} and \BookInline{- 1} as \BookInline{a} in Table 2.20 we obtain Table 2.21. Therefore, the table we constructed for \BookInline{\{e,\allowbreak a\}} must also satisfy \BookInline{\mathcal{G}_{1},\allowbreak } the associative property. The table also shows clearly that properties \BookInline{\mathcal{G}_{2}} and \BookInline{\mathcal{G}_{3}} are satisfied, so \BookInline{\langle \{e,\allowbreak a\},\allowbreak \ast \rangle } is a group. The groups \BookInline{\{1,\allowbreak - 1\}} and \BookInline{\{e,\allowbreak a\}} are not the same, but they are essentially the same since by relabeling elements of one with the names of the other, the operations match. When the elements of one group can be matched with another in such a way that the operations are the same, we say that the groups are\textbf{ isomorphic} and the matching is called a\textbf{ group} \textbf{isomorphism}. We showed that any group with two elements is isomorphic with \BookInline{\{1,\allowbreak - 1\}} under multiplication. The notation used to indicate isomorphism is \BookInline{\simeq,\allowbreak } so we could write \BookInline{\langle \{1,\allowbreak - 1\},\allowbreak \times \rangle \simeq \langle \{e,\allowbreak a\},\allowbreak \ast \rangle.} Of course the matching is a one-to-one function from one group onto the other. If we were only interested in groups whose tables are easy to compute, then we would not need a more precise definition for isomorphism. We would simply see if we can relabel one group table to make it look like the other. However, in the case of infinite groups or even groups with more than a few elements, we need a better way to verify that groups are isomorphic. We now give a more precise definition of a group isomorphism.
+
+\BookLabel{2.22 Definition} Let \BookInline{\langle G_{1},\allowbreak \ast _{1}\rangle } and \BookInline{\langle G_{2},\allowbreak \ast _{2}\rangle } be groups and \BookInline{f:G_{1}\to G_{2}.} We say that \BookInline{f} is a\textbf{ group} \textbf{isomorphism} if the following two conditions are satisfied.
+
+\noindent 1. The function \BookInline{f} is one-to-one and maps onto \BookInline{G_{2}.}
+
+\noindent 2. For all \BookInline{a,\allowbreak b\in G_{1},\allowbreak f(a\ast _{1}b)= f(a)\ast _{2}f(b).} \BookEnd{\blacksquare}
+
+\noindent Note that Condition 1 simply gives a way to relabel the elements of \BookInline{G_{1}} with elements in \BookInline{G_{2}.} Condition 2, which we will refer to as the\textbf{ homomorphism property}, says that with this relabeling, the operations \BookInline{\ast _{1}} on \BookInline{G_{1}} and \BookInline{\ast _{2}} on \BookInline{G_{2}} match. If we are in the context of groups, we will often use the term isomorphism to mean group isomorphism. If there is an isomorphism from a group \BookInline{G_{1}} to \BookInline{G_{2},\allowbreak } we say that \BookInline{G_{1}} is\textbf{ isomorphic} with (or to) \BookInline{G_{2}.} In Exercise 44, you are asked to show that if \BookInline{f:G_{1}\to G_{2}} is an isomorphism, then \BookInline{f^{- 1}:G_{2}\to G_{1},\allowbreak } the inverse function, is also an isomorphism. So if \BookInline{G_{1}} is isomorphic with \BookInline{G_{2},\allowbreak } then \BookInline{G_{2}} is isomorphic with \BookInline{G_{1}.} If you wish to verify that two groups\BookInline{,\allowbreak G_{1}} and \BookInline{G_{2},\allowbreak } are isomorphic, you can either construct an isomorphism mapping \BookInline{G_{1}} to \BookInline{G_{2}} or one mapping \BookInline{G_{2}} to \BookInline{G_{1}.}
+
+\BookLabel{2.23 Example} In Exercise 10 you will be asked to show that \BookInline{2\mathbb{Z},\allowbreak } the even integers, forms a group under addition. Here we show \BookInline{\mathbb{Z}} and \BookInline{2\mathbb{Z}} are isomorphic groups. In this case, the operations on the groups are both addition. We need a function \BookInline{f:\mathbb{Z}\to 2\mathbb{Z}} that is both one-to-one and onto \BookInline{2\mathbb{Z}.} Let \BookInline{f:\mathbb{Z}\to 2\mathbb{Z}} be given by \BookInline{f(m)= 2m.} We need to verify Condition 1 for an isomorphism, which says that \BookInline{f} is one-to-one and onto. Suppose that \BookInline{a,\allowbreak b\in \mathbb{Z}} and \BookInline{f(a)= f(b).} Then \BookInline{2a= 2b,\allowbreak } which implies that \BookInline{a= b,\allowbreak } so \BookInline{f} is one-to-one. We now show \BookInline{f} 
+% Source PDF page 44; original printed page 27
+\BookSource{44}{27}
+is onto. Let \BookInline{y\in 2\mathbb{Z}.} Since \BookInline{y} is even\BookInline{,\allowbreak y= 2c} for some \BookInline{c\in \mathbb{Z}.} Therefore\BookInline{,\allowbreak y= 2c= f(c),\allowbreak } so \BookInline{f} maps onto \BookInline{2\mathbb{Z}.} We now turn our attention to the homomorphism property and consider arbitrary \BookInline{a,\allowbreak b\in \mathbb{Z}.} Then
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(a+ b)= 2(a+ b)= 2a+ 2b= f(a)+ f(b),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent which verifies Condition 2. Therefore \BookInline{f} is a group isomorphism and \BookInline{\mathbb{Z}} and \BookInline{2\mathbb{Z}} are isomorphic groups.
+
+As noted above, we could have defined an isomorphism by using the inverse function \BookInline{f^{- 1}:2\mathbb{Z}\to \mathbb{Z},\allowbreak } which is defined by \BookInline{f^{- 1}(x)= x/2.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Properties of Group Tables}  }
+
+\noindent With Table 2.21 as background, we should be able to list some necessary conditions that a table giving a binary operation on a finite set must satisfy for the operation to give a group structure on the set. There must be one element of the set, which we may as well denote by \BookInline{e,\allowbreak } that acts as the identity element. The condition \BookInline{e\ast x= x} means that the row of the table opposite \BookInline{e} at the extreme left must contain exactly the elements appearing across the very top of the table in the same order. Similarly, the condition \BookInline{x\ast e= x} means that the column of the table under \BookInline{e} at the very top must contain exactly the elements appearing at the extreme left in the same order. The fact that every element \BookInline{a} has a right and a left inverse means that in the row having \BookInline{a} at the extreme left, the element \BookInline{e} must appear, and in the column under \BookInline{a} at the very top, the \BookInline{e} must appear. Thus \BookInline{e} must appear in each row and in each column. We can do even better than this, however. By Theorem 2.17, not only do the equations \BookInline{a\ast x= e} and \BookInline{y\ast a= e} have unique solutions, but also the equations \BookInline{a\ast x= b} and \BookInline{y\ast a= b.} By a similar argument, this means that\textit{ each element} \BookInline{b} \textit{of the group must appear once and only once in each} \textit{row and each column of the table}.
+
+Suppose conversely that a table for a binary operation on a finite set is such that there is an element acting as identity and that in each row and each column, each element of the set appears exactly once. Then it can be seen that the structure is a group structure if and only if the associative law holds. If a binary operation \BookInline{\ast } is given by a table, the associative law is usually messy to check. If the operation \BookInline{\ast } is defined by some characterizing property of \BookInline{a\ast b,\allowbreak } the associative law is often easy to check. Fortunately, this second case turns out to be the one usually encountered.
+
+\begin{BookFloat}{02_groups-p44-7}
+\begin{center}\small\textbf{2.24 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{e} & \BookInline{e} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{a} & \BookInline{a} &  & \\\hline
+\BookInline{b} & \BookInline{b} &  & \\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+We saw that there was essentially only one group of two elements in the sense that if the elements are denoted by \BookInline{e} and \BookInline{a} with the identity element \BookInline{e} appearing first, the table must be as shown in Table 2.21. Suppose that a set has three elements. As before, we may as well let the set be \BookInline{\{e,\allowbreak a,\allowbreak b\}.} For \BookInline{e} to be an identity element, a binary operation \BookInline{\ast } on this set has to have a table of the form shown in Table 2.24. This leaves four places to be filled in. You can quickly see that Table 2.24 must be completed as shown in Table 2.25 if each row and each column are to contain each element exactly once. We find a group whose table is the same as Table 2.25. The elements of the group are the three matrices \BookInline{e = { \left[ \begin{matrix} { 1 0 } \\ { 0 1 } \end{matrix} \right] },\allowbreak a = { \left[ \begin{matrix} { - { \frac { 1 } { 2 } } - { \frac { \sqrt { 3 } } { 2 } } } \\ { { \frac { \sqrt { 3 } } { 2 } } - { \frac { 1 } { 2 } } } \end{matrix} \right] }}, and \BookInline{\boldsymbol{b} = \begin{bmatrix} - \frac{1}{2} \quad \frac{\sqrt{3}}{2} \\ - \frac{\sqrt{3}}{2} \quad - \frac{1}{2} \end{bmatrix}}. We let \BookInline{G= \{e,\allowbreak a,\allowbreak b\}.} In Exercise 18 you will show that \BookInline{G} is a group under matrix multiplication. By computing matix products it is easy to check that the group table for \BookInline{G} is identical with Table 2.25. Therefore Table 2.25 gives a group.
+
+\begin{BookFloat}{02_groups-p44-9}
+\begin{center}\small\textbf{2.25 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{e} & \BookInline{e} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{a} & \BookInline{a} & \BookInline{b} & \BookInline{e}\\\hline
+\BookInline{b} & \BookInline{b} & \BookInline{e} & \BookInline{a}\\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+Now suppose that \BookInline{G^{\prime }} is any other group of three elements and imagine a table for \BookInline{G^{\prime }} with identity element appearing first. Since our filling out of the table for \BookInline{G= \{e,\allowbreak a,\allowbreak b\}} could be done in only one way, we see that if we take the table for \BookInline{G^{\prime }} and rename the identity \BookInline{e,\allowbreak } the next element listed \BookInline{a,\allowbreak } and the last element \BookInline{b,\allowbreak } the resulting table for \BookInline{G^{\prime }} must be the same as the one we had for \BookInline{G.} As explained above, this renaming gives an isomorphism of the group \BookInline{G^{\prime }} with the group \BookInline{G.} Thus our work above can be summarized 
+% Source PDF page 45; original printed page 28
+\BookSource{45}{28}
+by saying that all groups with a single element are isomorphic, all groups with just two elements are isomorphic, and all groups with just three elements are isomorphic. We use the phrase\textit{ up to isomorphism} to express this identification. Thus we may say, “There is only one group of three elements, up to isomorphism.”
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+An interesting problem in group theory is to determine up to isomorphism all the groups with a given number of elements \BookInline{n.} In Exercise 20, you will be asked to show that there are up to isomorphism exactly two groups of order 4. It is beyond the scope of this book to give a thorough investigation of this problem, but we will solve the problem for some other special values of \BookInline{n} in later sections.
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{2}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 9, determine whether the binary operation \BookInline{\ast } gives a group structure on the given set. If no group results, give the first axiom in the order \BookInline{\mathcal{G}_{1},\allowbreak \mathcal{G}_{2},\allowbreak \mathcal{G}_{3}} from Definition 2.1 that does not hold.
+
+\BookExercise{1.}{Let \BookInline{\ast } be defined on \BookInline{\mathbb{Z}} by letting \BookInline{a\ast b= ab.}}
+
+\BookExercise{2.}{Let \BookInline{\ast } be defined on \BookInline{2\mathbb{Z}= \{2n\mid n\in \mathbb{Z}\}} by letting \BookInline{a\ast b= a+ b.}}
+
+\BookExercise{3.}{Let \BookInline{\ast } be defined on \BookInline{\mathbb{R}^{+ }} by letting \BookInline{a\ast b= \sqrt{ab}.}}
+
+\BookExercise{4.}{Let \BookInline{\ast } be defined on \BookInline{\mathbb{Q}} by letting \BookInline{a\ast b= ab.}}
+
+\BookExercise{5.}{Let \BookInline{\ast } be defined on the set \BookInline{\mathbb{R}^{\ast }} of nonzero real numbers by letting \BookInline{a\ast b= a/b.}}
+
+\BookExercise{6.}{Let \BookInline{\ast } be defined on \BookInline{\mathbb{C}} by letting \BookInline{a\ast b= |ab|.}}
+
+\BookExercise{7.}{Let \BookInline{\ast } be defined on the set \BookInline{\{a,\allowbreak b\}} by Table 2.26.}
+
+\BookExercise{8.}{Let \BookInline{\ast } be defined on the set \BookInline{\{a,\allowbreak b\}} by Table 2.27.}
+
+\BookExercise{9.}{Let \BookInline{\ast } be defined on the set \BookInline{\{e,\allowbreak a,\allowbreak b\}} by Table 2.28.}
+
+\begin{BookFloat}{02_groups-p45-14}
+\begin{center}
+\begin{minipage}[t]{0.2127\linewidth}\vspace{0pt}\begin{center}\small\textbf{2.26 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c}
+\BookInline{\ast } & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{a} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{b} & \BookInline{b} & \BookInline{b}\\
+\end{tabular}
+\end{adjustbox}\end{center}\end{minipage}\hfill\begin{minipage}[t]{0.2346\linewidth}\vspace{0pt}\begin{center}\small\textbf{2.27 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c}
+\BookInline{\ast } & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{a} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{b} & \BookInline{a} & \BookInline{b}\\
+\end{tabular}
+\end{adjustbox}\end{center}\end{minipage}\hfill\begin{minipage}[t]{0.3048\linewidth}\vspace{0pt}\begin{center}\small\textbf{2.28 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{e} & \BookInline{e} & \BookInline{a} & \BookInline{b}\\\hline
+\BookInline{a} & \BookInline{a} & \BookInline{e} & \BookInline{b}\\\hline
+\BookInline{b} & \BookInline{b} & \BookInline{b} & \BookInline{e}\\
+\end{tabular}
+\end{adjustbox}\end{center}\end{minipage}
+\end{center}
+\end{BookFloat}
+
+\BookExercise{10.}{Let \BookInline{n} be a positive integer and let \BookInline{n\mathbb{Z}= \{nm\mid m\in \mathbb{Z}\}.}}
+
+\BookExercise{a.}{Show that \BookInline{\langle n\mathbb{Z},\allowbreak + \rangle } is a group.}
+
+\BookExercise{b.}{Show that \BookInline{\langle n\mathbb{Z},\allowbreak + \rangle \simeq \langle \mathbb{Z},\allowbreak + \rangle.}}
+
+\noindent In Exercises 11 through 18, determine whether the given set of matrices under the specified operation, matrix addition or multiplication, is a group. Recall that a\textbf{ diagonal matrix} is a square matrix whose only nonzero entries lie on the\textbf{ main diagonal,} from the upper left to the lower right corner. An\textbf{ upper-triangular matrix} is a square matrix with only zero entries below the main diagonal. Associated with each \BookInline{n\times n} matrix \BookInline{A} is a number called the determinant of \BookInline{A,\allowbreak } denoted by det\BookInline{(A).} If \BookInline{A} and \BookInline{B} are both \BookInline{n\times n} matrices, then det\BookInline{(AB)= } det\BookInline{(A)} det\BookInline{(B).} Also, det\BookInline{(I_{n})= 1} and \BookInline{A} is invertible if and only if det\BookInline{(A)\neq 0.}
+
+\BookExercise{11.}{All \BookInline{n\times n} diagonal matrices under matrix addition.}
+
+\BookExercise{12.}{All \BookInline{n\times n} diagonal matrices under matrix multiplication.}
+
+\BookExercise{13.}{All \BookInline{n\times n} diagonal matrices with no zero diagonal entry under matrix multiplication.}
+
+\BookExercise{14.}{All \BookInline{n\times n} diagonal matrices with all diagonal entries 1 or \BookInline{- 1} under matrix multiplication.}
+
+\BookExercise{15.}{All \BookInline{n\times n} upper-triangular matrices under matrix multiplication.}
+
+\BookExercise{16.}{All \BookInline{n\times n} upper-triangular matrices under matrix addition.}
+
+\BookExercise{17.}{All \BookInline{n\times n} upper-triangular matrices with determinant 1 under matrix multiplication.}
+
+\end{BookBody}
+
+% Source PDF page 46; original printed page 29
+\BookSource{46}{29}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookInline{e = { \left[ \begin{matrix} { 1 ~ 0 } \\ { 0 ~ 1 } \end{matrix} \right] },\allowbreak a = { \left[ \begin{matrix} { - { \frac { 1 } { 2 } } ~ { - } { \frac { \sqrt { 3 } } { 2 } } } \\ { { \frac { \sqrt { 3 } } { 2 } } ~ { - } { \frac { 1 } { 2 } } } \end{matrix} \right] }} \BookInline{\boldsymbol{b} = \begin{bmatrix} -\frac{1}{2} \frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} - \frac{1}{2} \end{bmatrix}}
+
+\BookExercise{18.}{The set of \BookInline{2\times 2} matrices \BookInline{G= \{e,\allowbreak a,\allowbreak b\}} where \BookInline{e = { \left[ \begin{matrix} { 1 ~ 0 } \\ { 0 ~ 1 } \end{matrix} \right] },\allowbreak a = { \left[ \begin{matrix} { - { \frac { 1 } { 2 } } ~ { - } { \frac { \sqrt { 3 } } { 2 } } } \\ { { \frac { \sqrt { 3 } } { 2 } } ~ { - } { \frac { 1 } { 2 } } } \end{matrix} \right] }}, and \BookInline{\boldsymbol{b} = \begin{bmatrix} -\frac{1}{2} \frac{\sqrt{3}}{2} \\ -\frac{\sqrt{3}}{2} - \frac{1}{2} \end{bmatrix}} under matrix multiplication.}
+
+\BookExercise{19.}{Let \BookInline{S} be the set of all real numbers except \BookInline{- 1.} Define \BookInline{\ast } on \BookInline{S} by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\ast b= a+ b+ ab.}\end{adjustbox}\end{center}
+
+\BookExercise{a.}{Show that \BookInline{\ast } gives a binary operation on \BookInline{S.}}
+
+\BookExercise{b.}{Show that \BookInline{\langle S,\allowbreak \ast \rangle } is a group.}
+
+\BookExercise{c.}{Find the solution of the equation \BookInline{2\ast x\ast 3= 7} in \BookInline{S.}}
+
+\BookExercise{20.}{This exercise shows that there are two nonisomorphic group structures on a set of 4 elements.}
+
+Let the set be \BookInline{\{e,\allowbreak a,\allowbreak b,\allowbreak c\},\allowbreak } with \BookInline{e} the identity element for the group operation. A group table would then have to start in the manner shown in Table 2.29. The square indicated by the question mark cannot be filled in with \BookInline{a.} It must be filled in either with the identity element \BookInline{e} or with an element different from both \BookInline{e} and \BookInline{a.} In this latter case, it is no loss of generality to assume that this element is \BookInline{b.} If this square is filled in with \BookInline{e,\allowbreak } the table can then be completed in two ways to give a group. Find these two tables. (You need not check the associative law.) If this square is filled in with \BookInline{b,\allowbreak } then the table can only be completed in one way to give a group. Find this table. (Again, you need not check the associative law.) Of the three tables you now have, two give isomorphic groups. Determine which two tables these are, and give the one-to-one onto relabeling function which is an isomorphism.
+
+\BookExercise{a.}{Are all groups of 4 elements commutative?}
+
+\BookExercise{b.}{Find a way to relabel the four matrices}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \left\{ \left[ \begin{matrix} { 1 0 } \\ { 0 1 } \\ \end{matrix} \right] ,\allowbreak  \left[ \begin{matrix} { 0 - 1 } \\ { 1 0 } \\ \end{matrix} \right] ,\allowbreak  \left[ \begin{matrix} { - 1 0 } \\ { 0 - 1 } \\ \end{matrix} \right] ,\allowbreak  \left[ \begin{matrix} { 0 1 } \\ { - 1 0 } \\ \end{matrix} \right] \right\}}\end{adjustbox}\end{center}
+
+so the matrix multiplication table is identical to one you constructed. This shows that the table you constructed defines an associative operation and therefore gives a group.
+
+\BookExercise{c.}{Show that for a particular value of n, the group elements given in Exercise 14 can be relabeled so their group table is identical to one you constructed. This implies the operation in the table is also associative.}
+
+\BookExercise{21.}{According to Exercise 12 of Section 1, there are 16 possible binary operations on a set of 2 elements. How many of these give a structure of a group? How many of the 19,683 possible binary operations on a set of 3 elements give a group structure?}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{22.}{Consider our axioms \BookInline{\mathcal{G}_{1},\allowbreak \mathcal{G}_{2},\allowbreak } and \BookInline{\mathcal{G}_{3}} for a group. We gave them in the order \BookInline{\mathcal{G}_{1}\mathcal{G}_{2}\mathcal{G}_{3}.} Conceivable other orders to state the axioms are \BookInline{\mathcal{G}_{1}\mathcal{G}_{3}\mathcal{G}_{2},\allowbreak \mathcal{G}_{2}\mathcal{G}_{1}\mathcal{G}_{3},\allowbreak \mathcal{G}_{2}\mathcal{G}_{3}\mathcal{G}_{1},\allowbreak \mathcal{G}_{3}\mathcal{G}_{1}\mathcal{G}_{2},\allowbreak } and \BookInline{\mathcal{G}_{3}\mathcal{G}_{2}\mathcal{G}_{1}.} Of these six possible orders, exactly three are acceptable for a definition. Which orders are not acceptable, and why? (Remember this. Most instructors ask the student to define a group on at least one test.)}
+
+\begin{BookFloat}{02_groups-p46-17}
+\begin{center}\small\textbf{2.29 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c|c}
+\BookInline{\ast } & \BookInline{e} & \BookInline{a} & \BookInline{b} & \BookInline{c}\\\hline
+\BookInline{e} & \BookInline{e} & \BookInline{a} & \BookInline{b} & \BookInline{c}\\\hline
+\BookInline{a} & \BookInline{a} & ? &  & \\\hline
+\BookInline{b} & \BookInline{b} &  &  & \\\hline
+\BookInline{c} & \BookInline{c} &  &  & \\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+\BookExercise{23.}{The following “definitions” of a group are taken verbatim, including spelling and punctuation, from papers of students who wrote a bit too quickly and carelessly. Criticize them.}
+
+\BookExercise{a.}{A group \BookInline{G} is a set of elements together with a binary operation \BookInline{\ast } such that the following conditions are satisfied}
+
+\end{BookBody}
+
+% Source PDF page 47; original printed page 30
+\BookSource{47}{30}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookInline{\ast } is associative
+
+There exists \BookInline{e\in G} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle e\ast x= x\ast e= x= \;\text{identity}\;.}\end{adjustbox}\end{center}
+
+For every \BookInline{a\in G} there exists an \BookInline{a^{\prime }(}inverse) such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\cdot a^{\prime }= a^{\prime }\cdot a= e}\end{adjustbox}\end{center}
+
+\BookExercise{b.}{A group is a set \BookInline{G} such that}
+
+The operation on \BookInline{G} is associative.
+
+there is an identity element \BookInline{(e)} in \BookInline{G.}
+
+for every \BookInline{a\in G,\allowbreak } there is an \BookInline{a^{\prime }(}inverse for each element)
+
+\BookExercise{c.}{A group is a set with a binary operation such}
+
+the binary operation is defined
+
+an inverse exists
+
+an identity element exists
+
+\BookExercise{d.}{A set \BookInline{G} is called a group over the binery operation \BookInline{\ast } such that for all \BookInline{a,\allowbreak b\in G}}
+
+Binary operation \BookInline{\ast } is associative under addition
+
+there exist an element \BookInline{\{e\}} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\ast e= e\ast a= e}\end{adjustbox}\end{center}
+
+Fore every element \BookInline{a} there exists an element \BookInline{a^{\prime }} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\ast a^{\prime }= a^{\prime }\ast a= e}\end{adjustbox}\end{center}
+
+\BookExercise{24.}{Give a table defining an operation satisfying axioms \BookInline{\mathcal{G}_{2}} and \BookInline{\mathcal{G}_{3}} in the definition of a group, but not satisfying axiom \BookInline{\mathcal{G}_{1}} for the set}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.\{e,\allowbreak a,\allowbreak b\}}}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.\{e,\allowbreak a,\allowbreak b,\allowbreak c\}}}
+
+\BookExercise{25.}{Mark each of the following true or false.}
+
+\BookExercise{a.}{A group may have more than one identity element.}
+
+\BookExercise{b.}{Any two groups of three elements are isomorphic.}
+
+\BookExercise{c.}{In a group, each linear equation has a solution.}
+
+\BookExercise{d.}{The proper attitude toward a definition is to memorize it so that you can reproduce it word for word as in the text.}
+
+\BookExercise{e.}{Any definition a person gives for a group is correct provided that everything that is a group by that person’s definition is also a group by the definition in the text.}
+
+\BookExercise{f.}{Any definition a person gives for a group is correct provided he or she can show that everything that satisfies the definition satisfies the one in the text and conversely.}
+
+\BookExercise{g.}{Every finite group of at most three elements is abelian.}
+
+\BookExercise{h.}{An equation of the form \BookInline{a\ast x\ast b= c} always has a unique solution in a group.}
+
+\BookExercise{i.}{The empty set can be considered a group.}
+
+\BookExercise{j.}{Every group is a binary algebraic structure.}
+
+\BookLabel{\textit{Proof}} \textbf{ synopsis}
+
+\noindent We give an example of a proof synopsis. Here is a one-sentence synopsis of the proof that the inverse of an element \BookInline{a} in a group \BookInline{\langle G,\allowbreak \ast \rangle } is unique.
+
+Assuming that \BookInline{a\ast a^{\prime }= e} and \BookInline{a\ast a^{\prime \prime }= e,\allowbreak } apply the left cancellation law to the equation \BookInline{a\ast a^{\prime }= a\ast a^{\prime \prime }.}
+
+\noindent Note that we said “the left cancellation law” and not “Theorem 2.16.” We always suppose that our synopsis was given as an explanation given during a conversation at lunch, with no reference to text numbering and as little notation as is practical.
+
+\end{BookBody}
+
+% Source PDF page 48; original printed page 31
+\BookSource{48}{31}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{26.}{Give a one-sentence synopsis of the proof of the left cancellation law in Theorem 2.16.}
+
+\BookExercise{27.}{Give at most a two-sentence synopsis of the proof in Theorem 2.17 that an equation\textit{ ax} \BookInline{= b} has a unique solution in a group.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{28.}{An element \BookInline{a\neq e} in a group is said to have order 2 if \BookInline{a\ast a= e.} Prove that if \BookInline{G} is a group and \BookInline{a\in G} has order 2, then for any \BookInline{b\in G,\allowbreak b^{\prime }\ast a\ast b} also has order 2.}
+
+\BookExercise{29.}{Show that if \BookInline{G} is a finite group with identity \BookInline{e} and with an even number of elements, then there is \BookInline{a\neq e} in \BookInline{G} such that \BookInline{a\ast a= e.}}
+
+\BookExercise{30.}{Let \BookInline{\mathbb{R}^{\ast }} be the set of all real numbers except 0. Define \BookInline{\ast } on \BookInline{\mathbb{R}^{\ast }} by letting \BookInline{a\ast b= |a|b.}}
+
+\BookExercise{a.}{Show that \BookInline{\ast } gives an associative binary operation on \BookInline{\mathbb{R}^{\ast }.}}
+
+\BookExercise{b.}{Show that there is a left identity for \BookInline{\ast } and a right inverse for each element in \BookInline{\mathbb{R}^{\ast }.}}
+
+\BookExercise{c.}{Is \BookInline{\mathbb{R}^{\ast }} with this binary operation a group?}
+
+\BookExercise{d.}{Explain the significance of this exercise.}
+
+\BookExercise{31.}{If \BookInline{\ast } is a binary operation on a set \BookInline{S,\allowbreak } an element \BookInline{x} of \BookInline{S} is an\textbf{ idempotent for} \BookInline{\ast } if \BookInline{x\ast x= x.} Prove that a group has exactly one idempotent element. (You may use any theorems proved so far in the text.)}
+
+\BookExercise{32.}{Show that every group \BookInline{G} with identity \BookInline{e} and such that \BookInline{x\ast x= e} for all \BookInline{x\in G} is abelian. [\textit{Hint:} Consider \BookInline{(a\ast b)\ast (a\ast b).]}}
+
+\BookExercise{33.}{Let \BookInline{G} be an abelian group and let \BookInline{c^{n}= c\ast c\ast \cdots \ast c} for \BookInline{n} factors \BookInline{c,\allowbreak } where \BookInline{c\in G} and \BookInline{n\in \mathbb{Z}^{+ }.} Give a mathematical induction proof that \BookInline{(a\ast b)^{n}= (a^{n})\ast (b^{n})} for all \BookInline{a,\allowbreak b\in G.}}
+
+\BookExercise{34.}{Suppose that \BookInline{G} is a group and \BookInline{a,\allowbreak b\in G} satisfy \BookInline{a\ast b= b\ast a^{\prime }} where as usual\BookInline{,\allowbreak a^{\prime }} is the inverse for \BookInline{a.} Prove that \BookInline{b\ast a= a^{\prime }\ast b.}}
+
+\BookExercise{35.}{Suppose that \BookInline{G} is a group and \BookInline{a} and \BookInline{b} are elements of \BookInline{G} that satisfy \BookInline{a\ast b= b\ast a^{3}.} Rewrite the element \BookInline{(a\ast b)^{2}} in the form \BookInline{b^{k}a^{r}.(}See Exercise 33 for power notation.)}
+
+\BookExercise{36.}{Let \BookInline{G} be a group with a finite number of elements. Show that for any \BookInline{a\in G,\allowbreak } there exists an \BookInline{n\in \mathbb{Z}^{+ }} such that \BookInline{a^{n}= e.} See Exercise 33 for the meaning of \BookInline{a^{n}.[}\textit{Hint:} Consider \BookInline{e,\allowbreak a,\allowbreak a^{2},\allowbreak a^{3},\allowbreak...,\allowbreak a^{m},\allowbreak } where \BookInline{m} is the number of elements in \BookInline{G,\allowbreak } and use the cancellation laws.]}
+
+\BookExercise{37.}{Show that if \BookInline{(a\ast b)^{2}= a^{2}\ast b^{2}} for \BookInline{a} and \BookInline{b} in a group \BookInline{G,\allowbreak } then \BookInline{a\ast b= b\ast a.} See Exercise 33 for the meaning of \BookInline{a^{2}.}}
+
+\BookExercise{38.}{Let \BookInline{G} be a group and let \BookInline{a,\allowbreak b\in G.} Show that \BookInline{(a\ast b)^{\prime }= a^{\prime }\ast b^{\prime }} if and only if \BookInline{a\ast b= b\ast a.}}
+
+\BookExercise{39.}{Let \BookInline{G} be a group and suppose that \BookInline{a\ast b\ast c= e} for \BookInline{a,\allowbreak b,\allowbreak c\in G.} Show that \BookInline{b\ast c\ast a= e} also.}
+
+\BookExercise{40.}{Prove that a set \BookInline{G,\allowbreak } together with a binary operation \BookInline{\ast } on \BookInline{G} satisfying the left axioms 1, 2, and 3 given after Corollary 2.19, is a group.}
+
+\BookExercise{41.}{Prove that a nonempty set \BookInline{G,\allowbreak } together with an associative binary operation \BookInline{\ast } on \BookInline{G} such that}
+
+\BookInline{a\ast x= b} and \BookInline{y\ast a= b} have solutions in \BookInline{G} for all \BookInline{a,\allowbreak b\in G,\allowbreak }
+
+is a group. [\textit{Hint:} Use Exercise 40.]
+
+\BookExercise{42.}{Let \BookInline{G} be a group. Prove that \BookInline{(a^{\prime })^{\prime }= a.}}
+
+\BookExercise{43.}{Let \BookInline{\phi:\mathbb{R}^{2}\to \mathbb{R}^{2}} be an isometry of the plane.}
+
+\BookExercise{a.}{Prove that \BookInline{\phi } is a one-to-one function.}
+
+\BookExercise{b.}{Prove that \BookInline{\phi } maps onto \BookInline{\mathbb{R}^{2}.}}
+
+\BookExercise{44.}{Prove that if \BookInline{f:G_{1}\to G_{2}} is a group isomorphism from the group \BookInline{\langle G_{1},\allowbreak \ast _{1}\rangle } to the group \BookInline{\langle G_{2},\allowbreak \ast _{2}\rangle,\allowbreak } then \BookInline{f^{- 1}:G_{2}\to G_{1}} is also a group isomorphism.}
+
+\BookExercise{45.}{Suppose that \BookInline{G} is a group with \BookInline{n} elements and \BookInline{A\subseteq G} has more than \BookInline{\frac{n}{2}} elements. Prove that for every \BookInline{g\in G,\allowbreak } there exists \BookInline{a,\allowbreak b\in A} such that \BookInline{a\ast b= g.(}This was Problem B-2 on the 1968 Putnam exam.)}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

@@ -1,0 +1,298 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 24 Fermat’s and Euler’s Theorems}
+\pdfbookmark[0]{Section 24 Fermat’s and Euler’s Theorems}{24_fermat_s_and_euler_s_theorems}
+\ifdefined\BookMaster\else\setcounter{page}{200}\fi
+% Source PDF page 217; original printed page 200
+\BookSource{217}{200}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{24}{Fermat’s and Euler’s Theorems}
+
+\BookTextHeading{\textbf{Fermat’s Theorem}  }
+
+\noindent We know that as additive groups\BookInline{,\allowbreak \mathbb{Z}_{n}} and \BookInline{\mathbb{Z}/n\mathbb{Z}} are naturally isomorphic, with the coset \BookInline{a+ n\mathbb{Z}} corresponding to \BookInline{a} for each \BookInline{a\in \mathbb{Z}_{n}.} Furthermore, addition of cosets in \BookInline{\mathbb{Z}/n\mathbb{Z}} may be performed by choosing any representatives, adding them in \BookInline{\mathbb{Z},\allowbreak } and finding the coset of \BookInline{n\mathbb{Z}} containing their sum. It is easy to see that \BookInline{\mathbb{Z}/n\mathbb{Z}} can be made into a ring by multiplying cosets in the same fashion, that is, by multiplying any chosen representatives. While we will be showing this later in a more general situation, we do this special case now. We need only show that such coset multiplication is well defined, because the associativity of multiplication and the distributive laws will follow immediately from those properties of the chosen representatives in \BookInline{\mathbb{Z}.} To this end, choose representatives \BookInline{a+ rn} and \BookInline{b+ sn,\allowbreak } rather than \BookInline{a} and \BookInline{b,\allowbreak } from the cosets \BookInline{a+ n\mathbb{Z}} and \BookInline{b+ n\mathbb{Z}.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a+ rn)(b+ sn)= ab+ (as+ rb+ rsn)n,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent which is also an element of \BookInline{ab+ n\mathbb{Z}.} Thus the multiplication is well-defined, and our cosets form a ring isomorphic to the ring \BookInline{\mathbb{Z}_{n}.}
+
+Exercise 39 in Section 22 asks us to show that the units in a ring form a group under the multiplication operation of the ring. This is a very useful fact that we will use to provide simple proofs for both Fermat’s Little Theorem and Euler’s generalization. We start with Fermat’s Theorem.
+
+\BookLabel{24.1 Theorem} \textbf{(Little Theorem of Fermat)} If \BookInline{a\in \mathbb{Z}} and \BookInline{p} is a prime not dividing \BookInline{a,\allowbreak } then \BookInline{p} divides \BookInline{a^{p- 1}- 1,\allowbreak } that is\BookInline{,\allowbreak a^{p- 1}\equiv 1(}mod \BookInline{p)} for \BookInline{a\not \equiv 0(}mod \BookInline{p).}
+
+\BookLabel{\textit{Proof}} The ring \BookInline{\mathbb{Z}_{p}} is a field, which implies that all the nonzero elements are units. Thus \BookInline{\langle \mathbb{Z}_{p}^{\ast },\allowbreak \cdot \rangle } is a group with \BookInline{p- 1} elements. Any \BookInline{b} in the group \BookInline{\mathbb{Z}_{p}^{\ast }} has order a divisor of \BookInline{|\mathbb{Z}_{p}^{\ast }|= } \BookInline{p- 1.} Therefore
+
+\end{BookBody}
+
+% Source PDF page 218; original printed page 201
+\BookSource{218}{201}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle b^{p- 1}= 1\in \mathbb{Z}_{p}.}\end{adjustbox}\end{center}
+
+The rings \BookInline{\mathbb{Z}_{p}} and \BookInline{\mathbb{Z}/p\mathbb{Z}} are isomorphic where the element \BookInline{b\in \mathbb{Z}_{p}} corresponds to the coset \BookInline{b+ p\mathbb{Z}.} For any integer \BookInline{a} that is not a multiple of \BookInline{p,\allowbreak a+ p\mathbb{Z}= b+ p\mathbb{Z}} for some \BookInline{0\leq b\leq p- 1.} Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a+ p\mathbb{Z})^{p- 1}= (b+ p\mathbb{Z})^{p- 1}= 1+ p\mathbb{Z}\in \mathbb{Z}/p\mathbb{Z}.}\end{adjustbox}\end{center}
+
+\noindent In other words,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a^{p- 1}\equiv 1(\;\text{mod}\;p).}\end{adjustbox}\end{center} \BookEnd{\blacklozenge}
+
+\BookLabel{24.2 Corollary} If \BookInline{a\in \mathbb{Z},\allowbreak } then \BookInline{a^{p}\equiv a(}mod \BookInline{p)} for any prime \BookInline{p.}
+
+\BookLabel{\textit{Proof}} The corollary follows from Theorem 24.1 if \BookInline{a\not \equiv 0(}mod \BookInline{p).} If \BookInline{a\equiv 0(}mod \BookInline{p),\allowbreak } then both sides reduce to 0 modulo \BookInline{p.}\BookEnd{\blacklozenge}
+
+\BookLabel{24.3 Example} Let us compute the remainder of 8103 when divided by 13. Using Fermat’s theorem, we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&8^{103}\equiv (8^{12})^{8}(8^{7})\equiv (1^{8})(8^{7})\equiv 8^{7}\equiv (- 5)^{7} \\ &\equiv (25)^{3}(- 5)\equiv (- 1)^{3}(- 5)\equiv 5(\;\text{mod}\;13).\end{aligned}}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent The statement of Theorem 24.1 occurs in a letter from Pierre de Fermat (1601–1665) to Bernard Frenicle de Bessy, dated 18 October 1640. Fermat’s version of the theorem was that for any prime \BookInline{p} and any geometric progression \BookInline{a,\allowbreak a^{2},\allowbreak \cdots,\allowbreak a^{t},\allowbreak \cdots,\allowbreak } there is a least number \BookInline{a^{T}} of the progression such that \BookInline{p} divides \BookInline{a^{T}- 1.} Furthermore\BookInline{,\allowbreak T} divides \BookInline{p- 1} and \BookInline{p} also divides all numbers of the form \BookInline{a^{KT}- 1.(}It is curious that Fermat failed to note the condition that \BookInline{p} not divide \BookInline{a;} perhaps he felt that it was obvious that the result fails in that case.)
+
+\noindent Fermat did not in the letter or elsewhere indicate a proof of the result and, in fact, never mentioned it again. But we can infer from other parts of this correspondence that Fermat’s interest in this result came from his study of perfect numbers. (A perfect number is a positive integer \BookInline{m} that is the sum of all of its divisors less than \BookInline{m;} for example\BookInline{,\allowbreak 6= 1+ 2+ 3} is a perfect number.) Euclid had shown that \BookInline{2^{n- 1}(2^{n}- 1)} is perfect if \BookInline{2^{n}- 1} is prime. The question then was to find methods for determining whether \BookInline{2^{n}- 1} was prime. Fermat noted that \BookInline{2^{n}- 1} was composite if \BookInline{n} is composite, and then derived from his theorem the result that if \BookInline{n} is prime, the only possible divisors of \BookInline{2^{n}- 1} are those of the form \BookInline{2kn+ 1.} From this result he was able quickly to show, for example, that \BookInline{2^{37}- 1} was divisible by \BookInline{223= 2\cdot 3\cdot 37+ 1.}
+
+\BookLabel{24.4 Example} Show that \BookInline{2^{11,\allowbreak 213}- 1} is not divisible by 11.
+
+\BookLabel{\textit{Solution}} By Fermat’s theorem\BookInline{,\allowbreak 2^{10}\equiv 1(}mod 11), so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&2^{11,\allowbreak 213}- 1\equiv [(2^{10})^{1,\allowbreak 121}\cdot 2^{3}]- 1\equiv [1^{1,\allowbreak 121}\cdot 2^{3}]- 1 \\ &\equiv 2^{3}- 1\equiv 8- 1\equiv 7(\;\text{mod}\;11).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus the remainder of \BookInline{2^{11,\allowbreak 213}- 1} when divided by 11 is 7, not 0. (The number 11,213 is prime, and it has been shown that \BookInline{2^{11,\allowbreak 213}- 1} is a prime number. Primes of the form \BookInline{2^{p}- 1} where \BookInline{p} is prime are known as\textbf{ Mersenne primes}\BookInline{.)}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 219; original printed page 202
+\BookSource{219}{202}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{24.5 Example} Show that for every integer \BookInline{n,\allowbreak } the number \BookInline{n^{33}- n} is divisible by 15.
+
+\BookLabel{\textit{Solution}} This seems like an incredible result. It means that 15 divides \BookInline{2^{33}- 2,\allowbreak 3^{33}- 3,\allowbreak 4^{33}- 4,\allowbreak } etc.
+
+Now \BookInline{15= 3\cdot 5,\allowbreak } and we shall use Fermat’s theorem to show that \BookInline{n^{33}- n} is divisible by both 3 and 5 for every \BookInline{n.} Note that \BookInline{n^{33}- n= n(n^{32}- 1).}
+
+If 3 divides \BookInline{n,\allowbreak } then surely 3 divides \BookInline{n(n^{32}- 1).} If 3 does not divide \BookInline{n,\allowbreak } then by Fermat’s theorem\BookInline{,\allowbreak n^{2}\equiv 1(}mod 3) so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n^{32}- 1\equiv (n^{2})^{16}- 1\equiv 1^{16}- 1\equiv 0(\;\text{mod}\;3),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and hence 3 divides \BookInline{n^{32}- 1.}
+
+If \BookInline{n\equiv 0(}mod 5), then \BookInline{n^{33}- n\equiv 0(}mod 5). If \BookInline{n\not \equiv 0(}mod 5), then by Fermat’s theorem\BookInline{,\allowbreak n^{4}\equiv 1(}mod 5), so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n^{32}- 1\equiv (n^{4})^{8}- 1\equiv 1^{8}- 1\equiv 0(\;\text{mod}\;5).}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{n^{33}- n\equiv 0(}mod 5) for every \BookInline{n} also. \BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Euler’s Generalization}  }
+
+\noindent Theorem 23.3 classifies all the elements in \BookInline{\mathbb{Z}_{n}} into three categories. An element \BookInline{k} in \BookInline{\mathbb{Z}_{n}} is either 0, a unit if the gcd\BookInline{(n,\allowbreak k)= 1,\allowbreak } or else a divisor of 0 if gcd\BookInline{(n,\allowbreak k)>1.} Exercise 39 in Section 22 shows that the units in a ring form a group under multiplication. Therefore, the set of nonzero elements in \BookInline{\mathbb{Z}_{n},\allowbreak } which are relatively prime to \BookInline{n,\allowbreak } form a multiplicative group. Euler’s generalization of Fermat’s theorem is based on the number of units in \BookInline{\mathbb{Z}_{n}.}
+
+Let \BookInline{n} be a positive integer. Let \BookInline{\varphi (n)} be defined as the number of positive integers less than or equal to \BookInline{n} and relatively prime to \BookInline{n.} Note that \BookInline{\varphi (1)= 1.}
+
+\BookLabel{24.6 Example} Let \BookInline{n= 12.} The positive integers less than or equal to 12 and relatively prime to 12 are 1, 5, 7, and 11, so \BookInline{\varphi (12)= 4.}\BookEnd{\blacktriangle}
+
+By Theorem \BookInline{23.3,\allowbreak \varphi (n)} is the number of nonzero elements of \BookInline{\mathbb{Z}_{n}} that are not divisors of 0. This function \BookInline{\varphi:\mathbb{Z}^{+ }\to \mathbb{Z}^{+ }} is the\textbf{ Euler phi-function.} We can now describe Euler’s generalization of Fermat’s theorem.
+
+\BookLabel{24.7 Theorem} \textbf{(Euler’s Theorem)} If \BookInline{a} is an integer relatively prime to \BookInline{n,\allowbreak } then \BookInline{a^{\varphi (n)}- 1} is divisible by \BookInline{n,\allowbreak } that is\BookInline{,\allowbreak a^{\varphi (n)}\equiv 1(}mod \BookInline{n).}
+
+\BookLabel{\textit{Proof}} If \BookInline{a} is relatively prime to \BookInline{n,\allowbreak } then the coset \BookInline{a+ n\mathbb{Z}} of \BookInline{n\mathbb{Z}} containing \BookInline{a} contains an integer \BookInline{b<n} and relatively prime to \BookInline{n.} Using the fact that multiplication of these cosets by multiplication modulo \BookInline{n} of representatives is well-defined, we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a^{\varphi (n)}\equiv b^{\varphi (n)}(\;\text{mod}\;n).}\end{adjustbox}\end{center}
+
+\noindent But by Theorem \BookInline{23.3,\allowbreak b} can be viewed as an element of the multiplicative group \BookInline{G_{n}} of order \BookInline{\varphi (n)} consisting of the \BookInline{\varphi (n)} elements of \BookInline{\mathbb{Z}_{n}} relatively prime to \BookInline{n.} Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle b^{\varphi (n)}\equiv 1(\;\text{mod}\;n),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and our theorem follows. \BookEnd{\blacklozenge}
+
+\BookLabel{24.8 Example} Let \BookInline{n= 12.} We saw in Example 24.6 that \BookInline{\varphi (12)= 4.} Thus if we take any integer \BookInline{a} relatively prime to 12, then \BookInline{a^{4}\equiv 1(}mod 12). For example, with \BookInline{a= 7,\allowbreak } we have \BookInline{7^{4}= } \BookInline{(49)^{2}= 2,\allowbreak 401= 12(200)+ 1,\allowbreak } so \BookInline{7^{4}\equiv 1(}mod 12). Of course, the easy way to compute 74 (mod 12), without using Euler’s theorem, is to compute it in \BookInline{\mathbb{Z}_{12}.} In \BookInline{\mathbb{Z}_{12},\allowbreak } we have \BookInline{7= - 5} so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 7^{2}= (- 5)^{2}= (5)^{2}= 1\;\text{and}\;7^{4}= 1^{2}= 1.}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 220; original printed page 203
+\BookSource{220}{203}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Application to} \textit{\textbf{ax}} \ensuremath{\equiv} \textit{\textbf{b}} \textbf{(mod} \textit{\textbf{m}}\textbf{)}      }
+
+\noindent We can find all solutions of a linear congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{m).} We prefer to work with an equation in \BookInline{\mathbb{Z}_{m}} and interpret the results for congruences.
+
+\BookLabel{24.9 Theorem} Let \BookInline{m} be a positive integer and let \BookInline{a\in \mathbb{Z}_{m}} be relatively prime to \BookInline{m.} For each \BookInline{b\in \mathbb{Z}_{m},\allowbreak } the equation\textit{ ax} \BookInline{= b} has a unique solution in \BookInline{\mathbb{Z}_{m}.}
+
+\BookLabel{\textit{Proof}} By Theorem \BookInline{23.3,\allowbreak a} is a unit in \BookInline{\mathbb{Z}_{m}} and \BookInline{s= a^{- 1}b} is certainly a solution of the equation. Multiplying both sides of\textit{ ax} \BookInline{= b} on the left by \BookInline{a^{- 1},\allowbreak } we see this is the only solution. \BookEnd{\blacklozenge}
+
+Interpreting this theorem for congruences, we obtain at once the following corollary.
+
+\BookLabel{24.10 Corollary} If \BookInline{a} and \BookInline{m} are relatively prime integers, then for any integer \BookInline{b,\allowbreak } the congruence\textit{ ax} \BookInline{\equiv } \BookInline{b(}mod \BookInline{m)} has as solutions all integers in precisely one residue class modulo \BookInline{m.}\BookEnd{\blacklozenge}
+
+\noindent Theorem 24.9 serves as a lemma for the general case.
+
+\BookLabel{24.11 Theorem} Let \BookInline{m} be a positive integer and let \BookInline{a,\allowbreak b\in \mathbb{Z}_{m}.} Let \BookInline{d} be the gcd of \BookInline{a} and \BookInline{m.} The equation \textit{ax} \BookInline{= b} has a solution in \BookInline{\mathbb{Z}_{m}} if and only if \BookInline{d} divides \BookInline{b.} When \BookInline{d} divides \BookInline{b,\allowbreak } the equation has exactly \BookInline{d} solutions in \BookInline{\mathbb{Z}_{m}.}
+
+\BookLabel{\textit{Proof}} First we show there is no solution of\textit{ ax} \BookInline{= b} in \BookInline{\mathbb{Z}_{m}} unless \BookInline{d} divides \BookInline{b.} Suppose \BookInline{s\in \mathbb{Z}_{m}} is a solution. Then\textit{ as} \BookInline{- b= qm} in \BookInline{\mathbb{Z},\allowbreak } so \BookInline{b= } \textit{as} \BookInline{- qm.} Since \BookInline{d} divides both \BookInline{a} and \BookInline{m,\allowbreak } we see that \BookInline{d} divides the right-hand side of the equation \BookInline{b= } \textit{as} \BookInline{- qm,\allowbreak } and hence divides \BookInline{b.} Thus a solution \BookInline{s} can exist only if \BookInline{d} divides \BookInline{b.}
+
+Suppose now that \BookInline{d} does divide \BookInline{b.} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a= a_{1}d,\allowbreak b= b_{1}d,\allowbreak \;\text{and}\;m= m_{1}d.}\end{adjustbox}\end{center}
+
+\noindent Then the equation\textit{ as} \BookInline{- b= qm} in \BookInline{\mathbb{Z}} can be rewritten as \BookInline{d(a_{1}s- b_{1})= dqm_{1}.} We see that\textit{ as} \BookInline{- b} is a multiple of \BookInline{m} if and only if \BookInline{a_{1}s- b_{1}} is a multiple of \BookInline{m_{1}.} Thus the solutions \BookInline{s} of\textit{ ax} \BookInline{= b} in \BookInline{\mathbb{Z}_{m}} are precisely the elements that, read modulo \BookInline{m_{1},\allowbreak } yield solutions of \BookInline{a_{1}x= b_{1}} in \BookInline{\mathbb{Z}_{m_{1}}}. Now let \BookInline{s\in \mathbb{Z}_{m_{1}}} be the unique solution of \BookInline{a_{1}x= b_{1}} in \BookInline{\mathbb{Z}_{m_{1}}} given by Theorem 24.9. The numbers in \BookInline{\mathbb{Z}_{m}} that reduce to \BookInline{s} modulo \BookInline{m_{1}} are precisely those that can be computed in \BookInline{\mathbb{Z}_{m}} as
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle s,\allowbreak s+ m_{1},\allowbreak s+ 2m_{1},\allowbreak s+ 3m_{1},\allowbreak \cdots ,\allowbreak s+ (d- 1)m_{1}.}\end{adjustbox}\end{center}
+
+\noindent Thus there are exactly \BookInline{d} solutions of the equation in \BookInline{\mathbb{Z}_{m}.} \BookEnd{\blacklozenge}
+
+Theorem 24.11 gives us at once this classical result on the solutions of a linear congruence.
+
+\BookLabel{24.12 Corollary} Let \BookInline{d} be the gcd of positive integers \BookInline{a} and \BookInline{m.} The congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{m)} has a solution if and only if \BookInline{d} divides \BookInline{b.} When this is the case, the solutions are the integers in exactly \BookInline{d} distinct residue classes modulo \BookInline{m.}\BookEnd{\blacklozenge}
+
+Actually, our proof of Theorem 24.11 shows a bit more about the solutions of \textit{ax} \BookInline{\equiv b(}mod \BookInline{m)} than we stated in this corollary; namely, it shows that if any solution \BookInline{s} is found, then the solutions are precisely all elements of the residue classes \BookInline{(s+ km_{1})+ (m\mathbb{Z})} where \BookInline{m_{1}= m/d} and \BookInline{k} runs through the integers from 0 to \BookInline{d- 1.} It also tells us that we can find such an \BookInline{s} by finding \BookInline{a_{1}= a/d} and \BookInline{b_{1}= b/d,\allowbreak } and solving \BookInline{a_{1}x\equiv b_{1}(}mod \BookInline{m_{1}).} To solve this congruence, we may consider \BookInline{a_{1}} and \BookInline{b_{1}} to be replaced by their remainders modulo \BookInline{m_{1}} and solve the equation \BookInline{a_{1}x= b_{1}} in \BookInline{\mathbb{Z}_{m_{1}}}.
+
+\end{BookBody}
+
+% Source PDF page 221; original printed page 204
+\BookSource{221}{204}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{24.13 Example} Find all solutions of the congruence \BookInline{12x\equiv 27(}mod 18).
+
+\BookLabel{\textit{Solution}} The gcd of 12 and 18 is 6, and 6 is not a divisor of 27. Thus by the preceding corollary, there are no solutions\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{24.14 Example} Find all solutions of the congruence \BookInline{15x\equiv 27(}mod 18).
+
+\BookLabel{\textit{Solution}} The gcd of 15 and 18 is 3, and 3 does divide 27. Proceeding as explained before Example 24.13, we divide everything by 3 and consider the congruence \BookInline{5x\equiv 9(}mod 6), which amounts to solving the equation \BookInline{5x= 3} in \BookInline{\mathbb{Z}_{6}.} Now the units in \BookInline{\mathbb{Z}_{6}} are 1 and 5, and 5 is clearly its own inverse in this group of units. Thus the solution in \BookInline{\mathbb{Z}_{6}} is \BookInline{x= (5^{- 1})(3)= (5)(3)= 3.} Consequently, the solutions of \BookInline{15x\equiv 27(}mod 18) are the integers in the three residue classes
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 3+ 18\mathbb{Z}= \{\cdots ,\allowbreak - 33,\allowbreak - 15,\allowbreak 3,\allowbreak 21,\allowbreak 39,\allowbreak \cdots \},\allowbreak }\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 9+ 18\mathbb{Z}= \{\cdots ,\allowbreak - 27,\allowbreak - 9,\allowbreak 9,\allowbreak 27,\allowbreak 45,\allowbreak \cdots \}.}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 15+ 18\mathbb{Z}= \{\cdots ,\allowbreak - 21,\allowbreak - 3,\allowbreak 15,\allowbreak 33,\allowbreak 51,\allowbreak \cdots \},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent illustrating Corollary 24.12. Note the \BookInline{d= 3} solutions 3, 9, and 15 in \BookInline{\mathbb{Z}_{18}.} All the solutions in the three displayed residue classes modulo 18 can be collected in the one residue class \BookInline{3+ 6\mathbb{Z}} modulo 6, for they came from the solution \BookInline{x= 3} of \BookInline{5x= 3} in \BookInline{\mathbb{Z}_{6}.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{24}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent We will see later that the multiplicative group of nonzero elements of a finite field is cyclic. Illustrate this by finding a generator for this group for the given finite field.
+
+\BookExercise{1.}{\BookInline{\mathbb{Z}_{7}}}
+
+\BookExercise{2.}{\BookInline{\mathbb{Z}_{11}}}
+
+\BookExercise{3.}{\BookInline{\mathbb{Z}_{17}}}
+
+\BookExercise{4.}{Using Fermat’s theorem, find the remainder of 347 when it is divided by 23.}
+
+\BookExercise{5.}{Use Fermat’s theorem to find the remainder of 3749 when it is divided by 7.}
+
+\BookExercise{6.}{Compute the remainder of \BookInline{2^{(2^{17})}+ 1} when divided by 19. [\textit{Hint:} You will need to compute the remainder of 217 modulo 18.]}
+
+\BookExercise{7.}{Make a table of values of \BookInline{\varphi (n)} for \BookInline{n\leq 30.}}
+
+\BookExercise{8.}{Compute \BookInline{\varphi (p^{2})} where \BookInline{p} is a prime.}
+
+\BookExercise{9.}{Compute \BookInline{\varphi (pq)} where both \BookInline{p} and \BookInline{q} are primes.}
+
+\BookExercise{10.}{Use Euler’s generalization of Fermat’s theorem to find the remainder of 71000 when divided by 24.}
+
+\noindent In Exercises 11 through 18, describe all solutions of the given congruence, as we did in Examples 24.13 and 24.14.
+
+\BookExercise{11.}{\BookInline{2x\equiv 6(}mod 4)}
+
+\BookExercise{12.}{\BookInline{22x\equiv 5(}mod 15)}
+
+\BookExercise{13.}{\BookInline{36x\equiv 15(}mod 24)}
+
+\BookExercise{14.}{\BookInline{45x\equiv 15(}mod 24)}
+
+\BookExercise{15.}{\BookInline{39x\equiv 125(}mod 9)}
+
+\BookExercise{16.}{\BookInline{41x\equiv 125(}mod 9)}
+
+\BookExercise{17.}{\BookInline{155x\equiv 75(}mod 65)}
+
+\BookExercise{18.}{\BookInline{39x\equiv 52(}mod 130)}
+
+\BookExercise{19.}{Let \BookInline{p} be a prime \BookInline{\geq 3.} Use Exercise 28 below to find the remainder of \BookInline{(p- 2)}! modulo \BookInline{p.}}
+
+\BookExercise{20.}{Using Exercise 28 below, find the remainder of 34! modulo 37.}
+
+\BookExercise{21.}{Using Exercise 28 below, find the remainder of 49! modulo 53.}
+
+\BookExercise{22.}{Using Exercise 28 below, find the remainder of 24! modulo 29.}
+
+\end{BookBody}
+
+% Continuation on source PDF page 222, preceding Section 25
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{23.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.a^{p- 1}\equiv 1(}mod \BookInline{p)} for all integers \BookInline{a} and primes \BookInline{p.}}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.a^{p- 1}\equiv 1(}mod \BookInline{p)} for all integers \BookInline{a} such that \BookInline{a\not \equiv 0(}mod \BookInline{p)} for a prime \BookInline{p.}}
+
+\BookExercise{c.}{\textbf{c}\BookInline{.\varphi (n)\leq n} for all \BookInline{n\in \mathbb{Z}^{+ }.}}
+
+\BookExercise{d.}{\textbf{d}\BookInline{.\varphi (n)\leq n- 1} for all \BookInline{n\in \mathbb{Z}^{+ }.}}
+
+\BookExercise{e.}{The units in \BookInline{\mathbb{Z}_{n}} are the positive integers less than \BookInline{n} and relatively prime to \BookInline{n.}}
+
+\BookExercise{f.}{The product of two units in \BookInline{\mathbb{Z}_{n}} is always a unit.}
+
+\BookExercise{g.}{The product of two nonunits in \BookInline{\mathbb{Z}_{n}} may be a unit.}
+
+\BookExercise{h.}{The product of a unit and a nonunit in \BookInline{\mathbb{Z}_{n}} is never a unit.}
+
+\BookExercise{i.}{Every congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{p),\allowbreak } where \BookInline{p} is a prime, has a solution.}
+
+\BookExercise{j.}{Let \BookInline{d} be the gcd of positive integers \BookInline{a} and \BookInline{m.} If \BookInline{d} divides \BookInline{b,\allowbreak } then the congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{m)} has exactly \BookInline{d} incongruent solutions.}
+
+\BookExercise{24.}{Give the group multiplication table for the multiplicative group of units in \BookInline{\mathbb{Z}_{12}.} To which group of order 4 is it isomorphic?}
+
+\BookLabel{\textit{Proof}} \textbf{ Synopsis}
+
+\BookExercise{25.}{Give a one-sentence synopsis of the proof of Theorem 24.1.}
+
+\BookExercise{26.}{Give a one-sentence synopsis of the proof of Theorem 24.7.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{27.}{Show that 1 and \BookInline{p- 1} are the only elements of the field \BookInline{\mathbb{Z}_{p}} that are their own multiplicative inverse. [\textit{Hint:} Consider the equation \BookInline{x^{2}- 1= 0.]}}
+
+\BookExercise{28.}{Using Exercise 27, deduce the half of\textit{ Wilson’}\BookInline{s} \textit{theorem} that states that if \BookInline{p} is a prime, then \BookInline{(p- 1)!\equiv - 1} (mod \BookInline{p).[}The other half states that if \BookInline{n} is an integer \BookInline{>1} such that \BookInline{(n- 1)!\equiv - 1(}mod \BookInline{n),\allowbreak } then \BookInline{n} is a prime. Just think what the remainder of \BookInline{(n- 1)}! would be modulo \BookInline{n} if \BookInline{n} is not a prime.]}
+
+\BookExercise{29.}{Use Fermat’s theorem to show that for any positive integer \BookInline{n,\allowbreak } the integer \BookInline{n^{37}- n} is divisible by 383838. [\textit{Hint:} \BookInline{383838= (37)(19)(13)(7)(3)(2).]}}
+
+\BookExercise{30.}{Referring to Exercise 29, find a number larger than 383838 that divides \BookInline{n^{37}- n} for all positive integers \BookInline{n.}}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

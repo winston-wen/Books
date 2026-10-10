@@ -1,0 +1,381 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 44 Splitting Fields}
+\pdfbookmark[0]{Section 44 Splitting Fields}{44_splitting_fields}
+\ifdefined\BookMaster\else\setcounter{page}{349}\fi
+% Source PDF page 366; original printed page 349
+\BookSource{366}{349}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{44}{Splitting Fields}
+
+In Example \BookInline{43.4,\allowbreak K= \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} included all the zeros of the minimal polynomials for \BookInline{\sqrt{2}} and \BookInline{\sqrt{3}} over \BookInline{\mathbb{Q}.} This is a key requirement in order to have the Galois correspondence between subgroups of the automorphism group of a field extension and intermediate fields. We saw in Example 43.14 that the correspondence failed due to the fact that the polynomial \BookInline{x^{3}- 2} had only one zero in \BookInline{\mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )}. Definition 44.1 formalizes this idea.
+
+\BookLabel{44.1 Definition} Let \BookInline{F} be a field and \BookInline{P= \{f_{1}(x),\allowbreak f_{2}(x),\allowbreak...,\allowbreak f_{s}(x)\}} be a finite set of polynomials in \BookInline{F[x].} An extension field \BookInline{K} of \BookInline{F} is a\textbf{ splitting field of} \BookInline{P} \textbf{over} \BookInline{F} if every polynomial \BookInline{f_{k}(x)\in P} factors into linear factors in \BookInline{K[x]} and for any intermediate field \BookInline{E,\allowbreak F\leq E<K,\allowbreak } at least one polynomial \BookInline{f_{j}(x)\in P} does not factor into linear factors in \BookInline{E[x].} A field \BookInline{K} is a\textbf{ split}\textbf{ting field for} \BookInline{F} if \BookInline{E} is a splitting field for some finite set of polynomials\BookInline{.}\BookEnd{\blacksquare}
+
+\end{BookBody}
+
+% Source PDF page 367; original printed page 350
+\BookSource{367}{350}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{44.2 Example} The field \BookInline{E = \mathbb { Q } ( \sqrt [ 3 ] { 2 },\allowbreak \sqrt [ 3 ] { 2 } ( - 1 + \sqrt { 3 } i ) / 2 )} is a splitting field of \BookInline{\{x^{3}- 2\}} over \BookInline{\mathbb{Q}.} The zeros of \BookInline{x^{3}- 2} are
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sqrt[3]{2},\allowbreak  \quad \sqrt[3]{2} \frac{-1+\sqrt{3} i}{2},\allowbreak  \quad  and  \quad \sqrt[3]{2} \frac{-1-\sqrt{3} i}{2};}\end{adjustbox}\end{center}
+
+and each is an element of \BookInline{E.} Also, any proper subfield of \BookInline{E} would either not contain \BookInline{\sqrt { 2 }} or not contain \BookInline{\sqrt[3]{2}(-1+\sqrt{3}i)/2} \BookEnd{\blacktriangle}
+
+Before using splitting fields, we need to verify that they actually exist! Here we give a proof based on the existence of an algebraic closure. Exercise 31 gives an alternative way of proving the existence without relying on an algebraic closure.
+
+\BookLabel{44.3 Theorem} Let \BookInline{F} be a field and \BookInline{P= \{f_{1},\allowbreak f_{2},\allowbreak...,\allowbreak f_{s}\}} a finite set of polynomials in \BookInline{F[x].} Then there is a splitting field \BookInline{K} of \BookInline{P} over \BookInline{F.} Furthermore \BookInline{K} is a finite extension of \BookInline{F.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\overline{F}} be an algebraic closure of \BookInline{F} and let \BookInline{\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}\in \overline{F}} be a list of all the zeros of all the polynomials in \BookInline{P.} Let \BookInline{K= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}).} Since \BookInline{\overline{F}} is algebraically closed, each polynomial \BookInline{f_{k}} factors into linear factors in \BookInline{\overline{F}[x]} and, therefore, in \BookInline{K[x].} Furthermore, for any proper subfield \BookInline{E} of \BookInline{K} that contains \BookInline{F,\allowbreak E} does not contain at least one \BookInline{\alpha _{j},\allowbreak } which says that at least one \BookInline{f_{k}} does not factor into linear factors in \BookInline{E[x].} Thus \BookInline{K} is a splitting field of \BookInline{P} over \BookInline{F.} The fact that \BookInline{K} is a finite extension of \BookInline{F} follows from Corollary 40.6, the fact that each \BookInline{\alpha _{k}} is algebraic, and there are only a finite number of \BookInline{\alpha _{k}.}\BookEnd{\blacklozenge}
+
+We only defined splitting fields using a finite collection of polynomials. It is also possible to use infinite sets of polynomials, but for our purposes finite sets of polynomials will do. We restrict out attention to splitting fields that are finite algebraic extensions.
+
+In the proof of Theorem 44.3 we attached all the roots of all the polynomials in order to construct a splitting field. We will use the fact that a splitting field \BookInline{K} of \BookInline{P} over \BookInline{F} has the property that \BookInline{K= F(\alpha _{1},\allowbreak...,\allowbreak \alpha _{n}),\allowbreak } where \BookInline{\alpha _{1},\allowbreak...,\allowbreak \alpha _{n}} are the zeros of the polynomials in \BookInline{P} in an algebraic closure of \BookInline{F.} Explicitly attaching some of the roots may be unnecessary. We saw in Example 44.2 that the splitting field of \BookInline{x^{3}- 2} over \BookInline{\mathbb{Q}} is \BookInline{\mathbb { Q } ( \sqrt [ 3 ] { 2 },\allowbreak \sqrt [ 3 ] { 2 } ( - 1 + \sqrt { 3 } i ) / 2 )}. It is unnecessary to attach \BookInline{\sqrt[3]{2}(-1-\sqrt{3}i)/2}, the third zero of \BookInline{x^{3}- 2,\allowbreak } since it is already an element of \BookInline{\mathbb { \widetilde { Q } } ( \sqrt [ 3 ] { 2 },\allowbreak \sqrt [ 3 ] { 2 } ( - 1 + \sqrt { 3 } i ) / 2 )}, that is,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb { Q } ( \sqrt [ 3 ] { 2 } ,\allowbreak  \sqrt [ 3 ] { 2 } ( - 1 + \sqrt { 3 } i ) / 2 ) = \mathbb { Q } ( \sqrt [ 3 ] { 2 } ,\allowbreak  \sqrt [ 3 ] { 2 } ( - 1 + \sqrt { 3 } i ) / 2 ,\allowbreak  \sqrt [ 3 ] { 2 } ( - 1 - \sqrt { 3 } i ) / 2 ) .}\end{adjustbox}\end{center}
+
+\BookTextHeading{\textbf{The Isomorphism Extension Theorem}  }
+
+\noindent Now that we know splitting fields exist, it is natural to ask if they are unique up to isomorphism. To answer the question we need the Isomorphism Extension Theorem. We first give a definition that makes the theorem easier to state.
+
+\BookLabel{44.4 Definition} Let \BookInline{\sigma:F\to F^{\prime }} be a field isomorphism; then \BookInline{\sigma _{x}:F[x]\to F^{\prime }[x],\allowbreak } defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sigma _{x}(a_{0}+ a_{1}x+ \cdots + a_{n}x^{n})= \sigma (a_{0})+ \sigma (a_{1})x+ \cdots + \sigma (a_{n})x^{n},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent is the\textbf{ polynomial extension of} \BookInline{\sigma.} \BookEnd{\blacksquare}
+
+The image \BookInline{\sigma _{x}(f(x))} is simply the polynomial in \BookInline{F^{\prime }[x]} that corresponds to the polynomial \BookInline{f(x)} in \BookInline{F[x]} obtained by relabeling the coefficients via the isomorphism \BookInline{\sigma.} It is intuitively clear that if \BookInline{\sigma:F\to F^{\prime }} is an isomorphism, then \BookInline{\sigma _{x}:F[x]\to F^{\prime }[x]} is also an isomorphism. You are asked to verify the details of the proof in Exercise 32.
+
+\end{BookBody}
+
+% Source PDF page 368; original printed page 351
+\BookSource{368}{351}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{44.5 Lemma} Let \BookInline{K= F(\alpha ),\allowbreak } where \BookInline{\alpha } is algebraic over \BookInline{F,\allowbreak } and let \BookInline{\sigma:F\to F^{\prime }} be a field isomorphism. If \BookInline{K^{\prime }} is an extension field of \BookInline{F^{\prime }} and \BookInline{\beta \in K^{\prime }} is a zero of \BookInline{\sigma _{x}(}irr\BookInline{(\alpha,\allowbreak F)),\allowbreak } then there is a unique isomorphism \BookInline{\phi:F(\alpha )\to F^{\prime }(\beta )} with \BookInline{\sigma (a)= \phi (a)} for all \BookInline{a\in F} and \BookInline{\phi (\alpha )= \beta.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{p(x)= } irr\BookInline{(\alpha,\allowbreak F)} be the minimal polynomial for \BookInline{\alpha } over \BookInline{F.} Then \BookInline{p^{\prime }(x)= \sigma _{x}(p(x))} is an irreducible polynomial over \BookInline{F^{\prime }} since any factorization of \BookInline{p^{\prime }(x)} in \BookInline{F^{\prime }[x]} would give a factorization of \BookInline{p(x)} in \BookInline{F[x].} Since \BookInline{p^{\prime }(x)} is irreducible over \BookInline{F^{\prime }} and \BookInline{\beta } is a zero of \BookInline{p^{\prime }(x),\allowbreak } \BookInline{p^{\prime }(x)= } irr\BookInline{(\beta,\allowbreak F^{\prime }).}
+
+As in the proof of Kronecker’s Theorem 39.3, we have an isomorphism \BookInline{\psi _{\alpha }:} \BookInline{F[x]/\langle p(x)\rangle \to F(\alpha ),\allowbreak } which is defined by the formula:
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \psi _{\alpha }(f(x)+ \langle p(x)\rangle )= f(\alpha )}\end{adjustbox}\end{center}
+
+\noindent for any \BookInline{f(x)\in F[x].}
+
+We also have an isomorphism \BookInline{\psi _{\beta }:F^{\prime }[x]/\langle p^{\prime }(x)\rangle \to F(\beta )} defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \psi _{\beta }(g(x)+ \langle p^{\prime }(x)\rangle )= g(\beta )}\end{adjustbox}\end{center}
+
+\noindent for any \BookInline{g(x)\in F^{\prime }[x].}
+
+A third isomorphism is \BookInline{\theta:F[x]/\langle p(x)\rangle \to F^{\prime }[x]/\langle p^{\prime }(x)\rangle } defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \theta (f(x)+ \langle p(x)\rangle )= \sigma _{x}(f(x))+ \langle p^{\prime }(x)\rangle}\end{adjustbox}\end{center}
+
+\noindent for any \BookInline{f(x)\in F[x].} The fact that \BookInline{\theta } is a homomorphism is Exercise 28 in Section 30. Also, using the homomorphism \BookInline{\sigma _{x}^{- 1}:F^{\prime }[x]\to F[x],\allowbreak } Exercise 28 in Section 30 shows that \BookInline{\theta ^{- 1}} is well defined. Therefore\BookInline{,\allowbreak \theta } is a one-to-one homomorphism mapping onto \BookInline{F^{\prime }[x]/\langle p^{\prime }(x)\rangle,\allowbreak } or an isomorphism. The fact that \BookInline{\theta } is an isomorphism is intuitively clear since \BookInline{\sigma } is an isomorphism between \BookInline{F} and \BookInline{F^{\prime }} and the polynomial \BookInline{p(x)\in F[x]} corresponds to the polynomial \BookInline{p^{\prime }(x)} by way of the isomorphism \BookInline{\sigma _{x}.}
+
+We now consider the isomorphism \BookInline{\tau = \psi _{\beta }\circ \theta \circ \psi _{\alpha }^{- 1}.} Let \BookInline{a\in F.} We need to verify that \BookInline{\tau (a)= \sigma (a).} In the following calculation, we are thinking of \BookInline{a} as a constant polynomial in \BookInline{F[x],\allowbreak } so \BookInline{\sigma _{x}(a)= \sigma (a)} and \BookInline{\psi _{\beta }(\sigma _{x}(a)+ \langle p^{\prime }(x)\rangle )= \sigma (a).} We have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\tau (a)&= \psi _{\beta }\circ \theta \circ \psi _{\alpha }^{- 1}(a) \\ &= \psi _{\beta }(\theta (a+ \langle p(x)\rangle )) \\ &= \psi _{\beta }(\sigma _{x}(a)+ \langle p^{\prime }(x)\rangle ) \\ &= \psi _{\beta }(\sigma (a)+ \langle p^{\prime }(x)\rangle ) \\ &= \sigma (a).\end{aligned}}\end{adjustbox}\end{center}
+
+Also,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\tau (\alpha )&= \psi _{\beta }\circ \theta \circ \psi _{\alpha }^{- 1}(\alpha ) \\ &= \psi _{\beta }(\theta (x+ \langle p(x)\rangle ) \\ &= \psi _{\beta }(x+ \langle p^{\prime }(x)\rangle ) \\ &= \beta .\end{aligned}}\end{adjustbox}\end{center}
+
+Uniqueness follows since an isomorphism \BookInline{\rho:F(\alpha )\to F^{\prime }(\beta )} is completely determined by the values of \BookInline{\rho (a)} for \BookInline{a\in F} and \BookInline{\rho (\alpha ).}\BookEnd{\blacklozenge}
+
+\BookLabel{44.6 Theorem} \textbf{(Isomorphism Extension Theorem)} Let \BookInline{K= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n})} be a finite extension field of \BookInline{F,\allowbreak } and let \BookInline{\sigma:F\to F^{\prime }} be a field isomorphism. If \BookInline{K^{\prime }} contains a splitting field of \BookInline{P= \{\sigma _{x}(}irr\BookInline{(\alpha _{k},\allowbreak F))\mid 1\leq k\leq n\}} over \BookInline{F^{\prime },\allowbreak } then \BookInline{\sigma } can be extended to an isomorphism \BookInline{\tau } mapping \BookInline{K} onto a subfield of \BookInline{K^{\prime }.}
+
+\end{BookBody}
+
+% Source PDF page 369; original printed page 352
+\BookSource{369}{352}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} We first show that \BookInline{\sigma } can be extended to an isomorphism mapping \BookInline{F(\alpha _{1})} onto a subfield of \BookInline{K^{\prime }.} Since \BookInline{K^{\prime }} is the splitting field of \BookInline{P} over \BookInline{F,\allowbreak } there is a \BookInline{\beta \in K^{\prime }} that is a zero of \BookInline{\sigma _{x}(}irr\BookInline{(\alpha _{1},\allowbreak F)).} By Lemma 44.5, there is an isomorphism \BookInline{\tau } with the required properties.
+
+We proceed by induction. Suppose \BookInline{\tau } is an isomorphism from \BookInline{F(\alpha _{1},\allowbreak...,\allowbreak \alpha _{k})} to some subfield of \BookInline{K^{\prime }} such that \BookInline{\tau (\alpha )= \sigma (\alpha )} for all \BookInline{\alpha \in F.} We need to extend \BookInline{\tau } to an isomorphism from \BookInline{F(\alpha _{1},\allowbreak...,\allowbreak \alpha _{k},\allowbreak \alpha _{k+ 1})} to \BookInline{K^{\prime }.} There is a \BookInline{\beta \in K^{\prime }} that is a zero of \BookInline{g(x)= \tau _{x}(}irr\BookInline{(\alpha _{k+ 1},\allowbreak F(\alpha _{1},\allowbreak...,\allowbreak \alpha _{k})))} since \BookInline{g(x)} is a factor of
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \tau _{x}(\;\text{irr}\;(\alpha _{k+ 1},\allowbreak F))= \sigma _{x}(\;\text{irr}\;(\alpha _{k+ 1},\allowbreak F)),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent which factors into linear factors in \BookInline{K^{\prime }.} By Lemma 44.5, there is an isomorphism \BookInline{\tau ^{\prime }} mapping \BookInline{F(\alpha _{1},\allowbreak...,\allowbreak \alpha _{k+ 1})} to a subfield of \BookInline{K^{\prime }} that extends \BookInline{\tau.} So by induction\BookInline{,\allowbreak \sigma } can be extended to an isomorphism that maps \BookInline{K} onto a subfield of \BookInline{K^{\prime }.}\BookEnd{\blacklozenge}
+
+\BookLabel{44.7 Example} We consider the extension \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} over \BookInline{\mathbb{Q}(\sqrt{2}).} The map
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sigma :\mathbb{Q}(\sqrt{2})\to \mathbb{Q}(\sqrt{2})}\end{adjustbox}\end{center}
+
+\noindent defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sigma (a+ b\sqrt{2})= a- b\sqrt{2}}\end{adjustbox}\end{center}
+
+is an isomorphism. Since \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} is a splitting field of \BookInline{x^{2}- 3} over \BookInline{\mathbb{Q}(\sqrt{2}),\allowbreak \sigma } can be extended to an isomorphism \BookInline{\tau:\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})\to \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} by Theorem 44.6. The proof of the theorem actually tells us more. We can choose \BookInline{\tau } to map to either zero of \BookInline{x^{2}- 3,\allowbreak } so we have two different choices for \BookInline{\tau.} In the notation of Example 43.4, these are the automorphisms \BookInline{\sigma } and \BookInline{\gamma.}
+
+We could have used the identity map from \BookInline{\mathbb{Q}(\sqrt{2})} to \BookInline{\mathbb { Q } ( { \sqrt { 2 } } )} instead of \BookInline{\sigma } for the isomorphism. Extending the identity isomorphism to \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} gives the automorphisms labeled \BookInline{\iota } and \BookInline{\tau } in Example 43.4. The Isomorphism Extension Theorem provides us with a simple way to show the existence of automorphisms that would otherwise be tedious to verify\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Properties of Splitting Fields}  }
+
+\noindent We now show that given a finite set of polynomials\BookInline{,\allowbreak P\subseteq F[x],\allowbreak } a splitting field of \BookInline{P} over \BookInline{F} is unique up to isomorphism.
+
+\BookLabel{44.8 Theorem} Let \BookInline{F} be a field\BookInline{,\allowbreak P= \{f_{1},\allowbreak f_{2},\allowbreak...,\allowbreak f_{s}\}\subseteq F[x]} a finite set of polynomials, and both \BookInline{K} and \BookInline{K^{\prime }} splitting fields of \BookInline{P} over \BookInline{F.} Then there is an isomorphism \BookInline{\sigma:K\to K^{\prime },\allowbreak } which is the identity map on \BookInline{F.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{K} and \BookInline{K^{\prime }} both be splitting fields of \BookInline{P} over \BookInline{F.} Let \BookInline{\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}} be the zeros of the polynomials of \BookInline{P} in \BookInline{K} and \BookInline{\beta _{1},\allowbreak \beta _{2},\allowbreak...,\allowbreak \beta _{m}} the zeros of the polynomials of \BookInline{P} in \BookInline{K^{\prime }.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle K= F(\alpha _{1},\allowbreak ...,\allowbreak \alpha _{n})\;\text{and}\;K^{\prime }= F(\beta _{1},\allowbreak ...,\allowbreak \beta _{m}).}\end{adjustbox}\end{center}
+
+\noindent The extensions \BookInline{K} and \BookInline{K^{\prime }} are finite over \BookInline{F} since the \BookInline{\alpha _{i}} and \BookInline{\beta _{j}} are algebraic. The extension \BookInline{K^{\prime }} over \BookInline{F} is a splitting field of \BookInline{P,\allowbreak } so it is also a splitting field of \BookInline{P^{\prime },\allowbreak } the set of all irreducible factors over \BookInline{F} of the polynomials in \BookInline{P.} By Theorem 44.6, there is an isomorphism \BookInline{\tau } mapping \BookInline{K} onto a subfield of \BookInline{K^{\prime }} that fixes the field \BookInline{F.} Furthermore, since \BookInline{\tau } preserves the degree of the extension over \BookInline{F,\allowbreak } the degree of the extension \BookInline{K^{\prime }} over \BookInline{F} is greater than or equal to the degree of the extension \BookInline{K} over \BookInline{F.} Similarly, there is an isomorphism mapping \BookInline{K^{\prime }} onto a subfield of \BookInline{K,\allowbreak } and the degree of the extension \BookInline{K} over \BookInline{F} is greater than or equal to the degree of the extension \BookInline{K^{\prime }} over \BookInline{F.} Thus \BookInline{K} and \BookInline{K^{\prime }} have the same degree as extensions of \BookInline{F.} Since \BookInline{\tau (K)\leq K^{\prime },\allowbreak } and each has the same degree as an extension over \BookInline{F,\allowbreak \tau } is an isomorphism mapping \BookInline{K} onto \BookInline{K^{\prime }.}\BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 370; original printed page 353
+\BookSource{370}{353}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Theorem 44.8 says that it does not matter how you construct the splitting field for a fixed set of polynomials, you will always get the same field up to isomorphism fixing \BookInline{F.} Because of this we will often speak of\textit{ the} splitting field of a set of polynomials instead of \BookInline{a} splitting field.
+
+\BookLabel{44.9 Definition} Let \BookInline{E} be an extension field of \BookInline{F.} A polynomial \BookInline{f(x)\in F[x]} \textbf{splits in} \BookInline{E} if it factors into linear factors in \BookInline{E[x].}\BookEnd{\blacksquare}
+
+\BookLabel{44.10 Example} The polynomial \BookInline{x^{4}- 5x^{2}+ 6\in \mathbb{Q}[x]} splits in the field \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} since
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{4}-5x^{2}+6=(x^{2}-2)(x^{2}-3)=(x+\sqrt{2})(x-\sqrt{2})(x+\sqrt{3})(x-\sqrt{3}).}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+\BookLabel{44.11 Theorem} Let \BookInline{E} be a finite extension of the field \BookInline{F.} Then \BookInline{E} is the splitting field of some finite set of polynomials in \BookInline{F[x]} if and only if for every field extension \BookInline{K} over \BookInline{E} and for every isomorphism \BookInline{\sigma } that fixes all the elements of \BookInline{F} and maps \BookInline{E} onto a subfield of \BookInline{K,\allowbreak \sigma } is an automorphism of \BookInline{E.}
+
+\BookLabel{\textit{Proof}} We first assume that \BookInline{E} is the splitting field for some set of polynomials
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle P= \{f_{1}(x),\allowbreak f_{2}(x),\allowbreak ...,\allowbreak f_{s}(x)\}.}\end{adjustbox}\end{center}
+
+\noindent Let \BookInline{\alpha _{1},\allowbreak...,\allowbreak \alpha _{n}} be the zeros in \BookInline{E} of the polynomials in \BookInline{P.} Then \BookInline{E= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...\alpha _{n}).} Let \BookInline{K} be a field extension of \BookInline{E.} Since all the polynomials \BookInline{f_{i}(x)} split in \BookInline{E[x],\allowbreak } all the zeros of \BookInline{f_{i}(x)} in \BookInline{K} are actually in \BookInline{E.} Let \BookInline{\sigma } be an isomorphism from \BookInline{E} to a subfield of \BookInline{K} that fixes elements of \BookInline{F.} Since \BookInline{\sigma } maps each \BookInline{\alpha _{k}} to a zero of \BookInline{f_{i}(x),\allowbreak } for some \BookInline{i,\allowbreak \sigma (\alpha _{k})\in E.} Thus \BookInline{\sigma } maps \BookInline{E} into \BookInline{E.} Since \BookInline{\sigma } is an isomorphism, isomorphisms preserve the degree of the extension, and the degree of \BookInline{E} over \BookInline{F} is finite\BookInline{,\allowbreak \sigma } is an isomorphism mapping \BookInline{E} onto \BookInline{E.} Thus \BookInline{\sigma } is an automorphism of \BookInline{E.}
+
+We next assume that for any field extension \BookInline{K} over \BookInline{E} and any isomorphism \BookInline{\sigma } that fixes all the elements of \BookInline{F} and maps \BookInline{E} to a subfield of \BookInline{K,\allowbreak \sigma } is an automorphism of \BookInline{E.} Since \BookInline{E} is a finite extension of \BookInline{F,\allowbreak E= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n})} for some elements \BookInline{\alpha _{k}\in E} that are algebraic over \BookInline{F.} Let \BookInline{f_{k}(x)= } irr\BookInline{(\alpha _{k},\allowbreak F)} be the minimal polynomial for \BookInline{\alpha _{k}} over \BookInline{F} and \BookInline{P= \{f_{k}(x)\mid 1\leq k\leq n\}.} We show that \BookInline{E} is the splitting field of \BookInline{P} over \BookInline{F.} Suppose by way of contradiction that some \BookInline{f_{k}(x)} does not split in \BookInline{E.} By reordering the \BookInline{\alpha _{k}} we can assume that \BookInline{k= 1.} Let \BookInline{\overline{E}} be the algebraic closure of \BookInline{E.} So \BookInline{f_{1}(x)} factors into linear factors in \BookInline{\overline{E},\allowbreak } which says that there is an element \BookInline{\beta \in E,\allowbreak \beta \notin E,\allowbreak } and \BookInline{\beta } is a zero of \BookInline{f_{1}(x)= } irr\BookInline{(\alpha _{1},\allowbreak F).} Thus\BookInline{,\allowbreak \alpha _{1}} and \BookInline{\beta } are conjugates over \BookInline{F.} By Theorem 43.18, there is an isomorphism
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \psi _{\alpha _{1},\allowbreak \beta }:F(\alpha _{1})\to F(\beta )}\end{adjustbox}\end{center}
+
+\noindent that fixes all the elements of \BookInline{F} and maps \BookInline{\alpha _{1}} to \BookInline{\beta.} Since \BookInline{\overline{E}} contains the splitting field of \BookInline{\{(\psi _{\alpha _{1},\allowbreak \beta })_{x}(\;\text{irr}\;(\alpha _{k},\allowbreak F(\alpha _{1})))\mid 1\leq k\leq n\}}, by the Isomorphism Extension Theorem 44.6, \BookInline{\psi _{\alpha _{1},\allowbreak \beta }} extends to an isomorphism \BookInline{\sigma } mapping \BookInline{E} onto a subfield of \BookInline{\overline{E}.} But
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sigma (\alpha _{1})= \psi _{\alpha _{1},\allowbreak \beta }(\alpha _{1})= \beta \not \in E.}\end{adjustbox}\end{center}
+
+\noindent This gives a contradiction, which implies that each \BookInline{f_{k}(x)} splits in \BookInline{E[x].} Since each \BookInline{\alpha _{k}} is a zero of \BookInline{f_{k}(x)} and \BookInline{E= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}),\allowbreak E} is the smallest subfield of \BookInline{E} where each \BookInline{f_{k}(x)} splits. Thus \BookInline{E} is a splitting field of \BookInline{P} over \BookInline{F.}\BookEnd{\blacklozenge}
+
+The following corollary highlights one of the very strong properties of splitting fields.
+
+\BookLabel{44.12 Corollary} If \BookInline{K} is a finite splitting field over \BookInline{F} and \BookInline{K} contains one zero of an irreducible polynomial \BookInline{f(x)\in F[x],\allowbreak } then \BookInline{f(x)} splits in \BookInline{K[x].}
+
+\end{BookBody}
+
+% Source PDF page 371; original printed page 354
+\BookSource{371}{354}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} Suppose by way of contradiction that \BookInline{f(x)} is irreducible over \BookInline{F,\allowbreak f(x)} has a zero \BookInline{\alpha } in \BookInline{K= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}),\allowbreak } and \BookInline{f(x)} does not split in \BookInline{K.} Let \BookInline{\overline{K}} be the algebraic closure of \BookInline{K.} By our assumption, there is a \BookInline{\beta \in \overline{K}} that is a zero of \BookInline{f(x)} and \BookInline{\beta \not \in K.} Theorem 43.18, the Conjugation Isomorphism Theorem, says there is an isomorphism
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \psi _{\alpha ,\allowbreak \beta }:F(\alpha )\to F(\beta ).}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{\overline{K}} is algebraically closed, it contains the splitting field of
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{(\psi _{\alpha ,\allowbreak \beta })_{x}(\;\text{irr}\;(\alpha _{k},\allowbreak F(\alpha )))\mid 1\leq k\leq n\}}\end{adjustbox}\end{center}
+
+\noindent over \BookInline{F(\beta ).} The Isomorphism Extension Theorem allows us to extend \BookInline{\psi _{\alpha,\allowbreak \beta }} to an isomorphism \BookInline{\sigma } mapping \BookInline{K} onto a subfield of \BookInline{\overline{K}} with \BookInline{\sigma (\alpha )= \beta \not \in K,\allowbreak } which contradicts Theorem 44.11. Thus \BookInline{f(x)} splits in \BookInline{K[x].}\BookEnd{\blacklozenge}
+
+Corollary 44.12 tells us that if \BookInline{K} is a splitting field of \BookInline{P} over \BookInline{F} and the irreducible polynomial \BookInline{f(x)\in F[x]} has a zero in \BookInline{K,\allowbreak } then \BookInline{K} contains the splitting field of \BookInline{f(x)} over \BookInline{F.} It is surprising at first glance that a multiple of \BookInline{f(x)} need not be in the set \BookInline{P.}
+
+\BookLabel{44.13 Example} As we have seen, \BookInline{\mathbb { Q } ( { \sqrt { 2 } },\allowbreak { \sqrt { 3 } } )} is the splitting field of \BookInline{\{x^{2}- 2,\allowbreak x^{2}- 3\}} over \BookInline{\mathbb{Q}.} We have \BookInline{\alpha = \sqrt{2}+ \sqrt{3}\in \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} and, as can easily be checked\BookInline{,\allowbreak \alpha } is a zero of
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (x^{2}- 5)^{2}- 24= x^{4}- 10x^{2}+ 1.}\end{adjustbox}\end{center}
+
+\noindent With some effort, it can also be checked that \BookInline{x^{4}- 10x^{2}+ 1} is irreducible over \BookInline{\mathbb{Q}.} Thus irr \BookInline{(\alpha,\allowbreak \mathbb{Q})= x^{4}- 10x^{2}+ 1}. By Corollary \BookInline{44.12,\allowbreak x^{4}- 10x^{2}+ 1} splits in \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} and \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} contains a splitting field \BookInline{K} of \BookInline{x^{4}- 10x+ 1} over \BookInline{\mathbb{Q}.} Since
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Q}(\sqrt{2}+ \sqrt{3})\leq K\leq \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})}\end{adjustbox}\end{center}
+
+\noindent and the two end fields have the same degree, 4, over \BookInline{\mathbb{Q},\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Q}(\sqrt{2}+ \sqrt{3})= K= \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3}).}\end{adjustbox}\end{center}
+
+\noindent We have two interesting results. First, the splitting field of \BookInline{x^{4}- 10x^{2}+ 1} over \BookInline{\mathbb{Q}} is \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3}),\allowbreak } and second, although \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} does not appear to be a simple extension of \BookInline{\mathbb{Q},\allowbreak } it is. In the next section we will find that under mild conditions, every finite extension is a simple extension.
+
+A challenging high school exercise is to use the quadratic formula to find all the zeros of \BookInline{x^{4}- 10x^{2}+ 1} and rewrite them to see that they are all in both \BookInline{\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3})} and \BookInline{\mathbb{Q}(\sqrt{2}+ \sqrt{3}).}\BookEnd{\blacktriangle}
+
+Theorem 44.11 gives a condition on a finite field extension \BookInline{F\leq E} that is equivalent to \BookInline{E} being a splitting field. The condition involves looking at all possible extensions of \BookInline{E.} Corollary 44.14 simplifies the condition significantly. Instead of looking at all extensions of \BookInline{E,\allowbreak } Corollary 44.14 only requires looking at any one splitting field over \BookInline{F} that contains \BookInline{E.}
+
+\BookLabel{44.14 Corollary} Let \BookInline{F\leq E\leq K} be fields with \BookInline{K} a finite splitting field over \BookInline{F.} Then \BookInline{E} is a splitting field over \BookInline{F} if and only if every isomorphism \BookInline{\sigma } that fixes \BookInline{F} and maps \BookInline{E} to a subfield of \BookInline{K} is an automorphism of \BookInline{E.}
+
+\BookLabel{\textit{Proof}} Theorem 44.11 says that if \BookInline{E} is a splitting field over \BookInline{F,\allowbreak } then every isomorphism \BookInline{\sigma } mapping \BookInline{E} to a subfield of \BookInline{K} that fixes \BookInline{F} is an automorphism of \BookInline{E.} This proves the only if direction.
+
+We next assume that every isomorphism \BookInline{\sigma } mapping \BookInline{E} to a subfield of \BookInline{K} that fixes \BookInline{F} is an automorphism of \BookInline{E.} Let \BookInline{E= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}).} Let \BookInline{f_{k}(x)= } irr\BookInline{(\alpha _{k},\allowbreak F)} and \BookInline{P= } \BookInline{\{f_{k}(x)\mid 1\leq k\leq n\}.} We first show that in the algebraic closure\BookInline{,\allowbreak K,\allowbreak } of \BookInline{K,\allowbreak } every conjugate 
+% Source PDF page 372; original printed page 355
+\BookSource{372}{355}
+over \BookInline{F} of every \BookInline{\alpha _{k}} is actually in \BookInline{E.} By Theorems 43.18 and 44.6, for any conjugate \BookInline{\beta \in K} of \BookInline{\alpha _{k}} over \BookInline{F,\allowbreak } there is an isomorphism \BookInline{\sigma } that fixes \BookInline{F,\allowbreak } maps \BookInline{E} onto a subfield of the algebraic closure \BookInline{\overline{K},\allowbreak } and maps \BookInline{\alpha _{k}} to \BookInline{\beta.} Now \BookInline{\sigma (\alpha _{i})} is a conjugate of \BookInline{\alpha _{j}} over \BookInline{F} for each \BookInline{1\leq j\leq n.} That is, both \BookInline{\alpha _{j}} and \BookInline{\sigma (\alpha _{j})} are zeros of \BookInline{f_{j}(x).} By Corollary \BookInline{44.12,\allowbreak f_{j}(x)} splits in \BookInline{K,\allowbreak } so \BookInline{\sigma (\alpha _{j})\in K} for each \BookInline{j.} Thus
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \sigma (E)= \sigma (F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak ...,\allowbreak \alpha _{n}))\leq K.}\end{adjustbox}\end{center}
+
+\noindent By our assumption\BookInline{,\allowbreak \sigma } is an automorphism of \BookInline{E,\allowbreak } so in particular\BookInline{,\allowbreak \beta \in E.} We have shown that \BookInline{E} contains all the conjugates of \BookInline{\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}\in \overline{K}} over \BookInline{F.} Since each \BookInline{f_{k}(x)} splits in the algebraically closed field \BookInline{\overline{K},\allowbreak } each \BookInline{f_{k}(x)} also splits in \BookInline{E= F(\alpha _{1},\allowbreak \alpha _{2},\allowbreak...,\allowbreak \alpha _{n}).} Since the splitting field of \BookInline{P} over \BookInline{F} contains \BookInline{E,\allowbreak E} is the splitting field of \BookInline{P} over \BookInline{F.}\BookEnd{\blacklozenge}
+
+\BookLabel{44.15 Example} We let \BookInline{E = \mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )} and let \BookInline{K} be the splitting field of the irreducible polynomial \BookInline{x^{3}- 2} over \BookInline{\mathbb{Q}.} The field \BookInline{K} contains \BookInline{\sqrt { 2 }.} one zero of irr \BookInline{(\sqrt[3]{2},\allowbreak \mathbb{Q}) = x^3 - 2} but it does not contain the other two zeros, \BookInline{\sqrt[3]{2}(-1\pm\sqrt{3}i)/2} We can see that \BookInline{E} is not the splitting field of any set of polynomials over \BookInline{\mathbb{Q}} from Corollary 44.12. Alternatively, we can use the conjugation isomorphism theorem to show there is an isomorphism mapping \BookInline{\mathbb { Q } ( { \sqrt [ 3 ] { 2 } } )} to \BookInline{\mathbb { Q } ( \sqrt [ 5 ] { 2 } ( - 1 + \sqrt { 3 } i ) / \hat { 2 } ) \leq K} By Corollary 44.14, again we see that \BookInline{E} is not a splitting field over \BookInline{\mathbb{Q}.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{44}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 6, find the degree over \BookInline{\mathbb{Q}} of the splitting field over \BookInline{\mathbb{Q}} of the given polynomial in \BookInline{\mathbb{Q}[x].}
+
+\BookExercise{1.}{\BookInline{x^{2}+ 3}}
+
+\BookExercise{2.}{\BookInline{x^{4}- 1}}
+
+\BookExercise{3.}{\BookInline{(x^{2}- 2)(x^{2}- 3)}}
+
+\BookExercise{4.}{\BookInline{x^{3}- 3}}
+
+\BookExercise{5.}{\BookInline{x^{3}- 1}}
+
+\BookExercise{6.}{\BookInline{(x^{2}- 2)(x^{3}- 2)}}
+
+\noindent Refer to Example 44.2 for Exercises 7 through 9.
+
+\BookExercise{7.}{What is the order of \BookInline{G(\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q})}?}
+
+\BookExercise{8.}{What is the order of \BookInline{G(\mathbb{Q}(\sqrt[3]{2},\allowbreak i\sqrt{3})/\mathbb{Q})}?}
+
+\BookExercise{9.}{What is the order of \BookInline{G(\mathbb{Q}(\sqrt[3]{2},\allowbreak i\sqrt{3})/\mathbb{Q}(\sqrt[3]{2}))}?}
+
+\BookExercise{10.}{Let \BookInline{\alpha } be a zero of \BookInline{x^{3}+ x^{2}+ 1} over \BookInline{\mathbb{Z}_{2}.} Show that \BookInline{x^{3}+ x^{2}+ 1} splits in \BookInline{\mathbb{Z}_{2}(\alpha ).[}\textit{Hint:} There are eight elements in \BookInline{\mathbb{Z}_{2}(\alpha ).} Exhibit two more zeros of \BookInline{x^{3}+ x^{2}+ 1,\allowbreak } in addition to \BookInline{\alpha,\allowbreak } among these eight elements. Alternatively, use the results of Section 42.]}
+
+\noindent Let \BookInline{E= \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{3},\allowbreak \sqrt{5}).} It can be shown that \BookInline{[E:\mathbb{Q}]= 8.} In Exercises 11 through 13, for the given isomorphic mappings of a subfield of \BookInline{E,\allowbreak } give all extensions of the mapping to an isomorphic mapping of \BookInline{E} onto a subfield of \BookInline{\mathbb{C}.} Describe the extensions by giving values on the generating set \BookInline{\{\sqrt{2},\allowbreak \sqrt{3},\allowbreak \sqrt{5}\}} for \BookInline{E} over \BookInline{\mathbb{Q}.}
+
+\BookExercise{11.}{\BookInline{\iota:\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{15})\to \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{15}),\allowbreak } where \BookInline{\iota } is the identity map.}
+
+\BookExercise{12.}{\BookInline{\sigma:\mathbb{Q}(\sqrt{2},\allowbreak \sqrt{15})\to \mathbb{Q}(\sqrt{2},\allowbreak \sqrt{15}),\allowbreak } where \BookInline{\sigma (\sqrt{2})= \sqrt{2}} and \BookInline{\sigma (\sqrt{15})= - \sqrt{15}.}}
+
+\BookExercise{13.}{\BookInline{\Psi _ { \sqrt { 3 0 },\allowbreak - \sqrt { 3 0 } }: \mathbb { Q } ( \sqrt { 3 0 } ) \to \mathbb { Q } ( \sqrt { 3 0 } )}}
+
+\noindent In Exercises 14 through 16, let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _ { 1 } = \sqrt [ 3 ] { 2 } ,\allowbreak  \quad \alpha _ { 2 } = \sqrt [ 3 ] { 2 } \frac { - 1 + \sqrt { 3 } i } { 2 } ,\allowbreak  \quad \mathrm { ~ a n d ~ } \quad \alpha _ { 3 } = \sqrt [ 3 ] { 2 } \frac { - 1 - \sqrt { 3 } i } { 2 } ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{\sqrt { 2 }} is the real number whose cube is 2. The zeros of \BookInline{x^{3}- 2} are \BookInline{\alpha _{1},\allowbreak \alpha _{2},\allowbreak } and \BookInline{\alpha _{3}.}
+
+\BookExercise{14.}{Describe all extensions of the identity map on \BookInline{\mathbb{Q}} to an isomorphism mapping \BookInline{\mathbb{Q}(\sqrt[3]{2})} onto a subfield of \BookInline{\mathbb{C}.}}
+
+\BookExercise{15.}{Describe all extensions of the identity map on \BookInline{\mathbb{Q}} to an isomorphism mapping \BookInline{\mathbb{Q}(\sqrt{3}i,\allowbreak \sqrt[3]{2})} onto a subfield of \BookInline{\mathbb{C}.}}
+
+\end{BookBody}
+
+% Source PDF page 373; original printed page 356
+\BookSource{373}{356}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{16.}{Describe all extensions of the automorphism \BookInline{\Psi _ { \sqrt { 3 } i,\allowbreak - \sqrt { 3 } i }} on \BookInline{\mathbb{Q}(\sqrt{3}i)} to an isomorphism mapping \BookInline{\mathbb{Q}(\sqrt{3}i,\allowbreak \sqrt[3]{2})} onto a subfield of \BookInline{\mathbb{C}.}}
+
+\BookExercise{17.}{Let \BookInline{\sigma } be an automorphism of \BookInline{\mathbb{Q}(\pi )} that maps \BookInline{\pi } onto \BookInline{- \pi.}}
+
+\BookExercise{a.}{Describe the fixed field of \BookInline{\sigma.}}
+
+\textbf{b.} Describe all extensions of \BookInline{\sigma } to an isomorphism mapping the field \BookInline{\mathbb{Q}(\sqrt{\pi })} onto a subfield of the splitting field of \BookInline{x^{2}+ \pi } over \BookInline{\mathbb{Q}(\pi ).}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercise 18, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{18.}{A polynomial \BookInline{f(x)} in \BookInline{F[x]} \textit{splits in an extension} \BookInline{\text{fi}eldE} of \BookInline{F} if and only if it factors in \BookInline{E[x]} into a product of polynomials of lower degree.}
+
+\BookExercise{19.}{Let \BookInline{f(x)} be a polynomial in \BookInline{F[x]} of degree \BookInline{n.} Let \BookInline{E} be a splitting field of \BookInline{f(x)} over \BookInline{F.} What bounds can be put on \BookInline{[E:F]}?}
+
+\BookExercise{20.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Let \BookInline{\alpha,\allowbreak \beta \in E,\allowbreak } where \BookInline{E} is a splitting field over \BookInline{F.} Then there exists an automorphism of \BookInline{E} leaving \BookInline{F} fixed and mapping \BookInline{\alpha } onto \BookInline{\beta } if and only if irr\BookInline{(\alpha,\allowbreak F)= } irr\BookInline{(\beta,\allowbreak F).}}
+
+\BookExercise{b.}{If \BookInline{f(x)\neq g(x)} are polynomials in \BookInline{\mathbb{Q}[x],\allowbreak F} is the splitting field of \BookInline{f(x)} over \BookInline{\mathbb{Q},\allowbreak } and \BookInline{K} is the splitting field of \BookInline{g(x)} over \BookInline{\mathbb{Q},\allowbreak } then \BookInline{F\neq K.}}
+
+\BookExercise{c.}{\textbf{c}\BookInline{.\mathbb{R}} is a splitting field over \BookInline{\mathbb{R}.}}
+
+\BookExercise{d.}{\textbf{d}\BookInline{.\mathbb{C}} is a splitting field over \BookInline{\mathbb{R}.}}
+
+\BookExercise{e.}{\textbf{e}\BookInline{.\mathbb{Q}(i)} is a splitting field over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{f.}{\textbf{f}\BookInline{.\mathbb{Q}(\pi )} is a splitting field over \BookInline{\mathbb{Q}(\pi ^{2}).}}
+
+\BookExercise{g.}{For every splitting field \BookInline{E} over \BookInline{F,\allowbreak } every isomorphic mapping of \BookInline{E} is an automorphism of \BookInline{E.}}
+
+\BookExercise{h.}{For every splitting field \BookInline{E} over \BookInline{F,\allowbreak } where \BookInline{E\leq K,\allowbreak } every isomorphism mapping \BookInline{E} onto a subfield of \BookInline{K} is an automorphism of \BookInline{E.}}
+
+\BookExercise{i.}{For every splitting field \BookInline{E} over \BookInline{F,\allowbreak } where \BookInline{E\leq K,\allowbreak } every isomorphism mapping \BookInline{E} onto a subfield of \BookInline{K} and leaving \BookInline{F} fixed is an automorphism of \BookInline{E.}}
+
+\BookExercise{j.}{If \BookInline{E} is a splitting field over \BookInline{F} and \BookInline{\alpha \in E,\allowbreak } then deg\BookInline{(\alpha,\allowbreak F)} divides \BookInline{[E:F].}}
+
+\BookExercise{21.}{Show by an example that Corollary 44.12 is no longer true if the word\textit{ irreducible} is deleted.}
+
+\BookExercise{22.}{Is \BookInline{|G(E/F)|} multiplicative for finite towers of finite extensions, that is, is}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle |G(K/F)|= |G(K/E)\parallel G(E/F)|\;\text{for}\;F\leq E\leq K?}\end{adjustbox}\end{center}
+
+Why or why not? [\textit{Hint:} Use Exercises 7 through 9.]
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{23.}{Show that if a finite extension \BookInline{E} of a field \BookInline{F} is a splitting field over \BookInline{F,\allowbreak } then \BookInline{E} is a splitting field of one polynomial in \BookInline{F[x].}}
+
+\BookExercise{24.}{Show that if \BookInline{[E:F]= 2,\allowbreak } then \BookInline{E} is a splitting field over \BookInline{F.}}
+
+\BookExercise{25.}{Show that for \BookInline{F\leq E\leq F,\allowbreak E} is a splitting field over \BookInline{F} if and only if \BookInline{E} contains all conjugates over \BookInline{F} in \BookInline{F} for each of its elements.}
+
+\BookExercise{26.}{Show that the splitting field \BookInline{K} of \BookInline{\{x^{2}- 2,\allowbreak x^{2}- 5\}} over \BookInline{\mathbb{Q}} is \BookInline{\mathbb{Q}(\sqrt{2}+ \sqrt{5}).}}
+
+\BookExercise{27.}{Show that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle G(\mathbb{Q}(\sqrt[3]{2},\allowbreak i\sqrt{3})/\mathbb{Q}(i\sqrt{3}))\simeq \langle \mathbb{Z}_{3},\allowbreak + \rangle .}\end{adjustbox}\end{center}
+
+\BookExercise{28.}{\textbf{. a} Show that an automorphism leaving \BookInline{F} fixed of a splitting field \BookInline{E} over \BookInline{F} of a polynomial \BookInline{f(x)\in F[x]} permutes the zeros of \BookInline{f(x)} in \BookInline{E.}}
+
+\BookExercise{b.}{Show that an automorphism leaving \BookInline{F} fixed of a splitting field \BookInline{E} over \BookInline{F} of a polynomial \BookInline{f(x)\in F[x]} is completely determined by the permutation of the zeros of \BookInline{f(x)} in \BookInline{E} given in part (a).}
+
+\end{BookBody}
+
+% Continuation on source PDF page 374, preceding Section 45
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{c.}{Show that if \BookInline{E} is a splitting field over \BookInline{F} of a polynomial \BookInline{f(x)\in F[x],\allowbreak } then \BookInline{G(E/F)} can be viewed in a natural way as a certain group of permutations.}
+
+\BookExercise{29.}{Let \BookInline{K} be the splitting field of \BookInline{x^{3}- 2} over \BookInline{\mathbb{Q}.} Use Exercise 28 to show that \BookInline{G(K/\mathbb{Q})} is isomorphic with \BookInline{S_{3},\allowbreak } the symmetric group on three letters. [Hint: Use Theorem 43.18 and complex conjugation to find enough elements that the Theorem of Lagrange and Exercise 28 imply the result.]}
+
+\BookExercise{30.}{Show that for a prime \BookInline{p,\allowbreak } the splitting field over \BookInline{\mathbb{Q}} of \BookInline{x^{p}- 1} is of degree \BookInline{p- 1} over \BookInline{\mathbb{Q}.[}\textit{Hint:} Refer to Corollary 28.18.]}
+
+\BookExercise{31.}{Let \BookInline{P} be a finite set of polynomials with coefficients in the field \BookInline{F.} Prove that a splitting field of \BookInline{P} over \BookInline{F} exists without using the algebraic closure of \BookInline{F.}}
+
+\BookExercise{32.}{Let \BookInline{\sigma:F\to F^{\prime }} be a field isomorphism. Show that \BookInline{\sigma _{x}:F[x]\to F^{\prime }[x],\allowbreak } as defined in Definition 44.4, is a ring isomorphism.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

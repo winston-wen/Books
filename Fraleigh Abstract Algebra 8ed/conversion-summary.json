@@ -1,0 +1,1369 @@
+{
+  "source_pages": 449,
+  "omitted_blank_pages": [
+    7,
+    27,
+    93,
+    227,
+    283,
+    407,
+    417,
+    435,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449
+  ],
+  "retained_source_pages": 433,
+  "chapter_and_front_back_files": 55,
+  "numbered_sections": 50,
+  "standalone_compile_passes": 55,
+  "compiled_pages": 612,
+  "page_size_pt": [
+    0.0,
+    0.0,
+    498.8999938964844,
+    708.6599731445312
+  ],
+  "bookmarks": 55,
+  "formula_recognition": {
+    "native": 14037,
+    "onnx": 808
+  },
+  "latex_commands": {
+    "sqrt": 922,
+    "frac": 342,
+    "mathbb": 4243,
+    "begin{pmatrix}": 29,
+    "begin{aligned}": 132
+  },
+  "input_sha256": "36e74106230ff8827c7d78776f0f5aae5f861386f48fcaf5daccd69197e8ce36",
+  "statement_label_audit": {
+    "expected_labels": 743,
+    "generated_labels": 743,
+    "missing": []
+  },
+  "review_v3": {
+    "numbered_units": 50,
+    "exercise_titles": [
+      {
+        "unit": 0,
+        "file": "00_sets_and_relations",
+        "native": [
+          {
+            "page": 24,
+            "number": 0
+          }
+        ],
+        "generated": [
+          0
+        ]
+      },
+      {
+        "unit": 1,
+        "file": "01_binary_operations",
+        "native": [
+          {
+            "page": 34,
+            "number": 1
+          }
+        ],
+        "generated": [
+          1
+        ]
+      },
+      {
+        "unit": 2,
+        "file": "02_groups",
+        "native": [
+          {
+            "page": 45,
+            "number": 2
+          }
+        ],
+        "generated": [
+          2
+        ]
+      },
+      {
+        "unit": 3,
+        "file": "03_abelian_examples",
+        "native": [
+          {
+            "page": 55,
+            "number": 3
+          }
+        ],
+        "generated": [
+          3
+        ]
+      },
+      {
+        "unit": 4,
+        "file": "04_nonabelian_examples",
+        "native": [
+          {
+            "page": 67,
+            "number": 4
+          }
+        ],
+        "generated": [
+          4
+        ]
+      },
+      {
+        "unit": 5,
+        "file": "05_subgroups",
+        "native": [
+          {
+            "page": 74,
+            "number": 5
+          }
+        ],
+        "generated": [
+          5
+        ]
+      },
+      {
+        "unit": 6,
+        "file": "06_cyclic_groups",
+        "native": [
+          {
+            "page": 85,
+            "number": 6
+          }
+        ],
+        "generated": [
+          6
+        ]
+      },
+      {
+        "unit": 7,
+        "file": "07_generating_sets_and_cayley_digraphs",
+        "native": [
+          {
+            "page": 91,
+            "number": 7
+          }
+        ],
+        "generated": [
+          7
+        ]
+      },
+      {
+        "unit": 8,
+        "file": "08_groups_of_permutations",
+        "native": [
+          {
+            "page": 101,
+            "number": 8
+          }
+        ],
+        "generated": [
+          8
+        ]
+      },
+      {
+        "unit": 9,
+        "file": "09_finitely_generated_abelian_groups",
+        "native": [
+          {
+            "page": 111,
+            "number": 9
+          }
+        ],
+        "generated": [
+          9
+        ]
+      },
+      {
+        "unit": 10,
+        "file": "10_cosets_and_the_theorem_of_lagrange",
+        "native": [
+          {
+            "page": 119,
+            "number": 10
+          }
+        ],
+        "generated": [
+          10
+        ]
+      },
+      {
+        "unit": 11,
+        "file": "11_plane_isometries",
+        "native": [
+          {
+            "page": 126,
+            "number": 11
+          }
+        ],
+        "generated": [
+          11
+        ]
+      },
+      {
+        "unit": 12,
+        "file": "12_factor_groups",
+        "native": [
+          {
+            "page": 136,
+            "number": 12
+          }
+        ],
+        "generated": [
+          12
+        ]
+      },
+      {
+        "unit": 13,
+        "file": "13_factor_group_computations_and_simple_groups",
+        "native": [
+          {
+            "page": 146,
+            "number": 13
+          }
+        ],
+        "generated": [
+          13
+        ]
+      },
+      {
+        "unit": 14,
+        "file": "14_group_action_on_a_set",
+        "native": [
+          {
+            "page": 155,
+            "number": 14
+          }
+        ],
+        "generated": [
+          14
+        ]
+      },
+      {
+        "unit": 15,
+        "file": "15_applications_of_g_sets_to_counting",
+        "native": [
+          {
+            "page": 161,
+            "number": 15
+          }
+        ],
+        "generated": [
+          15
+        ]
+      },
+      {
+        "unit": 16,
+        "file": "16_isomorphism_theorems",
+        "native": [
+          {
+            "page": 165,
+            "number": 16
+          }
+        ],
+        "generated": [
+          16
+        ]
+      },
+      {
+        "unit": 17,
+        "file": "17_sylow_theorems",
+        "native": [
+          {
+            "page": 172,
+            "number": 17
+          }
+        ],
+        "generated": [
+          17
+        ]
+      },
+      {
+        "unit": 18,
+        "file": "18_series_of_groups",
+        "native": [
+          {
+            "page": 181,
+            "number": 18
+          }
+        ],
+        "generated": [
+          18
+        ]
+      },
+      {
+        "unit": 19,
+        "file": "19_free_abelian_groups",
+        "native": [
+          {
+            "page": 188,
+            "number": 19
+          }
+        ],
+        "generated": [
+          19
+        ]
+      },
+      {
+        "unit": 20,
+        "file": "20_free_groups",
+        "native": [
+          {
+            "page": 193,
+            "number": 20
+          }
+        ],
+        "generated": [
+          20
+        ]
+      },
+      {
+        "unit": 21,
+        "file": "21_group_presentations",
+        "native": [
+          {
+            "page": 200,
+            "number": 21
+          }
+        ],
+        "generated": [
+          21
+        ]
+      },
+      {
+        "unit": 22,
+        "file": "22_rings_and_fields",
+        "native": [
+          {
+            "page": 208,
+            "number": 22
+          }
+        ],
+        "generated": [
+          22
+        ]
+      },
+      {
+        "unit": 23,
+        "file": "23_integral_domains",
+        "native": [
+          {
+            "page": 215,
+            "number": 23
+          }
+        ],
+        "generated": [
+          23
+        ]
+      },
+      {
+        "unit": 24,
+        "file": "24_fermat_s_and_euler_s_theorems",
+        "native": [
+          {
+            "page": 221,
+            "number": 24
+          }
+        ],
+        "generated": [
+          24
+        ]
+      },
+      {
+        "unit": 25,
+        "file": "25_encryption",
+        "native": [
+          {
+            "page": 226,
+            "number": 25
+          }
+        ],
+        "generated": [
+          25
+        ]
+      },
+      {
+        "unit": 26,
+        "file": "26_the_field_of_quotients_of_an_integral_domain",
+        "native": [
+          {
+            "page": 233,
+            "number": 26
+          }
+        ],
+        "generated": [
+          26
+        ]
+      },
+      {
+        "unit": 27,
+        "file": "27_rings_of_polynomials",
+        "native": [
+          {
+            "page": 242,
+            "number": 27
+          }
+        ],
+        "generated": [
+          27
+        ]
+      },
+      {
+        "unit": 28,
+        "file": "28_factorization_of_polynomials_over_a_field",
+        "native": [
+          {
+            "page": 252,
+            "number": 28
+          }
+        ],
+        "generated": [
+          28
+        ]
+      },
+      {
+        "unit": 29,
+        "file": "29_algebraic_coding_theory",
+        "native": [
+          {
+            "page": 259,
+            "number": 29
+          }
+        ],
+        "generated": [
+          29
+        ]
+      },
+      {
+        "unit": 30,
+        "file": "30_homomorphisms_and_factor_rings",
+        "native": [
+          {
+            "page": 265,
+            "number": 30
+          }
+        ],
+        "generated": [
+          30
+        ]
+      },
+      {
+        "unit": 31,
+        "file": "31_prime_and_maximal_ideals",
+        "native": [
+          {
+            "page": 273,
+            "number": 31
+          }
+        ],
+        "generated": [
+          31
+        ]
+      },
+      {
+        "unit": 32,
+        "file": "32_noncommutative_examples",
+        "native": [
+          {
+            "page": 280,
+            "number": 32
+          }
+        ],
+        "generated": [
+          32
+        ]
+      },
+      {
+        "unit": 33,
+        "file": "33_vector_spaces",
+        "native": [
+          {
+            "page": 290,
+            "number": 33
+          }
+        ],
+        "generated": [
+          33
+        ]
+      },
+      {
+        "unit": 34,
+        "file": "34_unique_factorization_domains",
+        "native": [
+          {
+            "page": 301,
+            "number": 34
+          }
+        ],
+        "generated": [
+          34
+        ]
+      },
+      {
+        "unit": 35,
+        "file": "35_euclidean_domains",
+        "native": [
+          {
+            "page": 307,
+            "number": 35
+          }
+        ],
+        "generated": [
+          35
+        ]
+      },
+      {
+        "unit": 36,
+        "file": "36_number_theory",
+        "native": [
+          {
+            "page": 313,
+            "number": 36
+          }
+        ],
+        "generated": [
+          36
+        ]
+      },
+      {
+        "unit": 37,
+        "file": "37_algebraic_geometry",
+        "native": [
+          {
+            "page": 319,
+            "number": 37
+          }
+        ],
+        "generated": [
+          37
+        ]
+      },
+      {
+        "unit": 38,
+        "file": "38_gr_bner_bases_for_ideals",
+        "native": [
+          {
+            "page": 326,
+            "number": 38
+          }
+        ],
+        "generated": [
+          38
+        ]
+      },
+      {
+        "unit": 39,
+        "file": "39_introduction_to_extension_fields",
+        "native": [
+          {
+            "page": 334,
+            "number": 39
+          }
+        ],
+        "generated": [
+          39
+        ]
+      },
+      {
+        "unit": 40,
+        "file": "40_algebraic_extensions",
+        "native": [
+          {
+            "page": 344,
+            "number": 40
+          }
+        ],
+        "generated": [
+          40
+        ]
+      },
+      {
+        "unit": 41,
+        "file": "41_geometric_constructions",
+        "native": [
+          {
+            "page": 351,
+            "number": 41
+          }
+        ],
+        "generated": [
+          41
+        ]
+      },
+      {
+        "unit": 42,
+        "file": "42_finite_fields",
+        "native": [
+          {
+            "page": 356,
+            "number": 42
+          }
+        ],
+        "generated": [
+          42
+        ]
+      },
+      {
+        "unit": 43,
+        "file": "43_introduction_to_galois_theory",
+        "native": [
+          {
+            "page": 364,
+            "number": 43
+          }
+        ],
+        "generated": [
+          43
+        ]
+      },
+      {
+        "unit": 44,
+        "file": "44_splitting_fields",
+        "native": [
+          {
+            "page": 372,
+            "number": 44
+          }
+        ],
+        "generated": [
+          44
+        ]
+      },
+      {
+        "unit": 45,
+        "file": "45_separable_extensions",
+        "native": [
+          {
+            "page": 380,
+            "number": 45
+          }
+        ],
+        "generated": [
+          45
+        ]
+      },
+      {
+        "unit": 46,
+        "file": "46_galois_theory",
+        "native": [
+          {
+            "page": 386,
+            "number": 46
+          }
+        ],
+        "generated": [
+          46
+        ]
+      },
+      {
+        "unit": 47,
+        "file": "47_illustrations_of_galois_theory",
+        "native": [
+          {
+            "page": 394,
+            "number": 47
+          }
+        ],
+        "generated": [
+          47
+        ]
+      },
+      {
+        "unit": 48,
+        "file": "48_cyclotomic_extensions",
+        "native": [
+          {
+            "page": 399,
+            "number": 48
+          }
+        ],
+        "generated": [
+          48
+        ]
+      },
+      {
+        "unit": 49,
+        "file": "49_insolvability_of_the_quintic",
+        "native": [
+          {
+            "page": 405,
+            "number": 49
+          }
+        ],
+        "generated": [
+          49
+        ]
+      }
+    ],
+    "exercise_instruction_prefixes": [
+      {
+        "unit": 1,
+        "source_page": 34,
+        "prefix": "exercises 1 through 4 concern the binary operation",
+        "present": true,
+        "generated_files": [
+          "01_binary_operations"
+        ]
+      },
+      {
+        "unit": 9,
+        "source_page": 113,
+        "prefix": "exercises 40 through 43 deal with the concept of the",
+        "present": true,
+        "generated_files": [
+          "09_finitely_generated_abelian_groups"
+        ]
+      },
+      {
+        "unit": 11,
+        "source_page": 128,
+        "prefix": "exercises 24 through 30 illustrate the seven different types of",
+        "present": true,
+        "generated_files": [
+          "11_plane_isometries"
+        ]
+      },
+      {
+        "unit": 11,
+        "source_page": 128,
+        "prefix": "exercises 31 through 37 describe a pattern to be used",
+        "present": true,
+        "generated_files": [
+          "11_plane_isometries"
+        ]
+      },
+      {
+        "unit": 11,
+        "source_page": 128,
+        "prefix": "exercises 38 and 39 are concerned with art works of",
+        "present": true,
+        "generated_files": [
+          "11_plane_isometries"
+        ]
+      },
+      {
+        "unit": 15,
+        "source_page": 157,
+        "prefix": "exercises 22 through 25 show how all possible g sets",
+        "present": true,
+        "generated_files": [
+          "14_group_action_on_a_set"
+        ]
+      },
+      {
+        "unit": 19,
+        "source_page": 188,
+        "prefix": "exercises 14 through 19 deal with showing the uniqueness of",
+        "present": true,
+        "generated_files": [
+          "19_free_abelian_groups"
+        ]
+      },
+      {
+        "unit": 28,
+        "source_page": 248,
+        "prefix": "exercises 5 through 8 ask us to find all generators",
+        "present": true,
+        "generated_files": [
+          "28_factorization_of_polynomials_over_a_field"
+        ]
+      },
+      {
+        "unit": 31,
+        "source_page": 267,
+        "prefix": "exercises 12 through 14 of the preceding section asked us",
+        "present": true,
+        "generated_files": [
+          "31_prime_and_maximal_ideals"
+        ]
+      },
+      {
+        "unit": 33,
+        "source_page": 291,
+        "prefix": "exercises 16 27 deal with the further study of vector",
+        "present": true,
+        "generated_files": [
+          "33_vector_spaces"
+        ]
+      },
+      {
+        "unit": 40,
+        "source_page": 341,
+        "prefix": "exercises 33 and 36",
+        "present": true,
+        "generated_files": [
+          "40_algebraic_extensions"
+        ]
+      },
+      {
+        "unit": 48,
+        "source_page": 400,
+        "prefix": "exercises 50 and 51 of section 9",
+        "present": true,
+        "generated_files": [
+          "48_cyclotomic_extensions"
+        ]
+      }
+    ],
+    "style_checks": {
+      "forbidden_commands": []
+    },
+    "float_checks": {
+      "source_float_count": 116,
+      "duplicate_ids": [],
+      "orphan_captions": [],
+      "aux_float_count": 116,
+      "missing_labels": [],
+      "split_floats": []
+    },
+    "failures": [],
+    "footnote_checks": {
+      "source_notes": 13,
+      "binding_errors": [],
+      "positions": {
+        "21:1": {
+          "ref": "5",
+          "text": "5"
+        },
+        "29:2": {
+          "ref": "14",
+          "text": "14"
+        },
+        "72:2": {
+          "ref": "79",
+          "text": "79"
+        },
+        "122:2": {
+          "ref": "147",
+          "text": "147"
+        },
+        "149:2": {
+          "ref": "183",
+          "text": "183"
+        },
+        "157:2": {
+          "ref": "196",
+          "text": "196"
+        },
+        "236:2": {
+          "ref": "302",
+          "text": "302"
+        },
+        "254:2": {
+          "ref": "329",
+          "text": "329"
+        },
+        "275:2": {
+          "ref": "359",
+          "text": "359"
+        },
+        "314:2": {
+          "ref": "412",
+          "text": "412"
+        },
+        "320:2": {
+          "ref": "420",
+          "text": "420"
+        },
+        "328:2": {
+          "ref": "431",
+          "text": "431"
+        },
+        "345:2": {
+          "ref": "456",
+          "text": "456"
+        }
+      },
+      "missing_labels": [],
+      "different_pages": []
+    },
+    "rendered_exercise_titles": [
+      {
+        "unit": 0,
+        "count": 1,
+        "pdf_pages": [
+          25
+        ]
+      },
+      {
+        "unit": 1,
+        "count": 1,
+        "pdf_pages": [
+          36
+        ]
+      },
+      {
+        "unit": 2,
+        "count": 1,
+        "pdf_pages": [
+          53
+        ]
+      },
+      {
+        "unit": 3,
+        "count": 1,
+        "pdf_pages": [
+          68
+        ]
+      },
+      {
+        "unit": 4,
+        "count": 1,
+        "pdf_pages": [
+          87
+        ]
+      },
+      {
+        "unit": 5,
+        "count": 1,
+        "pdf_pages": [
+          97
+        ]
+      },
+      {
+        "unit": 6,
+        "count": 1,
+        "pdf_pages": [
+          111
+        ]
+      },
+      {
+        "unit": 7,
+        "count": 1,
+        "pdf_pages": [
+          121
+        ]
+      },
+      {
+        "unit": 8,
+        "count": 1,
+        "pdf_pages": [
+          133
+        ]
+      },
+      {
+        "unit": 9,
+        "count": 1,
+        "pdf_pages": [
+          146
+        ]
+      },
+      {
+        "unit": 10,
+        "count": 1,
+        "pdf_pages": [
+          158
+        ]
+      },
+      {
+        "unit": 11,
+        "count": 1,
+        "pdf_pages": [
+          168
+        ]
+      },
+      {
+        "unit": 12,
+        "count": 1,
+        "pdf_pages": [
+          180
+        ]
+      },
+      {
+        "unit": 13,
+        "count": 1,
+        "pdf_pages": [
+          194
+        ]
+      },
+      {
+        "unit": 14,
+        "count": 1,
+        "pdf_pages": [
+          207
+        ]
+      },
+      {
+        "unit": 15,
+        "count": 1,
+        "pdf_pages": [
+          216
+        ]
+      },
+      {
+        "unit": 16,
+        "count": 1,
+        "pdf_pages": [
+          221
+        ]
+      },
+      {
+        "unit": 17,
+        "count": 1,
+        "pdf_pages": [
+          230
+        ]
+      },
+      {
+        "unit": 18,
+        "count": 1,
+        "pdf_pages": [
+          243
+        ]
+      },
+      {
+        "unit": 19,
+        "count": 1,
+        "pdf_pages": [
+          253
+        ]
+      },
+      {
+        "unit": 20,
+        "count": 1,
+        "pdf_pages": [
+          260
+        ]
+      },
+      {
+        "unit": 21,
+        "count": 1,
+        "pdf_pages": [
+          270
+        ]
+      },
+      {
+        "unit": 22,
+        "count": 1,
+        "pdf_pages": [
+          281
+        ]
+      },
+      {
+        "unit": 23,
+        "count": 1,
+        "pdf_pages": [
+          291
+        ]
+      },
+      {
+        "unit": 24,
+        "count": 1,
+        "pdf_pages": [
+          300
+        ]
+      },
+      {
+        "unit": 25,
+        "count": 1,
+        "pdf_pages": [
+          306
+        ]
+      },
+      {
+        "unit": 26,
+        "count": 1,
+        "pdf_pages": [
+          314
+        ]
+      },
+      {
+        "unit": 27,
+        "count": 1,
+        "pdf_pages": [
+          327
+        ]
+      },
+      {
+        "unit": 28,
+        "count": 1,
+        "pdf_pages": [
+          341
+        ]
+      },
+      {
+        "unit": 29,
+        "count": 1,
+        "pdf_pages": [
+          351
+        ]
+      },
+      {
+        "unit": 30,
+        "count": 1,
+        "pdf_pages": [
+          359
+        ]
+      },
+      {
+        "unit": 31,
+        "count": 1,
+        "pdf_pages": [
+          371
+        ]
+      },
+      {
+        "unit": 32,
+        "count": 1,
+        "pdf_pages": [
+          382
+        ]
+      },
+      {
+        "unit": 33,
+        "count": 1,
+        "pdf_pages": [
+          393
+        ]
+      },
+      {
+        "unit": 34,
+        "count": 1,
+        "pdf_pages": [
+          408
+        ]
+      },
+      {
+        "unit": 35,
+        "count": 1,
+        "pdf_pages": [
+          417
+        ]
+      },
+      {
+        "unit": 36,
+        "count": 1,
+        "pdf_pages": [
+          425
+        ]
+      },
+      {
+        "unit": 37,
+        "count": 1,
+        "pdf_pages": [
+          434
+        ]
+      },
+      {
+        "unit": 38,
+        "count": 1,
+        "pdf_pages": [
+          443
+        ]
+      },
+      {
+        "unit": 39,
+        "count": 1,
+        "pdf_pages": [
+          455
+        ]
+      },
+      {
+        "unit": 40,
+        "count": 1,
+        "pdf_pages": [
+          468
+        ]
+      },
+      {
+        "unit": 41,
+        "count": 1,
+        "pdf_pages": [
+          479
+        ]
+      },
+      {
+        "unit": 42,
+        "count": 1,
+        "pdf_pages": [
+          486
+        ]
+      },
+      {
+        "unit": 43,
+        "count": 1,
+        "pdf_pages": [
+          497
+        ]
+      },
+      {
+        "unit": 44,
+        "count": 1,
+        "pdf_pages": [
+          509
+        ]
+      },
+      {
+        "unit": 45,
+        "count": 1,
+        "pdf_pages": [
+          521
+        ]
+      },
+      {
+        "unit": 46,
+        "count": 1,
+        "pdf_pages": [
+          530
+        ]
+      },
+      {
+        "unit": 47,
+        "count": 1,
+        "pdf_pages": [
+          542
+        ]
+      },
+      {
+        "unit": 48,
+        "count": 1,
+        "pdf_pages": [
+          549
+        ]
+      },
+      {
+        "unit": 49,
+        "count": 1,
+        "pdf_pages": [
+          557
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "fraction_review_v4": {
+    "repairs": [
+      {
+        "file": "00_sets_and_relations.tex",
+        "verified_fraction_repairs": 1,
+        "only_expected_formula_changes": true
+      },
+      {
+        "file": "04_nonabelian_examples.tex",
+        "verified_fraction_repairs": 3,
+        "only_expected_formula_changes": true
+      },
+      {
+        "file": "36_number_theory.tex",
+        "verified_fraction_repairs": 2,
+        "only_expected_formula_changes": true
+      },
+      {
+        "file": "38_gr_bner_bases_for_ideals.tex",
+        "verified_fraction_repairs": 7,
+        "only_expected_formula_changes": true
+      },
+      {
+        "file": "41_geometric_constructions.tex",
+        "verified_fraction_repairs": 3,
+        "only_expected_formula_changes": true
+      }
+    ],
+    "total": 16,
+    "remaining_suspicious_operator_scripts": [],
+    "letter_bases_unchanged": true,
+    "chapter_sources_compared": 55,
+    "only_expected_changes_bookwide": true
+  },
+  "index_notation_checks": [
+    {
+      "page": 414,
+      "native_glyphs": 847,
+      "heading_glyphs": 9,
+      "notation_rows": 29,
+      "allocated_glyphs": 838
+    },
+    {
+      "page": 415,
+      "native_glyphs": 2023,
+      "heading_glyphs": 0,
+      "notation_rows": 49,
+      "allocated_glyphs": 2023
+    },
+    {
+      "page": 416,
+      "native_glyphs": 1257,
+      "heading_glyphs": 0,
+      "notation_rows": 35,
+      "allocated_glyphs": 1257
+    },
+    {
+      "page": 436,
+      "native_glyphs": 2486,
+      "heading_glyphs": 5,
+      "source_columns": 3,
+      "column_starts": [
+        98.75700378417969,
+        251.35700378417968,
+        403.9570037841797
+      ],
+      "allocated_glyphs": 2481
+    },
+    {
+      "page": 437,
+      "native_glyphs": 3659,
+      "heading_glyphs": 0,
+      "source_columns": 3,
+      "column_starts": [
+        71.15402221679688,
+        223.75402221679687,
+        376.35402221679686
+      ],
+      "allocated_glyphs": 3659
+    },
+    {
+      "page": 438,
+      "native_glyphs": 3544,
+      "heading_glyphs": 0,
+      "source_columns": 3,
+      "column_starts": [
+        98.7659912109375,
+        251.3659912109375,
+        403.9659912109375
+      ],
+      "allocated_glyphs": 3544
+    },
+    {
+      "page": 439,
+      "native_glyphs": 3505,
+      "heading_glyphs": 0,
+      "source_columns": 3,
+      "column_starts": [
+        71.15400695800781,
+        223.7540069580078,
+        376.3540069580078
+      ],
+      "allocated_glyphs": 3505
+    },
+    {
+      "page": 440,
+      "native_glyphs": 3365,
+      "heading_glyphs": 0,
+      "source_columns": 3,
+      "column_starts": [
+        98.71871948242188,
+        251.31871948242187,
+        403.91871948242186
+      ],
+      "allocated_glyphs": 3365
+    },
+    {
+      "page": 441,
+      "native_glyphs": 2884,
+      "heading_glyphs": 0,
+      "source_columns": 3,
+      "column_starts": [
+        71.15403747558594,
+        223.75403747558593,
+        376.3540374755859
+      ],
+      "allocated_glyphs": 2884
+    }
+  ]
+}

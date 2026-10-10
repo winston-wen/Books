@@ -1,0 +1,304 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 29 Algebraic Coding Theory}
+\pdfbookmark[0]{Section 29 Algebraic Coding Theory}{29_algebraic_coding_theory}
+\ifdefined\BookMaster\else\setcounter{page}{237}\fi
+% Source PDF page 254; original printed page 237
+\BookSource{254}{237}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{29}{Algebraic Coding Theory\label{bookfootnote:254:2:ref}\BookFootnote{2}{\label{bookfootnote:254:2:text}This section is not used in the remainder of the text.}}
+
+\noindent Suppose you wish to send a message, but occasionally the transmission line makes an error. When an error occurs, it would be nice if the receiver could detect that there is an error and ask you to resend the message. In other situations, such as a space probe transmitting images back to earth, it may be impossible to resend the data. In this case, it would be desirable if the receiving earthling could not only detect, but also correct a transmission error.
+
+We will think of a message as an element in \BookInline{\mathbb{Z}_{2}^{k}= \mathbb{Z}_{2}\times \mathbb{Z}_{2}\times \cdots \times \mathbb{Z}_{2}.} Each message consists of a string of zeros and ones of length \BookInline{k.} Each of the \BookInline{\mathbb{Z}_{2}} entries will be referred to as a\textbf{ bit}. Coding theory in general allows transmitted messages to be in \BookInline{F^{n}} for any finite field \BookInline{F,\allowbreak } but for our introduction to the subject we will restrict our attention to \BookInline{F= \mathbb{Z}_{2}.}
+
+\BookLabel{29.1 Example} A common way to detect a single-bit error is to use a parity check bit. Instead of transmitting a byte consisting of eight bits, that is, an element in \BookInline{\mathbb{Z}_{2}^{8},\allowbreak } nine bits are transmitted with the last bit being the sum in \BookInline{\mathbb{Z}_{2}} of the first eight bits. The message
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (1,\allowbreak 1,\allowbreak 0,\allowbreak 1,\allowbreak 0,\allowbreak 0,\allowbreak 1,\allowbreak 1)}\end{adjustbox}\end{center}
+
+\noindent would be transmitted as
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (1,\allowbreak 1,\allowbreak 0,\allowbreak 1,\allowbreak 0,\allowbreak 0,\allowbreak 1,\allowbreak 1,\allowbreak 1).}\end{adjustbox}\end{center}
+
+\noindent Regardless of whether the 8-bit message has an even or odd number of ones, the transmitted string of 9 bits has an even number of ones. If the sum of the nine bits of the received message is not zero, then a transmission error must have occurred\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 255; original printed page 238
+\BookSource{255}{238}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{29.2 Example} An inefficient, but possible method of correcting transmission errors is to send a message three times. If two of the received messages agree, then that common message is accepted as the most likely correct message. In this case, if there is only one error, the original message will be retrieved\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{29.3 Definition} A\textbf{ code} is a subset \BookInline{C\subseteq \mathbb{Z}_{2}^{n}.} An element of \BookInline{C} is a\textbf{ code word}. The\textbf{ length} of a code word in \BookInline{C\subseteq \mathbb{Z}_{2}^{n}} is \BookInline{n.}\BookEnd{\blacksquare}
+
+\noindent In practice, when a message is to be sent, it is broken into shorter pieces consisting of \BookInline{k} bits. A predetermined one-to-one function \BookInline{f:\mathbb{Z}_{2}^{k}\to C} mapping all possible \BookInline{k} bit messages to code words is then applied to the message pieces and transmitted. The receiver then checks that each received message piece is in the range of \BookInline{f.} If so, the sent code word is most likely the received code word and the message corresponding to the received code word can be computed since \BookInline{f} is one-to-one. If the received message is not a code word, then a transmission error occurred. We will not concern ourselves with the function \BookInline{f.} Instead, we will investigate certain types of codes. We restrict our attention to linear codes as defined below.
+
+\BookLabel{29.4 Definition} A\textbf{ linear code} is a subgroup \BookInline{C} of \BookInline{\mathbb{Z}_{2}^{n}.} Since \BookInline{C} is a subgroup of \BookInline{\mathbb{Z}_{2}^{n},\allowbreak } the order of \BookInline{C} is \BookInline{2^{k}} for some integer \BookInline{k.} The\textbf{ information rate} or\textbf{ rate} of the linear code is the ratio \BookInline{{ \frac { k } { n } }.} A linear code is\textbf{ cyclic} if for any code word \BookInline{(a_{0},\allowbreak a_{1},\allowbreak...,\allowbreak a_{n- 1}),\allowbreak (a_{n- 1},\allowbreak a_{0},\allowbreak a_{1},\allowbreak...,\allowbreak a_{n- 2})} is also a code word. That is, a linear code is cyclic if a cyclic shift of any code word is a code word\BookInline{.}\BookEnd{\blacksquare}
+
+\noindent An information rate of \BookInline{\frac{k}{n}} means that in order to transmit a message of length \BookInline{k,\allowbreak n} bits are required. It is clearly desirable to make the information rate as large as possible subject to the desired number of bit errors that can be detected or corrected.
+
+\BookLabel{29.5 Example} Let \BookInline{C\subseteq \mathbb{Z}_{2}^{9}} be the set of all strings of length 9 such that the sum of the bits is 0 modulo 2 as in Example 29.1. Note that \BookInline{C} is the kernel of the group homomorphism
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi :\mathbb{Z}_{2}^{9}\to \mathbb{Z}_{2}}\end{adjustbox}\end{center}
+
+\noindent given by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi (a_{0},\allowbreak a_{1},\allowbreak ...,\allowbreak a_{8})= a_{0}+ a_{1}+ \cdots + a_{8}(\;\text{mod}\;2).}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{C} is a subgroup of \BookInline{\mathbb{Z}_{2}^{9}} and therefore \BookInline{C} is a linear code. In this example\BookInline{,\allowbreak n= 9} and \BookInline{k= 8} since \BookInline{C} is a subgroup of \BookInline{\mathbb{Z}_{2}^{9}} with index 2. Thus \BookInline{C} has an information rate of \BookInline{{ \frac { 8 } { 9 } }.} Furthermore, the code is cyclic since any cyclic shift of a code word does not change the number of ones\BookInline{.}\BookEnd{\blacktriangle}
+
+If two code words differ in only one position, then it would not be possible to detect every error that occurs in just one bit. If any pair of code words differ in two or more positions, then any error of just one bit could be detected, that is, it could be determined that there is an error, but it may not be possible to reconstruct the original code word. Furthermore, if any pair of code words differ at three or more positions, then an error of just one bit could not only be detected, but it could be corrected since only one code word would differ from the erroneous word at one position.
+
+\BookLabel{29.6 Definition} The\textbf{ Hamming weight} or\textbf{ weight} of a string in \BookInline{\mathbb{Z}_{2}^{n}} is the number of ones in the string. The\textbf{ Hamming distance} or\textbf{ distance} between two strings in \BookInline{\mathbb{Z}_{2}^{n}} is the number of bits where the two strings differ\BookInline{.}\BookEnd{\blacksquare}
+
+\BookLabel{29.7 Example} The Hamming weight of the string (1, 0, 0, 1, 1, 0, 1, 1) is 5. The Hamming distance between the code words (1, 0, 0, 0, 1, 1, 0, 1) and (1, 1, 0, 1, 0, 0, 0, 1) is \BookInline{4.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 256; original printed page 239
+\BookSource{256}{239}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{29.8 Theorem} For a linear code \BookInline{C,\allowbreak } the minimum weight among the nonzero code words of \BookInline{C} is the same as the minimum distance between two different code words.
+
+\BookLabel{\textit{Proof}} For any two code words \BookInline{w,\allowbreak u\in \mathbb{Z}_{2}^{n},\allowbreak } the distance between \BookInline{w} and \BookInline{u} is the number of bits where the words differ. That is, the weight of \BookInline{w- u} is the distance between \BookInline{w} and \BookInline{u.} Since \BookInline{C} is a subgroup of \BookInline{\mathbb{Z}_{2}^{n},\allowbreak w- u\in C.} Thus the minimum weight of nonzero code words is less than or equal to the minimum distance between two different code words. We also notice that \BookInline{0\in \mathbb{Z}_{2}^{n}} is a code word, so the weight of a code word \BookInline{w} is the distance between 0 and \BookInline{w,\allowbreak } which implies that the minimum distance between two different code words is less than or equal to the minimum weight among the nonzero code words\BookInline{.}\BookEnd{\blacklozenge}
+
+If the Hamming distance between any two different code words in a code \BookInline{C} is at least \BookInline{d,\allowbreak } then we say that \BookInline{C} \textbf{detects} \BookInline{d- 1} \textbf{bit errors} since any change to a code word in at most \BookInline{d- 1} bits is not a code word. If \BookInline{C} is a code in \BookInline{\mathbb{Z}_{2}^{n}} and for any string \BookInline{v\in \mathbb{Z}_{2}^{n},\allowbreak } there is at most one code word whose Hamming distance from \BookInline{v} is \BookInline{d} or less, then we say that \BookInline{C} \textbf{corrects} \BookInline{d} \textbf{bit errors}. The idea is that if a string is received that is not a code word, then the best guess for the sent code word is the code word that is closest to the received string. For a code that corrects \BookInline{d} bit errors, by taking the closest code to a received string we reconstruct the sent code word as long as the number of errors is at most \BookInline{d.}
+
+\BookLabel{29.9 Example} Let \BookInline{C= \{(0,\allowbreak 0,\allowbreak 0,\allowbreak 0),\allowbreak (1,\allowbreak 0,\allowbreak 1,\allowbreak 0),\allowbreak (1,\allowbreak 1,\allowbreak 0,\allowbreak 1),\allowbreak (0,\allowbreak 1,\allowbreak 1,\allowbreak 1)\}\subseteq \mathbb{Z}_{2}^{4}.} It is not difficult to check that \BookInline{C} is a subgroup of \BookInline{\mathbb{Z}_{2}^{4},\allowbreak } so \BookInline{C} is a linear code. The code word (1, 0, 1, 0) has weight 2 and the other two nonzero code words have weight 3. By Theorem 29.8, the minimum distance between any two code words is 2. Thus \BookInline{C} detects one-bit errors, but it cannot correct a one-bit error. A received message of \BookInline{m= (1,\allowbreak 0,\allowbreak 0,\allowbreak 0)} differs from both (0, 0, 0, 0) and (1, 0, 1, 0) by only one bit, so even if we know \BookInline{m} is only incorrect in one position, we would not know if the sent code word was (0, 0, 0, 0) or \BookInline{(1,\allowbreak 0,\allowbreak 1,\allowbreak 0).}\BookEnd{\blacktriangle}
+
+There are many schemes to generate codes having various properties, but we will focus on just one method. We can think of an element \BookInline{(a_{0},\allowbreak a_{1},\allowbreak a_{2},\allowbreak...,\allowbreak a_{n- 1})\in \mathbb{Z}_{2}^{n}} as corresponding to the coefficients of the polynomial \BookInline{a_{0}+ a_{1}x+ a_{2}x^{2}+ \cdots + a_{n- 1}x^{n- 1}\in } \BookInline{\mathbb{Z}_{2}[x].} In this way, instead of thinking of code words as strings of zeros and ones of length \BookInline{n,\allowbreak } we can think of them as polynomials in \BookInline{\mathbb{Z}_{2}[x]} of degree at most \BookInline{n- 1.} We note that this correspondence is a group isomorphism \BookInline{\phi } mapping \BookInline{\mathbb{Z}_{2}^{n}} onto the additive group of polynomials in \BookInline{\mathbb{Z}_{2}[x]} of degree at most \BookInline{n- 1.}
+
+\BookLabel{29.10 Example} Let \BookInline{n= 5} and \BookInline{g(x)= x^{2}+ x+ 1.} We define \BookInline{C} to be all the multiples of \BookInline{x^{2}+ x+ 1,\allowbreak } including 0, whose degree is less than 5.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}C&= \{f(x)g(x)\mid f(x)\in \mathbb{Z}_{2}[x]\;\text{and either deg}\;(f(x))\leq 2\;\text{or}\;f(x)= 0\} \\ &= \{0\cdot g(x),\allowbreak 1\cdot g(x),\allowbreak x\cdot g(x),\allowbreak (x+ 1)\cdot g(x),\allowbreak  \\ &x^{2}\cdot g(x),\allowbreak (x^{2}+ 1)\cdot g(x),\allowbreak (x^{2}+ x)\cdot g(x),\allowbreak (x^{2}+ x+ 1)\cdot g(x)\} \\ &= \{0,\allowbreak x^{2}+ x+ 1,\allowbreak x^{3}+ x^{2}+ x,\allowbreak x^{3}+ 1,\allowbreak  \\ &x^{4}+ x^{3}+ x^{2},\allowbreak x^{4}+ x^{3}+ x+ 1,\allowbreak x^{4}+ x,\allowbreak x^{4}+ x^{2}+ 1\}.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent By reading off the coefficients of these polynomials we determine the code words to be
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&(0,\allowbreak 0,\allowbreak 0,\allowbreak 0,\allowbreak 0)(0,\allowbreak 0,\allowbreak 1,\allowbreak 1,\allowbreak 1)(0,\allowbreak 1,\allowbreak 1,\allowbreak 1,\allowbreak 0)(0,\allowbreak 1,\allowbreak 0,\allowbreak 0,\allowbreak 1) \\ &(1,\allowbreak 1,\allowbreak 1,\allowbreak 0,\allowbreak 0)(1,\allowbreak 1,\allowbreak 0,\allowbreak 1,\allowbreak 1)(1,\allowbreak 0,\allowbreak 0,\allowbreak 1,\allowbreak 0)(1,\allowbreak 0,\allowbreak 1,\allowbreak 0,\allowbreak 1).\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent It is not difficult to check that this collection of elements in \BookInline{\mathbb{Z}_{2}^{5}} is a subgroup of \BookInline{\mathbb{Z}_{2}^{5}} and therefore gives a linear code. The code is not cyclic since (0, 1, 0, 0, 1) is a code word, 
+% Source PDF page 257; original printed page 240
+\BookSource{257}{240}
+but (1, 0, 1, 0, 0) is not a code word. We see that the minimum weight among all the nonzero code words is 2. By Theorem 29.8, the minimum Hamming distance between any two code words is also 2, which implies that the code detects a one-bit error, but it does not correct a one-bit error\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+In Example 29.10, we simply read off the coefficients of the polynomials in \BookInline{C} to construct a linear code. For the rest of this section we will abuse notation slightly by referring to a set \BookInline{C} of polynomials in \BookInline{\mathbb{Z}_{2}[x]} as a linear code if \BookInline{C} is a subgroup of \BookInline{\mathbb{Z}_{2}[x]} containing no polynomial of degree \BookInline{n} or larger. The fact that \BookInline{\phi } mapping \BookInline{\mathbb{Z}_{2}^{n}} to the polynomials of degree at most \BookInline{n- 1} is a group isomorphism assures us that any subgroup \BookInline{C\leq \mathbb{Z}_{2}[x]} having no polynomial of degree \BookInline{n} or larger provides a linear code by simply reading off the coefficients of the polynomials in \BookInline{C.}
+
+\BookLabel{29.11 Theorem} Let \BookInline{g(x)} be a polynomial in \BookInline{\mathbb{Z}_{2}[x]} of degree less than \BookInline{n.} Then \BookInline{C= \{f(x)g(x)\mid f(x)\in } \BookInline{\mathbb{Z}_{2}[x]} and either \BookInline{f(x)= 0} or deg\BookInline{(f(x))<n- } deg\BookInline{(g(x))\}} is a linear code. Furthermore, if the polynomial \BookInline{g(x)} is a factor of \BookInline{x^{n}+ 1} in \BookInline{\mathbb{Z}_{2}[x],\allowbreak } then \BookInline{C} is a cyclic code.
+
+\BookLabel{\textit{Proof}} We first show that \BookInline{C} is closed under addition. Let \BookInline{f(x),\allowbreak h(x)\in \mathbb{Z}_{2}[x]} so that each either has degree less than \BookInline{n- } deg\BookInline{(g(x))} or is the 0 polynomial. Then \BookInline{f(x)+ h(x)} is either the zero polynomial or else its degree is less than \BookInline{n- } deg\BookInline{(g(x)).} Therefore
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(x)g(x)+ h(x)g(x)= (f(x)+ h(x))g(x),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent which implies that \BookInline{C} is closed under addition. Also \BookInline{C} contains the 0 polynomial and if \BookInline{f(x)g(x)\in C,\allowbreak } then \BookInline{- (f(x)g(x))= f(x)g(c)\in C.} Thus \BookInline{C} is a subgroup of the additive group \BookInline{G= \{w(x)\in \mathbb{Z}_{2}[x]\mid w(x)= 0} or deg\BookInline{(w(x))<n\},\allowbreak } which means that \BookInline{C} is a linear code.
+
+Now we assume that \BookInline{g(x)} is a factor of \BookInline{x^{n}+ 1} in \BookInline{\mathbb{Z}_{2}[x],\allowbreak } that is, there is a polynomial \BookInline{h(x)\in \mathbb{Z}_{2}[x]} with
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle h(x)g(x)= x^{n}+ 1.}\end{adjustbox}\end{center}
+
+\noindent Apparently,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(h(x))= n- \;\text{deg}\;(g(x)).}\end{adjustbox}\end{center}
+
+\noindent Let \BookInline{f(x)g(x)\in C.} If
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(f(x)g(x))<n- 1,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (xf(x))g(x)\in C}\end{adjustbox}\end{center}
+
+\noindent and \BookInline{xf(x)g(x)} simply increases by one the degree of each term in the polynomial \BookInline{f(x)g(x).} This implies that \BookInline{xf(x)g(x)\in C} is a cyclic shift of \BookInline{f(x)g(x).} On the other hand, if
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \;\text{deg}\;(f(x)g(x))= n- 1,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent then a cyclic shift of the code word \BookInline{f(x)g(x)} is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle p(x)= xf(x)g(x)+ (x^{n}+ 1).}\end{adjustbox}\end{center}
+
+\noindent We have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}xf(x)g(x)+ (x^{n}+ 1)&= xf(x)g(x)+ h(x)g(x) \\ &= (xf(x)+ h(x))g(x)\end{aligned}}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 258; original printed page 241
+\BookSource{258}{241}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent Since \BookInline{xf(x)} and \BookInline{h(x)} each have degree \BookInline{n- } deg\BookInline{(g(x)),\allowbreak } the coefficient of \BookInline{x^{n- }}deg\BookInline{(g(x))} in their sum is 0. So either \BookInline{xf(x)+ h(x)= 0} or deg\BookInline{(xf(x)+ h(x))<n- } deg\BookInline{(g(x)).} In either case, the cyclic shift \BookInline{xf(x)g(x)+ (x^{n}+ 1)} is a code word in \BookInline{C.} Therefore\BookInline{,\allowbreak C} is a cyclic code\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{29.12 Definition} The code \BookInline{C} in Theorem 29.11 is called the\textbf{ polynomial code of length} \BookInline{n} \textbf{generated by} \BookInline{g(x).}\BookEnd{\blacksquare}
+
+\BookLabel{29.13 Example} Find the code words for \BookInline{C,\allowbreak } the polynomial code of length 7 generated by the polynomial \BookInline{g(x)= x^{3}+ x^{2}+ 1.} What is the information rate for \BookInline{C}? Determine if \BookInline{C} detects a one-bit error and if so, can \BookInline{C} correct a one-bit error? What about detecting and correcting two-bit errors?
+
+\BookLabel{\textit{Solution}} As in Example 29.10, one method of finding all the code words is to multiply every polynomial of degree 3 or less by \BookInline{g(x),\allowbreak } but there is a much simpler method if the code is cyclic. The polynomial \BookInline{x^{7}+ 1} can be seen to factor in \BookInline{\mathbb{Z}_{2}[x]} as
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{7}+ 1= (x^{3}+ x^{2}+ 1)(x^{4}+ x^{3}+ x^{2}+ 1)}\end{adjustbox}\end{center}
+
+\noindent simply by using long division of polynomials. Therefore \BookInline{C} is a cyclic code by Theorem 29.11. Since \BookInline{1\cdot g(x)= g(x)\in C} and \BookInline{C} contains all cyclic shifts of \BookInline{g(x),\allowbreak } we have all the polynomials in the first column of Figure 29.14 as code words in \BookInline{C.} Since \BookInline{C} is a group, \BookInline{(x^{3}+ x^{2}+ 1)+ (x^{4}+ x^{3}+ x)= x^{4}+ x^{2}+ x+ 1\in C.} The fact that \BookInline{C} is cyclic implies the second column of Figure 29.14 is contained in \BookInline{C.} There are \BookInline{2^{4}= 16} polynomials of degree less than 4 (including the zero polynomial) with coefficients in \BookInline{\mathbb{Z}_{2}.} Thus \BookInline{C} contains 16 elements. Since \BookInline{C} is a subgroup, the zero polynomial is in \BookInline{C,\allowbreak } leaving only one more polynomial to complete the list. This polynomial must remain the same when a cyclic shift is applied. Other than the polynomial 0, the only polynomial that remains the same when a cyclic shift is applied is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{6}+ x^{5}+ x^{4}+ x^{3}+ x^{2}+ x+ 1.}\end{adjustbox}\end{center}
+
+\noindent Thus Figure 29.14 gives the code \BookInline{C} as polynomials. Figure 29.15 gives the code as elements in \BookInline{\mathbb{Z}_{2}^{7}.}
+
+Since \BookInline{|C|= 2^{4}} and the code word length is 7, the information rate is \BookInline{{ \frac { 4 } { 7 } }.}
+
+It is easy to see that the minimum weight among all the nonzero code words is 3. By Theorem 29.8, the minimum distance between code words is 3. So not only can a single-bit error be detected, it can be corrected. Since the distance between any two code words is at least 3, the code detects two-bit errors. However, the code does not correct two-bit errors since a two-bit error could produce a word with Hamming distance of one from another code word. For example, (0, 0, 0, 0, 0, 0, 1) differs from the code word (0, 0, 0, 1, 1, 0, 1) in two bits, but it differs from the code word (0, 0, 0, 0, 0, 0, 0) in only one bit\BookInline{.}\BookEnd{\blacktriangle}
+
+\begin{BookFloat}{29_algebraic_coding_theory-p258-10}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}llll@{}}
+$x^3+x^2+1$ & $x^4+x^2+x+1$ & $0$ & $x^6+x^5+x^4+x^3+x^2+x+1$\\
+$x^4+x^3+x$ & $x^5+x^3+x^2+x$ & & \\
+$x^5+x^4+x^2$ & $x^6+x^4+x^3+x^2$ & & \\
+$x^6+x^5+x^3$ & $x^5+x^4+x^3+1$ & & \\
+$x^6+x^4+1$ & $x^6+x^5+x^4+x$ & & \\
+$x^5+x+1$ & $x^6+x^5+x^2+1$ & & \\
+$x^6+x^2+x$ & $x^6+x^3+x+1$ & & \\
+\end{tabular}\end{adjustbox}\end{center}
+\begin{center}\small \textbf{29.14 Figure}\end{center}
+\end{BookFloat}
+
+\end{BookBody}
+
+% Source PDF page 259; original printed page 242
+\BookSource{259}{242}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{BookFloat}{29_algebraic_coding_theory-p259-0}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{cccc}
+(0,0,0,1,1,0,1) & (0,0,1,0,1,1,1) & (0,0,0,0,0,0,0) & (1,1,1,1,1,1,1)\\
+(0,0,1,1,0,1,0) & (0,1,0,1,1,1,0) &  & \\
+(0,1,1,0,1,0,0) & (1,0,1,1,1,0,0) &  & \\
+(1,1,0,1,0,0,0) & (0,1,1,1,0,0,1) &  & \\
+(1,0,1,0,0,0,1) & (1,1,1,0,0,1,0) &  & \\
+(0,1,0,0,0,1,1) & (1,1,0,0,1,0,1) &  & \\
+(1,0,0,0,1,1,0) & (1,0,0,1,0,1,1) &  & \\
+\end{tabular}
+\end{adjustbox}\end{center}
+\begin{center}\small\textbf{29.15 Figure}\end{center}
+\end{BookFloat}
+
+Examples 29.2 and 29.13 each provide a code that can correct a one-bit error. Example 29.2 requires sending 24 bits to transmit a message of length 8. That is, the information rate is \BookInline{\frac{1}{3}} In Example 29.13, in order to transmit a message of length 8, 14 bits are required and the information rate is \BookInline{\frac { 4 } { 7 }} Clearly the code in Example 29.13 is a much more efficient way of coding data for transmission.
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{29} \BookEnd{\blacksquare}
+
+\BookExercise{1.}{If a code has word length 10 and transmission rate of \BookInline{{ \frac { 1 } { 2 } }.} how many code words are in the code?}
+
+\BookExercise{2.}{If a linear code contains exactly 16 code words and the transmission rate is \BookInline{\frac{2}{3}}, find the length of code words.}
+
+\BookExercise{3.}{Find the smallest cyclic linear code \BookInline{C} that contains (1, 0, 0, 0, 0).}
+
+\BookExercise{4.}{Find all cyclic linear codes \BookInline{C} in \BookInline{\mathbb{Z}_{2}^{5}} that have a transmission rate of \BookInline{\frac{2}{5}}}
+
+\BookExercise{5.}{Find all cyclic linear codes of length \BookInline{n} for}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathrm{a}.n= 2\mathrm{b}.n= 3\mathrm{c}.n= 4}\end{adjustbox}\end{center}
+
+\BookExercise{6.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{A code is a subset of \BookInline{\mathbb{Z}_{2}^{n}} for some positive integer \BookInline{n.}}
+
+\BookExercise{b.}{The length of a code word in \BookInline{\mathbb{Z}_{2}^{n}} is \BookInline{n.}}
+
+\BookExercise{c.}{Every code is a linear code.}
+
+\BookExercise{d.}{If the Hamming distance between any two different code words is at least 4, then the code corrects two-bit errors.}
+
+\BookExercise{e.}{If \BookInline{C} is a linear code in \BookInline{\mathbb{Z}_{2}^{n},\allowbreak } then the information rate is the number of elements in \BookInline{C} divided by the number of elements in \BookInline{\mathbb{Z}_{2}^{n}.}}
+
+\BookExercise{f.}{Every linear code contains the code word consisting of all zeros.}
+
+\BookExercise{g.}{If the Hamming distance between two code words in a linear code is \BookInline{d,\allowbreak } then there is a code word with Hamming weight \BookInline{d.}}
+
+\BookExercise{h.}{The set \BookInline{\{f(x)g(x)\mid f(x)\in \mathbb{Z}_{2}[x]\}} is the polynomial code of length \BookInline{n} generated by \BookInline{g(x)} if \BookInline{g(x)\in \mathbb{Z}_{2}[x]} and \BookInline{g(x)} has degree \BookInline{n.}}
+
+\BookExercise{i.}{Not every polynomial code is cyclic.}
+
+\BookExercise{j.}{Every cyclic linear code contains at most two code words that remain the same when a cyclic shift is applied.}
+
+\BookExercise{7.}{Let \BookInline{g(x)= x^{3}+ x+ 1\in \mathbb{Z}_{2}[x].}}
+
+\BookExercise{a.}{Verify that \BookInline{g(x)} is a factor of \BookInline{x^{7}+ 1} in \BookInline{\mathbb{Z}_{2}[x].}}
+
+\BookExercise{b.}{Find all the code words in the polynomial code \BookInline{C} of length 7 generated by \BookInline{g(x).}}
+
+\BookExercise{c.}{Determine if \BookInline{C} detects single-bit errors and if so, determine if it corrects single-bit errors.}
+
+\BookExercise{d.}{Determine if \BookInline{C} detects two-bit errors and if so, determine if it corrects two-bit errors.}
+
+\end{BookBody}
+
+% Continuation on source PDF page 260, preceding Section 30
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{8.}{The transmission of a code word from the previous exercise produced the polynomial \BookInline{p(x)= x^{6}+ x^{5}+ x^{4}+ } \BookInline{x^{3}.} Was there a transmission error? If so, find the closest code word from \BookInline{C} as measured by the Hamming distance.}
+
+\BookExercise{9.}{Let \BookInline{g(x)= x^{6}+ x^{3}+ 1\in \mathbb{Z}_{2}[x].}}
+
+\BookExercise{a.}{Verify that \BookInline{g(x)} is a factor of \BookInline{x^{9}+ 1} in \BookInline{\mathbb{Z}_{2}[x].}}
+
+\BookExercise{b.}{Find all the code words in the polynomial code \BookInline{C} of length 9 generated by \BookInline{g(x).}}
+
+\BookExercise{c.}{Determine if \BookInline{C} detects single-bit errors and if so, determine if it corrects single-bit errors.}
+
+\BookExercise{d.}{Determine if \BookInline{C} detects two-bit errors and if so, determine if it corrects two-bit errors.}
+
+\BookExercise{10.}{Let \BookInline{g(x)= x^{4}+ x^{3}+ x+ 1\in \mathbb{Z}_{2}[x]} and let \BookInline{C} be the code generated by \BookInline{g(x)} with code word length 7.}
+
+\BookExercise{a.}{Is \BookInline{C} cyclic?}
+
+\BookExercise{b.}{Find all the code words in the polynomial code \BookInline{C} of length 7 generated by \BookInline{g(x).}}
+
+\BookExercise{c.}{Can \BookInline{C} detect one-bit errors and if so, can \BookInline{C} correct one-bit errors?}
+
+\BookExercise{d.}{Can \BookInline{C} detect two-bit errors and if so, can \BookInline{C} correct two-bit errors?}
+
+\BookExercise{11.}{Find six polynomials \BookInline{g(x)\in \mathbb{Z}_{2}[x]} so that the code generated by \BookInline{g(x)} with code words of length 9 is a cyclic code.}
+
+\BookExercise{12.}{If the minimal weight among all nonzero code words in a cyclic linear code \BookInline{C\subseteq \mathbb{Z}_{2}^{n}} is 1, prove that \BookInline{C= \mathbb{Z}_{2}^{n}.}}
+
+\BookExercise{13.}{Let \BookInline{g(x)} be a polynomial in \BookInline{\mathbb{Z}_{2}[x].} Prove that if the polynomial code \BookInline{C} generated by \BookInline{g(x)} with length \BookInline{n} is cyclic, then \BookInline{g(x)} is a factor of \BookInline{x^{n}+ 1} in \BookInline{\mathbb{Z}_{2}[x].}}
+
+\BookExercise{14.}{Let \BookInline{C\subseteq \mathbb{Z}_{2}^{n}} be a linear code with \BookInline{d} the minimal weight among the nonzero code words. Determine necessary and sufficient conditions on \BookInline{d} for \BookInline{C} to correct \BookInline{k-}bit errors.}
+
+\BookExercise{15.}{Let \BookInline{C\subseteq \mathbb{Z}_{2}^{n}} be a linear code. Show that as a group\BookInline{,\allowbreak C} is isomorphic with \BookInline{\mathbb{Z}_{2}^{k}} for some \BookInline{k.}}
+
+\BookExercise{16.}{Is there a polynomial \BookInline{g(x)\in \mathbb{Z}_{2}[x]} such that the code generated by \BookInline{g(x)} of length 9 is the same code as in Example 29.5? Prove your answer.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

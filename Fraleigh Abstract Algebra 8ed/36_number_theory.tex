@@ -1,0 +1,279 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 36 Number Theory}
+\pdfbookmark[0]{Section 36 Number Theory}{36_number_theory}
+\ifdefined\BookMaster\else\setcounter{page}{292}\fi
+% Source PDF page 309; original printed page 292
+\BookSource{309}{292}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{36}{Number Theory}
+
+\noindent In this section we will show how the ideas in Section 35 can be used to derive some interesting results in number theory. We usually think of number theory as a study of properties of the integers, but Gauss expanded the study of numbers to include what is now called the Gaussian integers. The Gaussian integers form a subring of the complex numbers that, like the integers, form a Euclidean domain, but not a field. After studying the Gaussian integers, we will prove that for any prime number \BookInline{p\in \mathbb{Z}^{+ }} that is equivalent to 1 modulo \BookInline{4,\allowbreak p} can be written as the sum of two squares.
+
+\BookTextHeading{\textbf{Gaussian Integers}  }
+
+\BookLabel{36.1 Definition} \textbf{A Gaussian integer} is a complex number \BookInline{a+ } \textit{bi}, where \BookInline{a,\allowbreak b\in \mathbb{Z}.} For a Gaussian integer \BookInline{\alpha = a+ } \textit{bi}, the\textbf{ norm} \BookInline{N(\alpha )} \textbf{of} \BookInline{\alpha } is \BookInline{a^{2}+ b^{2}.}\BookEnd{\blacksquare}
+
+Although we defined \BookInline{N(\alpha )} for a Gaussian integer \BookInline{\alpha,\allowbreak } we can also think of \BookInline{N} as defined on any complex number using the same formula \BookInline{N(a+ } \textit{bi}\BookInline{)\; = a^{2}+ b^{2}.} This norm can also be written as \BookInline{N(\alpha )= |\alpha |^{2}.}
+
+We shall let \BookInline{\mathbb{Z}[i]} be the set of all Gaussian integers. The following lemma gives some basic properties of the norm function \BookInline{N} on \BookInline{\mathbb{Z}[i]} and leads to a demonstration that the function \BookInline{\nu } defined by \BookInline{\nu (\alpha )= N(\alpha )} for nonzero \BookInline{\alpha \in \mathbb{Z}[i]} is a Euclidean norm on \BookInline{\mathbb{Z}[i].} Note that the Gaussian integers include all the\textbf{ rational integers,} that is, all the elements of \BookInline{\mathbb{Z}.}
+
+\BookTextHeading{\textbf{HISTORICAL NOTE}  } \BookEnd{\blacksquare}
+
+\noindent In his\textit{ Disquisitiones Arithmeticae}, Gauss studied in detail the theory of quadratic residues, that is, the theory of solutions to the congruence \BookInline{x^{2}\equiv p} (mod \BookInline{q)} and proved the famous quadratic reciprocity theorem showing the relationship between the solutions of the congruences \BookInline{x^{2}\equiv p(}mod \BookInline{q)} and \BookInline{x^{2}\equiv q(}mod \BookInline{p)} where \BookInline{p} and \BookInline{q} are primes. In attempting to generalize his results to theories of quartic residues, however, Gauss realized that it was much more natural to consider the Gaussian integers rather than the ordinary integers.
+
+\noindent Gauss’s investigations of the Gaussian integers are contained in a long paper published in 1832 in which he proved various analogies between them and the ordinary integers. For example, after noting that there are four units (invertible elements) among the Gaussian integers, namely \BookInline{1,\allowbreak - 1,\allowbreak i,\allowbreak } and \BookInline{- i,\allowbreak } and defining the norm as in Definition 36.1, he generalized the notion of a prime integer by defining a prime Gaussian integer to be one that cannot be expressed as the product of two other integers, neither of them units. He was then able to determine which Gaussian integers are prime: A Gaussian integer that is not real is prime if and only if its norm is a real prime, which can only be 2 or of the form \BookInline{4n+ 1.} The real prime \BookInline{2= (1+ i)(1- i)} and real primes congruent to 1 modulo 4 like \BookInline{13= (2+ 3i)(2- 3i)} factor as the product of two Gaussian primes. Real primes of the form \BookInline{4n+ 3} like 7 and 11 are still prime in the domain of Gaussian integers. See Exercise 10.
+
+\BookLabel{36.2 Lemma}  In \BookInline{\mathbb{Z}[i],\allowbreak } the following properties of the norm function \BookInline{N} hold for all \BookInline{\alpha,\allowbreak \beta \in \mathbb{Z}[i]:} \BookInline{1.N(\alpha )\geq 0.} \BookInline{2.N(\alpha )= 0} if and only if \BookInline{\alpha = 0.} \BookInline{3.N(\alpha \beta )= N(\alpha )N(\beta ).} \textit{\textbf{Proof}} If we let \BookInline{\alpha = a_{1}+ a_{2}i} and \BookInline{\beta = b_{1}+ b_{2}i,\allowbreak } these results are all straightforward computations. We leave the proof of these properties as an exercise (see Exercise \BookInline{11).}\BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 310; original printed page 293
+\BookSource{310}{293}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+The proof of Lemma 36.2 does not depend on the complex numbers \BookInline{\alpha } and \BookInline{\beta } being Gaussian integers. In fact the three properties listed in the lemma are true for all complex numbers.
+
+\BookLabel{36.3 Lemma} \BookInline{\mathbb{Z}[i]} is an integral domain.
+
+\BookLabel{\textit{Proof}} It is obvious that \BookInline{\mathbb{Z}[i]} is a commutative ring with unity. We show that there are no divisors of 0. Let \BookInline{\alpha,\allowbreak \beta \in \mathbb{Z}[i].} Using Lemma 36.2, if \BookInline{\alpha \beta = 0} then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle N(\alpha )N(\beta )= N(\alpha \beta )= N(0)= 0.}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{\alpha \beta = 0} implies that \BookInline{N(\alpha )= 0} or \BookInline{N(\beta )= 0.} By Lemma 36.2 again, this implies that either \BookInline{\alpha = 0} or \BookInline{\beta = 0.} Thus \BookInline{\mathbb{Z}[i]} has no divisors of 0, so \BookInline{\mathbb{Z}[i]} is an integral domain\BookInline{.}\BookEnd{\blacklozenge}
+
+Of course, since \BookInline{\mathbb{Z}[i]} is a subring of \BookInline{\mathbb{C},\allowbreak } where \BookInline{\mathbb{C}} is the field of complex numbers, it is really obvious that \BookInline{\mathbb{Z}[i]} has no 0 divisors. We gave the argument of Lemma 36.3 to illustrate the use of the multiplicative property 3 of the norm function \BookInline{N} and to avoid going outside of \BookInline{\mathbb{Z}[i]} in our argument.
+
+However, in the proof of Theorem 36.4, we will use property 3 for complex numbers that are not Gaussian integers and therefore we will stay outside the Gaussian integers.
+
+\BookLabel{36.4 Theorem} The function \BookInline{\nu } given by \BookInline{\nu (\alpha )= N(\alpha )} for nonzero \BookInline{\alpha \in \mathbb{Z}[i]} is a Euclidean norm on \BookInline{\mathbb{Z}[i].} Thus \BookInline{\mathbb{Z}[i]} is a Euclidean domain.
+
+\BookLabel{\textit{Proof}} Note that for \BookInline{\beta = b_{1}+ b_{2}i\neq 0,\allowbreak N(b_{1}+ b_{2}i)= b_{1}^{2}+ b_{2}^{2},\allowbreak } so \BookInline{N(\beta )\geq 1.} Then for all \BookInline{\alpha,\allowbreak \beta \neq 0} in \BookInline{\mathbb{Z}[i],\allowbreak N(\alpha )\leq N(\alpha )N(\beta )= N(\alpha \beta ).} This proves Condition 2 for a Euclidean norm in Definition 35.1.
+
+It remains to prove the division algorithm, Condition 1, for \BookInline{N.} Let \BookInline{\alpha,\allowbreak \beta \in \mathbb{Z}[i],\allowbreak } with \BookInline{\alpha = a_{1}+ a_{2}i} and \BookInline{\beta = b_{1}+ b_{2}i,\allowbreak } where \BookInline{\beta \neq 0.} We must find \BookInline{\sigma } and \BookInline{\rho } in \BookInline{\mathbb{Z}[i]} such that \BookInline{\alpha = \beta \sigma + \rho,\allowbreak } where either \BookInline{\rho = 0} or \BookInline{N(\rho )<N(\beta )= b_{1}^{2}+ b_{2}^{2}.} Let \BookInline{\alpha /\beta = r+ si} for \BookInline{r,\allowbreak s\in \mathbb{Q}.} Let \BookInline{q_{1}} and \BookInline{q_{2}} be integers in \BookInline{\mathbb{Z}} as close as possible to the rational numbers \BookInline{r} and \BookInline{s,\allowbreak } respectively. Let \BookInline{\sigma = q_{1}+ q_{2}i} and \BookInline{\rho = \alpha - \beta \sigma.} If \BookInline{\rho = 0,\allowbreak } we are done. Otherwise, by construction of \BookInline{\sigma,\allowbreak } we see that \BookInline{|r- q_{1}|\leq \frac{1}{2}} and \BookInline{|s- q_{2}|\leq \frac{1}{2}.} Therefore
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}N\Biggl(\frac{\alpha}{\beta} - \sigma\Biggr) &= N((r + si) - (q_1 + q_2i)) \\&= N((r - q_1) + (s - q_2)i) \leq \Biggl(\frac{1}{2}\Biggr)^2 + \Biggl(\frac{1}{2}\Biggr)^2 = \frac{1}{2}.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Thus we obtain
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle N ( \rho ) = N ( \alpha - \beta \sigma ) = N \biggl ( \beta \biggl ( \frac { \alpha } { \beta } - \sigma \biggr ) \biggr ) = N ( \beta ) N \biggl ( \frac { \alpha } { \beta } - \sigma \biggr ) \leq N ( \beta ) \frac { 1 } { 2 } ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so we do indeed have \BookInline{N(\rho )<N(\beta )} as desired. \BookEnd{\blacklozenge}
+
+\BookLabel{36.5 Example} We can now apply all our results of Section 35 to \BookInline{\mathbb{Z}[i].} In particular, since \BookInline{N(1)= 1,\allowbreak } the units of \BookInline{\mathbb{Z}[i]} are exactly the \BookInline{\alpha = a_{1}+ a_{2}i} with \BookInline{N(\alpha )= a_{1}^{2}+ a_{2}^{2}= 1.} From the fact that \BookInline{a_{1}} and \BookInline{a_{2}} are integers, it follows that the only possibilities are \BookInline{a_{1}= \pm 1} with \BookInline{a_{2}= 0,\allowbreak } or \BookInline{a_{1}= 0} with \BookInline{a_{2}= \pm 1.} Thus the units of \BookInline{\mathbb{Z}[i]} are \BookInline{\pm 1} and \BookInline{\pm i.} One can also use the Euclidean Algorithm to compute a gcd of two nonzero elements. We leave such computations to the exercises. Finally, note that while 5 is an irreducible in \BookInline{\mathbb{Z},\allowbreak } 5 is no longer an irreducible in \BookInline{\mathbb{Z}[i],\allowbreak } for \BookInline{5= (1+ 2i)(1- 2i),\allowbreak } and neither \BookInline{1+ 2i} nor \BookInline{1- 2i} is a unit\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 311; original printed page 294
+\BookSource{311}{294}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Multiplicative Norms}  }
+
+\noindent Let us point out again that for an integral domain \BookInline{D,\allowbreak } \textit{the arithmetic concepts of irre}\textit{ducibles and units are not affected in any way by} \BookInline{a} \textit{norm that may be defined on the} \textit{domain}. However, as the preceding section and our work thus far in this section show, a suitably defined norm may be of help in determining the arithmetic structure of \BookInline{D.} This is strikingly illustrated in\textit{ algebraic number theory}, where for a domain of\textit{ algebraic} \textit{integers} we consider many different norms of the domain, each doing its part in helping to uncover the arithmetic structure of the domain. In a domain of algebraic integers, we have essentially one norm for each irreducible (up to associates), and each such norm gives information concerning the behavior in the integral domain of the irreducible to which it corresponds. This is an example of the importance of studying properties of elements in an algebraic structure by means of mappings associated with them.
+
+Let us study integral domains that have a multiplicative norm satisfying Properties 2 and 3 of \BookInline{N} on \BookInline{\mathbb{Z}[i]} given in Lemma 36.2.
+
+\BookLabel{36.6 Definition} Let \BookInline{D} be an integral domain. A\textbf{ multiplicative norm} \BookInline{N} \textbf{on} \BookInline{D} is a function mapping \BookInline{D} into the integers \BookInline{\mathbb{Z}} such that the following conditions are satisfied:
+
+\BookExercise{1.}{\BookInline{N(\alpha )= 0} if and only if \BookInline{\alpha = 0.}}
+
+\BookExercise{2.}{\BookInline{N(\alpha \beta )= N(\alpha )N(\beta )} for all \BookInline{\alpha,\allowbreak \beta \in D.}} \BookEnd{\blacksquare}
+
+\BookLabel{36.7 Theorem} If \BookInline{D} is an integral domain with a multiplicative norm \BookInline{N,\allowbreak } then \BookInline{N(1)= 1} and \BookInline{|N(u)|= 1} for every unit \BookInline{u} in \BookInline{D.} If, furthermore, every \BookInline{\alpha } such that \BookInline{|N(\alpha )|= 1} is a unit in \BookInline{D,\allowbreak } then an element \BookInline{\pi } in \BookInline{D,\allowbreak } with \BookInline{|N(\pi )|= p} for a prime \BookInline{p\in \mathbb{Z},\allowbreak } is an irreducible of \BookInline{D.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{D} be an integral domain with a multiplicative norm \BookInline{N.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle N(1)= N((1)(1))= N(1)N(1)}\end{adjustbox}\end{center}
+
+\noindent shows that \BookInline{N(1)= 1.} Also, if \BookInline{u} is a unit in \BookInline{D,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 1= N(1)= N(uu^{- 1})= N(u)N(u^{- 1}).}\end{adjustbox}\end{center}
+
+\noindent Since \BookInline{N(u)} is an integer, this implies that \BookInline{|N(u)|= 1.}
+
+Now suppose that the units of \BookInline{D} are\textit{ exactly} the elements of norm \BookInline{\pm 1.} Let \BookInline{\pi \in D} be such that \BookInline{|N(\pi )|= p,\allowbreak } where \BookInline{p} is a prime in \BookInline{\mathbb{Z}.} Then if \BookInline{\pi = \alpha \beta,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle p= |N(\pi )|= |N(\alpha )N(\beta )|= |N(\alpha )||N(\beta )|,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so either \BookInline{|N(\alpha )|= 1} or \BookInline{|N(\beta )|= 1.} By assumption, this means that either \BookInline{\alpha } or \BookInline{\beta } is a unit of \BookInline{D.} Thus \BookInline{\pi } is an irreducible of \BookInline{D.}\BookEnd{\blacklozenge}
+
+\BookLabel{36.8 Example} On \BookInline{\mathbb{Z}[i],\allowbreak } the function \BookInline{N} defined by \BookInline{N(a+ } \textit{bi}\BookInline{)\; = a^{2}+ b^{2}} gives a multiplicative norm in the sense of our definition. We saw that the function \BookInline{\nu } given by \BookInline{\nu (\alpha )= N(\alpha )} for nonzero \BookInline{\alpha \in \mathbb{Z}[i]} is a Euclidean norm on \BookInline{\mathbb{Z}[i],\allowbreak } so the units are precisely the elements \BookInline{\alpha } of \BookInline{\mathbb{Z}[i]} with \BookInline{N(\alpha )= N(1)= 1.} Thus the second part of Theorem 36.7 applies in \BookInline{\mathbb{Z}[i].} We saw in Example 36.5 that 5 is not an irreducible in \BookInline{\mathbb{Z}[i],\allowbreak } for \BookInline{5= (1+ 2i)(1- 2i).} Since \BookInline{N(1+ 2i)= N(1- 2i)= 1^{2}+ 2^{2}= 5} and 5 is a prime in \BookInline{\mathbb{Z},\allowbreak } we see from Theorem 36.7 that \BookInline{1+ 2i} and \BookInline{1- 2i} are both irreducibles in \BookInline{\mathbb{Z}[i].}\BookEnd{\blacktriangle}
+
+As an application of mutiplicative norms, we shall now give another example of an integral domain that is\textit{ not} a UFD. We saw one example in Example 34.17. The following is the standard illustration.
+
+\BookLabel{36.9 Example} Let \BookInline{\mathbb{Z}[\sqrt{- }5]= \{a+ ib\sqrt{5}\mid a,\allowbreak b\in \mathbb{Z}\}.} As a subset of the complex numbers closed under addition, subtraction, and multiplication, and containing 0 and \BookInline{1,\allowbreak \mathbb{Z}[\sqrt{- }5]} is an integral 
+% Source PDF page 312; original printed page 295
+\BookSource{312}{295}
+domain. Define \BookInline{N} on \BookInline{\mathbb{Z}[\sqrt{- }5]} by
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle N(a+ b\sqrt{- }5)= a^{2}+ 5b^{2}.}\end{adjustbox}\end{center}
+
+(Here \BookInline{\sqrt{- }5= i\sqrt{5}.)} Clearly\BookInline{,\allowbreak N(\alpha )= 0} if and only if \BookInline{\alpha = a+ b\sqrt{- }5= 0.} That \BookInline{N(\alpha \beta )= N(\alpha )N(\beta )} is a straightforward computation that we leave to the exercises (see Exercise 12). Let us find all candidates for units in \BookInline{\mathbb{Z}[\sqrt{- }5]} by finding all elements \BookInline{\alpha } in \BookInline{\mathbb{Z}[\sqrt{- }5]} with \BookInline{N(\alpha )= 1.} If \BookInline{\alpha = a+ b\sqrt{- }5,\allowbreak } and \BookInline{N(\alpha )= 1,\allowbreak } we must have \BookInline{a^{2}+ 5b^{2}= 1} for\textit{ integers} \BookInline{a} and \BookInline{b.} This is possible only if \BookInline{b= 0} and \BookInline{a= \pm 1.} Hence \BookInline{\pm 1} are the only candidates for units. Since \BookInline{\pm 1} are units, they are then precisely the units in \BookInline{\mathbb{Z}[\sqrt{- }5].}
+
+Now in \BookInline{\mathbb{Z}[\sqrt{- }5],\allowbreak } we have \BookInline{21= (3)(7)} and also
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 21= (1+ 2\sqrt{- }5)(1- 2\sqrt{- }5).}\end{adjustbox}\end{center}
+
+If we can show that \BookInline{3,\allowbreak 7,\allowbreak 1+2\sqrt{-5}} and \BookInline{1- 2\sqrt{- }5} are all irreducibles in \BookInline{\mathbb { Z } [ { \sqrt { - 5 } } ],\allowbreak } we will then know that \BookInline{\mathbb{Z}[\sqrt{- }5]} cannot be a UFD, since neither 3 nor 7 is \BookInline{\pm (1+ 2\sqrt{- }5).}
+
+Suppose that \BookInline{3= \alpha \beta.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 9= N(3)= N(\alpha )N(\beta )}\end{adjustbox}\end{center}
+
+\noindent shows that we must have \BookInline{N(\alpha )= 1,\allowbreak 3,\allowbreak } or 9. If \BookInline{N(\alpha )= 1,\allowbreak } then \BookInline{\alpha } is a unit. If \BookInline{\alpha = a+ } \BookInline{b\sqrt{- }5,\allowbreak } then \BookInline{N(\alpha )= a^{2}+ 5b^{2},\allowbreak } and for no choice of integers \BookInline{a} and \BookInline{b} is \BookInline{N(\alpha )= 3.} If \BookInline{N(\alpha )= 9,\allowbreak } then \BookInline{N(\beta )= 1,\allowbreak } so \BookInline{\beta } is a unit. Thus from \BookInline{3= \alpha \beta }, we can conclude that either \BookInline{\alpha } or \BookInline{\beta } is a unit. Therefore, 3 is an irreducible in \BookInline{\mathbb{Z}[\sqrt{- }5].} A similar argument shows that 7 is also an irreducible in \BookInline{\mathbb{Z}[\sqrt{- }5].}
+
+If \BookInline{1+ 2\sqrt{- }5= \gamma \delta,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 21= N(1+ 2\sqrt{- }5)= N(\gamma )N(\delta ).}\end{adjustbox}\end{center}
+
+so \BookInline{N(\gamma )= 1,\allowbreak 3,\allowbreak 7,\allowbreak } or 21. We have seen that there is no element of \BookInline{\mathbb{Z}[\sqrt{- }5]} of norm 3 or 7. Thus either \BookInline{N(\gamma )= 1}, and \BookInline{\gamma } is a unit, or \BookInline{N(\gamma )= 21}, so \BookInline{N(\delta )= 1,\allowbreak } and \BookInline{\delta } is a unit. Therefore\BookInline{,\allowbreak 1+ 2\sqrt{- }5} is an irreducible in \BookInline{\mathbb{Z}[\sqrt{- }5].} A parallel argument shows that \BookInline{1- 2\sqrt{- }5} is also an irreducible in \BookInline{\mathbb{Z}[\sqrt{- }5].}
+
+In summary, we have shown that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb{Z}[\sqrt{- }5]= \{a+ ib\sqrt{5}\mid a,\allowbreak b\in \mathbb{Z}\}}\end{adjustbox}\end{center}
+
+\noindent \textit{is an integral domain but not} \BookInline{a} \textit{UFD}. In particular, there are two\textit{ different} factorizations
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 21= 3\cdot 7= (1+ 2\sqrt{- }5)(1- 2\sqrt{- }5)}\end{adjustbox}\end{center}
+
+\noindent of 21 into irreducibles. These irreducibles cannot be primes, for the property of a prime enables us to prove uniqueness of factorization (see the proof of Theorem \BookInline{34.18).}\BookEnd{\blacktriangle}
+
+We conclude with a classical application, determining which primes \BookInline{p} in \BookInline{\mathbb{Z}} are equal to a sum of squares of two integers in \BookInline{\mathbb{Z}.} For example\BookInline{,\allowbreak 2= 1^{2}+ 1^{2},\allowbreak 5= 1^{2}+ 2^{2},\allowbreak } and \BookInline{13= 2^{2}+ 3^{2}} are sums of squares. Since we have now answered this question for the only even prime number, 2, we can restrict ourselves to odd primes.
+
+\BookLabel{36.10 Theorem} \textbf{(Fermat’s} \BookInline{p= a^{2}+ b^{2}} \textbf{Theorem)} Let \BookInline{p} be an odd prime in \BookInline{\mathbb{Z}.} Then \BookInline{p= a^{2}+ b^{2}} for integers \BookInline{a} and \BookInline{b} in \BookInline{\mathbb{Z}} if and only if \BookInline{p\equiv 1(}mod 4).
+
+\BookLabel{\textit{Proof}} First, suppose that \BookInline{p= a^{2}+ b^{2}.} Now \BookInline{a} and \BookInline{b} cannot both be even or both be odd since \BookInline{p} is an odd number. If \BookInline{a= 2r} and \BookInline{b= 2s+ 1,\allowbreak } then \BookInline{a^{2}+ b^{2}= 4r^{2}+ 4(s^{2}+ s)+ 1,\allowbreak } so \BookInline{p\equiv 1(}mod 4). This takes care of one direction for this “if and only if” theorem.
+
+For the other direction, we assume that \BookInline{p\equiv 1(}mod 4). Now the multiplicative group of nonzero elements of the finite field \BookInline{\mathbb{Z}_{p}} is cyclic, and has order \BookInline{p- 1.} Since
+
+\end{BookBody}
+
+% Source PDF page 313; original printed page 296
+\BookSource{313}{296}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent 4 is a divisor of \BookInline{p- 1,\allowbreak } we see that \BookInline{\mathbb{Z}_{p}} contains an element \BookInline{n} of multiplicative order 4. It follows that \BookInline{n^{2}} has multiplicative order 2, so \BookInline{n^{2}= - 1} in \BookInline{\mathbb{Z}_{p}.} Thus in \BookInline{\mathbb{Z},\allowbreak } we have \BookInline{n^{2}\equiv - 1(}mod \BookInline{p),\allowbreak } so \BookInline{p} divides \BookInline{n^{2}+ 1} in \BookInline{\mathbb{Z}.}
+
+Viewing \BookInline{p} and \BookInline{n^{2}+ 1} in \BookInline{\mathbb{Z}[i],\allowbreak } we see that \BookInline{p} divides \BookInline{n^{2}+ 1= (n+ i)(n- i).} Suppose that \BookInline{p} is irreducible in \BookInline{\mathbb{Z}[i];} then \BookInline{p} would have to divide \BookInline{n+ i} or \BookInline{n- i.} If \BookInline{p} divides \BookInline{n+ i,\allowbreak } then \BookInline{n+ i= p(a+ } \textit{bi}) for some \BookInline{a,\allowbreak b\in \mathbb{Z}.} Equating coefficients of \BookInline{i,\allowbreak } we obtain \BookInline{1= pb,\allowbreak } which is impossible. Similarly\BookInline{,\allowbreak p} divides \BookInline{n- i} would lead to an impossible equation \BookInline{- 1= pb.} Thus our assumption that \BookInline{p} is irreducible in \BookInline{\mathbb{Z}[i]} must be false.
+
+Since \BookInline{p} is not irreducible in \BookInline{\mathbb{Z}[i],\allowbreak } we have \BookInline{p= (a+ } \textit{bi}\BookInline{)(c+ } \textit{di}) where neither \BookInline{a+ } \textit{bi} nor \BookInline{c+ } \textit{di} is a unit. Taking norms, we have \BookInline{p^{2}= (a^{2}+ b^{2})(c^{2}+ d^{2})} where neither \BookInline{a^{2}+ b^{2}= 1} nor \BookInline{c^{2}+ d^{2}= 1.} Consequently, we have \BookInline{p= a^{2}+ b^{2},\allowbreak } which completes our proof. [Since \BookInline{a^{2}+ b^{2}= (a+ } \textit{bi}\BookInline{)(a- } \textit{bi}), we see that this is the factorization of \BookInline{p,\allowbreak } that is\BookInline{,\allowbreak c+ } \textit{di} \BookInline{= a- } \textit{bi}\BookInline{.]}\BookEnd{\blacklozenge}
+
+\noindent Exercise 10 asks you to determine which primes \BookInline{p} in \BookInline{\mathbb{Z}} remain irreducible in \BookInline{\mathbb{Z}[i].}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{36}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 4, factor the Gaussian integer into a product of irreducibles in \BookInline{\mathbb{Z}[i].[}\textit{Hint:} Since an irreducible factor of \BookInline{\alpha \in \mathbb{Z}[i]} must have norm \BookInline{>1} and dividing \BookInline{N(\alpha ),\allowbreak } there are only a finite number of Gaussian integers \BookInline{a+ } \textit{bi} to consider as possible irreducible factors of a given \BookInline{\alpha.} Divide \BookInline{\alpha } by each of them in \BookInline{\mathbb{C},\allowbreak } and see for which ones the quotient is again in \BookInline{\mathbb{Z}[i].]}
+
+\BookExercise{1.}{5}
+
+\BookExercise{2.}{7}
+
+\BookExercise{3.}{\BookInline{4+ 3i}}
+
+\BookExercise{4.}{\BookInline{6- 7i}}
+
+\BookExercise{5.}{Show that 6 does not factor uniquely (up to associates) into irreducibles in \BookInline{\mathbb{Z}[\sqrt{- }5].} Exhibit two different factorizations.}
+
+\BookExercise{6.}{Consider \BookInline{\alpha = 7+ 2i} and \BookInline{\beta = 3- 4i} in \BookInline{\mathbb{Z}[i].} Find \BookInline{\sigma } and \BookInline{\rho } in \BookInline{\mathbb{Z}[i]} such that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha = \beta \sigma + \rho \;\text{with}\;N(\rho )<N(\beta ).}\end{adjustbox}\end{center}
+
+\noindent [\textit{Hint:} Use the construction in the proof of Theorem 36.4.
+
+\BookExercise{7.}{Use a Euclidean algorithm in \BookInline{\mathbb{Z}[i]} to find a gcd of \BookInline{8+ 6i} and \BookInline{5- 15i} in \BookInline{\mathbb{Z}[i].[}\textit{Hint:} Use the construction in the proof of Theorem 36.4.]}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{8.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.\mathbb{Z}[i]} is a PID.}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.\mathbb{Z}[i]} is a Euclidean domain.}
+
+\BookExercise{c.}{Every integer in \BookInline{\mathbb{Z}} is a Gaussian integer.}
+
+\BookExercise{d.}{Every complex number is a Gaussian integer.}
+
+\BookExercise{e.}{A Euclidean algorithm holds in \BookInline{\mathbb{Z}[i].}}
+
+\BookExercise{f.}{A multiplicative norm on an integral domain is sometimes an aid in finding irreducibles of the domain.}
+
+\BookExercise{g.}{If \BookInline{N} is a multiplicative norm on an integral domain \BookInline{D,\allowbreak } then \BookInline{|N(u)|= 1} for every unit \BookInline{u} of \BookInline{D.}}
+
+\BookExercise{h.}{If \BookInline{F} is a field, then the function \BookInline{N} defined by \BookInline{N(f(x))= (}degree of \BookInline{f(x))} is a multiplicative norm on \BookInline{F[x].}}
+
+\BookExercise{i.}{If \BookInline{F} is a field, then the function defined by \BookInline{N(f(x))= 2^{(}}degree of \BookInline{f(x))} for \BookInline{f(x)\neq 0} and \BookInline{N(0)= 0} is a multiplicative norm on \BookInline{F[x]} according to our definition.}
+
+\noindent \textbf{j}\BookInline{.\mathbb{Z}[\sqrt{- }5]} is an integral domain but not a UFD.
+
+\BookExercise{9.}{Let \BookInline{D} be an integral domain with a multiplicative norm \BookInline{N} such that \BookInline{|N(\alpha )|= 1} for \BookInline{\alpha \in D} if and only if \BookInline{\alpha } is a unit of \BookInline{D.} Let \BookInline{\pi } be such that \BookInline{|N(\pi )|} is minimal among all \BookInline{|N(\beta )|>1} for \BookInline{\beta \in D.} Show that \BookInline{\pi } is an irreducible of \BookInline{D.}}
+
+\end{BookBody}
+
+% Continuation on source PDF page 314, preceding Section 37
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{10.}{\textbf{. a} Show that 2 is equal to the product of a unit and the square of an irreducible in \BookInline{\mathbb{Z}[i].}}
+
+\BookExercise{b.}{Show that an odd prime \BookInline{p} in \BookInline{\mathbb{Z}} is irreducible in \BookInline{\mathbb{Z}[i]} if and only if \BookInline{p\equiv 3(}mod 4). (Use Theorem 36.10.)}
+
+\BookExercise{11.}{Prove Lemma 36.2.}
+
+\BookExercise{12.}{Prove that \BookInline{N} of Example 36.9 is multiplicative, that is, that \BookInline{N(\alpha \beta )= N(\alpha )N(\beta )} for \BookInline{\alpha,\allowbreak \beta \in \mathbb{Z}[\sqrt{- }5].}}
+
+\BookExercise{13.}{Let \BookInline{D} be an integral domain with a multiplicative norm \BookInline{N} such that \BookInline{|N(\alpha )|= 1} for \BookInline{\alpha \in D} if and only if \BookInline{\alpha } is a unit of \BookInline{D.} Show that every nonzero nonunit of \BookInline{D} has a factorization into irreducibles in \BookInline{D.}}
+
+\BookExercise{14.}{Use a Euclidean algorithm in \BookInline{\mathbb{Z}[i]} to find a gcd of \BookInline{16+ 7i} and \BookInline{10- 5i} in \BookInline{\mathbb{Z}[i].[}\textit{Hint:} Use the construction in the proof of Theorem 36.4.]}
+
+\BookExercise{15.}{Let \BookInline{\langle \alpha \rangle } be a nonzero principal ideal in \BookInline{\mathbb{Z}[i].}}
+
+\BookExercise{a.}{Show that \BookInline{\mathbb{Z}[i]/\langle \alpha \rangle } is a finite ring. [\textit{Hint:} Use the division algorithm.]}
+
+\BookExercise{b.}{Show that if \BookInline{\sigma } is an irreducible of \BookInline{\mathbb{Z}[i],\allowbreak } then \BookInline{\mathbb{Z}[i]/\langle \sigma \rangle } is a field.}
+
+\BookExercise{c.}{Referring to part (b), find the order and characteristic of each of the following fields.}
+
+\BookExercise{i.}{\textbf{i}\BookInline{.\mathbb{Z}[i]/\langle 3\rangle } \textbf{ii}\BookInline{.\mathbb{Z}[i]/\langle 1+ i\rangle } \textbf{iii}\BookInline{.\mathbb{Z}[i]/\langle 1+ 2i\rangle }}
+
+\BookExercise{16.}{Let \BookInline{n\in \mathbb{Z}^{+ }} be square free, that is, not divisible by the square of any prime integer. Let \BookInline{\mathbb{Z}[\sqrt{- }n]= \{a+ } \BookInline{ib\sqrt{n}|a,\allowbreak b\in \mathbb{Z}\}.}}
+
+\textbf{a.} Show that the norm \BookInline{N,\allowbreak } defined by \BookInline{N(\alpha )= a^{2}+ nb^{2}} for \BookInline{\alpha = a+ ib\sqrt{n},\allowbreak } is a multiplicative norm on \BookInline{\mathbb{Z}[\sqrt{- }n].} \textbf{b.} Show that \BookInline{N(\alpha )= 1} for \BookInline{\alpha \in \mathbb{Z}[\sqrt{- }n]} if and only if \BookInline{\alpha } is a unit of \BookInline{\mathbb{Z}[\sqrt{- }n].}
+
+\textbf{c.} Show that every nonzero \BookInline{\alpha \in \mathbb{Z}[\sqrt{- }n]} that is not a unit has a factorization into irreducibles in \BookInline{\mathbb{Z}[\sqrt{- }n].} [\textit{Hint:} Use part (b).]
+
+\BookExercise{17.}{Repeat Exercise 16 for \BookInline{\mathbb{Z}[\sqrt{n}]=\{a+b\sqrt{n} \mid a,\allowbreak b\in\mathbb{Z}\}} for square free \BookInline{n>1,\allowbreak } with \BookInline{N} defined by \BookInline{N(\alpha )= } \BookInline{a^{2}- nb^{2}} for \BookInline{\alpha = a+ b\sqrt{n}} in \BookInline{\mathbb{Z}[\sqrt{n}].} For part b show \BookInline{|N(\alpha )|= 1.}}
+
+\BookExercise{18.}{Show by a construction analogous to that given in the proof of Theorem 36.4 that the division algorithm holds in the integral domain \BookInline{\mathbb{Z}[\sqrt{- }2]} for \BookInline{\nu (\alpha )= N(\alpha )} for nonzero \BookInline{\alpha } in this domain (see Exercise 16). (Thus this domain is Euclidean. See Hardy and Wright [29] for a discussion of which domains \BookInline{\mathbb{Z}[\sqrt{n}]} and \BookInline{\mathbb{Z}[\sqrt{- }n]} are Euclidean.)}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

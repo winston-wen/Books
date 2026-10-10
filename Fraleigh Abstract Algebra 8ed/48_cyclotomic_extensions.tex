@@ -1,0 +1,267 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 48 Cyclotomic Extensions}
+\pdfbookmark[0]{Section 48 Cyclotomic Extensions}{48_cyclotomic_extensions}
+\ifdefined\BookMaster\else\setcounter{page}{378}\fi
+% Source PDF page 395; original printed page 378
+\BookSource{395}{378}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{48}{Cyclotomic Extensions}
+
+\BookTextHeading{\textbf{The Galois Group of a Cyclotomic Extension}  }
+
+\noindent In this section we consider subfields of the complex numbers obtained by adjoining roots of unity to the rational numbers\BookInline{,\allowbreak \mathbb{Q}.} We apply Galois theory to these extensions to determine which regular \BookInline{n-}gons are constructible.
+
+\BookLabel{48.1 Definition} The splitting field of \BookInline{x^{n}- 1} over a field \BookInline{F} is the \BookInline{n}\textbf{th cyclotomic extension of} \BookInline{F.}\BookEnd{\blacksquare}
+
+Since fields of characteristic zero are perfect, the splitting field\BookInline{,\allowbreak K,\allowbreak } of \BookInline{f(x)= x^{n}- 1} over \BookInline{\mathbb{Q}} is separable and thus a normal extension of \BookInline{\mathbb{Q}.} The distinct \BookInline{n} zeros of \BookInline{f(x)} form a cyclic group \BookInline{U_{n}.(}See Section 3.) We saw in Corollary 6.17 that the number of generators of a cyclic group of order \BookInline{n} is the number of positive integers less than \BookInline{n} that are relatively prime to \BookInline{n,\allowbreak } which we defined to be the Euler phi-function \BookInline{\varphi (n).} These \BookInline{\varphi (n)} generators are exactly the primitive \BookInline{n}th roots of unity.
+
+\BookLabel{48.2 Definition} The polynomial
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Phi _{n}(x)= \prod _{i= 1}^{\varphi (n)}(x- \alpha _{i})}\end{adjustbox}\end{center}
+
+\noindent where the \BookInline{\alpha _{i}} are the primitive \BookInline{n}th roots of unity in \BookInline{\mathbb{Q},\allowbreak } is the \BookInline{n}\textbf{th cyclotomic polynomial} \textbf{over} \BookInline{\mathbb{Q}.}\BookEnd{\blacksquare}
+
+Let \BookInline{\sigma \in G(K/\mathbb{Q}).} Since an automorphism of the Galois group \BookInline{G(K/\mathbb{Q})} must permute the primitive \BookInline{n}th roots of unity, we see that \BookInline{\sigma _{x}(\Phi _{n}(x))= \Phi _{n}(x),\allowbreak } where \BookInline{\sigma _{x}:K[x]\to } \BookInline{K[x]} is the polynomial extension of \BookInline{\sigma.} Thus the coefficients of \BookInline{\Phi _{n}} are fixed by every \BookInline{\sigma \in G(K/\mathbb{Q}),\allowbreak } and therefore, all the coefficients of \BookInline{\Phi _{n}(x)} are rational numbers. That is, \BookInline{\Phi _{n}(x)\in \mathbb{Q}[x].} The \BookInline{n}th cyclotomic polynomial \BookInline{\Phi _{n}(x)} must divide \BookInline{x^{n}- 1,\allowbreak } so \BookInline{\Phi _{n}(x)\in } \BookInline{\mathbb{Z}[x]} by Theorem 28.12. For \BookInline{p} a prime number, Corollary 28.18 says that \BookInline{\Phi _{p}(x)} is irreducible over \BookInline{\mathbb{Q}.} Although we do not prove it here, it can be shown that \BookInline{\Phi _{n}(x)} is irreducible even when \BookInline{n\geq 2} is not a prime number.
+
+\end{BookBody}
+
+% Source PDF page 396; original printed page 379
+\BookSource{396}{379}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent Carl Gauss considered cyclotomic polynomials in the final chapter of his\textit{ Disquisitiones} \textit{Arithmeticae} of 1801. In that chapter, he gave a constructive procedure for actually determining the roots of \BookInline{\Phi _{p}(x)} in the case where \BookInline{p} is prime. Gauss’s method, which became an important example for Galois in the development of the general theory, was to solve a series of auxiliary equations, each of degree a prime factor of \BookInline{p- 1,\allowbreak } with the coefficients of each in turn being determined by the roots of the previous equation. Gauss, of course, knew that the roots of \BookInline{\Phi _{p}(x)} were all powers of one of them, say \BookInline{\zeta.} He determined the auxiliary equations by taking certain sets of sums of the roots \BookInline{\zeta ^{j},\allowbreak } which were the desired roots of these equations. For example, in the case where \BookInline{p= 19(}and \BookInline{p- 1= 18= } \BookInline{3\times 3\times 2),\allowbreak } Gauss needed to find two equations of degree 3 and one of degree 2 as his auxiliaries.
+
+It turned out that the first one had the three roots\BookInline{,\allowbreak \alpha _{1}= \zeta + \zeta ^{8}+ \zeta ^{7}+ \zeta ^{18}+ \zeta ^{11}+ \zeta ^{12},\allowbreak \alpha _{2}= } \BookInline{\zeta ^{2}+ \zeta ^{16}+ \zeta ^{14}+ \zeta ^{17}+ \zeta ^{3}+ \zeta ^{5},\allowbreak } and \BookInline{\alpha _{3}= \zeta ^{4}+ } \BookInline{\zeta ^{13}+ \zeta ^{9}+ \zeta ^{15}+ \zeta ^{6}+ \zeta ^{10}.} In fact, these three values are the roots of the cubic equation \BookInline{x^{3}+ x^{2}- } \BookInline{6x- 7.} Gauss then found a second cubic equation, with coefficients involving the \BookInline{\alpha }’s, whose roots were sums of two of the powers of \BookInline{\zeta,\allowbreak } and finally a quadratic equation, whose coefficients involved the roots of the previous equation, which had \BookInline{\zeta } as one of its roots. Gauss then asserted (without a complete proof) that each auxiliary equation can in turn be reduced to an equation of the form \BookInline{x^{m}- A,\allowbreak } which clearly can be solved by radicals. That is, he showed that the solvability of the Galois group in this case, the cyclic group of order \BookInline{p- 1,\allowbreak } implied that the cyclotomic equation was solvable in terms of radicals. (See Section 49.)
+
+Let \BookInline{i} be the usual complex zero of \BookInline{x^{2}+ 1.} Our work with complex numbers in Section 3 shows that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \left( \cos \frac{2\pi}{n} + i \sin \frac{2\pi}{n} \right)^n = \cos 2\pi + i \sin 2\pi = 1,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so cos\BookInline{(2\pi /n)+ i} sin\BookInline{(2\pi /n)} is an \BookInline{n}th root of unity. The least integer \BookInline{m} such that (cos\BookInline{(2\pi /n)+ i} sin\BookInline{(2\pi /n))^{m}= 1} is \BookInline{n.} \textit{Thus} cos\BookInline{(2\pi /n)+ i} sin\BookInline{(2\pi /n)} \textit{is} \BookInline{a} \textit{primitive} n\textit{th} \textit{root of unity}\BookInline{,\allowbreak a} \textit{zero of}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Phi _{n}(x)\in \mathbb{Q}[x].}\end{adjustbox}\end{center}
+
+\BookLabel{48.3 Example} A primitive 8th root of unity in \BookInline{\mathbb{C}} is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\zeta &= \cos \frac{2\pi}{8} + i \sin \frac{2\pi}{8} \\&= \cos \frac{\pi}{4} + i \sin \frac{\pi}{4} \\&= \frac{1}{\sqrt{2}} + i \frac{1}{\sqrt{2}} = \frac{1 + i}{\sqrt{2}}.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent By the theory of cyclic groups, in particular by Corollary 6.17, all the primitive 8th roots of unity in \BookInline{\mathbb{Q}} are \BookInline{\zeta,\allowbreak \zeta ^{3},\allowbreak \zeta ^{5},\allowbreak } and \BookInline{\zeta ^{7},\allowbreak } so
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Phi _{8}(x)= (x- \zeta )(x- \zeta ^{3})(x- \zeta ^{5})(x- \zeta ^{7}).}\end{adjustbox}\end{center}
+
+\noindent We can compute, directly from this expression\BookInline{,\allowbreak \Phi _{8}(x)= x^{4}+ 1(}see Exercise 1). Compare this with Example \BookInline{47.7.}\BookEnd{\blacktriangle}
+
+Let us assume, without proof, that \BookInline{\Phi _{n}(x)} is irreducible over \BookInline{\mathbb{Q}.} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \zeta = \cos \frac{2\pi}{n} + i \sin \frac{2\pi}{n},\allowbreak }\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 397; original printed page 380
+\BookSource{397}{380}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent so that \BookInline{\zeta } is a primitive \BookInline{n}th root of unity. Note that \BookInline{\zeta } is a generator of the cyclic multiplicative group of order \BookInline{n} consisting of\textit{ all} \BookInline{n}th roots of unity. All the primitive \BookInline{n}th roots of unity, that is, all the generators of this group, are of the form \BookInline{\zeta ^{m}} for \BookInline{1\leq m<n} and \BookInline{m} relatively prime to \BookInline{n.} The field \BookInline{\mathbb{Q}(\zeta )} is the whole splitting field of \BookInline{x^{n}- 1} over \BookInline{\mathbb{Q}.} Let \BookInline{K= \mathbb{Q}(\zeta ).} If \BookInline{\zeta ^{m}} is another primitive \BookInline{n}th root of unity, then since \BookInline{\zeta } and \BookInline{\zeta ^{m}} are conjugate over \BookInline{\mathbb{Q},\allowbreak } there is an automorphism \BookInline{\tau _{m}} in \BookInline{G(K/\mathbb{Q})} mapping \BookInline{\zeta } onto \BookInline{\zeta ^{m}.} Let \BookInline{\tau _{r}} be the similar automorphism in \BookInline{G(K/\mathbb{Q})} corresponding to a primitive \BookInline{n}th root of unity \BookInline{\zeta ^{r}.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (\tau _{m}\tau _{r})(\zeta )= \tau _{m}(\zeta ^{r})= (\tau _{m}(\zeta ))^{r}= (\zeta ^{m})^{r}= \zeta ^{rm}.}\end{adjustbox}\end{center}
+
+\noindent This shows that composing automorphisms \BookInline{\tau _{m}} and \BookInline{\tau _{r}} corresponds to multiplying \BookInline{m} and \BookInline{r} modulo \BookInline{n.} In other words, the Galois group \BookInline{G(K/\mathbb{Q})} is isomorphic with the group of units in \BookInline{\mathbb{Z}_{n}} under multiplication, with the isomorphism mapping \BookInline{\tau _{m}} to \BookInline{m.} The units in \BookInline{\mathbb{Z}_{n}} are the numbers less than \BookInline{n} that are relatively prime to \BookInline{n.} Thus \BookInline{G(K/\mathbb{Q})} is an abelian group with \BookInline{\varphi (n)} elements.
+
+Special cases of this material have appeared several times in the text and exercises. For example\BookInline{,\allowbreak \alpha } of Example 47.7 is a primitive 8th root of unity, and we made arguments in that example identical to those given here. We summarize these results in a theorem.
+
+\BookLabel{48.4 Theorem} The Galois group of the \BookInline{n}th cyclotomic extension of \BookInline{\mathbb{Q}} has \BookInline{\varphi (n)} elements and is isomorphic to the group consisting of the positive integers less than \BookInline{n} and relatively prime to \BookInline{n} under multiplication modulo \BookInline{n.}
+
+\BookLabel{48.5 Example} Example 47.7 illustrates this theorem, for it is easy to see that the splitting field of \BookInline{x^{4}+ 1} is the same as the splitting field of \BookInline{x^{8}- 1} over \BookInline{\mathbb{Q}.} This follows from the fact that \BookInline{\Phi _{8}(x)= x^{4}+ 1(}see Example 48.3 and Exercise \BookInline{1).}\BookEnd{\blacktriangle}
+
+\BookLabel{48.6 Corollary} The Galois group of the \BookInline{p}th cyclotomic extension of \BookInline{\mathbb{Q}} for a prime \BookInline{p} is cyclic of order \BookInline{p- 1.}
+
+\BookLabel{\textit{Proof}} By Theorem 48.4, the Galois group of the \BookInline{p}th cyclotomic extension of \BookInline{\mathbb{Q}} has \BookInline{\varphi (p)= } \BookInline{p- 1} elements, and is isomorphic to the group of positive integers less than \BookInline{p} and relatively prime to \BookInline{p} under multiplication modulo \BookInline{p.} This is exactly the multiplicative group \BookInline{\langle \mathbb{Z}_{p}^{\ast },\allowbreak \cdot \rangle } of nonzero elements of the field \BookInline{\mathbb{Z}_{p}} under field multiplication. By Corollary 28.7, this group is cyclic\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookTextHeading{\textbf{Constructible Polygons}  }
+
+\noindent We conclude with an application determining which regular \BookInline{n-}gons are constructible with a compass and a straightedge. We saw in Section 41 that the regular \BookInline{n-}gon is constructible if and only if cos\BookInline{(2\pi /n)} is a constructible real number. Now let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \zeta = \cos { \frac { 2 \pi } { n } } + i \sin { \frac { 2 \pi } { n } } .}\end{adjustbox}\end{center}
+
+\noindent Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \frac{1}{\zeta} = \cos \frac{2\pi}{n} - i \sin \frac{2\pi}{n},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent for
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \left( \cos \frac{2\pi}{n} + i \sin \frac{2\pi}{n} \right) \left( \cos \frac{2\pi}{n} - i \sin \frac{2\pi}{n} \right) = \cos^2 \frac{2\pi}{n} + \sin^2 \frac{2\pi}{n} = 1.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 398; original printed page 381
+\BookSource{398}{381}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent But then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \zeta + \frac { 1 } { \zeta } = 2 \cos \frac { 2 \pi } { n } .}\end{adjustbox}\end{center}
+
+\noindent Thus Corollary 41.8 shows that the regular \BookInline{n-}gon is constructible only if \BookInline{\zeta + 1/\zeta } generates an extension of \BookInline{\mathbb{Q}} of degree a power of 2.
+
+If \BookInline{K} is the splitting field of \BookInline{x^{n}- 1} over \BookInline{\mathbb{Q},\allowbreak } then \BookInline{[K:\mathbb{Q}]= \varphi (n),\allowbreak } by Theorem 48.4. If \BookInline{\sigma \in G(K/\mathbb{Q})} and \BookInline{\sigma (\zeta )= \zeta ^{r},\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned} \sigma \Bigg ( \zeta + \frac{1}{\zeta} \Bigg ) &= \zeta^{r} + \frac{1}{\zeta^{r}} \\&= \Bigg ( \cos \frac{2 \pi r}{n} + i \sin \frac{2 \pi r}{n} \Bigg ) + \Bigg ( \cos \frac{2 \pi r}{n} - i \sin \frac{2 \pi r}{n} \Bigg ) \\&= 2 \cos \frac{2 \pi r}{n}.\\ \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent But for \BookInline{1<r<n,\allowbreak } we have 2 cos\BookInline{(2\pi r/n)= 2} cos\BookInline{(2\pi /n)} only in the case that \BookInline{r= n- 1.} Thus the only elements of \BookInline{G(K/\mathbb{Q})} carrying \BookInline{\zeta + 1/\zeta } onto itself are the identity automorphism and the automorphism \BookInline{\tau,\allowbreak } with \BookInline{\tau (\zeta )= \zeta ^{n- 1}= 1/\zeta.} This shows that the subgroup of \BookInline{G(K/\mathbb{Q})} leaving \BookInline{\mathbb{Q}(\zeta + 1/\zeta )} fixed is of order 2, so by Galois theory,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \left[ \mathbb { Q } \bigg ( \zeta + \frac { 1 } { \zeta } \bigg ) : \mathbb { Q } \right] = \frac { \varphi ( n ) } { 2 } .}\end{adjustbox}\end{center}
+
+\noindent \textit{Hence the regular} \BookInline{n-}\textit{gon is constructible only if} \BookInline{\varphi (n)/2,\allowbreak } \textit{and therefore also} \BookInline{\varphi (n),\allowbreak } \textit{is} \BookInline{a} \textit{power of 2}.
+
+It can be shown by elementary arguments in number theory that if
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n= 2^{\nu }p_{1}^{s_{1}}\cdots p_{t}^{s_{t}},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where the \BookInline{p_{i}} are the distinct odd primes dividing \BookInline{n,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \varphi (n)= 2^{\nu - 1}p_{1}^{s_{1}- 1}\cdots p_{t}^{s_{t}- 1}(p_{1}- 1)\cdots (p_{t}- 1).(1)}\end{adjustbox}\end{center}
+
+\noindent If \BookInline{\varphi (n)} is to be a power of 2, then every odd prime dividing \BookInline{n} must appear only to the first power and must be one more than a power of 2. Thus we must have each
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle p_{i}= 2^{m}+ 1}\end{adjustbox}\end{center}
+
+\noindent for some \BookInline{m.} Since \BookInline{- 1} is a zero of \BookInline{x^{q}+ 1} for \BookInline{q} an odd prime\BookInline{,\allowbreak x+ 1} divides \BookInline{x^{q}+ 1} for \BookInline{q} an odd prime. Thus, if \BookInline{m= qu,\allowbreak } where \BookInline{q} is an odd prime, then \BookInline{2^{m}+ 1= (2^{u})^{q}+ 1} is divisible by \BookInline{2^{u}+ 1.} Therefore, for \BookInline{p_{i}= 2^{m}+ 1} to be prime, it must be that \BookInline{m} is divisible by 2 only, so \BookInline{p_{i}} has to have the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle p_{i}= 2^{(2^{k})}+ 1,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent a\textbf{ Fermat prime.} Fermat conjectured that these numbers \BookInline{2^{(2^{k})}+ 1} were prime for all nonnegative integers \BookInline{k.} Euler showed that while \BookInline{k= 0,\allowbreak 1,\allowbreak 2,\allowbreak 3,\allowbreak } and 4 give the primes 3, 5, 17, 257, and 65537, for \BookInline{k= 5,\allowbreak } the integer \BookInline{2^{(2^{s})}+ 1} is divisible by 641. It has been shown that for \BookInline{5\leq k\leq 19,\allowbreak } all the numbers \BookInline{2^{(2^{k})}+ 1} are composite. The case \BookInline{k= 20} is still unsolved as far as we know. For at least 60 values of \BookInline{k} greater than 20, including \BookInline{k= 9448,\allowbreak } it has been shown that \BookInline{2^{2^{k}}+ 1} is composite. It is unknown whether the number of Fermat primes is finite or infinite.
+
+We have thus shown that the only regular \BookInline{n-}gons that might be constructible are those where the odd primes dividing \BookInline{n} are Fermat primes whose squares do not divide \BookInline{n.} In particular, the only regular \BookInline{p-}gons that might be constructible for \BookInline{p} a prime greater than 2 are those where \BookInline{p} is a Fermat prime.
+
+\end{BookBody}
+
+% Source PDF page 399; original printed page 382
+\BookSource{399}{382}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{48.7 Example} The regular 7-gon is not constructible, since 7 is not a Fermat prime. Similarly, the regular 18-gon is not constructible, for while 3 is a Fermat prime, its square divides \BookInline{18.}\BookEnd{\blacktriangle}
+
+We now demonstrate that all these regular \BookInline{n-}gons that are candidates for being constructible are indeed actually constructible. Let \BookInline{\zeta } again be the primitive \BookInline{n}th root of unity cos\BookInline{(2\pi /n)+ i} sin\BookInline{(2\pi /n).} We saw above that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2 \cos { \frac { 2 \pi } { n } } = \zeta + { \frac { 1 } { \zeta } } ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \left[ \mathbb { Q } \bigg ( \zeta + \frac { 1 } { \zeta } \bigg ) : \mathbb { Q } \right] = \frac { \varphi ( n ) } { 2 } .}\end{adjustbox}\end{center}
+
+\noindent Suppose now that \BookInline{\varphi (n)} is a power \BookInline{2^{s}} of 2. We saw above that \BookInline{\mathbb{Q}(\zeta + 1/\zeta )} is the subfield of \BookInline{K= \mathbb{Q}(\zeta )} fixed by \BookInline{H_{1}= \{\iota,\allowbreak \tau \},\allowbreak } where \BookInline{\iota } is the identity element of \BookInline{G(K/\mathbb{Q})} and \BookInline{\tau (\zeta )= } \BookInline{1/\zeta.} By Sylow theory, there exist additional subgroups \BookInline{H_{j}} of order \BookInline{2^{j}} of \BookInline{G(\mathbb{Q}(\zeta )/\mathbb{Q})} for \BookInline{j= 0,\allowbreak 2,\allowbreak 3,\allowbreak \cdots,\allowbreak s} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{\iota \}= H_{0}<H_{1}<\cdots <H_{s}= G(\mathbb{Q}(\zeta )/\mathbb{Q}).}\end{adjustbox}\end{center}
+
+\noindent By Galois theory,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathbb { Q } = K _ { H _ { s } } < K _ { H _ { s - 1 } } < \cdots < K _ { H _ { 1 } } = \mathbb { Q } \left( \zeta + \frac { 1 } { \zeta } \right) ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and \BookInline{[K_{H_{j- 1}}:K_{H}]= 2}. Note that \BookInline{(\zeta + 1/\zeta )\in \mathbb{R},\allowbreak } so \BookInline{\mathbb{Q}(\zeta + 1/\zeta )<\mathbb{R}.} If \BookInline{K_{H_{j- 1}}= K_{H_{j}}(\alpha _{j})}, then \BookInline{\alpha _{j}} is a zero of some \BookInline{(a_{j}x^{2}+ b_{j}x+ c_{j})\in K_{H_{j}}[x].} By the familiar “quadratic formula,” we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle K _ { H _ { j - 1 } } = K _ { H _ { j } } \big ( \sqrt { b _ { j } ^ { 2 } - 4 a _ { j } c _ { j } } \big ) .}\end{adjustbox}\end{center}
+
+\noindent Since we saw in Section 41 that construction of square roots of positive constructible numbers can be achieved by a straightedge and a compass, we see that every element in \BookInline{\mathbb{Q}(\zeta + 1/\zeta ),\allowbreak } in particular cos\BookInline{(2\pi /n),\allowbreak } is constructible. Hence the regular \BookInline{n-}gons where \BookInline{\varphi (n)} is a power of 2 are constructible.
+
+We summarize our work under this heading in a theorem.
+
+\BookLabel{48.8 Theorem} The regular \BookInline{n-}gon is constructible with a compass and a straightedge if and only if all the odd primes dividing \BookInline{n} are Fermat primes whose squares do not divide \BookInline{n.}
+
+\BookLabel{48.9 Example} The regular 60-gon is constructible, since \BookInline{60= (2^{2})(3)(5)} and 3 and 5 are both Fermat primes\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{48}
+
+\BookTextHeading{\textbf{Computations}}
+
+\BookExercise{1.}{Referring to Example 48.3, complete the indicated computation, showing that \BookInline{\Phi _{8}(x)= x^{4}+ 1.[}\textit{Suggestion:} Compute the product in terms of \BookInline{\zeta,\allowbreak } and then use the fact that \BookInline{\zeta ^{8}= 1} and \BookInline{\zeta ^{4}= - 1} to simplify the coefficients.]}
+
+\BookExercise{2.}{Classify the group of the polynomial \BookInline{(x^{20}- 1)\in \mathbb{Q}[x]} over \BookInline{\mathbb{Q}} according to the Fundamental Theorem of Finitely Generated Abelian Groups. Theorem 9.12. [\textit{Hint:} Use Theorem 48.4.]}
+
+\BookExercise{3.}{Using the formula for \BookInline{\varphi (n)} in terms of the factorization of \BookInline{n,\allowbreak } as given in Eq. (1), compute the indicated value: \textbf{a}\BookInline{.\varphi (60)} \textbf{b}\BookInline{.\varphi (1000)} \textbf{c}\BookInline{.\varphi (8100)}}
+
+\BookExercise{4.}{Give the first 30 values of \BookInline{n\geq 3} for which the regular \BookInline{n-}gon is constructible with a straightedge and a compass.}
+
+\end{BookBody}
+
+% Source PDF page 400; original printed page 383
+\BookSource{400}{383}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{5.}{Find the smallest angle of integral degree, that is\BookInline{,\allowbreak 1^{\circ },\allowbreak 2^{\circ },\allowbreak 3^{\circ },\allowbreak } and so on, constructible with a straightedge and a compass. [\textit{Hint:} Constructing a \BookInline{1^{\circ }} angle amounts to constructing the regular 360-gon, and so on.]}
+
+\BookExercise{6.}{Let \BookInline{K} be the splitting field of \BookInline{x^{12}- 1} over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{a.}{Find \BookInline{[K:\mathbb{Q}].}}
+
+\BookExercise{b.}{Show that for \BookInline{\sigma \in G(K/\mathbb{Q}),\allowbreak \sigma ^{2}} is the identity automorphism. Classify \BookInline{G(K/\mathbb{Q})} according to the Fundamental Theorem 9.12 of finitely generated abelian groups.}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{7.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.\Phi _{n}(x)} is irreducible over every subfield of \BookInline{\mathbb{C}.}}
+
+\BookExercise{b.}{Every zero in \BookInline{\mathbb{C}} of \BookInline{\Phi _{n}(x)} is a primitive \BookInline{n}th root of unity.}
+
+\BookExercise{c.}{The group of \BookInline{\Phi _{n}(x)\in \mathbb{Q}[x]} over \BookInline{\mathbb{Q}} has order \BookInline{n.}}
+
+\BookExercise{d.}{The group of \BookInline{\Phi _{n}(x)\in \mathbb{Q}[x]} over \BookInline{\mathbb{Q}} is abelian.}
+
+\BookExercise{e.}{The Galois group of the splitting field of \BookInline{\Phi _{n}(x)} over \BookInline{\mathbb{Q}} has order \BookInline{\varphi (n).}}
+
+\BookExercise{f.}{The regular 25-gon is constructible with a straightedge and a compass.}
+
+\BookExercise{g.}{The regular 17-gon is constructible with a straightedge and a compass.}
+
+\BookExercise{h.}{For a prime \BookInline{p,\allowbreak } the regular \BookInline{p-}gon is constructible if and only if \BookInline{p} is a Fermat prime.}
+
+\BookExercise{i.}{All integers of the form \BookInline{2^{(2^{k})}+ 1} for nonnegative integers \BookInline{k} are Fermat primes.}
+
+\BookExercise{j.}{All Fermat primes are numbers of the form \BookInline{2^{(2^{k})}+ 1} for nonnegative integers \BookInline{k.}}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{8.}{Show that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{n}- 1= \prod _{d|n}\Phi _{d}(x)}\end{adjustbox}\end{center}
+
+\noindent in \BookInline{\mathbb{Q}[x],\allowbreak } where the product is over all divisors \BookInline{d} of \BookInline{n.}
+
+\BookExercise{9.}{Find the cyclotomic polynomial \BookInline{\Phi _{n}(x)} over \BookInline{\mathbb{Q}} for \BookInline{n= 1,\allowbreak 2,\allowbreak 3,\allowbreak 4,\allowbreak 5,\allowbreak } and 6. [\textit{Hint:} Use Exercise 8.]}
+
+\BookExercise{10.}{Find \BookInline{\Phi _{12}(x)} in \BookInline{\mathbb{Q}[x].[}\textit{Hint:} Use Exercises 8 and 9.]}
+
+\BookExercise{11.}{Show that in \BookInline{\mathbb{Q}[x],\allowbreak \Phi _{2n}(x)= \Phi _{n}(- x)} for odd integers \BookInline{n>1.[}\textit{Hint:} If \BookInline{\zeta } is a primitive \BookInline{n}th root of unity for \BookInline{n} odd, what is the order of \BookInline{- \zeta }?]}
+
+\BookExercise{12.}{Let \BookInline{n,\allowbreak m\in \mathbb{Z}^{+ }} be relatively prime. Show that the splitting field in \BookInline{\mathbb{C}} of \BookInline{x^{nm}- 1} over \BookInline{\mathbb{Q}} is the same as the splitting field in \BookInline{\mathbb{C}} of \BookInline{(x^{n}- 1)(x^{m}- 1)} over \BookInline{\mathbb{Q}.}}
+
+\BookExercise{13.}{Let \BookInline{n,\allowbreak m\in \mathbb{Z}^{+ }} be relatively prime. Show that the group of \BookInline{(x^{nm}- 1)\in \mathbb{Q}[x]} over \BookInline{\mathbb{Q}} is isomorphic to the direct product of the groups of \BookInline{(x^{n}- 1)\in \mathbb{Q}[x]} and of \BookInline{(x^{m}- 1)\in \mathbb{Q}[x]} over \BookInline{\mathbb{Q}.[}\textit{Hint:} Using Galois theory, show that the groups of \BookInline{x^{m}- 1} and \BookInline{x^{n}- 1} can both be regarded as subgroups of the group of \BookInline{x^{nm}- 1.} Then use Exercises 50 and 51 of Section 9.]}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

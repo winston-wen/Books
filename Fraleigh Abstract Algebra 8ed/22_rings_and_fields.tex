@@ -1,0 +1,454 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 22 Rings and Fields}
+\pdfbookmark[0]{Section 22 Rings and Fields}{22_rings_and_fields}
+\ifdefined\BookMaster\else\setcounter{page}{185}\fi
+% Source PDF page 202; original printed page 185
+\BookSource{202}{185}
+\BookPartTitle{V}{Rings and Fields}{\BookPartEntry{22}{Rings and Fields}
+\BookPartEntry{23}{Integral Domains}
+\BookPartEntry{24}{Fermat’s and Euler’s Theorems}
+\BookPartEntry{25}{Encryption}}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{22}{Rings and Fields}
+
+\noindent All our work thus far has been concerned with sets on which a single binary operation has been defined. Our years of work with the integers and real numbers show that a study of sets on which two binary operations have been defined should be of great importance. Algebraic structures of this type are introduced in this section. In one sense, this section seems more intuitive than those that precede it, for the structures studied are closely related to those we have worked with for many years. However, we will be continuing with our axiomatic approach. So, from another viewpoint this study is more complicated than group theory, for we now have two binary operations and more axioms to deal with.
+
+\BookTextHeading{\textbf{Definitions and Basic Properties}  }
+
+\noindent The most general algebraic structure with two binary operations that we shall study is called a\textit{ ring}. As Example 22.2 following Definition 22.1 indicates, we have all worked with rings since elementary school.
+
+\BookLabel{22.1 Definition} A\textbf{ ring} \BookInline{\langle R,\allowbreak +,\allowbreak \cdot \rangle } is a set \BookInline{R} together with two binary operations \BookInline{+ } and \BookInline{\cdot,\allowbreak } which we call \textit{addition} and\textit{ multiplication,} defined on \BookInline{R} such that the following axioms are satisfied:
+
+\BookInline{\mathcal{R}_{1}.\langle R,\allowbreak + \rangle } is an abelian group.
+
+\BookInline{\mathcal{R}_{2}.} Multiplication is associative.
+
+\BookInline{\mathcal{R}_{3}.} For all \BookInline{a,\allowbreak b,\allowbreak c\in R,\allowbreak } the\textbf{ left distributive law}\BookInline{,\allowbreak a\cdot (b+ c)= (a\cdot b)+ (a\cdot c)} and the\textbf{ right distributive law} \BookInline{(a+ b)\cdot c= (a\cdot c)+ (b\cdot c)} hold\BookInline{.}\BookEnd{\blacksquare}
+
+\BookLabel{22.2 Example} We are well aware that axioms \BookInline{\mathcal{R}_{1},\allowbreak \mathcal{R}_{2},\allowbreak } and \BookInline{\mathcal{R}_{3}} for a ring hold in any subset of the complex numbers that is a group under addition and that is closed under multiplication. For example\BookInline{,\allowbreak \langle \mathbb{Z},\allowbreak +,\allowbreak \cdot \rangle,\allowbreak \langle \mathbb{Q},\allowbreak +,\allowbreak \cdot \rangle,\allowbreak \langle \mathbb{R},\allowbreak +,\allowbreak \cdot \rangle,\allowbreak } and \BookInline{\langle \mathbb{C},\allowbreak +,\allowbreak \cdot \rangle } are rings\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 203; original printed page 186
+\BookSource{203}{186}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent The theory of rings grew out of the study of two particular classes of rings, polynomial rings in \BookInline{n} variables over the real or complex numbers (Section 27) and the “integers” of an algebraic number field. It was David Hilbert (1862–1943) who first introduced the term\textit{ ring,} in connection with the latter example, but it was not until the second decade of the twentieth century that a fully abstract definition appeared. The theory of commutative rings was given a firm axiomatic foundation by Emmy Noether (1882–1935) in her monumental paper “Ideal Theory in Rings,” which appeared in 1921. A major concept of this paper is the ascending chain condition for ideals. Noether proved that in any ring in which every ascending chain of ideals has a maximal element, every ideal is finitely generated.
+
+Emmy Noether received her doctorate from the University of Erlangen, Germany, in 1907. Hilbert invited her to Go¨ttingen in 1915, but his efforts to secure her a paid position were blocked because of her sex. Hilbert complained, “I do not see that the sex of the candidate is an argument against her admission [to the faculty]. After all, we are a university, not a bathing establishment.” Noether was, however, able to lecture under Hilbert’s name. Ultimately, after the political changes accompanying the end of the First World War reached Go¨ttingen, she was given in 1923 a paid position at the University. For the next decade, she was very influential in the development of the basic concepts of modern algebra. Along with other Jewish faculty members, however, she was forced to leave Go¨ttingen in 1933. She spent the final two years of her life at Bryn Mawr College near Philadelphia.
+
+It is customary to denote multiplication in a ring by juxtaposition, using \BookInline{ab} in place of \BookInline{a\cdot b.} We shall also observe the usual convention that multiplication is performed before addition in the absence of parentheses, so the left distributive law, for example, becomes
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a(b+ c)= ab+ ac,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent without the parentheses on the right side of the equation. Also, as a convenience analogous to our notation in group theory, we shall somewhat incorrectly refer to a\textit{ ring} \BookInline{R} in place of a\textit{ ring} \BookInline{\langle R,\allowbreak +,\allowbreak \cdot \rangle,\allowbreak } provided that no confusion will result. In particular, from now on \BookInline{\mathbb{Z}} will always be \BookInline{\langle \mathbb{Z},\allowbreak +,\allowbreak \cdot \rangle,\allowbreak } and \BookInline{\mathbb{Q},\allowbreak \mathbb{R},\allowbreak } and \BookInline{\mathbb{C}} will also be the rings in Example 22.2. We may on occasion refer to \BookInline{\langle R,\allowbreak + \rangle } as\textit{ the additive group of the ring} \BookInline{R.}
+
+\BookLabel{22.3 Example} Let \BookInline{R} be any ring and let \BookInline{M_{n}(R)} be the collection of all \BookInline{n\times n} matrices having elements of \BookInline{R} as entries. The operations of addition and multiplication in \BookInline{R} allow us to add and multiply matrices in the usual fashion, explained in the appendix. We can quickly check that \BookInline{\langle M_{n}(R),\allowbreak + \rangle } is an abelian group. The associativity of matrix multiplication and the two distributive laws in \BookInline{M_{n}(R)} are more tedious to demonstrate, but straightforward calculations indicate that they follow from the same properties in \BookInline{R.} We will assume from now on that we know that \BookInline{M_{n}(R)} is a ring. In particular, we have the rings \BookInline{M_{n}(\mathbb{Z}),\allowbreak M_{n}(\mathbb{Q}),\allowbreak M_{n}(\mathbb{R}),\allowbreak } and \BookInline{M_{n}(\mathbb{C}).} Note that multiplication is not a commutative operation in any of these rings for \BookInline{n\geq 2.}\BookEnd{\blacktriangle}
+
+\BookLabel{22.4 Example} Let \BookInline{F} be the set of all functions \BookInline{f:\mathbb{R}\to \mathbb{R}.} We know that \BookInline{\langle F,\allowbreak + \rangle } is an abelian group under the usual function addition,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (f+ g)(x)= f(x)+ g(x).}\end{adjustbox}\end{center}
+
+\noindent We define multiplication on \BookInline{F} by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (fg)(x)= f(x)g(x).}\end{adjustbox}\end{center}
+
+\noindent That is\BookInline{,\allowbreak fg} is the function whose value at \BookInline{x} is \BookInline{f(x)g(x).} It is readily checked that \BookInline{F} is a ring; we leave the demonstration to Exercise 36. We have used this juxtaposition 
+% Source PDF page 204; original printed page 187
+\BookSource{204}{187}
+notation \BookInline{\sigma \mu } for the composite function \BookInline{\sigma (\mu (x))} when discussing permutation multiplication. If we were to use both function multiplication and function composition in \BookInline{F,\allowbreak } we would use the notation \BookInline{f\circ g} for the composite function. However, we will use composition of functions almost exclusively with homomorphisms, which we will denote by Greek letters, and the usual product defined in this example chiefly when multiplying polynomial function’s \BookInline{f(x)g(x),\allowbreak } so no confusion should result\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{22.5 Example} Recall that in group theory\BookInline{,\allowbreak n\mathbb{Z}} is the cyclic subgroup of \BookInline{\mathbb{Z}} under addition consisting of all integer multiples of the integer \BookInline{n.} Since \BookInline{(nr)(ns)= n(nrs),\allowbreak } we see that \BookInline{n\mathbb{Z}} is closed under multiplication. The associative and distributive laws that hold in \BookInline{\mathbb{Z}} then assure us that \BookInline{\langle n\mathbb{Z},\allowbreak +,\allowbreak \cdot \rangle } is a ring. From now on in the text, we will consider \BookInline{n\mathbb{Z}} to be this ring\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{22.6 Example} Consider the cyclic group \BookInline{\langle \mathbb{Z}_{n},\allowbreak + \rangle.} If we define for \BookInline{a,\allowbreak b\in \mathbb{Z}_{n}} the product \BookInline{ab} as the remainder of the usual product of integers when divided by \BookInline{n,\allowbreak } it can be shown that \BookInline{\langle \mathbb{Z}_{n},\allowbreak +,\allowbreak \cdot \rangle } is a ring. We shall feel free to use this fact. For example, in \BookInline{\mathbb{Z}_{10}} we have \BookInline{(3)(7)= 1.} This operation on \BookInline{\mathbb{Z}_{n}} is\textbf{ multiplication modulo} \BookInline{n.} We do not check the ring axioms here, for they will follow in Section 30 from some of the theory we develop there. From now on\BookInline{,\allowbreak \mathbb{Z}_{n}} will always be the ring \BookInline{\langle \mathbb{Z}_{n},\allowbreak +,\allowbreak \cdot \rangle.}\BookEnd{\blacktriangle}
+
+\BookLabel{22.7 Example} If \BookInline{R_{1},\allowbreak R_{2},\allowbreak \cdots,\allowbreak R_{n}} are rings, we can form the set \BookInline{R_{1}\times R_{2}\times \cdots \times R_{n}} of all ordered \BookInline{n-}tuples \BookInline{(r_{1},\allowbreak r_{2},\allowbreak \cdots,\allowbreak r_{n}),\allowbreak } where \BookInline{r_{i}\in R_{i}.} Defining addition and multiplication of \BookInline{n-}tuples by components (just as for groups), we see at once from the ring axioms in each component that the set of all these \BookInline{n-}tuples forms a ring under addition and multiplication by components. The ring \BookInline{R_{1}\times R_{2}\times \cdots \times R_{n}} is the\textbf{ direct product} of the rings \BookInline{R_{i}.}\BookEnd{\blacktriangle}
+
+Continuing matters of notation, we shall always let 0 be the additive identity of a ring. The additive inverse of an element \BookInline{a} of a ring is \BookInline{- a.} We shall frequently have occasion to refer to a sum
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a+ a+ \cdots + a}\end{adjustbox}\end{center}
+
+\noindent having \BookInline{n} summands. We shall let this sum be \BookInline{n\cdot a,\allowbreak } always using the dot. However\BookInline{,\allowbreak n\cdot a} \textit{is not to be interpreted as} \BookInline{a} \textit{multiplication of} \BookInline{n} \textit{and} \BookInline{a} \textit{in the ring, for the integer} \BookInline{n} \textit{may} \textit{not be in the ring at all}. If \BookInline{n<0,\allowbreak } we let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n\cdot a= (- a)+ (- a)+ \cdots + (- a)}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{|n|} summands. Finally, we define
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0\cdot a= 0}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{0\in \mathbb{Z}} on the left side of the equations and \BookInline{0\in R} on the right side. Actually, the equation \BookInline{0a= 0} holds also for \BookInline{0\in R} on both sides. The following theorem proves this and various other elementary but important facts. Note the strong use of the distributive laws in the proof of this theorem. Axiom \BookInline{\mathcal{R}_{1}} for a ring concerns only addition, and axiom \BookInline{\mathcal{R}_{2}} concerns only multiplication. This shows that in order to prove anything that gives a relationship between these two operations, we are going to have to use axiom \BookInline{\mathcal{R}_{3}.} For example, the first thing that we will show in Theorem 22.8 is that \BookInline{0a= 0} for any element \BookInline{a} in a ring \BookInline{R.} Now this relation involves both addition and multiplication. The multiplication \BookInline{0a} stares us in the face, and 0 is an\textit{ additive} concept. Thus we will have to come up with an argument that uses a distributive law to prove this.
+
+\BookLabel{22.8 Theorem} If \BookInline{R} is a ring with additive identity 0, then for any \BookInline{a,\allowbreak b\in R} we have
+
+\BookExercise{1.}{\BookInline{0a= a0= 0,\allowbreak }}
+
+\BookExercise{2.}{\BookInline{a(- b)= (- a)b= - (ab),\allowbreak }}
+
+\BookExercise{3.}{\BookInline{(- a)(- b)= ab.}}
+
+\end{BookBody}
+
+% Source PDF page 205; original printed page 188
+\BookSource{205}{188}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} For Property 1, note that by axioms \BookInline{\mathcal{R}_{1}} and \BookInline{\mathcal{R}_{2},\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a0+ a0= a(0+ 0)= a0= 0+ a0.}\end{adjustbox}\end{center}
+
+\noindent Then by the cancellation law for the additive group \BookInline{\langle R,\allowbreak + \rangle,\allowbreak } we have \BookInline{a0= 0.} Likewise,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0a+ 0a= (0+ 0)a= 0a= 0+ 0a}\end{adjustbox}\end{center}
+
+\noindent implies that \BookInline{0a= 0.} This proves Property 1.
+
+In order to understand the proof of Property 2, we must remember that, by \textit{definition}\BookInline{,\allowbreak - (ab)} is the element that when added to \BookInline{ab} gives 0. Thus to show that \BookInline{a(- b)= - (ab),\allowbreak } we must show precisely that \BookInline{a(- b)+ ab= 0.} By the left distributive law,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a(- b)+ ab= a(- b+ b)= a0= 0,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent since a\BookInline{0= 0} by Property 1. Likewise,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (- a)b+ ab= (- a+ a)b= 0b= 0.}\end{adjustbox}\end{center}
+
+\noindent For Property 3, note that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (- a)(- b)= - (a(- b))}\end{adjustbox}\end{center}
+
+\noindent by Property 2. Again by Property 2,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle - (a(- b))= - (- (ab)),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and \BookInline{- (- (ab))} is the element that when added to \BookInline{- (ab)} gives 0. This is \BookInline{ab} by definition of \BookInline{- (ab)} and by the uniqueness of an inverse in a group. Thus\BookInline{,\allowbreak (- a)(- b)= ab.}\BookEnd{\blacklozenge}
+
+Based on high school algebra it seems natural to begin a proof of Property 2 in Theorem 22.8 by writing \BookInline{(- a)b= ((- 1)a)b.} In Exercise 30 you will be asked to find an error in a “proof” of this sort.
+
+It is important that you\textit{ understand} the preceding proof. The theorem allows us to use our usual rules for signs.
+
+\BookTextHeading{\textbf{Homomorphisms and Isomorphisms}  }
+
+\noindent From our work in group theory, it is quite clear how a structure-relating map of a ring \BookInline{R} into a ring \BookInline{R^{\prime }} should be defined.
+
+\BookLabel{22.9 Definition} For rings \BookInline{R} and \BookInline{R^{\prime },\allowbreak } a map \BookInline{\phi:R\to R^{\prime }} is a\textbf{ homomorphism} if the following two conditions are satisfied for all \BookInline{a,\allowbreak b\in R:}
+
+\BookExercise{1.}{\BookInline{\phi (a+ b)= \phi (a)+ \phi (b),\allowbreak }}
+
+\BookExercise{2.}{\BookInline{\phi (ab)= \phi (a)\phi (b).}} \BookEnd{\blacksquare}
+
+In the preceding definition, Condition 1 is the statement that \BookInline{\phi } is a group homomorphism mapping the abelian group \BookInline{\langle R,\allowbreak + \rangle } into \BookInline{\langle R^{\prime },\allowbreak + \rangle.} Condition 2 requires that \BookInline{\phi } relate the multiplicative structures of the rings \BookInline{R} and \BookInline{R^{\prime }} in the same way. Since \BookInline{\phi } is also a group homomorphism, all the results concerning group homomorphisms are valid for the additive structure of the rings. In particular\BookInline{,\allowbreak \phi } is one-to-one if and only if its\textbf{ kernel} Ker\BookInline{(\phi )= \{a\in R\mid \phi (a)= 0^{\prime }\}} is just the subset \BookInline{\{0\}} of \BookInline{R.} The homomorphism \BookInline{\phi } of the group \BookInline{\langle R,\allowbreak + \rangle } gives rise to a factor group. We expect that a ring homomorphism will give rise to a factor ring. This is indeed the case. We delay discussion of this to Section 30, where the treatment will parallel our treatment of factor groups in Section 12.
+
+\end{BookBody}
+
+% Source PDF page 206; original printed page 189
+\BookSource{206}{189}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{22.10 Example} Let \BookInline{F} be the ring of all functions mapping \BookInline{\mathbb{R}} into \BookInline{\mathbb{R}} defined in Example 22.4. For each \BookInline{a\in \mathbb{R},\allowbreak } we have the\textbf{ evaluation homomorphism} \BookInline{\phi _{a}:F\to \mathbb{R},\allowbreak } where \BookInline{\phi _{a}(f)= f(a)} for \BookInline{f\in F.} We will work a great deal with this homomorphism in the rest of this text, for finding a real solution of a polynomial equation \BookInline{p(x)= 0} amounts precisely to finding \BookInline{a\in \mathbb{R}} such that \BookInline{\phi _{a}(p)= 0.} Much of the remainder of this text deals with solving polynomial equations. We leave the demonstration of the homomorphism properties for \BookInline{\phi _{a}} to Exercise \BookInline{37.}\BookEnd{\blacktriangle}
+
+\BookLabel{22.11 Example} The map \BookInline{\phi:\mathbb{Z}\to \mathbb{Z}_{n}} where \BookInline{\phi (a)} is the remainder of \BookInline{a} modulo \BookInline{n} is a ring homomorphism for each positive integer \BookInline{n.} We know \BookInline{\phi (a+ b)= \phi (a)+ \phi (b)} by group theory. To show the multiplicative property, write \BookInline{a= q_{1}n+ r_{1}} and \BookInline{b= q_{2}n+ r_{2}} according to the division algorithm. Then \BookInline{ab= n(q_{1}q_{2}n+ r_{1}q_{2}+ q_{1}r_{2})+ r_{1}r_{2}.} Thus \BookInline{\phi (ab)} is the remainder of \BookInline{r_{1}r_{2}} when divided by \BookInline{n.} Since \BookInline{\phi (a)= r_{1}} and \BookInline{\phi (b)= r_{2},\allowbreak } Example 22.6 indicates that \BookInline{\phi (a)\phi (b)} is also this same remainder, so \BookInline{\phi (ab)= \phi (a)\phi (b).} From group theory, we anticipate that the ring \BookInline{\mathbb{Z}_{n}} might be isomorphic to a factor ring \BookInline{\mathbb{Z}/n\mathbb{Z}.} This is indeed the case; factor rings will be discussed in Section \BookInline{30.}\BookEnd{\blacktriangle}
+
+We realize that in the study of any sort of mathematical structure, an idea of basic importance is the concept of two systems being\textit{ structurally identical}, that is, one being just like the other except for names. In algebra this concept is always called\textit{ isomor}\textit{phism}. The concept of two things being just alike except for names of elements leads us, just as it did for groups, to the following definition.
+
+\BookLabel{22.12 Definition} An\textbf{ isomorphism} \BookInline{\phi:R\to R^{\prime }} from a ring \BookInline{R} to a ring \BookInline{R^{\prime }} is a homomorphism that is one-to-one and onto \BookInline{R^{\prime }.} The rings \BookInline{R} and \BookInline{R^{\prime }} are then\textbf{ isomorphic}\BookInline{.}\BookEnd{\blacksquare}
+
+From our work in group theory, we expect that isomorphism gives an equivalence relation on any collection of rings. We need to check that the multiplicative property of an isomorphism is satisfied for the inverse map \BookInline{\phi ^{- 1}:R^{\prime }\to R(}to complete the symmetry argument). Similarly, we check that if \BookInline{\mu:R^{\prime }\to R^{\prime \prime }} is also a ring isomorphism, then the multiplicative requirement holds for the composite map \BookInline{\mu \phi:R\to R^{\prime \prime }(}to complete the transitivity argument). We ask you to do this in Exercise 38.
+
+\BookLabel{22.13 Example} As abelian groups\BookInline{,\allowbreak \langle \mathbb{Z},\allowbreak + \rangle } and \BookInline{\langle 2\mathbb{Z},\allowbreak + \rangle } are isomorphic under the map \BookInline{\phi:\mathbb{Z}\to 2\mathbb{Z},\allowbreak } with \BookInline{\phi (x)= 2x} for \BookInline{x\in \mathbb{Z}.} Here \BookInline{\phi } is\textit{ not} a ring isomorphism, for \BookInline{\phi (xy)= 2xy,\allowbreak } while \BookInline{\phi (x)\phi (y)= 2x2y= 4xy.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Multiplicative Questions: Fields}  }
+
+\noindent Many of the rings we have mentioned, such as \BookInline{\mathbb{Z},\allowbreak \mathbb{Q},\allowbreak } and \BookInline{\mathbb{R},\allowbreak } have a multiplicative identity element 1. However\BookInline{,\allowbreak 2\mathbb{Z}} does not have an identity element for multiplication. Note also that multiplication is not commutative in the matrix rings described in Example 22.3.
+
+It is evident that \BookInline{\{0\},\allowbreak } with \BookInline{0+ 0= 0} and \BookInline{(0)(0)= 0,\allowbreak } gives a ring, the\textbf{ zero ring.} Here 0 acts as multiplicative as well as additive identity element. By Theorem 22.8, this is the only case in which 0 could act as a multiplicative identity element, for from \BookInline{0a= 0,\allowbreak } we can then deduce that \BookInline{a= 0.} Theorem 1.15 shows that if a ring has a multiplicative identity element, it is unique. We denote a multiplicative identity element in a ring by 1.
+
+\BookLabel{22.14 Definition} A ring in which the multiplication is commutative is a\textbf{ commutative ring.} A ring with a multiplicative identity element is a\textbf{ ring with unity;} the multiplicative identity element 1 is called “\textbf{unity.}” \BookEnd{\blacksquare}
+
+\end{BookBody}
+
+% Source PDF page 207; original printed page 190
+\BookSource{207}{190}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent In a ring with unity 1 the distributive laws show that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}(1+ 1+ \cdots + 1)(1+ 1+ \cdots + 1)&= (1+ 1+ \cdots + 1),\allowbreak  \\ &n\;\text{summands}\;m\;\text{summands}\;nm\;\text{summands}\;\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent that is\BookInline{,\allowbreak (n\cdot 1)(m\cdot 1)= (nm)\cdot 1.} The next example gives an application of this observation.
+
+\BookLabel{22.15 Example} We claim that for integers \BookInline{r} and \BookInline{s} where gcd\BookInline{(r,\allowbreak s)= 1,\allowbreak } the rings \BookInline{\mathbb{Z}_{rs}} and \BookInline{\mathbb{Z}_{r}\times \mathbb{Z}_{s}} are isomorphic. Additively, they are both cyclic abelian groups of order \BookInline{rs} with generators 1 and (1, 1) respectively. Thus \BookInline{\phi:\mathbb{Z}_{rs}\to \mathbb{Z}_{r}\times \mathbb{Z}_{s}} defined by \BookInline{\phi (n\cdot 1)= n\cdot (1,\allowbreak 1)} is an additive group isomorphism. To check the multiplicative Condition 2 of Definition 22.9, we use the observation preceding this example for the unity (1, 1) in the ring \BookInline{\mathbb{Z}_{r}\times \mathbb{Z}_{s},\allowbreak } and compute.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi (nm)= (nm)\cdot (1,\allowbreak 1)= [n\cdot (1,\allowbreak 1)][m\cdot (1,\allowbreak 1)]= \phi (n)\phi (m).}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+Note that a direct product \BookInline{R= R_{1}\times R_{2}\times \cdots \times R_{n}} of rings is commutative if and and only if each ring \BookInline{R_{i}} is commutative. Furthermore\BookInline{,\allowbreak R} has a unity if and only if each \BookInline{R_{i}} has a unity.
+
+The set \BookInline{\mathbb{R}^{\ast }} of nonzero real numbers forms a group under multiplication. However, the nonzero integers do not form a group under multiplication since only the integers 1 and \BookInline{- 1} have multiplicative inverses in \BookInline{\mathbb{Z}.} In general, a\textbf{ multiplicative inverse} of an element \BookInline{a} in a ring \BookInline{R} with unity \BookInline{1\neq 0} is an element \BookInline{a^{- 1}\in R} such that \BookInline{aa^{- 1}= a^{- 1}a= 1.} Precisely as for groups, a multiplicative inverse for an element \BookInline{a} in \BookInline{R} is unique, if it exists at all (see Exercise 45). Theorem 22.8 shows that it would be hopeless to have a multiplicative inverse for 0 except for the ring \BookInline{\{0\},\allowbreak } where \BookInline{0+ 0= 0} and \BookInline{(0)(0)= 0,\allowbreak } with 0 as both additive and multiplicative identity element. We are thus led to discuss the existence of multiplicative inverses for nonzero elements in a ring with nonzero unity. There is unavoidably a lot of terminology to be defined in this introductory section on rings. We are almost done.
+
+\BookLabel{22.16 Definition} Let \BookInline{R} be a ring with unity \BookInline{1\neq 0.} An element \BookInline{u} in \BookInline{R} is a\textbf{ unit} of \BookInline{R} if it has a multiplicative inverse in \BookInline{R.} If every nonzero element of \BookInline{R} is a unit, then \BookInline{R} is a\textbf{ division ring} (or\textbf{ skew} \textbf{field}). A\textbf{ field} is a commutative division ring. A noncommutative division ring is called a “\textbf{strictly skew field.}” \BookEnd{\blacksquare}
+
+\BookLabel{22.17 Example} Let us find the units in \BookInline{\mathbb{Z}_{14}.} Of course, 1 and \BookInline{- 1= 13} are units. Since \BookInline{(3)(5)= 1} we see that 3 and 5 are units; therefore \BookInline{- 3= 11} and \BookInline{- 5= 9} are also units. None of the remaining elements of \BookInline{\mathbb{Z}_{14}} can be units, since no multiple of 2, 4, 6, 7, 8, or 10 can be one more than a multiple of 14; they all have a common factor, either 2 or 7, with 14. Section 24 will show that the units in \BookInline{\mathbb{Z}_{n}} are precisely those \BookInline{m\in \mathbb{Z}_{n}} such that gcd \BookInline{(m,\allowbreak n)= 1.}\BookEnd{\blacktriangle}
+
+\BookLabel{22.18 Example} \BookInline{\mathbb{Z}} is not a field, because 2, for example, has no multiplicative inverse, so 2 is not a unit in \BookInline{\mathbb{Z}.} The only units in \BookInline{\mathbb{Z}} are 1 and \BookInline{- 1.} However\BookInline{,\allowbreak \mathbb{Q}} and \BookInline{\mathbb{R}} are fields. An example of a strictly skew field is given in Section \BookInline{32.}\BookEnd{\blacktriangle}
+
+We have the natural concepts of a subring of a ring and a subfield of a field. A \textbf{subring of a ring} is a subset of the ring that is a ring under induced operations from the whole ring; a\textbf{ subfield} is defined similarly for a subset of a field. In fact, let us say here once and for all that if we have a set, together with a certain specified type of\textit{ algebraic} \textit{structure} (group, ring, field, integral domain, vector space, and so on), then any subset of this set, together with a natural induced algebraic structure\textit{ that yields an algebraic} \textit{structure of the same type}, is a\textit{ substructure}. If \BookInline{K} and \BookInline{L} are both structures, we shall let \BookInline{K\leq L} denote that \BookInline{K} is a substructure of \BookInline{L} and \BookInline{K<L} denote that \BookInline{K\leq L} but \BookInline{K\neq L.} Exercise 50 gives criteria for a subset \BookInline{S} of a ring \BookInline{R} to form a subring of \BookInline{R.}
+
+\end{BookBody}
+
+% Source PDF page 208; original printed page 191
+\BookSource{208}{191}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{HISTORICAL NOTE}  } \BookEnd{\blacksquare}
+
+\noindent Although fields were implict in the early work on the solvability of equations by Abel and Galois, it was Leopold Kronecker (1823– 1891) who in connection with his own work on this subject first published in 1881 a definition of what he called a “domain of rationality”: “The domain of rationality \BookInline{(R^{\prime },\allowbreak R^{\prime \prime },\allowbreak R^{\prime \prime \prime },\allowbreak \cdots )} contains \BookInline{\cdots } every one of those quantities which are rational functions of the quantities \BookInline{R^{\prime },\allowbreak R^{\prime \prime },\allowbreak R^{\prime \prime \prime },\allowbreak \cdots } with integral coefficients.” Kronecker, however, who insisted that any mathematical subject must be constructible in finitely many steps, did not view the domain of rationality as a complete entity, but merely as a region in which took place various operations on its elements.
+
+\noindent Richard Dedekind (1831–1916), the inventor of the Dedekind cut definition of a real number, considered a field as a completed entity. In 1871, he published the following definition in his supplement to the second edition of Dirichlet’s text on number theory: “By a field we mean any system of infinitely many real or complex numbers, which in itself is so closed and complete, that the addition, subtraction, multiplication, and division of any two numbers always produces a number of the same system.” Both Kronecker and Dedekind had, however, dealt with their varying ideas of this notion as early as the 1850s in their university lectures.
+
+A more abstract definition of a field, similar to the one in the text, was given by Heinrich Weber (1842–1913) in a paper of 1893. Weber’s definition, unlike that of Dedekind, specifically included fields with finitely many elements as well as other fields, such as function fields, which were not subfields of the field of complex numbers.
+
+Finally, be careful not to confuse our use of the words\textit{ unit} and\textit{ unity}.\textit{ Unity} is the multiplicative identity element, while a\textit{ unit} is any element having a multiplicative inverse. Thus the multiplicative identity element or unity is a unit, but not every unit is unity. For example\BookInline{,\allowbreak - 1} is a unit in \BookInline{\mathbb{Z},\allowbreak } but \BookInline{- 1} is not unity, that is\BookInline{,\allowbreak - 1\neq 1.}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{22}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 6, compute the product in the given ring.
+
+\BookExercise{1.}{(12)(16) in \BookInline{\mathbb{Z}_{24}}}
+
+\BookExercise{2.}{(16)(3) in \BookInline{\mathbb{Z}_{32}}}
+
+\BookExercise{3.}{\BookInline{(11)(- 4)} in \BookInline{\mathbb{Z}_{15}}}
+
+\BookExercise{4.}{\BookInline{(20)(- 8)} in \BookInline{\mathbb{Z}_{26}}}
+
+\BookExercise{5.}{(2,3)(3,5) in \BookInline{\mathbb{Z}_{5}\times \mathbb{Z}_{9}}}
+
+\BookExercise{6.}{\BookInline{(- 3,\allowbreak 5)(2,\allowbreak - 4)} in \BookInline{\mathbb{Z}_{4}\times \mathbb{Z}_{11}}}
+
+\noindent In Exercises 7 through 13, decide whether the indicated operations of addition and multiplication are defined (closed) on the set, and give a ring structure. If a ring is not formed, tell why this is the case. If a ring is formed, state whether the ring is commutative, whether it has unity, and whether it is a field.
+
+\BookExercise{7.}{\BookInline{n\mathbb{Z}} with the usual addition and multiplication}
+
+\BookExercise{8.}{\BookInline{\mathbb{Z}^{+ }} with the usual addition and multiplication}
+
+\BookExercise{9.}{\BookInline{\mathbb{Z}\times \mathbb{Z}} with addition and multiplication by components}
+
+\BookExercise{10.}{\BookInline{2\mathbb{Z}\times \mathbb{Z}} with addition and multiplication by components}
+
+\BookExercise{11.}{\BookInline{\{a+ b\sqrt{2}\mid a,\allowbreak b\in \mathbb{Z}\}} with the usual addition and multiplication}
+
+\BookExercise{12.}{\BookInline{\{a+ b\sqrt{2}\mid a,\allowbreak b\in \mathbb{Q}\}} with the usual addition and multiplication}
+
+\BookExercise{13.}{The set of all pure imaginary complex numbers\textit{ ri} for \BookInline{r\in \mathbb{R}} with the usual addition and multiplication}
+
+\end{BookBody}
+
+% Source PDF page 209; original printed page 192
+\BookSource{209}{192}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\noindent In Exercises 14 through 19, describe all units in the given ring
+
+\BookExercise{14.}{\BookInline{\mathbb{Z}}}
+
+\BookExercise{15.}{\BookInline{\mathbb{Z}\times \mathbb{Z}}}
+
+\BookExercise{16.}{\BookInline{\mathbb{Z}_{5}}}
+
+\BookExercise{17.}{\BookInline{\mathbb{Q}}}
+
+\BookExercise{18.}{\BookInline{\mathbb{Z}\times \mathbb{Q}\times \mathbb{Z}}}
+
+\BookExercise{19.}{\BookInline{\mathbb{Z}_{4}}}
+
+\BookExercise{20.}{Consider the matrix ring \BookInline{M_{2}(\mathbb{Z}_{2}).} \textbf{a.} Find the\textbf{ order} of the ring, that is, the number of elements in it. \textbf{b.} List all units in the ring.}
+
+\BookExercise{21.}{If possible, give an example of a homomorphism \BookInline{\phi:R\to R^{\prime }} where \BookInline{R} and \BookInline{R^{\prime }} are rings with unity \BookInline{1\neq 0} and \BookInline{1 ^ { \prime } \neq 0 ^ { \prime }}, and where \BookInline{\phi (1)\neq 0^{\prime }} and \BookInline{\phi (1)\neq 1^{\prime }.}}
+
+\BookExercise{22.}{(Linear algebra) Consider the map det of \BookInline{M_{n}(\mathbb{R})} into \BookInline{\mathbb{R}} where det\BookInline{(A)} is the determinant of the matrix \BookInline{A} for \BookInline{A\in M_{n}(\mathbb{R}).} Is det a ring homomorphism? Why or why not?}
+
+\BookExercise{23.}{Describe all ring homomorphisms of \BookInline{\mathbb{Z}} into \BookInline{\mathbb{Z}.}}
+
+\BookExercise{24.}{Describe all ring homomorphisms of \BookInline{\mathbb{Z}} into \BookInline{\mathbb{Z}\times \mathbb{Z}.}}
+
+\BookExercise{25.}{Describe all ring homomorphisms of \BookInline{\mathbb{Z}\times \mathbb{Z}} into \BookInline{\mathbb{Z}.}}
+
+\BookExercise{26.}{How many homomorphisms are there of \BookInline{\mathbb{Z}\times \mathbb{Z}\times \mathbb{Z}} into \BookInline{\mathbb{Z}}?}
+
+\BookExercise{27.}{Consider this solution of the equation \BookInline{X^{2}= I_{3}} in the ring \BookInline{M_{3}(\mathbb{R}).}}
+
+\BookInline{X^{2}= I_{3}} implies \BookInline{X^{2}- I_{3}= 0,\allowbreak } the zero matrix, so factoring, we have \BookInline{(X- I_{3})(X+ I_{3})= 0} whence either \BookInline{X= I_{3}} or \BookInline{X= - I_{3}.}
+
+Is this reasoning correct? If not, point out the error, and if possible, give a counterexample to the conclusion.
+
+\BookExercise{28.}{Find all solutions of the equation \BookInline{x^{2}+ x- 6= 0} in the ring \BookInline{\mathbb{Z}_{14}} by factoring the quadratic polynomial. Compare with Exercise 27.}
+
+\BookExercise{29.}{Find all solutions to the equations \BookInline{x^{2}+ x- 6= 0} in the ring \BookInline{\mathbb{Z}_{13}} by factoring the quadratic polynomial. Why are there not the same number of solutions in Exercise 28?}
+
+\BookExercise{30.}{What is wrong with the following attempt at a proof of Property 2 in Theorem 22.8?}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (- a)b= ((- 1)a)b= (- 1)(ab)= - (ab).}\end{adjustbox}\end{center}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 31 and 32, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{31.}{A \BookInline{\text{fi}eldF} is a ring with nonzero unity such that the set of nonzero elements of \BookInline{F} is a group under multiplication.}
+
+\BookExercise{32.}{A\textit{ unit} in a ring is an element of magnitude 1.}
+
+\BookExercise{33.}{Give an example of a ring having two elements \BookInline{a} and \BookInline{b} such that \BookInline{ab= 0} but neither \BookInline{a} nor \BookInline{b} is zero.}
+
+\BookExercise{34.}{Give an example of a ring with unity \BookInline{1\neq 0} that has a subring with nonzero unity \BookInline{1 ^ { \prime } \neq 1}. [\textit{Hint:} Consider a direct product, or a subring of \BookInline{\mathbb{Z}_{6}.]}}
+
+\BookExercise{35.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every field is also a ring.}
+
+\BookExercise{b.}{Every ring has a multiplicative identity.}
+
+\BookExercise{c.}{Every ring with unity has at least two units.}
+
+\BookExercise{d.}{Every ring with unity has at most two units.}
+
+\BookExercise{e.}{It is possible for a subset of some field to be a ring but not a subfield, under the induced operations.}
+
+\BookExercise{f.}{The distributive laws for a ring are not very important.}
+
+\BookExercise{g.}{Multiplication in a field is commutative.}
+
+\BookExercise{h.}{The nonzero elements of a field form a group under the multiplication in the field.}
+
+\BookExercise{i.}{Addition in every ring is commutative.}
+
+\BookExercise{j.}{Every element in a ring has an additive inverse.}
+
+\end{BookBody}
+
+% Source PDF page 210; original printed page 193
+\BookSource{210}{193}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{36.}{Show that the multiplication defined on the set \BookInline{F} of functions in Example 22.4 satisfies axioms \BookInline{\mathcal{R}_{2}} and \BookInline{\mathcal{R}_{3}} for a ring.}
+
+\BookExercise{37.}{Show that the evaluation map \BookInline{\phi _{a}} of Example 22.10 is a ring homomorphism.}
+
+\BookExercise{38.}{Complete the argument outlined after Definitions 22.12 to show that isomorphism gives an equivalence relation on a collection of rings.}
+
+\BookExercise{39.}{Show that if \BookInline{U} is the collection of all units in a ring \BookInline{\langle R,\allowbreak +,\allowbreak \cdot \rangle } with unity, then \BookInline{\langle U,\allowbreak \cdot \rangle } is a group. [\textit{Warning:} Be sure to show that \BookInline{U} is closed under multiplication.]}
+
+\BookExercise{40.}{Show that \BookInline{a^{2}- b^{2}= (a+ b)(a- b)} for all \BookInline{a} and \BookInline{b} in a ring \BookInline{R} if and only if \BookInline{R} is commutative.}
+
+\BookExercise{41.}{Let \BookInline{(R,\allowbreak + )} be an abelian group. Show that \BookInline{(R,\allowbreak +,\allowbreak \cdot )} is a ring if we define \BookInline{ab= 0} for all \BookInline{a,\allowbreak b\in R.}}
+
+\BookExercise{42.}{Show that the rings \BookInline{2\mathbb{Z}} and \BookInline{3\mathbb{Z}} are not isomorphic. Show that the fields \BookInline{\mathbb{R}} and \BookInline{\mathbb{C}} are not isomorphic.}
+
+\BookExercise{43.}{(Freshman exponentiation) Let \BookInline{p} be a prime. Show that in the ring \BookInline{\mathbb{Z}_{p}} we have \BookInline{(a+ b)^{p}= a^{p}+ b^{p}} for all \BookInline{a,\allowbreak b\in \mathbb{Z}_{p}.[}\textit{Hint:} Observe that the usual binomial expansion for \BookInline{(a+ b)^{n}} is valid in a\textit{ commutative} ring.]}
+
+\BookExercise{44.}{Show that the unity element in a subfield of a field must be the unity of the whole field, in contrast to Exercise 34 for rings.}
+
+\BookExercise{45.}{Show that the multiplicative inverse of a unit in a ring with unity is unique.}
+
+\BookExercise{46.}{An element \BookInline{a} of a ring \BookInline{R} is\textbf{ idempotent} if \BookInline{a^{2}= a.}}
+
+\BookExercise{a.}{Show that the set of all idempotent elements of a commutative ring is closed under multiplication.}
+
+\BookExercise{b.}{Find all idempotents in the ring \BookInline{\mathbb{Z}_{6}\times \mathbb{Z}_{12}.}}
+
+\BookExercise{47.}{(Linear algebra) Recall that for an \BookInline{m\times n} matrix \BookInline{A,\allowbreak } the\textit{ transpose} \BookInline{A^{T}} of \BookInline{A} is the matrix whose \BookInline{j}th column is the \BookInline{j}th row of \BookInline{A.} Show that if \BookInline{A} is an \BookInline{m\times n} matrix such that \BookInline{A^{T}A} is invertible, then the\textit{ projection matrix} \BookInline{P= A(A^{T}A)^{- 1}A^{T}} is an idempotent in the ring of \BookInline{n\times n} matrices.}
+
+\BookExercise{48.}{An element \BookInline{a} of a ring \BookInline{R} is\textbf{ nilpotent} if \BookInline{a^{n}= 0} for some \BookInline{n\in \mathbb{Z}^{+ }.} Show that if \BookInline{a} and \BookInline{b} are nilpotent elements of a\textit{ commutative} ring, then \BookInline{a+ b} is also nilpotent.}
+
+\BookExercise{49.}{Show that a ring \BookInline{R} has no nonzero nilpotent element if and only if 0 is the only solution of \BookInline{x^{2}= 0} in \BookInline{R.}}
+
+\BookExercise{50.}{Show that a subset \BookInline{S} of a ring \BookInline{R} gives a subring of \BookInline{R} if and only if the following hold:}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}&0\in S; \\ &(a- b)\in S\;\text{for all}\;a,\allowbreak b\in S; \\ &ab\in S\;\text{for all}\;a,\allowbreak b\in S.\end{aligned}}\end{adjustbox}\end{center}
+
+\BookExercise{51.}{\textbf{. a} Show that an intersection of subrings of a ring \BookInline{R} is again a subring of \BookInline{R.}}
+
+\BookExercise{b.}{Show that an intersection of subfields of a field \BookInline{F} is again a subfield of \BookInline{F.}}
+
+\BookExercise{52.}{Let \BookInline{R} be a ring, and let \BookInline{a} be a fixed element of \BookInline{R.} Let \BookInline{I_{a}= \{x\in R\mid } \textit{ax} \BookInline{= 0\}.} Show that \BookInline{I_{a}} is a subring of \BookInline{R.}}
+
+\BookExercise{53.}{Let \BookInline{R} be a ring, and let \BookInline{a} be a fixed element of \BookInline{R.} Let \BookInline{R_{a}} be the subring of \BookInline{R} that is the intersection of all subrings of \BookInline{R} containing \BookInline{a(}see Exercise 51). The ring \BookInline{R_{a}} is the\textbf{ subring of} \BookInline{R} \textbf{generated by} \BookInline{a.} Show that the abelian group \BookInline{\langle R_{a},\allowbreak + \rangle } is generated (in the sense of Section 7) by \BookInline{\{a^{n}\mid n\in \mathbb{Z}^{+ }\}.}}
+
+\BookExercise{54.}{(Chinese Remainder Theorem for two congruences) Let \BookInline{r} and \BookInline{s} be positive integers such that gcd\BookInline{(r,\allowbreak s)= 1.} Use the isomorphism in Example 22.15 to show that for \BookInline{m,\allowbreak n\in \mathbb{Z},\allowbreak } there exists an integer \BookInline{x} such that \BookInline{x\equiv m} (mod \BookInline{r)} and \BookInline{x\equiv n(}mod \BookInline{s).}}
+
+\BookExercise{55.}{\textbf{. a} State and prove the generalization of Example 22.15 for a direct product with \BookInline{n} factors.}
+
+\BookExercise{b.}{Prove the Chinese Remainder Theorem: Let \BookInline{a_{i},\allowbreak b_{i}\in \mathbb{Z}^{+ }} for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak n} and let gcd\BookInline{(b_{i},\allowbreak b_{j})= 1} for \BookInline{i\neq j.} Then there exists \BookInline{x\in \mathbb{Z}^{+ }} such that \BookInline{x\equiv a_{i}(}mod \BookInline{b_{i})} for \BookInline{i= 1,\allowbreak 2,\allowbreak \cdots,\allowbreak n.}}
+
+\BookExercise{56.}{Consider \BookInline{\langle S,\allowbreak +,\allowbreak \cdot \rangle,\allowbreak } where \BookInline{S} is a set and \BookInline{+ } and \BookInline{\cdot } are binary operations on \BookInline{S} such that}
+
+\noindent \BookInline{\langle S,\allowbreak + \rangle } is a group,
+
+\noindent \BookInline{\langle S^{\ast },\allowbreak \cdot \rangle } is a group where \BookInline{S^{\ast }} consists of all elements of \BookInline{S} except the additive identity element,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a(b+ c)= (ab)+ (ac)\;\text{and}\;(a+ b)c= (ac)+ (bc)\;\text{for all}\;a,\allowbreak b,\allowbreak c\in S.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Continuation on source PDF page 211, preceding Section 23
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\noindent Show that \BookInline{\langle S,\allowbreak +,\allowbreak \cdot \rangle } is a division ring. [\textit{Hint:} Apply the distributive laws to \BookInline{(1+ 1)(a+ b)} to prove the commutativity of addition.]
+
+\BookExercise{57.}{A ring \BookInline{R} is a\textbf{ Boolean ring} if \BookInline{a^{2}= a} for all \BookInline{a\in R,\allowbreak } so that every element is idempotent. Show that every Boolean ring is commutative.}
+
+\BookExercise{58.}{(For students having some knowledge of the laws of set theory) For a set \BookInline{S,\allowbreak } let \BookInline{\mathcal{P}(S)} be the collection of all subsets of \BookInline{S.} Let binary operations \BookInline{+ } and \BookInline{\cdot } on \BookInline{\mathcal{P}(S)} be defined by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A+ B= (A\cup B)- (A\cap B)= \{x\mid x\in A\;\text{or}\;x\in B\;\text{but}\;x\notin (A\cap B)\}}\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A\cdot B= A\cap B}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{A,\allowbreak B\in \mathcal{P}(S).}
+
+\BookExercise{a.}{Give the tables for \BookInline{+ } and \BookInline{\cdot } for \BookInline{\mathcal{P}(S),\allowbreak } where \BookInline{S= \{a,\allowbreak b\}.[}\textit{Hint}\BookInline{:\mathcal{P}(S)} has four elements.]}
+
+\BookExercise{b.}{Show that for\textit{ any} set \BookInline{S,\allowbreak \langle \mathcal{P}(S),\allowbreak +,\allowbreak \cdot \rangle } is a Boolean ring (see Exercise 57).}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

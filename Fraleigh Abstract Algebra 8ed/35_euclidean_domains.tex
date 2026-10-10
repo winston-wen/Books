@@ -1,0 +1,299 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 35 Euclidean Domains}
+\pdfbookmark[0]{Section 35 Euclidean Domains}{35_euclidean_domains}
+\ifdefined\BookMaster\else\setcounter{page}{286}\fi
+% Source PDF page 303; original printed page 286
+\BookSource{303}{286}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{35}{Euclidean Domains}
+
+\noindent We have remarked several times on the importance of division algorithms. Our first contact with them was the\textit{ division algorithm for} \BookInline{\mathbb{Z}} in Section 6. This algorithm was used to prove the important theorem that a subgroup of a cyclic group is cyclic, that is, has a single generator. Of course, this shows at once that \BookInline{\mathbb{Z}} is a PID. The\textit{ division} \textit{algorithm for} \BookInline{F[x]} appeared in Theorem 28.2 and was used in a completely analogous way to show that \BookInline{F[x]} is a PID. A technique of mathematics is to take some clearly related situations and to try to bring them under one roof by abstracting the important ideas common to them. The following definition is an illustration of this technique, as is this whole text! Let us see what we can develop by starting with the existence of a fairly general division algorithm in an integral domain.
+
+\BookLabel{35.1 Definition} A\textbf{ Euclidean norm} on an integral domain \BookInline{D} is a function \BookInline{\nu } mapping the nonzero elements of \BookInline{D} into the nonnegative integers such that the following conditions are satisfied:
+
+\BookExercise{1.}{For all \BookInline{a,\allowbreak b\in D} with \BookInline{b\neq 0,\allowbreak } there exist \BookInline{q} and \BookInline{r} in \BookInline{D} such that \BookInline{a= bq+ r,\allowbreak } where either \BookInline{r= 0} or \BookInline{\nu (r)<\nu (b).}}
+
+\BookExercise{2.}{For all \BookInline{a,\allowbreak b\in D,\allowbreak } where neither \BookInline{a} nor \BookInline{b} is \BookInline{0,\allowbreak \nu (a)\leq \nu (ab).}}
+
+\noindent An integral domain \BookInline{D} is a\textbf{ Euclidean domain} if there exists a Euclidean norm on \BookInline{D.}\BookEnd{\blacksquare}
+
+The importance of Condition 1 is clear from our discussion. The importance of Condition 2 is that it will enable us to characterize the units of a Euclidean domain \BookInline{D.}
+
+\BookLabel{35.2 Example} The integral domain \BookInline{\mathbb{Z}} is a Euclidean domain, for the function \BookInline{\nu } defined by \BookInline{\nu (n)= |n|} for \BookInline{n\neq 0} in \BookInline{\mathbb{Z}} is a Euclidean norm on \BookInline{\mathbb{Z}.} Condition 1 holds by the division algorithm for \BookInline{\mathbb{Z}.} Condition 2 follows from \BookInline{|ab|= |a||b|} and \BookInline{|a|\geq 1} for \BookInline{a\neq 0} in \BookInline{\mathbb{Z}.}\BookEnd{\blacktriangle}
+
+\BookLabel{35.3 Example} If \BookInline{F} is a field, then \BookInline{F[x]} is a Euclidean domain, for the function \BookInline{\nu } defined by \BookInline{\nu (f(x))= } (degree \BookInline{f(x))} for \BookInline{f(x)\in F[x],\allowbreak } and \BookInline{f(x)\neq 0} is a Euclidean norm. Condition 1 holds by Theorem 28.2, and Condition 2 holds since the degree of the product of two polynomials is the sum of their degrees\BookInline{.}\BookEnd{\blacktriangle}
+
+Of course, we should give some examples of Euclidean domains other than these familiar ones that motivated the definition. We shall do this in Section 36. In view of the opening remarks, we anticipate the following theorem.
+
+\BookLabel{35.4 Theorem} Every Euclidean domain is a PID.
+
+\end{BookBody}
+
+% Source PDF page 304; original printed page 287
+\BookSource{304}{287}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} Let \BookInline{D} be a Euclidean domain with a Euclidean norm \BookInline{\nu,\allowbreak } and let \BookInline{N} be an ideal in \BookInline{D.} If \BookInline{N= \{0\},\allowbreak } then \BookInline{N= \langle 0\rangle } and \BookInline{N} is principal. Suppose that \BookInline{N\neq \{0\}.} Then there exists \BookInline{b\neq 0} in \BookInline{N.} Let us choose \BookInline{b} such that \BookInline{\nu (b)} is minimal among all \BookInline{\nu (n)} for \BookInline{n\in N.} We claim that \BookInline{N= \langle b\rangle.} Let \BookInline{a\in N.} Then by Condition 1 for a Euclidean domain, there exist \BookInline{q} and \BookInline{r} in \BookInline{D} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a= bq+ r,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where either \BookInline{r= 0} or \BookInline{\nu (r)<\nu (b).} Now \BookInline{r= a- bq} and \BookInline{a,\allowbreak b\in N,\allowbreak } so that \BookInline{r\in N} since \BookInline{N} is an ideal. Thus \BookInline{\nu (r)<\nu (b)} is impossible by our choice of \BookInline{b.} Hence \BookInline{r= 0,\allowbreak } so \BookInline{a= bq.} Since \BookInline{a} was any element of \BookInline{N,\allowbreak } we see that \BookInline{N= \langle b\rangle.}\BookEnd{\blacklozenge}
+
+\BookLabel{35.5 Corollary} A Euclidean domain is a UFD.
+
+\BookLabel{\textit{Proof}} By Theorem 35.4, a Euclidean domain is a PID and by Theorem 34.18, a PID is a UFD\BookInline{.}\BookEnd{\blacklozenge}
+
+Finally, we should mention that while a Euclidean domain is a PID by Theorem 35.4, not every PID is a Euclidean domain. Examples of PIDs that are not Euclidean are not easily found, however.
+
+\BookTextHeading{\textbf{Arithmetic in Euclidean Domains}  }
+
+\noindent We shall now investigate some properties of Euclidean domains related to their multiplicative structure. We emphasize that the arithmetic structure of a Euclidean domain is not affected in any way by a Euclidean norm \BookInline{\nu } on the domain. A Euclidean norm is merely a useful tool for possibly throwing some light on this arithmetic structure of the domain. The arithmetic structure of a domain \BookInline{D} is completely determined by the set \BookInline{D} and the two binary operations \BookInline{+ } and \BookInline{\cdot } on \BookInline{D.}
+
+Let \BookInline{D} be a Euclidean domain with a Euclidean norm \BookInline{\nu.} We can use Condition 2 of a Euclidean norm to characterize the units of \BookInline{D.}
+
+\BookLabel{35.6 Theorem} For a Euclidean domain with a Euclidean norm \BookInline{\nu,\allowbreak \nu (1)} is minimal among all \BookInline{\nu (a)} for nonzero \BookInline{a\in D,\allowbreak } and \BookInline{u\in D} is a unit if and only if \BookInline{\nu (u)= \nu (1).}
+
+\BookLabel{\textit{Proof}} Condition 2 for \BookInline{\nu } tells us at once that for \BookInline{a\neq 0,\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \nu (1)\leq \nu (1a)= \nu (a).}\end{adjustbox}\end{center}
+
+\noindent On the other hand, if \BookInline{u} is a unit in \BookInline{D,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \nu (u)\leq \nu (uu^{- 1})= \nu (1).}\end{adjustbox}\end{center}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \nu (u)= \nu (1)}\end{adjustbox}\end{center}
+
+\noindent for a unit \BookInline{u} in \BookInline{D.}
+
+Conversely, suppose that a nonzero \BookInline{u\in D} is such that \BookInline{\nu (u)= \nu (1).} Then by the division algorithm, there exist \BookInline{q} and \BookInline{r} in \BookInline{D} such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 1= uq+ r,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where either \BookInline{r= 0} or \BookInline{\nu (r)<\nu (u).} But since \BookInline{\nu (u)= \nu (1)} is minimal over all \BookInline{\nu (d)} for nonzero \BookInline{d\in D,\allowbreak \nu (r)<\nu (u)} is impossible. Hence \BookInline{r= 0} and \BookInline{1= uq,\allowbreak } so \BookInline{u} is a unit\BookInline{.}\BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 305; original printed page 288
+\BookSource{305}{288}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent The Euclidean algorithm appears in Euclid’s \textit{Elements} as propositions 1 and 2 of Book VII, where it is used as here to find the greatest common divisor of two integers. Euclid uses it again in Book X (propositions 2 and 3) to find the greatest common measure of two magnitudes (if it exists) and to determine whether two magnitudes are incommensurable.
+
+\noindent The algorithm appears again in the\textit{ Brahmes}\textit{phutasiddhanta} (Correct Astronomical System of Brahma) (628) of the seventh-century Indian mathematician and astronomer Brahmagupta. To solve the indeterminate equation \BookInline{rx+ c= } \textit{sy} in integers, Brahmagupta uses Euclid’s procedure to “reciprocally divide” \BookInline{r} by \BookInline{s} until he reaches the final nonzero remainder. By then using, in effect, a substitution procedure based on the various quotients and remainders, he produces a straightforward algorithm for finding the smallest positive solution to his equation.
+
+The thirteenth-century Chinese algebraist Qin Jiushao also used the Euclidean algorithm in his solution of the so-called Chinese Remainder problem published in the\textit{ Shushu jiuzhang} (Mathematical Treatise in Nine Sections) (1247). Qin’s goal was to display a method for solving the system of congruences \BookInline{N\equiv r_{i}(}mod \BookInline{m_{i}).} As part of that method he needed to solve congruences of the form \BookInline{Nx\equiv 1} (mod \BookInline{m),\allowbreak } where \BookInline{N} and \BookInline{m} are relatively prime. The solution to a congruence of this form is again found by a substitution procedure, different from the Indian one, using the quotients and remainders from the Euclidean algorithm applied to \BookInline{N} and \BookInline{m.} It is not known whether the common element in the Indian and Chinese algorithms, the Euclidean algorithm itself, was discovered independently in these cultures or was learned from Greek sources.
+
+\BookLabel{35.7 Example} For \BookInline{\mathbb{Z}} with \BookInline{\nu (n)= |n|,\allowbreak } the minimum of \BookInline{\nu (n)} for nonzero \BookInline{n\in \mathbb{Z}} is 1, and 1 and \BookInline{- 1} are the only elements of \BookInline{\mathbb{Z}} with \BookInline{\nu (n)= 1.} Of course, 1 and \BookInline{- 1} are exactly the units of \BookInline{\mathbb{Z}.}\BookEnd{\blacktriangle}
+
+\BookLabel{35.8 Example} For \BookInline{F[x]} with \BookInline{\nu (f(x))= (}degree \BookInline{f(x))} for \BookInline{f(x)\neq 0,\allowbreak } the minimum value of \BookInline{\nu (f(x))} for all nonzero \BookInline{f(x)\in F[x]} is 0. The nonzero polynomials of degree 0 are exactly the nonzero elements of \BookInline{F,\allowbreak } and these are precisely the units of \BookInline{F[x].}\BookEnd{\blacktriangle}
+
+We emphasize that everything we prove here holds in\textit{ every} Euclidean domain, in particular in \BookInline{\mathbb{Z}} and \BookInline{F[x].} As indicated in Example 34.21, we can show that any \BookInline{a} and \BookInline{b} in a UFD have a gcd and actually compute one by factoring \BookInline{a} and \BookInline{b} into irreducibles, but such factorizations can be very tough to find. However, if a UFD is actually Euclidean, and we know an easily computed Euclidean norm, there is an easy constructive way to find gcd’s, as the next theorem shows.
+
+\BookLabel{35.9 Theorem} \textbf{(Euclidean Algorithm)} Let \BookInline{D} be a Euclidean domain with a Euclidean norm \BookInline{\nu,\allowbreak } and let \BookInline{a} and \BookInline{b} be nonzero elements of \BookInline{D.} Let \BookInline{r_{1}} be as in Condition 1 for a Euclidean norm, that is, \BookInline{abq_{1}+ r_{1},\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle =}\end{adjustbox}\end{center}
+
+\noindent where either \BookInline{r_{1}= 0} or \BookInline{\nu (r_{1})<\nu (b).} If \BookInline{r_{1}\neq 0,\allowbreak } let \BookInline{r_{2}} be such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle b= r_{1}q_{2}+ r_{2},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where either \BookInline{r_{2}= 0} or \BookInline{\nu (r_{2})<\nu (r_{1}).} In general, let \BookInline{r_{i+ 1}} be such that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle r_{i- 1}= r_{i}q_{i+ 1}+ r_{i+ 1},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where either \BookInline{r_{i+ 1}= 0} or \BookInline{\nu (r_{i+ 1})<\nu (r_{i}).} Then the sequence \BookInline{r_{i},\allowbreak r_{2},\allowbreak \cdots } must terminate with some \BookInline{r_{s}= 0.} If \BookInline{r_{1}= 0,\allowbreak } then \BookInline{b} is a gcd of \BookInline{a} and \BookInline{b.} If \BookInline{r_{1}\neq 0} and \BookInline{r_{s}} is the first \BookInline{r_{i}= 0,\allowbreak } then a gcd of \BookInline{a} and \BookInline{b} is \BookInline{r_{s- 1}.}
+
+\end{BookBody}
+
+% Source PDF page 306; original printed page 289
+\BookSource{306}{289}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Furthermore, if \BookInline{d} is a gcd of \BookInline{a} and \BookInline{b,\allowbreak } then there exist \BookInline{\lambda } and \BookInline{\mu } in \BookInline{D} such that \BookInline{d= \lambda a+ \mu b.}
+
+\BookLabel{\textit{Proof}} Since \BookInline{\nu (r_{i})<\nu (r_{i- 1})} and \BookInline{\nu (r_{i})} is a nonnegative integer, it follows that after some finite number of steps we must arrive at some \BookInline{r_{s}= 0.}
+
+If \BookInline{r_{1}= 0,\allowbreak } then \BookInline{a= bq_{1},\allowbreak } and \BookInline{b} is a gcd of \BookInline{a} and \BookInline{b.} Suppose \BookInline{r_{1}\neq 0.} Then if \BookInline{d|a} and \BookInline{d|b,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle d|(a- bq_{1}),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so \BookInline{d|r_{1}.} However, if \BookInline{d_{1}|r_{1}} and \BookInline{d_{1}|b,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle d_{1}|(bq_{1}+ r_{1}),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so \BookInline{d_{1}|a.} Thus the set of common divisors of \BookInline{a} and \BookInline{b} is the same set as the set of common divisors of \BookInline{b} and \BookInline{r_{1}.} By a similar argument, if \BookInline{r_{2}\neq 0,\allowbreak } the set of common divisors of \BookInline{b} and \BookInline{r_{1}} is the same set as the set of common divisors of \BookInline{r_{1}} and \BookInline{r_{2}.} Continuing this process, we see finally that the set of common divisors of \BookInline{a} and \BookInline{b} is the same set as the set of common divisors of \BookInline{r_{s- 2}} and \BookInline{r_{s- 1},\allowbreak } where \BookInline{r_{s}} is the first \BookInline{r_{i}} equal to 0. Thus a gcd of \BookInline{r_{s- 2}} and \BookInline{r_{s- 1}} is also a gcd of \BookInline{a} and \BookInline{b.} But the equation
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle r_{s- 2}= q_{s}r_{s- 1}+ r_{s}= q_{s}r_{s- 1}}\end{adjustbox}\end{center}
+
+\noindent shows that a gcd of \BookInline{r_{s- 2}} and \BookInline{r_{s- 1}} is \BookInline{r_{s- 1}.}
+
+It remains to show that we can express a gcd \BookInline{d} of \BookInline{a} and \BookInline{b} as \BookInline{d= \lambda a+ \mu b.} In terms of the construction just given, if \BookInline{d= b,\allowbreak } then \BookInline{d= 0a+ 1b} and we are done. If \BookInline{d= r_{s- 1},\allowbreak } then, working backward through our equations, we can express each \BookInline{r_{i}} in the form \BookInline{\lambda _{i}r_{i- 1}+ \mu _{i}r_{i- 2}} for some \BookInline{\lambda _{i},\allowbreak \mu _{i}\in D.} To illustrate using the first step, from the equation
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle r_{s- 3}= q_{s- 1}r_{s- 2}+ r_{s- 1}}\end{adjustbox}\end{center}
+
+\noindent we obtain
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle d= r_{s- 1}= r_{s- 3}- q_{s- 1}r_{s- 2}.(1)}\end{adjustbox}\end{center}
+
+\noindent We then express \BookInline{r_{s- 2}} in terms of \BookInline{r_{s- 3}} and \BookInline{r_{s- 4}} and substitute in Eq. (1) to express \BookInline{d} in terms of \BookInline{r_{s- 3}} and \BookInline{r_{s- 4}.} Eventually, we will have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}d&= \lambda _{3}r_{2}+ \mu _{3}r_{1}= \lambda _{3}(b- r_{1}q_{2})+ \mu _{3}r_{1}= \lambda _{3}b+ (\mu _{3}- \lambda _{3}q_{2})r_{1} \\ &= \lambda _{3}b+ (\mu _{3}- \lambda _{3}q_{2})(a- bq_{1})\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent which can be expressed in the form \BookInline{d= \lambda a+ \mu b.} If \BookInline{d^{\prime }} is any other gcd of \BookInline{a} and \BookInline{b,\allowbreak } then \BookInline{d^{\prime }= ud} for some unit \BookInline{u,\allowbreak } so \BookInline{d^{\prime }= (\lambda u)a+ (\mu u)b.}\BookEnd{\blacklozenge}
+
+The nice thing about Theorem 35.9 is that it can be implemented on a computer. Of course, we anticipate that of anything that is labeled an “algorithm.”
+
+\BookLabel{35.10 Example} Let us illustrate the Euclidean algorithm for the Euclidean norm \BookInline{||} on \BookInline{\mathbb{Z}} by computing a gcd of 22,471 and 3,266. We just apply the division algorithm over and over again, and the last nonzero remainder is a gcd. We label the numbers obtained as in Theorem 35.9 to further illustrate the statement and proof of the theorem. The computations are easily checked.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}a&= 22,\allowbreak 471 \\ b&= 3,\allowbreak 266 \\ 22,\allowbreak 471&= (3,\allowbreak 266)6+ 2,\allowbreak 875r_{1}= 2,\allowbreak 875 \\ 3,\allowbreak 266&= (2,\allowbreak 875)1+ 391r_{2}= 391 \\ 2,\allowbreak 875&= (391)7+ 138r_{3}= 138 \\ 391&= (138)2+ 115r_{4}= 115 \\ 138&= (115)1+ 23r_{5}= 23 \\ 115&= (23)5+ 0r_{6}= 0\end{aligned}}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 307; original printed page 290
+\BookSource{307}{290}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent Thus \BookInline{r_{5}= 23} is a gcd of 22,471 and 3,266. We found a gcd without factoring! This is important, for sometimes it is very difficult to find a factorization of an integer into primes\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{35.11 Example} Note that the division algorithm Condition 1 in the definition of a Euclidean norm says nothing about \BookInline{r} being “positive.” In computing a gcd in \BookInline{\mathbb{Z}} by the Euclidean algorithm for \BookInline{||,\allowbreak } as in Example 35.10, it is surely in our interest to make \BookInline{|r_{i}|} as small as possible in each division. Thus, repeating Example 35.10, it would be more efficient to write
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}a&= 22,\allowbreak 471 \\ b&= 3,\allowbreak 266 \\ 22,\allowbreak 471&= (3,\allowbreak 266)7- 391r_{1}= - 391 \\ 3,\allowbreak 266&= (391)8+ 138r_{2}= 138 \\ 391&= (138)3- 23r_{3}= - 23 \\ 138&= (23)6+ 0r_{4}= 0\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent We can change the sign of \BookInline{r_{i}} from negative to positive when we wish since the divisors of \BookInline{r_{i}} and \BookInline{- r_{i}} are the same\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{35}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 5, state whether the given function \BookInline{\nu } is a Euclidean norm for the given integral domain.
+
+\BookExercise{1.}{The function \BookInline{\nu } for \BookInline{\mathbb{Z}} given by \BookInline{\nu (n)= n^{2}} for nonzero \BookInline{n\in \mathbb{Z}}}
+
+\BookExercise{2.}{The function \BookInline{\nu } for \BookInline{\mathbb{Z}[x]} given by \BookInline{\nu (f(x))= (}degree of \BookInline{f(x))} for \BookInline{f(x)\in \mathbb{Z}[x],\allowbreak f(x)\neq 0}}
+
+\BookExercise{3.}{The function \BookInline{\nu } for \BookInline{\mathbb{Z}[x]} given by \BookInline{\nu (f(x))= (}the absolute value of the coefficient of the highest degree nonzero term of \BookInline{f(x))} for nonzero \BookInline{f(x)\in \mathbb{Z}[x]}}
+
+\BookExercise{4.}{The function \BookInline{\nu } for \BookInline{\mathbb{Q}} given by \BookInline{\nu (a)= a^{2}} for nonzero \BookInline{a\in \mathbb{Q}}}
+
+\BookExercise{5.}{The function \BookInline{\nu } for \BookInline{\mathbb{Q}} given by \BookInline{\nu (a)= 50} for nonzero \BookInline{a\in \mathbb{Q}}}
+
+\BookExercise{6.}{By referring to Example 35.11, actually express the gcd 23 in the form \BookInline{\lambda (22,\allowbreak 471)+ \mu (3,\allowbreak 266)} for \BookInline{\lambda,\allowbreak \mu \in \mathbb{Z}.} [\textit{Hint:} From the next-to-last line of the computation in Example \BookInline{35.11,\allowbreak 23= (138)3- 391.} From the line before that\BookInline{,\allowbreak 138= 3,\allowbreak 266- (391)8,\allowbreak } so substituting, you get \BookInline{23= [3,\allowbreak 266- (391)8]3- 391,\allowbreak } and so on. That is, work your way back up to actually find values for \BookInline{\lambda } and \BookInline{\mu.]}}
+
+\BookExercise{7.}{Find a gcd of 49,349 and 15,555 in \BookInline{\mathbb{Z}.}}
+
+\BookExercise{8.}{Following the idea of Exercise 6 and referring to Exercise 7, express the positive gcd of 49,349 and 15,555 in \BookInline{\mathbb{Z}} in the form \BookInline{\lambda (49,\allowbreak 349)+ \mu (15,\allowbreak 555)} for \BookInline{\lambda,\allowbreak \mu \in \mathbb{Z}.}}
+
+\BookExercise{9.}{Find a gcd of}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{10}- 3x^{9}+ 3x^{8}- 11x^{7}+ 11x^{6}- 11x^{5}+ 19x^{4}- 13x^{3}+ 8x^{2}- 9x+ 3}\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{6}- 3x^{5}+ 3x^{4}- 9x^{3}+ 5x^{2}- 5x+ 2}\end{adjustbox}\end{center}
+
+\noindent in \BookInline{\mathbb{Q}[x].}
+
+\BookExercise{10.}{Describe how the Euclidean Algorithm can be used to find the gcd of \BookInline{n} members \BookInline{a_{1},\allowbreak a_{2},\allowbreak \cdots,\allowbreak a_{n}} of a Euclidean domain.}
+
+\BookExercise{11.}{Using your method devised in Exercise 10, find the gcd of 2178, 396, 792, and 726.}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{12.}{Let us consider \BookInline{\mathbb{Z}[x].}}
+
+\end{BookBody}
+
+% Source PDF page 308; original printed page 291
+\BookSource{308}{291}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{a.}{Is \BookInline{\mathbb{Z}[x]} a UFD? Why?}
+
+\BookExercise{b.}{Show that \BookInline{\{a+ xf(x)\mid a\in 2\mathbb{Z},\allowbreak f(x)\in \mathbb{Z}[x]\}} is an ideal in \BookInline{\mathbb{Z}[x].}}
+
+\BookExercise{c.}{Is \BookInline{\mathbb{Z}[x]} a PID? (Consider part (b).)}
+
+\BookExercise{d.}{Is \BookInline{\mathbb{Z}[x]} a Euclidean domain? Why?}
+
+\BookExercise{13.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every Euclidean domain is a PID.}
+
+\BookExercise{b.}{Every PID is a Euclidean domain.}
+
+\BookExercise{c.}{Every Euclidean domain is a UFD.}
+
+\BookExercise{d.}{Every UFD is a Euclidean domain.}
+
+\BookExercise{e.}{A gcd of 2 and 3 in \BookInline{\mathbb{Q}} is 12.}
+
+\BookExercise{f.}{The Euclidean algorithm gives a constructive method for finding a gcd of two integers.}
+
+\BookExercise{g.}{If \BookInline{\nu } is a Euclidean norm on a Euclidean domain \BookInline{D,\allowbreak } then \BookInline{\nu (1)\leq \nu (a)} for all nonzero \BookInline{a\in D.}}
+
+\BookExercise{h.}{If \BookInline{\nu } is a Euclidean norm on a Euclidean domain \BookInline{D,\allowbreak } then \BookInline{\nu (1)<\nu (a)} for all nonzero \BookInline{a\in D,\allowbreak a\neq 1.}}
+
+\BookExercise{i.}{If \BookInline{\nu } is a Euclidean norm on a Euclidean domain \BookInline{D,\allowbreak } then \BookInline{\nu (1)<\nu (a)} for all nonzero nonunits \BookInline{a\in D.}}
+
+\BookExercise{j.}{For any field \BookInline{F,\allowbreak F[x]} is a Euclidean domain.}
+
+\BookExercise{14.}{Does the choice of a particular Euclidean norm \BookInline{\nu } on a Euclidean domain \BookInline{D} influence the arithmetic structure of \BookInline{D} in any way? Explain.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{15.}{Let \BookInline{D} be a Euclidean domain and let \BookInline{\nu } be a Euclidean norm on \BookInline{D.} Show that if \BookInline{a} and \BookInline{b} are associates in \BookInline{D,\allowbreak } then \BookInline{\nu (a)= \nu (b).}}
+
+\BookExercise{16.}{Let \BookInline{D} be a Euclidean domain and let \BookInline{\nu } be a Euclidean norm on \BookInline{D.} Show that for nonzero \BookInline{a,\allowbreak b\in D,\allowbreak } one has \BookInline{\nu (a)<\nu (ab)} if and only if \BookInline{b} is not a unit of \BookInline{D.[}\textit{Hint:} Argue from Exercise 15 that \BookInline{\nu (a)<\nu (ab)} implies that \BookInline{b} is not a unit of \BookInline{D.} Using the Euclidean algorithm, show that \BookInline{\nu (a)= \nu (ab)} implies \BookInline{\langle a\rangle = \langle ab\rangle.} Conclude that if \BookInline{b} is not a unit, then \BookInline{\nu (a)<\nu (ab).]}}
+
+\BookExercise{17.}{Prove or disprove the following statement: If \BookInline{\nu } is a Euclidean norm on Euclidean domain \BookInline{D,\allowbreak } then \BookInline{\{a\in } \BookInline{D|\nu (a)>\nu (1)\}\cup \{0\}} is an ideal of \BookInline{D.}}
+
+\BookExercise{18.}{Show that every field is a Euclidean domain.}
+
+\BookExercise{19.}{Let \BookInline{\nu } be a Euclidean norm on a Euclidean domain \BookInline{D.}}
+
+\BookExercise{a.}{Show that if \BookInline{s\in \mathbb{Z}} such that \BookInline{s+ \nu (1)>0,\allowbreak } then \BookInline{\eta:D^{\ast }\to \mathbb{Z}} defined by \BookInline{\eta (a)= \nu (a)+ s} for nonzero \BookInline{a\in D} is a Euclidean norm on \BookInline{D.} As usual\BookInline{,\allowbreak D^{\ast }} is the set of nonzero elements of \BookInline{D.}}
+
+\BookExercise{b.}{Show that for \BookInline{t\in \mathbb{Z}^{+ },\allowbreak \lambda:D^{\ast }\to \mathbb{Z}} given by \BookInline{\lambda (a)= t\cdot \nu (a)} for nonzero \BookInline{a\in D} is a Euclidean norm on \BookInline{D.}}
+
+\BookExercise{c.}{Show that there exists a Euclidean norm \BookInline{\mu } on \BookInline{D} such that \BookInline{\mu (1)= 1} and \BookInline{\mu (a)>100} for all nonzero nonunits \BookInline{a\in D.}}
+
+\BookExercise{20.}{Let \BookInline{D} be a UFD. An element \BookInline{c} in \BookInline{D} is a\textbf{ least common multiple} (abbreviated lcm) of two elements \BookInline{a} and \BookInline{b} in \BookInline{D} if \BookInline{a|c,\allowbreak b|c} and if \BookInline{c} divides every element of \BookInline{D} that is divisible by both \BookInline{a} and \BookInline{b.} Show that every two nonzero elements \BookInline{a} and \BookInline{b} of a Euclidean domain \BookInline{D} have an lcm in \BookInline{D.[}\textit{Hint:} Show that all common multiples, in the obvious sense, of both \BookInline{a} and \BookInline{b} form an ideal of \BookInline{D.]}}
+
+\BookExercise{21.}{Use the last statement in Theorem 35.9 to show that two nonzero elements \BookInline{r,\allowbreak s\in \mathbb{Z}} generate the group \BookInline{\langle \mathbb{Z},\allowbreak + \rangle } if and only if \BookInline{r} and \BookInline{s,\allowbreak } viewed as integers in the domain \BookInline{\mathbb{Z},\allowbreak } are\textbf{ relatively prime,} that is, have a gcd of 1.}
+
+\BookExercise{22.}{Using the last statement in Theorem 35.9, show that for nonzero \BookInline{a,\allowbreak b,\allowbreak n\in \mathbb{Z},\allowbreak } the congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{n)} has a solution in \BookInline{\mathbb{Z}} if \BookInline{a} and \BookInline{n} are relatively prime.}
+
+\BookExercise{23.}{Generalize Exercise 22 by showing that for nonzero \BookInline{a,\allowbreak b,\allowbreak n\in \mathbb{Z},\allowbreak } the congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{n)} has a solution in \BookInline{\mathbb{Z}} if and only if the positive gcd of \BookInline{a} and \BookInline{n} in \BookInline{\mathbb{Z}} divides \BookInline{b.} Interpret this result in the ring \BookInline{\mathbb{Z}_{n}.}}
+
+\BookExercise{24.}{Following the idea of Exercises 6 and 23, outline a constructive method for finding a solution in \BookInline{\mathbb{Z}} of the congruence\textit{ ax} \BookInline{\equiv b(}mod \BookInline{n)} for nonzero \BookInline{a,\allowbreak b,\allowbreak n\in \mathbb{Z},\allowbreak } if the congruence does have a solution. Use this method to find a solution of the congruence \BookInline{22x\equiv 18(}mod 42).}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

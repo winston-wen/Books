@@ -1,0 +1,436 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 10 Cosets and the Theorem of Lagrange}
+\pdfbookmark[0]{Section 10 Cosets and the Theorem of Lagrange}{10_cosets_and_the_theorem_of_lagrange}
+\ifdefined\BookMaster\else\setcounter{page}{97}\fi
+% Source PDF page 114; original printed page 97
+\BookSource{114}{97}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{10}{Cosets and the Theorem of Lagrange}
+
+\noindent You may have noticed that the order of a subgroup \BookInline{H} of a finite group \BookInline{G} seems always to be a divisor of the order of \BookInline{G.} This is the theorem of Lagrange. We shall prove it by exhibiting a partition of \BookInline{G} into cells, all having the same size as \BookInline{H.} Thus if there are \BookInline{r} such cells, we will have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle r(\;\text{order of}\;H)= (\;\text{order of}\;G)}\end{adjustbox}\end{center}
+
+\noindent from which the theorem follows immediately. The cells in the partition will be called \textit{cosets of} \BookInline{H,\allowbreak } and they are important in their own right. In Section 12, we will see that if \BookInline{H} satisfies a certain property, then each coset can be regarded as an element of a group in a very natural way. We give some indication of such\textit{ coset groups} in this section to help you develop a feel for the topic.
+
+\BookTextHeading{\textbf{Cosets}}
+
+\noindent Let \BookInline{H} be a subgroup of a group \BookInline{G,\allowbreak } which may be of finite or infinite order. We exhibit a partition a \BookInline{G} by defining an equivalence relation\BookInline{,\allowbreak \sim _{L}} on \BookInline{G.}
+
+\BookLabel{10.1 Theorem} Let \BookInline{H} be a subgroup of \BookInline{G.} Let the relation \BookInline{\sim _{L}} be defined on \BookInline{G} by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\sim _{L}b\;\text{if and only if}\;a^{- 1}b\in H.}\end{adjustbox}\end{center}
+
+\noindent Then \BookInline{\sim } is an equivalence relation on \BookInline{G.}
+
+\end{BookBody}
+
+% Source PDF page 115; original printed page 98
+\BookSource{115}{98}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} When reading the proof, notice how we must constantly make use of the fact that \BookInline{H} is a \textit{subgroup} of \BookInline{G.}
+
+\textbf{Reflexive} Let \BookInline{a\in G.} Then \BookInline{a^{- 1}a= e} and \BookInline{e\in H} since \BookInline{H} is a subgroup. Thus \BookInline{a\sim _{L}a.}
+
+\textbf{Symmetric} Suppose \BookInline{a\sim _{L}b.} Then \BookInline{a^{- 1}b\in H.} Since \BookInline{H} is a subgroup\BookInline{,\allowbreak (a^{- 1}b)^{- 1}} is in \BookInline{H} and \BookInline{(a^{- 1}b)^{- 1}= b^{- 1}a,\allowbreak } so \BookInline{b^{- 1}a} is in \BookInline{H} and \BookInline{b\sim _{L}a.}
+
+\textbf{Transitive} Let \BookInline{a\sim _{L}b} and \BookInline{b\sim _{L}c.} Then \BookInline{a^{- 1}b\in H} and \BookInline{b^{- 1}c\in H.} Since \BookInline{H} is a subgroup\BookInline{,\allowbreak (a^{- 1}b)(b^{- 1}c)= a^{- 1}c} is in \BookInline{H,\allowbreak } so \BookInline{a\sim _{L}c.}\BookEnd{\blacklozenge}
+
+The equivalence relation \BookInline{\sim _{L}} in Theorem 10.1 defines a partition of \BookInline{G,\allowbreak } as described in Theorem 0.22. Let’s see what the cells in this partition look like. Suppose \BookInline{a\in G.} The cell containing \BookInline{a} consists of all \BookInline{x\in G} such that \BookInline{a\sim _{L}x,\allowbreak } which means all \BookInline{x\in G} such that \BookInline{a^{- 1}x\in H.} Now \BookInline{a^{- 1}x\in H} if and only if \BookInline{a^{- 1}x= h} for some \BookInline{h\in H,\allowbreak } or equivalently, if and only if \BookInline{x= ah} for some \BookInline{h\in H.} Therefore the cell containing \BookInline{a} is \BookInline{\{ah\mid h\in H\},\allowbreak } which we denote by \BookInline{aH.}
+
+\BookLabel{10.2 Definition} Let \BookInline{H} be a subgroup of a group \BookInline{G.} The subset \BookInline{aH= \{ah\mid h\in H\}} of \BookInline{G} is the\textbf{ left coset} of \BookInline{H} containing \BookInline{a.}\BookEnd{\blacksquare}
+
+\BookLabel{10.3 Example} Exhibit the left coset of the subgroup \BookInline{3\mathbb{Z}} of \BookInline{\mathbb{Z}.}
+
+\BookLabel{\textit{Solution}} Our notation here is additive, so the left coset of \BookInline{3\mathbb{Z}} containing \BookInline{m} is \BookInline{m+ 3\mathbb{Z}.} Taking \BookInline{m= 0,\allowbreak } we see that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 3\mathbb{Z}= \{\cdots ,\allowbreak - 9,\allowbreak - 6,\allowbreak - 3,\allowbreak 0,\allowbreak 3,\allowbreak 6,\allowbreak 9,\allowbreak \cdots \}}\end{adjustbox}\end{center}
+
+\noindent is itself one of its left cosets, the coset containing 0. To find another left coset, we select an element of \BookInline{\mathbb{Z}} not in \BookInline{3\mathbb{Z},\allowbreak } say 1, and find the left coset containing it. We have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 1+ 3\mathbb{Z}= \{\cdots ,\allowbreak - 8,\allowbreak - 5,\allowbreak - 2,\allowbreak 1,\allowbreak 4,\allowbreak 7,\allowbreak 10,\allowbreak \cdots \}.}\end{adjustbox}\end{center}
+
+\noindent These two left cosets\BookInline{,\allowbreak 3\mathbb{Z}} and \BookInline{1+ 3\mathbb{Z},\allowbreak } do not yet exhaust \BookInline{\mathbb{Z}.} For example, 2 is in neither of them. The left coset containing 2 is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2+ 3\mathbb{Z}= \{\cdots ,\allowbreak - 7,\allowbreak - 4,\allowbreak - 1,\allowbreak 2,\allowbreak 5,\allowbreak 8,\allowbreak 11,\allowbreak \cdots \}.}\end{adjustbox}\end{center}
+
+\noindent It is clear that these three left cosets we have found do exhaust \BookInline{\mathbb{Z},\allowbreak } so they constitute the partition of \BookInline{\mathbb{Z}} into left cosets of \BookInline{3\mathbb{Z}.}\BookEnd{\blacktriangle}
+
+\BookLabel{10.4 Example} We find the partition of \BookInline{\mathbb{Z}_{12}} into left cosets of \BookInline{H= \langle 3\rangle.} One coset is always the subgroup itself, so \BookInline{0+ H= \{0,\allowbreak 3,\allowbreak 6,\allowbreak 9\}.} We next find \BookInline{1+ H= \{1,\allowbreak 4,\allowbreak 7,\allowbreak 10\}.} We are still not done since we have not included every element of \BookInline{\mathbb{Z}_{12}} in the two cosets we listed so far. Finally\BookInline{,\allowbreak 2+ H= \{2,\allowbreak 5,\allowbreak 8,\allowbreak 11\}} and we have computed all the left cosets of \BookInline{H} in \BookInline{\mathbb{Z}_{12}.}\BookEnd{\blacktriangle}
+
+\BookLabel{10.5 Example} We now list the left cosets of the subgroup \BookInline{H= \langle \mu \rangle = \{\iota,\allowbreak \mu \}} of the nonabelian group \BookInline{D_{4}= \{\iota,\allowbreak \rho,\allowbreak \rho ^{2},\allowbreak \rho ^{3},\allowbreak \mu,\allowbreak \mu \rho,\allowbreak \mu \rho ^{2},\allowbreak \mu \rho ^{3}\}.}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\iota \{\iota ,\allowbreak \mu \}&= \{\iota ,\allowbreak \mu \} \\ \rho \{\iota ,\allowbreak \mu \}&= \{\rho ,\allowbreak \mu \rho ^{3}\} \\ \rho ^{2}\{\iota ,\allowbreak \mu \}&= \{\rho ^{2},\allowbreak \mu \rho ^{2}\} \\ \rho ^{3}\{\iota ,\allowbreak \mu \}&= \{\rho ^{3},\allowbreak \mu \rho \}\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent We know this is a complete list of the left cosets since every element of \BookInline{D_{4}} appears in exactly one of the listed sets\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 116; original printed page 99
+\BookSource{116}{99}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{The Theorem of Lagrange}  }
+
+\noindent In Example 10.4 each left coset of \BookInline{\langle 3\rangle \leq \mathbb{Z}_{12}} has four elements. In Example 10.5, each left coset has two elements. From the computation of the left cosets, it is no surprise that all left cosets of a subgroup have the same number of elements. Theorem 10.6 confirms this is what happens in general.
+
+\BookLabel{10.6 Theorem} Let \BookInline{H} be a subgroup of \BookInline{G.} Then for any \BookInline{a\in G,\allowbreak } the coset \BookInline{aH} has the same cardinality as \BookInline{H.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{f:H\to aH} be defined by the formula \BookInline{f(h)= ah.} To show \BookInline{f} is one-to-one, we suppose that \BookInline{b,\allowbreak c\in H} and \BookInline{f(b)= f(c).} Then \BookInline{ab= } \textit{ac} and left cancellation gives \BookInline{b= c.} So \BookInline{f} is one-to-one. Now suppose that \BookInline{y\in aH.} Then there is an \BookInline{h\in H} such that \BookInline{y= ah} by definition of the left coset \BookInline{aH.} Thus \BookInline{y= f(h)} and \BookInline{f} is surjective. Since there is a one-to-one function mapping \BookInline{H} onto \BookInline{aH,\allowbreak H} and \BookInline{aH} have the same cardinality\BookInline{.}\BookEnd{\blacklozenge}
+
+In the case of a finite subgroup \BookInline{H,\allowbreak } Theorem 10.6 says that \BookInline{H} and \BookInline{aH} have the same number of elements for any \BookInline{a} in the group \BookInline{G.} This is precisely what we were seeking in order to prove Lagrange’s Theorem.
+
+\BookLabel{10.7 Theorem} \textbf{(Theorem of Lagrange)} Let \BookInline{H} be a subgroup of a finite group \BookInline{G.} Then the order of \BookInline{H} is a divisor of the order of \BookInline{G.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{n} be the order of \BookInline{G,\allowbreak } and let \BookInline{H} have order \BookInline{m.} Theorem 10.6 shows that every coset of \BookInline{H} also has \BookInline{m} elements. Let \BookInline{r} be the number of cells in the partition of \BookInline{G} into left cosets of \BookInline{H.} Then \BookInline{n= rm,\allowbreak } so \BookInline{m} is indeed a divisor of \BookInline{n.}\BookEnd{\blacklozenge}
+
+Note that this elegant and important theorem comes from the simple counting of cosets and the number of elements in each coset. We continue to derive consequences of Theorem 10.7, which should be regarded as a counting theorem.
+
+\BookLabel{10.8 Corollary} Every group of prime order is cyclic.
+
+\BookLabel{\textit{Proof}} Let \BookInline{G} be of prime order \BookInline{p,\allowbreak } and let \BookInline{a} be an element of \BookInline{G} different from the identity. Then the cyclic subgroup \BookInline{\langle a\rangle } of \BookInline{G} generated by \BookInline{a} has at least two elements\BookInline{,\allowbreak a} and \BookInline{e.} But by Theorem 10.7, the order \BookInline{m\geq 2} of \BookInline{\langle a\rangle } must divide the prime \BookInline{p.} Thus we must have \BookInline{m= p} and \BookInline{\langle a\rangle = G,\allowbreak } so \BookInline{G} is cyclic\BookInline{.}\BookEnd{\blacklozenge}
+
+Since every cyclic group of order \BookInline{p} is isomorphic to \BookInline{\mathbb{Z}_{p},\allowbreak } we see that\textit{ there is only} \textit{one group structure, up to isomorphism, of} \BookInline{a} \textit{given prime order} \BookInline{\rho.} Now doesn’t this elegant result follow easily from the theorem of Lagrange, a\textit{ counting} theorem?\textit{ Never} \textit{underestimate} \BookInline{a} \textit{theorem that counts something}. Proving the preceding corollary is a favorite examination question.
+
+\BookLabel{10.9 Theorem} The order of an element of a finite group divides the order of the group.
+
+\BookLabel{\textit{Proof}} Remembering that the order of an element is the same as the order of the cyclic subgroup generated by the element, we see that this theorem follows directly from Lagrange’s Theorem\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{10.10 Definition} Let \BookInline{H} be a subgroup of a group \BookInline{G.} The number of left cosets of \BookInline{H} in \BookInline{G} is the\textbf{ index} \BookInline{(G:H)} \textbf{of} \BookInline{H} \textbf{in} \BookInline{G.}\BookEnd{\blacksquare}
+
+The index \BookInline{(G:H)} just defined may be finite or infinite. If \BookInline{G} is finite, then obviously \BookInline{(G:H)} is finite and \BookInline{(G:H)= |G|/|H|,\allowbreak } since every coset of \BookInline{H} contains \BookInline{|H|} elements. We state a basic theorem concerning indices of subgroups, and leave the proof to the exercises (see Exercise 40).
+
+\end{BookBody}
+
+% Source PDF page 117; original printed page 100
+\BookSource{117}{100}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{10.11 Theorem} Suppose \BookInline{H} and \BookInline{K} are subgroups of a group \BookInline{G} such that \BookInline{K\leq H\leq G,\allowbreak } and suppose \BookInline{(H:K)} and \BookInline{(G:H)} are both finite. Then \BookInline{(G:K)} is finite, and \BookInline{(G:K)= (G:H)(H:K).}
+
+Lagrange’s Theorem says that for any subgroup \BookInline{H} of a finite group \BookInline{G,\allowbreak } the order of \BookInline{H} divides the order of \BookInline{G.} But if \BookInline{d} is a divisor of the order of \BookInline{G,\allowbreak } does \BookInline{G} necessarily have a subgroup with exactly \BookInline{d} elements? We will show in Section 13 that the answer is no for some groups. This suggests a new question: Under what conditions does \BookInline{G} have a subgroup of every order \BookInline{d} that is a divisor of \BookInline{G}? We saw in Section 9 that for every divisor of the order of an abelian group, there is a subgroup of that order. The complete answer to this question is beyond the scope of this book, but we will come back to the question later.
+
+\BookTextHeading{\textbf{Cosets Left and Right!}  }
+
+\noindent It is possible to do everything we have done in this section using right cosets instead of left cosets. All it takes is some minor and straightforward modifications to the definitions and proofs. We briefly give the corresponding definitions that lead to right cosets and point out some of their properties.
+
+Let \BookInline{H} be a subgroup of \BookInline{G.} To start with, instead of \BookInline{\sim _{L}} we could have used \BookInline{\sim _{R}} defined by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a\sim _{R}b\;\text{if and only if}\;ab^{- 1}\in H.}\end{adjustbox}\end{center}
+
+\noindent With this definition\BookInline{,\allowbreak \sim _{R}} is an equivalence relation and the equivalence classes are the \textbf{right cosets}. The right coset of \BookInline{H} containing the element \BookInline{a\in G} is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle Ha= \{ha\mid h\in H\}.}\end{adjustbox}\end{center}
+
+\noindent Just like left cosets, each right coset of a subgroup \BookInline{H} has the same cardinality as \BookInline{H.} So left cosets and right cosets have the same cardinality. In abelian groups, the right and left cosets are the same, but there is no reason to think they would be the same in general for nonabelian groups. If the right and left cosets are the same, we can drop left or right and just refer to cosets.
+
+\BookLabel{10.12 Example} In Example 10.5 we computed the left cosets of the subgroup \BookInline{H= \langle \mu \rangle = \{\iota,\allowbreak \mu \}} of the group \BookInline{D_{4}= \{\iota,\allowbreak \rho,\allowbreak \rho ^{2},\allowbreak \rho ^{3},\allowbreak \mu,\allowbreak \mu \rho,\allowbreak \mu \rho ^{2},\allowbreak \mu \rho ^{3}\}.} We now compute the right cosets.
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\{\iota ,\allowbreak \mu \}\iota &= \{\iota ,\allowbreak \mu \} \\ \{\iota ,\allowbreak \mu \}\rho &= \{\rho ,\allowbreak \mu \rho \} \\ \{\iota ,\allowbreak \mu \}\rho ^{2}&= \{\rho ^{2},\allowbreak \mu \rho ^{2}\} \\ \{\iota ,\allowbreak \mu \}\rho ^{3}&= \{\rho ^{3},\allowbreak \mu \rho ^{3}\}\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent The right cosets and the left cosets are not the same. For example\BookInline{,\allowbreak \rho H= \{\rho,\allowbreak \mu \rho ^{3}\}} while \BookInline{H\rho = \{\rho,\allowbreak \mu \rho \}.}\BookEnd{\blacktriangle}
+
+\noindent If this were the whole story of left and right cosets, there would be no reason to even mention right cosets. We could just use left coset, prove Lagrange’s Theorem, and call it a day. However, as we shall see in Part III, a curious thing happens when the left and right cosets are the same. We illustrate with an example.
+
+\BookLabel{10.13 Example} The group \BookInline{\mathbb{Z}_{6}} is abelian. Find the partition of \BookInline{\mathbb{Z}_{6}} into cosets of the subgroup \BookInline{H= \{0,\allowbreak 3\}.}
+
+\BookLabel{\textit{Solution}} One coset is \BookInline{\{0,\allowbreak 3\}} itself. The coset containing 1 is \BookInline{1+ \{0,\allowbreak 3\}= \{1,\allowbreak 4\}.} The coset containing 2 is \BookInline{2+ \{0,\allowbreak 3\}= \{2,\allowbreak 5\}.} Since \BookInline{\{0,\allowbreak 3\},\allowbreak \{1,\allowbreak 4\},\allowbreak } and \BookInline{\{2,\allowbreak 5\}} exhaust all of \BookInline{\mathbb{Z}_{6},\allowbreak } these are all the cosets\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+% Source PDF page 118; original printed page 101
+\BookSource{118}{101}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+We point out a fascinating thing that we will develop in detail in Section 12. Referring back to Example 10.13, Table 10.14 gives the binary operation for \BookInline{\mathbb{Z}_{6}} but with elements listed in the order they appear in the cosets \BookInline{\{0,\allowbreak 3\},\allowbreak \{1,\allowbreak 4\},\allowbreak \{2,\allowbreak 5\}.} We shaded the table according to these cosets.
+
+\begin{BookFloat}{10_cosets_and_the_theorem_of_lagrange-p118-1}
+\begin{center}
+\begin{minipage}[t]{0.4860\linewidth}\vspace{0pt}\begin{center}\small\textbf{10.14 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c|c|c|c}
+\BookInline{+ _{6}} & 0 & 3 & \cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.625}2 & \cellcolor[gray]{0.625}5\\\hline
+0 & 0 & 3 & \cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.625}2 & \cellcolor[gray]{0.625}5\\\hline
+3 & 3 & 0 & \cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.625}5 & \cellcolor[gray]{0.625}2\\\hline
+\cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.625}2 & \cellcolor[gray]{0.625}5 & 3 & 0\\\hline
+\cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.625}5 & \cellcolor[gray]{0.625}2 & 0 & 3\\\hline
+\cellcolor[gray]{0.625}2 & \cellcolor[gray]{0.625}2 & \cellcolor[gray]{0.625}5 & 3 & 0 & \cellcolor[gray]{0.866}4 & \cellcolor[gray]{0.866}1\\\hline
+\cellcolor[gray]{0.625}5 & \cellcolor[gray]{0.625}5 & \cellcolor[gray]{0.625}2 & 0 & 3 & \cellcolor[gray]{0.866}1 & \cellcolor[gray]{0.866}4\\
+\end{tabular}
+\end{adjustbox}\end{center}\end{minipage}\hfill\begin{minipage}[t]{0.4416\linewidth}\vspace{0pt}\begin{center}\small\textbf{10.15 Table}\end{center}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c}
+ & LT & MD & DK\\\hline
+LT & LT & MD & DK\\\hline
+MD & MD & DK & LT\\\hline
+DK & DK & LT & MD\\
+\end{tabular}
+\end{adjustbox}\end{center}\end{minipage}
+\end{center}
+\end{BookFloat}
+
+Suppose we denote these cosets by LT(light), MD(medium), and DK(dark) according to their shading. Table 10.14 then defines a binary operation on these shadings, as shown in Table 10.15. Note that if we replace LT by 0, MD by 1, and DK by 2 in Table 10.15, we obtain the table for \BookInline{\mathbb{Z}_{3}.} Thus the table of shadings forms a group!
+
+We will see in Section 12 that when left cosets and right cosets are the same, then the cosets form a group as in Example 10.13. If right and left cosets are different, the construction fails.
+
+\BookLabel{10.16 Example} Let \BookInline{H= \{\iota,\allowbreak \mu \}\leq D_{3}.} The group table for \BookInline{D_{3}} is given below with the elements arranged so that left cosets are together. The double lines divide the cosets.
+
+\begin{BookFloat}{10_cosets_and_the_theorem_of_lagrange-p118-5}
+\begin{center}\begin{adjustbox}{max width=\linewidth}
+\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|c|c|c|c|c|c}
+ & \BookInline{\iota } & \BookInline{\mu } & \BookInline{\rho } & \BookInline{\mu \rho ^{2}} & \BookInline{\rho ^{2}} & \BookInline{\mu \rho }\\\hline
+\BookInline{\iota } & \BookInline{\iota } & \BookInline{\mu } & \BookInline{\rho } & \BookInline{\mu \rho ^{2}} & \BookInline{\rho ^{2}} & \BookInline{\mu \rho }\\\hline
+\BookInline{\mu } & \BookInline{\mu } & \BookInline{\iota } & \BookInline{\mu \rho } & \BookInline{\rho ^{2}} & \BookInline{\mu \rho ^{2}} & \BookInline{\rho }\\\hline
+\BookInline{\rho } & \BookInline{\rho } & \BookInline{\mu \rho ^{2}} & \BookInline{\rho ^{2}} & \BookInline{\mu \rho } & \BookInline{\iota } & \BookInline{\mu }\\\hline
+\BookInline{\mu \rho ^{2}} & \BookInline{\mu \rho ^{2}} & \BookInline{\rho } & \BookInline{\mu } & \BookInline{\iota } & \BookInline{\mu \rho } & \BookInline{\rho ^{2}}\\\hline
+\BookInline{\rho ^{2}} & \BookInline{\rho ^{2}} & \BookInline{\mu \rho } & \BookInline{\iota } & \BookInline{\mu } & \BookInline{\rho } & \BookInline{\mu \rho ^{2}}\\\hline
+\BookInline{\mu \rho } & \BookInline{\mu \rho } & \BookInline{\rho ^{2}} & \BookInline{\mu \rho ^{2}} & \BookInline{\rho } & \BookInline{\mu } & \BookInline{\iota }\\
+\end{tabular}
+\end{adjustbox}\end{center}
+\end{BookFloat}
+
+\noindent The situation here is much different from the situation in Example 10.13. In Table 10.14 the two-by-two blocks in the table each contain only elements of a left coset. In the present example, most blocks do not contain elements from only one left coset. Furthermore, even if we tried to use the two-by-two blocks of elements to form a three-by-three group table, the second row of blocks contains two blocks, both having the same elements\BookInline{,\allowbreak \{\rho ^{2},\allowbreak \mu \rho,\allowbreak \mu,\allowbreak \iota \}.} So the table of blocks would have a row with the same element listed twice. In this case, there is no natural way of making the left cosets a group\BookInline{.}\BookEnd{\blacktriangle}
+
+If \BookInline{G} is an abelian group, then the left and right cosets are the same. Theorem 10.17 gives another condition when left and right cosets are the same. Recall that if \BookInline{\phi:G\to } \BookInline{G^{\prime }} is a group homomorphism, then Ker\BookInline{(\phi )= \phi ^{- 1}[\{e\}]\leq G} is the kernel of \BookInline{\phi.}
+
+\BookLabel{10.17 Theorem} Let \BookInline{\phi:G\to G^{\prime }} be a group homomorphism. Then the left and right cosets of Ker\BookInline{(\phi )} are identical. Furthermore\BookInline{,\allowbreak a,\allowbreak b\in G} are in the same coset of Ker\BookInline{(\phi )} if and only if \BookInline{\phi (a)= \phi (b).}
+
+\end{BookBody}
+
+% Source PDF page 119; original printed page 102
+\BookSource{119}{102}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} We first assume that \BookInline{a} and \BookInline{b} are in the same left cosets of Ker\BookInline{(\phi )} and show they are also in the same right cosets. Then \BookInline{a^{- 1}b\in } Ker\BookInline{(\phi ).} So \BookInline{\phi (a^{- 1}b)= e,\allowbreak } the identity element. Because \BookInline{\phi } is a homomorphism\BookInline{,\allowbreak \phi (a)^{- 1}\phi (b)= e,\allowbreak } which implies that \BookInline{\phi (a)= \phi (b).} Therefore\BookInline{,\allowbreak \phi (ab^{- 1})= \phi (a)\phi (b)^{- 1}= \phi (a)\phi (a)^{- 1}= e.} Thus \BookInline{ab^{- 1}\in } Ker\BookInline{(\phi ),\allowbreak } which says that \BookInline{a} and \BookInline{b} are in the same right coset. Note that in the process we showed that if \BookInline{a} and \BookInline{b} are in the same left coset of Ker\BookInline{(\phi ),\allowbreak } then \BookInline{\phi (a)= \phi (b).}
+
+Now suppose that \BookInline{\phi (a)= \phi (b).} Then \BookInline{\phi (b^{- 1}a)= \phi (b)^{- 1}\phi (a)= e.} Thus \BookInline{b^{- 1}a\in } Ker\BookInline{(\phi ),\allowbreak } which implies that \BookInline{a} and \BookInline{b} are in the same left coset.
+
+To complete the proof, we need to show that if \BookInline{a} and \BookInline{b} are in the same right coset, then they are also in the same left coset. The proof is essentially the same as above, so we leave this detail to the reader\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{10.18 Example} Consider the determinant map det: GL\BookInline{(2,\allowbreak \mathbb{R})\to \mathbb{R}^{\ast }.} In linear algebra you learn that det\BookInline{(AB)= } det\BookInline{(A)} det\BookInline{(B),\allowbreak } so the determinant is a group homomorphism. The kernel of det is the set of all \BookInline{2\times 2} matrices with determinant 1. Two matrices \BookInline{A,\allowbreak B\in } GL\BookInline{(2,\allowbreak \mathbb{R})} are in the same left coset of Ker(det) if and only if they are in the same right coset of Ker(det) if and only if det\BookInline{(A)= } det\BookInline{(B).} In particular, the two matrices
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{bmatrix} 2 0 \\ 0 1 \end{bmatrix}  and  \begin{bmatrix} 3 2 \\ 2 2 \end{bmatrix}}\end{adjustbox}\end{center}
+
+\noindent each have determinant 2, so they are in the same left (and right) cosets of Ker(det\BookInline{).}\BookEnd{\blacktriangle}
+
+\BookLabel{10.19 Corollary} A homomorphism \BookInline{\phi:G\to G^{\prime }} is one-to-one if and only if Ker\BookInline{(\phi )} is the trivial subgroup of \BookInline{G.}
+
+\BookLabel{\textit{Proof}} We first assume that Ker\BookInline{(\phi )= \{e\}.} Every coset of Ker\BookInline{(\phi )} has only one element. Suppose that \BookInline{\phi (a)= \phi (b).} Then \BookInline{a} and \BookInline{b} are in the same coset of Ker\BookInline{(\phi )} by Theorem 10.17. Thus \BookInline{a= b.}
+
+Now suppose that \BookInline{\phi } is one-to-one. Then only the identity \BookInline{e} is mapped to the identity in \BookInline{G^{\prime }.} So Ker\BookInline{(\phi )= \{e\}.}\BookEnd{\blacklozenge}
+
+Corollary 10.19 says that to check if a homomorphism \BookInline{\phi:G\to G^{\prime }} is one-to-one one merely needs to check that Ker\BookInline{(\phi )} is the trivial subgroup. In other words, show that the only solution to \BookInline{\phi (x)= e^{\prime }} is \BookInline{e,\allowbreak } where \BookInline{e} and \BookInline{e^{\prime }} are the identities in \BookInline{G} and \BookInline{G^{\prime },\allowbreak } respectively.
+
+\BookLabel{10.20 Example} Let \BookInline{\phi:\mathbb{R}\to \mathbb{R}^{+ }} be defined by \BookInline{\phi (x)= 2^{x}.} Since \BookInline{\phi } is a homomorphism, we can check that \BookInline{\phi } is one-to-one by solving \BookInline{\phi (x)= 1.} The equation \BookInline{2^{x}= \phi (x)= 1} has only the solution 0 since for \BookInline{x>0,\allowbreak 2^{x}>1} and for \BookInline{x<0,\allowbreak 2^{x}<1.} Thus \BookInline{\phi } is one-to-one\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{10}
+
+\BookTextHeading{\textbf{Computations}}
+
+\BookExercise{1.}{Find all cosets of the subgroup \BookInline{4\mathbb{Z}} of \BookInline{\mathbb{Z}.}}
+
+\BookExercise{2.}{Find all cosets of the subgroup \BookInline{4\mathbb{Z}} of \BookInline{2\mathbb{Z}.}}
+
+\BookExercise{3.}{Find all cosets of the subgroup \BookInline{\langle 3\rangle } in \BookInline{\mathbb{Z}_{18}.}}
+
+\BookExercise{4.}{Find all cosets of the subgroup \BookInline{\langle 6\rangle } in \BookInline{\mathbb{Z}_{18}.}}
+
+\BookExercise{5.}{Find all cosets of the subgroup \BookInline{\langle 18\rangle } of \BookInline{\mathbb{Z}_{36}.}}
+
+\BookExercise{6.}{Find all left cosets of \BookInline{\langle \mu \rho \rangle } in \BookInline{D_{4}.}}
+
+\BookExercise{7.}{Repeat the preceding exercise, but find the right cosets this time. Are they the same as the left cosets?}
+
+\end{BookBody}
+
+% Source PDF page 120; original printed page 103
+\BookSource{120}{103}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{8.}{Are the left and right cosets the same for the subgroup \BookInline{\{\iota,\allowbreak \rho ^{4},\allowbreak \mu,\allowbreak \mu \rho ^{4}\}} of \BookInline{D_{8}}? If so, display the cosets. If not, find a left coset that is not the same as any right coset.}
+
+\BookExercise{9.}{Find all the left cosets of \BookInline{\langle \rho ^{2}\rangle \leq D_{4}.}}
+
+\BookExercise{10.}{Repeat the previous exercise, but find the right cosets. Are the left and right cosets the same? If so, make the group table for \BookInline{D_{4},\allowbreak } ordering the elements so that the cosets are in blocks, see if the blocks form a group with four elements, and determine what group of order 4 the blocks form.}
+
+\BookExercise{11.}{Find the index of \BookInline{\langle \rho ^{2}\rangle } in the group \BookInline{D_{6}.}}
+
+\BookExercise{12.}{Find the index of \BookInline{\langle 3\rangle } in the group \BookInline{\mathbb{Z}_{24}.}}
+
+\BookExercise{13.}{Find the index of \BookInline{12\mathbb{Z}} in \BookInline{\mathbb{Z}.}}
+
+\BookExercise{14.}{Find the index of \BookInline{12\mathbb{Z}} in \BookInline{3\mathbb{Z}.}}
+
+\BookExercise{15.}{Let \BookInline{\sigma = (1,\allowbreak 2,\allowbreak 5,\allowbreak 4)(2,\allowbreak 3)} in \BookInline{S_{5}.} Find the index of \BookInline{\langle \sigma \rangle } in \BookInline{S_{5}.}}
+
+\BookExercise{16.}{Let \BookInline{\mu = (1,\allowbreak 2,\allowbreak 4,\allowbreak 5)(3,\allowbreak 6)} in \BookInline{S_{6}.} Find the index of \BookInline{\langle \mu \rangle } in \BookInline{S_{6}.}}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 17 through 19, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{17.}{Let \BookInline{G} be a group and let \BookInline{H\subseteq G.} The\textit{ left coset of} \BookInline{H} \textit{containing} \BookInline{a} is \BookInline{aH= \{ah\mid h\in H\}.}}
+
+\BookExercise{18.}{Let \BookInline{G} be a group and let \BookInline{H\leq G.} The\textit{ index of} \BookInline{H} \textit{in} \BookInline{G} is the number of right cosets of \BookInline{H} in \BookInline{G.}}
+
+\BookExercise{19.}{Let \BookInline{\phi:G\to G^{\prime }.} Then the\textit{ kernel} of \BookInline{\phi } is Ker\BookInline{(\phi )= \{g\in G\mid \phi (g)= e\}.}}
+
+\BookExercise{20.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every subgroup of every group has left cosets.}
+
+\BookExercise{b.}{The number of left cosets of a subgroup of a finite group divides the order of the group.}
+
+\BookExercise{c.}{Every group of prime order is abelian.}
+
+\BookExercise{d.}{One cannot have left cosets of a finite subgroup of an infinite group.}
+
+\BookExercise{e.}{A subgroup of a group is a left coset of itself.}
+
+\BookExercise{f.}{Only subgroups of finite groups can have left cosets.}
+
+\BookExercise{g.}{\textbf{g}\BookInline{.A_{n}} is of index 2 in \BookInline{S_{n}} for \BookInline{n>1.}}
+
+\BookExercise{h.}{The theorem of Lagrange is a nice result.}
+
+\BookExercise{i.}{Every finite group contains an element of every order that divides the order of the group.}
+
+\BookExercise{j.}{Every finite cyclic group contains an element of every order that divides the order of the group.}
+
+\BookExercise{k.}{The kernel of a homomorphism is a subgroup of the range of the homomorphism.}
+
+\BookExercise{l.}{Left cosets and right cosets of the kernel of a homomorphism are the same.}
+
+\noindent In Exercises 21 through 26, give an example of the desired subgroup and group if possible. If impossible, say why it is impossible.
+
+\BookExercise{21.}{A subgroup \BookInline{H\leq G} with \BookInline{G} infinite and \BookInline{H} having only a finite number of left cosets in \BookInline{G}}
+
+\BookExercise{22.}{A subgroup of an abelian group \BookInline{G} whose left cosets and right cosets give different partitions of \BookInline{G}}
+
+\BookExercise{23.}{A subgroup of a group \BookInline{G} whose left cosets give a partition of \BookInline{G} into just one cell}
+
+\BookExercise{24.}{A subgroup of a group of order 6 whose left cosets give a partition of the group into 6 cells}
+
+\BookExercise{25.}{A subgroup of a group of order 6 whose left cosets give a partition of the group into 12 cells}
+
+\BookExercise{26.}{A subgroup of a group of order 6 whose left cosets give a partition of the group into 4 cells}
+
+\BookLabel{\textit{Proof}} \textbf{ Synopsis}
+
+\BookExercise{27.}{Give a one-sentence synopsis of the proof of the Theorem of Lagrange.}
+
+\end{BookBody}
+
+% Source PDF page 121; original printed page 104
+\BookSource{121}{104}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{28.}{Prove that the relation \BookInline{\sim _{R}} that is used to define right cosets is an equivalence relation.}
+
+\BookExercise{29.}{Let \BookInline{H} be a subgroup of a group \BookInline{G} and let \BookInline{g\in G.} Define a one-to-one map of \BookInline{H} onto \BookInline{Hg.} Prove that your map is one-to-one and is onto \BookInline{Hg.}}
+
+\BookExercise{30.}{Let \BookInline{H} be a subgroup of a group \BookInline{G} such that \BookInline{g^{- 1}hg\in H} for all \BookInline{g\in G} and all \BookInline{h\in H.} Show that every left coset \BookInline{gH} is the same as the right coset \BookInline{Hg.}}
+
+\BookExercise{31.}{Let \BookInline{H} be a subgroup of a group \BookInline{G.} Prove that if the partition of \BookInline{G} into left cosets of \BookInline{H} is the same as the partition into right cosets of \BookInline{H,\allowbreak } then \BookInline{g^{- 1}hg\in H} for all \BookInline{g\in G} and all \BookInline{h\in H.(}Note that this is the converse of Exercise 30.)}
+
+\noindent Let \BookInline{H} be a subgroup of a group \BookInline{G} and let \BookInline{a,\allowbreak b\in G.} In Exercises 32 through 35 prove the statement or give a counterexample.
+
+\BookExercise{32.}{If \BookInline{aH= bH,\allowbreak } then \BookInline{Ha= Hb.}}
+
+\BookExercise{33.}{If \BookInline{Ha= Hb,\allowbreak } then \BookInline{b\in Ha.}}
+
+\BookExercise{34.}{If \BookInline{aH= bH,\allowbreak } then \BookInline{Ha^{- 1}= Hb^{- 1}.}}
+
+\BookExercise{35.}{If \BookInline{aH= bH,\allowbreak } then \BookInline{a^{2}H= b^{2}H.}}
+
+\BookExercise{36.}{Let \BookInline{G} be a group of order \BookInline{pq,\allowbreak } where \BookInline{p} and \BookInline{q} are prime numbers. Show that every proper subgroup of \BookInline{G} is cyclic.}
+
+\BookExercise{37.}{Show that there are the same number of left as right cosets of a subgroup \BookInline{H} of a group \BookInline{G;} that is, exhibit a one-to-one map of the collection of left cosets onto the collection of right cosets. (Note that this result is obvious by counting for finite groups. Your proof must hold for any group.)}
+
+\BookExercise{38.}{Exercise 29 of Section 2 showed that every finite group of even order \BookInline{2n} contains an element of order 2. Using the theorem of Lagrange, show that if \BookInline{n} is odd, then an abelian group of order \BookInline{2n} contains precisely one element of order 2.}
+
+\BookExercise{39.}{Show that a group with at least two elements but with no proper nontrivial subgroups must be finite and of prime order.}
+
+\BookExercise{40.}{Prove Theorem 10.11 [\textit{Hint:} Let \BookInline{\{a_{i}H\mid i= 1,\allowbreak \cdots,\allowbreak r\}} be the collection of distinct left cosets of \BookInline{H} in \BookInline{G} and \BookInline{\{b_{j}K\mid j= 1,\allowbreak \cdots,\allowbreak s\}} be the collection of distinct left cosets of \BookInline{K} in \BookInline{H.} Show that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{(a_{i}b_{j})K\mid i= 1,\allowbreak \cdots ,\allowbreak r;j= 1,\allowbreak \cdots ,\allowbreak s\}}\end{adjustbox}\end{center}
+
+is the collection of distinct left cosets of \BookInline{K} in \BookInline{G.]}
+
+\BookExercise{41.}{Show that if \BookInline{H} is a subgroup of index 2 in a finite group \BookInline{G,\allowbreak } then every left coset of \BookInline{H} is also a right coset of \BookInline{H.}}
+
+\BookExercise{42.}{Show that if a group \BookInline{G} with identity \BookInline{e} has finite order \BookInline{n,\allowbreak } then \BookInline{a^{n}= e} for all \BookInline{a\in G.}}
+
+\BookExercise{43.}{Show that every left coset of the subgroup \BookInline{\mathbb{Z}} of the additive group of real numbers contains exactly one element \BookInline{x} such that \BookInline{0\leq x<1.}}
+
+\BookExercise{44.}{Show that the function\textit{ sine} assigns the same value to each element of any fixed left coset of the subgroup \BookInline{\langle 2\pi \rangle } of the additive group \BookInline{\mathbb{R}} of real numbers. (Thus\textit{ sine} induces a well-defined function on the set of cosets; the value of the function on a coset is obtained when we choose an element \BookInline{x} of the coset and compute sin \BookInline{x.)}}
+
+\BookExercise{45.}{Let \BookInline{H} and \BookInline{K} be subgroups of a group \BookInline{G.} Define \BookInline{\sim } on \BookInline{G} by \BookInline{a\sim b} if and only if \BookInline{a= hbk} for some \BookInline{h\in H} and some \BookInline{k\in K.}}
+
+\BookExercise{a.}{Prove that \BookInline{\sim } is an equivalence relation on \BookInline{G.}}
+
+\BookExercise{b.}{Describe the elements in the equivalence class containing \BookInline{a\in G.(}These equivalence classes are called \textbf{double cosets.})}
+
+\BookExercise{46.}{Let \BookInline{S_{A}} be the group of all permutations of the set \BookInline{A,\allowbreak } and let \BookInline{c} be one particular element of \BookInline{A.}}
+
+\BookExercise{a.}{Show that \BookInline{\{\sigma \in S_{A}\mid \sigma (c)= c\}} is a subgroup \BookInline{S_{c,\allowbreak c}} of \BookInline{S_{A}.}}
+
+\BookExercise{b.}{Let \BookInline{d\neq c} be another particular element of A. Is \BookInline{S_{c,\allowbreak d}= \{\sigma \in S_{A}\mid \sigma (c)= d\}} a subgroup of \BookInline{S_{A}}? Why or why not?}
+
+\BookExercise{c.}{Characterize the set \BookInline{S_{c,\allowbreak d}} of part (b) in terms of the subgroup \BookInline{S_{c,\allowbreak c}} of part (a).}
+
+\end{BookBody}
+
+% Continuation on source PDF page 122, preceding Section 11
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{47.}{Show that a finite cyclic group of order \BookInline{n} has exactly one subgroup of each order \BookInline{d} dividing \BookInline{n,\allowbreak } and that these are all the subgroups it has.}
+
+\BookExercise{48.}{The\textbf{ Euler phi-function} is defined for positive integers \BookInline{n} by \BookInline{\varphi (n)= s,\allowbreak } where \BookInline{s} is the number of positive integers less than or equal to \BookInline{n} that are relatively prime to \BookInline{n.} Use Exercise 47 to show that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle n= \sum _{d|n}\varphi (d),\allowbreak }\end{adjustbox}\end{center}
+
+the sum being taken over all positive integers \BookInline{d} dividing \BookInline{n.[}\textit{Hint:} Note that the number of generators of \BookInline{\mathbb{Z}_{d}} is \BookInline{\varphi (d)} by Corollary 6.17.]
+
+\BookExercise{49.}{Let \BookInline{G} be a finite group. Show that if for each positive integer \BookInline{m} the number of solutions \BookInline{x} of the equation \BookInline{x^{m}= e} in \BookInline{G} is at most \BookInline{m,\allowbreak } then \BookInline{G} is cyclic. [\textit{Hint:} Use Theorem 10.9 and Exercise 48 to show that \BookInline{G} must contain an element of order \BookInline{n= |G|.]}}
+
+\BookExercise{50.}{Show that a finite group cannot be written as the union of two of its proper subgroups. Does the statement remain true if “two” is replaced by “three”? (This was problem B-2 on the 1969 Putnam Exam.)}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

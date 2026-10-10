@@ -1,0 +1,387 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 17 Sylow Theorems}
+\pdfbookmark[0]{Section 17 Sylow Theorems}{17_sylow_theorems}
+\ifdefined\BookMaster\else\setcounter{page}{149}\fi
+% Source PDF page 166; original printed page 149
+\BookSource{166}{149}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{17}{Sylow Theorems}
+
+\noindent The Fundamental Theorem for Finitely Generated Abelian Groups (Theorems 9.12 and 9.14) give us complete information about all finite abelian groups. The study of finite nonabelian groups is much more complicated. The Sylow theorems give us some important information about them.
+
+The Theorem of Lagrange says that if \BookInline{H} is a subgroup of a finite group \BookInline{G,\allowbreak } then the order of \BookInline{H} divides the order of \BookInline{G.} The Fundamental Theorem for Finitely Generated Abelian Groups implies that if \BookInline{k} divides the order of a finite abelian group \BookInline{G,\allowbreak } then \BookInline{G} has a subgroup of order \BookInline{k.} The situation is different for nonabelian groups. Example 13.6 shows that although \BookInline{A_{4}} has 12 elements, it has no subgroup of order 6. Furthermore, for \BookInline{n\geq 5,\allowbreak A_{n}} can have no subgroup of index 2 since \BookInline{A_{n}} is simple and any subgroup of index 2 is a normal subgroup. On the positive side, Cauchy’s theorem (14.20) says that if the prime number \BookInline{p} divides the order of a group \BookInline{G,\allowbreak } then \BookInline{G} has a subgroup of order \BookInline{p.} The Sylow theorems generalize Cauchy’s theorem to show that if \BookInline{p^{n}} divides the order of \BookInline{G,\allowbreak } then \BookInline{G} has a subgroup of order \BookInline{p^{n}} as long as \BookInline{p} is a prime number. Furthermore, Sylow’s theorems gives us information about relationships between these subgroups of \BookInline{G.} As we shall see, this information is very useful in the study of finite nonabelian groups.
+
+Proofs of the Sylow theorems give us another application of action of a group on a set described in Section 14. This time, the set itself is formed from the group; in some instances the set is the group itself, sometimes it is a collection of cosets of a subgroup, and sometimes it is a collection of subgroups.
+
+\end{BookBody}
+
+% Source PDF page 167; original printed page 150
+\BookSource{167}{150}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{The Sylow Theorems}  }
+
+\noindent Let \BookInline{G} be a group, and let \BookInline{\mathcal{S}} be the collection of all subgroups of \BookInline{G.} We make \BookInline{\mathcal{S}} into a \BookInline{G-}set by letting \BookInline{G} act on \BookInline{\mathcal{S}} by conjugation. That is, if \BookInline{H\in \mathcal{S}} so \BookInline{H\leq G} and \BookInline{g\in G,\allowbreak } then \BookInline{g} acting on \BookInline{H} yields the conjugate subgroup \BookInline{gHg^{- 1}.(}To avoid confusion, we will never write this action as \BookInline{gH.)} By Theorem \BookInline{14.13G_{H}= \{g\in G\mid gHg^{- 1}= H\}} is a subgroup of \BookInline{G,\allowbreak } which is called an isotropy subgroup. In Exercise 14 you will be asked to show directly that \BookInline{G_{H}} is a subgroup of \BookInline{G.} Since \BookInline{G_{H}} consists of\textit{ all} elements of \BookInline{G} that leave \BookInline{H} invariant under conjugation\BookInline{,\allowbreak G_{H}} is the largest subgroup of \BookInline{G} having \BookInline{H} as a normal subgroup.
+
+\BookLabel{17.1 Definition} The subgroup \BookInline{G_{H}} just discussed is the\textbf{ normalizer of} \BookInline{H} \textbf{in} \BookInline{G} and will be denoted \BookInline{N[H]} from now on\BookInline{.}\BookEnd{\blacksquare}
+
+In the proof of the lemma that follows, we will use the fact that if \BookInline{H} is a\textit{ finite} subgroup of a group \BookInline{G,\allowbreak } then \BookInline{g\in N[H]} if \BookInline{ghg^{- 1}\in H} for all \BookInline{h\in H.} To see this, note that if \BookInline{gh_{1}g^{- 1}= gh_{2}g^{- 1},\allowbreak } then \BookInline{h_{1}= h_{2}} by cancellation in the group \BookInline{G.} Thus the conjugation map \BookInline{i_{g}:H\to H} given by \BookInline{i_{g}(h)= ghg^{- 1}} is one-to-one. Because \BookInline{|H|} is finite\BookInline{,\allowbreak i_{g}} must then map \BookInline{H} \textit{onto} \BookInline{H,\allowbreak } so \BookInline{gHg^{- 1}= H} and \BookInline{g\in N[H].}
+
+\BookLabel{17.2 Lemma} Let \BookInline{H} be a \BookInline{p-}subgroup of a finite group \BookInline{G.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (N[H]:H)\equiv (G:H)(\;\text{mod}\;p).}\end{adjustbox}\end{center}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\mathcal{L}} be the set of left cosets of \BookInline{H} in \BookInline{G,\allowbreak } and let \BookInline{H} act on \BookInline{\mathcal{L}} by left translation, so that \BookInline{h(xH)= (hx)H.} Then \BookInline{\mathcal{L}} becomes an \BookInline{H-}set. Note that \BookInline{|\mathcal{L}|= (G:H).}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathcal{L}_{H},\allowbreak }\end{adjustbox}\end{center}
+
+Let us determine that is, those left cosets that are fixed under action by all el-
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle xH= h(xH)}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle H= x^{- 1}hxH,\allowbreak }\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{- 1}hx\in H.}\end{adjustbox}\end{center}
+
+\noindent ements of \BookInline{H.} Now if and only if or if and only if
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle xH= h(xH)}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle h\in H}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathrm{f}x^{- 1}hx= x^{- 1}h(x^{- 1})^{- 1}\in H}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle h\in H,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent Thus for all if and only i for all
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x^{- 1}\in N[H]}\end{adjustbox}\end{center}
+
+\noindent or if and only if (see the comment before the lemma), or if and only if
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle x\in N[H].}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \mathcal{L}_{H}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle N[H]}\end{adjustbox}\end{center}
+
+Thus the left cosets in are those contained in. The number of such
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (N[H]:H),\allowbreak \;\text{so}\;|\mathcal{L}_{H}|= (N[H]:H).}\end{adjustbox}\end{center}
+
+\noindent cosets is
+
+Since \BookInline{H} is a \BookInline{p-}group, it has order a power of \BookInline{p.} Theorem 14.9 then tells us that \BookInline{|\mathcal{L}|\equiv |\mathcal{L}_{H}|(}mod \BookInline{p),\allowbreak } that is, that \BookInline{(G:H)\equiv (N[H]:H)(}mod \BookInline{p).}\BookEnd{\blacklozenge}
+
+\BookLabel{17.3 Corollary} Let \BookInline{H} be a \BookInline{p-}subgroup of a finite group \BookInline{G.} If \BookInline{p} divides \BookInline{(G:H),\allowbreak } then \BookInline{N[H]\neq H.}
+
+\BookLabel{\textit{Proof}} It follows from Lemma 17.2 that \BookInline{p} divides \BookInline{(N[H]:H),\allowbreak } which must then be different from 1. Thus \BookInline{H\neq N[H].}\BookEnd{\blacklozenge}
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent The Sylow theorems are due to the Norwegian mathematician Peter Ludvig Mejdell Sylow (1832–1918), who published them in a brief paper in 1872. Sylow stated the theorems in terms of permutation groups (since the abstract definition of a group had not yet been given). Georg Frobenius re-proved the theorems for abstract groups in 1887, even though he noted that in fact every group can be considered as a permutation group (Cayley’s theorem [Theorem 8.11]). Sylow himself immediately applied the theorems to the question of solving algebraic equations and showed that any equation whose Galois group has order a power of a prime \BookInline{p} is solvable by radicals.
+
+Sylow spent most of his professional life as a high school teacher in Halden, Norway, and was only appointed to a position at Christiana University in 1898. He devoted eight years of his life to the project of editing the mathematical works of his countryman Niels Henrik Abel.
+
+\end{BookBody}
+
+% Source PDF page 168; original printed page 151
+\BookSource{168}{151}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent We are now ready for the first of the Sylow theorems, which asserts the existence of prime-power subgroups of \BookInline{G} for any prime power dividing \BookInline{|G|.}
+
+\BookLabel{17.4 Theorem} \textbf{(First Sylow Theorem)} Let \BookInline{G} be a finite group and let \BookInline{|G|= p^{n}m} where \BookInline{n\geq 1} and where \BookInline{p} does not divide \BookInline{m.} Then
+
+\BookExercise{1.}{\BookInline{G} contains a subgroup of order \BookInline{p^{i}} for each \BookInline{i} where \BookInline{1\leq i\leq n,\allowbreak }}
+
+\BookExercise{2.}{Every subgroup \BookInline{H} of \BookInline{G} of order \BookInline{p^{i}} is a normal subgroup of a subgroup of order \BookInline{p^{i+ 1}} for \BookInline{1\leq i<n.}}
+
+\BookLabel{\textit{Proof}} (Theorem 14.20). We use an induction argument and show that the existence of a subgroup of order \BookInline{p^{i}} for \BookInline{i<n} implies the existence of a subgroup of order \BookInline{p^{i+ 1}.} Let \BookInline{H} be a subgroup of order \BookInline{p^{i}.} Since \BookInline{i<n,\allowbreak } we see \BookInline{p} divides \BookInline{(G:H).} By Lemma 17.2, we then know \BookInline{p} divides \BookInline{(N[H]:H).} Since \BookInline{H} is a normal subgroup of \BookInline{N[H],\allowbreak } we can form \BookInline{N[H]/H,\allowbreak } and we see that \BookInline{p} divides \BookInline{|N[H]/H|.} By Cauchy’s theorem, the factor group \BookInline{N[H]/H} has a subgroup \BookInline{K,\allowbreak } which is of order \BookInline{p.} If \BookInline{\gamma:N[H]\to N[H]/H} is the canonical homomorphism, then \BookInline{\gamma ^{- 1}[K]= \{x\in N[H]\mid \gamma (x)\in K\}} is a subgroup of \BookInline{N[H]} and hence of \BookInline{G.} This subgroup contains \BookInline{H} and is of order \BookInline{p^{i+ 1}.}
+
+\BookExercise{1.}{We know \BookInline{G} contains a subgroup of order \BookInline{p} by Cauchy’s theorem}
+
+\BookExercise{2.}{We repeat the construction in part 1 and note that \BookInline{H<\gamma ^{- 1}[K]\leq N[H]} where \BookInline{|\gamma ^{- 1}[K]|= p^{i+ 1}.} Since \BookInline{H} is normal in \BookInline{N[H],\allowbreak } it is of course normal in the possibly smaller group \BookInline{\gamma ^{- 1}[K].}\BookEnd{\blacklozenge}}
+
+\BookLabel{17.5 Definition} A\textbf{ Sylow} \BookInline{p-}\textbf{subgroup} \BookInline{P} of a group \BookInline{G} is a maximal \BookInline{p-}subgroup of \BookInline{G,\allowbreak } that is, a \BookInline{p-}subgroup contained in no larger \BookInline{p-}subgroup\BookInline{.}\BookEnd{\blacksquare}
+
+\noindent Let \BookInline{G} be a finite group, where \BookInline{|G|= p^{n}m} as in Theorem 17.4. The theorem shows that the Sylow \BookInline{p-}subgroups of \BookInline{G} are precisely those subgroups of order \BookInline{p^{n}.} If \BookInline{P} is a Sylow \BookInline{p-}subgroup, every conjugate \BookInline{gPg^{- 1}} of \BookInline{P} is also a Sylow \BookInline{p-}subgroup. The second Sylow theorem states that every Sylow \BookInline{p-}subgroup can be obtained from \BookInline{P} in this fashion; that is, any two Sylow \BookInline{p-}subgroups are conjugate.
+
+\BookLabel{17.6 Theorem} \textbf{(Second Sylow Theorem)} Let \BookInline{P_{1}} and \BookInline{P_{2}} be Sylow \BookInline{p-}subgroups of a finite group \BookInline{G.} Then \BookInline{P_{1}} and \BookInline{P_{2}} are conjugate subgroups of \BookInline{G.}
+
+\BookLabel{\textit{Proof}} Here we will let one of the subgroups act on left cosets of the other, and use Theorem 14.19. Let \BookInline{\mathcal{L}} be the collection of left cosets of \BookInline{P_{1},\allowbreak } and let \BookInline{P_{2}} act on \BookInline{\mathcal{L}} by \BookInline{y(xP_{1})= (yx)P_{1}} for \BookInline{y\in P_{2}.} Then \BookInline{\mathcal{L}} is a \BookInline{P_{2}-}set. By Theorem 14.19, \BookInline{|\mathcal{L}_{P_{2}}|\equiv |\mathcal{L}|} (mod \BookInline{p),\allowbreak } and \BookInline{|\mathcal{L}|= (G:P_{1})} is not divisible by \BookInline{p,\allowbreak \;\text{so}\;|\mathcal{L}_{P_{2}}|\neq 0.\;\text{Let}\;xP_{1}\in \mathcal{L}_{P_{2}}}. Then \BookInline{yxP_{1}= xP_{1}} for all \BookInline{y\in P_{2},\allowbreak } so \BookInline{x^{- 1}yxP_{1}= P_{1}} for all \BookInline{y\in P_{2}.} Thus \BookInline{x^{- 1}yx\in P_{1}} for all \BookInline{y\in P_{2},\allowbreak } so \BookInline{x^{- 1}P_{2}x\leq P_{1}.} Since \BookInline{|P_{1}|= |P_{2}|,\allowbreak } we must have \BookInline{P_{1}= x^{- 1}P_{2}x,\allowbreak } so \BookInline{P_{1}} and \BookInline{P_{2}} are indeed conjugate subgroups\BookInline{.}\BookEnd{\blacklozenge}
+
+\noindent The final Sylow theorem gives information on the number of Sylow \BookInline{p-}subgroups.
+
+\BookLabel{17.7 Theorem} \textbf{(Third Sylow Theorem)} If \BookInline{G} is a finite group and \BookInline{p} divides \BookInline{|G|,\allowbreak } then the number of Sylow \BookInline{p-}subgroups is congruent to 1 modulo \BookInline{p} and divides \BookInline{|G|.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{P} be one Sylow \BookInline{p-}subgroup of \BookInline{G.} Let \BookInline{\mathcal{S}} be the set of all Sylow \BookInline{p-}subgroups and let \BookInline{P} act on \BookInline{\mathcal{S}} by conjugation, so that \BookInline{x\in P} carries \BookInline{T\in \mathcal{S}} into \BookInline{xTx^{- 1}.} By Theorem 14.19, \BookInline{|\mathcal{S}|\equiv |\mathcal{S}_{P}|(}mod \BookInline{p).} Let us find \BookInline{\mathcal{S}_{P}.} If \BookInline{T\in \mathcal{S}_{P},\allowbreak } then \BookInline{xTx^{- 1}= T} for all \BookInline{x\in P.} Thus \BookInline{P\leq N[T].} Of course\BookInline{,\allowbreak T\leq N[T]} also. Since \BookInline{P} and \BookInline{T} are both Sylow \BookInline{p-}subgroups of \BookInline{G,\allowbreak } 
+% Source PDF page 169; original printed page 152
+\BookSource{169}{152}
+they are also Sylow \BookInline{p-}subgroups of \BookInline{N[T].} But then they are conjugate in \BookInline{N[T]} by Theorem 17.6. Since \BookInline{T} is a normal subgroup of \BookInline{N[T],\allowbreak } it is its only conjugate in \BookInline{N[T].} Thus \BookInline{T= P.} Then \BookInline{\mathcal{S}_{P}= \{P\}.} Since \BookInline{|\mathcal{S}|\equiv |\mathcal{S}_{P}|= 1(}mod \BookInline{p),\allowbreak } we see the number of Sylow \BookInline{p-}subgroups is congruent to 1 modulo \BookInline{p.}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Now let \BookInline{G} act on \BookInline{\mathcal{S}} by conjugation. Since all Sylow \BookInline{p-}subgroups are conjugate, there is only one orbit in \BookInline{\mathcal{S}} under \BookInline{G.} If \BookInline{P\in \mathcal{S},\allowbreak } then \BookInline{|\mathcal{S}|= |}orbit of \BookInline{P|= (G:G_{P})} by Theorem \BookInline{14.17.(G_{P}} is, in fact, the normalizer of \BookInline{P.)} But \BookInline{(G:G_{P})} is a divisor of \BookInline{|G|,\allowbreak } so the number of Sylow \BookInline{p-}subgroups divides \BookInline{|G|.}\BookEnd{\blacklozenge}
+
+Theorem 17.7 is really a bit better than it sounds. Let \BookInline{|G|= p^{n}m} where the prime number \BookInline{p} does not divide \BookInline{m} and suppose that \BookInline{G} contains \BookInline{k} Sylow \BookInline{p-}subgroups. Then Theorem 17.7 says that \BookInline{k} is equivalent to 1 modulo \BookInline{p} and \BookInline{k} divides \BookInline{|G|.} Since gcd\BookInline{(k,\allowbreak p)= 1,\allowbreak k} must divide \BookInline{m.}
+
+\BookTextHeading{\textbf{Applications of the Sylow Theorems}  }
+
+\BookLabel{17.8 Example} The Sylow 2-subgroups of \BookInline{D_{3}} have order 2. Three Sylow 2-subgroups are
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{\iota ,\allowbreak \mu \},\allowbreak \{\iota ,\allowbreak \mu \rho \},\allowbreak \{\iota ,\allowbreak \mu \rho ^{2}\}}\end{adjustbox}\end{center}
+
+\noindent Notice that Theorem 17.7 says that the number \BookInline{k} of Sylow 2-subgroups must be odd and \BookInline{k} must divide 6. However, by the observation above\BookInline{,\allowbreak k} must divide 3. So in fact, the three subgroups listed are all three of the subgroups of \BookInline{D_{3}} having order \BookInline{2.}\BookEnd{\blacktriangle}
+
+\BookLabel{17.9 Lemma} Let \BookInline{G} be a group containing normal subgroups \BookInline{H} and \BookInline{K} such that \BookInline{H\cap K= \{e\}} and \BookInline{H\vee K= G.} Then \BookInline{G} is isomorphic to \BookInline{H\times K.}\BookEnd{\blacklozenge}
+
+\BookLabel{\textit{Proof}} We start by showing that \BookInline{hk= kh} for \BookInline{k\in K} and \BookInline{h\in H.} Consider the commutator \BookInline{hkh^{- 1}k^{- 1}= (hkh^{- 1})k^{- 1}= h(kh^{- 1}k^{- 1}).} Since \BookInline{H} and \BookInline{K} are normal subgroups of \BookInline{G,\allowbreak } the two groupings with parentheses show that \BookInline{hkh^{- 1}k^{- 1}} is in both \BookInline{K} and \BookInline{H.} Since \BookInline{K\cap H= \{e\},\allowbreak } we see that \BookInline{hkh^{- 1}k^{- 1}= e,\allowbreak } so \BookInline{hk= kh.}
+
+Let \BookInline{\phi:H\times K\to G} be defined by \BookInline{\phi (h,\allowbreak k)= hk.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\phi ((h,\allowbreak k)(h^{\prime },\allowbreak k^{\prime }))&= \phi (hh^{\prime },\allowbreak kk^{\prime })= hh^{\prime }kk^{\prime } \\ &= hkh^{\prime }k^{\prime }= \phi (h,\allowbreak k)\phi (h^{\prime },\allowbreak k^{\prime }),\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent so \BookInline{\phi } is a homomorphism.
+
+If \BookInline{\phi (h,\allowbreak k)= e,\allowbreak } then \BookInline{hk= e,\allowbreak } so \BookInline{h= k^{- 1},\allowbreak } and both \BookInline{h} and \BookInline{k} are in \BookInline{H\cap K.} Thus \BookInline{h= } \BookInline{k= e,\allowbreak } so Ker\BookInline{(\phi )= \{(e,\allowbreak e)\}} and \BookInline{\phi } is one-to-one.
+
+By Lemma 16.4, we know that \BookInline{HK= H\vee K,\allowbreak } and \BookInline{H\vee K= G} by hypothesis. Thus \BookInline{\phi } is onto \BookInline{G,\allowbreak } and \BookInline{H\times K\simeq G.}\BookEnd{\blacklozenge}
+
+\noindent We turn now to a discussion of whether there exist simple groups of certain orders. We have seen that every group of prime order is simple. We also asserted that \BookInline{A_{n}} is simple for \BookInline{n\geq 5} and that \BookInline{A_{5}} is the smallest simple group that is not of prime order. There was a famous conjecture of Burnside that every finite simple group of nonprime order must be of even order. It was a triumph when this was proved by Thompson and Feit [21].
+
+\BookLabel{17.10 Theorem} If \BookInline{p} and \BookInline{q} are distinct primes with \BookInline{p<q,\allowbreak } then every group \BookInline{G} of order \BookInline{pq} has a single subgroup of order \BookInline{q} and this subgroup is normal in \BookInline{G.} Hence \BookInline{G} is not simple. If \BookInline{q} is not congruent to 1 modulo \BookInline{p,\allowbreak } then \BookInline{G} is abelian and cyclic.
+
+\BookLabel{\textit{Proof}} Theorems 17.4 and 17.7 tell us that \BookInline{G} has a Sylow \BookInline{q-}subgroup and that the number of such subgroups is congruent to 1 modulo \BookInline{q} and divides \BookInline{pq,\allowbreak } and therefore must divide \BookInline{p.} Since \BookInline{p<q,\allowbreak } the only possibility is the number 1. Thus there is only one Sylow
+
+\end{BookBody}
+
+% Source PDF page 170; original printed page 153
+\BookSource{170}{153}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent \BookInline{q-}subgroup \BookInline{Q} of \BookInline{G.} This group \BookInline{Q} must be normal in \BookInline{G,\allowbreak } for under an inner automorphism it would be carried into a group of the same order, hence itself. Thus \BookInline{G} is not simple.
+
+Likewise, there is a Sylow \BookInline{p-}subgroup \BookInline{P} of \BookInline{G,\allowbreak } and the number of these divides \BookInline{pq} and is congruent to 1 modulo \BookInline{p.} This number must be either 1 or \BookInline{q.} If \BookInline{q} is not congruent to 1 modulo \BookInline{p,\allowbreak } then the number must be 1 and \BookInline{P} is normal in \BookInline{G.} Let us assume that \BookInline{q\not \equiv 1(}mod \BookInline{p).} Since every element in \BookInline{Q} other than \BookInline{e} is of order \BookInline{q} and every element in \BookInline{P} other than \BookInline{e} is of order \BookInline{p,\allowbreak } we have \BookInline{Q\cap P= \{e\}.} Also \BookInline{Q\vee P} must be a subgroup of \BookInline{G} properly containing \BookInline{Q} and of order dividing \BookInline{pq.} Hence \BookInline{Q\vee P= G} and by Lemma 17.9 is isomorphic to \BookInline{Q\times P} or \BookInline{\mathbb{Z}_{q}\times \mathbb{Z}_{p}.} Thus \BookInline{G} is abelian and cyclic\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{17.11 Example} Recall that if \BookInline{p} is a prime number, then up to isomorphism there is only one group of order \BookInline{p} and it is cyclic. Theorem 17.10 shows that there are many nonprime numbers \BookInline{n} such that every group of order \BookInline{n} is cyclic. Since 5 is not equivalent to 1 modulo 3, by Theorem 17.10, every group of order 15 is cyclic. Exercise 33 shows that 15 is the smallest composite number with this property\BookInline{.}\BookEnd{\blacktriangle}
+
+We need another lemma for some of the counting arguments that follow.
+
+\BookLabel{17.12 Lemma} If \BookInline{H} and \BookInline{K} are finite subgroups of a group \BookInline{G,\allowbreak } then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle | { \it H K } | = \frac { ( | { \cal H } | ) ( | { \cal K } | ) } { | { \cal H } \cap { \cal K } | } .}\end{adjustbox}\end{center}
+
+\BookLabel{\textit{Proof}} Let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle h_{1}(H\cap K),\allowbreak h_{2}(H\cap K),\allowbreak h_{3}(H\cap K),\allowbreak ...,\allowbreak h_{r}(H\cap K)}\end{adjustbox}\end{center}
+
+\noindent be the left cosets of \BookInline{H\cap K} in \BookInline{H} with each coset listed exactly once. We let
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle S= \{h_{1},\allowbreak h_{2},\allowbreak h_{3},\allowbreak ...,\allowbreak h_{r}\},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent which includes exactly one element from each left coset of \BookInline{H\cap K} in \BookInline{H.} So
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle | S | = { \frac { | H | } { | H \cap K | } } .}\end{adjustbox}\end{center}
+
+\noindent Let \BookInline{f:S\times K\to HK} be defined by \BookInline{f(h_{i},\allowbreak k)= h_{i}k.} We show that \BookInline{f} is one-to-one and onto.
+
+Suppose that \BookInline{hk\in HK.} Then \BookInline{h\in H} is in some left coset of \BookInline{H\cap K,\allowbreak } so \BookInline{h\in h_{i}(H\cap K)} for some \BookInline{h_{i}\in S.} We have that \BookInline{h= h_{i}x} for some \BookInline{x\in H\cap K.} Let \BookInline{k_{1}= xk.} Then \BookInline{(h_{i},\allowbreak k_{1})\in } \BookInline{S\times K} and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle f(h_{i},\allowbreak k_{1})= h_{i}k_{1}= h_{i}xk= hk.}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{f} is onto.
+
+We now show that \BookInline{f} is one-to-one. Suppose that \BookInline{f(h_{i},\allowbreak k)= f(h_{j},\allowbreak k_{1}).} So \BookInline{h_{i}k= h_{j}k_{1}.} Then \BookInline{h_{j}^{- 1}h_{i}= k_{1}k^{- 1}\in H\cap K.} But this implies that \BookInline{h_{i}} and \BookInline{h_{j}} are in the same left coset of \BookInline{H\cap K,\allowbreak } so \BookInline{h_{i}= h_{j}.} By cancellation\BookInline{,\allowbreak k= k_{1}} and \BookInline{f} is one-to-one.
+
+Since there is a one-to-one and onto function \BookInline{f:S\times K\to HK,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}| H K | &= | S | | K | \\&= \frac{| H |}{| H \cap K |} \cdot | K | \\&= \frac{(| H |)(| K |)}{| H \cap K |}.\end{aligned}}\end{adjustbox}\end{center} \BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 171; original printed page 154
+\BookSource{171}{154}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Lemma 17.12 is another result that counts something, so do not underestimate it. The lemma will be used in the following way: A finite group \BookInline{G} cannot have subgroups \BookInline{H} and \BookInline{K} that are too large with intersections that are too small, or the order of \BookInline{HK} would have to exceed the order of \BookInline{G,\allowbreak } which is impossible. For example, a group of order 24 cannot have two subgroups of orders 12 and 8 with an intersection of order 2.
+
+The remainder of this section consists of several examples illustrating techniques of proving that all groups of certain orders are abelian or that they have nontrivial proper normal subgroups, that is, that they are not simple. We recall that a subgroup \BookInline{H} of index 2 in a finite group \BookInline{G} is a normal subgroup. This is because the two left cosets of \BookInline{H} in \BookInline{G} are \BookInline{H} and the set of all elements in \BookInline{G} that are not in \BookInline{H.} But these are also the right cosets, which says that \BookInline{H} is a normal subgroup of \BookInline{G.}
+
+\BookLabel{17.13 Example} No group of order \BookInline{p^{r}} for \BookInline{r>1} is simple, where \BookInline{p} is a prime. For by Theorem 17.4 such a group \BookInline{G} contains a subgroup of order \BookInline{p^{r- 1}} normal in a subgroup of order \BookInline{p^{r},\allowbreak } which must be all of \BookInline{G.} Thus a group of order 16 is not simple; it has a normal subgroup of order \BookInline{8.}\BookEnd{\blacktriangle}
+
+\BookLabel{17.14 Example} No group of order 20 is simple, for such a group \BookInline{G} contains Sylow 5-subgroups in number congruent to 1 modulo 5 and a divisor of 4, hence only 1. This Sylow 5-subgroup is then normal, since all conjugates of it must be itself\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{17.15 Example} No group of order 30 is simple. We have seen that if there is only one Sylow \BookInline{p-}subgroup for some prime \BookInline{p} dividing 30, we are done. By Theorem 17.7 the possibilities for the number of Sylow 5-subgroups are 1 or 6, and those for Sylow 3-subgroups are 1 or 10. But if \BookInline{G} has six Sylow 5-subgroups, then the intersection of any two is a subgroup of each of order dividing 5, and hence just \BookInline{\{e\}.} Thus each contains 4 elements of order 5 that are in none of the others. Hence \BookInline{G} must contain 24 elements of order 5. Similarly, if \BookInline{G} has 10 Sylow 3-subgroups, it has at least 20 elements of order 3. The two types of Sylow subgroups together would require at least 44 elements in \BookInline{G.} Thus there is a normal subgroup either of order 5 or of order \BookInline{3.}\BookEnd{\blacktriangle}
+
+\BookLabel{17.16 Example} No group of order 48 is simple. Indeed, we shall show that a group \BookInline{G} of order 48 has a normal subgroup of either order 16 or order 8. By Theorem \BookInline{17.7G} has either one or three Sylow 2-subgroups of order 16. If there is only one subgroup of order 16, it is normal in \BookInline{G,\allowbreak } by now a familiar argument.
+
+Suppose that there are three subgroups of order 16, and let \BookInline{H} and \BookInline{K} be two of them. Then \BookInline{H\cap K} must be of order 8, for if \BookInline{H\cap K} were of order \BookInline{\leq 4,\allowbreak } then by Lemma 17.12 \BookInline{HK} would have at least \BookInline{(16)(16)/4= 64} elements, contradicting the fact that \BookInline{G} has only 48 elements. Therefore\BookInline{,\allowbreak H\cap K} is normal in both \BookInline{H} and \BookInline{K(}being of index 2, or by Theorem 17.4). Hence the normalizer of \BookInline{H\cap K} contains both \BookInline{H} and \BookInline{K} and must have order a multiple \BookInline{>1} of 16 and a divisor of 48, therefore 48. Thus \BookInline{H\cap K} must be normal in \BookInline{G.}\BookEnd{\blacktriangle}
+
+\BookLabel{17.17 Example} No group of order 36 is simple. Such a group \BookInline{G} has either one or four subgroups of order 9. If there is only one such subgroup, it is normal in \BookInline{G.} If there are four such subgroups, let \BookInline{H} and \BookInline{K} be two of them. As in Example \BookInline{17.16,\allowbreak H\cap K} must have at least 3 elements, or \BookInline{HK} would have to have 81 elements, which is impossible. Thus the normalizer of \BookInline{H\cap K} has as order a multiple of \BookInline{>1} of 9 and a divisor of 36; hence the order must be either 18 or 36. If the order is 18, the normalizer is then of index 2 and therefore is normal in \BookInline{G.} If the order is 36, then \BookInline{H\cap K} is normal in \BookInline{G.}\BookEnd{\blacktriangle}
+
+\BookLabel{17.18 Example} We show every group of order \BookInline{255= (3)(5)(17)} is abelian (hence cyclic by the Fundamental Theorem 9.12 and not simple, since 255 is not a prime). By Theorem 17.7 such a group \BookInline{G} has only one subgroup \BookInline{H} of order 17. Then \BookInline{G/H} has order 15 and is abelian 
+% Source PDF page 172; original printed page 155
+\BookSource{172}{155}
+by Theorem 17.10. By Theorem 13.22, we see that the commutator subgroup \BookInline{C} of \BookInline{G} is contained in \BookInline{H.} Thus as a subgroup of \BookInline{H,\allowbreak C} has either order 1 or 17. Theorem 17.7 also shows that \BookInline{G} has either 1 or 85 subgroups of order 3 and either 1 or 51 subgroups of order 5. However, 85 subgroups of order 3 would require 170 elements of order 3, and 51 subgroups of order 5 would require 204 elements of order 5 in \BookInline{G;} both together would then require 375 elements in \BookInline{G,\allowbreak } which is impossible. Hence there is a subgroup \BookInline{K} having either order 3 or order 5 and normal in \BookInline{G.} Then \BookInline{G/K} has either order (5)(17) or order (3)(17), and in either case Theorem 17.10 shows that \BookInline{G/K} is abelian. Thus \BookInline{C\leq K} and has order either 3, 5, or 1. Since \BookInline{C\leq H} showed that \BookInline{C} has order 17 or 1, we conclude that \BookInline{C} has order 1. Hence \BookInline{C= \{e\},\allowbreak } and \BookInline{G/C\simeq G} is abelian. The Fundamental Theorem 9.12 then shows that \BookInline{G} is cyclic\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{17} \BookEnd{\blacksquare}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 4, determine the values of \BookInline{n_{i}} that make each statement true.
+
+\BookExercise{1.}{A Sylow 3-subgroup of a group of order 12 has order \BookInline{n_{1}.}}
+
+\BookExercise{2.}{A Sylow 3-subgroup of a group of order 54 has order \BookInline{n_{1}.}}
+
+\BookExercise{3.}{A group of order 24 must have either \BookInline{n_{1}} or \BookInline{n_{2}} Sylow 2-subgroups. (Use only the information given in Theorem 17.7.)}
+
+\BookExercise{4.}{A group of order \BookInline{255= (3)(5)(17)} must have either \BookInline{n_{1}} or \BookInline{n_{2}} Sylow 3-subgroups and \BookInline{n_{3}} or \BookInline{n_{4}} Sylow 5-subgroups. (Use only the information given in Theorem 17.7.)}
+
+\BookExercise{5.}{Find all Sylow 3-subgroups of \BookInline{S_{4}} and demonstrate that they are all conjugate.}
+
+\BookExercise{6.}{Find two Sylow 2-subgroups of \BookInline{S_{4}} and show that they are conjugate.}
+
+\BookExercise{7.}{Determine for which \BookInline{n\leq 20} any group of order \BookInline{n} is abelian.}
+
+\BookExercise{8.}{Determine for which \BookInline{n\leq 20} any group of order \BookInline{n} is cyclic.}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 9 through 11, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{9.}{Let \BookInline{p} be a prime. A \BookInline{p-}\textit{group} is a group with the property that every element has order \BookInline{p.}}
+
+\BookExercise{10.}{The\textit{ normalizer} \BookInline{N[H]} of a subgroup \BookInline{H} of a group \BookInline{G} is the set of all inner automorphisms that carry \BookInline{H} onto itself.}
+
+\BookExercise{11.}{Let \BookInline{G} be a group whose order is divisible by a prime \BookInline{p.} The\textit{ Sylow} \BookInline{p-}\textit{subgroup} of a group is the largest subgroup \BookInline{P} of \BookInline{G} with the property that \BookInline{P} has some power of \BookInline{p} as its order.}
+
+\BookExercise{12.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Any two Sylow \BookInline{p-}subgroups of a finite group are conjugate.}
+
+\BookExercise{b.}{Theorem 17.7 shows that a group of order 15 has only one Sylow 5-subgroup.}
+
+\BookExercise{c.}{Every Sylow \BookInline{p-}subgroup of a finite group has order a power of \BookInline{p.}}
+
+\BookExercise{d.}{Every \BookInline{p-}subgroup of every finite group is a Sylow \BookInline{p-}subgroup.}
+
+\BookExercise{e.}{Every finite abelian group has exactly one Sylow \BookInline{p-}subgroup for each prime \BookInline{p} dividing the order of \BookInline{G.}}
+
+\BookExercise{f.}{The normalizer in \BookInline{G} of a subgroup \BookInline{H} of \BookInline{G} is always a normal subgroup of \BookInline{G.}}
+
+\BookExercise{g.}{If \BookInline{H} is a subgroup of \BookInline{G,\allowbreak } then \BookInline{H} is always a normal subgroup of \BookInline{N[H].}}
+
+\BookExercise{h.}{A Sylow \BookInline{p-}subgroup of a finite group \BookInline{G} is normal in \BookInline{G} if and only if it is the only Sylow \BookInline{p-}subgroup of \BookInline{G.}}
+
+\BookExercise{i.}{If \BookInline{G} is an abelian group and \BookInline{H} is a subgroup of \BookInline{G,\allowbreak } then \BookInline{N[H]= H.}}
+
+\BookExercise{j.}{A group of prime-power order \BookInline{p^{n}} has no Sylow \BookInline{p-}subgroup.}
+
+\end{BookBody}
+
+% Source PDF page 173; original printed page 156
+\BookSource{173}{156}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{13.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every group of order 159 is cyclic.}
+
+\BookExercise{b.}{Every group of order 102 has a nontrivial proper normal subgroup.}
+
+\BookExercise{c.}{Every group of order \BookInline{p^{3}} is abelian, assuming that \BookInline{p} is a prime number.}
+
+\BookExercise{d.}{There is a simple group of order 1128.}
+
+\BookExercise{e.}{It would be quite tedious to show that no group of nonprime order between 60 and 168 is simple by the methods illustrated in the text.}
+
+\BookExercise{f.}{No group of order 21 is simple.}
+
+\BookExercise{g.}{Every group of 125 elements has at least 5 elements that commute with every element in the group.}
+
+\BookExercise{h.}{Every group of order 42 has a normal subgroup of order 7.}
+
+\BookExercise{i.}{Every group of order 42 has a normal subgroup of order 3.}
+
+\BookExercise{j.}{The only simple groups are the groups \BookInline{\mathbb{Z}_{p}} and \BookInline{A_{n},\allowbreak } where \BookInline{p} is a prime and \BookInline{n>4.}}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{14.}{Let \BookInline{H} be a subgroup of a group \BookInline{G.} Show that \BookInline{G_{H}= \{g\in G\mid gHg^{- 1}= H\}} is a subgroup of \BookInline{G} without using Theorem 14.13.}
+
+\BookExercise{15.}{Let \BookInline{G} be a finite group and let primes \BookInline{p} and \BookInline{q\neq p} divide \BookInline{|G|.} Prove that if \BookInline{G} has precisely one proper Sylow \BookInline{p-}subgroup, it is a normal subgroup, so \BookInline{G} is not simple.}
+
+\BookExercise{16.}{Show that every group of order 45 has a normal subgroup of order 9.}
+
+\BookExercise{17.}{Let \BookInline{G} be a finite group and let \BookInline{p} be a prime dividing \BookInline{|G|.} Let \BookInline{P} be a Sylow \BookInline{p-}subgroup of \BookInline{G.} Show that \BookInline{N[N[P]]= N[P].[}\textit{Hint:} Argue that \BookInline{P} is the only Sylow \BookInline{p-}subgroup of \BookInline{N[N[P]],\allowbreak } and use Theorem 17.6.]}
+
+\BookExercise{18.}{Let \BookInline{G} be a finite group and let a prime \BookInline{p} divide \BookInline{|G|.} Let \BookInline{P} be a Sylow \BookInline{p-}subgroup of \BookInline{G} and let \BookInline{H} be any \BookInline{p-}subgroup of \BookInline{G.} Show there exists \BookInline{g\in G} such that \BookInline{gHg^{- 1}\leq P.}}
+
+\BookExercise{19.}{Show that every group of order (35)3 has a normal subgroup of order 125.}
+
+\BookExercise{20.}{Show that there are no simple groups of order \BookInline{255= (3)(5)(17).}}
+
+\BookExercise{21.}{Show that there are no simple groups of order \BookInline{p^{r}m,\allowbreak } where \BookInline{p} is a prime\BookInline{,\allowbreak r} is a positive integer, and \BookInline{m<p.}}
+
+\BookExercise{22.}{Prove that all simple groups of order at most 20 are cyclic.}
+
+\BookExercise{23.}{Let \BookInline{p} be a prime. Show that a finite group of order \BookInline{p^{n}} contains\textit{ normal} subgroups \BookInline{H_{i}} for \BookInline{0\leq i\leq n} such that \BookInline{|H_{i}|= p^{i}} and \BookInline{H_{i}<H_{i+ 1}} for \BookInline{0\leq i<n.[}\textit{Hint:} See Theorem 14.24.]}
+
+\BookExercise{24.}{Let \BookInline{G} be a finite group and let \BookInline{P} be a normal \BookInline{p-}subgroup of \BookInline{G.} Show that \BookInline{P} is contained in every Sylow \BookInline{p-}subgroup of \BookInline{G.}}
+
+\BookExercise{25.}{Prove that if \BookInline{p\geq 3} is a prime number and \BookInline{k\geq 1,\allowbreak } then any group \BookInline{G} of order \BookInline{2p^{k}} is not simple.}
+
+\BookExercise{26.}{Prove that every group of order (5)(7)(47) is abelian and cyclic.}
+
+\BookExercise{27.}{Prove that no group of order 96 is simple.}
+
+\BookExercise{28.}{Show that every group of order 30 contains a subgroup of order 15. [\textit{Hint:} Use the last sentence in Example 17.15 and go to the factor group.]}
+
+\BookExercise{29.}{Prove that no group of order 160 is simple.}
+
+\BookExercise{30.}{Let \BookInline{G} be a finite group and suppose that for each \BookInline{k} that divides \BookInline{|G|,\allowbreak G} has at most one subgroup of order \BookInline{k.} Prove that \BookInline{G} is cyclic.}
+
+\BookExercise{31.}{Let \BookInline{G} be a finite group. Use the group action of \BookInline{G} on \BookInline{G} given by conjugation\BookInline{,\allowbreak g\ast x= gxg^{- 1},\allowbreak } to prove the formula \BookInline{|G|= |Z(G)|+ n_{1}+ n_{2}+ \cdots + n_{k},\allowbreak } where \BookInline{Z(G)} is the center of \BookInline{G} and \BookInline{n_{1},\allowbreak n_{2},\allowbreak...,\allowbreak n_{k}} are the orbit sizes for the orbits containing at least two elements. This formula is called the\textbf{ class equation}.}
+
+\BookExercise{32.}{By arguments similar to those used in the examples of this section, convince yourself that the only simple groups of order less than 60 are cyclic. You need not write out all the details.}
+
+\BookExercise{33.}{Show that for every positive integer \BookInline{n<15,\allowbreak } if every group of order \BookInline{n} is cyclic, then \BookInline{n} is prime.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

@@ -1,0 +1,254 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 42 Finite Fields}
+\pdfbookmark[0]{Section 42 Finite Fields}{42_finite_fields}
+\ifdefined\BookMaster\else\setcounter{page}{335}\fi
+% Source PDF page 352; original printed page 335
+\BookSource{352}{335}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{42}{Finite Fields}
+
+\noindent The purpose of this section is to determine the structure of all finite fields. We shall show that for every prime \BookInline{p} and positive integer \BookInline{n,\allowbreak } there is exactly one finite field (up to isomorphism) of order \BookInline{p^{n}.} This field GF\BookInline{(p^{n})} is usually referred to as the\textbf{ Galois field of} \textbf{order} \BookInline{p^{n}.} We shall be using quite a bit of our material on cyclic groups. The proofs are simple and elegant.
+
+\BookTextHeading{\textbf{The Structure of a Finite Field}  }
+
+\noindent We now show that all finite fields must have prime-power order.
+
+\BookLabel{42.1 Theorem} Let \BookInline{E} be a finite extension of degree \BookInline{n} over a finite field \BookInline{F.} If \BookInline{F} has \BookInline{q} elements, then \BookInline{E} has \BookInline{q^{n}} elements.
+
+\end{BookBody}
+
+% Source PDF page 353; original printed page 336
+\BookSource{353}{336}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\{\alpha _{1},\allowbreak \cdots,\allowbreak \alpha _{n}\}} be a basis for \BookInline{E} as a vector space over \BookInline{F.} By Exercise 21 of Section 33, every \BookInline{\beta \in E} can be\textit{ uniquely} written in the form
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \beta = b_{1}\alpha _{1}+ \cdots + b_{n}\alpha _{n}}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{b_{i}\in F.} Since each \BookInline{b_{i}} may be any of the \BookInline{q} elements of \BookInline{F,\allowbreak } the total number of such distinct linear combinations of the \BookInline{\alpha _{i}} is \BookInline{q^{n}.}\BookEnd{\blacklozenge}
+
+\BookLabel{42.2 Corollary} If \BookInline{E} is a finite field of characteristic \BookInline{p,\allowbreak } then \BookInline{E} contains exactly \BookInline{p^{n}} elements for some positive integer \BookInline{n.}
+
+\BookLabel{\textit{Proof}} Every finite field \BookInline{E} is a finite extension of a prime field isomorphic to the field \BookInline{\mathbb{Z}_{p},\allowbreak } where \BookInline{p} is the characteristic of \BookInline{E.} The corollary follows at once from Theorem \BookInline{42.1.}\BookEnd{\blacklozenge}
+
+We now turn to the study of the multiplicative structure of a finite field. The following theorem will show us how any finite field can be formed from the prime subfield.
+
+\BookLabel{42.3 Theorem} Let \BookInline{E} be a field of \BookInline{p^{n}} elements contained in an algebraic closure \BookInline{\overline{\mathbb{Z}_{p}}} of \BookInline{\mathbb{Z}_{p}.} The elements of \BookInline{E} are precisely the zeros in \BookInline{\overline{\mathbb{Z}_{p}}} of the polynomial \BookInline{x^{p^{n}}- x} in \BookInline{\mathbb{Z}_{p}[x].}
+
+\BookLabel{\textit{Proof}} The set \BookInline{E^{\ast }} of nonzero elements of \BookInline{E} forms a multiplicative group of order \BookInline{p^{n}- 1} under the field multiplication. For \BookInline{\alpha \in E^{\ast },\allowbreak } the order of \BookInline{\alpha } in this group divides the order \BookInline{p^{n}- 1} of the group. Thus for \BookInline{\alpha \in E^{\ast },\allowbreak } we have \BookInline{\alpha ^{p^{n}- 1}= 1,\allowbreak \;\text{so}\;\alpha ^{p^{n}}= \alpha.} Therefore, every element in \BookInline{E} is a zero of \BookInline{x^{p^{n}}- x.} Since \BookInline{x^{p^{n}}- x} can have at most \BookInline{p^{n}} zeros, we see that \BookInline{E} contains precisely the zeros of \BookInline{x^{p^{n}}- x} in \BookInline{\mathbb{Z}_{p}.}\BookEnd{\blacklozenge}
+
+\BookLabel{42.4 Definition} An element \BookInline{\alpha } of a field is an \BookInline{n}\textbf{th root of unity} if \BookInline{\alpha ^{n}= 1.} It is a\textbf{ primitive} \BookInline{n}\textbf{th root of} \textbf{unity} if \BookInline{\alpha ^{n}= 1} and \BookInline{\alpha ^ { m } \neq 1} for \BookInline{0<m<n.}\BookEnd{\blacksquare}
+
+Thus the nonzero elements of a finite field of \BookInline{p^{n}} elements are all \BookInline{(p^{n}- 1)}th roots of unity.
+
+Recall that in Corollary 28.7, we showed that the multiplicative group of nonzero elements of a finite field is cyclic. This is a very important fact about finite fields; it has actually been applied to coding theory and combinatorics. For the sake of completeness in this section, we now state it here as a theorem, give a corollary, and illustrate with an example.
+
+\BookLabel{42.5 Theorem} The multiplicative group \BookInline{\langle F^{\ast },\allowbreak \cdot \rangle } of nonzero elements of a finite field \BookInline{F} is cyclic.
+
+\BookLabel{\textit{Proof}} See Corollary 28.7. \BookEnd{\blacklozenge}
+
+\BookLabel{42.6 Corollary} A finite extension \BookInline{E} of a finite field \BookInline{F} is a simple extension of \BookInline{F.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\alpha } be a generator for the cyclic group \BookInline{E^{\ast }} of nonzero elements of \BookInline{E.} Then \BookInline{E= F(\alpha ).} \BookEnd{\blacklozenge}
+
+\BookLabel{42.7 Example} Consider the finite field \BookInline{\mathbb{Z}_{11}.} By Theorem \BookInline{42.5\langle \mathbb{Z}_{11}^{\ast },\allowbreak \cdot \rangle } is cyclic. Let us try to find a generator of \BookInline{\mathbb{Z}_{11}^{\ast }} by brute force and ignorance. We start by trying 2. Since \BookInline{|\mathbb{Z}_{11}^{\ast }|= 10,\allowbreak 2} must be an element of \BookInline{\mathbb{Z}_{11}^{\ast }} of order dividing 10, that is, either 2, 5, or 10. Now
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2^{2}= 4,\allowbreak 2^{4}= 4^{2}= 5,\allowbreak \;\text{and}\;2^{5}= (2)(5)= 10= - 1.}\end{adjustbox}\end{center}
+
+\noindent Thus neither 22 nor 25 is 1, but, of course\BookInline{,\allowbreak 2^{10}= 1,\allowbreak } so 2 is a generator of \BookInline{\mathbb{Z}_{11}^{\ast },\allowbreak } that is, 2 is a primitive 10th root of unity in \BookInline{\mathbb{Z}_{11}.} We were lucky.
+
+By the theory of cyclic groups, all the generators of \BookInline{Z_{11}^{\ast },\allowbreak } that is, all the primitive 10th roots of unity in \BookInline{\mathbb{Z}_{11},\allowbreak } are of the form \BookInline{2^{n},\allowbreak } where \BookInline{n} is relatively prime to 10. These elements are
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2^{1}= 2,\allowbreak 2^{3}= 8,\allowbreak 2^{7}= 7,\allowbreak 2^{9}= 6.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 354; original printed page 337
+\BookSource{354}{337}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookTextHeading{\textbf{HISTORICAL NOTE}  } \BookEnd{\blacksquare}
+
+\noindent Although Carl F. Gauss had shown that the set of residues modulo a prime \BookInline{p} satisfied the field properties, it was Evariste Galois (1811– 1832) who first dealt with what he called “incommensurable solutions” to the congruence \BookInline{F(x)\equiv 0} (mod \BookInline{p),\allowbreak } where \BookInline{F(x)} is an \BookInline{n}th degree irreducible polynomial modulo \BookInline{p.} He noted in a paper written in 1830 that one should consider the roots of this congruence as “a variety of imaginary symbols” that one can use in calculations just as one uses \BookInline{\sqrt{- }1.} Galois then showed that if \BookInline{\alpha } is any solution of \BookInline{F(x)\equiv 0(}mod \BookInline{p),\allowbreak } the expression \BookInline{a_{0}+ a_{1}\alpha + } \BookInline{a_{2}\alpha ^{2}+ \cdots + a_{n- 1}\alpha ^{n- 1}} takes on precisely \BookInline{p^{n}} different values. Finally, he proved results equivalent to Theorems 42.3 and 42.5 of the text.
+
+\noindent Galois’ life was brief and tragic. He showed brilliance in mathematics early on, publishing several papers before he was 20 and essentially established the basic ideas of Galois theory. He was, however, active in French revolutionary politics following the July revolution of 1830. In May 1831, he was arrested for threatening the life of King Louis-Philippe. Though he was acquitted, he was rearrested for participating, heavily armed, in a republican demonstration on Bastille Day of that year. Two months after his release from prison the following March, he was killed in a duel, “the victim of an infamous coquette and her two dupes”; the previous night he had written a letter to a friend clarifying some of his work in the theory of equations and requesting that it be studied by other mathematicians. Not until 1846, however, were his major papers published; it is from that date that his work became influential.
+
+\noindent The primitive 5th roots of unity in \BookInline{\mathbb{Z}_{11}} are of the form \BookInline{2^{m},\allowbreak } where the gcd of \BookInline{m} and 10 is 2, that is,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2^{2}= 4,\allowbreak 2^{4}= 5,\allowbreak 2^{6}= 9,\allowbreak 2^{8}= 3.}\end{adjustbox}\end{center}
+
+\noindent The primitive square root of unity in \BookInline{\mathbb{Z}_{11}} is \BookInline{2^{5}= 10= - 1.} \BookEnd{\blacktriangle}
+
+\noindent \textbf{The Existence of GF}\BookInline{(p^{n})}
+
+\noindent We turn now to the question of the existence of a finite field of order \BookInline{p^{r}} for every prime power \BookInline{p^{r},\allowbreak r>0.} We need the following lemma.
+
+\BookLabel{42.8 Lemma} If \BookInline{F} is a field of prime characteristic \BookInline{p} with algebraic closure \BookInline{\overline{F},\allowbreak } then \BookInline{x^{p^{n}}- x} has \BookInline{p^{n}} distinct zeros in \BookInline{\overline{F}.}
+
+\BookLabel{\textit{Proof}} Because \BookInline{\overline{F}} is algebraically closed, \BookInline{x^{p^{n}}- x} factors over that field into a product of linear factors \BookInline{x- \alpha,\allowbreak } so it suffices to show that none of these factors occurs more than once in the factorization.
+
+Exercise 15 uses derivatives to complete this proof. Although this is an elegant method, it requires some effort to develop derivatives for polynomials over an arbitrary field, so we proceed using long division. Observe that 0 is a zero of \BookInline{x^{p^{n}}- x} of multiplicity 1. Suppose \BookInline{\alpha \neq 0} is a zero of \BookInline{x^{p^{n}}- x,\allowbreak } and hence is a zero of \BookInline{f(x)= x^{p^{n}- 1}- 1}. Then \BookInline{x- \alpha } is a factor of \BookInline{f(x)} in \BookInline{\overline{F}[x],\allowbreak } and by long division, we find that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\frac{f(x)}{(x - \alpha)} &= g(x) \\= x^{p^{n} - 2} + \alpha x^{p^{n} - 3} + \alpha^{2}x^{p^{n} - 4} &+ \cdots + \alpha^{p^{n} - 3}x + \alpha^{p^{n} - 2}.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Now \BookInline{g(x)} has \BookInline{p^{n}- 1} summands, and in \BookInline{g(\alpha ),\allowbreak } each summand is
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha ^ { p ^ { n } - 2 } = \frac { \alpha ^ { p ^ { n } - 1 } } { \alpha } = \frac { 1 } { \alpha } .}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 355; original printed page 338
+\BookSource{355}{338}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle g(\alpha) = [(p^n - 1) \cdot 1] \frac{1}{\alpha} = - \frac{1}{\alpha}.}\end{adjustbox}\end{center}
+
+\noindent since we are in a field of characteristic \BookInline{p.} Therefore\BookInline{,\allowbreak g(\alpha )\neq 0,\allowbreak } so \BookInline{\alpha } is a zero of \BookInline{f(x)} of multiplicity \BookInline{1.}\BookEnd{\blacklozenge}
+
+\BookLabel{42.9 Lemma} If \BookInline{F} is a field of prime characteristic \BookInline{p,\allowbreak } then \BookInline{(\alpha + \beta )^{p^{n}}= \alpha ^{p^{n}}+ \beta ^{p^{n}}} for all \BookInline{\alpha,\allowbreak \beta \in F} and all positive integers \BookInline{n.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\alpha,\allowbreak \beta \in F.} Applying the binomial theorem to \BookInline{(\alpha + \beta )^{p},\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}(\alpha + \beta)^p &= \alpha^p + (p \cdot 1)\alpha^{p-1}\beta + \bigg(\frac{p(p-1)}{2} \cdot 1\bigg)\alpha^{p-2}\beta^2 \\&\quad + \cdots + (p \cdot 1)\alpha\beta^{p-1} + \beta^p \\&= \alpha^p + 0\alpha^{p-1}\beta + 0\alpha^{p-2}\beta^2 + \cdots + 0\alpha\beta^{p-1} + \beta^p \\&= \alpha^p + \beta^p.\end{aligned}}\end{adjustbox}\end{center}
+
+\noindent Proceeding by induction on \BookInline{n,\allowbreak } suppose that we have \BookInline{(\alpha + \beta )^{p^{n- 1}}= \alpha ^{p^{n- 1}}+ \beta ^{p^{n- 1}}}. Then \BookInline{(\alpha + \beta )^{p^{n}}= [(\alpha + \beta )^{p^{n- 1}}]^{p}= (\alpha ^{p^{n- 1}}+ \beta ^{p^{n- 1}})^{p}= \alpha ^{p^{n}}+ \beta ^{p^{n}}.} \BookEnd{\blacklozenge}
+
+\BookLabel{42.10 Theorem} A finite field GF\BookInline{(p^{n})} of \BookInline{p^{n}} elements exists for every prime power \BookInline{p^{n}.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\overline{\mathbb{Z}_{p}}} be an algebraic closure of \BookInline{\mathbb{Z}_{p},\allowbreak } and let \BookInline{K} be the subset of \BookInline{\overline{\mathbb{Z}_{p}}} consisting of all zeros of \BookInline{x^{p^{n}}- x} in \BookInline{\overline{\mathbb{Z}_{p}}.} Let \BookInline{\alpha,\allowbreak \beta \in K.} Lemma 42.9 shows that \BookInline{(\alpha + \beta )\in K,\allowbreak } and the equation \BookInline{(\alpha \beta )^{p^{n}}= \alpha ^{p^{n}}\beta ^{p^{n}}= \alpha \beta } shows that \BookInline{\alpha \beta \in K.} From \BookInline{\alpha ^{p^{n}}= \alpha } we obtain \BookInline{(- \alpha )^{p^{n}}= } \BookInline{(- 1)^{p^{n}}\alpha ^{p^{n}}= (- 1)^{p^{n}}\alpha.\;\text{If}\;p} is an odd prime, then \BookInline{(- 1)^{p^{n}}= - 1} and if \BookInline{p= 2} then \BookInline{- 1= 1.} Thus \BookInline{(- \alpha )^{p^{n}}= - \alpha,\allowbreak \;\text{so}\;- \alpha \in K}. Now 0 and 1 are zeros of \BookInline{x^{p^{n}}- x.} For \BookInline{\alpha } \BookInline{\neq 0,\allowbreak \alpha ^{p^{n}}= \alpha } implies that \BookInline{(1/\alpha )^{p^{n}}= 1/\alpha }. Thus \BookInline{K} is a subfield of \BookInline{\overline{\mathbb{Z}_{p}}} containing \BookInline{\mathbb{Z}_{p}.} Therefore\BookInline{,\allowbreak K} is the desired field of \BookInline{p^{n}} elements, since Lemma 42.8 showed that \BookInline{x^{p^{n}}- x} has \BookInline{p^{n}} distinct zeros in \BookInline{\overline{\mathbb{Z}_{p}}.}\BookEnd{\blacklozenge}
+
+\BookLabel{42.11 Corollary} If \BookInline{F} is any finite field, then for every positive integer \BookInline{n,\allowbreak } there is an irreducible polynomial in \BookInline{F[x]} of degree \BookInline{n.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{F} have \BookInline{q= p^{r}} elements, where \BookInline{p} is the characteristic of \BookInline{F.} By Theorem 42.10, there is a field \BookInline{K\leq \overline{F}} containing \BookInline{\mathbb{Z}_{p}(}up to isomorphism) and consisting precisely of the zeros of \BookInline{x^{p^{rn}}- x.} We want to show \BookInline{F\leq K.} Every element of \BookInline{F} is a zero of \BookInline{x^{p^{r}}- x,\allowbreak } by Theorem 42.3. Now \BookInline{p^{rs}= p^{r}p^{r(s- 1)}.} Applying this equation repeatedly to the exponents and using the fact that for \BookInline{\alpha \in F} we have \BookInline{\alpha ^{p^{r}}= \alpha }, we see that for \BookInline{\alpha \in F,\allowbreak }
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha ^{p^{rn}}= \alpha ^{p^{r(n- 1)}}= \alpha ^{p^{r(n- 2)}}= \cdots = \alpha ^{p^{r}}= \alpha .}\end{adjustbox}\end{center}
+
+\noindent Thus \BookInline{F\leq K.} Then Theorem 42.1 shows that we must have \BookInline{[K:F]= n.} We have seen that \BookInline{K} is simple over \BookInline{F} in Corollary 42.6, so \BookInline{K= F(\beta )} for some \BookInline{\beta \in K.} Therefore, irr\BookInline{(\beta,\allowbreak F)} must be of degree \BookInline{n.}\BookEnd{\blacklozenge}
+
+\BookLabel{42.12 Theorem} Let \BookInline{p} be a prime and let \BookInline{n\in \mathbb{Z}^{+ }.} If \BookInline{E} and \BookInline{E^{\prime }} are fields of order \BookInline{p^{n},\allowbreak } then \BookInline{E\simeq E^{\prime }.}
+
+\BookLabel{\textit{Proof}} Both \BookInline{E} and \BookInline{E^{\prime }} have \BookInline{\mathbb{Z}_{p}} as prime field, up to isomorphism. By Corollary \BookInline{42.6,\allowbreak E} is a simple extension of \BookInline{\mathbb{Z}_{p}} of degree \BookInline{n,\allowbreak } so there exists an irreducible polynomial \BookInline{f(x)} of degree \BookInline{n} in \BookInline{\mathbb{Z}_{p}[x]} such that \BookInline{E\simeq \mathbb{Z}_{p}[x]/\langle f(x)\rangle.} Because the elements of \BookInline{E} are zeros of \BookInline{x^{p^{n}}- x,\allowbreak } we see that \BookInline{f(x)} is a factor of \BookInline{x^{p^{n}}- x} in \BookInline{\mathbb{Z}_{p}[x].} Because \BookInline{E^{\prime }} also consists of 
+% Source PDF page 356; original printed page 339
+\BookSource{356}{339}
+zeros of \BookInline{x^{p^{n}}- x,\allowbreak } we see that \BookInline{E^{\prime }} also contains zeros of irreducible \BookInline{f(x)} in \BookInline{\mathbb{Z}_{p}[x].} Thus, because \BookInline{E^{\prime }} also contains exactly \BookInline{p^{n}} elements\BookInline{,\allowbreak E^{\prime }} is also isomorphic to \BookInline{\mathbb{Z}_{p}[x]/\langle f(x)\rangle.}\BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+In section 29 we saw that the field \BookInline{\mathbb{Z}_{2}} can be used to construct polynomial codes. Other finite fields have been used to construct algebraic codes with interesting properties. For example, in the\textit{ American Mathematical Monthly} 77 (1970): 249–258, Normal Levinson constructed an algebraic code that corrects three transmission errors. In this construction, the field of order 16 was used. Finite fields are also used in many other areas of mathematics including combinatorial designs, finite geometries, and algebraic topology.
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{42} \BookEnd{\blacksquare}
+
+\BookTextHeading{\textbf{Computations}}
+
+\noindent In Exercises 1 through 3, determine whether there exists a finite field having the given number of elements. (A calculator may be useful.)
+
+\BookExercise{1.}{4096}
+
+\BookExercise{2.}{3127}
+
+\BookExercise{3.}{68,921}
+
+\BookExercise{4.}{Find the number of primitive 8th roots of unity in GF(9).}
+
+\BookExercise{5.}{Find the number of primitive 18th roots of unity in GF(19).}
+
+\BookExercise{6.}{Find the number of primitive 15th roots of unity in GF(31).}
+
+\BookExercise{7.}{Find the number of primitive 10th roots of unity in GF(23).}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\BookExercise{8.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{The nonzero elements of every finite field form a cyclic group under multiplication.}
+
+\BookExercise{b.}{The elements of every finite field form a cyclic group under addition.}
+
+\BookExercise{c.}{The zeros in \BookInline{\mathbb{C}} of \BookInline{(x^{28}- 1)\in \mathbb{Q}[x]} form a cyclic group under multiplication.}
+
+\BookExercise{d.}{There exists a finite field of 60 elements.}
+
+\BookExercise{e.}{There exists a finite field of 125 elements.}
+
+\BookExercise{f.}{There exists a finite field of 36 elements.}
+
+\BookExercise{g.}{The complex number \BookInline{i} is a primitive 4th root of unity.}
+
+\BookExercise{h.}{There exists an irreducible polynomial of degree 58 in \BookInline{\mathbb{Z}_{2}[x].}}
+
+\BookExercise{i.}{The nonzero elements of \BookInline{\mathbb{Q}} form a cyclic group \BookInline{\mathbb{Q}^{\ast }} under field multiplication.}
+
+\BookExercise{j.}{If \BookInline{F} is a finite field, then every isomorphism mapping \BookInline{F} onto a subfield of an algebraic closure \BookInline{\overline{F}} of \BookInline{F} is an automorphism of \BookInline{F.}}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{9.}{Let \BookInline{\overline{\mathbb{Z}_{2}}} be an algebraic closure of \BookInline{\mathbb{Z}_{2},\allowbreak } and let \BookInline{\alpha,\allowbreak \beta \in \overline{\mathbb{Z}_{2}}} be zeros of \BookInline{x^{3}+ x^{2}+ 1} and of \BookInline{x^{3}+ x+ 1,\allowbreak } respectively. Using the results of this section, show that \BookInline{\mathbb{Z}_{2}(\alpha )= \mathbb{Z}_{2}(\beta ).}}
+
+\BookExercise{10.}{Show that every irreducible polynomial in \BookInline{\mathbb{Z}_{p}[x]} is a divisor of \BookInline{x^{p^{n}}- x} for some \BookInline{n.}}
+
+\BookExercise{11.}{Let \BookInline{F} be a finite field of \BookInline{p^{n}} elements containing the prime subfield \BookInline{\mathbb{Z}_{p}.} Show that if \BookInline{\alpha \in F} is a generator of the cyclic group \BookInline{\langle F^{\ast },\allowbreak \cdot \rangle } of nonzero elements of \BookInline{F,\allowbreak } then deg\BookInline{(\alpha,\allowbreak \mathbb{Z}_{p})= n.}}
+
+\BookExercise{12.}{Show that a finite field of \BookInline{p^{n}} elements has exactly one subfield of \BookInline{p^{m}} elements for each divisor \BookInline{m} of \BookInline{n.}}
+
+\BookExercise{13.}{Show that \BookInline{x^{p^{n}}- x} is the product of all monic irreducible polynomials in \BookInline{\mathbb{Z}_{p}[x]} of a degree \BookInline{d} dividing \BookInline{n.}}
+
+\BookExercise{14.}{Let \BookInline{p} be an odd prime.}
+
+\end{BookBody}
+
+% Source PDF page 357; original printed page 340
+\BookSource{357}{340}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{a.}{Show that for \BookInline{a\in \mathbb{Z},\allowbreak } where \BookInline{a\not \equiv 0(}mod \BookInline{p),\allowbreak } the congruence \BookInline{x^{2}\equiv a(}mod \BookInline{p)} has a solution in \BookInline{\mathbb{Z}} if and only if \BookInline{a^{(p- 1)/2}\equiv 1(}mod \BookInline{p).[}\textit{Hint:} Formulate an equivalent statement in the finite field \BookInline{\mathbb{Z}_{p},\allowbreak } and use the theory of cyclic groups.]}
+
+\BookExercise{b.}{Using part (a), determine whether or not the polynomial \BookInline{x^{2}- 6} is irreducible in \BookInline{\mathbb{Z}_{17}[x].}}
+
+\BookInline{f p ( x ) = \sum _ { k = 0 } ^ { n } a _ { k } x ^ { k } \in F [ x ] \operatorname { t o } \operatorname { b e } D ( p ( x ) ) = \sum _ { k = 1 } ^ { n } \left( k \cdot ( a _ { k } x ^ { k - 1 } ) \right)}
+
+\BookExercise{15.}{Let \BookInline{F} be an arbitrary field. We define the\textbf{ derivative} of \BookInline{p(x)= \sum _{k= 0}a_{k}x^{k}\in F[x]\;\text{to be}\;D(p(x))= \sum _{k= 1}k\cdot (a_{k}x^{k- 1})}. Let \BookInline{p(x),\allowbreak q(x)\in F[x],\allowbreak } and let \BookInline{n} and \BookInline{m} be nonnegative integers. Prove the following statements.}
+
+\BookExercise{a.}{\textbf{a}\BookInline{.D(p(x)+ q(x))= D(p(x))+ D(q(x)).}}
+
+\BookExercise{b.}{\textbf{b}\BookInline{.D(}\textit{ap}\BookInline{(x))= aD(p(x))} for any \BookInline{a\in F.}}
+
+\BookExercise{c.}{\textbf{c}\BookInline{.D(x^{n}x^{m})= x^{n}D(x^{m})+ D(x^{n})x^{m}.}}
+
+\BookExercise{d.}{\textbf{d}\BookInline{.D(p(x)x^{m})= p(x)D(x^{m})+ D(p(x))x^{m}.}}
+
+\BookExercise{e.}{\textbf{e}\BookInline{.D(p(x)q(x))= p(x)D(q(x))+ D(p(x))q(x).}}
+
+\BookExercise{f.}{\textbf{f}\BookInline{.(x- a)^{2}} divides \BookInline{p(x)} if and only if \BookInline{a} is a zero of both \BookInline{p(x)} and \BookInline{D(p(x)).}}
+
+\BookExercise{g.}{Give a proof of Lemma 42.8 using part f.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

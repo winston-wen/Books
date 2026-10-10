@@ -1,0 +1,454 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 33 Vector Spaces}
+\pdfbookmark[0]{Section 33 Vector Spaces}{33_vector_spaces}
+\ifdefined\BookMaster\else\setcounter{page}{267}\fi
+% Source PDF page 284; original printed page 267
+\BookSource{284}{267}
+\BookPartTitle{VII}{Commutative Algebra}{\BookPartEntry{33}{Vector Spaces}
+\BookPartEntry{34}{Unique Factorization Domains}
+\BookPartEntry{35}{Euclidean Domains}
+\BookPartEntry{36}{Number Theory}
+\BookPartEntry{37}{Algebraic Geometry}
+\BookPartEntry{38}{Gröbner Bases for Ideals}}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{33}{Vector Spaces}
+
+\noindent The notions of a vector space, scalars, independent vectors, and bases may be familiar. In this section, we present these ideas where the scalars may be elements of any field. We use Greek letters like \BookInline{\alpha } and \BookInline{\beta } for vectors. In our application, the vectors will be elements of a field \BookInline{E} containing field \BookInline{F.} The proofs are all identical with those often given in a first course in linear algebra.
+
+\BookTextHeading{\textbf{Definition and Elementary Properties}  }
+
+\noindent The topic of vector spaces is the cornerstone of linear algebra. Since linear algebra is not the subject for study in this text, our treatment of vector spaces will be brief, designed to develop only the concepts of linear independence and dimension that we need for our development of field theory.
+
+The terms\textit{ vector} and\textit{ scalar} are probably familiar from calculus. Here we allow scalars to be elements of any field, not just the real numbers, and develop the theory by axioms just as for the other algebraic structures we have studied.
+
+\BookLabel{33.1 Definition} Let \BookInline{F} be a field. A\textbf{ vector space over} \BookInline{F(}or \BookInline{F-}\textbf{vector space}) consists of an abelian group \BookInline{V} under addition together with an operation of scalar multiplication of each element of \BookInline{V} by each element of \BookInline{F} on the left, such that for all \BookInline{a,\allowbreak b\in F} and \BookInline{\alpha,\allowbreak \beta \in V} the following conditions are satisfied:
+
+\BookInline{\mathcal{V}_{1}.a\alpha \in V.}
+
+\BookInline{\mathcal{V}_{2}.a(b\alpha )= (ab)\alpha.}
+
+\BookInline{\mathcal{V}_{3}.(a+ b)\alpha = (a\alpha )+ (b\alpha ).}
+
+\BookInline{\mathcal{V}_{4}.a(\alpha + \beta )= (a\alpha )+ (a\beta ).}
+
+\BookInline{\mathcal{V}_{5}.1\alpha = \alpha.}
+
+\noindent The elements of \BookInline{V} are\textbf{ vectors} and the elements of \BookInline{F} are\textbf{ scalars.} When only one field \BookInline{F} is under discussion, we drop the reference to \BookInline{F} and refer to a\textit{ vector space}\BookInline{.}\BookEnd{\blacksquare}
+
+Note that scalar multiplication for a vector space is not a binary operation on one set in the sense we defined it in Section 1. It associates an element \BookInline{a\alpha } of \BookInline{V} with each 
+% Source PDF page 285; original printed page 268
+\BookSource{285}{268}
+ordered pair \BookInline{(a,\allowbreak \alpha ),\allowbreak } consisting of an element \BookInline{a} of \BookInline{F} and an element \BookInline{\alpha } of \BookInline{V.} Thus scalar multiplication is a\textit{ function} mapping \BookInline{F\times V} into \BookInline{V.} Both the additive identity for \BookInline{V,\allowbreak } the 0-vector, and the additive identity for \BookInline{F,\allowbreak } the 0-scalar, will be denoted by 0.
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{33.2 Example} Consider the abelian group \BookInline{\langle \mathbb{R}^{n},\allowbreak + \rangle = \mathbb{R}\times \mathbb{R}\times \cdots \times \mathbb{R}} for \BookInline{n} factors, which consists of ordered \BookInline{n-}tuples under addition by components. Define scalar multiplication for scalars in \BookInline{\mathbb{R}} by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle r\alpha = (ra_{1},\allowbreak \cdots ,\allowbreak ra_{n})}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{r\in \mathbb{R}} and \BookInline{\alpha = (a_{1},\allowbreak \cdots,\allowbreak a_{n})\in \mathbb{R}^{n}.} With these operations\BookInline{,\allowbreak \mathbb{R}^{n}} becomes a vector space over \BookInline{\mathbb{R}.} The axioms for a vector space are readily checked. In particular\BookInline{,\allowbreak \mathbb{R}^{2}= \mathbb{R}\times \mathbb{R}} as a vector space over \BookInline{\mathbb{R}} can be viewed as all “vectors whose starting points are the origin of the Euclidean plane” in the sense often studied in calculus courses\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{33.3 Example} For any field \BookInline{F,\allowbreak F[x]} can be viewed as a vector space over \BookInline{F,\allowbreak } where addition of vectors is ordinary addition of polynomials in \BookInline{F[x]} and scalar multiplication \BookInline{a\alpha } of an element of \BookInline{F[x]} by an element of \BookInline{F} is ordinary multiplication in \BookInline{F[x].} The axioms \BookInline{\mathcal{V}_{1}} through \BookInline{\mathcal{V}_{5}} for a vector space then follow immediately from the fact that \BookInline{F[x]} is a ring with unity\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{33.4 Example} Let \BookInline{F} be a subfield of the field \BookInline{E.} Then \BookInline{E} can be regarded as a vector space over \BookInline{F,\allowbreak } where addition of vectors is the usual addition in \BookInline{E} and scalar multiplication \BookInline{a\alpha } is the usual field multiplication in \BookInline{E} with \BookInline{a\in F} and \BookInline{\alpha \in E.} The axioms follow at once from the field axioms for \BookInline{E.} Here our field of scalars is actually a subset of our space of vectors.\textit{ It is this example that is the important one for us}\BookInline{.}\BookEnd{\blacktriangle}
+
+We are assuming nothing about vector spaces from previous work and shall prove everything we need from the definition, even though the results may be familiar from calculus.
+
+\BookTextHeading{\ensuremath{\blacksquare} \textbf{HISTORICAL NOTE}  }
+
+\noindent The ideas behind the abstract notion of a vector space occurred in many concrete examples during the nineteenth century and earlier. For example, William Rowan Hamilton dealt with complex numbers explicitly as pairs of real numbers and, as noted in Section 32, also dealt with triples and eventually quadruples of real numbers in his invention of the quaternions. In these cases, the “vectors” turned out to be objects that could both be added and multiplied by scalars, using “reasonable” rules for both of these operations. Other examples of such objects included differential forms (expressions under integral signs) and algebraic integers.
+
+\noindent Although Hermann Grassmann (1809–1877) succeeded in working out a detailed theory of \BookInline{n} dimensional spaces in his\textit{ Die Lineale Ausdehnung} \textit{slehre} of 1844 and 1862, the first mathematician to give an abstract definition of a vector space equivalent to Definition 33.1 was Giuseppe Peano (1858–1932) in his\textit{ Calcolo Geometrico} of 1888. Peano’s aim in the book, as the title indicates, was to develop a geometric calculus. According to Peano, such a calculus “consists of a system of operations analogous to those of algebraic calculus, but in which the objects with which the calculations are performed are, instead of numbers, geometrical objects.” Curiously, Peano’s work had no immediate effect on the mathematical scene. Although Hermann Weyl (1885– 1955) essentially repeated Peano’s definition in his \textit{Space-Time-Matter} of 1918, the definition of a vector space did not enter the mathematical mainstream until it was announced for a third time by Stefan Banach (1892–1945) in the 1922 publication of his dissertation dealing with what we now call\textit{ Banach spaces,} complete normed vector spaces.
+
+\end{BookBody}
+
+% Source PDF page 286; original printed page 269
+\BookSource{286}{269}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{33.5 Theorem} If \BookInline{V} is a vector space over \BookInline{F,\allowbreak } then \BookInline{0\alpha = 0,\allowbreak a0= 0,\allowbreak } and \BookInline{(- a)\alpha = a(- \alpha )= - (a\alpha )} for all \BookInline{a\in F} and \BookInline{\alpha \in V.}
+
+\BookLabel{\textit{Proof}} The equation \BookInline{0\alpha = 0} is to be read “(0-scalar\BookInline{)\alpha = 0-}vector.” Likewise\BookInline{,\allowbreak a0= 0} is to be read “\BookInline{a(0-}vector\BookInline{)\; = 0-}vector.” The proofs here are very similar to those in Theorem 22.8 for a ring and again depend heavily on the distributive laws \BookInline{\mathcal{V}_{3}} and \BookInline{\mathcal{V}_{4}.} Now
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (0\alpha )= (0+ 0)\alpha = (0\alpha )+ (0\alpha )}\end{adjustbox}\end{center}
+
+\noindent is an equation in the abelian group \BookInline{\langle V,\allowbreak + \rangle,\allowbreak } so by the group cancellation law\BookInline{,\allowbreak 0= 0\alpha.} Likewise, from
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a0= a(0+ 0)= a0+ a0,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent we conclude that \BookInline{a0= 0.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0= 0\alpha = (a+ (- a))\alpha = a\alpha + (- a)\alpha ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent so \BookInline{(- a)\alpha = - (a\alpha ).} Likewise, from
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0= a0= a(\alpha + (- \alpha ))= a\alpha + a(- \alpha ),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent we conclude that \BookInline{a(- \alpha )= - (a\alpha )} also. \BookEnd{\blacklozenge}
+
+\BookTextHeading{\textbf{Linear Independence and Bases}  }
+
+\BookLabel{33.6 Definition} Let \BookInline{V} be a vector space over \BookInline{F.} The vectors in a subset \BookInline{S= \{\alpha _{i}\mid i\in I\}} of \BookInline{V} \textbf{span} (or \textbf{generate}\BookInline{)\; V} if for every \BookInline{\beta \in V,\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \beta = a_{1}\alpha _{i_{1}}+ a_{2}\alpha _{i_{2}}+ \cdots + a_{n}\alpha _{i_{n}}}\end{adjustbox}\end{center}
+
+\noindent for some \BookInline{a_{j}\in F} and \BookInline{\alpha _{i_{j}}\in S,\allowbreak j= 1,\allowbreak \cdots,\allowbreak n.} A vector \BookInline{\sum _{j= 1}^{n}a_{j}\alpha _{i_{j}}} is a\textbf{ linear combination} \textbf{of the} \BookInline{\alpha _{i_{j}}.} \BookEnd{\blacksquare}
+
+\BookLabel{33.7 Example} In the vector space \BookInline{\mathbb{R}^{n}} over \BookInline{\mathbb{R}} of Example 33.2, the vectors
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (1,\allowbreak 0,\allowbreak \cdots ,\allowbreak 0),\allowbreak (0,\allowbreak 1,\allowbreak \cdots ,\allowbreak 0),\allowbreak \cdots ,\allowbreak (0,\allowbreak 0,\allowbreak \cdots ,\allowbreak 1)}\end{adjustbox}\end{center}
+
+\noindent clearly span \BookInline{\mathbb{R}^{n},\allowbreak } for
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (a_{1},\allowbreak a_{2},\allowbreak \cdots ,\allowbreak a_{n})= a_{1}(1,\allowbreak 0,\allowbreak \cdots ,\allowbreak 0)+ a_{2}(0,\allowbreak 1,\allowbreak \cdots ,\allowbreak 0)+ \cdots + a_{n}(0,\allowbreak 0,\allowbreak \cdots ,\allowbreak 1).}\end{adjustbox}\end{center}
+
+\noindent Also, the monomials \BookInline{x^{m}} for \BookInline{m\geq 0} span \BookInline{F[x]} over \BookInline{F,\allowbreak } the vector space of Example 33.3. \BookEnd{\blacktriangle}
+
+\BookLabel{33.8 Definition} A vector space \BookInline{V} over a field \BookInline{F} is\textbf{ finite dimensional} if there is a finite subset of \BookInline{V} whose vectors span \BookInline{V.}\BookEnd{\blacksquare}
+
+\BookLabel{33.9 Example} Example 33.7 shows that \BookInline{\mathbb{R}^{n}} is finite dimensional. The vector space \BookInline{F[x]} over \BookInline{F} is \textit{not} finite dimensional, since polynomials of arbitrarily large degree could not be linear combinations of elements of any\textit{ finite} set of polynomials\BookInline{.}\BookEnd{\blacktriangle}
+
+The next definition contains the most important idea in this section.
+
+\BookLabel{33.10 Definition} The vectors in a subset \BookInline{S= \{\alpha _{i}\mid i\in I\}} of a vector space \BookInline{V} over a field \BookInline{F} are\textbf{ linearly} \textbf{independent over} \BookInline{F} if, for any distinct vectors \BookInline{\alpha _{i_{j}}\in S,\allowbreak } coefficients \BookInline{a_{j}\in F,\allowbreak } and \BookInline{n\in } \BookInline{\mathbb{Z}^{+ },\allowbreak } we have \BookInline{\sum _{j= 1}^{n}a_{j}\alpha _{i_{j}}= 0} in \BookInline{V} only if \BookInline{a_{j}= 0} for \BookInline{j= 1,\allowbreak \cdots,\allowbreak n.} If the vectors are not linearly independent over \BookInline{F,\allowbreak } they are\textbf{ linearly dependent over} \BookInline{F.}\BookEnd{\blacksquare}
+
+\end{BookBody}
+
+% Source PDF page 287; original printed page 270
+\BookSource{287}{270}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Thus the vectors in \BookInline{\{\alpha _{i}\mid i\in I\}} are linearly independent over \BookInline{F} if the only way the 0-vector can be expressed as a linear combination of the vectors \BookInline{\alpha _{i}} is to have all scalar coefficients equal to 0. If the vectors are linearly dependent over \BookInline{F,\allowbreak } then there exist \BookInline{a_{j}\in F} for \BookInline{j= 1,\allowbreak \cdots,\allowbreak n} such that \BookInline{\sum _{j= 1}^{n}a_{j}\alpha _{i_{j}}= 0,\allowbreak } where not all \BookInline{a_{j}= 0.}
+
+\BookLabel{33.11 Example} Observe that the vectors spanning the space \BookInline{\mathbb{R}^{n}} that are given in Example 33.7 are linearly independent over \BookInline{\mathbb{R}.} Likewise, the vectors in \BookInline{\{x^{m}\mid m\geq 0\}} are linearly independent vectors of \BookInline{F[x]} over \BookInline{F.} Note that \BookInline{(1,\allowbreak - 1),\allowbreak (2,\allowbreak 1),\allowbreak } and \BookInline{(- 3,\allowbreak 2)} are linearly dependent in \BookInline{\mathbb{R}^{2}} over \BookInline{\mathbb{R},\allowbreak } since
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 7(1,\allowbreak - 1)+ (2,\allowbreak 1)+ 3(- 3,\allowbreak 2)= (0,\allowbreak 0)= 0.}\end{adjustbox}\end{center} \BookEnd{\blacktriangle}
+
+\BookLabel{33.12 Definition} If \BookInline{V} is a vector space over a field \BookInline{F,\allowbreak } the vectors in a subset \BookInline{B= \{\beta _{i}\mid i\in I\}} of \BookInline{V} form a \textbf{basis for} \BookInline{V} \textbf{over} \BookInline{F} if they span \BookInline{V} and are linearly independent\BookInline{.}\BookEnd{\blacksquare}
+
+\BookLabel{33.13 Example} As seen from Examples 33.7 and 33.11,
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{(1,\allowbreak 0,\allowbreak 0,\allowbreak ...,\allowbreak 0),\allowbreak (0,\allowbreak 1,\allowbreak 0,\allowbreak 0,\allowbreak ...,\allowbreak 0),\allowbreak ...,\allowbreak (0,\allowbreak 0,\allowbreak ...,\allowbreak 0,\allowbreak 1)\}}\end{adjustbox}\end{center}
+
+\noindent is a basis for \BookInline{\mathbb{R}^{n}} and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \{1,\allowbreak x,\allowbreak x^{2},\allowbreak ...\}}\end{adjustbox}\end{center}
+
+\noindent is a basis for \BookInline{F[x]} where \BookInline{F} is a field. \BookEnd{\blacktriangle}
+
+\BookLabel{33.14 Example} Let \BookInline{F} be a field and \BookInline{p(x)\in F[x]} be a degree \BookInline{n\geq 1} irreducible polynomial over \BookInline{F.} Theorems 31.9 and 31.25 imply that the factor ring
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle E= F[x]/\langle p(x)\rangle}\end{adjustbox}\end{center}
+
+\noindent is a field. We can think of \BookInline{F} as a subfield of \BookInline{E} by identifying \BookInline{a\in F} with \BookInline{a+ \langle p(x)\rangle \in E.} Example 33.4 shows that \BookInline{E} is a vector space over \BookInline{F.} The vectors
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{j}= x^{j}+ \langle p(x)\rangle \;\text{for}\;0\leq j\leq n- 1}\end{adjustbox}\end{center}
+
+\noindent are linearly independent since if
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a_{0}\alpha _{0}+ a_{1}\alpha _{1}+ a_{2}\alpha _{2}+ \cdots + a_{n- 1}\alpha _{n- 1}= 0\in F[X]/\langle p(x)\rangle ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a_{0}+ a_{1}x+ a_{2}x^{2}+ \cdots + a_{n- 1}x^{n- 1}\in \langle p(x)\rangle .}\end{adjustbox}\end{center}
+
+\noindent Every polynomial in \BookInline{\langle p(x)\rangle } except the zero polynomial has degree at least \BookInline{n.} Thus each coefficient \BookInline{a_{j}} is zero and the vectors \BookInline{\alpha _{0},\allowbreak \alpha _{1},\allowbreak...,\allowbreak \alpha _{n- 1}} form an independent set. On the other hand, given any polynomial \BookInline{f(x)\in F[x],\allowbreak } the division algorithm implies that \BookInline{f(x)+ } \BookInline{\langle p(x)\rangle = g(x)+ \langle p(x)\rangle } for some polynomial \BookInline{g(x)} where either \BookInline{g(x)= 0} or the degree of \BookInline{g(x)} is less than \BookInline{n.} It follows that the vectors
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{0},\allowbreak \alpha _{1},\allowbreak ...,\allowbreak \alpha _{n- 1}}\end{adjustbox}\end{center}
+
+\noindent span \BookInline{E} and therefore form a basis for \BookInline{E.}
+
+Looking back at this example, it is not necessary for \BookInline{p(x)} to be an irreducible polynomial. The field \BookInline{F} can be thought of as a subring of the commutative ring with unity \BookInline{E= F[x]/\langle p(x)\rangle } and all the axioms of a vector space follow from the properties of a ring and the fact that the unity in \BookInline{F} and the unity in \BookInline{E} are the same\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Dimension}}
+
+\noindent The only other results we wish to prove about vector spaces are that every finitedimensional vector space has a basis, and that any two bases of a finite-dimensional 
+% Source PDF page 288; original printed page 271
+\BookSource{288}{271}
+vector space have the same number of elements. Both these facts are true without the assumption that the vector space is finite dimensional, but the proofs require more knowledge of set theory than we are assuming, and the finite-dimensional case is all we need. First we give an easy lemma.
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{33.15 Lemma} Let \BookInline{V} be a vector space over a field \BookInline{F,\allowbreak } and let \BookInline{\alpha \in V.} If \BookInline{\alpha } is a linear combination of vectors \BookInline{\beta _{i}} in \BookInline{V} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak m} and each \BookInline{\beta _{i}} is a linear combination of vectors \BookInline{\gamma _{j}} in \BookInline{V} for \BookInline{j= 1,\allowbreak \cdots,\allowbreak n,\allowbreak } then \BookInline{\alpha } is a linear combination of the \BookInline{\gamma _{j}.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{\alpha = \sum _{i= 1}^{m}a_{i}\beta _{i},\allowbreak } and let \BookInline{\beta _{i}= \sum }\textit{nj}\BookInline{= 1bij\gamma j,\allowbreak } where \BookInline{a_{i}} and \BookInline{b_{ij}} are in \BookInline{F.} Then
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha = \sum _{i= 1}^{m}a_{i}\Big(\sum _{j= 1}^{n}b_{ij}\gamma _{j}\Big)= \sum _{j= 1}^{n}\Big(\sum _{i= 1}^{m}a_{i}b_{ij}\Big)\gamma _{j},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and \BookInline{(\sum _{i= 1}^{m}a_{i}b_{ij})\in F.} \BookEnd{\blacklozenge}
+
+\BookLabel{33.16 Theorem} In a finite-dimensional vector space, every finite set of vectors spanning the space contains a subset that is a basis.
+
+\BookLabel{\textit{Proof}} Let \BookInline{V} be finite dimensional over \BookInline{F,\allowbreak } and let vectors \BookInline{\alpha _{1},\allowbreak \cdots,\allowbreak \alpha _{n}} in \BookInline{V} span \BookInline{V.} Let us list the \BookInline{\alpha _{i}} in a row. Examine each \BookInline{\alpha _{i}} in succession, starting at the left with \BookInline{i= 1,\allowbreak } and discard the first \BookInline{\alpha _{j}} that is some linear combination of the preceding \BookInline{\alpha _{i}} for \BookInline{i<j.} Then continue, starting with the following \BookInline{\alpha _{j+ 1},\allowbreak } and discard the next \BookInline{\alpha _{k}} that is some linear combination of its remaining predecessors, and so on. When we reach \BookInline{\alpha _{n}} after a finite number of steps, those \BookInline{\alpha _{i}} remaining in our list are such that none is a linear combination of the preceding \BookInline{\alpha _{i}} in this reduced list. Lemma 33.15 shows that any vector that is a linear combination of the original collection of \BookInline{\alpha _{i}} is still a linear combination of our reduced, and possibly smaller, set in which no \BookInline{\alpha _{i}} is a linear combination of its predecessors. Thus the vectors in the reduced set of \BookInline{\alpha _{i}} again span \BookInline{V.}
+
+For the reduced set, suppose that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a_{1}\alpha _{i_{1}}+ \cdots + a_{r}\alpha _{i_{r}}= 0}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{i_{1}<i_{2}<\cdots <i_{r}} and that some \BookInline{a_{j}\neq 0.} We may assume from Theorem 33.5 that \BookInline{a_{r}\neq 0,\allowbreak } or we could drop \BookInline{a_{r}\alpha _{i_{r}}} from the left side of the equation. Then, using Theorem 33.5 again, we obtain
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _ { i _ { r } } = \left( - \frac { a _ { 1 } } { a _ { r } } \right) \alpha _ { i _ { 1 } } + \cdots + \left( - \frac { a _ { r - 1 } } { a _ { r } } \right) \alpha _ { i _ { r - 1 } } ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent which shows that \BookInline{\alpha _{i_{r}}} is a linear combination of its predecessors, contradicting our construction. Thus the vectors \BookInline{\alpha _{i}} in the reduced set both span \BookInline{V} and are linearly independent, so they form a basis for \BookInline{V} over \BookInline{F.}\BookEnd{\blacklozenge}
+
+\BookLabel{33.17 Corollary} A finite-dimensional vector space has a finite basis.
+
+\BookLabel{\textit{Proof}} By definition, a finite-dimensional vector space has a finite set of vectors that span the space. Theorem 33.16 completes the proof\BookInline{.}\BookEnd{\blacklozenge}
+
+\noindent The next theorem is the culmination of our work on vector spaces.
+
+\BookLabel{33.18 Theorem} Let \BookInline{S= \{\alpha _{1},\allowbreak \cdots,\allowbreak \alpha _{r}\}} be a finite set of linearly independent vectors of a finite-dimensional vector space \BookInline{V} over a field \BookInline{F.} Then \BookInline{S} can be enlarged to a basis for \BookInline{V} over \BookInline{F.} Furthermore, if \BookInline{B= \{\beta _{1},\allowbreak \cdots,\allowbreak \beta _{n}\}} is any basis for \BookInline{V} over \BookInline{F,\allowbreak } then \BookInline{r\leq n.}
+
+\BookLabel{\textit{Proof}} By Corollary 33.17, there is a basis \BookInline{B= \{\beta _{1},\allowbreak \cdots,\allowbreak \beta _{n}\}} for \BookInline{V} over \BookInline{F.} Consider the finite sequence of vectors
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{1},\allowbreak \cdots ,\allowbreak \alpha _{r},\allowbreak \beta _{1},\allowbreak \cdots ,\allowbreak \beta _{n}.}\end{adjustbox}\end{center}
+
+\end{BookBody}
+
+% Source PDF page 289; original printed page 272
+\BookSource{289}{272}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent These vectors span \BookInline{V,\allowbreak } since \BookInline{B} is a basis. Following the technique, used in Theorem 33.16, of discarding in turn each vector that is a linear combination of its remaining predecessors, working from left to right, we arrive at a basis for \BookInline{V.} Observe that no \BookInline{\alpha _{i}} is cast out, since the \BookInline{\alpha _{i}} are linearly independent. Thus \BookInline{S} can be enlarged to a basis for \BookInline{V} over \BookInline{F.}
+
+For the second part of the conclusion, consider the sequence
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{1},\allowbreak \beta _{1},\allowbreak \cdots ,\allowbreak \beta _{n}.}\end{adjustbox}\end{center}
+
+\noindent These vectors are not linearly independent over \BookInline{F,\allowbreak } because \BookInline{\alpha _{1}} is a linear combination
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{1}= b_{1}\beta _{1}+ \cdots + b_{n}\beta _{n},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent since the \BookInline{\beta _{i}} form a basis. Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{1}+ (- b_{1})\beta _{1}+ \cdots + (- b_{n})\beta _{n}= 0.}\end{adjustbox}\end{center}
+
+\noindent The vectors in the sequence do span \BookInline{V,\allowbreak } and if we form a basis by the technique of working from left to right and casting out in turn each vector that is a linear combination of its remaining predecessors, at least one \BookInline{\beta _{i}} must be cast out, giving a basis
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Big\{\alpha _{1},\allowbreak \beta _{1}^{(1)},\allowbreak \cdots ,\allowbreak \beta _{m}^{(1)}\Big\},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{m\leq n- 1.} Applying the same technique to the sequence of vectors
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \alpha _{1},\allowbreak \alpha _{2},\allowbreak \beta _{1}^{(1)},\allowbreak \cdots ,\allowbreak \beta _{m}^{(1)},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent we arrive at a new basis
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Big\{\alpha _{1},\allowbreak \alpha _{2},\allowbreak \beta _{1}^{(2)},\allowbreak \cdots ,\allowbreak \beta _{s}^{(2)}\Big\},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent with \BookInline{s\leq n- 2.} Continuing, we arrive finally at a basis
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \Big\{\alpha _{1},\allowbreak \cdots ,\allowbreak \alpha _{r},\allowbreak \beta _{1}^{(r)},\allowbreak \cdots ,\allowbreak \beta _{t}^{(r)}\Big\},\allowbreak }\end{adjustbox}\end{center}
+
+\noindent where \BookInline{0\leq t\leq n- r.} Thus \BookInline{r\leq n.} \BookEnd{\blacklozenge}
+
+\BookLabel{33.19 Corollary} Any two bases of a finite-dimensional vector space \BookInline{V} over \BookInline{F} have the same number of elements.
+
+\BookLabel{\textit{Proof}} Let \BookInline{B= \{\beta _{1},\allowbreak \cdots,\allowbreak \beta _{n}\}} and \BookInline{B^{\prime }= \{\beta _{1}^{\prime },\allowbreak \cdots,\allowbreak \beta _{m}^{\prime }\}} be two bases. Then by Theorem 33.18, regarding \BookInline{B} as an independent set of vectors and \BookInline{B^{\prime }} as a basis, we see that \BookInline{n\leq m.} A symmetric argument gives \BookInline{m\leq n,\allowbreak } so \BookInline{m= n.}\BookEnd{\blacklozenge}
+
+\BookLabel{33.20 Definition} If \BookInline{V} is a finite-dimensional vector space over a field \BookInline{F,\allowbreak } the number of elements in a basis (independent of the choice of basis, as just shown) is the\textbf{ dimension of} \BookInline{V} \textbf{over} \BookInline{F.}\BookEnd{\blacksquare}
+
+\BookLabel{33.21 Example} Let \BookInline{F} be a field and \BookInline{V\subseteq F[x]} be the set of all polynomials of degree less than \BookInline{n} including 0. The monomials \BookInline{1,\allowbreak x,\allowbreak x^{2},\allowbreak...,\allowbreak x^{n- 1}} span \BookInline{V} and they are independent. Consequently, the dimension of \BookInline{V} over \BookInline{F} is \BookInline{n.} From this we can conclude that any set of fewer than \BookInline{n} polynomials in \BookInline{V} does not span \BookInline{V} and any set of more than \BookInline{n} polynomials in \BookInline{V} is not an independent set. Of course, an arbitrary set of \BookInline{n} polynomials in \BookInline{V} may or may not form a basis\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Modules over a Ring}  }
+
+\noindent When studying abelian groups using additive notation we defined what it means to multiply an integer times an element in a group. For example, if \BookInline{g} is an element of an abelian group, then \BookInline{2g= g+ g.} The table at the beginning of Section 4 looks similar to the definition of a vector space. The difference is that instead of a field, in the case of abelian groups we used the ring of integers.
+
+\BookLabel{33.22 Definition} Let \BookInline{R} be a ring with unity. A\textbf{ left} \BookInline{R-}\textbf{module} is an abelian group \BookInline{M} under addition together with an operation of scalar multiplication of each element of \BookInline{M} by each element 
+% Source PDF page 290; original printed page 273
+\BookSource{290}{273}
+of \BookInline{R} on the left, such that for all \BookInline{a,\allowbreak b\in R} and \BookInline{\alpha,\allowbreak \beta \in M} the following conditions are satisfied:
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookInline{M_{1}:a\alpha \in M} \BookInline{M_{2}:a(b\alpha )= (ab)\alpha } \BookInline{M_{3}:(a+ b)\alpha = (a\alpha )+ (b\alpha )} \BookInline{M_{4}:a(\alpha + \beta )= (a\alpha )+ (a\beta )} \BookInline{M_{5}:1\alpha = \alpha.} \BookEnd{\blacksquare}
+
+\noindent A\textbf{ right} \BookInline{R-}\textbf{module} differs from a left \BookInline{R-}module simply by multiplying module element by an element of \BookInline{R} on the right with the obvious changes in the five conditions for a left module. Here we consider only left \BookInline{R-}modules, so we will use the term \BookInline{R-}module to mean left \BookInline{R-}module.
+
+\BookLabel{33.23 Example} For any abelian group \BookInline{G,\allowbreak G} is a \BookInline{\mathbb{Z}-}module using the usual notation for an integer times an element of \BookInline{G.}
+
+If \BookInline{R} is a ring with unity and \BookInline{I\subseteq R} is an ideal, then \BookInline{I} is an additive abelian group and for any \BookInline{r\in R} and \BookInline{\alpha \in I,\allowbreak r\alpha \in I.} The defining properties of a ring with unity give the remaining properties of an \BookInline{R-}module. Thus \BookInline{I} is an \BookInline{R-}module\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{33.24 Example} Elements of \BookInline{\mathbb{R}^{n}(}written as column vectors) can be multiplied on the left by elements in the ring \BookInline{M_{n}(\mathbb{R})} of \BookInline{n\times n} matrices with real number entries. The five properties defining an \BookInline{R-}module are all satisfied, which implies \BookInline{\mathbb{R}^{n}} is an \BookInline{M_{n}(\mathbb{R})-}module\BookInline{.}\BookEnd{\blacktriangle}
+
+\noindent The key properties of vector spaces are Corollary 33.17 and Corollary 33.19 (and their generalizations to vector spaces that are not finitely generated). They say any vector space has a basis, and any two bases of a given vector space have the same number of elements. The definitions of independent, spanning, and basis vectors are the same in \BookInline{R-}module as in vector spaces. However, in general an \BookInline{R-}module need not have a basis, and even if it does, in some cases two bases may have a different number of elements.
+
+\BookLabel{33.25 Example} The abelian group \BookInline{\mathbb{Z}_{3}} is a \BookInline{\mathbb{Z}-}module. There is no nonempty subset of \BookInline{\mathbb{Z}_{3}} that is independent since for any \BookInline{\alpha \in \mathbb{Z}_{3},\allowbreak 3\alpha = 0} and 3 is a nonzero integer. A similar argument shows that for any finite abelian group \BookInline{G,\allowbreak } as a \BookInline{\mathbb{Z}-}module \BookInline{G} has no nonempty independent set. We conclude that as a \BookInline{\mathbb{Z}-}module a finite abelian group does not have a basis\BookInline{.}\BookEnd{\blacktriangle}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{33}
+
+\BookTextHeading{\textbf{Computations}}
+
+\BookExercise{1.}{Find three bases for \BookInline{\mathbb{R}^{2}} over \BookInline{\mathbb{R},\allowbreak } no two of which have a vector in common.}
+
+\noindent In Exercises 2 and 3, determine whether the given set of vectors is a basis for \BookInline{\mathbb{R}^{3}} over \BookInline{\mathbb{R}.}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 2.\{(1,\allowbreak 1,\allowbreak 0),\allowbreak (1,\allowbreak 0,\allowbreak 1),\allowbreak (0,\allowbreak 1,\allowbreak 1)\}}\end{adjustbox}\end{center}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 3.\{(- 1,\allowbreak 1,\allowbreak 2),\allowbreak (2,\allowbreak - 3,\allowbreak 1),\allowbreak (10,\allowbreak - 14,\allowbreak 0)\}}\end{adjustbox}\end{center}
+
+\noindent Determine if the indicated vector space is finite dimensional over the field. If it is, find a basis. In Exercises 4 through 9, give a basis for the indicated vector space over the field.
+
+\BookExercise{4.}{\BookInline{\mathbb{Z}_{13}} over \BookInline{\mathbb{Z}_{13}}}
+
+\BookExercise{5.}{\BookInline{\{a+ b\sqrt{2}\mid a,\allowbreak b\in \mathbb{Q}\}} over \BookInline{\mathbb{Q}}}
+
+\BookExercise{6.}{\begin{adjustbox}{max width=\linewidth}$\left\{\frac{a+b\sqrt3}{c+d\sqrt3}\ \middle|\ a,b,c,d\in\mathbb{Q}\text{ and }c+d\sqrt3\ne0\right\}$\end{adjustbox} over $\mathbb{Q}$.}
+
+\BookExercise{7.}{\BookInline{\mathbb{R}} over \BookInline{\{a+ b\sqrt{2}\mid a,\allowbreak b\in \mathbb{Q}\}}}
+
+\BookExercise{8.}{\BookInline{\mathbb{C}} over \BookInline{\mathbb{R}}}
+
+\BookExercise{9.}{\BookInline{\mathbb{R}} over \BookInline{\mathbb{Q}}}
+
+\end{BookBody}
+
+% Source PDF page 291; original printed page 274
+\BookSource{291}{274}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{10.}{There is a field \BookInline{E} with 32 elements. Determine which prime field is isomorphic with a subfield of \BookInline{E} and determine the dimension of \BookInline{E} over its prime field.}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 11 through 14, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{11.}{The vectors in a subset \BookInline{S} of a vector space \BookInline{V} over a field \BookInline{F} \textit{span} \BookInline{V} if and only if each \BookInline{\beta \in V} can be expressed uniquely as a linear combination of the vectors in \BookInline{S.}}
+
+\BookExercise{12.}{The vectors in a subset \BookInline{S} of a vector space \BookInline{V} over a field \BookInline{F} are\textit{ linearly independent over} \BookInline{F} if and only if the zero vector cannot be expressed as a linear combination of vectors in \BookInline{S.}}
+
+\BookExercise{13.}{The\textit{ dimension over} \BookInline{F} of a finite-dimensional vector space \BookInline{V} over a field \BookInline{F} is the minimum number of vectors required to span \BookInline{V.}}
+
+\BookExercise{14.}{A\textit{ basis} for a vector space \BookInline{V} over a field \BookInline{F} is a set of vectors in \BookInline{V} that span \BookInline{V} and are linearly dependent.}
+
+\BookExercise{15.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{The sum of two vectors is a vector.}
+
+\BookExercise{b.}{The sum of two scalars is a vector.}
+
+\BookExercise{c.}{The product of two scalars is a scalar.}
+
+\BookExercise{d.}{The product of a scalar and a vector is a vector.}
+
+\BookExercise{e.}{Every vector space has a finite basis.}
+
+\BookExercise{f.}{The vectors in a basis are linearly dependent.}
+
+\BookExercise{g.}{The 0-vector may be part of a basis.}
+
+\BookExercise{h.}{A vector space over a field \BookInline{F} is an \BookInline{F-}module.}
+
+\BookExercise{i.}{If \BookInline{R} is a commutative ring with unity and \BookInline{M} is an \BookInline{R} module, then \BookInline{M} has a basis over \BookInline{R.}}
+
+\BookExercise{j.}{Every vector space has a basis.}
+
+\noindent Exercises 16–27 deal with the further study of vector spaces. In many cases, we are asked to define for vector spaces some concept that is analogous to one we have studied for other algebraic structures. These exercises should improve our ability to recognize parallel and related situations in algebra. Any of these exercises may assume knowledge of concepts defined in the preceding exercises.
+
+\BookExercise{16.}{Let \BookInline{V} be a vector space over a field \BookInline{F.}}
+
+\BookExercise{a.}{Define a\textit{ subspace of the vector space} \BookInline{V} \textit{over} \BookInline{F.}}
+
+\BookExercise{b.}{Prove that an intersection of subspaces of \BookInline{V} is again a subspace of \BookInline{V} over \BookInline{F.}}
+
+\BookExercise{17.}{Let \BookInline{V} be a vector space over a field \BookInline{F,\allowbreak } and let \BookInline{S= \{\alpha _{i}\mid i\in I\}} be a nonempty collection of vectors in \BookInline{V.}}
+
+\BookExercise{a.}{Using Exercise 16(b), define the\textit{ subspace of} \BookInline{V} \textit{generated by} \BookInline{S.}}
+
+\BookExercise{b.}{Prove that the vectors in the subspace of \BookInline{V} generated by \BookInline{S} are precisely the (finite) linear combinations of vectors in \BookInline{S.(}Compare with Theorem 7.7.)}
+
+\BookExercise{18.}{Let \BookInline{V_{1},\allowbreak \cdots,\allowbreak V_{n}} be vector spaces over the same field \BookInline{F.} Define the\textit{ direct sum} \BookInline{V_{1}\oplus \cdots \oplus V_{n}} \textit{of the vector} \textit{spaces} \BookInline{V_{i}} for \BookInline{i= 1,\allowbreak \cdots,\allowbreak n,\allowbreak } and show that the direct sum is again a vector space over \BookInline{F.}}
+
+\BookExercise{19.}{Generalize Example 33.2 to obtain the vector space \BookInline{F^{n}} of ordered \BookInline{n-}tuples of elements of \BookInline{F} over the field \BookInline{F,\allowbreak } for any field \BookInline{F.} What is a basis for \BookInline{F^{n}}?}
+
+\BookExercise{20.}{Define an\textit{ isomorphism} of a vector space \BookInline{V} over a field \BookInline{F} with a vector space \BookInline{V^{\prime }} over the same field \BookInline{F.}}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{21.}{Prove that if \BookInline{V} is a finite-dimensional vector space over a field \BookInline{F,\allowbreak } then a subset \BookInline{\{\beta _{i},\allowbreak \beta _{2},\allowbreak \cdots,\allowbreak \beta _{n}\}} of \BookInline{V} is a basis for \BookInline{V} over \BookInline{F} if and only if every vector in \BookInline{V} can be expressed\textit{ uniquely} as a linear combination of the \BookInline{\beta _{i}.}}
+
+\end{BookBody}
+
+% Continuation on source PDF page 292, preceding Section 34
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{22.}{Let \BookInline{F} be any field. Consider the “system of \BookInline{m} simultaneous linear equations in \BookInline{n} unknowns”}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}a_{11}X_{1} & + a_{12}X_{2} + \cdots + a_{1n}X_{n} = b_{1},\allowbreak  \\a_{21}X_{1} & + a_{22}X_{2} + \cdots + a_{2n}X_{n} = b_{2},\allowbreak  \\& \vdots \\a_{m1}X_{1} & + a_{m2}X_{2} + \cdots + a_{mn}X_{n} = b_{m},\allowbreak \end{aligned}}\end{adjustbox}\end{center}
+
+\noindent where \BookInline{a_{ij},\allowbreak b_{i}\in F.}
+
+\BookExercise{a.}{Show that the “system has a solution,” that is, there exist \BookInline{X_{1},\allowbreak \cdots,\allowbreak X_{n}\in F} that satisfy all \BookInline{m} equations, if and only if the vector \BookInline{\beta = (b_{1},\allowbreak \cdots,\allowbreak b_{m})} of \BookInline{F^{m}} is a linear combination of the vectors \BookInline{\alpha _{j}= (a_{1j},\allowbreak \cdots,\allowbreak a_{mj}).} (This result is straightforward to prove, being practically the definition of a solution, but should really be regarded as the\textit{ fundamental existence theorem for} \BookInline{a} \textit{simultaneous solution of} \BookInline{a} \textit{system of linear equations}.)}
+
+\BookExercise{b.}{From part (a), show that if \BookInline{n= m} and \BookInline{\{\alpha _{j}\mid j= 1,\allowbreak \cdots,\allowbreak n\}} is a basis for \BookInline{F^{n},\allowbreak } then the system always has a unique solution.}
+
+\BookExercise{23.}{Prove that every finite-dimensional vector space \BookInline{V} of dimension \BookInline{n} over a field \BookInline{F} is isomorphic to the vector space \BookInline{F^{n}} of Exercise 19.}
+
+\BookExercise{24.}{Let \BookInline{V} and \BookInline{V^{\prime }} be vector spaces over the same field \BookInline{F.} A function \BookInline{\phi:V\to V^{\prime }} is a\textbf{ linear transformation of} \BookInline{V} \textbf{into} \BookInline{V^{\prime }} if the following conditions are satisfied for all \BookInline{\alpha,\allowbreak \beta \in V,\allowbreak } and \BookInline{a\in F:}}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{aligned}\phi (\alpha + \beta )&= \phi (\alpha )+ \phi (\beta ). \\ \phi (a\alpha )&= a(\phi (\alpha )).\end{aligned}}\end{adjustbox}\end{center}
+
+\BookExercise{a.}{If \BookInline{\{\beta _{i}\mid i\in I\}} is a basis for \BookInline{V} over \BookInline{F,\allowbreak } show that a linear transformation \BookInline{\phi:V\to V^{\prime }} is completely determined by the vectors \BookInline{\phi (\beta _{i})\in V^{\prime }.}}
+
+\BookExercise{b.}{Let \BookInline{\{\beta _{i}\mid i\in I\}} be a basis for \BookInline{V,\allowbreak } and let \BookInline{\{\beta _{i}^{\prime }\mid i\in I\}} be any set of vectors, not necessarily distinct, of \BookInline{V^{\prime }.} Show that there exists exactly one linear transformation \BookInline{\phi:V\to V^{\prime }} such that \BookInline{\phi (\beta _{i})= \beta _{i}^{\prime }.}}
+
+\BookExercise{25.}{Let \BookInline{V} and \BookInline{V^{\prime }} be vector spaces over the same field \BookInline{F,\allowbreak } and let \BookInline{\phi:V\to V^{\prime }} be a linear transformation.}
+
+\BookExercise{a.}{To what concept that we have studied for the algebraic structures of groups and rings does the concept of a \textit{linear transformation} correspond?}
+
+\BookExercise{b.}{Define the\textit{ kernel} (or\textit{ nullspace}) of \BookInline{\phi,\allowbreak } and show that it is a subspace of \BookInline{V.}}
+
+\BookExercise{c.}{Describe when \BookInline{\phi } is an isomorphism of \BookInline{V} with \BookInline{V^{\prime }.}}
+
+\BookExercise{26.}{Let \BookInline{V} be a vector space over a field \BookInline{F,\allowbreak } and let \BookInline{S} be a subspace of \BookInline{V.} Define the\textit{ quotient space} \BookInline{V/S,\allowbreak } and show that it is a vector space over \BookInline{F.}}
+
+\BookExercise{27.}{Let \BookInline{V} and \BookInline{V^{\prime }} be vector spaces over the same field \BookInline{F,\allowbreak } and let \BookInline{V} be finite dimensional over \BookInline{F.} Let dim\BookInline{(V)} be the dimension of the vector space \BookInline{V} over \BookInline{F.} Let \BookInline{\phi:V\to V^{\prime }} be a linear transformation.}
+
+\BookExercise{a.}{Show that \BookInline{\phi [V]} is a subspace of \BookInline{V^{\prime }.}}
+
+\BookExercise{b.}{Show that dim\BookInline{(\phi [V])= } dim\BookInline{(V)- } dim(Ker\BookInline{(\phi )).[}\textit{Hint:} Choose a convenient basis for \BookInline{V,\allowbreak } using Theorem 33.18. For example, enlarge a basis for Ker\BookInline{(\phi )} to a basis for \BookInline{V.]}}
+
+\BookExercise{28.}{Let \BookInline{R} be a commutative ring with unity and \BookInline{F} a subring of \BookInline{R} that is a field. Think of \BookInline{F} as the scalars and \BookInline{R} as the set of vectors with scalar multiplication given by multiplication in the ring \BookInline{R.}}
+
+\BookExercise{a.}{Give an example to show that \BookInline{R} need not be a vector space over \BookInline{F.}}
+
+\BookExercise{b.}{Show that if the unity of \BookInline{R} and the unity of \BookInline{F} are the same, then \BookInline{R} is a vector space over \BookInline{F.}}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish

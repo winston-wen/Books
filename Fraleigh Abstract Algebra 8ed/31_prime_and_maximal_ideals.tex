@@ -1,0 +1,415 @@
+% !TeX program = xelatex
+\ifdefined\BookMaster\else
+\documentclass[11pt,oneside]{article}
+\input{preamble.tex}
+\begin{document}
+\fi
+\renewcommand{\BookFooter}{Section 31 Prime and Maximal Ideals}
+\pdfbookmark[0]{Section 31 Prime and Maximal Ideals}{31_prime_and_maximal_ideals}
+\ifdefined\BookMaster\else\setcounter{page}{250}\fi
+% Source PDF page 267; original printed page 250
+\BookSource{267}{250}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookSectionTitle{31}{Prime and Maximal Ideals}
+
+\noindent Exercises 12 through 14 of the preceding section asked us to provide examples of factor rings \BookInline{R/N} where \BookInline{R} and \BookInline{R/N} have very different structural properties. We start with some examples of this situation, and in the process, provide solutions to those exercises.
+
+\BookLabel{31.1 Example} As was shown in Corollary 23.5, the ring \BookInline{\mathbb{Z}_{p},\allowbreak } which is isomorphic to \BookInline{\mathbb{Z}/p\mathbb{Z},\allowbreak } is a field for \BookInline{p} a prime.\textit{ Thus} \BookInline{a} \textit{factor ring of an integral domain may be} \BookInline{a\text{fi}eld.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.2 Example} The ring \BookInline{\mathbb{Z}\times \mathbb{Z}} is not an integral domain, for
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (0,\allowbreak 1)(1,\allowbreak 0)= (0,\allowbreak 0),\allowbreak }\end{adjustbox}\end{center}
+
+\noindent showing that (0, 1) and (1, 0) are 0 divisors. Let \BookInline{N= \{(0,\allowbreak n)\mid n\in \mathbb{Z}\}.} Now \BookInline{N} is an ideal of \BookInline{\mathbb{Z}\times \mathbb{Z},\allowbreak } and \BookInline{(\mathbb{Z}\times \mathbb{Z})/N} is isomorphic to \BookInline{\mathbb{Z}} under the correspondence \BookInline{[(m,\allowbreak 0)+ N]\leftrightarrow } \BookInline{m,\allowbreak } where \BookInline{m\in \mathbb{Z}.} Thus a\textit{ factor} ring of a ring may be an integral domain, even though the original ring is not\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.3 Example} The subset \BookInline{N= \{0,\allowbreak 3\}} of \BookInline{\mathbb{Z}_{6}} is easily seen to be an ideal of \BookInline{\mathbb{Z}_{6},\allowbreak } and \BookInline{\mathbb{Z}_{6}/N} has three elements\BookInline{,\allowbreak 0+ N,\allowbreak 1+ N,\allowbreak } and \BookInline{2+ N.} These add and multiply in such a fashion as to show that \BookInline{\mathbb{Z}_{6}/N\simeq \mathbb{Z}_{3}} under the correspondence
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (0+ N)\leftrightarrow 0,\allowbreak (1+ N)\leftrightarrow 1,\allowbreak (2+ N)\leftrightarrow 2.}\end{adjustbox}\end{center}
+
+\noindent This example shows that\textit{ if} \BookInline{R} \textit{is not even an integral domain, that is, if} \BookInline{R} \textit{has zero} \textit{divisors, it is still possible for} \BookInline{R/N} \textit{to be} \BookInline{a\text{fi}eld.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.4 Example} Note that \BookInline{\mathbb{Z}} is an integral domain, but \BookInline{\mathbb{Z}/6\mathbb{Z}\simeq \mathbb{Z}_{6}} is not. The preceding examples showed that a factor ring may have a structure that seems\textit{ better} than the original ring.
+
+\end{BookBody}
+
+% Source PDF page 268; original printed page 251
+\BookSource{268}{251}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\noindent This example indicates that the structure of a factor ring may seem\textit{ worse} than that of the original ring\BookInline{.}\BookEnd{\blacktriangle}
+
+Every nonzero ring \BookInline{R} has at least two ideals, the\textbf{ improper ideal} \BookInline{R} and the\textbf{ trivial} \textbf{ideal} \BookInline{\{0\}.} For these ideals, the factor rings are \BookInline{R/R,\allowbreak } which has only one element, and \BookInline{R/\{0\},\allowbreak } which is isomorphic to \BookInline{R.} These are uninteresting cases. Just as for a subgroup of a group, a\textbf{ proper nontrivial ideal} of a ring \BookInline{R} is an ideal \BookInline{N} of \BookInline{R} such that \BookInline{N\neq R} and \BookInline{N\neq \{0\}.}
+
+While factor rings of rings and integral domains may be of great interest, as the above examples indicate, Corollary 31.6, which follows our next theorem, shows that a factor ring of a field is really not useful to us.
+
+\BookLabel{31.5 Theorem} If \BookInline{R} is a ring with unity, and \BookInline{N} is an ideal of \BookInline{R} containing a unit, then \BookInline{N= R.}
+
+\BookLabel{\textit{Proof}} Let \BookInline{N} be an ideal of \BookInline{R,\allowbreak } and suppose that \BookInline{u\in N} for some unit \BookInline{u} in \BookInline{R.} Then the condition \BookInline{rN\subseteq N} for all \BookInline{r\in R} implies, if we take \BookInline{r= u^{- 1}} and \BookInline{u\in N,\allowbreak } that \BookInline{1= u^{- 1}u} is in \BookInline{N.} But then \BookInline{rN\subseteq N} for all \BookInline{r\in R} implies that \BookInline{r1= r} is in \BookInline{N} for all \BookInline{r\in R,\allowbreak } so \BookInline{N= R.}\BookEnd{\blacklozenge}
+
+\BookLabel{31.6 Corollary} A field contains no proper nontrivial ideals.
+
+\BookLabel{\textit{Proof}} Since every nonzero element of a field is a unit, it follows at once from Theorem 31.5 that an ideal of a field \BookInline{F} is either \BookInline{\{0\}} or all of \BookInline{F.}\BookEnd{\blacklozenge}
+
+\BookTextHeading{\textbf{Maximal and Prime Ideals}  }
+
+\noindent We now consider the questions of when a factor ring is a field and when it is an integral domain. In our analogy between groups and rings, we noticed that ideals in rings correspond to normal subgroups. Corollary 31.6 states that a field contains no proper nontrivial ideals. In group theory, this corresponds to a group having no proper nontrivial normal subgroups, that is, a simple group. Theorem 13.20 states that a factor group \BookInline{G/H} is simple if and only if \BookInline{H} is a maximal normal subgroup of \BookInline{G.} The following definition is analogous to maximal normal subgroups.
+
+\BookLabel{31.7 Definition} A\textbf{ maximal ideal of a ring} \BookInline{R} is an ideal \BookInline{M} different from \BookInline{R} such that there is no proper ideal \BookInline{N} of \BookInline{R} properly containing \BookInline{M.}\BookEnd{\blacksquare}
+
+\BookLabel{31.8 Example} Let \BookInline{p} be a prime positive integer. We know that \BookInline{\mathbb{Z}/p\mathbb{Z}} is isomorphic to \BookInline{\mathbb{Z}_{p}.} Forgetting about multiplication for the moment and regarding \BookInline{\mathbb{Z}/p\mathbb{Z}} and \BookInline{\mathbb{Z}_{p}} as additive groups, we know that \BookInline{\mathbb{Z}_{p}} is a simple group, and consequently \BookInline{p\mathbb{Z}} must be a maximal normal subgroup of \BookInline{\mathbb{Z}} by Theorem 13.20. Since \BookInline{\mathbb{Z}} is an abelian group and every subgroup is a normal subgroup, we see that \BookInline{p\mathbb{Z}} is a maximal proper subgroup of \BookInline{\mathbb{Z}.} Since \BookInline{p\mathbb{Z}} is an ideal of the ring \BookInline{\mathbb{Z},\allowbreak } it follows that \BookInline{p\mathbb{Z}} is a maximal ideal of \BookInline{\mathbb{Z}.} We know that \BookInline{\mathbb{Z}/p\mathbb{Z}} is isomorphic to the ring \BookInline{\mathbb{Z}_{p},\allowbreak } and that \BookInline{\mathbb{Z}_{p}} is actually a field. Thus \BookInline{\mathbb{Z}/p\mathbb{Z}} is a field. This illustrates the next theorem\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.9 Theorem} \textbf{(Analogue of Theorem 13.20)} Let \BookInline{R} be a commutative ring with unity. Then \BookInline{M} is a maximal ideal of \BookInline{R} if and only if \BookInline{R/M} is a field.
+
+\BookLabel{\textit{Proof}} We first assume that \BookInline{M} is a maximal ideal in \BookInline{R.} Since \BookInline{R} is a commutative ring with unity, so is \BookInline{R/M.} Furthermore, since \BookInline{M\neq R,\allowbreak 0+ M\neq 1+ M} and \BookInline{R/M} is a nonzero ring. Let \BookInline{(a+ M)\in R/M,\allowbreak } with \BookInline{a\notin M,\allowbreak } so that \BookInline{a+ M} is not the additive identity element of \BookInline{R/M.} Suppose \BookInline{a+ M} has no multiplicative inverse in \BookInline{R/M.} Then the set \BookInline{(R/M)(a+ M)= \{(r+ M)(a+ M)\mid (r+ M)\in R/M\}} does not contain \BookInline{1+ M.} We easily see that \BookInline{(R/M)(a+ M)} is an ideal of \BookInline{R/M.} It is nontrivial because \BookInline{a\notin M,\allowbreak } and it is a 
+% Source PDF page 269; original printed page 252
+\BookSource{269}{252}
+proper ideal because it does not contain \BookInline{1+ M.} By Theorem 30.11, if \BookInline{\gamma:R\to R/M} is the canonical homomorphism, then \BookInline{\gamma ^{- 1}[(R/M)(a+ M)]} is a proper ideal of \BookInline{R} properly containing \BookInline{M.} But this contradicts our assumption that \BookInline{M} is a maximal ideal, so \BookInline{a+ M} must have a multiplicative inverse in \BookInline{R/M.}
+
+\end{BookBody}
+
+\BookNarrativetrue
+
+\begin{BookBody}
+
+Conversely, suppose that \BookInline{R/M} is a field. By Theorem 30.11, if \BookInline{N} is any ideal of \BookInline{R} such that \BookInline{M\subset N\subset R} and \BookInline{\gamma } is the canonical homomorphism of \BookInline{R} onto \BookInline{R/M,\allowbreak } then \BookInline{\gamma [N]} is an ideal of \BookInline{R/M} with \BookInline{\{(0+ M)\}\subset \gamma [N]\subset R/M.} But this is contrary to Corollary 31.6, which states that the field \BookInline{R/M} contains no proper nontrivial ideals. Hence if \BookInline{R/M} is a field, then \BookInline{M} is maximal\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{31.10 Example} Since \BookInline{\mathbb{Z}/n\mathbb{Z}} is isomorphic to \BookInline{\mathbb{Z}_{n}} and \BookInline{\mathbb{Z}_{n}} is a field if and only if \BookInline{n} is a prime, we see that the maximal ideals of \BookInline{\mathbb{Z}} are precisely the ideals \BookInline{p\mathbb{Z}} for prime positive integers \BookInline{p.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.11 Corollary} A commutative ring with unity is a field if and only if it has no proper nontrivial ideals.
+
+\BookLabel{\textit{Proof}} Corollary 31.6 shows that a field has no proper nontrivial ideals.
+
+Conversely, if a commutative ring \BookInline{R} with unity has no proper nontrivial ideals, then \BookInline{\{0\}} is a maximal ideal and \BookInline{R/\{0\},\allowbreak } which is isomorphic to \BookInline{R,\allowbreak } is a field by Theorem 31.9. \BookEnd{\blacklozenge}
+
+We now turn to the question of characterizing, for a commutative ring \BookInline{R} with unity, the ideals \BookInline{N\neq R} such that \BookInline{R/N} is an integral domain. The answer here is rather obvious. The factor ring \BookInline{R/N} will be an integral domain if and only if \BookInline{(a+ N)(b+ N)= N} implies that either
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle a+ N= N\;\text{or}\;b+ N= N.}\end{adjustbox}\end{center}
+
+\noindent This is exactly the statement that \BookInline{R/N} has no divisors of 0, since the coset \BookInline{N} plays the role of 0 in \BookInline{R/N.} Looking at representatives, we see that this condition amounts to saying that \BookInline{ab\in N} implies that either \BookInline{a\in N} or \BookInline{b\in N.}
+
+\BookLabel{31.12 Example} All ideals of \BookInline{\mathbb{Z}} are of the form \BookInline{n\mathbb{Z}.} For \BookInline{n= 0,\allowbreak } we have \BookInline{n\mathbb{Z}= \{0\},\allowbreak } and \BookInline{\mathbb{Z}/\{0\}\simeq \mathbb{Z},\allowbreak } which is an integral domain. For \BookInline{n>0,\allowbreak } we have \BookInline{\mathbb{Z}/n\mathbb{Z}\simeq \mathbb{Z}_{n}} and \BookInline{\mathbb{Z}_{n}} is an integral domain if and only if \BookInline{n} is a prime. Thus the nonzero ideals \BookInline{n\mathbb{Z}} such that \BookInline{\mathbb{Z}/n\mathbb{Z}} is an integral domain are of the form \BookInline{p\mathbb{Z},\allowbreak } where \BookInline{p} is a prime. Of course\BookInline{,\allowbreak \mathbb{Z}/p\mathbb{Z}} is actually a field, so that \BookInline{p\mathbb{Z}} is a maximal ideal of \BookInline{\mathbb{Z}.} Note that for a product \BookInline{rs} of integers to be in \BookInline{p\mathbb{Z},\allowbreak } the prime \BookInline{p} must divide either \BookInline{r} or \BookInline{s.} The role of prime integers in this example makes the use of the word\textit{ prime} in the next definition more reasonable\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.13 Definition} An ideal \BookInline{N\neq R} in a commutative ring \BookInline{R} is a\textbf{ prime ideal} if \BookInline{ab\in N} implies that either \BookInline{a\in N} or \BookInline{b\in N} for \BookInline{a,\allowbreak b\in R.}\BookEnd{\blacksquare}
+
+Note that \BookInline{\{0\}} is a prime ideal in \BookInline{\mathbb{Z},\allowbreak } and indeed, in any integral domain.
+
+\BookLabel{31.14 Example} Note that \BookInline{\mathbb{Z}\times \{0\}} is a prime ideal of \BookInline{\mathbb{Z}\times \mathbb{Z},\allowbreak } for if \BookInline{(a,\allowbreak b)(c,\allowbreak d)\in \mathbb{Z}\times \{0\},\allowbreak } then we must have \BookInline{bd= 0} in \BookInline{\mathbb{Z}.} This implies that either \BookInline{b= 0} so \BookInline{(a,\allowbreak b)\in \mathbb{Z}\times \{0\}} or \BookInline{d= 0} so \BookInline{(c,\allowbreak d)\in } \BookInline{\mathbb{Z}\times \{0\}.} Note that \BookInline{(\mathbb{Z}\times \mathbb{Z})/(\mathbb{Z}\times \{0\})} is isomorphic to \BookInline{\mathbb{Z},\allowbreak } which is an integral domain. \BookEnd{\blacktriangle}
+
+Our remarks preceding Example 31.12 constitute a proof of the following theorem, which is illustrated by Example 31.14.
+
+\BookLabel{31.15 Theorem} Let \BookInline{R} be a commutative ring with unity, and let \BookInline{N\neq R} be an ideal in \BookInline{R.} Then \BookInline{R/N} is an integral domain if and only if \BookInline{N} is a prime ideal in \BookInline{R.}
+
+\end{BookBody}
+
+% Source PDF page 270; original printed page 253
+\BookSource{270}{253}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{31.16 Corollary} Every maximal ideal in a commutative ring \BookInline{R} with unity is a prime ideal.
+
+\BookLabel{\textit{Proof}} If \BookInline{M} is maximal in \BookInline{R,\allowbreak } then \BookInline{R/M} is a field, hence an integral domain, and therefore \BookInline{M} is a prime ideal by Theorem \BookInline{31.15.}\BookEnd{\blacklozenge}
+
+The material that has just been presented regarding maximal and prime ideals is very important and we shall be using it quite a lot. We should keep the main ideas well in mind. We must know and understand the definitions of maximal and prime ideals and must remember the following facts that we have demonstrated.
+
+For a commutative ring \BookInline{R} with unity:
+
+\BookExercise{1.}{An ideal \BookInline{M} of \BookInline{R} is maximal if and only if \BookInline{R/M} is a field.}
+
+\BookExercise{2.}{An ideal \BookInline{N} of \BookInline{R} is prime if and only if \BookInline{R/N} is an integral domain.}
+
+\BookExercise{3.}{Every maximal ideal of \BookInline{R} is a prime ideal.}
+
+\BookTextHeading{\textbf{Prime Fields}  }
+
+\noindent We now proceed to show that the rings \BookInline{\mathbb{Z}} and \BookInline{\mathbb{Z}_{n}} form foundations upon which all rings with unity rest, and that \BookInline{\mathbb{Q}} and \BookInline{\mathbb{Z}_{p}} perform a similar service for all fields. Let \BookInline{R} be any ring with unity 1. Recall that by \BookInline{n\cdot 1} we mean \BookInline{1+ 1+ \cdots + 1} for \BookInline{n} summands for \BookInline{n>0,\allowbreak } and \BookInline{(- 1)+ (- 1)+ \cdots + (- 1)} for \BookInline{|n|} summands for \BookInline{n<0,\allowbreak } while \BookInline{n\cdot 1= 0} for \BookInline{n= 0.}
+
+\BookLabel{31.17 Theorem} If \BookInline{R} is a ring with unity 1, then the map \BookInline{\phi:\mathbb{Z}\to R} given by
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi (n)= n\cdot 1}\end{adjustbox}\end{center}
+
+\noindent for \BookInline{n\in \mathbb{Z}} is a homomorphism of \BookInline{\mathbb{Z}} into \BookInline{R.}
+
+\BookLabel{\textit{Proof}} Observe that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi (n+ m)= (n+ m)\cdot 1= (n\cdot 1)+ (m\cdot 1)= \phi (n)+ \phi (m).}\end{adjustbox}\end{center}
+
+\noindent The distributive laws in \BookInline{R} show that
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \underbrace { ( 1 + 1 + \cdots + 1 ) } _ { n \mathrm { \scriptsize ~ s u m m a n d s } } \underbrace { ( 1 + 1 + \cdots + 1 ) } _ { m \mathrm { \scriptsize ~ s u m m a n d s } } = \underbrace { ( 1 + 1 + \cdots + 1 ) } _ { n m \mathrm { \scriptsize ~ s u m m a n d s } } .}\end{adjustbox}\end{center}
+
+Thus \BookInline{(n\cdot 1)(m\cdot 1)= (nm)\cdot 1} for \BookInline{n,\allowbreak m>0.} Similar arguments with the distributive laws show that for all \BookInline{n,\allowbreak m\in \mathbb{Z},\allowbreak } we have
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (n\cdot 1)(m\cdot 1)= (nm)\cdot 1.}\end{adjustbox}\end{center}
+
+\noindent Thus
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \phi (nm)= (nm)\cdot 1= (n\cdot 1)(m\cdot 1)= \phi (n)\phi (m).}\end{adjustbox}\end{center} \BookEnd{\blacklozenge}
+
+\BookLabel{31.18 Corollary} Let \BookInline{R} be a ring with unity. If \BookInline{R} has characteristic \BookInline{n>1,\allowbreak } then \BookInline{R} contains a subring isomorphic to \BookInline{\mathbb{Z}_{n}.} If \BookInline{R} has characteristic 0, then \BookInline{R} contains a subring isomorphic to \BookInline{\mathbb{Z}.}
+
+\BookLabel{\textit{Proof}} The map \BookInline{\phi:\mathbb{Z}\to R} given by \BookInline{\phi (m)= m\cdot 1} for \BookInline{m\in \mathbb{Z}} is a homomorphism by Theorem 31.17. The kernel must be an ideal in \BookInline{\mathbb{Z}.} All ideals in \BookInline{\mathbb{Z}} are of the form \BookInline{s\mathbb{Z}} for some \BookInline{s\in \mathbb{Z}.} By Theorem 23.14 we see that if \BookInline{R} has characteristic \BookInline{n>0,\allowbreak } then the kernel of \BookInline{\phi } is \BookInline{n\mathbb{Z}.} Then the image \BookInline{\phi [\mathbb{Z}]\leq R} is isomorphic to \BookInline{\mathbb{Z}/n\mathbb{Z}\simeq \mathbb{Z}_{n}.} If the characteristic of \BookInline{R} is 0, then \BookInline{m\cdot 1\neq 0} for all \BookInline{m\neq 0,\allowbreak } so the kernel of \BookInline{\phi } is \BookInline{\{0\}.} Thus, the image \BookInline{\phi [\mathbb{Z}]\leq R} is isomorphic to \BookInline{\mathbb{Z}.}\BookEnd{\blacklozenge}
+
+\end{BookBody}
+
+% Source PDF page 271; original printed page 254
+\BookSource{271}{254}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{31.19 Theorem} A field \BookInline{F} is either of prime characteristic \BookInline{p} and contains a subfield isomorphic to \BookInline{\mathbb{Z}_{p}} or of characteristic 0 and contains a subfield isomorphic to \BookInline{\mathbb{Q}.}
+
+\BookLabel{\textit{Proof}} If the characteristic of \BookInline{F} is not 0, the above corollary shows that \BookInline{F} contains a subring isomorphic to \BookInline{\mathbb{Z}_{n}.} Then \BookInline{n} must be a prime \BookInline{p,\allowbreak } or \BookInline{F} would have 0 divisors. If \BookInline{F} is of characteristic 0, then \BookInline{F} must contain a subring isomorphic to \BookInline{\mathbb{Z}.} In this case Corollaries 26.9 and 26.10 show that \BookInline{F} must contain a field of quotients of this subring and that this field of quotients must be isomorphic to \BookInline{\mathbb{Q}.}\BookEnd{\blacklozenge}
+
+Thus every field contains either a subfield isomorphic to \BookInline{\mathbb{Z}_{p}} for some prime \BookInline{p} or a subfield isomorphic to \BookInline{\mathbb{Q}.} These fields \BookInline{\mathbb{Z}_{p}} and \BookInline{\mathbb{Q}} are the fundamental building blocks on which all fields rest.
+
+\BookLabel{31.20 Definition} The fields \BookInline{\mathbb{Z}_{p}} and \BookInline{\mathbb{Q}} are\textbf{ prime fields.} \BookEnd{\blacksquare}
+
+\BookTextHeading{\textbf{Ideal Structure in} \textit{\textbf{F}}\textbf{[}\textit{\textbf{x}}\textbf{]}   }
+
+\noindent Throughout the rest of this section, we assume that \BookInline{F} is a field. We give the next definition for a general commutative ring \BookInline{R} with unity, although we are only interested in the case \BookInline{R= F[x].} Note that for a commutative ring \BookInline{R} with unity and \BookInline{a\in R,\allowbreak } the set \BookInline{\{}\textit{ra} \BookInline{\mid r\in R\}} is an ideal in \BookInline{R} that contains the element \BookInline{a.}
+
+\BookLabel{31.21 Definition} If \BookInline{R} is a commutative ring with unity and \BookInline{a\in R,\allowbreak } the ideal \BookInline{\{}\textit{ra} \BookInline{\mid r\in R\}} of all multiples of \BookInline{a} is the\textbf{ principal ideal generated by} \BookInline{a} and is denoted by \BookInline{\langle a\rangle.} An ideal \BookInline{N} of \BookInline{R} is a \textbf{principal ideal} if \BookInline{N= \langle a\rangle } for some \BookInline{a\in R.}\BookEnd{\blacksquare}
+
+\BookLabel{31.22 Example} Every ideal of the ring \BookInline{\mathbb{Z}} is of the form \BookInline{n\mathbb{Z},\allowbreak } which is generated by \BookInline{n,\allowbreak } so every ideal of \BookInline{\mathbb{Z}} is a principal ideal\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookLabel{31.23 Example} The principal ideal \BookInline{\langle x\rangle } in \BookInline{F[x]} consists of all polynomials in \BookInline{F[x]} having zero constant term\BookInline{.}\BookEnd{\blacktriangle}
+
+The next theorem is another simple but very important application of the division algorithm for \BookInline{F[x].(}See Theorem 28.2.) The proof of this theorem is to the division algorithm in \BookInline{F[x]} as the proof that a subgroup of a cyclic group is cyclic is to the division algorithm in \BookInline{\mathbb{Z}.}
+
+\BookLabel{31.24 Theorem} If \BookInline{F} is a field, every ideal in \BookInline{F[x]} is principal.
+
+\BookLabel{\textit{Proof}} Let \BookInline{N} be an ideal of \BookInline{F[x].} If \BookInline{N= \{0\},\allowbreak } then \BookInline{N= \langle 0\rangle.} Suppose that \BookInline{N\neq \{0\},\allowbreak } and let \BookInline{g(x)} be a nonzero element of \BookInline{N} of minimal degree. If the degree of \BookInline{g(x)} is 0, then \BookInline{g(x)\in F} and is a unit, so \BookInline{N= F[x]= \langle 1\rangle } by Theorem 31.5, so \BookInline{N} is principal. If the degree of \BookInline{g(x)} is \BookInline{\geq 1,\allowbreak } let \BookInline{f(x)} be any element of \BookInline{N.} Then by Theorem \BookInline{28.2,\allowbreak f(x)= g(x)q(x)+ r(x),\allowbreak } where \BookInline{r(x)= 0} or (degree \BookInline{r(x))<(}degree \BookInline{g(x)).} Now \BookInline{f(x)\in N} and \BookInline{g(x)\in N} imply that \BookInline{f(x)- g(x)q(x)= r(x)} is in \BookInline{N} by definition of an ideal. Since \BookInline{g(x)} is a nonzero element of minimal degree in \BookInline{N,\allowbreak } we must have \BookInline{r(x)= 0.} Thus \BookInline{f(x)= g(x)q(x)} and \BookInline{N= \langle g(x)\rangle.} \BookEnd{\blacklozenge}
+
+We can now characterize the maximal ideals of \BookInline{F[x].} This is a crucial step in achieving our\textbf{ basic goal:} to show that any nonconstant polynomial \BookInline{f(x)} in \BookInline{F[x]} has a zero in some field \BookInline{E} containing \BookInline{F.}
+
+\BookLabel{31.25 Theorem} An ideal \BookInline{\langle p(x)\rangle \neq \{0\}} of \BookInline{F[x]} is maximal if and only if \BookInline{p(x)} is irreducible over \BookInline{F.}
+
+\end{BookBody}
+
+% Source PDF page 272; original printed page 255
+\BookSource{272}{255}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+\BookLabel{\textit{Proof}} Suppose that \BookInline{\langle p(x)\rangle \neq \{0\}} is a maximal ideal of \BookInline{F[x].} Then \BookInline{\langle p(x)\rangle \neq F[x],\allowbreak } so \BookInline{p(x)\not \in F.} Let \BookInline{p(x)= f(x)g(x)} be a factorization of \BookInline{p(x)} in \BookInline{F[x].} Since \BookInline{\langle p(x)\rangle } is a maximal ideal and hence also a prime ideal\BookInline{,\allowbreak (f(x)g(x))\in \langle p(x)\rangle } implies that \BookInline{f(x)\in \langle p(x)\rangle } or \BookInline{g(x)\in \langle p(x)\rangle;} that is, either \BookInline{f(x)} or \BookInline{g(x)} has \BookInline{p(x)} as a factor. But then we can’t have the degrees of both \BookInline{f(x)} and \BookInline{g(x)} less than the degree of \BookInline{p(x).} This shows that \BookInline{p(x)} is irreducible over \BookInline{F.}
+
+Conversely, if \BookInline{p(x)} is irreducible over \BookInline{F,\allowbreak } suppose that \BookInline{N} is an ideal such that \BookInline{\langle p(x)\rangle \subseteq N\subseteq F[x].} Now \BookInline{N} is a principal ideal by Theorem 31.24, so \BookInline{N= \langle g(x)\rangle } for some \BookInline{g(x)\in N.} Then \BookInline{p(x)\in N} implies that \BookInline{p(x)= g(x)q(x)} for some \BookInline{q(x)\in F[x].} But \BookInline{p(x)} is irreducible, which implies that either \BookInline{g(x)} or \BookInline{q(x)} is of degree 0. If \BookInline{g(x)} is of degree 0, that is, a nonzero constant in \BookInline{F,\allowbreak } then \BookInline{g(x)} is a unit in \BookInline{F[x],\allowbreak } so \BookInline{\langle g(x)\rangle = N= F[x].} If \BookInline{q(x)} is of degree 0, then \BookInline{q(x)= c,\allowbreak } where \BookInline{c\in F,\allowbreak } and \BookInline{g(x)= (1/c)p(x)} is in \BookInline{\langle p(x)\rangle,\allowbreak } so \BookInline{N= \langle p(x)\rangle.} Thus \BookInline{\langle p(x)\rangle \subset N\subset F[x]} is impossible, so \BookInline{\langle p(x)\rangle } is maximal\BookInline{.}\BookEnd{\blacklozenge}
+
+\BookLabel{31.26 Example} Example 28.10 shows that \BookInline{x^{3}+ 3x+ 2} is irreducible in \BookInline{\mathbb{Z}_{5}[x],\allowbreak } so \BookInline{\mathbb{Z}_{5}[x]/\langle x^{3}+ 3x+ 2\rangle } is a field. Similarly, Theorem 27.11 shows that \BookInline{x^{2}- 2} is irreducible in \BookInline{\mathbb{Q}[x],\allowbreak } so \BookInline{\mathbb{Q}[x]/} \BookInline{\langle x^{2}- 2\rangle } is a field. We shall examine such fields in more detail later\BookInline{.}\BookEnd{\blacktriangle}
+
+\BookTextHeading{\textbf{Application to Unique Factorization in} \textit{\textbf{F}}\textbf{[}\textit{\textbf{x}}\textbf{]}   }
+
+\noindent In Section 28, we stated without proof Theorem 31.27, which follows. (See Theorem 28.19.) Assuming this theorem, we proved in Section 28 that factorization of polynomials in \BookInline{F[x]} into irreducible polynomials is unique, except for order of factors and units in \BookInline{F.} We delayed the proof of Theorem 31.27 until now since the machinery we have developed enables us to give such a simple proof. This proof fills the gap in our proof of unique factorization in \BookInline{F[x].}
+
+\BookLabel{31.27 Theorem} Let \BookInline{p(x)} be an irreducible polynomial in \BookInline{F[x].} If \BookInline{p(x)} divides \BookInline{r(x)s(x)} for \BookInline{r(x),\allowbreak s(x)\in } \BookInline{F[x],\allowbreak } then either \BookInline{p(x)} divides \BookInline{r(x)} or \BookInline{p(x)} divides \BookInline{s(x).}
+
+\BookLabel{\textit{Proof}} Suppose \BookInline{p(x)} divides \BookInline{r(x)s(x).} Then \BookInline{r(x)s(x)\in \langle p(x)\rangle,\allowbreak } which is maximal by Theorem 31.25. Therefore\BookInline{,\allowbreak \langle p(x)\rangle } is a prime ideal by Corollary 31.16. Hence \BookInline{r(x)s(x)\in \langle p(x)\rangle } implies that either \BookInline{r(x)\in \langle p(x)\rangle,\allowbreak } giving \BookInline{p(x)} divides \BookInline{r(x),\allowbreak } or that \BookInline{s(x)\in \langle p(x)\rangle,\allowbreak } giving \BookInline{p(x)} divides \BookInline{s(x).}\BookEnd{\blacklozenge}
+
+\BookTextHeading{\textbf{A Preview of Our Basic Goal}  }
+
+\noindent We close this section with an outline of the demonstration in Section 39 of our basic goal. We have all the ideas for the proof at hand now; perhaps you can fill in the details from this outline.
+
+\textbf{Basic goal:} Let \BookInline{F} be a field and let \BookInline{f(x)} be a nonconstant polynomial in \BookInline{F[x].} Show that there exists a field \BookInline{E} containing \BookInline{F} and containing a zero \BookInline{\alpha } of \BookInline{f(x).}
+
+\BookTextHeading{\textbf{Outline of the Proof}  }
+
+\BookExercise{1.}{Let \BookInline{p(x)} be an irreducible factor of \BookInline{f(x)} in \BookInline{F[x].}}
+
+\BookExercise{2.}{Let \BookInline{E} be the \BookInline{\text{fi}eldF[x]/\langle p(x)\rangle.(}See Theorems 31.25 and 31.9.)}
+
+\BookExercise{3.}{Show that no two different elements of \BookInline{F} are in the same coset of \BookInline{F[x]/\langle p(x)\rangle,\allowbreak } and deduce that we may consider \BookInline{F} to be (isomorphic to) a subfield of \BookInline{E.}}
+
+\BookExercise{4.}{Let \BookInline{\alpha } be the coset \BookInline{x+ \langle p(x)\rangle } in \BookInline{E.} Show that for the evaluation homomorphism \BookInline{\phi _{\alpha }:F[x]\to E,\allowbreak } we have \BookInline{\phi _{\alpha }(f(x))= 0.} That is\BookInline{,\allowbreak \alpha } is a zero of \BookInline{f(x)} in \BookInline{E.}}
+
+\end{BookBody}
+
+% Source PDF page 273; original printed page 256
+\BookSource{273}{256}
+\BookNarrativetrue
+
+\begin{BookBody}
+
+An example of a field constructed according to this outline is given in Section 39. There, we give addition and multiplication tables for the field \BookInline{\mathbb{Z}_{2}[x]/\langle x^{2}+ x+ 1\rangle.} We show there that this field has just four elements, the cosets
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle 0+ \langle x^{2}+ x+ 1\rangle ,\allowbreak 1+ \langle x^{2}+ x+ 1\rangle ,\allowbreak x+ \langle x^{2}+ x+ 1\rangle ,\allowbreak }\end{adjustbox}\end{center}
+
+\noindent and
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle (x+ 1)+ \langle x^{2}+ x+ 1\rangle .}\end{adjustbox}\end{center}
+
+\noindent We rename these four cosets \BookInline{0,\allowbreak 1,\allowbreak \alpha,\allowbreak } and \BookInline{\alpha + 1} respectively, and obtain Tables 39.21 and 39.22 for addition and multiplication in this 4-element field. To see how these tables are constructed, remember that we are in a field of characteristic 2, so that \BookInline{\alpha + \alpha = } \BookInline{\alpha (1+ 1)= \alpha 0= 0.} Remember also that \BookInline{\alpha } is a zero of \BookInline{x^{2}+ x+ 1,\allowbreak } so that \BookInline{\alpha ^{2}+ \alpha + 1= } 0 and consequently \BookInline{\alpha ^{2}= - \alpha - 1= \alpha + 1.}
+
+\end{BookBody}
+
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExerciseTitle{31} \BookEnd{\blacksquare}
+
+\BookTextHeading{\textbf{Computations}}
+
+\BookExercise{1.}{Find all prime ideals and all maximal ideals of \BookInline{\mathbb{Z}_{6}.}}
+
+\BookExercise{2.}{Find all prime ideals and all maximal ideals of \BookInline{\mathbb{Z}_{12}.}}
+
+\BookExercise{3.}{Find all prime ideals and all maximal ideals of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{2}.}}
+
+\BookExercise{4.}{Find all prime ideals and all maximal ideals of \BookInline{\mathbb{Z}_{2}\times \mathbb{Z}_{4}.}}
+
+\BookExercise{5.}{Find all \BookInline{c\in \mathbb{Z}_{3}} such that \BookInline{\mathbb{Z}_{3}[x]/\langle x^{2}+ c\rangle } is a field.}
+
+\BookExercise{6.}{Find all \BookInline{c\in \mathbb{Z}_{3}} such that \BookInline{\mathbb{Z}_{3}[x]/\langle x^{3}+ x^{2}+ c\rangle } is a field.}
+
+\BookExercise{7.}{Find all \BookInline{c\in \mathbb{Z}_{3}} such that \BookInline{\mathbb{Z}_{3}[x]/\langle x^{3}+ cx^{2}+ 1\rangle } is a field.}
+
+\BookExercise{8.}{Find all \BookInline{c\in \mathbb{Z}_{5}} such that \BookInline{\mathbb{Z}_{5}[x]/\langle x^{2}+ x+ c\rangle } is a field.}
+
+\BookExercise{9.}{Find all \BookInline{c\in \mathbb{Z}_{5}} such that \BookInline{\mathbb{Z}_{5}[x]/\langle x^{2}+ cx+ 1\rangle } is a field.}
+
+\BookTextHeading{\textbf{Concepts}}
+
+\noindent In Exercises 10 through 13, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
+
+\BookExercise{10.}{A\textit{ maximal ideal} of a ring \BookInline{R} is an ideal that is not contained in any other ideal of \BookInline{R.}}
+
+\BookExercise{11.}{A\textit{ prime ideal} of a commutative ring \BookInline{R} is an ideal of the form \BookInline{pR= \{pr\mid r\in R\}} for some prime \BookInline{p.}}
+
+\BookExercise{12.}{A\textit{ prime} \BookInline{\text{fi}eld} is a field that has no proper subfields.}
+
+\BookExercise{13.}{A\textit{ principal ideal} of a commutative ring with unity is an ideal \BookInline{N} with the property that there exists \BookInline{a\in N} such that \BookInline{N} is the smallest ideal that contains \BookInline{a.}}
+
+\BookExercise{14.}{Determine whether each of the following is true or false.}
+
+\BookExercise{a.}{Every prime ideal of every commutative ring with unity is a maximal ideal.}
+
+\BookExercise{b.}{Every maximal ideal of every commutative ring with unity is a prime ideal.}
+
+\BookExercise{c.}{\textbf{c}\BookInline{.\mathbb{Q}} is its own prime subfield.}
+
+\BookExercise{d.}{The prime subfield of \BookInline{\mathbb{C}} is \BookInline{\mathbb{R}.}}
+
+\BookExercise{e.}{Every field contains a subfield isomorphic to a prime field.}
+
+\BookExercise{f.}{A ring with zero divisors may contain one of the prime fields as a subring.}
+
+\BookExercise{g.}{Every field of characteristic zero contains a subfield isomorphic to \BookInline{\mathbb{Q}.}}
+
+\BookExercise{h.}{Let \BookInline{F} be a field. Since \BookInline{F[x]} has no divisors of 0, every ideal of \BookInline{F[x]} is a prime ideal.}
+
+\BookExercise{i.}{Let \BookInline{F} be a field. Every ideal of \BookInline{F[x]} is a principal ideal.}
+
+\BookExercise{j.}{Let \BookInline{F} be a field. Every principal ideal of \BookInline{F[x]} is a maximal ideal.}
+
+\BookExercise{15.}{Find a maximal ideal of \BookInline{\mathbb{Z}\times \mathbb{Z}.}}
+
+\end{BookBody}
+
+% Source PDF page 274; original printed page 257
+\BookSource{274}{257}
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{16.}{Find a prime ideal of \BookInline{\mathbb{Z}\times \mathbb{Z}} that is not maximal.}
+
+\BookExercise{17.}{Find a nontrivial proper ideal of \BookInline{\mathbb{Z}\times \mathbb{Z}} that is not prime.}
+
+\BookExercise{18.}{Is \BookInline{\mathbb{Q}[x]/\langle x^{2}- 5x+ 6\rangle } a field? Why?}
+
+\BookExercise{19.}{Is \BookInline{\mathbb{Q}[x]/\langle x^{2}- 6x+ 6\rangle } a field? Why?}
+
+\BookLabel{\textit{Proof}} \textbf{ Synopsis}
+
+\BookExercise{20.}{Give a one- or two-sentence synopsis of “only if” part of Theorem 31.9.}
+
+\BookExercise{21.}{Give a one- or two-sentence synopsis of “if” part of Theorem 31.9.}
+
+\BookExercise{22.}{Give a one- or two-sentence synopsis of Theorem 31.24.}
+
+\BookExercise{23.}{Give a one- or two-sentence synopsis of the “only if” part of Theorem 31.25.}
+
+\BookTextHeading{\textbf{Theory}}
+
+\BookExercise{24.}{Give an example of an ideal in \BookInline{\mathbb{Q}[x,\allowbreak y]} that is not a principal ideal. Conclude that if \BookInline{R} is an integral domain with the property that every ideal in \BookInline{R} is principal, it does not follow that every ideal in \BookInline{R[x]} is a principal ideal.}
+
+\BookExercise{25.}{Prove that if \BookInline{R} is a commutative ring with unity and \BookInline{a\in R,\allowbreak } then \BookInline{\langle a\rangle = \{}\textit{ra} \BookInline{\mid r\in R\}} is an ideal in \BookInline{R.}}
+
+\BookExercise{26.}{Let \BookInline{R} be a finite commutative ring with unity. Show that every prime ideal in \BookInline{R} is a maximal ideal.}
+
+\BookExercise{27.}{Corollary 31.18 tells us that every ring with unity contains a subring isomorphic to either \BookInline{\mathbb{Z}} or some \BookInline{\mathbb{Z}_{n}.} Is it possible that a ring with unity may simultaneously contain two subrings isomorphic to \BookInline{\mathbb{Z}_{n}} and \BookInline{\mathbb{Z}_{m}} for \BookInline{n\neq m}? If it is possible, give an example. If it is impossible, prove it.}
+
+\BookExercise{28.}{Continuing Exercise 27, is it possible that a ring with unity may simultaneously contain two subrings isomorphic to the fields \BookInline{\mathbb{Z}_{p}} and \BookInline{\mathbb{Z}_{q}} for two different primes \BookInline{p} and \BookInline{q}? Give an example or prove it is impossible.}
+
+\BookExercise{29.}{Following the idea of Exercise 28, is it possible for an integral domain to contain two subrings isomorphic to \BookInline{\mathbb{Z}_{p}} and \BookInline{\mathbb{Z}_{q}} for \BookInline{p\neq q} and \BookInline{p} and \BookInline{q} both prime? Give reasons or an illustration.}
+
+\BookExercise{30.}{Prove directly from the definitions of maximal and prime ideals that every maximal ideal of a commutative ring \BookInline{R} with unity is a prime ideal. [\textit{Hint}: Suppose \BookInline{M} is maximal in \BookInline{R,\allowbreak ab\in M,\allowbreak } and \BookInline{a\not \in M.} Argue that the smallest ideal \BookInline{\{}\textit{ra} \BookInline{+ m\mid r\in R,\allowbreak m\in M\}} containing \BookInline{a} and \BookInline{M} must contain 1. Express 1 as\textit{ ra} \BookInline{+ m} and multiply by \BookInline{b.]}}
+
+\BookExercise{31.}{Show that \BookInline{N} is a maximal ideal in a ring \BookInline{R} if and only if \BookInline{R/N} is a\textbf{ simple ring,} that is, it is nontrivial and has no proper nontrivial ideals. (Compare with Theorem 13.20.)}
+
+\BookExercise{32.}{Prove that if \BookInline{F} is a field, every proper nontrivial prime ideal of \BookInline{F[x]} is maximal.}
+
+\BookExercise{33.}{Let \BookInline{F} be a field and \BookInline{f(x),\allowbreak g(x)\in F[x].} Show that \BookInline{f(x)} divides \BookInline{g(x)} if and only if \BookInline{g(x)\in \langle f(x)\rangle.}}
+
+\BookExercise{34.}{Let \BookInline{F} be a field and let \BookInline{f(x),\allowbreak g(x)\in F[x].} Show that}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle N= \{r(x)f(x)+ s(x)g(x)\mid r(x),\allowbreak s(x)\in F[x]\}}\end{adjustbox}\end{center}
+
+is an ideal of \BookInline{F[x].} Show that if \BookInline{f(x)} and \BookInline{g(x)} have different degrees and \BookInline{N\neq F[x],\allowbreak } then \BookInline{f(x)} and \BookInline{g(x)} cannot both be irreducible over \BookInline{F.}
+
+\BookExercise{35.}{Use Theorem 31.24 to prove the\textit{ equivalence} of these two theorems:}
+
+\textbf{Fundamental Theorem of Algebra:} Every nonconstant polynomial in \BookInline{\mathbb{C}[x]} has a zero in \BookInline{\mathbb{C}.}
+
+\textbf{Nullstellensatz for} \BookInline{\mathbb{C}[x]:} Let \BookInline{f_{1}(x),\allowbreak \cdots,\allowbreak f_{r}(x)\in \mathbb{C}[x]} and suppose that every \BookInline{\alpha \in \mathbb{C}} that is a zero of all \BookInline{r} of these polynomials is also a zero of a polynomial \BookInline{g(x)} in \BookInline{\mathbb{C}[x].} Then some power of \BookInline{g(x)} is in the smallest ideal of \BookInline{\mathbb{C}[x]} that contains the \BookInline{r} polynomials \BookInline{f_{1}(x),\allowbreak \cdots,\allowbreak f_{r}(x).}
+
+\noindent There is a sort of arithmetic of ideals in a ring. The next three exercises define sum, product, and quotient of ideals.
+
+\BookExercise{36.}{If \BookInline{A} and \BookInline{B} are ideals of a ring \BookInline{R,\allowbreak } the\textbf{ sum} \BookInline{A+ B} \textbf{of} \BookInline{A} \textbf{and} \BookInline{B} is defined by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A+ B= \{a+ b\mid a\in A,\allowbreak b\in B\}.}\end{adjustbox}\end{center}
+
+\BookExercise{a.}{Show that \BookInline{A+ B} is an ideal.}
+
+\BookExercise{b.}{Show that \BookInline{A\subseteq A+ B} and \BookInline{B\subseteq A+ B.}}
+
+\end{BookBody}
+
+% Continuation on source PDF page 275, preceding Section 32
+\BookNarrativefalse
+
+\begin{BookBody}
+
+\BookExercise{37.}{Let \BookInline{A} and \BookInline{B} be ideals of a ring \BookInline{R.} The\textbf{ product} \BookInline{AB} \textbf{of} \BookInline{A} \textbf{and} \BookInline{B} is defined by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle AB= \Big\{\sum _{i= 1}^{n}a_{i}b_{i}\mid a_{i}\in A,\allowbreak b_{i}\in B,\allowbreak n\in \mathbb{Z}^{+ }\Big\}.}\end{adjustbox}\end{center}
+
+\BookExercise{a.}{Show that \BookInline{AB} is an ideal in \BookInline{R.}}
+
+\BookExercise{b.}{Show that \BookInline{AB\subseteq (A\cap B).}}
+
+\BookExercise{38.}{Let \BookInline{A} and \BookInline{B} be ideals of a\textit{ commutative} ring \BookInline{R.} The\textbf{ quotient} \BookInline{A:B} \textbf{of} \BookInline{A} \textbf{by} \BookInline{B} is defined by}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle A:B= \{r\in R\mid rb\in A\;\text{for all}\;b\in B\}.}\end{adjustbox}\end{center}
+
+Show that \BookInline{A:B} is an ideal of \BookInline{R.}
+
+\BookExercise{39.}{Show that for a field \BookInline{F,\allowbreak } the set \BookInline{S} of all matrices of the form}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}\BookInline{\displaystyle \begin{pmatrix} a & b \\ 0 & 0 \end{pmatrix}}\end{adjustbox}\end{center}
+
+for \BookInline{a,\allowbreak b\in F} is a\textbf{ right ideal} but not a\textbf{ left ideal} of \BookInline{M_{2}(F).} That is, show that \BookInline{S} is a subring closed under multiplication on the\textit{ right} by any element of \BookInline{M_{2}(F),\allowbreak } but is not closed under\textit{ left} multiplication.
+
+\BookExercise{40.}{Show that the matrix ring \BookInline{M_{2}(\mathbb{Z}_{2})} is a simple ring; that is\BookInline{,\allowbreak M_{2}(\mathbb{Z}_{2})} has no proper nontrivial ideals.}
+
+\end{BookBody}
+\ifdefined\BookMaster\let\BookFinish\relax\else\def\BookFinish{\end{document}}\fi\BookFinish
