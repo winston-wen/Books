@@ -1,0 +1,235 @@
+[
+  {
+    "scan": null,
+    "caption_scan": 20,
+    "printed_page": "",
+    "kind": "kangxi-reading-portrait",
+    "rectangle": null,
+    "asset": "assets/figures/kangxi-reading.jpg",
+    "network_replacement": true,
+    "missing_scan_confirmed_by_user": true,
+    "layout_trim_pixels_right": 70
+  },
+  {
+    "scan": 20,
+    "printed_page": "",
+    "kind": "astronomers",
+    "rectangle": [
+      0.073,
+      0.046,
+      0.952,
+      0.813
+    ],
+    "asset": "assets/figures/emperor-tapestry.jpg",
+    "network_replacement": true
+  },
+  {
+    "scan": 105,
+    "printed_page": "086",
+    "kind": "drawing",
+    "rectangle": [
+      0.12,
+      0.42,
+      0.9,
+      0.814
+    ],
+    "asset": "assets/figures/verbiest-stone-transport.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 107,
+    "printed_page": "088",
+    "kind": "drawing",
+    "rectangle": [
+      0.163,
+      0.105,
+      0.872,
+      0.417
+    ],
+    "asset": "assets/figures/verbiest-vehicle.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 107,
+    "printed_page": "088",
+    "kind": "newton",
+    "rectangle": [
+      0.164,
+      0.51,
+      0.873,
+      0.815
+    ],
+    "asset": "assets/figures/newton-steam-car.png",
+    "network_replacement": true
+  },
+  {
+    "scan": 154,
+    "printed_page": "135",
+    "kind": "map",
+    "rectangle": [
+      0.185,
+      0.094,
+      0.844,
+      0.612
+    ],
+    "asset": "assets/figures/beijing-churches.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 169,
+    "printed_page": "150",
+    "kind": "diagram",
+    "rectangle": [
+      0.119,
+      0.383,
+      0.867,
+      0.826
+    ],
+    "asset": "assets/figures/kangxi-private-network.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 14,
+    "printed_page": "v",
+    "kind": "handwriting",
+    "rectangle": [
+      0.133,
+      0.411,
+      0.889,
+      0.805
+    ],
+    "asset": "assets/figures/kangxi-red-ticket-draft.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 145,
+    "printed_page": "126",
+    "kind": "document",
+    "rectangle": [
+      0.118,
+      0.085,
+      0.874,
+      0.668
+    ],
+    "asset": "assets/figures/missionary-permit.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 148,
+    "printed_page": "129",
+    "kind": "handwriting",
+    "rectangle": [
+      0.493,
+      0.092,
+      0.877,
+      0.652
+    ],
+    "asset": "assets/figures/kangxi-fighting-edict.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 165,
+    "printed_page": "146",
+    "kind": "handwriting",
+    "rectangle": [
+      0.115,
+      0.099,
+      0.878,
+      0.582
+    ],
+    "asset": "assets/figures/tournon-prescription.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 216,
+    "printed_page": "199",
+    "kind": "handwriting",
+    "rectangle": [
+      0.144,
+      0.102,
+      0.884,
+      0.799
+    ],
+    "asset": "assets/figures/kangxi-grimaldi-letter.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 254,
+    "printed_page": "237",
+    "kind": "handwriting",
+    "rectangle": [
+      0.214,
+      0.127,
+      0.808,
+      0.763
+    ],
+    "asset": "assets/figures/kangxi-papal-decree.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 259,
+    "printed_page": "242",
+    "kind": "inscription",
+    "rectangle": [
+      0.149,
+      0.097,
+      0.844,
+      0.809
+    ],
+    "asset": "assets/figures/suarez-tomb-front.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 260,
+    "printed_page": "243",
+    "kind": "inscription",
+    "rectangle": [
+      0.2,
+      0.1,
+      0.824,
+      0.807
+    ],
+    "asset": "assets/figures/suarez-tomb-back.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 311,
+    "printed_page": "295",
+    "kind": "handwriting",
+    "rectangle": [
+      0.176,
+      0.11,
+      0.826,
+      0.655
+    ],
+    "asset": "assets/figures/kangxi-algebra-edict.png",
+    "network_replacement": false
+  },
+  {
+    "scan": 323,
+    "printed_page": "307",
+    "kind": "trigault",
+    "rectangle": [
+      0.216,
+      0.1,
+      0.79,
+      0.653
+    ],
+    "asset": "assets/figures/trigault-portrait.jpg",
+    "network_replacement": true
+  },
+  {
+    "scan": 314,
+    "printed_page": "298",
+    "kind": "formula",
+    "rectangle": [
+      0.35,
+      0.39,
+      0.64,
+      0.465
+    ],
+    "network_replacement": false,
+    "rendered_as": "editable LaTeX equation",
+    "source": "scanned-version/314.jpg"
+  }
+]

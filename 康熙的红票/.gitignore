@@ -1,0 +1,30 @@
+# Generated LaTeX output and local recovery snapshots
+/build/
+/*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Original scans stay local; main.tex only needs the retained assets.
+/scanned-version/
+
+# Reproducible QA images and editor/runtime caches
+/qa/render/
+/.texeed/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

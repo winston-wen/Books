@@ -1,0 +1,72 @@
+\documentclass[11pt,oneside]{article}
+\usepackage{fontspec,xeCJK,graphicx,tikz,geometry,titlesec,fancyhdr,hyperref,bookmark,amsmath,lmodern,newunicodechar,indentfirst,xurl}
+\usepackage{setspace,tocloft,tabularx,booktabs}
+\usepackage{caption,placeins}
+\captionsetup{font=small,skip=6pt,singlelinecheck=false,justification=raggedright}
+\newcommand{\BookTableStyle}{\setstretch{1}\fontsize{9}{12}\selectfont\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.2}}
+\newcommand{\BookFloatNotes}[1]{\par\vspace{4pt}{\setstretch{1}\fontsize{9}{12}\selectfont\raggedright\noindent #1\par}}
+\input{layout.tex}
+\geometry{paperwidth=\BookWidth,paperheight=\BookHeight,left=20mm,right=20mm,top=22mm,bottom=24mm,headheight=0pt,footskip=11mm}
+\IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}\newCJKfontfamily\bookfang{FangSong}\newCJKfontfamily\bookhei{SimHei}}{%
+\IfFileExists{/mnt/c/Windows/Fonts/simsun.ttc}{\setCJKmainfont[Path=/mnt/c/Windows/Fonts/]{simsun.ttc}\newCJKfontfamily\bookfang[Path=/mnt/c/Windows/Fonts/]{simfang.ttf}\newCJKfontfamily\bookhei[Path=/mnt/c/Windows/Fonts/]{simhei.ttf}}{\setCJKmainfont{FandolSong-Regular}\newCJKfontfamily\bookfang{FandolFang-Regular}\newCJKfontfamily\bookhei{FandolHei-Regular}}}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\newfontfamily\symbolfont{SimSun}
+\newunicodechar{①}{{\symbolfont ①}}
+\newunicodechar{②}{{\symbolfont ②}}
+\newunicodechar{③}{{\symbolfont ③}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{□}{\ensuremath{\square}}
+\IfFileExists{/mnt/c/Windows/Fonts/simsunb.ttf}{\setCJKfallbackfamilyfont{rm}[Path=/mnt/c/Windows/Fonts/]{simsunb.ttf}}{}
+% 独立引文使用楷体；六角括号内的作者注使用仿宋，分组结束后恢复引文字体。
+\IfFontExistsTF{KaiTi}{\newCJKfontfamily\bookkai{KaiTi}}{%
+\IfFileExists{/mnt/c/Windows/Fonts/simkai.ttf}{\newCJKfontfamily\bookkai[Path=/mnt/c/Windows/Fonts/]{simkai.ttf}}{\newCJKfontfamily\bookkai{FandolKai-Regular}}}
+\newcommand{\AuthorNote}[1]{{\bookfang #1}}
+\hypersetup{unicode=true,hidelinks,pageanchor=false,pdftitle={康熙的红票：B5重排校对稿},pdfauthor={孙立天}}
+\pdfstringdefDisableCommands{\def\quad{ }}
+\urlstyle{same}
+\setlength{\parindent}{2em}\setlength{\parskip}{.3\baselineskip}
+\setstretch{1.5}\raggedbottom
+\setlength{\emergencystretch}{2em}
+\fancyhf{}
+\fancyfoot[L]{\bookfang\small\nouppercase{\leftmark}}
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[L]{\bookfang\small\nouppercase{\leftmark}}\fancyfoot[R]{\small\thepage}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\newcommand{\BookChinese}[1]{\ifcase#1\or 一\or 二\or 三\or 四\or 五\or 六\or 七\or 八\or 九\or 十\fi}
+\renewcommand{\thesection}{第\BookChinese{\value{section}}章}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thepart}{第\BookChinese{\value{part}}部分}
+\titleformat{\part}[display]{\centering\bookhei\LARGE}{\thepart}{1em}{}
+\titleformat{\section}{\bookhei\fontsize{17}{23}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}{\bookhei\fontsize{12}{17}\selectfont}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{0pt}{18pt}\titlespacing*{\subsection}{0pt}{16pt}{9pt}
+\newcommand{\BookUnnumbered}[1]{\section*{#1}\phantomsection\addcontentsline{toc}{section}{#1}}
+\newcommand{\BookSubUnnumbered}[1]{\subsection*{#1}\phantomsection\addcontentsline{toc}{subsection}{#1}}
+% 正文上标与书后编号使用同一语义标识；注释正文保持悬挂缩进。
+\newcommand{\NoteRef}[2]{\textsuperscript{\hyperlink{note-#1-#2}{\normalfont #2}}}
+\newcommand{\NoteChapter}[1]{\subsection*{#1}}
+\newcommand{\NoteEntry}[3]{\par\noindent\hangindent=2.5em\hangafter=1\makebox[2.5em][l]{\hypertarget{note-#1-#2}{#2}}#3\par}
+% 目录的页码由编译生成，章、节都不使用首行缩进。
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{目\quad 录}
+\renewcommand{\cfttoctitlefont}{\hfill\bookhei\Large}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{22pt}
+\setlength{\cftpartindent}{0pt}\setlength{\cftpartnumwidth}{5.5em}
+\setlength{\cftsecindent}{0pt}\setlength{\cftsecnumwidth}{4.5em}
+\setlength{\cftsubsecindent}{0pt}\setlength{\cftsubsecnumwidth}{3em}
+\renewcommand{\cftpartfont}{\bookhei}\renewcommand{\cftpartpagefont}{\normalfont}
+\renewcommand{\cftsecfont}{\bookhei}\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont\small}\renewcommand{\cftsubsecpagefont}{\normalfont\small}
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecafterpnum}{\par\nobreak}
+\setlength{\cftbeforepartskip}{14pt}\setlength{\cftbeforesecskip}{7pt}\setlength{\cftbeforesubsecskip}{2pt}
+\newcommand{\PictureContentsEntry}[2]{\par\noindent #1\nobreak\leaders\hbox to .65em{\hss.\hss}\hfill\nobreak\makebox[2em][r]{\pageref{#2}}\par}
+% 原扫描对照入口也使用 B5；图片等比放入版心。
+\newcommand{\OriginalPage}[1]{\clearpage\noindent\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{scanned-version/#1.jpg}\par}

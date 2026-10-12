@@ -1,0 +1,52 @@
+[
+  {
+    "file": "astronomers.jpg",
+    "url": "https://media.getty.edu/iiif/image/a038e751-fcc4-44bd-938e-b7ce15d6da94/full/4000,/0/default.jpg",
+    "source": "https://www.getty.edu/art/collection/object/103QSJ",
+    "width": 4000,
+    "height": 5169
+  },
+  {
+    "file": "trigault.jpg",
+    "url": "https://images.metmuseum.org/CRDImages/dp/original/DP820062.jpg",
+    "source": "https://www.metmuseum.org/art/collection/search/337844",
+    "width": 1090,
+    "height": 1864
+  },
+  {
+    "file": "trigault-0.jpg",
+    "url": "https://images.metmuseum.org/CRDImages/dp/original/DP820066.jpg",
+    "source": "https://www.metmuseum.org/art/collection/search/337844",
+    "width": 1365,
+    "height": 1901
+  },
+  {
+    "file": "trigault-1.jpg",
+    "url": "https://images.metmuseum.org/CRDImages/dp/original/DT4409.jpg",
+    "source": "https://www.metmuseum.org/art/collection/search/337844",
+    "width": 2185,
+    "height": 3722
+  },
+  {
+    "file": "trigault-2.jpg",
+    "url": "https://images.metmuseum.org/CRDImages/dp/original/1999.222.jpg",
+    "source": "https://www.metmuseum.org/art/collection/search/337844",
+    "width": 966,
+    "height": 1705
+  },
+  {
+    "file": "trigault-3.jpg",
+    "url": "https://images.metmuseum.org/CRDImages/dp/original/RBS_C073.jpg",
+    "source": "https://www.metmuseum.org/art/collection/search/337844",
+    "width": 2812,
+    "height": 3692
+  },
+  {
+    "file": "kangxi-reading.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%E5%BA%B7%E7%86%99%E5%B8%9D%E8%AF%BB%E4%B9%A6%E5%83%8F%E8%BD%B4.jpg",
+    "source": "https://www.dpm.org.cn/collection/paint/230329.html",
+    "download_page": "https://commons.wikimedia.org/wiki/File:%E5%BA%B7%E7%86%99%E5%B8%9D%E8%AF%BB%E4%B9%A6%E5%83%8F%E8%BD%B4.jpg",
+    "width": 3605,
+    "height": 4849
+  }
+]

@@ -1,4 +1,0 @@
-interface:
-  display_name: "书籍 PDF 转 LaTeX 与校订"
-  short_description: "扫描与文字层 PDF 转可编辑工程，逆向公式并校核章节、图表、注释和分栏"
-  default_prompt: "请使用 $book-to-latex 转换或修订这本书，保留既有校订，核对原图、公式和章节结构。"

@@ -1,0 +1,28 @@
+{
+  "scans": 393,
+  "excluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    399,
+    400
+  ],
+  "replacement_scans": [
+    364,
+    365,
+    366,
+    367,
+    368
+  ],
+  "replacement_sha256": "0d3b1d2c266ba30b714c8afe3639ecce446c258477b031c9a25e40c1b1063baa",
+  "paper_mm": [
+    176,
+    250
+  ],
+  "generation": "chapter-based semantic LaTeX; original printed-page annotations retained",
+  "chapter_files": 19,
+  "figures": 17,
+  "tables": 4
+}
