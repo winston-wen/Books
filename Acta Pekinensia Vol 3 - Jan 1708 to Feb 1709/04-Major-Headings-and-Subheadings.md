@@ -5,1606 +5,1287 @@
 
 <!-- PDF page 18 | book page 9 -->
 
-January 1708
+## January 1708
 
-1. A conversation of Fr. Kilian with Fr. Appiani
+1\. *A conversation of Fr. Kilian with Fr. Appiani*
 
-2. Another with Doctor Borghese
+2\. *Another with Doctor Borghese*
 
-3. Fr. Appiani is confined in a stricter prison and all access to him is denied
+3\. *Fr. Appiani is confined in a stricter prison and all access to him is denied*
 
-4. The letter of the Bishop of Ascalon to Fr. Kilian
+4\. *The letter of the Bishop of Ascalon to Fr. Kilian*
 
-5. He indicates his goodwill towards the Fathers
+5\. *He indicates his goodwill towards the Fathers*
 
-6. He explains certain things he said
+6\. *He explains certain things he said*
 
-7. He says that it is not lawful for missionaries to remain in China if they are
+7\. *He says that it is not lawful for missionaries to remain in China if they are not exercising the duties of missionaries*
 
-not exercising the duties of missionaries
+8\. *He gives the reason why he has not set out for Rome*
 
-8. He gives the reason why he has not set out for Rome
+9\. *Why the Bishop of Ascalon wants to make for the Philippines*
 
-9. Why the Bishop of Ascalon wants to make for the Philippines
+10\. *An explanation of certain words of his letter*
 
-10. An explanation of certain words of his letter
+11\. *A letter of Fr. Franchi concerning various matters communicated to him by the Bishop of Beijing*
 
-11. A letter of Fr. Franchi concerning various matters communicated to him by
+12\. *The Bishop of Beijing compares the Lord Patriarch to Roboam*
 
-the Bishop of Beijing
+13\. *Comments on the letter of Fr. Franchi*
 
-12. The Bishop of Beijing compares the Lord Patriarch to Roboam
+14\. *The departure of Fr. Provana from China*
 
-13. Comments on the letter of Fr. Franchi
+15\. *Whether Fr. Müllener should return to the province of Huguang*
 
-14. The departure of Fr. Provana from China
+16\. *The letter of Fr. Castorano to Fr. Kilian*
 
-15. Whether Fr. Müllener should return to the province of Huguang
+17\. *The Bishop of Beijing grants Fathers Castner and Liebstain faculties for administering the sacraments which he had formerly refused*
 
-16. The letter of Fr. Castorano to Fr. Kilian
+18\. *His letter to Father Vice-Provincial*
 
-17. The Bishop of Beijing grants Fathers Castner and Liebstain faculties for
+19\. *The letter of the Bishop of Ascalon to Fr. Antoine Thomas*
 
-administering the sacraments which he had formerly refused
+20\. *Why the missionaries in Guangzhou are forbidden to go to Beijing by the Viceroy*
 
-18. His letter to Father Vice-Provincial
+21\. *Some remarks about the letter of the Bishop of Ascalon*
 
-19. The letter of the Bishop of Ascalon to Fr. Antoine Thomas
+22\. *What the Fathers thought should be done when they had received this letter*
 
-20. Why the missionaries in Guangzhou are forbidden to go to Beijing by the
+23\. *Some Fathers are summoned to the Court*
 
-Viceroy
+24\. *Various rumours among those in Guangzhou*
 
-21. Some remarks about the letter of the Bishop of Ascalon
+25\. *The mandarins harass the missionaries*
 
-22. What the Fathers thought should be done when they had received this letter
+26\. *Disagreement between the Dominican and the Augustinian over how to receive the permit*
 
-23. Some Fathers are summoned to the Court
+27\. *About the two minds of the Emperor (See #24 above*)
 
-24. Various rumours among those in Guangzhou
+28\. *Some queries and requests put to the Lord Patriarch by the Franciscans*
 
-25. The mandarins harass the missionaries
+29\. *First query*
 
-26. Disagreement between the Dominican and the Augustinian over how to
+30\. *Second Query*
 
-receive the permit
-
-27. About the two minds of the Emperor (See #24 above)
-
-28. Some queries and requests put to the Lord Patriarch by the Franciscans
-
-29. First query
-
-30. Second Query
-
-31. Third Query
+31\. *Third Query*
 
 <!-- PDF page 19 | book page 10 -->
 
-32. Fourth Query
+32\. *Fourth Query*
 
-33. Fifth Query
+33\. *Fifth Query*
 
-34. The Father Commissary of the Franciscans passed on these queries and
+34\. *The Father Commissary of the Franciscans passed on these queries and requests in the name of his men to the Lord Patriarch*
 
-requests in the name of his men to the Lord Patriarch
+35\. *The response of the Lord Patriarch to the queries submitted by the Fr. Commissary*
 
-35. The response of the Lord Patriarch to the queries submitted by the Fr. Com-
+36\. *The Fr. Commissary again puts the same questions or queries in legal form, with a few additions*
 
-missary
+37\. *The Emperor commands that the practice of Matteo Ricci should be strictly followed in future*
 
-36. The Fr. Commissary again puts the same questions or queries in legal form,
+38\. *The statement of Fr. Muñoz concerning the will of the Emperor and his edict*
 
-with a few additions
+39\. *The final reply of the Lord Patriarch*
 
-37. The Emperor commands that the practice of Matteo Ricci should be strictly
+## February 1708
 
-followed in future
+1\. *Four Jesuits set out from Macau for Beijing*
 
-38. The statement of Fr. Muñoz concerning the will of the Emperor and his edict
+2\. *The five heads under which the Emperor ordered Father Tomás Pereira to be questioned*
 
-39. The final reply of the Lord Patriarch
+3\. *The associates of the Lord Patriarch declare that through his decree a new article of faith has been established*
 
-February 1708
+4\. *The Lord Patriarch says the same*
 
-1. Four Jesuits set out from Macau for Beijing
+5\. *Father Leopold Liebstain testifies that the same was heard by him from the associates of the Lord Patriarch*
 
-2. The five heads under which the Emperor ordered Father Tomás Pereira to be
+6\. *Fathers Bakowski and Domingos de Britto with four others hasten on to Beijing. Why Fathers Porquet and Capacci remained in Guangzhou*
 
-questioned
+7\. *How the Father Commissary of the Franciscans acted in Guangzhou*
 
-3. The associates of the Lord Patriarch declare that through his decree a new
+8\. *A letter from Fr. Johannes Müllener to Fr. Castner*
 
-article of faith has been established
+9\. *He asks to be informed about various matters*
 
-4. The Lord Patriarch says the same
+10\. *The second letter from the same Johannes Müllener*
 
-5. Father Leopold Liebstain testifies that the same was heard by him from the
+11\. *Comments on this letter*
 
-associates of the Lord Patriarch
+12\. *Father Müllener’s theology is not consistent within itself*
 
-6. Fathers Bakowski and Domingos de Britto with four others hasten on to
+13\. *The concern which the Jesuits felt for Father Appiani*
 
-Beijing. Why Fathers Porquet and Capacci remained in Guangzhou
+14\. *Some Muscovites come to Beijing and are visited by the Jesuits*
 
-7. How the Father Commissary of the Franciscans acted in Guangzhou
+15\. *A letter of Father Barelli regarding a book attributed to him as the author*
 
-8. A letter from Fr. Johannes Müllener to Fr. Castner
+16\. *A letter from Father Foucquet to Father Barelli. He gives an account of the removal of a tablet of the Holy Law and of a church to be occupied by a mandarin etc*
 
-9. He asks to be informed about various matters
+17\. *Christian churches are occupied by pagans*
 
-10. The second letter from the same Johannes Müllener
+18\. *The Father Commissary issues an order for the Patriarch’s regulation to be published in Guangzhou*
 
-11. Comments on this letter
-
-12. Father Müllener’s theology is not consistent within itself
-
-13. The concern which the Jesuits felt for Father Appiani
-
-14. Some Muscovites come to Beijing and are visited by the Jesuits
-
-15. A letter of Father Barelli regarding a book attributed to him as the author
-
-16. A letter from Father Foucquet to Father Barelli. He gives an account of the
-
-removal of a tablet of the Holy Law and of a church to be occupied by a
-
-mandarin etc
-
-17. Christian churches are occupied by pagans
-
-18. The Father Commissary issues an order for the Patriarch’s regulation to be
-
-published in Guangzhou
-
-19. A letter from the Bishop of Ascalon to the Lord Patriarch
+19\. *A letter from the Bishop of Ascalon to the Lord Patriarch*
 
 <!-- PDF page 20 | book page 11 -->
 
-20. On what conditions may the permit be granted to the missionaries so that
+20\. *On what conditions may the permit be granted to the missionaries so that they can remain in China*
 
-they can remain in China
+21\. *The three queries or doubts proposed to the Lord Patriarch*
 
-21. The three queries or doubts proposed to the Lord Patriarch
+22\. *The Lord Patriarch’s response is that prudence prevents him from replying*
 
-22. The Lord Patriarch’s response is that prudence prevents him from replying
+23\. *The letter of the Bishop of Beijing to Father Bouvet. He enquires about the situation of Father Appiani*
 
-23. The letter of the Bishop of Beijing to Father Bouvet. He enquires about the
+24\. *Six Franciscans request from the Viceroy of Guangzhou permission to travel to Beijing to receive the Piao*
 
-situation of Father Appiani
+25\. *A rumour that a Jesuit has been put in charge of giving approval for those who seek a permit*
 
-24. Six Franciscans request from the Viceroy of Guangzhou permission to travel
+## March 1708
 
-to Beijing to receive the Piao
+### Concerning what happened in Beijing:
 
-25. A rumour that a Jesuit has been put in charge of giving approval for those
+1\. *A document in favour of the missionaries was obtained from the Board of Mathematics and sent to the Supreme Military Prefects in the provinces*
 
-who seek a permit
+2\. *The governors question the Ministry of Rites about the document*
 
-March 1708
+3\. *The response of the Ministry of Rites is hardly favourable*
 
-Concerning what happened in Beijing:
+4\. *Hence the fears of the Jesuits*
 
-1. A document in favour of the missionaries was obtained from the Board of
+5\. *A letter of Fr. Antonio de Magalhães, warning of the danger*
 
-Mathematics and sent to the Supreme Military Prefects in the provinces
+6\. *An altar thrown down, a tablet containing praise of the Christian Law burned*
 
-2. The governors question the Ministry of Rites about the document
+7\. *A sacred building of the Society taken over by mandarins*
 
-3. The response of the Ministry of Rites is hardly favourable
+8\. *The Emperor had once and for all definitely decided to expel the Europeans from China if the Supreme Pontiff decided against the Chinese rites*
 
-4. Hence the fears of the Jesuits
+9\. *The Bishop of Beijing’s letter to Fr. Castner*
 
-5. A letter of Fr. Antonio de Magalhães, warning of the danger
+10\. *A further letter from him to Fr. Vice-Provincial, about the various investigations to which the missionaries were subjected*
 
-6. An altar thrown down, a tablet containing praise of the Christian Law
+11\. *A letter of Fr. Kilian to the Bishop of Ascalon*
 
-burned
+12\. *The opinion of the Fathers and their willingness to obey the papal decrees*
 
-7. A sacred building of the Society taken over by mandarins
+13\. *The Patriarch did nothing to explain what was in his mind and the meaning of his decree to those who asked him*
 
-8. The Emperor had once and for all definitely decided to expel the Europeans
+14\. *The missionaries are not bound to promulgate the Lord Patriarch’s decree*
 
-from China if the Supreme Pontiff decided against the Chinese rites
+15\. *The just complaints of the Emperor against the Lord Patriarch*
 
-9. The Bishop of Beijing’s letter to Fr. Castner
+16\. *The Tonkin Case, or the protest of the clerics in the kingdom of Tonkin*
 
-10. A further letter from him to Fr. Vice-Provincial, about the various investiga-
+17\. *The wretched state of religion in the province of Fujian*
 
-tions to which the missionaries were subjected
+18\. *Christians harassed by mandarins*
 
-11. A letter of Fr. Kilian to the Bishop of Ascalon
+19\. *A letter from Fr. Buonaventura da Roma*
 
-12. The opinion of the Fathers and their willingness to obey the papal decrees
+20\. *Christians in danger*
 
-13. The Patriarch did nothing to explain what was in his mind and the meaning
+21\. *The respect usually paid to imperial permits*
 
-of his decree to those who asked him
-
-14. The missionaries are not bound to promulgate the Lord Patriarch’s decree
-
-15. The just complaints of the Emperor against the Lord Patriarch
-
-16. The Tonkin Case, or the protest of the clerics in the kingdom of Tonkin
-
-17. The wretched state of religion in the province of Fujian
-
-18. Christians harassed by mandarins
-
-19. A letter from Fr. Buonaventura da Roma
-
-20. Christians in danger
-
-21. The respect usually paid to imperial permits
-
-22. The Fathers are harassed by the mandarins
+22\. *The Fathers are harassed by the mandarins*
 
 <!-- PDF page 21 | book page 12 -->
 
-23. A letter from Fr. Buonaventura da Roma to Fr. Luigi Gonzaga
+23\. *A letter from Fr. Buonaventura da Roma to Fr. Luigi Gonzaga*
 
-24. A letter from the Lord Patriarch to Fr. Buonaventura
+24\. *A letter from the Lord Patriarch to Fr. Buonaventura*
 
-25. Fr. Buonaventura’s reply
+25\. *Fr. Buonaventura’s reply*
 
-26. He exculpates himself before the Patriarch, and explains what he did
+26\. *He exculpates himself before the Patriarch, and explains what he did*
 
-27. An observation about the dating of the Lord Patriarch’s letter
+27\. *An observation about the dating of the Lord Patriarch’s letter*
 
-28. The deceitful promises made to many people by the Lord Patriarch; threats
+28\. *The deceitful promises made to many people by the Lord Patriarch; threats etc. also*
 
-etc. also
+29\. *A letter of Fr. Bayard to Fr. Vice-Provincial about his neophytes, and the problems he has had to put up with*
 
-29. A letter of Fr. Bayard to Fr. Vice-Provincial about his neophytes, and the
+30\. *A letter of Fr. Monteiro to Fr. Vice-Provincial about affairs in Guangdong*
 
-problems he has had to put up with
+31\. *Concerning the Bishop of Ascalon*
 
-30. A letter of Fr. Monteiro to Fr. Vice-Provincial about affairs in Guangdong
+32\. *Concerning the six Franciscans who wanted to go to Beijing*
 
-31. Concerning the Bishop of Ascalon
+33\. *Fr. Porquet gets permission from the Viceroy to go to Beijing*
 
-32. Concerning the six Franciscans who wanted to go to Beijing
+34\. *A false rumour is concocted against Fr. Monteiro*
 
-33. Fr. Porquet gets permission from the Viceroy to go to Beijing
+35\. *Information about Fr. Fontanilla*
 
-34. A false rumour is concocted against Fr. Monteiro
+36\. *It is a crime in China to change one’s name*
 
-35. Information about Fr. Fontanilla
+37\. *The Franciscans’ mistake in repeating that they had been summoned to Beijing by the Board of Mathematics*
 
-36. It is a crime in China to change one’s name
+38\. *The Bishop of Ascalon’s zeal and magnanimity of mind*
 
-37. The Franciscans’ mistake in repeating that they had been summoned to
+39\. *Harassment is legitimately and correctly bought off by gifts*
 
-Beijing by the Board of Mathematics
+40\. *A letter of Fr. Kilian to Fr. Monteiro*
 
-38. The Bishop of Ascalon’s zeal and magnanimity of mind
+41\. *The harm done by being careless about accuracy in letters and records*
 
-39. Harassment is legitimately and correctly bought off by gifts
+42\. *The Beijing Jesuits are unjustly accused of not being helpful enough to the missionaries*
 
-40. A letter of Fr. Kilian to Fr. Monteiro
+43\. *The Lord Patriarch has mistakenly persuaded himself that the Emperor does not care whether the Chinese rites are observed or not*
 
-41. The harm done by being careless about accuracy in letters and records
+44\. *The Lord Patriarch’s criticisms of the Beijing Jesuits, and the criticisms they could make in return*
 
-42. The Beijing Jesuits are unjustly accused of not being helpful enough to the
+45\. *Fr. Müllener’s plans, journey, flight, dangers, etc*
 
-missionaries
+46\. *What the missionaries should produce, and what they should avoid*
 
-43. The Lord Patriarch has mistakenly persuaded himself that the Emperor
+47\. *The Emperor’s decree and his decision about the missionaries*
 
-does not care whether the Chinese rites are observed or not
+48\. *The letter of Fr. Simões about Fr. Müllener*
 
-44. The Lord Patriarch’s criticisms of the Beijing Jesuits, and the criticisms they
+49\. *The letter of Fr. Bayard to the Beijing Jesuits about Fr. Müllener*
 
-could make in return
+50\. *Who mentioned the controversies and their initiators to the Emperor*?
 
-45. Fr. Müllener’s plans, journey, flight, dangers, etc
+51\. *The letter of Fr. Müllener to Fr. Bayard*
 
-46. What the missionaries should produce, and what they should avoid
+52\. *Fr. Bayard’s letter to Fr. Müllener*
 
-47. The Emperor’s decree and his decision about the missionaries
+53\. *Further explanation of the flight and departure of Fr. Müllener*
 
-48. The letter of Fr. Simões about Fr. Müllener
+54\. *A letter from Fr. Bayard to the Beijing Jesuits about Fr. Müllener*
 
-49. The letter of Fr. Bayard to the Beijing Jesuits about Fr. Müllener
+55\. *A letter from Fr. Hervieu about the same Fr. Müllener*
 
-50. Who mentioned the controversies and their initiators to the Emperor?
-
-51. The letter of Fr. Müllener to Fr. Bayard
-
-52. Fr. Bayard’s letter to Fr. Müllener
-
-53. Further explanation of the flight and departure of Fr. Müllener
-
-54. A letter from Fr. Bayard to the Beijing Jesuits about Fr. Müllener
-
-55. A letter from Fr. Hervieu about the same Fr. Müllener
-
-56. The Christians are harassed
+56\. *The Christians are harassed*
 
 <!-- PDF page 22 | book page 13 -->
 
-56. [number duplicated in ms.] A letter from Fr. Vice-Provincial to the Bishop
+56\. [number duplicated in ms.] *A letter from Fr. Vice-Provincial to the Bishop of Beijing*
 
-of Beijing
+57\. *A letter from Fr. Kilian to the Bishop of Beijing about Fr. Müllener and other missionaries who are refugees*
 
-57. A letter from Fr. Kilian to the Bishop of Beijing about Fr. Müllener and other
+58\. *Important points in these letters*
 
-missionaries who are refugees
+59\. *About the danger to be feared from Fr. Müllener*
 
-58. Important points in these letters
+60\. *Fr. Visdelou is created Bishop of Claudiopolis and Vicar Apostolic by the Lord Patriarch*
 
-59. About the danger to be feared from Fr. Müllener
+61\. *What the Lord Patriarch asked from the French Fathers for Fr. Visdelou, and Fr. Gerbillon’s response*
 
-60. Fr. Visdelou is created Bishop of Claudiopolis and Vicar Apostolic by the Lord
+## April 1708
 
-Patriarch
+1\. *Fr. Müllener enters Beijing*
 
-61. What the Lord Patriarch asked from the French Fathers for Fr. Visdelou, and
+2\. *The reason why the Fathers were unwilling that he stay in their houses*
 
-Fr. Gerbillon’s response
+3\. *Letter of Fr. Kilian to Fr. Müllener*
 
-April 1708
+4\. *Fr. Müllener’s servant comes to the Fathers: what conversation they had with him*
 
-1. Fr. Müllener enters Beijing
+5\. *Fr. Müllener’s servant is warned of the danger threatening himself and his employer*
 
-2. The reason why the Fathers were unwilling that he stay in their houses
+6\. *Fr. Müllener departs from Beijing*
 
-3. Letter of Fr. Kilian to Fr. Müllener
+7\. *Letter of the Bishop of Beijing about Fr. Müllener*
 
-4. Fr. Müllener’s servant comes to the Fathers: what conversation they had with
+8\. *Some observations on the letters of the Bishop of Beijing*
 
-him
+9\. *The series of things done by Fr. Müllener in his various journeys and encounters*
 
-5. Fr. Müllener’s servant is warned of the danger threatening himself and his
+10\. *The guard at the house of the Lord Patriarch in Macau is doubled*
 
-employer
+11\. *A letter of the Bishop of Beijing concerning Fr. Müllener*
 
-6. Fr. Müllener departs from Beijing
+12\. *The mandarins are trying to expel all the Europeans*
 
-7. Letter of the Bishop of Beijing about Fr. Müllener
+13\. *The petition to be offered to the Emperor in the name of the Beijing Fathers*
 
-8. Some observations on the letters of the Bishop of Beijing
+14\. *They ask that the mandarins of the provinces, who have doubts about the authenticity of the permit given to the missionaries by the Emperor, be informed concerning it*
 
-9. The series of things done by Fr. Müllener in his various journeys and encoun-
+15\. *The Fathers decide that the petition should be offered in writing, not by word of mouth*
 
-ters
+16\. *The petition is presented to the Prince, and is accepted with little show of courtesy*
 
-10. The guard at the house of the Lord Patriarch in Macau is doubled
+17\. *Letter of Father Giovanni Paulo Gozani concerning the trouble caused him by a mandarin*
 
-11. A letter of the Bishop of Beijing concerning Fr. Müllener
+18\. *The caution of the Prince in admitting two Fathers to Beijing*
 
-12. The mandarins are trying to expel all the Europeans
-
-13. The petition to be offered to the Emperor in the name of the Beijing Fathers
-
-14. They ask that the mandarins of the provinces, who have doubts about the
-
-authenticity of the permit given to the missionaries by the Emperor, be
-
-informed concerning it
-
-15. The Fathers decide that the petition should be offered in writing, not by word
-
-of mouth
-
-16. The petition is presented to the Prince, and is accepted with little show of
-
-courtesy
-
-17. Letter of Father Giovanni Paulo Gozani concerning the trouble caused him
-
-by a mandarin
-
-18. The caution of the Prince in admitting two Fathers to Beijing
-
-19. The Jesuits who have recently been brought to Beijing are questioned and
-
-examined by the Prince
+19\. *The Jesuits who have recently been brought to Beijing are questioned and examined by the Prince*
 
 <!-- PDF page 23 | book page 14 -->
 
-20. A letter from Fr. Buonaventura da Roma to Fr. Kilian
+20\. *A letter from Fr. Buonaventura da Roma to Fr. Kilian*
 
-21. A letter from the Lord Patriarch to Father Buonaventura
+21\. *A letter from the Lord Patriarch to Father Buonaventura*
 
-22. The reply from Fr. Buonaventura
+22\. *The reply from Fr. Buonaventura*
 
-23. Of the hindrance put in the way of the Franciscans to prevent them from
+23\. *Of the hindrance put in the way of the Franciscans to prevent them from going to Beijing*
 
-going to Beijing
+24\. *What function was allotted to Father Osório by the Emperor and who he was*
 
-24. What function was allotted to Father Osório by the Emperor and who he was
+25\. *The Chinese name of Father Osório*
 
-25. The Chinese name of Father Osório
+26\. *Letter from the Franciscans to Fr. Manuel Osório*
 
-26. Letter from the Franciscans to Fr. Manuel Osório
+27\. *The document of authentication which the Franciscans were ordered to provide to Fr. Osório so that he could be their guarantor*
 
-27. The document of authentication which the Franciscans were ordered to
+## May 1708
 
-provide to Fr. Osório so that he could be their guarantor
+1\. *The Fathers brought from Guangzhou are presented at the villa of the Emperor*
 
-May 1708
+2\. *The Emperor orders that the church in Xinhui* xian *be restored to the Fathers*
 
-1. The Fathers brought from Guangzhou are presented at the villa of the
+3\. *The prudent goodwill of the Emperor towards the Europeans*
 
-Emperor
+4\. *The Prince receives the Fathers arrogantly*
 
-2. The Emperor orders that the church in Xinhui xian be restored to the Fathers
+5\. *And shows that his attitude is unfriendly towards them*
 
-3. The prudent goodwill of the Emperor towards the Europeans
+6\. *Three of our Fathers are sent by the Emperor to Tartary*
 
-4. The Prince receives the Fathers arrogantly
+7\. *Letter of Fr. Kilian to Father Buonaventura*
 
-5. And shows that his attitude is unfriendly towards them
+8\. *The Prince has been appointed by the Emperor to hear cases involving Europeans*
 
-6. Three of our Fathers are sent by the Emperor to Tartary
+9\. *A letter of the Bishop of Beijing to Fr. Vice-Provincial*
 
-7. Letter of Fr. Kilian to Father Buonaventura
+10\. *About Father Osório the Jesuit, the one who approves candidates for the permit in Guangzhou*
 
-8. The Prince has been appointed by the Emperor to hear cases involving
+11\. *The letter of Fr. Osório to Fr. Kilian*
 
-Europeans
+12\. *The testimony and affidavit given to six Franciscans by Fr. Osório*
 
-9. A letter of the Bishop of Beijing to Fr. Vice-Provincial
+13\. *Also given to Father Capacci by the same Fr. Osório*
 
-10. About Father Osório the Jesuit, the one who approves candidates for the per-
+14\. *A letter of the Bishop of Ascalon to Fr. Kilian*
 
-mit in Guangzhou
+15\. *A letter of Fr. Monteiro to Fr. Kilian*
 
-11. The letter of Fr. Osório to Fr. Kilian
+16\. *Hatred of the Jesuits, unjustly kindled and fanned into flame because of what Fr. Osório did*
 
-12. The testimony and affidavit given to six Franciscans by Fr. Osório
+17\. *A letter from Fr. Tomás Hortiz to Fr. Tomás Pereira*
 
-13. Also given to Father Capacci by the same Fr. Osório
+## June 1708
 
-14. A letter of the Bishop of Ascalon to Fr. Kilian
+1\. *Three of the Beijing Jesuits are sent to Tartary by the Emperor*
 
-15. A letter of Fr. Monteiro to Fr. Kilian
+2\. *Father Joachim Bouvet presents the Emperor with a book that he himself has written*
 
-16. Hatred of the Jesuits, unjustly kindled and fanned into flame because of
+3\. *Fr. Appiani asks to be transferred from his prison into our house*
 
-what Fr. Osório did
-
-17. A letter from Fr. Tomás Hortiz to Fr. Tomás Pereira
-
-June 1708
-
-1. Three of the Beijing Jesuits are sent to Tartary by the Emperor
-
-2. Father Joachim Bouvet presents the Emperor with a book that he himself has
-
-written
-
-3. Fr. Appiani asks to be transferred from his prison into our house
-
-4. Father Müllener returns to Wuchang fu. What he did there
+4\. *Father Müllener returns to Wuchang* fu. *What he did there*
 
 <!-- PDF page 24 | book page 15 -->
 
-5. The journey of the Jesuits to Manchuria is delayed
+5\. *The journey of the Jesuits to Manchuria is delayed*
 
-6. The Emperor declares that the piao granted to the missionaries is genuine
+6\. *The Emperor declares that the* piao *granted to the missionaries is genuine*
 
-7. The letter from Father de Sá
+7\. *The letter from Father de Sá*
 
-8. The letter from Fr. Bayard to Fr. Vice-Provincial
+8\. *The letter from Fr. Bayard to Fr. Vice-Provincial*
 
-9. The Christian religion is in a very bad state in Fujian. Fr. Laureati comes to
+9\. *The Christian religion is in a very bad state in Fujian. Fr. Laureati comes to its aid in its difficulty*
 
-its aid in its difficulty
+10\. *The letter from Father Laureati regarding his mission in Fujian*
 
-10. The letter from Father Laureati regarding his mission in Fujian
+11\. *The complicated beginning of his mission to Fujian*
 
-11. The complicated beginning of his mission to Fujian
+12\. *The Imperial Treasurer was conciliated after being treated with firmness combined with prudence*
 
-12. The Imperial Treasurer was conciliated after being treated with firmness
+13\. *The letter of Father Laureati concerning his mission*
 
-combined with prudence
+14\. *A letter from the Bishop of Beijing to the Bishop of Ascalon*
 
-13. The letter of Father Laureati concerning his mission
+15\. *About the permit requested by the Franciscans, its promise, etc*
 
-14. A letter from the Bishop of Beijing to the Bishop of Ascalon
+16\. *Various rumours spread in Guangzhou about that permit and who started them*
 
-15. About the permit requested by the Franciscans, its promise, etc
+17\. *A letter from Fr. Manuel de Sousa and his opinion of these rumours*
 
-16. Various rumours spread in Guangzhou about that permit and who started
+18\. *What their adversaries are picking up to use against the Jesuits from this account given by the Franciscans, which they hold to be true*
 
-them
+19\. *The falsity of the report begins to be recognized*
 
-17. A letter from Fr. Manuel de Sousa and his opinion of these rumours
+20\. *The falsity of the report of the Franciscans is shown from a letter of Fr. Buonaventura da Roma indicating the penalty imposed on him*
 
-18. What their adversaries are picking up to use against the Jesuits from this
+21\. *The mind and intention of the Emperor in granting the permit*
 
-account given by the Franciscans, which they hold to be true
+22\. *The truth of the Franciscans’ report cannot be established from what the Bishop of Beijing says*
 
-19. The falsity of the report begins to be recognized
+23\. *Under what agreed conditions may it be said that the permit was granted to the Franciscans by the Emperor*
 
-20. The falsity of the report of the Franciscans is shown from a letter of Fr.
+24\. *The weakness of the arguments of those defending the truthfulness of the report*
 
-Buonaventura da Roma indicating the penalty imposed on him
+25\. *Some further arguments are refuted*
 
-21. The mind and intention of the Emperor in granting the permit
+26\. *Three quite strong arguments which go to prove the falsity of the report*
 
-22. The truth of the Franciscans’ report cannot be established from what the
+27\. *The Bishop of Beijing’s attempted defence of Fr. Frossoloni proves nothing*
 
-Bishop of Beijing says
+28\. *An argument is developed based on what happened to Fr. Buonaventura*
 
-23. Under what agreed conditions may it be said that the permit was granted
+29\. *The way the Franciscans behaved shows that the report is false*
 
-to the Franciscans by the Emperor
+30\. *The testimony of important men about the falsity of the report*
 
-24. The weakness of the arguments of those defending the truthfulness of the
+31\. *The witness of the Franciscans themselves*
 
-report
+32\. *The opposition’s arguments are weak and of no weight*
 
-25. Some further arguments are refuted
+33\. *Some remarks as an aid to understanding the Emperor’s decree*
 
-26. Three quite strong arguments which go to prove the falsity of the report
+34\. *Why Bishop Maigrot was expelled from China, along with other allies of the Lord Patriarch*
 
-27. The Bishop of Beijing’s attempted defence of Fr. Frossoloni proves nothing
-
-28. An argument is developed based on what happened to Fr. Buonaventura
-
-29. The way the Franciscans behaved shows that the report is false
-
-30. The testimony of important men about the falsity of the report
-
-31. The witness of the Franciscans themselves
-
-32. The opposition’s arguments are weak and of no weight
-
-33. Some remarks as an aid to understanding the Emperor’s decree
-
-34. Why Bishop Maigrot was expelled from China, along with other allies of the
-
-Lord Patriarch
-
-35. Why Fr. Appiani has been condemned to death and imprisoned
+35\. *Why Fr. Appiani has been condemned to death and imprisoned*
 
 <!-- PDF page 25 | book page 16 -->
 
-36. Fathers of the Society and many others were sent into exile because they had
+36\. *Fathers of the Society and many others were sent into exile because they had decided to accept the Lord Patriarch’s decree*
 
-decided to accept the Lord Patriarch’s decree
+37\. *The China mission left desolate*
 
-37. The China mission left desolate
+38\. *Three directives of the Viceroys regarding the Dominican Fr. Cróquer*
 
-38. Three directives of the Viceroys regarding the Dominican Fr. Cróquer
+39\. *The advice of the Lord Patriarch’s supporters*
 
-39. The advice of the Lord Patriarch’s supporters
+40\. *Decisions of the Beijing Jesuits*
 
-40. Decisions of the Beijing Jesuits
+41\. *The Fathers’ effort to protect religion was productive*
 
-41. The Fathers’ effort to protect religion was productive
+42\. *The treatise on the Emperor’s twofold purpose; why it was written, and by whom*
 
-42. The treatise on the Emperor’s twofold purpose; why it was written, and by
+43\. *The Guangdong mandarins without justification claim authority over the missionaries*
 
-whom
+44\. *Amid the devastation and utter ruin, the Lord Patriarch speaks his mind*
 
-43. The Guangdong mandarins without justification claim authority over the
+45\. *Attempts by the Jesuits to recover the property they had almost lost*
 
-missionaries
+46\. *The petition is presented by the Fathers to the Prince*
 
-44. Amid the devastation and utter ruin, the Lord Patriarch speaks his mind
+47\. *It is brought to the notice of the Emperor, who gives orders that the Jesuits’ request be approved*
 
-45. Attempts by the Jesuits to recover the property they had almost lost
+48\. *It is handed to the marshals of the Royal Household, and at once to the Ministry of Rites*
 
-46. The petition is presented by the Fathers to the Prince
+49\. *The reply from the Ministry of Rites*
 
-47. It is brought to the notice of the Emperor, who gives orders that the Jesuits’
+50\. *A summary of what has been said so far*
 
-request be approved
+51\. *The Prince makes some additions to the Emperor’s decree*
 
-48. It is handed to the marshals of the Royal Household, and at once to the Min-
+52\. *The errors that the Prince had introduced while writing regarding time, persons, etc*
 
-istry of Rites
+53\. *The source of discrepancies between copies of the documents*
 
-49. The reply from the Ministry of Rites
+54\. *How the Emperor’s decree was received in the provinces and ordered to be carried out*
 
-50. A summary of what has been said so far
+55\. *Complaints against the Jesuits*
 
-51. The Prince makes some additions to the Emperor’s decree
+56\. *Reply to these complaints*
 
-52. The errors that the Prince had introduced while writing regarding time, per-
+57\. *Without the imperial permit the missionaries were unable to remain in China*
 
-sons, etc
+58\. *For which points in the most recent imperial decree the Jesuits were, and were not, responsible*
 
-53. The source of discrepancies between copies of the documents
+59\. *Any shame on the part of missionaries about that decree was unjustified, inappropriate and not due to anything the Fathers had done*
 
-54. How the Emperor’s decree was received in the provinces and ordered to be
+60\. *The same can be said about any harm that might have come from the same decree*
 
-carried out
+61\. *Whether the expulsion of some missionaries from China was a matter of honour or disgrace is put in perspective*
 
-55. Complaints against the Jesuits
+62\. *It was advantageous for those who were expelled to be known and named*
 
-56. Reply to these complaints
-
-57. Without the imperial permit the missionaries were unable to remain in
-
-China
-
-58. For which points in the most recent imperial decree the Jesuits were, and
-
-were not, responsible
-
-59. Any shame on the part of missionaries about that decree was unjustified,
-
-inappropriate and not due to anything the Fathers had done
-
-60. The same can be said about any harm that might have come from the same
-
-decree
-
-61. Whether the expulsion of some missionaries from China was a matter of
-
-honour or disgrace is put in perspective
-
-62. It was advantageous for those who were expelled to be known and named
-
-63. The letter of the Bishop of Beijing to Fr. Vice-Provincial
+63\. *The letter of the Bishop of Beijing to Fr. Vice-Provincial*
 
 <!-- PDF page 26 | book page 17 -->
 
-64. The delusions of the Bishop of Beijing and his companion in interpreting the
+64\. *The delusions of the Bishop of Beijing and his companion in interpreting the decree*
 
-decree
+65\. *A letter of Fr. Vice-Provincial to the Bishop of Beijing written in Portuguese*
 
-65. A letter of Fr. Vice-Provincial to the Bishop of Beijing written in Portuguese
+66\. *The same letter translated into Latin. It recounts the reason for seeking a decree from the Emperor, and how it was done*
 
-66. The same letter translated into Latin. It recounts the reason for seeking a
+67\. *He requests that a juridical and rigid examination be instituted into the truth of the matter*
 
-decree from the Emperor, and how it was done
+68\. *The reply of the Bishop of Beijing*
 
-67. He requests that a juridical and rigid examination be instituted into the
+69\. *Latin translation of this reply*
 
-truth of the matter
+70\. *The Prince presented nothing to the Emperor in the name of the Fathers but in his own*
 
-68. The reply of the Bishop of Beijing
+## July 1708
 
-69. Latin translation of this reply
+1\. *A letter from Fr. Kilian to the Bishop of Ascalon*
 
-70. The Prince presented nothing to the Emperor in the name of the Fathers but
+2\. *The Lord Patriarch’s new decree, under four heads*
 
-in his own
+3\. *Observations on this decree*
 
-July 1708
+4\. *The results of this decree*
 
-1. A letter from Fr. Kilian to the Bishop of Ascalon
+5\. *How heretics will react to the decree*
 
-2. The Lord Patriarch’s new decree, under four heads
+6\. *About the Jesuits mentioned in the decree*
 
-3. Observations on this decree
+7\. *A letter from Fr. Tomás Pereira to Fr. Hortiz*
 
-4. The results of this decree
+8\. *Some matters relating to Fr. Visdelou, and his acceptance of the episcopate*
 
-5. How heretics will react to the decree
+9\. *About a certain Dominican whom the Emperor expelled from China, who came back and wished to stay hidden*
 
-6. About the Jesuits mentioned in the decree
+10\. *How it was that the Dominican Fr. Caballero, who had been expelled to Macau, came back from there to the province of Fujian*
 
-7. A letter from Fr. Tomás Pereira to Fr. Hortiz
+11\. *A European cannot long stay hidden in China*
 
-8. Some matters relating to Fr. Visdelou, and his acceptance of the episcopate
+12\. *Dominicans on the run, and their hiding places discovered*
 
-9. About a certain Dominican whom the Emperor expelled from China, who
+13\. *From what happened to the Dominican there is no basis for accusing or blaming the Jesuits*
 
-came back and wished to stay hidden
+14\. *Two of the Beijing Jesuits are summoned by the Emperor to Tartary*
 
-10. How it was that the Dominican Fr. Caballero, who had been expelled to
+15\. *Who Fr. Giambattista Iliceto was, and why he set out for Mexico etc*
 
-Macau, came back from there to the province of Fujian
+16\. *A disgraceful letter written by him*
 
-11. A European cannot long stay hidden in China
+## August 1708
 
-12. Dominicans on the run, and their hiding places discovered
+1\. *A letter of Fr. Liebstain to Fr. Pereira*
 
-13. From what happened to the Dominican there is no basis for accusing or
+2\. *The Prince burns with murderous rage against the Europeans, and especially against Fr. Visdelou*
 
-blaming the Jesuits
+3\. *The origin of the Prince’s hatred for Fr. Visdelou*
 
-14. Two of the Beijing Jesuits are summoned by the Emperor to Tartary
-
-15. Who Fr. Giambattista Iliceto was, and why he set out for Mexico etc
-
-16. A disgraceful letter written by him
-
-August 1708
-
-1. A letter of Fr. Liebstain to Fr. Pereira
-
-2. The Prince burns with murderous rage against the Europeans, and espe-
-
-cially against Fr. Visdelou
-
-3. The origin of the Prince’s hatred for Fr. Visdelou
-
-4. The imperial decree in favour of the missionaries which we had requested
-
-begins to be promulgated
+4\. *The imperial decree in favour of the missionaries which we had requested begins to be promulgated*
 
 <!-- PDF page 27 | book page 18 -->
 
-5. The Chinese Rites as they were set up were not superstitious
+5\. *The Chinese Rites as they were set up were not superstitious*
 
-6. Unlettered people have to be taught to unlearn their mistakes
+6\. *Unlettered people have to be taught to unlearn their mistakes*
 
-7. Concerning Fr. Guéty’s servant, and the calumny he invented against the
+7\. *Concerning Fr. Guéty’s servant, and the calumny he invented against the Jesuits*
 
-Jesuits
+8\. *The judicial inquiry and interrogation of Fr. Guety’s servant*
 
-8. The judicial inquiry and interrogation of Fr. Guety’s servant
+9\. *Some of the subjects on which he was questioned by Fr. Visitor before selected priests*
 
-9. Some of the subjects on which he was questioned by Fr. Visitor before selec-
+10\. *The servant’s replies to each of the questions*
 
-ted priests
+11\. *Further questions and answers follow*
 
-10. The servant’s replies to each of the questions
+12\. *The end and final paragraph of the inquiry*
 
-11. Further questions and answers follow
+13\. *The Bishop of Ascalon’s zeal for the Catholic religion, and his piety*
 
-12. The end and final paragraph of the inquiry
+14\. *The Report on the Sinic or China mission written by Fr. Giambattista da Iliceto. A short account of the state and the tribulation of the Sinic or Chinese mission in this year 1708*
 
-13. The Bishop of Ascalon’s zeal for the Catholic religion, and his piety
+15\. *The first steps and progress of the China mission as described by the same Fr. Iliceto*
 
-14. The Report on the Sinic or China mission written by Fr. Giambattista da
+16\. *Fr. Iliceto’s view of Confucius and the honours customarily paid to him in China*
 
-Iliceto. A short account of the state and the tribulation of the Sinic or Chinese
+17\. *What they think about Heaven, Shangdi etc*
 
-mission in this year 1708
+17\. *[Number repeated in the manuscript.] About the tablets of the dead*
 
-15. The first steps and progress of the China mission as described by the same
+18\. *The expression* Jing Tian
 
-Fr. Iliceto
+19\. *Concerning His Lordship de Tournon, the Patriarch of Antioch*
 
-16. Fr. Iliceto’s view of Confucius and the honours customarily paid to him in
+20\. *The Chinese Emperor and his declaration*
 
-China
+21\. *The decree of the Patriarch of Antioch*
 
-17. What they think about Heaven, Shangdi etc
+22\. *About the Fathers of the Society*
 
-17. [Number repeated in the manuscript.] About the tablets of the dead
+23\. *Concerning Fr. Antonio Frosolone*
 
-18. The expression Jing Tian
+24\. *Letter of the same Fr. de Iliceto to the Fr. Commissary of the Franciscans*
 
-19. Concerning His Lordship de Tournon, the Patriarch of Antioch
+25\. *The death of some Franciscans*
 
-20. The Chinese Emperor and his declaration
+26\. *The inconveniences suffered by the missionaries*
 
-21. The decree of the Patriarch of Antioch
+27\. *Concerning the Dominican Fathers*
 
-22. About the Fathers of the Society
+28\. *Concerning the China mission*
 
-23. Concerning Fr. Antonio Frosolone
+29\. *Request that he be allowed to go to the Philippines if he is forced to leave China*
 
-24. Letter of the same Fr. de Iliceto to the Fr. Commissary of the Franciscans
+30\. *The seminary founded in Manila*
 
-25. The death of some Franciscans
+31\. *Witness of the Franciscans about the authorship of this report*
 
-26. The inconveniences suffered by the missionaries
+32\. *The reply of the Bishop of Ascalon in refutation of the report of Fr. Giambattista da Iliceto*
 
-27. Concerning the Dominican Fathers
+33\. *Reasons why he thinks he must reply*
 
-28. Concerning the China mission
+34\. *He uses the example of the Bishop of Malaga replying to Jurieu*
 
-29. Request that he be allowed to go to the Philippines if he is forced to leave
-
-China
-
-30. The seminary founded in Manila
-
-31. Witness of the Franciscans about the authorship of this report
-
-32. The reply of the Bishop of Ascalon in refutation of the report of Fr. Giam-
-
-battista da Iliceto
-
-33. Reasons why he thinks he must reply
-
-34. He uses the example of the Bishop of Malaga replying to Jurieu
-
-35. The first chapter of the report is refuted, where Iliceto claims that the Obser-
-
-vant Franciscans were the first of all to come to China
+35\. *The first chapter of the report is refuted, where Iliceto claims that the Observant Franciscans were the first of all to come to China*
 
 <!-- PDF page 28 | book page 19 -->
 
-36. An assessment of the 2nd chapter of the report
+36\. *An assessment of the 2nd chapter of the report*
 
-37. The third chapter, on Confucius
+37\. *The third chapter, on Confucius*
 
-38. Confucius in the kingdom of China and Tonkin is not worshipped as a God
+38\. *Confucius in the kingdom of China and Tonkin is not worshipped as a God*
 
-39. The Dominican view of Confucius
+39\. *The Dominican view of Confucius*
 
-40. The views of the Franciscans and the Augustinians
+40\. *The views of the Franciscans and the Augustinians*
 
-41. The view of the secular clergy
+41\. *The view of the secular clergy*
 
-42. The fourth chapter of the report, regarding the meaning of Shangdi. Refut-
+42\. *The fourth chapter of the report, regarding the meaning of Shangdi. Refutation of Iliceto*
 
-ation of Iliceto
+43\. *A refutation of Chapter 5 and Iliceto’s account of the tablets of the dead*
 
-43. A refutation of Chapter 5 and Iliceto’s account of the tablets of the dead
+44\. *Almost all the missionary Religious allow their neophytes to use the tablets*
 
-44. Almost all the missionary Religious allow their neophytes to use the tablets
+45\. *Other chapters in the report are refuted*
 
-45. Other chapters in the report are refuted
+46\. *How Chinese scholars interpret the character* Tian
 
-46. How Chinese scholars interpret the character Tian
+47\. *Iliceto’s malice and untrue account*
 
-47. Iliceto’s malice and untrue account
+48\. *The difficulty of prohibiting the Chinese Rites*
 
-48. The difficulty of prohibiting the Chinese Rites
+49\. *Iliceto claims that the Jesuits took refuge with the Emperor in opposition to the Patriarch*
 
-49. Iliceto claims that the Jesuits took refuge with the Emperor in opposition to
+50\. *The Bishop of Ascalon requests that the question should not be decided until the parties have been heard*
 
-the Patriarch
+51\. *Why a declaration from the Emperor was sought by the Jesuits*
 
-50. The Bishop of Ascalon requests that the question should not be decided until
+52\. *The Bishop of Beijing and other missionaries henceforth accepted the Emperor’s permit under certain conditions*
 
-the parties have been heard
+53\. *The Lord Patriarch prescribes conditions for the missionaries, and a rule for how they should think and answer questions*
 
-51. Why a declaration from the Emperor was sought by the Jesuits
+54\. *The right intention of the Jesuits in the business of the Chinese Rites*
 
-52. The Bishop of Beijing and other missionaries henceforth accepted the Em-
+55\. *Iliceto blames only the Jesuits when many others were of the same opinion*
 
-peror’s permit under certain conditions
+56\. *Who was Fr. Stefano da Iliceto*?
 
-53. The Lord Patriarch prescribes conditions for the missionaries, and a rule for
+57\. *About Fathers Frosulone, Castorano and Ripabottoni*
 
-how they should think and answer questions
+58\. *Fr. Giambattista Iliceto accuses the Jesuits of being responsible for the Patriarch’s ill-treatment*
 
-54. The right intention of the Jesuits in the business of the Chinese Rites
+59\. *The Emperor’s declaration about the Chinese Rites*
 
-55. Iliceto blames only the Jesuits when many others were of the same opinion
+60\. *How Bishop Maigrot was received by the Emperor, etc*
 
-56. Who was Fr. Stefano da Iliceto?
+61\. *The legates sent by the Emperor to the Pope are recalled, etc*
 
-57. About Fathers Frosulone, Castorano and Ripabottoni
+62\. *Iliceto accuses the Jesuits unjustly*
 
-58. Fr. Giambattista Iliceto accuses the Jesuits of being responsible for the Pat-
+63\. *The declaration about the Rites from the Fathers of the Society*
 
-riarch’s ill-treatment
+64\. *And by Fr. Juan Bautista Morales, op*
 
-59. The Emperor’s declaration about the Chinese Rites
+65\. *What kind of a man is the Chinese emperor*?
 
-60. How Bishop Maigrot was received by the Emperor, etc
+66\. *The persecution of the missionaries is no fiction, as Iliceto would have it*
 
-61. The legates sent by the Emperor to the Pope are recalled, etc
+67\. *The secular sciences are very properly used for the salvation of souls*
 
-62. Iliceto accuses the Jesuits unjustly
+68\. *The Bishop of Ascalon’s assessment of the Beijing Fathers*
 
-63. The declaration about the Rites from the Fathers of the Society
-
-64. And by Fr. Juan Bautista Morales, op
-
-65. What kind of a man is the Chinese emperor?
-
-66. The persecution of the missionaries is no fiction, as Iliceto would have it
-
-67. The secular sciences are very properly used for the salvation of souls
-
-68. The Bishop of Ascalon’s assessment of the Beijing Fathers
-
-69. Iliceto attacks his Franciscan brethren
+69\. *Iliceto attacks his Franciscan brethren*
 
 <!-- PDF page 29 | book page 20 -->
 
-70. A quarrel between Franciscans which started in the Philippines, and was
+70\. *A quarrel between Franciscans which started in the Philippines, and was settled*
 
-settled
+71\. *The mutual love between the Franciscans in China*
 
-71. The mutual love between the Franciscans in China
+72\. *Various journeys and activities of Fr. Iliceto*
 
-72. Various journeys and activities of Fr. Iliceto
+73\. *Some remarks of Fr. Giambattista da Iliceto, and his ill-considered and unreligious behaviour*
 
-73. Some remarks of Fr. Giambattista da Iliceto, and his ill-considered and unre-
+74\. *Iliceto’s ill-will towards his fellow Franciscans is demonstrated*
 
-ligious behaviour
+75\. *An examination of his behaviour in Mexico*
 
-74. Iliceto’s ill-will towards his fellow Franciscans is demonstrated
+76\. *Iliceto has been rebuked by his superiors and the Lord Patriarch and deservedly so*
 
-75. An examination of his behaviour in Mexico
+77\. *He makes many false complaints about Fr. Frosulone*
 
-76. Iliceto has been rebuked by his superiors and the Lord Patriarch and de-
+78\. *Other false statements made by Fr. Iliceto about Tonkin and Fr. Ripabottoni*
 
-servedly so
+79\. *About the Lord Patriarch’s entry into China*
 
-77. He makes many false complaints about Fr. Frosulone
+80\. *How and when the Lord Patriarch was deported to Macau, and his reception there*
 
-78. Other false statements made by Fr. Iliceto about Tonkin and Fr. Ripabottoni
+81\. *How the Lord Patriarch behaved*
 
-79. About the Lord Patriarch’s entry into China
+82\. *The attitude of the Portuguese of Macau towards the missionaries*
 
-80. How and when the Lord Patriarch was deported to Macau, and his reception
+83\. *The Lord Patriarch was not thrown into prison in Macau*
 
-there
+84\. *Neither was he forbidden to communicate by letter*
 
-81. How the Lord Patriarch behaved
+85\. *The Dominicans and Jesuits are maliciously blamed for the Patriarch’s troubles*
 
-82. The attitude of the Portuguese of Macau towards the missionaries
+86\. *Iliceto sows weeds among his Franciscan brethren*
 
-83. The Lord Patriarch was not thrown into prison in Macau
+87\. *Copies of the imperial decree are sent to Beijing and differ from one another*
 
-84. Neither was he forbidden to communicate by letter
+88\. *A letter of Fr. Buonaventura da Roma to Fr. Visitor concerning his journey*
 
-85. The Dominicans and Jesuits are maliciously blamed for the Patriarch’s
+89\. *The arrival of Fr. Louis Porquet in Beijing*
 
-troubles
+90\. *The Emperor asks after the Fathers*
 
-86. Iliceto sows weeds among his Franciscan brethren
+91\. *A letter of Fr. de Goville to Fr. Kilian about Fr. Buonaventura*
 
-87. Copies of the imperial decree are sent to Beijing and differ from one another
+92\. *Fr. Buonaventura’s faults, and how he was penalised*
 
-88. A letter of Fr. Buonaventura da Roma to Fr. Visitor concerning his journey
+93\. *The case of Fr. Buonaventura: its beginnings, its progress, and the outcome*
 
-89. The arrival of Fr. Louis Porquet in Beijing
+94\. *Why Fr. Buonaventura had to leave Guangzhou*
 
-90. The Emperor asks after the Fathers
+95\. *Fr. Frosulone leaves China for India*
 
-91. A letter of Fr. de Goville to Fr. Kilian about Fr. Buonaventura
+96\. *Fr. de S. Giorgio is forbidden to leave China*
 
-92. Fr. Buonaventura’s faults, and how he was penalised
+97\. *The appeal of the Franciscans in Guangzhou*
 
-93. The case of Fr. Buonaventura: its beginnings, its progress, and the outcome
+98\. *Why the Franciscans are appealing to the Supreme Pontiff*
 
-94. Why Fr. Buonaventura had to leave Guangzhou
+99\. *The Franciscans go on to explain the reasons for their appeal*
 
-95. Fr. Frosulone leaves China for India
+100\. *The current state of the Franciscan mission in China*
 
-96. Fr. de S. Giorgio is forbidden to leave China
+101\. *Testimony of the Jesuit Fathers about the appeal having been made*
 
-97. The appeal of the Franciscans in Guangzhou
-
-98. Why the Franciscans are appealing to the Supreme Pontiff
-
-99. The Franciscans go on to explain the reasons for their appeal
-
-100. The current state of the Franciscan mission in China
-
-101. Testimony of the Jesuit Fathers about the appeal having been made
-
-102. Notable points in the above appeal
+102\. *Notable points in the above appeal*
 
 <!-- PDF page 30 | book page 21 -->
 
-September 1708
+## September 1708
 
-1. Certain matters regarding Fr. Appiani
+1\. *Certain matters regarding Fr. Appiani*
 
-2. He thanks Fr. Kilian and asks for books
+2\. *He thanks Fr. Kilian and asks for books*
 
-3. Fr. Kilian sends the books to Fr. Appiani
+3\. *Fr. Kilian sends the books to Fr. Appiani*
 
-4. The Chinese Hypocaust
+4\. *The Chinese Hypocaust*
 
-5. Some letters of Fr. Kilian to Fr. Appiani, and from Fr. Appiani to Fr. Kilian
+5\. *Some letters of Fr. Kilian to Fr. Appiani, and from Fr. Appiani to Fr. Kilian*
 
-6. Harassment of the Fathers by Chinese officials
+6\. *Harassment of the Fathers by Chinese officials*
 
-7. A mistake about the Fathers’ names was the cause of the harassment and
+7\. *A mistake about the Fathers’ names was the cause of the harassment and danger*
 
-danger
+8\. *The neophytes argue about the Lord Patriarch’s regulations; fewer baptisms*
 
-8. The neophytes argue about the Lord Patriarch’s regulations; fewer
+9\. *The missionary called Ai*
 
-baptisms
+10\. *The good offices which the Beijing Fathers performed for the Dominican Fathers*
 
-9. The missionary called Ai
+11\. *Two of our people appeal against the regulations of the Lord Patriarch*
 
-10. The good offices which the Beijing Fathers performed for the Dominican
+12\. *The ignorance of Bishop Maigrot*
 
-Fathers
+13\. *The Lord Patriarch issues a decree against two of our people*
 
-11. Two of our people appeal against the regulations of the Lord Patriarch
+14\. *The letter from the Capuchin missionaries written from Lhasa in the Kingdom of Tibet*
 
-12. The ignorance of Bishop Maigrot
+15\. *They request some financial assistance, and letters of recommendation to the King*
 
-13. The Lord Patriarch issues a decree against two of our people
+16\. *Their other letter*
 
-14. The letter from the Capuchin missionaries written from Lhasa in the King-
+17\. *Observations on this letter*
 
-dom of Tibet
+18\. *About the Dalai Lama or God Incarnate and Lord of Lhasa*
 
-15. They request some financial assistance, and letters of recommendation to
+19\. *Who are entitled to be called lamas in Western Tartary*?
 
-the King
+20\. *A quarrel between two Tartar princes. The loser flees to the Emperor*
 
-16. Their other letter
+21\. *The good consequence of the Tartar War*
 
-17. Observations on this letter
+22\. *How the Tartars found a new god to replace the previous one who had died*
 
-18. About the Dalai Lama or God Incarnate and Lord of Lhasa
+23\. *A decree from the Lord Patriarch given to the Franciscans in Guangzhou*
 
-19. Who are entitled to be called lamas in Western Tartary?
+24\. *A letter of Fr. Laureati to Fr. Vice-Provincial concerning the trouble to his mission caused by the decree of the Lord Patriarch*
 
-20. A quarrel between two Tartar princes. The loser flees to the Emperor
+25\. *The wretched state of the Christians in the province of Fujian*
 
-21. The good consequence of the Tartar War
+26\. *A most serious persecution*
 
-22. How the Tartars found a new god to replace the previous one who had died
+27\. *Fr. Laureati gets back Bishop Maigrot’s church*
 
-23. A decree from the Lord Patriarch given to the Franciscans in Guangzhou
+28\. *The happy perseverance of the same Fr. Laureati in resisting the local people*
 
-24. A letter of Fr. Laureati to Fr. Vice-Provincial concerning the trouble to his
+29\. *The modesty and religious decorum which is essential for missionaries in China*
 
-mission caused by the decree of the Lord Patriarch
+30\. *The books found in the abandoned house of Bishop Maigrot*
 
-25. The wretched state of the Christians in the province of Fujian
+31\. *The Lord Patriarch has his freedom restored under certain conditions*
 
-26. A most serious persecution
-
-27. Fr. Laureati gets back Bishop Maigrot’s church
-
-28. The happy perseverance of the same Fr. Laureati in resisting the local people
-
-29. The modesty and religious decorum which is essential for missionaries in
-
-China
-
-30. The books found in the abandoned house of Bishop Maigrot
-
-31. The Lord Patriarch has his freedom restored under certain conditions
-
-32. A rescript from the Supreme Pontiff, etc., and the Theatine Fr. Gulielmo
+32\. *A rescript from the Supreme Pontiff, etc., and the Theatine Fr. Gulielmo*
 
 <!-- PDF page 31 | book page 22 -->
 
-33. The arrival of Fr. Pieter Van Hamme in the city of Zhenjiang
+33\. *The arrival of Fr. Pieter Van Hamme in the city of Zhenjiang*
 
-34. The Chinese astrologers make a mistake in predicting and depicting a solar
+34\. *The Chinese astrologers make a mistake in predicting and depicting a solar eclipse*
 
-eclipse
+35\. *The apostolic vicariate repudiated by Fr. Antonio da Silva*
 
-35. The apostolic vicariate repudiated by Fr. Antonio da Silva
+36\. *The letter of Fr. Kilian to Fr. Antonio da Silva*
 
-36. The letter of Fr. Kilian to Fr. Antonio da Silva
+37\. *The Lord Patriarch communicated nothing to the Fathers about the publication of his decree*
 
-37. The Lord Patriarch communicated nothing to the Fathers about the public-
+38\. *The* Jing Tian *tablet in Nanjing*
 
-ation of his decree
+39\. *The state of the church of the clerics in Nanjing*
 
-38. The Jing Tian tablet in Nanjing
+40\. *The Nanjing Fathers are summoned by the Lord Patriarch to hear the promulgation of his decree*
 
-39. The state of the church of the clerics in Nanjing
+41\. *Father Joachim Bouvet, convalescing after an illness, comes back to Beijing from Tartary; he had asked permission to come back, but this had not been clearly given*
 
-40. The Nanjing Fathers are summoned by the Lord Patriarch to hear the pro-
+42\. *The case of the Dominican Fr. Cavallero*
 
-mulgation of his decree
+43\. *A letter from the Prince, full of threats because of the departure of Fr. Bouvet, who makes his excuses to the Emperor*
 
-41. Father Joachim Bouvet, convalescing after an illness, comes back to Beijing
+44\. *Fr. de Goville is issued with a summons by the Lord Patriarch*
 
-from Tartary; he had asked permission to come back, but this had not been
+45\. *The Lord Patriarch rejects the appeal of the Guangzhou Franciscans*
 
-clearly given
+46\. *Some observations on this document*
 
-42. The case of the Dominican Fr. Cavallero
+47\. *Fr. Visdelou’s reply given to the mandarins explaining his refusal to apply for the Emperor’s diploma, allowing him to remain in China*
 
-43. A letter from the Prince, full of threats because of the departure of Fr. Bouvet,
+48\. *The mandarin Henkama’s illness and its cause*
 
-who makes his excuses to the Emperor
+49\. *Fr. de Goville takes exception to the summons issued on the 22nd*
 
-44. Fr. de Goville is issued with a summons by the Lord Patriarch
+50\. *The royal command is communicated to the Beijing Jesuits that Fr. Bouvet has to return to Tartary. He delays*
 
-45. The Lord Patriarch rejects the appeal of the Guangzhou Franciscans
+51\. *Two decrees of the Lord Patriarch concerning Fr. Visdelou*
 
-46. Some observations on this document
+52\. *Fr. Bouvet, having changed his mind several times, is ordered to return to Tartary*
 
-47. Fr. Visdelou’s reply given to the mandarins explaining his refusal to apply
+## October 1708
 
-for the Emperor’s diploma, allowing him to remain in China
+1\. *Some not very important matters concerning Fr. Appiani*
 
-48. The mandarin Henkama’s illness and its cause
+2\. *Fr. Bouvet leaves Beijing for Tartary*
 
-49. Fr. de Goville takes exception to the summons issued on the 22nd
+3\. *An altercation between some Franciscans and associates of the Lord Patriarch about the appeal lodged by the Franciscans*
 
-50. The royal command is communicated to the Beijing Jesuits that Fr. Bouvet
+4\. *The Patriarch’s associates maintain that whatever he decrees is* de fide
 
-has to return to Tartary. He delays
+5\. *The Guangzhou Franciscans appeal against the excommunication pronounced against them by their own commissary*
 
-51. Two decrees of the Lord Patriarch concerning Fr. Visdelou
+6\. *The second reason why they judge this excommunication to be null*
 
-52. Fr. Bouvet, having changed his mind several times, is ordered to return to
-
-Tartary
-
-October 1708
-
-1. Some not very important matters concerning Fr. Appiani
-
-2. Fr. Bouvet leaves Beijing for Tartary
-
-3. An altercation between some Franciscans and associates of the Lord Patri-
-
-arch about the appeal lodged by the Franciscans
-
-4. The Patriarch’s associates maintain that whatever he decrees is de fide
-
-5. The Guangzhou Franciscans appeal against the excommunication pro-
-
-nounced against them by their own commissary
-
-6. The second reason why they judge this excommunication to be null
-
-7. The third and fourth reasons
+7\. *The third and fourth reasons*
 
 <!-- PDF page 32 | book page 23 -->
 
-8. The instruction sent by the Guangzhou Franciscans to Rome in furtherance
+8\. *The instruction sent by the Guangzhou Franciscans to Rome in furtherance of their appeal against the Lord Patriarch*
 
-of their appeal against the Lord Patriarch
+9\. *The Franciscans continue to support their appeal*
 
-9. The Franciscans continue to support their appeal
+10\. *They reply to objections which could be made*
 
-10. They reply to objections which could be made
+11\. *Material relevant to the Franciscans’ appeal*
 
-11. Material relevant to the Franciscans’ appeal
+12\. *What should be gleaned from the Acts of the Franciscan appeal*
 
-12. What should be gleaned from the Acts of the Franciscan appeal
+13\. *A letter from Fr. Bayard to Fr. Müllener*
 
-13. A letter from Fr. Bayard to Fr. Müllener
+14\. *Fr. Müllener promulgates the decree of the Lord Patriarch, and takes it upon himself to change some of its contents*
 
-14. Fr. Müllener promulgates the decree of the Lord Patriarch, and takes it upon
+15\. *A letter of Fr. Müllener to Fr. Simon Bayard*
 
-himself to change some of its contents
+16\. *Points to be noted in this letter*
 
-15. A letter of Fr. Müllener to Fr. Simon Bayard
+17\. *The departure, or rather the flight, of Fr. Müllener from his Church*
 
-16. Points to be noted in this letter
+18\. *The reason for the persecution in the city of Sichuan*
 
-17. The departure, or rather the flight, of Fr. Müllener from his Church
+19\. *Inconsistent sections of Fr. Müllener’s letter*
 
-18. The reason for the persecution in the city of Sichuan
+20\. *The Franciscans go to Beijing to apply for the permit*
 
-19. Inconsistent sections of Fr. Müllener’s letter
+21\. *A Christian cemetery forcibly occupied by the local inhabitants*
 
-20. The Franciscans go to Beijing to apply for the permit
+22\. *The mandarin Henkama dies a Christian*
 
-21. A Christian cemetery forcibly occupied by the local inhabitants
+23\. *The Emperor’s grief at the death of his son*
 
-22. The mandarin Henkama dies a Christian
+24\. *A church occupied by pagans*
 
-23. The Emperor’s grief at the death of his son
+25\. *The Lord Patriarch gives the Franciscans permission to accept the permit*
 
-24. A church occupied by pagans
+26\. *Fr. Antonio da Silva is accused by the Lord Patriarch*
 
-25. The Lord Patriarch gives the Franciscans permission to accept the permit
+27\. *Father da Silva appeals from this citation to the Supreme Pontiff*
 
-26. Fr. Antonio da Silva is accused by the Lord Patriarch
+28\. *A Jubilee is proclaimed in Macau despite the efforts of the Lord Patriarch to prevent it*
 
-27. Father da Silva appeals from this citation to the Supreme Pontiff
+29\. *The Jesuit Fathers are harassed by the mandarins*
 
-28. A Jubilee is proclaimed in Macau despite the efforts of the Lord Patriarch to
+30\. *A letter of Fr. Domenge to Fr. Parrenin about Fr. Müllener*
 
-prevent it
+31\. *A letter from Fr. Müllener to Fr. Serravalle*
 
-29. The Jesuit Fathers are harassed by the mandarins
+32\. *The mandarin Henkama’s funeral*
 
-30. A letter of Fr. Domenge to Fr. Parrenin about Fr. Müllener
+33\. *Damaging rumours about the crime and punishment of the Crown Prince*
 
-31. A letter from Fr. Müllener to Fr. Serravalle
+34\. *Mistaken conjectures and dreams of Dr. Borghese about Fr. Pereira’s death, etc*
 
-32. The mandarin Henkama’s funeral
+35\. *The Bishop of Beijing is made aware of Fr. Iliceto’s letter*
 
-33. Damaging rumours about the crime and punishment of the Crown Prince
+36\. *A letter of Fr. Kilian to Fr. Carlo Castorano*
 
-34. Mistaken conjectures and dreams of Dr. Borghese about Fr. Pereira’s death,
+37\. *Fr. Castorano, and through him the Bishop of Beijing, is warned about Fr. Iliceto*
 
-etc
+38\. *The Emperor slips back into Beijing with the Crown Prince laden with chains, etc*
 
-35. The Bishop of Beijing is made aware of Fr. Iliceto’s letter
+39\. *About Brother Domenico Paramino*
 
-36. A letter of Fr. Kilian to Fr. Carlo Castorano
+40\. *He is summoned by the Emperor to cure his little son who was ill*
 
-37. Fr. Castorano, and through him the Bishop of Beijing, is warned about Fr.
-
-Iliceto
-
-38. The Emperor slips back into Beijing with the Crown Prince laden with chains,
-
-etc
-
-39. About Brother Domenico Paramino
-
-40. He is summoned by the Emperor to cure his little son who was ill
-
-41. He pronounces the illness incurable
+41\. *He pronounces the illness incurable*
 
 <!-- PDF page 33 | book page 24 -->
 
-42. The argument with the Chinese doctors
+42\. *The argument with the Chinese doctors*
 
-43. Paramino resents being insulted and beaten, since he simply persisted in
+43\. *Paramino resents being insulted and beaten, since he simply persisted in telling the unwelcome truth*
 
-telling the unwelcome truth
+44\. *The Emperor questions Paramino about the boy’s illness and the cure for it*
 
-44. The Emperor questions Paramino about the boy’s illness and the cure for it
+45\. *The courtiers act as if there is no danger*
 
-45. The courtiers act as if there is no danger
+46\. *The sick boy dies*
 
-46. The sick boy dies
+## November 1708
 
-November 1708
+1\. *Various writings appear concerning the Prince*
 
-1. Various writings appear concerning the Prince
+2\. *A letter of Fr. Guigue to Fr. Simões*
 
-2. A letter of Fr. Guigue to Fr. Simões
+3\. *The Prince’s ambition and nefarious plots*
 
-3. The Prince’s ambition and nefarious plots
+4\. *He is rebuked by his father*
 
-4. He is rebuked by his father
+5\. *The deceptions of the Prince to destroy his brother*
 
-5. The deceptions of the Prince to destroy his brother
+6\. *The nephew of the Emperor Wanli is executed along with his sons and nephews*
 
-6. The nephew of the Emperor Wanli is executed along with his sons and neph-
+7\. *The Emperor’s pain and anxiety etc. about his sons*
 
-ews
+8\. *A letter from the Bishop of Beijing to Fr. Vice-Provincial in which he exonerates and praises the Fathers*
 
-7. The Emperor’s pain and anxiety etc. about his sons
+9\. *Testimony of the Bishop of Beijing about Fr. Jean-François Gerbillon*
 
-8. A letter from the Bishop of Beijing to Fr. Vice-Provincial in which he exoner-
+10\. *A letter of Fr. Castorano to Fr. Kilian*
 
-ates and praises the Fathers
+11\. *Fr. Castorano excuses Fr. Iliceto*
 
-9. Testimony of the Bishop of Beijing about Fr. Jean-François Gerbillon
+12\. *About Fr. Antonio Frossoloni*
 
-10. A letter of Fr. Castorano to Fr. Kilian
+13\. *Two Franciscans are given lodging in the Fathers’ house*
 
-11. Fr. Castorano excuses Fr. Iliceto
+14\. *A missive from Fr. Appiani*
 
-12. About Fr. Antonio Frossoloni
+15\. *Fr. Kilian’s reply*
 
-13. Two Franciscans are given lodging in the Fathers’ house
+16\. *A letter from Fr. Appiani*
 
-14. A missive from Fr. Appiani
+17\. *A letter from the Bishop of Ascalon to Fr. Kilian*
 
-15. Fr. Kilian’s reply
+18\. *The notification from the Ministry of Rites made public in Guangzhou*
 
-16. A letter from Fr. Appiani
+19\. *All the Augustinians and the clerics leave Guangzhou*
 
-17. A letter from the Bishop of Ascalon to Fr. Kilian
+20\. *About Fr. Müllener*
 
-18. The notification from the Ministry of Rites made public in Guangzhou
+21\. *Two Franciscans send their appeal from the city of Beijing to the Lord Patriarch in Macau*
 
-19. All the Augustinians and the clerics leave Guangzhou
+22\. *They explain the reasons for their appeal*
 
-20. About Fr. Müllener
+23\. *The witness of two Jesuits concerning the authenticity of the appeal*
 
-21. Two Franciscans send their appeal from the city of Beijing to the Lord Pat-
+24\. *The Franciscans confirm their actions in a letter on the subject*
 
-riarch in Macau
+25\. *The Franciscans recount in order the same story as the Fathers as further confirmation*
 
-22. They explain the reasons for their appeal
+26\. *How the Franciscans were admitted to apply for the* piao, *and questioned*
 
-23. The witness of two Jesuits concerning the authenticity of the appeal
-
-24. The Franciscans confirm their actions in a letter on the subject
-
-25. The Franciscans recount in order the same story as the Fathers as further
-
-confirmation
-
-26. How the Franciscans were admitted to apply for the piao, and questioned
-
-27. What the mandarins think of the Lord Patriarch and the Bishop of
-
-Conon
+27\. *What the mandarins think of the Lord Patriarch and the Bishop of Conon*
 
 <!-- PDF page 34 | book page 25 -->
 
-28. The defence of Fr. Laureati against the accusation of unlawful ambition
+28\. *The defence of Fr. Laureati against the accusation of unlawful ambition*
 
-29. The first argument: the honour constantly refused
+29\. *The first argument: the honour constantly refused*
 
-30. The second argument
+30\. *The second argument*
 
-31. The conclusion of Fr. Laureati’s letter to the Father Visitor
+31\. *The conclusion of Fr. Laureati’s letter to the Father Visitor*
 
-December 1708
+## December 1708
 
-1. A sorrowing Emperor, anxious ministers, a court in turmoil
+1\. *A sorrowing Emperor, anxious ministers, a court in turmoil*
 
-2. The lamas’ fetishes and the crimes of the Prince are detected with remark-
+2\. *The lamas’ fetishes and the crimes of the Prince are detected with remarkable astuteness*
 
-able astuteness
+3\. *The Emperor recognizes the innocence of the disinherited Crown Prince*
 
-3. The Emperor recognizes the innocence of the disinherited Crown Prince
+4\. *The futile exorcism of the bonzes*
 
-4. The futile exorcism of the bonzes
+5\. *The Lord Patriarch’s opinion and statements about his own decree*
 
-5. The Lord Patriarch’s opinion and statements about his own decree
+6\. *The report of the Dominican Fathers is similar to that of Iliceto*
 
-6. The report of the Dominican Fathers is similar to that of Iliceto
+7\. *A mistaken opinion about the power of the Jesuits in China*
 
-7. A mistaken opinion about the power of the Jesuits in China
+8\. *A copy of the Lord Patriarch’s letter about the Chinese persecution and about the report of the Dominican Fathers*
 
-8. A copy of the Lord Patriarch’s letter about the Chinese persecution and
+9\. *Some points worth making about this letter of the Lord Patriarch and the Dominicans’ report*
 
-about the report of the Dominican Fathers
+10\. *The ceremony performed by the bonzes to expel the evil spirit from the Emperor*
 
-9. Some points worth making about this letter of the Lord Patriarch and the
+11\. *The two Franciscans after accepting their permits return to their churches*
 
-Dominicans’ report
+12\. *Father Luis Gonzaga is professed of the four vows*
 
-10. The ceremony performed by the bonzes to expel the evil spirit from the
+13\. *The Prince is more strictly confined; various opinions about him*
 
-Emperor
+14\. *The Prince is stripped of his honours, wealth, and servants, etc*
 
-11. The two Franciscans after accepting their permits return to their churches
+15\. *Fr. Hortiz with two Augustinians is taken to Macau under escort*
 
-12. Father Luis Gonzaga is professed of the four vows
+16\. *A letter from Fr. Buonaventura da Roma*
 
-13. The Prince is more strictly confined; various opinions about him
+17\. *Some excerpts from a writing of the Franciscan Fr. Pedro Piñuela about the words* Jing Tian
 
-14. The Prince is stripped of his honours, wealth, and servants, etc
+18\. *The Fujian Mission: how Bishop Maigrot had looked after it*
 
-15. Fr. Hortiz with two Augustinians is taken to Macau under escort
+19\. *The Fujian neophytes*
 
-16. A letter from Fr. Buonaventura da Roma
+20\. *A letter of Fr. Kilian to Fr. Castorano*
 
-17. Some excerpts from a writing of the Franciscan Fr. Pedro Piñuela about the
+21\. *Concerning Father Castrocaro*
 
-words Jing Tian
+22\. *The kind of places in which Fr. Iliceto hides away*
 
-18. The Fujian Mission: how Bishop Maigrot had looked after it
+23\. *Fr. Antonino Ripabottoni. His view of the Chinese Rites*
 
-19. The Fujian neophytes
+24\. *Why Fr. Kilian may not write to Fr. Iliceto*
 
-20. A letter of Fr. Kilian to Fr. Castorano
+25\. *The reason which led the Jesuits to ask the Emperor about the meaning of the Chinese Rites*
 
-21. Concerning Father Castrocaro
+26\. *The Jesuits are not responsible for the Chinese persecution*
 
-22. The kind of places in which Fr. Iliceto hides away
-
-23. Fr. Antonino Ripabottoni. His view of the Chinese Rites
-
-24. Why Fr. Kilian may not write to Fr. Iliceto
-
-25. The reason which led the Jesuits to ask the Emperor about the meaning of
-
-the Chinese Rites
-
-26. The Jesuits are not responsible for the Chinese persecution
-
-27. Who should be held accountable for the damage done to the Chinese Mis-
-
-sion
+27\. *Who should be held accountable for the damage done to the Chinese Mission*
 
 <!-- PDF page 35 | book page 26 -->
 
-28. The interpretation of the Rites and the declaration was given at Bishop
+28\. *The interpretation of the Rites and the declaration was given at Bishop Maigrot’s insistence*
 
-Maigrot’s insistence
+29\. *A letter from Fr. Kilian to Fr. Fernández*
 
-29. A letter from Fr. Kilian to Fr. Fernández
+30\. *The Procurator of the Society appeals on behalf of Father Antonio da Silva against the burden of the charge brought against him*
 
-30. The Procurator of the Society appeals on behalf of Father Antonio da Silva
+31\. *Reasons why the summons should be deemed illegitimate*
 
-against the burden of the charge brought against him
+32\. *Fr. Buonaventura leaves for Guangzhou*
 
-31. Reasons why the summons should be deemed illegitimate
+33\. *The Fathers are asked about the Emperor’s illness and how it might be remedied*
 
-32. Fr. Buonaventura leaves for Guangzhou
+34\. *Signor Borghese is interrogated about the illness*
 
-33. The Fathers are asked about the Emperor’s illness and how it might be
+35\. *The Fathers encourage the Emperor to get over his grief, which is making him ill*
 
-remedied
+36\. *The death of Father Tomás Pereira*
 
-34. Signor Borghese is interrogated about the illness
+37\. *The medicine given to the Emperor by the Fathers proves useful*
 
-35. The Fathers encourage the Emperor to get over his grief, which is making
+38\. *The Emperor orders the Fathers to name one of their number to replace Fr. Pereira*
 
-him ill
+39\. *Finding one of the Emperor’s sons as a replacement for the disinherited Crown Prince*
 
-36. The death of Father Tomás Pereira
+40\. *The Bishop of Beijing’s letter to Father Vice-Provincial*
 
-37. The medicine given to the Emperor by the Fathers proves useful
+41\. *A letter from Fr. Appiani about the death of Fr. Pereira*
 
-38. The Emperor orders the Fathers to name one of their number to replace Fr.
+42\. *Three of our men are selected to receive the Emperor’s commands*
 
-Pereira
+43\. *The Emperor’s Secondborn Son is restored to liberty*
 
-39. Finding one of the Emperor’s sons as a replacement for the disinherited
+44\. *His speech to the leaders of the Empire*
 
-Crown Prince
+45\. *Father Kilian informs Fr. Appiani about the Jubilee, and the circumstances of Fr. Pereira’s death*
 
-40. The Bishop of Beijing’s letter to Father Vice-Provincial
+## January 1709
 
-41. A letter from Fr. Appiani about the death of Fr. Pereira
+1\. *The mourning ceremonies in the Chinese manner used at Fr. Pereira’s funeral*
 
-42. Three of our men are selected to receive the Emperor’s commands
+2\. *The funeral panegyric in honour of Fr. Pereira composed by the Emperor*
 
-43. The Emperor’s Secondborn Son is restored to liberty
+3\. *An argument about the route to be taken for Fr. Pereira’s funeral*
 
-44. His speech to the leaders of the Empire
+4\. *Fr. Gonzaga’s unfortunate dispute with the other Fathers*
 
-45. Father Kilian informs Fr. Appiani about the Jubilee, and the circumstances
+5\. *The pomp of a funeral full of piety and a credit to our religion*
 
-of Fr. Pereira’s death
+6\. *A letter from Fr. Juan Fernández Serrano about the mandarins who are harassing his church*
 
-January 1709
+7\. *Fr. Monteiro’s letter to Fr. Kilian about Fr. Visdelou*
 
-1. The mourning ceremonies in the Chinese manner used at Fr. Pereira’s fu-
+8\. *Fr. Visdelou cites Chinese writings to reject the Rites*
 
-neral
+9\. *May missionaries, if the Emperor allows it, remain in China and not preach the Gospel*?
 
-2. The funeral panegyric in honour of Fr. Pereira composed by the Emperor
-
-3. An argument about the route to be taken for Fr. Pereira’s funeral
-
-4. Fr. Gonzaga’s unfortunate dispute with the other Fathers
-
-5. The pomp of a funeral full of piety and a credit to our religion
-
-6. A letter from Fr. Juan Fernández Serrano about the mandarins who are har-
-
-assing his church
-
-7. Fr. Monteiro’s letter to Fr. Kilian about Fr. Visdelou
-
-8. Fr. Visdelou cites Chinese writings to reject the Rites
-
-9. May missionaries, if the Emperor allows it, remain in China and not preach
-
-the Gospel?
-
-10. A refutation of Fr. Monteiro’s view
+10\. *A refutation of Fr. Monteiro’s view*
 
 <!-- PDF page 36 | book page 27 -->
 
-11. It is the Lord Patriarch, not the Emperor, who is blocking the preaching of
+11\. *It is the Lord Patriarch, not the Emperor, who is blocking the preaching of the Gospel in China*
 
-the Gospel in China
+12\. *The guard stationed outside the Lord Patriarch’s residence*
 
-12. The guard stationed outside the Lord Patriarch’s residence
+13\. *The rumour about the Lord Patriarch being given a cardinalate*
 
-13. The rumour about the Lord Patriarch being given a cardinalate
+14\. *The reason why the authorities in Macau decided that the guard on the Patriarch’s residence should not be removed*
 
-14. The reason why the authorities in Macau decided that the guard on the Pat-
+15\. *The Beijing Jesuits did not object to the Lord Patriarch being set free*
 
-riarch’s residence should not be removed
+16\. *The Fathers come back from Tartary*
 
-15. The Beijing Jesuits did not object to the Lord Patriarch being set free
+17\. *A letter from the Bishop of Ascalon to Fr. Kilian saying how he is doing in Macau*
 
-16. The Fathers come back from Tartary
+18\. *Public prayers for the Emperor’s health*
 
-17. A letter from the Bishop of Ascalon to Fr. Kilian saying how he is doing in
+19\. *How prayers were held in our church. The calumnies which that provoked*
 
-Macau
+20\. *The Christian ceremonies normally used together with the non-superstitious Chinese ones*
 
-18. Public prayers for the Emperor’s health
+21\. *What happens when the royal banners are unfurled in front of the doors*
 
-19. How prayers were held in our church. The calumnies which that provoked
+22\. *Tablets of the living are not superstitious*
 
-20. The Christian ceremonies normally used together with the non-superstitious
+23\. *Navarrete is criticised*
 
-Chinese ones
+24\. *A remedy proposed to the Emperor*
 
-21. What happens when the royal banners are unfurled in front of the doors
+25\. *A letter from the Captain General of Macau rejected by the Bishop of Beijing*
 
-22. Tablets of the living are not superstitious
+26\. *Fr. Agostino Capelli*
 
-23. Navarrete is criticised
+27\. *Fr. Capelli is destined for the Tonkin Mission*
 
-24. A remedy proposed to the Emperor
+28\. *He is sent by the Lord Patriarch to Madura*
 
-25. A letter from the Captain General of Macau rejected by the Bishop of Beijing
+29\. *The votes and judgements of the consultors concerning Fr. Capelli*
 
-26. Fr. Agostino Capelli
+30\. *The vote of Father Provincial; he is permitted to go to the Madura mission*
 
-27. Fr. Capelli is destined for the Tonkin Mission
+31\. *Signor Borghese proposes a remedy to restore the Emperor to health*
 
-28. He is sent by the Lord Patriarch to Madura
+32\. *The letter of Fr. Francisco de S. José on the harassment of the Christians*
 
-29. The votes and judgements of the consultors concerning Fr. Capelli
+33\. *The mandarin is extremely hostile to Christians*
 
-30. The vote of Father Provincial; he is permitted to go to the Madura mission
+34\. *A terrible persecution*
 
-31. Signor Borghese proposes a remedy to restore the Emperor to health
+35\. *Three mistakes in this letter*
 
-32. The letter of Fr. Francisco de S. José on the harassment of the Christians
+36\. *A letter of Fr. Monteiro to Fr. Kilian*
 
-33. The mandarin is extremely hostile to Christians
+37\. *A letter from Fr. Appiani to Fr. Kilian in which he asks for books and coins*
 
-34. A terrible persecution
+38\. *The Bishop of Ascalon refuses to consecrate Fr. Visdelou*
 
-35. Three mistakes in this letter
+39\. *The Emperor wishes to nominate his Second Son as heir but the* gelao *continue to nominate the Eighth*
 
-36. A letter of Fr. Monteiro to Fr. Kilian
+40\. *The Emperor celebrates a wedding banquet*
 
-37. A letter from Fr. Appiani to Fr. Kilian in which he asks for books and coins
+41\. *Father Visdelou leaves with three clerics for Macau*
 
-38. The Bishop of Ascalon refuses to consecrate Fr. Visdelou
+42\. *A letter of Fr. Miguel Fernández about some boxes entrusted to him by Fr. Simões*
 
-39. The Emperor wishes to nominate his Second Son as heir but the gelao con-
-
-tinue to nominate the Eighth
-
-40. The Emperor celebrates a wedding banquet
-
-41. Father Visdelou leaves with three clerics for Macau
-
-42. A letter of Fr. Miguel Fernández about some boxes entrusted to him by Fr.
-
-Simões
-
-43. The statement of Fr. Miguel Fernández
+43\. *The statement of Fr. Miguel Fernández*
 
 <!-- PDF page 37 | book page 28 -->
 
-February 1709
+## February 1709
 
-1. Father Visdelou comes to Macau and is consecrated Bishop of Claudiopolis
+1\. *Father Visdelou comes to Macau and is consecrated Bishop of Claudiopolis*
 
-2. The Crown Prince comes to Beijing; likewise, the Emperor
+2\. *The Crown Prince comes to Beijing; likewise, the Emperor*
 
-3. Chinese New Year
+3\. *Chinese New Year*
 
-4. Letter of Fr. Diego de Santa Rosa to Fr. Visitor
+4\. *Letter of Fr. Diego de Santa Rosa to Fr. Visitor*
 
-5. A letter of Fr. Juan Fernández to Fr. Visitor
+5\. *A letter of Fr. Juan Fernández to Fr. Visitor*
 
-6. Another letter of Father Fernández to Father Kilian
+6\. *Another letter of Father Fernández to Father Kilian*
 
-7. The journey of the Emperor from the city to his villa
+7\. *The journey of the Emperor from the city to his villa*
 
-8. The letters of the Captain General of Macau were not accepted by the Bishop
+8\. *The letters of the Captain General of Macau were not accepted by the Bishop of Beijing*
 
-of Beijing
+9\. *The Bishop of Ascalon is sent to Macau*
 
-9. The Bishop of Ascalon is sent to Macau
+10\. *On the appeal of the Franciscans*
 
-10. On the appeal of the Franciscans
+11\. *On the consecration of Father Visdelou: whether it is valid*
 
-11. On the consecration of Father Visdelou: whether it is valid
+12\. *The alkermes mixture is sent to the Emperor*
 
-12. The alkermes mixture is sent to the Emperor
+13\. *On the testimony of Fr. Miguel Fernández given for and against Fr. Franchi*
 
-13. On the testimony of Fr. Miguel Fernández given for and against Fr. Franchi
+14\. *On Fr. Antonio da Silva: whether he ought to lay aside the apostolic vicariate*
 
-14. On Fr. Antonio da Silva: whether he ought to lay aside the apostolic vicariate
+15\. *A letter of Fr. Giovanni Battista di Serravalle to Father Visitor*
 
-15. A letter of Fr. Giovanni Battista di Serravalle to Father Visitor
+16\. *He grieves over the death of Fr. Pereira*
 
-16. He grieves over the death of Fr. Pereira
+17\. *He seeks some monetary support*
 
-17. He seeks some monetary support
+18\. *The reason for a letter of Fr. Kilian to Fr. Juan Fernández*
 
-18. The reason for a letter of Fr. Kilian to Fr. Juan Fernández
+19\. *The letter of Fr. Kilian to Fr. Juan Fernández*
 
-19. The letter of Fr. Kilian to Fr. Juan Fernández
+20\. *Rumours about the cardinalate of the Lord Patriarch*
 
-20. Rumours about the cardinalate of the Lord Patriarch
+21\. *Other news from Manila*
 
-21. Other news from Manila
+22\. *The Bishop of Ascalon, abandoned by his own Augustinians, is harassed by the Lord Patriarch*
 
-22. The Bishop of Ascalon, abandoned by his own Augustinians, is harassed by
+23\. *Concerning Father Visdelou: how he was consecrated, etc*
 
-the Lord Patriarch
+24\. *The relief provided by the Jesuits to the Bishop of Ascalon when he was harassed by his own people*
 
-23. Concerning Father Visdelou: how he was consecrated, etc
+25\. *Censure of the Franciscans intimated by the Lord Patriarch*
 
-24. The relief provided by the Jesuits to the Bishop of Ascalon when he was har-
+26\. *A letter of Fr. Castrocaro on the death of Fr. Pereira*
 
-assed by his own people
+27\. *On the declaration of the Emperor concerning the Chinese Rites made in the year 1700*
 
-25. Censure of the Franciscans intimated by the Lord Patriarch
+28\. *How the Emperor dealt with the Lord Patriarch and he in turn with the Emperor*
 
-26. A letter of Fr. Castrocaro on the death of Fr. Pereira
+29\. *How the Bishop of Conon conducted himself with the Emperor*
 
-27. On the declaration of the Emperor concerning the Chinese Rites made in the
+30\. *The Emperor’s marvelous moderation and prudence*
 
-year 1700
+31\. *His just indignation*
 
-28. How the Emperor dealt with the Lord Patriarch and he in turn with the
+32\. *The behaviour of the Lord Patriarch deservedly reprehended for many reasons*
 
-Emperor
-
-29. How the Bishop of Conon conducted himself with the Emperor
-
-30. The Emperor’s marvelous moderation and prudence
-
-31. His just indignation
-
-32. The behaviour of the Lord Patriarch deservedly reprehended for many reas-
-
-ons
