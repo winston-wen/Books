@@ -1,0 +1,110 @@
+% !TeX root = main.tex
+\usepackage[paperwidth=210mm,paperheight=310mm,left=19mm,right=19mm,top=24mm,bottom=23mm,footskip=12mm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[unicode,hidelinks,pageanchor=false]{hyperref}
+\usepackage{bookmark}
+\usepackage{xurl}
+\usepackage{amssymb,newunicodechar}
+
+\newunicodechar{□}{\ensuremath{\square}}
+\newunicodechar{⁰}{\textsuperscript{0}}
+\newunicodechar{⁴}{\textsuperscript{4}}
+\newunicodechar{⁵}{\textsuperscript{5}}
+\newunicodechar{⁶}{\textsuperscript{6}}
+\newunicodechar{⁷}{\textsuperscript{7}}
+\newunicodechar{⁸}{\textsuperscript{8}}
+\newunicodechar{⁹}{\textsuperscript{9}}
+
+\setmainfont{TeX Gyre Termes}
+\IfFontExistsTF{Source Han Serif SC}
+  {\setCJKmainfont{Source Han Serif SC}}
+  {\IfFontExistsTF{Noto Serif CJK SC}
+     {\setCJKmainfont{Noto Serif CJK SC}}
+     {\IfFontExistsTF{SimSun}
+        {\setCJKmainfont[AutoFakeBold=2.5]{SimSun}}
+        {\setCJKmainfont[BoldFont=FandolSong-Bold]{FandolSong-Regular}}}}
+\IfFontExistsTF{SimSun-ExtB}
+  {\xeCJKsetup{AutoFallBack=true}
+   \setCJKfallbackfamilyfont{\CJKrmdefault}{SimSun,SimSun-ExtB,SimSun-ExtG}}
+  {}
+
+\hypersetup{pdftitle={盛清社会与扬州研究},pdfauthor={冯明珠主编}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{2pt plus .6pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\clubpenalty=3000
+\widowpenalty=3000
+
+\newcommand{\BookFolio}{}
+\fancyhf{}
+\fancyfoot[C]{\small\BookFolio}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+\newif\ifBookFirstPage
+\BookFirstPagetrue
+% First argument is the printed folio. Second argument is the original PDF page.
+\newcommand{\BookPage}[2]{%
+  \ifBookFirstPage\global\BookFirstPagefalse\else\clearpage\fi
+  \gdef\BookFolio{#1}%
+  \noindent\hypertarget{scan-#2}{}\par
+}
+\newcommand{\BookFullScan}[1]{%
+  \thispagestyle{empty}%
+  \noindent\makebox[\textwidth][c]{%
+    \includegraphics[width=\textwidth,height=.975\textheight,keepaspectratio]{assets/#1}}%
+  \par
+}
+\newcommand{\BookHeading}[3]{%
+  \pdfbookmark[0]{#1}{article-\thepage}%
+  \vspace*{12mm}%
+  {\centering\bfseries\fontsize{20pt}{29pt}\selectfont #2\par}%
+  \if\relax\detokenize{#3}\relax\else
+    \vspace{5mm}{\raggedleft\fontsize{12pt}{17pt}\selectfont #3\par}%
+  \fi
+  \vspace{7mm}%
+}
+\newcommand{\BookSubheading}[1]{%
+  \par\addvspace{.55\baselineskip}\noindent\textbf{#1}\par\nopagebreak[3]%
+}
+\newcommand{\BookEntry}[4]{%
+  \par\noindent
+  \hangindent=3.4em\hangafter=1%
+  \hyperlink{scan-#1}{\makebox[3.4em][l]{#2}#3}%
+  {\par\nobreak\small\noindent\hspace*{3.4em}#4\par}%
+  \vspace{.28\baselineskip}%
+}
+\newcommand{\BookRecordLine}[1]{\par\noindent #1\par}
+\newcommand{\BookSignature}[1]{\par{\raggedleft #1\par}}
+\newenvironment{BookQuote}
+  {\par\begingroup\leftskip=2.2em\rightskip=.4em\parindent=0pt\fontsize{11pt}{17.3pt}\selectfont}
+  {\par\endgroup}
+\newenvironment{BookNotes}
+  {\par\addvspace{8pt}\noindent\rule{.27\linewidth}{.35pt}\par\nopagebreak
+   \begingroup\fontsize{9.2pt}{13.1pt}\selectfont\setlength{\parskip}{1.4pt}}
+  {\par\endgroup}
+\newcommand{\BookNote}[2]{%
+  \par\noindent\hangindent=2.3em\hangafter=1%
+  \makebox[2.3em][l]{#1}#2\par
+}
+\newcommand{\BookRef}[1]{\textsuperscript{#1}}
+\newcommand{\BookArt}[3]{%
+  \par\addvspace{4pt}\noindent\makebox[\linewidth][c]{%
+    \includegraphics[width=#2\linewidth,height=#3\textheight,keepaspectratio]{assets/#1}}%
+  \par\addvspace{4pt}%
+}
+\newcommand{\BookListLine}[2]{%
+  \par\noindent\makebox[.43\linewidth][l]{#1}#2%
+}
+\AtBeginDocument{\fontsize{11.6pt}{19pt}\selectfont}
+
+
+\IfFontExistsTF{Segoe UI Symbol}
+  {\newfontfamily\BookSymbolFont{Segoe UI Symbol}}
+  {\newfontfamily\BookSymbolFont{FandolSong-Regular}}
+\newunicodechar{①}{{\BookSymbolFont\symbol{"2460}}}
+\newunicodechar{②}{{\BookSymbolFont\symbol{"2461}}}
+\newunicodechar{③}{{\BookSymbolFont\symbol{"2462}}}
+
